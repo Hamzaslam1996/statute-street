@@ -321,7 +321,9 @@ def apply_dedupe_overrides(kept: list[dict]) -> tuple[list[dict], list[dict]]:
             extra = (s.get(fld) or "").strip()
             if extra and extra.lower() not in (t.get(fld) or "").lower():
                 t[fld] = f"{t.get(fld) or ''} | [{s['source_doc_id']}] {extra}".strip(" |")
-        t["notes"] = f"{t.get('notes') or ''} Folded by reviewer ruling: {ov['reason']}".strip()
+        # Public note stays neutral; the ruling reference lives in dedupe_log.csv only.
+        public_reason = re.sub(r"^rulings?_?\d+\s*#?\d*:\s*", "", ov["reason"])
+        t["notes"] = f"{t.get('notes') or ''} Also documented in {s['source_doc_id']}: {public_reason}".strip()
         kept = [r for r in kept if r is not s]
         log.append({"kept_doc": t["source_doc_id"], "kept_citation": t["citation"], "dropped_doc": s["source_doc_id"],
                     "dropped_citation": s["citation"], "dropped_status": s["status"], "jurisdiction": s["jurisdiction"],

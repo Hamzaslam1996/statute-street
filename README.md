@@ -138,6 +138,29 @@ failed measure and failed measures are never reported for an address.
 4. CA screening-fee cap: the statute gives $30 adjusted by CPI and no 2026 dollar figure;
    we keep the formula.
 
+## Scores and what they mean
+
+| Key | Addresses | Exact result agreement |
+|---|---|---|
+| `gold/addresses/seed60.json` | 60 | 569/569 |
+| `gold/addresses/seed20.json` | 20 | 190/190 |
+| `gold/addresses/holdout20.json` (blind, see below) | 20 | 192/192 |
+| `gold/changes/T1-T5.json` | 500 | all five tests exact |
+
+Agreement figures measure our engine against an independently built key that
+applies the same reviewed legal rulings; they test faithful implementation, not
+legal correctness beyond those rulings. The organisers' hidden key is the real
+test. Across the whole sample (500 addresses, 5,298 rule rows) the unknown rate
+is 27.3% and 2,081 rows rest on a presumption ("Applies unless …").
+
+After the duplicate-rule fold of rulings_08 the three keys were re-scored as a
+regression check (nothing moved); that was a check that the dedupe changed no
+answer, not tuning against the holdout.
+
+`out/public/` holds copies of `rules.json`, `lookups.json` and `changes.json` with
+internal review notes removed (`publish.py`); the same filter is applied to the
+submission files themselves.
+
 ## Blind holdout (single run)
 
 `gold/addresses/holdout20.json` (20 addresses, frozen 2026-10-04 04:30 PKT, sha256 verified

@@ -1180,19 +1180,7 @@
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0035": {
-  "key": "c:a2e78d68e357",
-  "jurisdiction": "MA",
-  "category": "application_screening_fees",
-  "title": "Rental broker fees payable only by the party who engaged the broker",
-  "tests": [],
-  "applies_to_all_residential": true,
-  "coverage_incomplete": false,
-  "notes": "The rule covers persons who find rental dwellings for a fee and requires them to hold a broker or salesperson license under c.112 § 87PP. This is a condition on the person, not on the building. No building-level coverage limits or exemptions are stated, so there are no tests.",
-  "citation": "M.G.L. c. 112, § 87DDD-1/2",
-  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
- },
- "r-0036": {
-  "key": "c:a976b7e32e02",
+  "key": "c:f46e0b0f1918",
   "jurisdiction": "MA",
   "category": "application_screening_fees",
   "title": "Broker fee payable only by the party who engaged the broker",
@@ -1203,7 +1191,7 @@
   "citation": "M.G.L. c. 112, § 87DDD½, as amended by St. 2025, c. 9, § 43",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0037": {
+ "r-0036": {
   "key": "c:c35c999a6e1c",
   "jurisdiction": "MA",
   "category": "application_screening_fees",
@@ -1231,7 +1219,7 @@
   "citation": "M.G.L. c. 186, § 15B; 254 C.M.R. 7",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0042": {
+ "r-0041": {
   "key": "c:301c812ec13f",
   "jurisdiction": "MA",
   "category": "screening_restrictions",
@@ -1243,7 +1231,7 @@
   "citation": "M.G.L. c. 151B, § 4(10)",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0043": {
+ "r-0042": {
   "key": "c:539cf76987eb",
   "jurisdiction": "MA",
   "category": "screening_restrictions",
@@ -1255,7 +1243,7 @@
   "citation": "M.G.L. c. 6, § 172(a)(3), (c)",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0044": {
+ "r-0043": {
   "key": "c:443d9b259f6a",
   "jurisdiction": "MA",
   "category": "security_deposits",
@@ -1283,7 +1271,7 @@
   "citation": "M.G.L. c. 186, § 15B",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0045": {
+ "r-0044": {
   "key": "c:3f669f22c097",
   "jurisdiction": "NJ",
   "category": "algorithmic_rent_setting",
@@ -1321,7 +1309,7 @@
   "citation": "P.L. 2026, c.43 (C.56:9-20 to 56:9-26)",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0046": {
+ "r-0045": {
   "key": "c:16f4784d32c2",
   "jurisdiction": "NJ",
   "category": "application_screening_fees",
@@ -1357,7 +1345,7 @@
   "citation": "N.J.S.A. 46:8-18.1; P.L. 2025, c.405",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0047": {
+ "r-0046": {
   "key": "c:80c62710906e",
   "jurisdiction": "NJ",
   "category": "just_cause_eviction",
@@ -1409,7 +1397,7 @@
   "citation": "N.J.S.A. 2A:18-61.1 et seq.; N.J.S.A. 2A:18-53",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0048": {
+ "r-0047": {
   "key": "c:e9018cf6e37d",
   "jurisdiction": "NJ",
   "category": "just_cause_eviction",
@@ -1451,7 +1439,7 @@
   "citation": "N.J.S.A. 2A:18-61.3",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0050": {
+ "r-0049": {
   "key": "c:2485f877f438",
   "jurisdiction": "NJ",
   "category": "screening_restrictions",
@@ -1492,7 +1480,7 @@
   "citation": "N.J.S.A. 10:5-12 (NJ Law Against Discrimination)",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0051": {
+ "r-0050": {
   "key": "c:7ed71d94d597",
   "jurisdiction": "NJ",
   "category": "screening_restrictions",
@@ -1519,7 +1507,7 @@
   "citation": "N.J.S.A. 46:8-52 et seq. (P.L. 2021, c.110)",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0052": {
+ "r-0051": {
   "key": "c:765b4b556927",
   "jurisdiction": "NJ",
   "category": "security_deposits",
@@ -1561,7 +1549,7 @@
   "citation": "N.J.S.A. 46:8-21.2; N.J.S.A. 46:8-19; N.J.S.A. 46:8-21.1",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0053": {
+ "r-0052": {
   "key": "c:72abb7b92e7d",
   "jurisdiction": "Newark, NJ",
   "category": "rent_increase_limits",
@@ -1608,7 +1596,7 @@
   "citation": "Newark, N.J., Code § 19:2-3.1",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0054": {
+ "r-0053": {
   "key": "c:de9e6c340fc6",
   "jurisdiction": "Newark, NJ",
   "category": "screening_restrictions",
@@ -1645,7 +1633,7 @@
   "citation": "Newark Municipal Code § 2:31-1 to 2:31-9 (Ord. 6 PSF-B, 4-15-2015)",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0055": {
+ "r-0054": {
   "key": "c:9e52ee0fb0f7",
   "jurisdiction": "San Diego, CA",
   "category": "algorithmic_rent_setting",
@@ -1668,7 +1656,7 @@
   "citation": "San Diego Municipal Code § 98.1103 (Ord. O-21955 N.S.)",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0056": {
+ "r-0055": {
   "key": "c:cc6fe569efff",
   "jurisdiction": "San Diego, CA",
   "category": "just_cause_eviction",
@@ -1791,7 +1779,7 @@
   "citation": "San Diego Municipal Code §§ 98.0701–98.0710",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0057": {
+ "r-0056": {
   "key": "c:b777d5cae16e",
   "jurisdiction": "San Diego, CA",
   "category": "screening_restrictions",
@@ -1814,7 +1802,7 @@
   "citation": "San Diego Municipal Code §§ 98.0801-98.0806 (Ord. O-20986 N.S.)",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0058": {
+ "r-0057": {
   "key": "c:33f0e1db8d31",
   "jurisdiction": "San Francisco, CA",
   "category": "algorithmic_rent_setting",
@@ -1826,7 +1814,7 @@
   "citation": "S.F. Admin. Code § 37.10C",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0059": {
+ "r-0058": {
   "key": "c:5b957177c6fb",
   "jurisdiction": "San Francisco, CA",
   "category": "just_cause_eviction",
@@ -1841,7 +1829,7 @@
   "citation": "S.F. Admin. Code § 37.9(a)",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0060": {
+ "r-0059": {
   "key": "c:fbad786c41ab",
   "jurisdiction": "San Francisco, CA",
   "category": "rent_increase_limits",
@@ -1864,7 +1852,7 @@
   "citation": "S.F. Admin. Code ch. 37 (Rent Ordinance), § 37.3",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0061": {
+ "r-0060": {
   "key": "c:1f880154c097",
   "jurisdiction": "San Francisco, CA",
   "category": "screening_restrictions",
@@ -1887,7 +1875,7 @@
   "citation": "S.F. Police Code art. 49 (Fair Chance Ordinance)",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0062": {
+ "r-0061": {
   "key": "c:818a8f788976",
   "jurisdiction": "San Francisco, CA",
   "category": "security_deposits",
@@ -1899,7 +1887,7 @@
   "citation": "S.F. Admin. Code § 49.2",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0063": {
+ "r-0062": {
   "key": "c:d5f5365a2029",
   "jurisdiction": "Santa Ana, CA",
   "category": "algorithmic_rent_setting",
@@ -1922,7 +1910,7 @@
   "citation": "Santa Ana Ordinance No. NS-3090",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0064": {
+ "r-0063": {
   "key": "c:cc0ff976e84d",
   "jurisdiction": "Santa Ana, CA",
   "category": "just_cause_eviction",
@@ -1983,7 +1971,7 @@
   "citation": "Santa Ana Municipal Code, Just Cause Eviction Ordinance (section number not stated in source)",
   "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0065": {
+ "r-0064": {
   "key": "c:4d699ee67187",
   "jurisdiction": "Santa Ana, CA",
   "category": "rent_increase_limits",

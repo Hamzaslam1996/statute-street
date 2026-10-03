@@ -662,9 +662,9 @@
       "coverage_conditions": null,
       "exemptions": null,
       "overrides": [
-        "r-0039"
+        "r-0038"
       ],
-      "interaction": "Derived from state rule r-0039.",
+      "interaction": "Derived from state rule r-0038.",
       "effective_date": null,
       "citation": "M.G.L. c. 40P, § 4",
       "source_doc_id": "D048",

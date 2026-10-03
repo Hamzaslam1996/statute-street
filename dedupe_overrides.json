@@ -24,6 +24,14 @@
       "into_citation_contains": "NS-3090",
       "reviewer": "Hamza (commercial/IP lawyer)",
       "reason": "rulings_07 #3: the March 2026 Rent Stabilization newsletter describes the same ordinance as Ord. NS-3090 (adopted 2026-03-03, effective 2026-04-02 under the 30-day rule). Keep the NS-3090 record."
+    },
+    {
+      "jurisdiction": "MA",
+      "category": "application_screening_fees",
+      "from_doc": "M_MA-FEE-02_c112_87DDD-half_masslaw",
+      "into_citation_contains": "87DDD½",
+      "reviewer": "Hamza (commercial/IP lawyer)",
+      "reason": "rulings_08 #1: both records cite M.G.L. c. 112 § 87DDD½ (written '87DDD-1/2' in the Trial Court Law Libraries copy) and quote the same sentence. Keep the record extracted from the official malegislature.gov text (D057, supplied corpus); the mass.gov library copy becomes a supporting document."
     }
   ]
 }

@@ -105,7 +105,7 @@
   "category": "algorithmic_rent_setting",
   "our_answer": [
    {
-    "team_rule_id": "r-0045",
+    "team_rule_id": "r-0044",
     "effective_date": "2027-07-01",
     "key_value": "Ban on algorithmic rent-setting coordination (use of coordinators / algorithmic devices performing a coordinating function)",
     "conflict_flag": true,

@@ -477,7 +477,7 @@
       "negative_finding": false,
       "record_role": "headline",
       "adoption_date": null,
-      "notes": "Section was repealed and re-added by SB 567 (Stats. 2023, ch. 290), effective 2024-01-01 and operative 2024-04-01 by its own terms (subd. (n)). The section is repealed as of 2030-01-01 (subd. (o)). The document states the operative date of this version only. The original 2020 enactment date is not stated in this text, and the March 15, 2019 date is a look-back application date, not an effective date. The reviewer may want to confirm whether the original-requirement effective date (2020-01-01) should be used instead. The cost-of-living index is the applicable metro CPI-U, with different April comparisons before and after August 1.",
+      "notes": "Section was repealed and re-added by SB 567 (Stats. 2023, ch. 290), effective 2024-01-01 and operative 2024-04-01 by its own terms (subd. (n)). The section is repealed as of 2030-01-01 (subd. (o)). The document states the operative date of this version only. The original 2020 enactment date is not stated in this text, and the March 15, 2019 date is a look-back application date, not an effective date. The cost-of-living index is the applicable metro CPI-U, with different April comparisons before and after August 1.",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [
         "D040",
@@ -684,7 +684,7 @@
       "negative_finding": false,
       "record_role": "headline",
       "adoption_date": "2025-07-09",
-      "notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Adopted 7-9-2025 by Ord. No. B-781. Enforcement is by the Division of Housing or an aggrieved private citizen in Municipal Court. Folded by reviewer ruling: rulings_07 #1: D095 is the May 2025 press release announcing the proposed ordinance that was then enacted as Hoboken Code ch. 158 (Ord. B-781); it is no longer pending. D095 becomes legislative-history support for the enacted rule. No Hoboken address should show a pending algorithmic rule.",
+      "notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Adopted 7-9-2025 by Ord. No. B-781. Enforcement is by the Division of Housing or an aggrieved private citizen in Municipal Court. Also documented in D095: D095 is the May 2025 press release announcing the proposed ordinance that was then enacted as Hoboken Code ch. 158 (Ord. B-781); it is no longer pending. D095 becomes legislative-history support for the enacted rule. No Hoboken address should show a pending algorithmic rule.",
       "retrieved_at": "2026-10-04",
       "supporting_doc_ids": [
         "D034",
@@ -776,7 +776,7 @@
       "negative_finding": false,
       "record_role": "headline",
       "adoption_date": "2025-05-21",
-      "notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Adopted on second and final reading May 21 2025; mayor approved May 22 2025. Ordinance text is internally inconsistent in section naming (Chapter 218 titled 'Multiple Dwellings' vs 'Fees and Charges'); penalties not extracted. Folded by reviewer ruling: rulings_07 #2: the Hudson County View article (secondary) reports the same ordinance as the official adopted copy of Ord. 25-057 (Jersey City Code § 218-12). Keep the official record's citation, quote and date.",
+      "notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Adopted on second and final reading May 21 2025; mayor approved May 22 2025. Ordinance text is internally inconsistent in section naming (Chapter 218 titled 'Multiple Dwellings' vs 'Fees and Charges'); penalties not extracted. Also documented in D035: the Hudson County View article (secondary) reports the same ordinance as the official adopted copy of Ord. 25-057 (Jersey City Code § 218-12). Keep the official record's citation, quote and date.",
       "retrieved_at": "2026-10-04",
       "supporting_doc_ids": [
         "D002",
@@ -1024,38 +1024,10 @@
       "level": "state",
       "category": "application_screening_fees",
       "status": "in_force",
-      "title": "Rental broker fees payable only by the party who engaged the broker",
-      "requirement": "Only a licensed broker or salesperson may find dwelling accommodations for prospective tenants for a fee. Any fee must be paid only by the lessor or tenant who originally engaged and contracted with the broker or salesperson.",
-      "key_value": "Broker fee payable only by the party (landlord or tenant) who hired the broker",
-      "coverage_conditions": "Persons engaged in finding rental dwelling accommodations for prospective tenants for a fee; the broker or salesperson must be licensed under c.112 § 87PP.",
-      "exemptions": null,
-      "overrides": [],
-      "interaction": null,
-      "effective_date": "2025-08-01",
-      "citation": "M.G.L. c. 112, § 87DDD-1/2",
-      "source_doc_id": "M_MA-FEE-02_c112_87DDD-half_masslaw",
-      "source_url": "https://www.mass.gov/info-details/mass-general-laws-c112-ss-87ddd-12 (Trial Court Law Libraries unofficial text)",
-      "quoted_span": "Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson.",
-      "confidence": 0.6,
-      "conflict_flag": false,
-      "conflict_note": null,
-      "negative_finding": false,
-      "record_role": "headline",
-      "adoption_date": null,
-      "notes": "Effective date taken from the page's update note: amended by St. 2025, c. 9, § 43, effective August 1, 2025. A broker-fee rule is not strictly an application or screening fee; it is filed here as the nearest category (fees charged to rental applicants). The document is an unofficial text of the statute.",
-      "retrieved_at": "2026-10-04",
-      "supporting_doc_ids": []
-    },
-    {
-      "team_rule_id": "r-0036",
-      "jurisdiction": "MA",
-      "level": "state",
-      "category": "application_screening_fees",
-      "status": "in_force",
       "title": "Broker fee payable only by the party who engaged the broker",
       "requirement": "A licensed broker or salesperson may contract with either the prospective tenant or the landlord, not both, and any fee must be paid only by the party who originally engaged the broker. A landlord's broker therefore cannot charge the tenant a fee.",
       "key_value": "Broker fee payable only by the party (lessor or tenant) who engaged the broker",
-      "coverage_conditions": "Licensed brokers and salespersons finding rental residential real property; persons finding dwellings for prospective tenants for a fee must be licensed.",
+      "coverage_conditions": "Licensed brokers and salespersons finding rental residential real property; persons finding dwellings for prospective tenants for a fee must be licensed. | [M_MA-FEE-02_c112_87DDD-half_masslaw] Persons engaged in finding rental dwelling accommodations for prospective tenants for a fee; the broker or salesperson must be licensed under c.112 § 87PP.",
       "exemptions": null,
       "overrides": [],
       "interaction": null,
@@ -1070,12 +1042,14 @@
       "negative_finding": false,
       "record_role": "headline",
       "adoption_date": null,
-      "notes": "Broker (finder's) fee rule, not strictly a screening fee. Closest fit among the allowed categories is fees charged to rental applicants. Effective date from the header 'Text of section as amended by 2025, 9, Sec. 43 effective August 1, 2025'. The earlier text only required a broker license.",
+      "notes": "Broker (finder's) fee rule, not strictly a screening fee. Closest fit among the allowed categories is fees charged to rental applicants. Effective date from the header 'Text of section as amended by 2025, 9, Sec. 43 effective August 1, 2025'. The earlier text only required a broker license. Also documented in M_MA-FEE-02_c112_87DDD-half_masslaw: both records cite M.G.L. c. 112 § 87DDD½ (written '87DDD-1/2' in the Trial Court Law Libraries copy) and quote the same sentence. Keep the record extracted from the official malegislature.gov text (D057, supplied corpus); the mass.gov library copy becomes a supporting document.",
       "retrieved_at": "2026-10-01",
-      "supporting_doc_ids": []
+      "supporting_doc_ids": [
+        "M_MA-FEE-02_c112_87DDD-half_masslaw"
+      ]
     },
     {
-      "team_rule_id": "r-0037",
+      "team_rule_id": "r-0036",
       "jurisdiction": "MA",
       "level": "state",
       "category": "application_screening_fees",
@@ -1103,7 +1077,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0038",
+      "team_rule_id": "r-0037",
       "jurisdiction": "MA",
       "level": "state",
       "category": "rent_increase_limits",
@@ -1131,7 +1105,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0039",
+      "team_rule_id": "r-0038",
       "jurisdiction": "MA",
       "level": "state",
       "category": "rent_increase_limits",
@@ -1159,7 +1133,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0040",
+      "team_rule_id": "r-0039",
       "jurisdiction": "MA",
       "level": "state",
       "category": "rent_increase_limits",
@@ -1187,7 +1161,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0041",
+      "team_rule_id": "r-0040",
       "jurisdiction": "MA",
       "level": "state",
       "category": "rent_increase_limits",
@@ -1215,7 +1189,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0042",
+      "team_rule_id": "r-0041",
       "jurisdiction": "MA",
       "level": "state",
       "category": "screening_restrictions",
@@ -1243,7 +1217,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0043",
+      "team_rule_id": "r-0042",
       "jurisdiction": "MA",
       "level": "state",
       "category": "screening_restrictions",
@@ -1274,7 +1248,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0044",
+      "team_rule_id": "r-0043",
       "jurisdiction": "MA",
       "level": "state",
       "category": "security_deposits",
@@ -1302,7 +1276,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0045",
+      "team_rule_id": "r-0044",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "algorithmic_rent_setting",
@@ -1332,7 +1306,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0046",
+      "team_rule_id": "r-0045",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "application_screening_fees",
@@ -1360,7 +1334,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0047",
+      "team_rule_id": "r-0046",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "just_cause_eviction",
@@ -1391,7 +1365,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0048",
+      "team_rule_id": "r-0047",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "just_cause_eviction",
@@ -1419,7 +1393,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0049",
+      "team_rule_id": "r-0048",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "rent_increase_limits",
@@ -1447,7 +1421,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0050",
+      "team_rule_id": "r-0049",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "screening_restrictions",
@@ -1478,7 +1452,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0051",
+      "team_rule_id": "r-0050",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "screening_restrictions",
@@ -1506,7 +1480,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0052",
+      "team_rule_id": "r-0051",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "security_deposits",
@@ -1537,7 +1511,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0053",
+      "team_rule_id": "r-0052",
       "jurisdiction": "Newark, NJ",
       "level": "city",
       "category": "rent_increase_limits",
@@ -1565,7 +1539,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0054",
+      "team_rule_id": "r-0053",
       "jurisdiction": "Newark, NJ",
       "level": "city",
       "category": "screening_restrictions",
@@ -1593,7 +1567,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0055",
+      "team_rule_id": "r-0054",
       "jurisdiction": "San Diego, CA",
       "level": "city",
       "category": "algorithmic_rent_setting",
@@ -1624,7 +1598,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0056",
+      "team_rule_id": "r-0055",
       "jurisdiction": "San Diego, CA",
       "level": "city",
       "category": "just_cause_eviction",
@@ -1654,7 +1628,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0057",
+      "team_rule_id": "r-0056",
       "jurisdiction": "San Diego, CA",
       "level": "city",
       "category": "screening_restrictions",
@@ -1682,7 +1656,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0058",
+      "team_rule_id": "r-0057",
       "jurisdiction": "San Francisco, CA",
       "level": "city",
       "category": "algorithmic_rent_setting",
@@ -1712,7 +1686,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0059",
+      "team_rule_id": "r-0058",
       "jurisdiction": "San Francisco, CA",
       "level": "city",
       "category": "just_cause_eviction",
@@ -1743,7 +1717,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0060",
+      "team_rule_id": "r-0059",
       "jurisdiction": "San Francisco, CA",
       "level": "city",
       "category": "rent_increase_limits",
@@ -1773,7 +1747,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0061",
+      "team_rule_id": "r-0060",
       "jurisdiction": "San Francisco, CA",
       "level": "city",
       "category": "screening_restrictions",
@@ -1801,7 +1775,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0062",
+      "team_rule_id": "r-0061",
       "jurisdiction": "San Francisco, CA",
       "level": "city",
       "category": "security_deposits",
@@ -1829,7 +1803,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0063",
+      "team_rule_id": "r-0062",
       "jurisdiction": "Santa Ana, CA",
       "level": "city",
       "category": "algorithmic_rent_setting",
@@ -1852,7 +1826,7 @@
       "negative_finding": false,
       "record_role": "headline",
       "adoption_date": null,
-      "notes": "Secondary source. Effective date from the table ('effective April 2, 2026'). Municipal code section not given in the document. Proposal (Santa Ana Municipal Code, algorithmic rent-setting software ordinance (ordinance number and section not stated in source), D087) adopted as Santa Ana Ordinance No. NS-3090. Folded by reviewer ruling: rulings_07 #3: the March 2026 Rent Stabilization newsletter describes the same ordinance as Ord. NS-3090 (adopted 2026-03-03, effective 2026-04-02 under the 30-day rule). Keep the NS-3090 record.",
+      "notes": "Secondary source. Effective date from the table ('effective April 2, 2026'). Municipal code section not given in the document. Proposal (Santa Ana Municipal Code, algorithmic rent-setting software ordinance (ordinance number and section not stated in source), D087) adopted as Santa Ana Ordinance No. NS-3090. Also documented in D089: the March 2026 Rent Stabilization newsletter describes the same ordinance as Ord. NS-3090 (adopted 2026-03-03, effective 2026-04-02 under the 30-day rule). Keep the NS-3090 record.",
       "retrieved_at": "2026-10-03",
       "supporting_doc_ids": [
         "D086",
@@ -1862,7 +1836,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0064",
+      "team_rule_id": "r-0063",
       "jurisdiction": "Santa Ana, CA",
       "level": "city",
       "category": "just_cause_eviction",
@@ -1892,7 +1866,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0065",
+      "team_rule_id": "r-0064",
       "jurisdiction": "Santa Ana, CA",
       "level": "city",
       "category": "rent_increase_limits",
@@ -1933,9 +1907,9 @@
       "coverage_conditions": null,
       "exemptions": null,
       "overrides": [
-        "r-0039"
+        "r-0038"
       ],
-      "interaction": "Derived from state rule r-0039.",
+      "interaction": "Derived from state rule r-0038.",
       "effective_date": null,
       "citation": "M.G.L. c. 40P, § 4",
       "source_doc_id": "D048",
