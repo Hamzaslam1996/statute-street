@@ -143,6 +143,19 @@ def main() -> int:
     for r in rows[:10]:
         lines.append(f"| {r['address']} ({r['city']}) | {r['gold_id']} → {r['rule']} | {r['gold']} | {r['ours']} | "
                      f"{r['gold_reason'][:110].replace('|', '/')} | {r['our_reason'][:110].replace('|', '/')} |")
+    # Every "gold unknown -> ours applies" row in full: these are the risky new assertions.
+    risky = [r for r in rows if r["gold"] == "unknown" and r["ours"] == "applies"]
+    lines += ["", f"## All gold unknown → ours applies ({len(risky)})", "",
+              "| Address | Gold id | Gold reason | Our explanation |", "|---|---|---|---|"]
+    lines += [f"| {r['address']} ({r['city']}) | {r['gold_id']} → {r['rule']} | {r['gold_reason'][:120].replace('|', '/')} | "
+              f"{r['our_reason'][:140].replace('|', '/')} |" for r in risky]
+    # Whole-sample statistics from the lookups file itself.
+    all_rows = [r for v in lookups.values() for r in v]
+    n_unk = sum(1 for r in all_rows if r["result"] == "unknown")
+    n_ass = sum(1 for r in all_rows if r.get("assumptions"))
+    lines += ["", "## Whole sample", "",
+              f"- addresses: {len(lookups)}; rows: {len(all_rows)}; unknown rate: {n_unk}/{len(all_rows)} = {pct(n_unk, len(all_rows))}",
+              f"- rows relying on a presumption (`assumptions` non-empty): {n_ass}"]
     lines += ["", "## Gold id → our rule mapping notes", ""] + [f"- {n}" for n in map_notes]
     out = Path(args.out) if args.out else OUT / "lookup_eval.md"
     out.write_text("\n".join(lines) + "\n", encoding="utf-8")

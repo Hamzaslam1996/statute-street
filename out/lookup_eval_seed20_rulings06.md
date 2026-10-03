@@ -1,47 +1,41 @@
-# Module B lookup evaluation (seed60, after rulings_06)
+# Module B lookup evaluation (seed20, after rulings_06)
 
-Gold: `gold/addresses/seed60.json` (60 addresses, 569 expectations, verifier AI-draft)  
+Gold: `gold/addresses/seed20.json` (20 addresses, 190 expectations, verifier AI-draft)  
 Ours: `/Users/hamzaaslamkhan/Downloads/03 RealPage - Codebase and Data/navigator/out/lookups.json`
 
 | Metric | Value |
 |---|---|
-| Exact result agreement | 565/569 = 99.3% |
-| Weighted score (missed 'applies' count double) | 879/883 = 99.5% |
+| Exact result agreement | 189/190 = 99.5% |
+| Weighted score (missed 'applies' count double) | 291/292 = 99.7% |
 | Missed 'applies' (gold applies, ours not) | 0 |
 | Expectations we did not report at all | 0 |
-| Our unknown rate (these addresses) | 194/658 = 29.5% |
+| Our unknown rate (these addresses) | 69/218 = 31.7% |
 
 ## Confusion (gold → ours)
 
 | gold \ ours | applies | superseded | not_yet_effective | pending | unknown | not_reported |
 |---|---|---|---|---|---|---|
-| applies | 314 | 0 | 0 | 0 | 0 | 0 |
-| superseded | 0 | 31 | 0 | 0 | 0 | 0 |
-| not_yet_effective | 0 | 0 | 18 | 0 | 0 | 0 |
-| pending | 0 | 0 | 0 | 30 | 0 | 0 |
-| unknown | 4 | 0 | 0 | 0 | 172 | 0 |
+| applies | 102 | 0 | 0 | 0 | 0 | 0 |
+| superseded | 0 | 12 | 0 | 0 | 0 | 0 |
+| not_yet_effective | 0 | 0 | 6 | 0 | 0 | 0 |
+| pending | 0 | 0 | 0 | 8 | 0 | 0 |
+| unknown | 1 | 0 | 0 | 0 | 61 | 0 |
 
 ## Disagreement types
 
-- gold unknown → ours applies: 4
+- gold unknown → ours applies: 1
 
 ## Top disagreements (gold reason vs ours)
 
 | Address | Gold id | Gold | Ours | Gold reason | Our explanation |
 |---|---|---|---|---|---|
 | A0065 (Boston) | MA-SCRN-01 → r-0044 | unknown | applies | owner-occupied two-family exemption cannot be excluded | covers all residential rentals in MA |
-| A0093 (Boston) | MA-SCRN-01 → r-0044 | unknown | applies | owner-occupied two-family exemption cannot be excluded | covers all residential rentals in MA |
-| A0123 (Boston) | MA-SCRN-01 → r-0044 | unknown | applies | owner-occupied two-family exemption cannot be excluded | covers all residential rentals in MA |
-| A0083 (Boston) | MA-SCRN-01 → r-0044 | unknown | applies | owner-occupied two-family exemption cannot be excluded | covers all residential rentals in MA |
 
-## All gold unknown → ours applies (4)
+## All gold unknown → ours applies (1)
 
 | Address | Gold id | Gold reason | Our explanation |
 |---|---|---|---|
 | A0065 (Boston) | MA-SCRN-01 → r-0044 | owner-occupied two-family exemption cannot be excluded | covers all residential rentals in MA |
-| A0093 (Boston) | MA-SCRN-01 → r-0044 | owner-occupied two-family exemption cannot be excluded | covers all residential rentals in MA |
-| A0123 (Boston) | MA-SCRN-01 → r-0044 | owner-occupied two-family exemption cannot be excluded | covers all residential rentals in MA |
-| A0083 (Boston) | MA-SCRN-01 → r-0044 | owner-occupied two-family exemption cannot be excluded | covers all residential rentals in MA |
 
 ## Whole sample
 

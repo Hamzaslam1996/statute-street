@@ -19,6 +19,44 @@
       "reviewer": "Hamza (commercial/IP lawyer)",
       "ruling": "instructions/rulings_05.md #2: tenancy length is a tenant-level fact that decides when an increase may be taken, not whether the building is covered. Drop the tenancy_months test; keep COO 1980 cutoff, condo/single-family, dormitory/co-op and golden-duplex tests.",
       "drop_tests_where": {"field": "tenancy_months"}
+    },
+    {
+      "jurisdiction": "Los Angeles, CA",
+      "category": "just_cause_eviction",
+      "citation_contains": "151.09",
+      "reviewer": "Hamza (commercial/IP lawyer)",
+      "ruling": "instructions/rulings_06.md #2.3: the RSO (incl. its eviction section § 151.09) covers units with a certificate of occupancy on or before 1 Oct 1978. year_built < 1978 -> applies; == 1978 -> unknown (cutoff year); > 1978 -> does not apply (the JCO governs instead). The merged record's own text only says 'units covered by the RSO', so the cutoff is restated here from LAMC § 151.02 (rental units first built on or before October 1, 1978).",
+      "add_tests": [
+        {"field": "coo_date", "op": "<=", "value": "1978-10-01", "source_text": "LAMC § 151.02: rental units ... first built on or before October 1, 1978 (RSO coverage)", "kind": "coverage", "on_fail": "exclude", "note": "year built is a proxy for the certificate date; 1978 itself -> unknown", "defeated_if": null}
+      ]
+    },
+    {
+      "jurisdiction": "Hoboken, NJ",
+      "category": "rent_increase_limits",
+      "citation_contains": "155",
+      "reviewer": "Hamza (commercial/IP lawyer)",
+      "ruling": "instructions/rulings_06.md #4: Hoboken Code § 155-5 cap (lesser of 5% or CPI, once per 12 months), applicability § 155-2. Built on or before 1987-06-25 -> applies; built after and 30 full years before the query date -> applies; otherwise post-1987 -> unknown (exemption lasts the shorter of the mortgage term or 30 years; mortgage term not in data); year missing -> unknown. No unit-count test. Hotels/motels and institutional/government housing are niche exemptions.",
+      "set": {
+        "tests": [
+          {
+            "field": "any_of",
+            "op": "any",
+            "value": null,
+            "tests": [
+              {"field": "coo_date", "op": "<=", "value": "1987-06-25", "source_text": "multiple dwellings ... constructed after June 25, 1987", "kind": "coverage", "on_fail": "unknown", "note": "built on or before the N.J.S.A. 2A:42-84.1 date -> covered", "defeated_if": null},
+              {"field": "coo_age_years", "op": ">=", "value": 30, "source_text": "for a period ... or for 30 years following completion of construction, whichever is less", "kind": "coverage", "on_fail": "unknown", "note": "post-1987 building whose exemption has expired", "defeated_if": null}
+            ],
+            "source_text": "§ 155-2(H): multiple dwellings constructed after June 25, 1987 exempt for the lesser of the initial mortgage amortisation period or 30 years",
+            "kind": "coverage",
+            "on_fail": "unknown",
+            "note": "the exemption's actual length (mortgage term, statutory filings) is not in the data",
+            "defeated_if": null
+          },
+          {"field": "building_type", "op": "not_in", "value": ["hotel", "motel", "commercial", "industrial", "institutional", "government"], "source_text": "§ 155-2(A)-(F): motels/hotels, industrial, commercial units, institutional student housing, government-owned housing", "kind": "niche_exemption", "on_fail": "exclude", "note": null, "defeated_if": null}
+        ],
+        "applies_to_all_residential": false,
+        "coverage_incomplete": false
+      }
     }
   ]
 }

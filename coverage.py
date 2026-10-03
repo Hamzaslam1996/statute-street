@@ -65,6 +65,15 @@ SCHEMA = {
                               "description": "number, ISO date string, category string, or list of strings"},
                     "source_text": {"type": "string", "description": "the coverage/exemption words this test comes from"},
                     "note": {"type": ["string", "null"]},
+                    "kind": {
+                        "type": "string", "enum": ["coverage", "niche_exemption", "plausible_exemption", "timing"],
+                        "description": "coverage: the law reaches the property only if this holds (missing data -> unknown). "
+                                       "niche_exemption: a narrow ownership/funding/use carve-out the claimant must prove "
+                                       "(missing data -> applies, with an assumption). plausible_exemption: an exception the "
+                                       "data cannot rule out and that is common for the property type (missing data -> unknown; "
+                                       "defeated_if can settle it). timing: when a tenant's protection starts, not whether the "
+                                       "property is covered (never unknown; recorded as an assumption).",
+                    },
                     "on_fail": {
                         "type": "string", "enum": ["exclude", "unknown"],
                         "description": "What a FALSE result means. 'exclude' (normal): the address is outside the rule. "
@@ -83,7 +92,7 @@ SCHEMA = {
                         "additionalProperties": False,
                     },
                 },
-                "required": ["field", "op", "value", "source_text", "note", "on_fail", "defeated_if"],
+                "required": ["field", "op", "value", "source_text", "note", "kind", "on_fail", "defeated_if"],
                 "additionalProperties": False,
             },
         },
@@ -104,6 +113,13 @@ SYSTEM = f"""You convert the coverage conditions and exemptions of a rental-hous
 The engine knows these facts about an address: year_built (assessor's year, may be missing), units (count, may be missing), building_type from the assessor's use code (apartments, condo, single_family, duplex, mixed), state and city. It does NOT know the owner's identity, the tenancy length, subsidy status, or the certificate-of-occupancy date (year_built is used as a proxy with the cutoff year treated as unknown).
 
 Write tests such that the rule APPLIES to an address only when ALL tests are true. Exemptions become tests that exclude the exempt case.
+
+Tag every test with its kind (reviewer ruling, instructions/rulings_06.md):
+- coverage: the law reaches the property only if the condition holds (a funding or programme requirement such as "applies to DND/IDP-funded providers"; unit-count thresholds; certificate-of-occupancy or construction cutoffs). Missing data -> unknown.
+- niche_exemption: a narrow carve-out for an ownership, funding or use class that whoever claims it must prove; exemptions to remedial housing statutes are read narrowly. Missing data -> the rule applies, with the exemption recorded as an assumption. Classes: non-profit or resident-controlled cooperatives; public housing, government-owned units, units under a government contract, project-based Section 8; deed-restricted or subsidised affordable housing (including software used to set rents under affordable programmes); transient or vacation occupancy (hotels, motels, tenancies of 100 days or less for vacation purposes); hospitals, dormitories, religious and care facilities; an owner who shares kitchen or bath with the tenant when the building has 3 or more units.
+- plausible_exemption: an exception the data cannot rule out and that is common for the property type. Missing data -> unknown, unless defeated_if settles it from the use code. Classes: owner-occupied two-family or owner-occupied 1-4 unit exemptions (defeated_if MUST be a unit count, e.g. units > 2; a building_type of "apartments" alone does not rule out a small owner-occupied building); AB 1482-style single-family / condo owned by a natural person (defeated_if building_type in [apartments, mixed, duplex]); new-construction windows where the year built may fall inside.
+- timing: when a tenant's protection starts ("after 6 months of tenancy", "after the first 30 days"), not whether the property is covered. Never makes the rule unknown; recorded as an assumption.
+A cross-reference to a definitions section ("as defined in section 98.0720") is NOT a coverage limitation and does not make coverage incomplete.
 
 How to express common conditions
 - A cutoff given with a full month/day date ("first built on or before October 1, 1978", "certificate of occupancy after June 13, 1979", "constructed after February 1, 1995") is a certificate-of-occupancy cutoff -> field coo_date, op <= (rule covers buildings up to that date), value the ISO date. A year-only statement ("built before 1995") -> field year_built.
@@ -203,6 +219,11 @@ def apply_overrides(cache: dict, rules: list[dict]) -> int:
                 continue
             if "set" in ov:
                 entry.update(ov["set"])
+            if "add_tests" in ov:
+                have = {(t["field"], t["op"], str(t["value"])) for t in entry.get("tests", [])}
+                entry["tests"] = entry.get("tests", []) + [t for t in ov["add_tests"]
+                                                           if (t["field"], t["op"], str(t["value"])) not in have]
+                entry["applies_to_all_residential"] = False
             if "drop_tests_where" in ov:
                 cond = ov["drop_tests_where"]
                 entry["tests"] = [t for t in entry.get("tests", []) if not all(t.get(k) == v for k, v in cond.items())]

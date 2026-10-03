@@ -75,6 +75,14 @@ Conditions about the tenancy itself (protection starts after six months of
 occupancy) are not about the property and never make a rule unknown; they are
 recorded as assumptions.
 
+Precedence is decided before coverage: a state rule that yields to stricter
+local law (Civ. Code §§ 1946.2(i), 1947.12(d)(3)) is **superseded** wherever a
+local rule in the same category applies, including where two local rules split
+a cutoff between them (LA RSO on/before 1 Oct 1978, LA JCO after it) and where
+the local rule turns on the very same unresolved condition (San Diego's TPO and
+the state just-cause rule share the 15-year new-construction test). It falls
+back to its own tests only when the local rule is genuinely unknown.
+
 `--use-derived-units` treats unit counts parsed from New Jersey MOD-IV building
 codes ("3S-B-A-13U-H" → 13) as real; the submission does not, because the
 organisers state that those rows have no unit counts (see `out/derived_units.csv`).
@@ -84,4 +92,7 @@ organisers state that those rows have no unit counts (see `out/derived_units.csv
 - The independent gold key v0.4 (`gold/`, `sources/official/`, D088–D095) was
   written by a separate session and was swept into commit `84c4030` together with
   Module B code; v0.4.1 is commit `772335e` on its own. History was not rewritten.
-- `corpus_supplementary/text/D094.txt` was not delivered and is not in the corpus.
+- `corpus_supplementary/text/D094.txt` (official malegislature.gov text of M.G.L. c. 6 § 172,
+  retrieved 2026-10-03) arrived after the first v0.4 commit; it is the primary source for the
+  MA CORI screening rule, with the FindLaw copy (`sources/manual/MA-SCRN-02_MGL_c6_s172_findlaw.txt`)
+  folded under it as a supporting document.

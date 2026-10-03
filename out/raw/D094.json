@@ -1,0 +1,44 @@
+{
+  "doc_id": "D094",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T23:05:56+00:00",
+  "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleII/Chapter6/Section172",
+  "retrieved": "2026-10-03 22:58 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Official text of Massachusetts General Laws c. 6, § 172, governing access to and use of criminal offender record information (CORI), including by landlords evaluating rental applicants (Massachusetts statewide).",
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "CORI access limits for evaluating rental housing applicants",
+      "requirement": "A landlord may obtain CORI to evaluate rental applicants only if the applicant has signed an acknowledgement form, and the information is limited to felony convictions (10 years), misdemeanor convictions (5 years) and pending charges. A landlord holding an applicant's criminal history must give the applicant a copy before questioning them about it and if an adverse housing decision is made on that basis.",
+      "key_value": "Lookback limits: felonies 10 years, misdemeanors 5 years from disposition (incl. end of incarceration/custody), plus pending charges",
+      "coverage_conditions": "Requestors evaluating applicants for rental or lease of housing under § 172(a)(3)(ii); requestor must certify under penalty of perjury and keep the subject's signed acknowledgement form for 1 year.",
+      "exemptions": "Under § 172(b), convictions for murder, voluntary and involuntary manslaughter, and sex offenses punishable by state prison remain available permanently unless sealed. Prior convictions remain available as long as the last conviction is available. Housing authorities under c. 121B may obtain conviction and pending CORI for their own applications (§ 172(a)(7)).",
+      "interaction": null,
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "M.G.L. c. 6, § 172(a)(3), (c)",
+      "quoted_span": "Criminal offender record information made available under this section shall be limited to the following: (i) felony convictions or findings of not guilty by reason of insanity for 10 years following the disposition thereof, including termination of any period of incarceration or custody, (ii) misdemeanor convictions for 5 years following the disposition thereof, including termination of any period of incarceration or custody, and (iii) pending criminal charges, which shall include cases that have been continued without a finding until such time as the case is dismissed pursuant to section 18 of chapter 278",
+      "confidence": 0.8,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "record_role": "headline",
+      "out_of_scope": false,
+      "out_of_scope_reason": null,
+      "extraction_notes": "Official code text with no stated effective date, so effective_date is null; in force as enacted statute. The duty to provide the criminal history to the applicant before questioning and before an adverse decision, and the ban on requesting CORI copies except as authorized (§ 172(d)), are folded into the requirement. The lookback limits apply to CORI obtained from the state database."
+    }
+  ],
+  "usage": {
+    "input_tokens": 14056,
+    "output_tokens": 1757,
+    "cost_usd": 0.0457,
+    "seconds": 13.3
+  },
+  "errors": []
+}

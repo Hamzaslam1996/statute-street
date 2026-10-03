@@ -69,8 +69,13 @@ def building_type(use_code: str, use_description: str) -> str | None:
     """
     d = (use_description or "").lower()
     c = (use_code or "").upper()
+    # New Jersey property class 4C ("apartments") is NOT a unit-count statement: the MOD-IV
+    # building codes under it include 2-unit buildings ("2SF2UG"), so a 4C row's building type
+    # stays unknown unless the description says so in words (rulings_06 #1, class C).
+    if c.startswith("4C") and "apartment" not in d:
+        return None
     if ("apartment" in d or "apt" in d or "five or more" in d or "5+ units" in d or "multi" in d
-            or "flat" in d or "subsd housing" in d or "class 4c" in d or c.startswith("4C") or c.startswith("A/")
+            or "flat" in d or "subsd housing" in d or c.startswith("A/")
             or re.search(r"\d\s*(?:to\s*\d+\s*)?units?", d) or "residential income" in d or "dwelling units" in d):
         return "apartments"
     if "condo" in d:
@@ -267,6 +272,17 @@ def run_test(test: dict, facts: dict, as_of: date) -> tuple[bool | None, str]:
         return compare(units, op, value), f"{units} units"
 
     if field == "building_type":
+        vals = [str(v).lower() for v in (value if isinstance(value, list) else [value])]
+        # A "one- or two-family dwelling" exemption written as a building-type test is really a
+        # unit-count exemption: only unit evidence (count or stated floor) can beat it, not the
+        # label "apartments" (rulings_06 #1, class C).
+        small = {"single_family": 1, "one_family": 1, "duplex": 2, "two_family": 2, "triplex": 3, "fourplex": 4}
+        if test_kind(test) == "plausible_exemption" and op in ("not_in", "!=") and vals and all(v in small for v in vals):
+            threshold = max(small[v] for v in vals)
+            n = units if units is not None else (facts.get("units_min") if not NO_UNITS_FLOOR else None)
+            if n is not None and n > threshold:
+                return True, f"{'at least ' if units is None else ''}{n} units, so not a {'/'.join(vals)} building"
+            return None, f"a {'/'.join(vals)} exemption cannot be ruled out without a unit count"
         if btype is None:
             return None, f"building type unclear from assessor description '{facts.get('use_description')}'"
         return compare(btype, op, value), f"assessor type {btype}"
@@ -279,8 +295,11 @@ def run_test(test: dict, facts: dict, as_of: date) -> tuple[bool | None, str]:
             return "subsidized" if re.search(r"subsid|afford|deed|public|section|government|regulated", v) else \
                    "market_rate" if "market" in v else v
         vals = [canon(v) for v in value] if isinstance(value, list) else canon(value)
-        ok = compare("subsidized", op, vals)
-        return ok, f"assessor marks the building as subsidised housing ('{facts.get('use_description')}')"
+        known = {"subsidized", "market_rate"}
+        if (set(vals) <= known) if isinstance(vals, list) else (vals in known):
+            ok = compare("subsidized", op, vals)
+            return ok, f"assessor marks the building as subsidised housing ('{facts.get('use_description')}')"
+        # A specific programme (e.g. "DND-funded / IDP units") is not the same as "subsidised": unknown.
 
     # owner_type, tenancy_months, funding, other: not in the data
     d = test.get("defeated_if")
@@ -295,29 +314,79 @@ def run_test(test: dict, facts: dict, as_of: date) -> tuple[bool | None, str]:
     return None, f"{field.replace('_', ' ')} not in the data ({test.get('source_text', '')[:60]})"
 
 
-def evaluate_coverage(rule: dict, cov: dict | None, facts: dict, as_of: date) -> tuple[str, str]:
-    """-> ('applies' | 'unknown' | 'exclude', explanation)."""
+def test_kind(t: dict) -> str:
+    """The test's kind (rulings_06 #1); older cached tests without one are classified by field."""
+    k = t.get("kind")
+    if k:
+        return k
+    f = t.get("field")
+    if f == "tenancy_months":
+        return "timing"
+    if f == "funding":
+        return "niche_exemption"
+    if f == "owner_type":
+        return "plausible_exemption"
+    return "coverage"
+
+
+def run_group(t: dict, facts: dict, as_of: date) -> tuple[bool | None, str]:
+    """An 'any_of' group passes if any member passes; fails only if every member fails."""
+    results = [run_test(s, facts, as_of) for s in t.get("tests", [])]
+    for ok, why in results:
+        if ok is True:
+            return True, why
+    if results and all(ok is False for ok, _ in results):
+        return False, "; ".join(why for _, why in results)
+    return None, next((why for ok, why in results if ok is None), "no facts to test")
+
+
+def evaluate_coverage(rule: dict, cov: dict | None, facts: dict, as_of: date) -> tuple[str, str, list[str]]:
+    """
+    -> (result, explanation, assumptions). result is 'applies' | 'unknown' | 'exclude'.
+    Missing data is read by the kind of condition (rulings_06 #1): a coverage condition
+    -> unknown; a niche exemption -> applies with an assumption; a plausible exemption
+    -> unknown unless the use code defeats it; a timing condition -> applies with an assumption.
+    """
     tests = (cov or {}).get("tests") or []
-    if (cov or {}).get("coverage_incomplete"):
-        return "unknown", "Unknown: ordinance applicability text not available in corpus"
-    if not tests:
-        note = (cov or {}).get("explanation_note")
-        return "applies", f"covers all residential rentals in {rule['jurisdiction']}" + (f" ({note})" if note else "")
-    reasons_true, reasons_unknown = [], []
-    for t in tests:
-        ok, why = run_test(t, facts, as_of)
-        if ok is False:
-            if t.get("on_fail") == "unknown":
-                # The exemption depends on facts we cannot see; failing the proxy is not exclusion.
-                ok, why = None, f"{why}; whether the exemption applies depends on facts not in the data ({t.get('source_text', '')[:60]})"
-            else:
-                return "exclude", why
-        (reasons_true if ok else reasons_unknown).append(why)
-    if reasons_unknown:
-        return "unknown", "Unknown: " + reasons_unknown[0]
     note = (cov or {}).get("explanation_note")
-    text = "; ".join(reasons_true[:2]).capitalize()
-    return "applies", text + (f" ({note})" if note else "")
+    unknown_fields: list[str] = []   # which facts left the answer unknown (used by the precedence step)
+    if (cov or {}).get("coverage_incomplete"):
+        return "unknown", "Unknown: ordinance applicability text not available in corpus", [], ["coverage_text"]
+    if not tests:
+        return "applies", f"covers all residential rentals in {rule['jurisdiction']}" + (f" ({note})" if note else ""), [], []
+    reasons_true, reasons_unknown, assumptions = [], [], []
+    for t in tests:
+        kind = test_kind(t)
+        ok, why = (run_group if t.get("field") == "any_of" else run_test)(t, facts, as_of)
+        if ok is False and t.get("on_fail") == "unknown":
+            ok, why = None, f"{why}; whether the exemption applies depends on facts not in the data"
+        if ok is False and kind == "plausible_exemption":
+            # The proxy says the exemption is possible (e.g. 2 units under a 1-2 unit owner-occupied
+            # exemption); owner occupancy itself is not in the data, so the answer is unknown.
+            ok, why = None, f"{why}: the exemption cannot be ruled out ({(t.get('source_text') or '')[:60]})"
+        if ok is False:
+            return "exclude", why, [], []
+        if ok is None:
+            src = (t.get("source_text") or "").strip()[:80]
+            if kind == "timing":
+                assumptions.append(f"protection begins per the timing condition: {src}")
+                continue
+            if kind == "niche_exemption":
+                assumptions.append(f"not within the exemption for {src}")
+                continue
+            reasons_unknown.append(why)
+            # signature of the unresolved test, so the precedence step can tell "the same
+            # condition" (both 15-year windows) from "a different cutoff on the same fact"
+            unknown_fields.append(f"{t.get('field')} {t.get('op')} {t.get('value')}")
+            continue
+        reasons_true.append(why)
+    if reasons_unknown:
+        return "unknown", "Unknown: " + reasons_unknown[0], assumptions, unknown_fields
+    text = "; ".join(reasons_true[:2]).capitalize() if reasons_true else f"covers residential rentals in {rule['jurisdiction']}"
+    if assumptions:
+        text = "Applies unless " + "; ".join(a.replace("not within the exemption for ", "the property falls within the exemption for ")
+                                             .replace("protection begins per the timing condition: ", "") for a in assumptions) + f". {text}"
+    return "applies", text + (f" ({note})" if note else ""), assumptions, []
 
 
 # ---------------------------------------------------------------------------
@@ -328,37 +397,84 @@ def rules_for(facts: dict, rules: list[dict]) -> list[dict]:
     return [r for r in rules if r["jurisdiction"] == facts["state"] or (local and r["jurisdiction"] == local)]
 
 
+NOT_COVERED_MODE = "omit"   # or "unknown": report rows the coverage tests exclude, as unknown with the reason
+
+_OPPOSITE = {"<=": ">", "<": ">=", ">": "<=", ">=": "<"}
+
+
+def complementary(locals_: list[dict], coverage: dict) -> bool:
+    """Do two local rules carry opposite coverage tests on the same cutoff (RSO <= 1978-10-01, JCO > 1978-10-01)?"""
+    sigs = {}
+    for l in locals_:
+        for t in (coverage.get(l["team_rule_id"]) or {}).get("tests", []):
+            if t.get("field") in ("coo_date", "year_built") and test_kind(t) == "coverage":
+                sigs.setdefault((t["field"], str(t["value"])), set()).add(t["op"])
+    return any(_OPPOSITE.get(op) in ops for ops in sigs.values() for op in ops)
+
+
 def evaluate_address(facts: dict, rules: list[dict], coverage: dict, as_of: date) -> list[dict]:
-    results = []
+    results, excluded = [], []
     for rule in rules_for(facts, rules):
         status, why = status_as_of(rule, as_of)
+        assumptions, unknown_fields = [], []
         if status == "exclude":
-            continue
+            continue  # failed measures and negative findings never appear in an address answer
         if status is None:
-            status, why = evaluate_coverage(rule, coverage.get(rule["team_rule_id"]), facts, as_of)
-            if status == "exclude":
-                continue
-        results.append({"team_rule_id": rule["team_rule_id"], "result": status, "explanation": why,
-                        "conflict_flag": False, "_rule": rule})
+            status, why, assumptions, unknown_fields = evaluate_coverage(rule, coverage.get(rule["team_rule_id"]), facts, as_of)
+        row = {"team_rule_id": rule["team_rule_id"], "result": status, "explanation": why,
+               "conflict_flag": False, "assumptions": assumptions, "_rule": rule, "_unknown": set(unknown_fields)}
+        (excluded if status == "exclude" else results).append(row)
 
-    # Precedence: a yielding state rule is superseded by an applying local rule in the same category.
+    # Precedence BEFORE cutoff tests (rulings_06 #2.1): where a local rule in the same category
+    # applies, a yielding state rule is superseded whatever its own coverage test said, even
+    # if that test excluded it (e.g. CA § 1946.2 in Los Angeles, where RSO + JCO cover everything).
+    def category(r):
+        return r["_rule"]["category"]
+    for s in [r for r in results + excluded if r["_rule"]["level"] == "state"
+              and YIELDS_RE.search(r["_rule"].get("interaction") or "")]:
+        locals_ = [r for r in results if r["_rule"]["level"] == "city" and category(r) == category(s)
+                   and r["result"] in ("applies", "unknown")]
+        applying = [l for l in locals_ if l["result"] == "applies"]
+        if not applying and complementary(locals_, coverage):
+            # Two local rules split the field between them (RSO: COO on/before 1978-10-01; JCO:
+            # after it). Together they cover every residential unit, so whatever the year built
+            # - even the cutoff year itself - a local rule governs (rulings_06 #2.1).
+            applying = locals_
+        if applying:
+            loc = applying[0]
+            s["result"] = "superseded"
+            s["explanation"] = f"Stricter local rule {loc['team_rule_id']} ({loc['_rule']['title'][:50]}) governs here"
+            if len(applying) > 1 and all(l["result"] == "unknown" for l in applying):
+                s["explanation"] = (f"Local rules {', '.join(l['team_rule_id'] for l in applying)} together cover every "
+                                    f"residential unit (complementary cutoffs), so a local rule governs whatever the year built")
+            if s in excluded:
+                excluded.remove(s); results.append(s)
+        elif locals_ and s["result"] == "applies":
+            loc = locals_[0]
+            s["result"] = "unknown"
+            s["explanation"] = f"Unknown: whether local rule {loc['team_rule_id']} governs depends on facts not in the data"
+        elif locals_ and s["result"] == "unknown":
+            # Both unknown for the SAME missing fact (e.g. CA § 1946.2 and the San Diego TPO both turn
+            # on the 15-year new-construction test and the year built is missing): wherever the state
+            # rule applies, the stricter local rule applies too, so the state rule is superseded.
+            shared = [l for l in locals_ if l["_unknown"] and l["_unknown"] <= s["_unknown"]]
+            if shared:
+                loc = shared[0]
+                s["result"] = "superseded"
+                s["explanation"] = (f"Local rule {loc['team_rule_id']} ({loc['_rule']['title'][:45]}) shares the same coverage "
+                                    f"condition; wherever the state rule applies, the stricter local rule governs")
+
+    if NOT_COVERED_MODE == "unknown":
+        for r in excluded:
+            r["result"] = "unknown"
+            r["explanation"] = "Does not appear to cover this property: " + r["explanation"]
+            results.append(r)
+
     by_cat: dict[str, list[dict]] = {}
     for r in results:
-        by_cat.setdefault(r["_rule"]["category"], []).append(r)
+        by_cat.setdefault(category(r), []).append(r)
     for cat, rs in by_cat.items():
-        states = [r for r in rs if r["_rule"]["level"] == "state" and r["result"] in ("applies", "unknown")]
         locals_ = [r for r in rs if r["_rule"]["level"] == "city" and r["result"] in ("applies", "unknown")]
-        for s in states:
-            if not YIELDS_RE.search(s["_rule"].get("interaction") or ""):
-                continue
-            for loc in locals_:
-                if loc["result"] == "applies":
-                    # A stricter local rule governs, whatever the state rule's own answer was.
-                    s["result"] = "superseded"
-                    s["explanation"] = f"Stricter local rule {loc['team_rule_id']} ({loc['_rule']['title'][:50]}) governs here"
-                elif loc["result"] == "unknown" and s["result"] == "applies":
-                    s["result"] = "unknown"
-                    s["explanation"] = f"Unknown: whether local rule {loc['team_rule_id']} governs depends on facts not in the data"
         # Conflict: pre-empting state rule meets a local rule in the same category.
         for s in [r for r in rs if r["_rule"]["level"] == "state"]:
             if PREEMPT_RE.search(s["_rule"].get("interaction") or "") and locals_:
@@ -368,7 +484,7 @@ def evaluate_address(facts: dict, rules: list[dict], coverage: dict, as_of: date
                     loc["explanation"] += f"; possible conflict with state rule {s['team_rule_id']} (pre-emption language)"
                 s["explanation"] += f"; may pre-empt local rule(s) {', '.join(l['team_rule_id'] for l in locals_)}"
     for r in results:
-        r.pop("_rule")
+        r.pop("_rule"); r.pop("_unknown", None)
     return results
 
 
@@ -390,9 +506,12 @@ def main() -> int:
                     help="treat unit counts parsed from NJ MOD-IV building codes as real; writes lookups_derived.json")
     ap.add_argument("--no-units-floor", action="store_true",
                     help="ignore unit minimums stated in words in the assessor description ('5+ units')")
+    ap.add_argument("--report-not-covered", action="store_true",
+                    help="also report rules whose coverage tests exclude the property, as unknown with the reason")
     args = ap.parse_args()
-    global NO_UNITS_FLOOR
+    global NO_UNITS_FLOOR, NOT_COVERED_MODE
     NO_UNITS_FLOOR = args.no_units_floor
+    NOT_COVERED_MODE = "unknown" if args.report_not_covered else "omit"
     as_of = date.fromisoformat(args.as_of)
 
     rules, coverage, juris, addresses = load_inputs()
@@ -409,7 +528,8 @@ def main() -> int:
         for r in res:
             counts[r["result"]] = counts.get(r["result"], 0) + 1
             audit.append({"address_id": row["address_id"], "city": facts["city"], "team_rule_id": r["team_rule_id"],
-                          "result": r["result"], "conflict_flag": r["conflict_flag"], "deciding_facts": r["explanation"]})
+                          "result": r["result"], "conflict_flag": r["conflict_flag"],
+                          "assumptions": " | ".join(r.get("assumptions") or []), "deciding_facts": r["explanation"]})
     out = {"as_of": args.as_of, "lookups": lookups}
     OUT.mkdir(parents=True, exist_ok=True)
     full_run = not args.address
@@ -423,13 +543,17 @@ def main() -> int:
         json.dump(out, f, indent=1, ensure_ascii=False)
     if full_run and args.as_of == DEFAULT_QUERY_DATE and not args.use_derived_units:
         with open(AUDIT_CSV, "w", newline="", encoding="utf-8") as f:
-            w = csv.DictWriter(f, fieldnames=["address_id", "city", "team_rule_id", "result", "conflict_flag", "deciding_facts"])
+            w = csv.DictWriter(f, fieldnames=["address_id", "city", "team_rule_id", "result", "conflict_flag", "assumptions", "deciding_facts"])
             w.writeheader(); w.writerows(audit)
         with open(OUT / "derived_units.csv", "w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=["address_id", "city", "raw_code", "units_derived", "rule"])
             w.writeheader(); w.writerows(derived_rows)
+    n_rows = sum(len(v) for v in lookups.values())
+    n_assumed = sum(1 for v in lookups.values() for r in v if r.get("assumptions"))
     print(f"{len(lookups)} addresses as of {args.as_of}" + (" (derived units)" if args.use_derived_units else "")
           + f": {counts} -> {out_path}")
+    print(f"unknown rate {counts.get('unknown', 0)}/{n_rows} = {100 * counts.get('unknown', 0) / max(n_rows, 1):.1f}%; "
+          f"rows relying on a presumption (assumptions): {n_assumed}")
     if args.use_derived_units and full_run and LOOKUPS_JSON.exists():
         base = json.loads(LOOKUPS_JSON.read_text(encoding="utf-8"))["lookups"]
         changed = sum(1 for a, rs in lookups.items()

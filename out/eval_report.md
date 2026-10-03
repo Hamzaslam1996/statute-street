@@ -1,7 +1,7 @@
 # Module A evaluation
 
 Gold set: `gold/rules/dev.json` — gold (independent, dev split)  
-Our rules: 65 from 103 extracted document(s)  
+Our rules: 65 from 104 extracted document(s)  
 Gold rules in scope (source doc extracted): 39 of 40 positive, 21 of 21 negative findings
 
 | Metric | Value |
@@ -15,7 +15,7 @@ Gold rules in scope (source doc extracted): 39 of 40 positive, 21 of 21 negative
 | Effective date agrees (exact or both null) | 30/39 = 77% (14 exact dates, 16 both null, 9 differ, of which 2 same year) |
 | Citation similarity (mean) | 83/100 |
 | Key value similarity (mean) | 66/100 |
-| Quote check pass rate (first attempt) | 140/140 = 100% |
+| Quote check pass rate (first attempt) | 141/141 = 100% |
 | Records dropped for bad quotes | 0 |
 
 ## Matched rules
@@ -83,8 +83,8 @@ Gold rules in scope (source doc extracted): 39 of 40 positive, 21 of 21 negative
 - r-0037 — MA / application_screening_fees / M.G.L. c. 112, § 87DDD-1/2 (M_MA-FEE-02_c112_87DDD-half_masslaw): Rental broker fees payable only by the party who engaged the broker
 - r-0038 — MA / application_screening_fees / M.G.L. c. 112, § 87DDD½, as amended by St. 2025, c. 9, § 43 (D057): Broker fee payable only by the party who engaged the broker
 - r-0043 — MA / rent_increase_limits / Mass. Const. amend. art. 48, The Initiative, Pt. II, § 2 (SJC ruling, June 2026) (D059): 2026 statewide rent control ballot question (struck by SJC)
-- r-0044 — MA / screening_restrictions / 803 CMR 5.04(2); authority M.G.L. c. 6, §§ 167A and 172 (M_MA-SCRN-02_803_CMR_5): CORI housing screening limits (803 CMR 5.00)
-- r-0045 — MA / screening_restrictions / M.G.L. c. 151B, § 4(10) (D049): Source-of-income / housing subsidy discrimination ban (M.G.L. c. 151B, § 4(10))
+- r-0044 — MA / screening_restrictions / M.G.L. c. 151B, § 4(10) (D049): Source-of-income / housing subsidy discrimination ban (M.G.L. c. 151B, § 4(10))
+- r-0045 — MA / screening_restrictions / M.G.L. c. 6, § 172(a)(3), (c) (D094): CORI access limits for evaluating rental housing applicants
 - r-0050 — NJ / just_cause_eviction / N.J.S.A. 2A:18-61.3 (D067): Anti-Eviction Act: good cause required for lease non-renewal
 - r-0052 — NJ / screening_restrictions / N.J.S.A. 10:5-12 (NJ Law Against Discrimination) (D068): NJ Law Against Discrimination: source of lawful income / rent payment protection
 - r-0054 — NJ / security_deposits / N.J.S.A. 46:8-21.2; N.J.S.A. 46:8-19; N.J.S.A. 46:8-21.1 (D067): NJ Security Deposit Law: cap of 1.5 months' rent
