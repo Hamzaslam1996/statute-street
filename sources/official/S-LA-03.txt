@@ -1,0 +1,8 @@
+SOURCE: https://members.aagla.org/news/news-alert-la-city-passes-severely-reduced-rso-formula-ordinance
+RETRIEVED: 2026-10-03T20:08Z
+VERIFIED_BY: AI-draft (web check 2026-10-03 ~20:00-20:25 UTC; corpus copies as retrieved by organisers/team)
+SHA256: 6b36ce08e8585bc0a45cb1fba0414af1b4461cc5fb9757b2e2cd43e464e80dbf
+NOTE: EXCERPT ONLY – text as returned by a single-page WebFetch summary on 2026-10-03; full page not saved (cloud shell cannot reach the site). Verify against the URL before quoting.. Source type: secondary-news. Publisher: Apartment Association of Greater Los Angeles. gives 2026-01-24 effective date – conflict recorded
+---- BEGIN TEXT ----
+AAGLA alert (WebFetch excerpt 2026-10-03): passed December 12, 2025; "90% of the Consumer Price Index (CPI) for 'All Items'"; floor "1%"; cap "4%"; "The ordinance is effective January 24, 2026 and the new RSO formula calculation will be implemented July 1, 2026."
+---- END TEXT ----

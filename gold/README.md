@@ -1,0 +1,59 @@
+# Statute Street — Independent Gold Set (answer key)
+
+**Status:** v0.3 (2026-10-04): all 13 "Hamza decides" rows adjudicated (L009–L097), 4 rows added (BOS-SCRN-02, HOB-RENT-02, MA-FEE-02, MA-SCRN-02), dev/test re-split. Rows remain `verifier: "AI-draft"` until individually cleared. Every row carries `verifier: "AI-draft"` until Hamza upgrades it.
+**This is internal test material, not legal advice.**
+
+## Purpose
+An independent, verifiable answer key used to score the Statute Street system (Hack-Nation Challenge 02, "Rental Housing Law Navigator"). It was built from primary sources and the organisers' corpus **without reading** the earlier AI-drafted "silver" key (`gold/gold_rules.json`, `gold/GOLD_REVIEW.md`) until the comparison step (Step 7). Default query date: **2026-10-01**.
+
+## Contents
+| Path | What |
+|---|---|
+| `schema/gold_rule.schema.json`, `gold_address.schema.json`, `gold_change.schema.json` | Schemas (all three keys validate) |
+| `rules/all.json` | 87 rows: 55 rules/pending/failed entries + 32 negative findings ("no rule at this level"); every cell of the 13 × 6 matrix resolved |
+| `rules/dev.json`, `rules/test.json` | Stratified split (61 / 26) — see below |
+| `addresses/seed20.json` | 20 trap-exercising addresses with expected result for every rule in the jurisdiction stack |
+| `changes/T1-T5.json` | Change-test key with affected address ids computed from `data/addresses_raw.csv` |
+| `adjudication_log.csv` | Field-level disagreements with the silver key (Step 7); `decided_by` blank until Hamza decides |
+| `open_questions.md` | Contested legal/categorisation questions framed as decisions |
+| `silver_vs_independent.md` | Comparison report (Step 7) |
+| `REVIEW.md` | Review pack sorted weakest-confidence first |
+| `../sources/source_register.csv`, `../sources/official/*.txt` | 77 sources with URL, retrieval time, SHA256 and saved text/excerpt |
+
+## Method
+1. Read README, change tests, schema, manifest and every corpus/supplementary header; built a 78-cell jurisdiction × category matrix with provisional labels.
+2. Verified each cell against the order of authority in the brief: official statute/ordinance text → organisers' corpus copy → team supplementary capture → law-firm/news (support only). Single-page fetches only, retrieval time recorded; leginfo and sf.gov block fetching (corpus copies used, noted per row).
+3. Wrote one object per rule and per negative finding. **Every `quoted_span` was checked by exact substring match against the saved source text before writing** (`build_rules.py` aborts on any mismatch). `quoted_span_in_corpus` = true only if the same span exists verbatim in the organisers' `corpus/text`.
+4. `effective_date` is given only where a primary source supports it (or can be computed from an enactment clause); `YYYY-MM` where the day is unverifiable; otherwise null with the reason in `notes`. **Q17 rule (Hamza, 2026-10-04): long-standing statutes carry null unless the source text itself states an effective date.** Adoption dates go in `enacted_date`.
+5. Address expectations follow the README traps: year_built ≠ certificate-of-occupancy date (cutoff-year rows → unknown); postal_city ≠ legal city; owner-type conditions → unknown unless units make the exception impossible; missing year/units → unknown. Where `units` is empty but `use_description` states a unit range (e.g. "5+ units", "APT 7-30 UNITS") the record says so and marks the inference.
+
+## Independence rules
+- Silver key quarantined until Step 7; opened only after `rules/all.json`, `addresses/seed20.json` and `changes/T1-T5.json` were frozen (see commit/mtime).
+- After comparison the independent key is **not** edited silently; disagreements go to `adjudication_log.csv` for Hamza.
+- Secondary sources never establish a rule, a date or a quote on their own (rows that rest on secondary sources say so and carry confidence ≤ 0.6).
+
+## Dev/test split
+Seed `20261003` (Python `random`), stratified by (state, category), ~70/30, with all T1–T5 rules (and NWK-ALG-00, which T2 relies on) forced into dev. Hamza does not look at `test.json` until the final scoring run.
+
+| stratum | value | dev | test |
+|---|---|---|---|
+| category | algorithmic_rent_setting | 11 | 3 |
+| category | application_screening_fees | 10 | 4 |
+| category | just_cause_eviction | 10 | 4 |
+| category | rent_increase_limits | 11 | 5 |
+| category | screening_restrictions | 10 | 6 |
+| category | security_deposits | 9 | 4 |
+| state | CA | 25 | 12 |
+| state | MA | 17 | 7 |
+| state | NJ | 19 | 7 |
+
+## Status / result vocabulary
+Rule `status` (as of 2026-10-01): in_force | not_yet_effective | pending | failed | n/a (negative findings). Address `result`: applies | unknown | superseded | not_yet_effective | pending; rules that do not cover an address are listed under `not_covered` (the submission format omits them).
+
+## How to update
+Edit the builder scripts (`build_rules.py`, `build_addresses.py`, `compare_silver.py`) — not the JSON by hand — re-run, and re-validate against `schema/`. The scripts were run in a cloud workspace with `ROOT` pointing at copies of `participant-final-no-hour16 3/corpus/text`, `corpus_supplementary/text`, `sample_addresses.csv` and `corpus_manifest.csv`, and `OUT` at this `navigator/` tree; set those two constants to local paths before re-running (Python 3.10+, `jsonschema`). Bump the version line above and record the change in `adjudication_log.csv` with `decided_by`.
+
+## Versioning
+v0.1 — initial independent draft (AI-draft), frozen before the silver comparison (`FREEZE_before_step7.sha256`).
+v0.2 — post-adjudication: `quote_verified` added (true = span substring-matched against a saved full text; false = null span or excerpt-only basis — 27 rows, all null-span); Q1 Berkeley 13.63 = 2026-01-01 (conflict_flag kept); Q5 Boston HSNA / Cambridge 8.71 kept as notice-only just_cause_eviction rules (conflict_flag kept); 23 citation/value disagreements adopted. 12 adjudication rows still open.
+v0.3 — Hamza's L009–L097 verdicts applied (see `adjudication_log.csv`); added BOS-SCRN-02 (Fair Chance policy, city-funded scope), HOB-RENT-02 (B-750 disclosure duty), MA-FEE-02 (broker fee reform), MA-SCRN-02 (803 CMR 5.00, null span); BOS-SCRN-01 re-identified as the Fair Housing Commission rule; address key regenerated for the new rows; dev/test re-split (seed unchanged). The 94 "no change"/"keep" rows were closed in bulk ("accepted in bulk as no-change; not individually reviewed (Hamza, 2026-10-04)"); adjudication_log has 0 open rows. D075 re-checked: no Division 8 text, SD-SCRN-01 span remains null.

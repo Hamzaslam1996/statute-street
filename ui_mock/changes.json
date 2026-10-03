@@ -1,0 +1,65 @@
+{
+ "T1": {
+  "affected_address_ids": [
+   "A0001",
+   "A0005",
+   "A0016",
+   "A0019",
+   "A0022",
+   "A0050",
+   "A0106",
+   "A0107",
+   "A0235",
+   "A0322"
+  ],
+  "conflict_flag_address_ids": [],
+  "notes": "California AB 325 / SB 763 takes effect — Affected set = every row with state CA (LA 80 + SF 80 + SD 50 + Berkeley 40 = 250). Effective date 2026-01-01 (Stats. 2025 ch. 338, approved 2025-10-06; Cal. Const. art. IV § 8(c))."
+ },
+ "T2": {
+  "affected_address_ids": [
+   "A0040",
+   "A0227",
+   "A0008",
+   "A0012"
+  ],
+  "conflict_flag_address_ids": [
+   "A0040",
+   "A0227",
+   "A0008",
+   "A0012"
+  ],
+  "notes": "Hoboken vs Jersey City local algorithmic bans (boundary) — HOB-ALG-01 → the 40 Hoboken rows; JC-ALG-01 → the 50 Jersey City rows; none of the 50 Newark rows. Per-rule sets: see affected_by_rule. Conflict flags mirror T3 (possible FAIR Act preemption) and may be omitted if the scorer treats T2 as boundary-only."
+ },
+ "T3": {
+  "affected_address_ids": [
+   "A0003",
+   "A0008",
+   "A0012",
+   "A0040",
+   "A0227",
+   "A0331"
+  ],
+  "conflict_flag_address_ids": [
+   "A0008",
+   "A0012",
+   "A0040",
+   "A0227"
+  ],
+  "notes": "NJ FAIR Act: enacted, not yet effective; possible preemption — Affected set = every NJ row (JC 50 + Hoboken 40 + Newark 50 = 140). Conflict flags on all Jersey City and Hoboken rows (P.L.2026 c.43 § 6(b) vs JC § 218-12 / Hoboken ch. 158). Effective 2027-07-01 (first day of twelfth month after 2026-07-20 approval)."
+ },
+ "T4": {
+  "affected_address_ids": [
+   "A0015",
+   "A0036",
+   "A0048",
+   "A0065"
+  ],
+  "conflict_flag_address_ids": [],
+  "notes": "Massachusetts pending bills S.2983 and H.5222 — Reported as pending for every Boston and Cambridge address; affected set if enacted = all MA rows (Boston 60 incl. neighbourhood postal cities + Cambridge 50 = 110)."
+ },
+ "T5": {
+  "affected_address_ids": [],
+  "conflict_flag_address_ids": [],
+  "notes": "Massachusetts rent-control ballot question struck — IP 25-21 struck by the SJC 2026-06-23 → status failed; affected set empty; no rent cap may be reported for any Boston or Cambridge address (M.G.L. c.40P § 4; MA-RENT-00/BOS-RENT-00/CAM-RENT-00)."
+ }
+}

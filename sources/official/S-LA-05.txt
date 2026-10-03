@@ -1,0 +1,8 @@
+SOURCE: https://cityclerk.lacity.org/onlinedocs/2021/21-0042-S3_ord_187737_1-27-23.pdf
+RETRIEVED: 2026-10-03T20:18Z
+VERIFIED_BY: AI-draft (web check 2026-10-03 ~20:00-20:25 UTC; corpus copies as retrieved by organisers/team)
+SHA256: 4b1ad73cc4cdfcd1dfa89e9866ad520ba38e4c74ae96a5bdf9d42ad925f0af07
+NOTE: EXCERPT ONLY – text as returned by a single-page WebFetch summary on 2026-10-03; full page not saved (cloud shell cannot reach the site). Verify against the URL before quoting.. Source type: official. Publisher: Los Angeles City Clerk. urgency ordinance effective on publication 2023-01-27 (live fetch; excerpt saved)
+---- BEGIN TEXT ----
+Ord. 187737 PDF (WebFetch excerpt 2026-10-03): "An ordinance adding Article 5 to Chapter XVI of the Los Angeles Municipal Code prohibiting terminations of tenancies without just cause and requiring relocation assistance for no-fault evictions"; urgency ordinance effective upon publication January 27, 2023; Sec. 165.03 grounds; Sec. 165.04 exemptions incl. RSO units.
+---- END TEXT ----

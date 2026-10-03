@@ -1,0 +1,8 @@
+SOURCE: https://www.mass.gov/doc/803-cmr-5-criminal-offender-record-information-cori-housing/download
+RETRIEVED: 
+VERIFIED_BY: AI-draft (v0.3, 2026-10-04)
+SHA256: d5ac25869c80cd3edbed611d84f82e05d1c0fd5ffcb2d664299ff1f36b4cb428
+NOTE: no text saved. 403 on organisers and team capture; no text saved; added v0.3 (L097)
+---- BEGIN TEXT ----
+(no text saved: mass.gov returned 403 to organisers and team captures)
+---- END TEXT ----

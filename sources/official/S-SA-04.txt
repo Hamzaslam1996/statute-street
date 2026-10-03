@@ -1,0 +1,8 @@
+SOURCE: https://voiceofoc.org/2026/02/santa-ana-bans-automated-rent-price-fixing/
+RETRIEVED: 2026-10-03T20:11Z
+VERIFIED_BY: AI-draft (web check 2026-10-03 ~20:00-20:25 UTC; corpus copies as retrieved by organisers/team)
+SHA256: e90f4604723b76f24463517cdf12b180867606cc51c99c5166c00c5604144313
+NOTE: EXCERPT ONLY – text as returned by a single-page WebFetch summary on 2026-10-03; full page not saved (cloud shell cannot reach the site). Verify against the URL before quoting.. Source type: secondary-news. Publisher: Voice of OC. live fetch; vote 6-0-1
+---- BEGIN TEXT ----
+Voice of OC (WebFetch excerpt 2026-10-03, article 2026-02-23): vote Tuesday February 18 [sic; council met 2026-02-17], 6-0-1; bans "the sale or use of a price setting algorithm when it's expected to be used by two or more competitors in the same market and relies on nonpublic data to determine rent rates"; "up to a $1,000 in civil penalties for each violation"; effective date not specified.
+---- END TEXT ----

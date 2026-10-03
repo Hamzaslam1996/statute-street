@@ -1,0 +1,501 @@
+address_id,postal_city,likely_legal_city,state,has_year_built,has_units,has_zip,year_equals_cutoff,notes
+A0001,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0002,Hoboken,Hoboken,NJ,yes,no,yes,,
+A0003,Newark,Newark,NJ,no,no,yes,,
+A0004,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0005,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0006,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0007,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0008,Jersey City,Jersey City,NJ,no,no,yes,,
+A0009,Cambridge,Cambridge,MA,yes,yes,no,,
+A0010,Cambridge,Cambridge,MA,yes,yes,no,,
+A0011,Newark,Newark,NJ,no,no,yes,,
+A0012,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0013,Newark,Newark,NJ,no,no,yes,,
+A0014,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0015,Cambridge,Cambridge,MA,yes,yes,no,,
+A0016,San Francisco,San Francisco,CA,yes,yes,no,,
+A0017,Jersey City,Jersey City,NJ,no,no,yes,,
+A0018,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0019,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0020,Newark,Newark,NJ,no,no,yes,,
+A0021,San Francisco,San Francisco,CA,yes,yes,no,,
+A0022,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0023,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0024,Cambridge,Cambridge,MA,yes,yes,no,,
+A0025,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0026,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0027,San Francisco,San Francisco,CA,yes,yes,no,,
+A0028,Newark,Newark,NJ,no,no,yes,,
+A0029,Newark,Newark,NJ,no,no,yes,,
+A0030,San Francisco,San Francisco,CA,yes,yes,no,,
+A0031,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0032,Jersey City,Jersey City,NJ,no,no,yes,,
+A0033,San Francisco,San Francisco,CA,yes,yes,no,,
+A0034,Cambridge,Cambridge,MA,yes,yes,no,,
+A0035,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0036,South Boston,Boston,MA,yes,no,yes,,postal_city South Boston -> legal city Boston; Boston A/ use_code: no units in sample
+A0037,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0038,San Francisco,San Francisco,CA,yes,yes,no,,
+A0039,Cambridge,Cambridge,MA,yes,yes,no,,
+A0040,Hoboken,Hoboken,NJ,no,no,yes,,
+A0041,San Francisco,San Francisco,CA,yes,yes,no,,
+A0042,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0043,Cambridge,Cambridge,MA,yes,yes,no,,
+A0044,Newark,Newark,NJ,no,no,yes,,
+A0045,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0046,Cambridge,Cambridge,MA,yes,yes,no,,
+A0047,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0048,Brighton,Boston,MA,yes,no,yes,,postal_city Brighton -> legal city Boston; Boston A/ use_code: no units in sample
+A0049,Hoboken,Hoboken,NJ,no,no,yes,,
+A0050,San Francisco,San Francisco,CA,yes,yes,no,,
+A0051,Jersey City,Jersey City,NJ,no,no,yes,,
+A0052,Allston,Boston,MA,yes,no,yes,,postal_city Allston -> legal city Boston; Boston A/ use_code: no units in sample
+A0053,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0054,Roxbury,Boston,MA,yes,no,yes,,postal_city Roxbury -> legal city Boston; Boston A/ use_code: no units in sample
+A0055,San Francisco,San Francisco,CA,yes,yes,no,,
+A0056,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0057,Newark,Newark,NJ,no,no,yes,,
+A0058,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0059,Newark,Newark,NJ,no,no,yes,,
+A0060,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0061,San Francisco,San Francisco,CA,yes,yes,no,,
+A0062,San Francisco,San Francisco,CA,yes,yes,no,,
+A0063,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0064,Cambridge,Cambridge,MA,yes,yes,no,,
+A0065,Dorchester,Boston,MA,no,no,yes,,postal_city Dorchester -> legal city Boston; Boston A/ use_code: no units in sample
+A0066,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0067,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0068,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0069,San Francisco,San Francisco,CA,yes,yes,no,,
+A0070,Cambridge,Cambridge,MA,yes,yes,no,,
+A0071,Cambridge,Cambridge,MA,yes,yes,no,,
+A0072,San Francisco,San Francisco,CA,yes,yes,no,,
+A0073,Cambridge,Cambridge,MA,yes,yes,no,,
+A0074,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0075,Cambridge,Cambridge,MA,yes,yes,no,,
+A0076,Newark,Newark,NJ,no,no,yes,,
+A0077,Cambridge,Cambridge,MA,yes,yes,no,,
+A0078,Jersey City,Jersey City,NJ,no,no,yes,,
+A0079,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0080,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0081,San Francisco,San Francisco,CA,yes,yes,no,,
+A0082,Cambridge,Cambridge,MA,yes,yes,no,,
+A0083,Roxbury,Boston,MA,yes,no,yes,,postal_city Roxbury -> legal city Boston; Boston A/ use_code: no units in sample
+A0084,San Francisco,San Francisco,CA,yes,yes,no,,
+A0085,San Francisco,San Francisco,CA,yes,yes,no,,
+A0086,Cambridge,Cambridge,MA,yes,yes,no,,
+A0087,Hoboken,Hoboken,NJ,no,no,yes,,
+A0088,San Francisco,San Francisco,CA,yes,yes,no,,
+A0089,Hoboken,Hoboken,NJ,no,no,yes,,
+A0090,Newark,Newark,NJ,no,no,yes,,
+A0091,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0092,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0093,Jamaica Plain,Boston,MA,yes,no,yes,,postal_city Jamaica Plain -> legal city Boston; Boston A/ use_code: no units in sample
+A0094,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0095,Cambridge,Cambridge,MA,yes,yes,no,,
+A0096,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0097,San Francisco,San Francisco,CA,yes,yes,no,,
+A0098,Dorchester,Boston,MA,no,no,yes,,postal_city Dorchester -> legal city Boston; Boston A/ use_code: no units in sample
+A0099,Hoboken,Hoboken,NJ,no,no,yes,,
+A0100,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0101,Jersey City,Jersey City,NJ,no,no,yes,,
+A0102,Hoboken,Hoboken,NJ,no,no,yes,,
+A0103,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0104,Newark,Newark,NJ,no,no,yes,,
+A0105,San Francisco,San Francisco,CA,yes,yes,no,,
+A0106,San Francisco,San Francisco,CA,no,yes,no,,
+A0107,Los Angeles,Los Angeles,CA,yes,yes,yes,LA-1978,
+A0108,Jersey City,Jersey City,NJ,no,no,yes,,
+A0109,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0110,Newark,Newark,NJ,no,no,yes,,
+A0111,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0112,San Francisco,San Francisco,CA,yes,yes,no,,
+A0113,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0114,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0115,San Francisco,San Francisco,CA,yes,yes,no,,
+A0116,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0117,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0118,Dorchester,Boston,MA,yes,no,yes,,postal_city Dorchester -> legal city Boston; Boston A/ use_code: no units in sample
+A0119,Hoboken,Hoboken,NJ,no,no,yes,,
+A0120,Newark,Newark,NJ,no,no,yes,,
+A0121,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0122,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0123,East Boston,Boston,MA,yes,no,yes,,postal_city East Boston -> legal city Boston; Boston A/ use_code: no units in sample
+A0124,Cambridge,Cambridge,MA,yes,yes,no,,
+A0125,Hoboken,Hoboken,NJ,no,no,yes,,
+A0126,San Francisco,San Francisco,CA,yes,yes,no,,
+A0127,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0128,Dorchester,Boston,MA,no,no,yes,,postal_city Dorchester -> legal city Boston; Boston A/ use_code: no units in sample
+A0129,Newark,Newark,NJ,no,no,yes,,
+A0130,Newark,Newark,NJ,no,no,yes,,
+A0131,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0132,Newark,Newark,NJ,no,no,yes,,
+A0133,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0134,Dorchester,Boston,MA,yes,no,yes,,postal_city Dorchester -> legal city Boston; Boston A/ use_code: no units in sample
+A0135,San Francisco,San Francisco,CA,yes,yes,no,,
+A0136,Hoboken,Hoboken,NJ,no,no,yes,,
+A0137,Newark,Newark,NJ,no,no,yes,,
+A0138,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0139,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0140,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0141,San Francisco,San Francisco,CA,yes,yes,no,,
+A0142,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0143,Dorchester,Boston,MA,no,no,yes,,postal_city Dorchester -> legal city Boston; Boston A/ use_code: no units in sample
+A0144,Roxbury,Boston,MA,yes,no,yes,,postal_city Roxbury -> legal city Boston; Boston A/ use_code: no units in sample
+A0145,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0146,Newark,Newark,NJ,no,no,yes,,
+A0147,San Francisco,San Francisco,CA,yes,yes,no,,
+A0148,Newark,Newark,NJ,no,no,yes,,
+A0149,East Boston,Boston,MA,yes,no,yes,,postal_city East Boston -> legal city Boston; Boston A/ use_code: no units in sample
+A0150,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0151,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0152,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0153,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0154,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0155,Dorchester,Boston,MA,no,no,yes,,postal_city Dorchester -> legal city Boston; Boston A/ use_code: no units in sample
+A0156,San Francisco,San Francisco,CA,yes,yes,no,,
+A0157,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0158,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0159,Newark,Newark,NJ,no,no,yes,,
+A0160,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0161,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0162,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0163,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0164,San Francisco,San Francisco,CA,yes,yes,no,,
+A0165,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0166,Cambridge,Cambridge,MA,yes,yes,no,,
+A0167,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0168,Hoboken,Hoboken,NJ,yes,no,yes,,
+A0169,Brighton,Boston,MA,yes,no,yes,,postal_city Brighton -> legal city Boston; Boston A/ use_code: no units in sample
+A0170,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0171,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0172,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0173,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0174,Cambridge,Cambridge,MA,yes,yes,no,,
+A0175,Cambridge,Cambridge,MA,yes,yes,no,,
+A0176,Cambridge,Cambridge,MA,yes,yes,no,,
+A0177,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0178,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0179,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0180,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0181,Hoboken,Hoboken,NJ,no,no,yes,,
+A0182,Hoboken,Hoboken,NJ,no,no,yes,,
+A0183,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0184,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0185,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0186,Jersey City,Jersey City,NJ,no,no,yes,,
+A0187,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0188,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0189,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0190,Newark,Newark,NJ,no,no,yes,,
+A0191,Cambridge,Cambridge,MA,yes,yes,no,,
+A0192,San Francisco,San Francisco,CA,yes,yes,no,,
+A0193,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0194,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0195,Brighton,Boston,MA,yes,no,yes,,postal_city Brighton -> legal city Boston; Boston A/ use_code: no units in sample
+A0196,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0197,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0198,East Boston,Boston,MA,yes,no,yes,,postal_city East Boston -> legal city Boston; Boston A/ use_code: no units in sample
+A0199,Cambridge,Cambridge,MA,yes,yes,no,,
+A0200,Los Angeles,Los Angeles,CA,no,yes,yes,,
+A0201,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0202,San Francisco,San Francisco,CA,yes,yes,no,,
+A0203,Roxbury,Boston,MA,yes,no,yes,,postal_city Roxbury -> legal city Boston; Boston A/ use_code: no units in sample
+A0204,Newark,Newark,NJ,no,no,yes,,
+A0205,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0206,San Francisco,San Francisco,CA,yes,yes,no,,
+A0207,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0208,Hoboken,Hoboken,NJ,no,no,yes,,
+A0209,Cambridge,Cambridge,MA,yes,yes,no,,
+A0210,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0211,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0212,San Francisco,San Francisco,CA,yes,yes,no,,
+A0213,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0214,Cambridge,Cambridge,MA,yes,yes,no,,
+A0215,San Francisco,San Francisco,CA,yes,yes,no,,
+A0216,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0217,East Boston,Boston,MA,yes,no,yes,,postal_city East Boston -> legal city Boston; Boston A/ use_code: no units in sample
+A0218,Cambridge,Cambridge,MA,yes,yes,no,,
+A0219,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0220,Dorchester,Boston,MA,yes,no,yes,,postal_city Dorchester -> legal city Boston; Boston A/ use_code: no units in sample
+A0221,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0222,San Francisco,San Francisco,CA,yes,yes,no,,
+A0223,Hoboken,Hoboken,NJ,no,no,yes,,
+A0224,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0225,San Francisco,San Francisco,CA,yes,yes,no,,
+A0226,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0227,Hoboken,Hoboken,NJ,yes,yes,yes,,
+A0228,San Francisco,San Francisco,CA,yes,yes,no,,
+A0229,San Francisco,San Francisco,CA,yes,yes,no,,
+A0230,Cambridge,Cambridge,MA,yes,yes,no,,
+A0231,San Francisco,San Francisco,CA,yes,yes,no,,
+A0232,Cambridge,Cambridge,MA,yes,yes,no,,
+A0233,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0234,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0235,Los Angeles,Los Angeles,CA,no,no,yes,,
+A0236,San Francisco,San Francisco,CA,yes,yes,no,,
+A0237,San Francisco,San Francisco,CA,yes,yes,no,,
+A0238,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0239,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0240,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0241,Hoboken,Hoboken,NJ,no,no,yes,,
+A0242,Hyde Park,Boston,MA,yes,no,yes,,postal_city Hyde Park -> legal city Boston; Boston A/ use_code: no units in sample
+A0243,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0244,Hoboken,Hoboken,NJ,no,no,yes,,
+A0245,Dorchester,Boston,MA,yes,no,yes,,postal_city Dorchester -> legal city Boston; Boston A/ use_code: no units in sample
+A0246,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0247,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0248,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0249,Newark,Newark,NJ,no,no,yes,,
+A0250,Jersey City,Jersey City,NJ,no,no,yes,,
+A0251,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0252,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0253,San Francisco,San Francisco,CA,yes,yes,no,,
+A0254,Hoboken,Hoboken,NJ,no,no,yes,,
+A0255,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0256,Hoboken,Hoboken,NJ,no,no,yes,,
+A0257,San Francisco,San Francisco,CA,no,yes,no,,
+A0258,Dorchester,Boston,MA,yes,no,yes,,postal_city Dorchester -> legal city Boston; Boston A/ use_code: no units in sample
+A0259,San Francisco,San Francisco,CA,yes,yes,no,,
+A0260,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0261,Hoboken,Hoboken,NJ,no,no,yes,,
+A0262,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0263,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0264,Newark,Newark,NJ,no,no,yes,,
+A0265,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0266,Jersey City,Jersey City,NJ,no,no,yes,,
+A0267,Los Angeles,Los Angeles,CA,no,no,yes,,
+A0268,San Francisco,San Francisco,CA,yes,yes,no,,
+A0269,Hoboken,Hoboken,NJ,no,no,yes,,
+A0270,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0271,San Francisco,San Francisco,CA,yes,yes,no,,
+A0272,Cambridge,Cambridge,MA,yes,yes,no,,
+A0273,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0274,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0275,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0276,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0277,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0278,San Francisco,San Francisco,CA,yes,yes,no,,
+A0279,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0280,San Francisco,San Francisco,CA,yes,yes,no,,
+A0281,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0282,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0283,San Francisco,San Francisco,CA,yes,yes,no,,
+A0284,Cambridge,Cambridge,MA,yes,yes,no,,
+A0285,Los Angeles,Los Angeles,CA,no,yes,yes,,
+A0286,Cambridge,Cambridge,MA,yes,yes,no,,
+A0287,Hoboken,Hoboken,NJ,no,no,yes,,
+A0288,Jersey City,Jersey City,NJ,no,no,yes,,
+A0289,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0290,Cambridge,Cambridge,MA,yes,yes,no,,
+A0291,Cambridge,Cambridge,MA,yes,yes,no,,
+A0292,Cambridge,Cambridge,MA,yes,yes,no,,
+A0293,San Francisco,San Francisco,CA,yes,yes,no,,
+A0294,Cambridge,Cambridge,MA,yes,yes,no,,
+A0295,Dorchester,Boston,MA,yes,no,yes,,postal_city Dorchester -> legal city Boston; Boston A/ use_code: no units in sample
+A0296,Newark,Newark,NJ,no,no,yes,,
+A0297,Newark,Newark,NJ,no,no,yes,,
+A0298,Cambridge,Cambridge,MA,yes,yes,no,,
+A0299,Hoboken,Hoboken,NJ,no,no,yes,,
+A0300,Cambridge,Cambridge,MA,yes,yes,no,,
+A0301,Cambridge,Cambridge,MA,yes,yes,no,,
+A0302,Cambridge,Cambridge,MA,yes,yes,no,,
+A0303,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0304,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0305,San Francisco,San Francisco,CA,yes,yes,no,,
+A0306,Cambridge,Cambridge,MA,yes,yes,no,,
+A0307,Newark,Newark,NJ,no,no,yes,,
+A0308,Hoboken,Hoboken,NJ,no,no,yes,,
+A0309,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0310,Allston,Boston,MA,yes,no,yes,,postal_city Allston -> legal city Boston; Boston A/ use_code: no units in sample
+A0311,Newark,Newark,NJ,no,no,yes,,
+A0312,Mattapan,Boston,MA,yes,no,yes,,postal_city Mattapan -> legal city Boston; Boston A/ use_code: no units in sample
+A0313,Newark,Newark,NJ,no,no,yes,,
+A0314,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0315,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0316,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0317,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0318,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0319,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0320,Hoboken,Hoboken,NJ,no,no,yes,,
+A0321,Jersey City,Jersey City,NJ,no,no,yes,,
+A0322,San Ysidro,San Diego,CA,no,yes,yes,,postal_city San Ysidro -> legal city San Diego; San Diego: no year_built in dataset
+A0323,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0324,San Francisco,San Francisco,CA,yes,yes,no,,
+A0325,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0326,Newark,Newark,NJ,no,no,yes,,
+A0327,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0328,San Francisco,San Francisco,CA,yes,yes,no,,
+A0329,Newark,Newark,NJ,no,no,yes,,
+A0330,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0331,Newark,Newark,NJ,yes,no,yes,,
+A0332,Dorchester,Boston,MA,no,no,yes,,postal_city Dorchester -> legal city Boston; Boston A/ use_code: no units in sample
+A0333,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0334,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0335,San Francisco,San Francisco,CA,yes,yes,no,,
+A0336,Cambridge,Cambridge,MA,yes,yes,no,,
+A0337,Newark,Newark,NJ,no,no,yes,,
+A0338,Newark,Newark,NJ,no,no,yes,,
+A0339,Cambridge,Cambridge,MA,yes,yes,no,,
+A0340,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0341,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0342,Cambridge,Cambridge,MA,yes,yes,no,,
+A0343,Newark,Newark,NJ,no,no,yes,,
+A0344,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0345,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0346,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0347,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0348,Hoboken,Hoboken,NJ,no,no,yes,,
+A0349,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0350,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0351,San Francisco,San Francisco,CA,yes,yes,no,,
+A0352,Newark,Newark,NJ,yes,no,yes,,
+A0353,Los Angeles,Los Angeles,CA,no,no,yes,,
+A0354,East Boston,Boston,MA,yes,no,yes,,postal_city East Boston -> legal city Boston; Boston A/ use_code: no units in sample
+A0355,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0356,Allston,Boston,MA,yes,no,yes,,postal_city Allston -> legal city Boston; Boston A/ use_code: no units in sample
+A0357,San Francisco,San Francisco,CA,yes,yes,no,,
+A0358,Newark,Newark,NJ,no,no,yes,,
+A0359,Hoboken,Hoboken,NJ,no,no,yes,,
+A0360,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0361,Cambridge,Cambridge,MA,yes,yes,no,,
+A0362,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0363,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0364,San Francisco,San Francisco,CA,yes,yes,no,,
+A0365,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0366,East Boston,Boston,MA,yes,no,yes,,postal_city East Boston -> legal city Boston; Boston A/ use_code: no units in sample
+A0367,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0368,San Francisco,San Francisco,CA,yes,yes,no,,
+A0369,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0370,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0371,Newark,Newark,NJ,no,no,yes,,
+A0372,Jersey City,Jersey City,NJ,no,no,yes,,
+A0373,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0374,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0375,San Francisco,San Francisco,CA,yes,yes,no,,
+A0376,Roxbury,Boston,MA,no,no,yes,,postal_city Roxbury -> legal city Boston; Boston A/ use_code: no units in sample
+A0377,Hoboken,Hoboken,NJ,no,no,yes,,
+A0378,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0379,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0380,Roxbury,Boston,MA,no,no,yes,,postal_city Roxbury -> legal city Boston; Boston A/ use_code: no units in sample
+A0381,Newark,Newark,NJ,no,no,yes,,
+A0382,San Francisco,San Francisco,CA,yes,yes,no,,
+A0383,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0384,San Francisco,San Francisco,CA,yes,yes,no,,
+A0385,San Francisco,San Francisco,CA,yes,yes,no,,
+A0386,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0387,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0388,Jersey City,Jersey City,NJ,no,no,yes,,
+A0389,Hoboken,Hoboken,NJ,no,no,yes,,
+A0390,Newark,Newark,NJ,no,no,yes,,
+A0391,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0392,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0393,Jersey City,Jersey City,NJ,no,no,yes,,
+A0394,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0395,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0396,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0397,San Francisco,San Francisco,CA,yes,yes,no,,
+A0398,San Francisco,San Francisco,CA,yes,yes,no,,
+A0399,Hoboken,Hoboken,NJ,no,no,yes,,
+A0400,Newark,Newark,NJ,no,no,yes,,
+A0401,San Francisco,San Francisco,CA,yes,yes,no,,
+A0402,San Francisco,San Francisco,CA,yes,yes,no,,
+A0403,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0404,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0405,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0406,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0407,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0408,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0409,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0410,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0411,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0412,Newark,Newark,NJ,no,no,yes,,
+A0413,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0414,San Francisco,San Francisco,CA,yes,yes,no,,
+A0415,Jersey City,Jersey City,NJ,no,no,yes,,
+A0416,Jersey City,Jersey City,NJ,no,no,yes,,
+A0417,Los Angeles,Los Angeles,CA,no,yes,yes,,
+A0418,Jersey City,Jersey City,NJ,no,no,yes,,
+A0419,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0420,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0421,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0422,Cambridge,Cambridge,MA,yes,yes,no,,
+A0423,Brighton,Boston,MA,yes,no,yes,,postal_city Brighton -> legal city Boston; Boston A/ use_code: no units in sample
+A0424,Hoboken,Hoboken,NJ,no,no,yes,,
+A0425,San Francisco,San Francisco,CA,yes,yes,no,,
+A0426,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0427,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0428,Newark,Newark,NJ,no,no,yes,,
+A0429,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0430,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0431,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0432,Los Angeles,Los Angeles,CA,yes,yes,yes,LA-1978,
+A0433,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0434,San Francisco,San Francisco,CA,yes,yes,no,,
+A0435,Hoboken,Hoboken,NJ,no,no,yes,,
+A0436,Hoboken,Hoboken,NJ,no,no,yes,,
+A0437,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0438,Jersey City,Jersey City,NJ,no,no,yes,,
+A0439,San Francisco,San Francisco,CA,yes,yes,no,,
+A0440,San Francisco,San Francisco,CA,yes,yes,no,,
+A0441,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0442,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0443,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0444,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0445,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0446,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0447,Hoboken,Hoboken,NJ,no,no,yes,,
+A0448,Newark,Newark,NJ,no,no,yes,,
+A0449,Newark,Newark,NJ,no,no,yes,,
+A0450,Jersey City,Jersey City,NJ,no,no,yes,,
+A0451,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0452,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0453,Cambridge,Cambridge,MA,yes,yes,no,,
+A0454,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0455,Jersey City,Jersey City,NJ,no,no,yes,,
+A0456,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0457,San Francisco,San Francisco,CA,yes,yes,no,,
+A0458,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0459,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0460,Newark,Newark,NJ,no,no,yes,,
+A0461,San Francisco,San Francisco,CA,yes,yes,no,,
+A0462,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0463,Dorchester,Boston,MA,yes,no,yes,,postal_city Dorchester -> legal city Boston; Boston A/ use_code: no units in sample
+A0464,Roxbury,Boston,MA,yes,no,yes,,postal_city Roxbury -> legal city Boston; Boston A/ use_code: no units in sample
+A0465,Cambridge,Cambridge,MA,yes,yes,no,,
+A0466,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0467,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0468,Cambridge,Cambridge,MA,yes,yes,no,,
+A0469,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0470,Berkeley,Berkeley,CA,no,no,yes,,Berkeley: no year_built/units in dataset
+A0471,Hoboken,Hoboken,NJ,no,no,yes,,
+A0472,Hoboken,Hoboken,NJ,no,no,yes,,
+A0473,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0474,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0475,Hoboken,Hoboken,NJ,no,no,yes,,
+A0476,Newark,Newark,NJ,no,no,yes,,
+A0477,San Francisco,San Francisco,CA,yes,yes,no,,
+A0478,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0479,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0480,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0481,San Francisco,San Francisco,CA,yes,yes,no,,
+A0482,Jersey City,Jersey City,NJ,no,no,yes,,
+A0483,San Francisco,San Francisco,CA,yes,yes,no,,
+A0484,San Francisco,San Francisco,CA,yes,yes,no,,
+A0485,Cambridge,Cambridge,MA,yes,yes,no,,
+A0486,San Francisco,San Francisco,CA,yes,yes,no,,
+A0487,San Francisco,San Francisco,CA,yes,yes,no,,
+A0488,Boston,Boston,MA,yes,no,yes,,Boston A/ use_code: no units in sample
+A0489,Hoboken,Hoboken,NJ,yes,no,yes,,
+A0490,Hoboken,Hoboken,NJ,no,no,yes,,
+A0491,Newark,Newark,NJ,no,no,yes,,
+A0492,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0493,San Francisco,San Francisco,CA,yes,yes,no,,
+A0494,San Francisco,San Francisco,CA,yes,yes,no,,
+A0495,Jersey City,Jersey City,NJ,yes,no,yes,,
+A0496,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0497,San Diego,San Diego,CA,no,yes,yes,,San Diego: no year_built in dataset
+A0498,Newark,Newark,NJ,no,no,yes,,
+A0499,Los Angeles,Los Angeles,CA,yes,yes,yes,,
+A0500,Los Angeles,Los Angeles,CA,yes,yes,yes,,

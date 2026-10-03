@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Statute Street independent gold change-test record",
+  "type": "object",
+  "required": ["test_id","title","rule_gold_ids","organiser_rule_ids","as_of","expected_status","expected_affected_address_ids","conflict_flag_address_ids","method_note"],
+  "properties": {
+    "test_id": {"type":"string"},
+    "title": {"type":"string"},
+    "rule_gold_ids": {"type":"array","items":{"type":"string"}},
+    "organiser_rule_ids": {"type":"array","items":{"type":"string"}},
+    "as_of": {"type":"array","items":{"type":"string"}},
+    "expected_status": {"type":"object"},
+    "expected_affected_address_ids": {"type":"array","items":{"type":"string"}},
+    "conflict_flag_address_ids": {"type":"array","items":{"type":"string"}},
+    "method_note": {"type":"string"}
+  }
+}

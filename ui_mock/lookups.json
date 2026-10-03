@@ -1,0 +1,1185 @@
+{
+ "as_of": "2026-10-01",
+ "lookups": {
+  "A0016": [
+   {
+    "team_rule_id": "CA-ALG-01",
+    "result": "applies",
+    "explanation": "statewide; effective 2026-01-01 (T1)",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-DEP-01",
+    "result": "applies",
+    "explanation": "21 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-FEE-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-JUST-01",
+    "result": "superseded",
+    "explanation": "San Francisco just-cause ordinance governs instead (Civ. Code § 1946.2(i))",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-RENT-01",
+    "result": "superseded",
+    "explanation": "San Francisco local rent control covers this unit (Civ. Code § 1947.12(d)(3)); stricter local cap governs",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-SCRN-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SF-ALG-01",
+    "result": "applies",
+    "explanation": "citywide; effective 2024-10-14",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SF-DEP-01",
+    "result": "applies",
+    "explanation": "citywide deposit-interest duty",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SF-JUST-01",
+    "result": "applies",
+    "explanation": "just cause covers Rent Ordinance units including post-1979 construction",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SF-RENT-01",
+    "result": "applies",
+    "explanation": "year_built 1926 before 1979 → COO on or before 1979-06-13 inferred",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SF-SCRN-01",
+    "result": "unknown",
+    "explanation": "Fair Chance housing provisions cover affordable housing only; affordability status not in the data",
+    "conflict_flag": false
+   }
+  ],
+  "A0050": [
+   {
+    "team_rule_id": "CA-ALG-01",
+    "result": "applies",
+    "explanation": "statewide; effective 2026-01-01 (T1)",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-DEP-01",
+    "result": "applies",
+    "explanation": "49 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-FEE-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-JUST-01",
+    "result": "superseded",
+    "explanation": "San Francisco just-cause ordinance governs instead (Civ. Code § 1946.2(i))",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-RENT-01",
+    "result": "applies",
+    "explanation": "no local rent control for this unit; year_built 1986 is more than 15 years old so the COO exemption cannot apply",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-SCRN-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SF-ALG-01",
+    "result": "applies",
+    "explanation": "citywide; effective 2024-10-14",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SF-DEP-01",
+    "result": "applies",
+    "explanation": "citywide deposit-interest duty",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SF-JUST-01",
+    "result": "applies",
+    "explanation": "just cause covers Rent Ordinance units including post-1979 construction",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SF-SCRN-01",
+    "result": "unknown",
+    "explanation": "Fair Chance housing provisions cover affordable housing only; affordability status not in the data",
+    "conflict_flag": false
+   }
+  ],
+  "A0106": [
+   {
+    "team_rule_id": "CA-ALG-01",
+    "result": "applies",
+    "explanation": "statewide; effective 2026-01-01 (T1)",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-DEP-01",
+    "result": "applies",
+    "explanation": "60 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-FEE-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-JUST-01",
+    "result": "superseded",
+    "explanation": "San Francisco just-cause ordinance governs instead (Civ. Code § 1946.2(i))",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-RENT-01",
+    "result": "unknown",
+    "explanation": "state cap applies only if the unit is outside local rent control and older than 15 years; local coverage and/or COO age cannot be determined from the data",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-SCRN-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SF-ALG-01",
+    "result": "applies",
+    "explanation": "citywide; effective 2024-10-14",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SF-DEP-01",
+    "result": "applies",
+    "explanation": "citywide deposit-interest duty",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SF-JUST-01",
+    "result": "applies",
+    "explanation": "just cause covers Rent Ordinance units including post-1979 construction",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SF-RENT-01",
+    "result": "unknown",
+    "explanation": "COO cutoff 1979-06-13 cannot be tested",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SF-SCRN-01",
+    "result": "unknown",
+    "explanation": "Fair Chance housing provisions cover affordable housing only; affordability status not in the data",
+    "conflict_flag": false
+   }
+  ],
+  "A0107": [
+   {
+    "team_rule_id": "CA-ALG-01",
+    "result": "applies",
+    "explanation": "statewide; effective 2026-01-01 (T1)",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-DEP-01",
+    "result": "applies",
+    "explanation": "20 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-FEE-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-JUST-01",
+    "result": "superseded",
+    "explanation": "Los Angeles just-cause ordinance governs instead (Civ. Code § 1946.2(i))",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-RENT-01",
+    "result": "unknown",
+    "explanation": "state cap applies only if the unit is outside local rent control and older than 15 years; local coverage and/or COO age cannot be determined from the data",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-SCRN-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "LA-DEP-01",
+    "result": "unknown",
+    "explanation": "RSO coverage depends on the certificate-of-occupancy date, which cannot be fixed from year_built",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "LA-JUST-01",
+    "result": "unknown",
+    "explanation": "JCO covers non-RSO units; RSO status unknown",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "LA-JUST-02",
+    "result": "unknown",
+    "explanation": "RSO coverage depends on the certificate-of-occupancy date, which cannot be fixed from year_built",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "LA-RENT-01",
+    "result": "unknown",
+    "explanation": "RSO coverage depends on the certificate-of-occupancy date, which cannot be fixed from year_built",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "LA-SCRN-01",
+    "result": "applies",
+    "explanation": "citywide; no coverage condition",
+    "conflict_flag": false
+   }
+  ],
+  "A0022": [
+   {
+    "team_rule_id": "CA-ALG-01",
+    "result": "applies",
+    "explanation": "statewide; effective 2026-01-01 (T1)",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-DEP-01",
+    "result": "applies",
+    "explanation": "5 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-FEE-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-JUST-01",
+    "result": "superseded",
+    "explanation": "Los Angeles just-cause ordinance governs instead (Civ. Code § 1946.2(i))",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-SCRN-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "LA-JUST-01",
+    "result": "applies",
+    "explanation": "non-RSO residential unit (year_built 2012); tenancy length (6 months) not in data but the rule attaches to the unit",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "LA-SCRN-01",
+    "result": "applies",
+    "explanation": "citywide; no coverage condition",
+    "conflict_flag": false
+   }
+  ],
+  "A0001": [
+   {
+    "team_rule_id": "CA-ALG-01",
+    "result": "applies",
+    "explanation": "statewide; effective 2026-01-01 (T1)",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-DEP-01",
+    "result": "applies",
+    "explanation": "32 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-FEE-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-JUST-01",
+    "result": "superseded",
+    "explanation": "Los Angeles just-cause ordinance governs instead (Civ. Code § 1946.2(i))",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-RENT-01",
+    "result": "superseded",
+    "explanation": "Los Angeles local rent control covers this unit (Civ. Code § 1947.12(d)(3)); stricter local cap governs",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-SCRN-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "LA-DEP-01",
+    "result": "applies",
+    "explanation": "RSO unit → deposit interest duty",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "LA-JUST-02",
+    "result": "applies",
+    "explanation": "RSO unit → RSO eviction grounds and relocation rules",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "LA-RENT-01",
+    "result": "applies",
+    "explanation": "year_built 1927 < 1978 and ≥2 units → RSO unit (COO on or before 1978-10-01 inferred from year_built)",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "LA-SCRN-01",
+    "result": "applies",
+    "explanation": "citywide; no coverage condition",
+    "conflict_flag": false
+   }
+  ],
+  "A0235": [
+   {
+    "team_rule_id": "CA-ALG-01",
+    "result": "applies",
+    "explanation": "statewide; effective 2026-01-01 (T1)",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-DEP-01",
+    "result": "applies",
+    "explanation": "5 units (use_description implies 5+ units) > 4 defeats the small-landlord two-month exception; one-month cap applies",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-FEE-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-JUST-01",
+    "result": "superseded",
+    "explanation": "Los Angeles just-cause ordinance governs instead (Civ. Code § 1946.2(i))",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-RENT-01",
+    "result": "unknown",
+    "explanation": "state cap applies only if the unit is outside local rent control and older than 15 years; local coverage and/or COO age cannot be determined from the data",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-SCRN-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "LA-DEP-01",
+    "result": "unknown",
+    "explanation": "RSO coverage depends on the certificate-of-occupancy date, which cannot be fixed from year_built",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "LA-JUST-01",
+    "result": "unknown",
+    "explanation": "JCO covers non-RSO units; RSO status unknown",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "LA-JUST-02",
+    "result": "unknown",
+    "explanation": "RSO coverage depends on the certificate-of-occupancy date, which cannot be fixed from year_built",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "LA-RENT-01",
+    "result": "unknown",
+    "explanation": "RSO coverage depends on the certificate-of-occupancy date, which cannot be fixed from year_built",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "LA-SCRN-01",
+    "result": "applies",
+    "explanation": "citywide; no coverage condition",
+    "conflict_flag": false
+   }
+  ],
+  "A0322": [
+   {
+    "team_rule_id": "CA-ALG-01",
+    "result": "applies",
+    "explanation": "statewide; effective 2026-01-01 (T1)",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-DEP-01",
+    "result": "applies",
+    "explanation": "31 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-FEE-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-JUST-01",
+    "result": "superseded",
+    "explanation": "San Diego TPO (more protective, adopted 2023) governs where either applies; both share the 15-year COO exemption, which cannot be tested without year_built",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-RENT-01",
+    "result": "unknown",
+    "explanation": "year_built straddles the 15-year COO cutoff",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-SCRN-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SD-ALG-01",
+    "result": "applies",
+    "explanation": "citywide; effective 2025-06-21",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SD-JUST-01",
+    "result": "unknown",
+    "explanation": "TPO exempts housing with a COO within the previous 15 years; San Diego rows have no year_built",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SD-SCRN-01",
+    "result": "applies",
+    "explanation": "citywide; no coverage condition",
+    "conflict_flag": false
+   }
+  ],
+  "A0019": [
+   {
+    "team_rule_id": "CA-ALG-01",
+    "result": "applies",
+    "explanation": "statewide; effective 2026-01-01 (T1)",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-DEP-01",
+    "result": "applies",
+    "explanation": "16 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-FEE-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-JUST-01",
+    "result": "superseded",
+    "explanation": "San Diego TPO (more protective, adopted 2023) governs where either applies; both share the 15-year COO exemption, which cannot be tested without year_built",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-RENT-01",
+    "result": "unknown",
+    "explanation": "year_built straddles the 15-year COO cutoff",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-SCRN-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SD-ALG-01",
+    "result": "applies",
+    "explanation": "citywide; effective 2025-06-21",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SD-JUST-01",
+    "result": "unknown",
+    "explanation": "TPO exempts housing with a COO within the previous 15 years; San Diego rows have no year_built",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "SD-SCRN-01",
+    "result": "applies",
+    "explanation": "citywide; no coverage condition",
+    "conflict_flag": false
+   }
+  ],
+  "A0005": [
+   {
+    "team_rule_id": "BERK-ALG-01",
+    "result": "applies",
+    "explanation": "citywide; effective 2026-01-01 (date conflict flagged on the rule)",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "BERK-DEP-01",
+    "result": "applies",
+    "explanation": "deposit interest covers fully and partially covered units",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "BERK-FEE-01",
+    "result": "applies",
+    "explanation": "applies to all residential rental agreements in Berkeley",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "BERK-JUST-01",
+    "result": "applies",
+    "explanation": "just cause covers fully and partially covered units; multifamily (5+ units per use code) cannot fall in the exempt categories",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "BERK-RENT-01",
+    "result": "unknown",
+    "explanation": "rent ceiling applies only to fully covered units (COO on or before 1980-06-30); Berkeley rows have no year_built",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "BERK-SCRN-01",
+    "result": "applies",
+    "explanation": "owner-occupied 1–3 unit exemption impossible for a 5+ unit building (use code)",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-ALG-01",
+    "result": "applies",
+    "explanation": "statewide; effective 2026-01-01 (T1)",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-DEP-01",
+    "result": "applies",
+    "explanation": "5 units (use_description implies 5+ units) > 4 defeats the small-landlord two-month exception; one-month cap applies",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-FEE-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-JUST-01",
+    "result": "superseded",
+    "explanation": "Berkeley just-cause ordinance governs instead (Civ. Code § 1946.2(i))",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-RENT-01",
+    "result": "unknown",
+    "explanation": "state cap applies only if the unit is outside local rent control and older than 15 years; local coverage and/or COO age cannot be determined from the data",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "CA-SCRN-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   }
+  ],
+  "A0227": [
+   {
+    "team_rule_id": "HOB-ALG-01",
+    "result": "applies",
+    "explanation": "citywide; conflict flag for possible FAIR Act preemption from 2027-07-01",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "HOB-RENT-01",
+    "result": "unknown",
+    "explanation": "year_built 2010 after 1987 → likely within the 30-year/mortgage-amortisation new-construction exemption, which depends on registration and mortgage facts not in the data",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "HOB-RENT-02",
+    "result": "applies",
+    "explanation": "disclosure duty for renewal increases >10% applies to all residential landlords in Hoboken (categorisation flagged)",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "NJ-ALG-01",
+    "result": "not_yet_effective",
+    "explanation": "enacted, effective 2027-07-01 > 2026-10-01; possible preemption of the local ordinance (T3 conflict flag)",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "NJ-DEP-01",
+    "result": "unknown",
+    "explanation": "owner-occupied ≤2-unit exclusion cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-FEE-01",
+    "result": "unknown",
+    "explanation": "one- or two-family dwelling exemption cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-JUST-01",
+    "result": "unknown",
+    "explanation": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-SCRN-01",
+    "result": "unknown",
+    "explanation": "small owner-occupied building exemption cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-SCRN-02",
+    "result": "unknown",
+    "explanation": "LAD owner-occupied small-building exemption cannot be excluded",
+    "conflict_flag": false
+   }
+  ],
+  "A0040": [
+   {
+    "team_rule_id": "HOB-ALG-01",
+    "result": "applies",
+    "explanation": "citywide; conflict flag for possible FAIR Act preemption from 2027-07-01",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "HOB-RENT-01",
+    "result": "unknown",
+    "explanation": "new-construction exemption (post-1987-06-25 multiple dwellings) cannot be tested without year_built",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "HOB-RENT-02",
+    "result": "applies",
+    "explanation": "disclosure duty for renewal increases >10% applies to all residential landlords in Hoboken (categorisation flagged)",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "NJ-ALG-01",
+    "result": "not_yet_effective",
+    "explanation": "enacted, effective 2027-07-01 > 2026-10-01; possible preemption of the local ordinance (T3 conflict flag)",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "NJ-DEP-01",
+    "result": "unknown",
+    "explanation": "owner-occupied ≤2-unit exclusion cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-FEE-01",
+    "result": "unknown",
+    "explanation": "one- or two-family dwelling exemption cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-JUST-01",
+    "result": "unknown",
+    "explanation": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-SCRN-01",
+    "result": "unknown",
+    "explanation": "small owner-occupied building exemption cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-SCRN-02",
+    "result": "unknown",
+    "explanation": "LAD owner-occupied small-building exemption cannot be excluded",
+    "conflict_flag": false
+   }
+  ],
+  "A0012": [
+   {
+    "team_rule_id": "JC-ALG-01",
+    "result": "applies",
+    "explanation": "citywide; conflict flag for possible FAIR Act preemption from 2027-07-01",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "JC-RENT-01",
+    "result": "unknown",
+    "explanation": "1–4 unit properties are exempt; Jersey City rows have no unit counts",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-ALG-01",
+    "result": "not_yet_effective",
+    "explanation": "enacted, effective 2027-07-01 > 2026-10-01; possible preemption of the local ordinance (T3 conflict flag)",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "NJ-DEP-01",
+    "result": "unknown",
+    "explanation": "owner-occupied ≤2-unit exclusion cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-FEE-01",
+    "result": "unknown",
+    "explanation": "one- or two-family dwelling exemption cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-JUST-01",
+    "result": "unknown",
+    "explanation": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-SCRN-01",
+    "result": "unknown",
+    "explanation": "small owner-occupied building exemption cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-SCRN-02",
+    "result": "unknown",
+    "explanation": "LAD owner-occupied small-building exemption cannot be excluded",
+    "conflict_flag": false
+   }
+  ],
+  "A0008": [
+   {
+    "team_rule_id": "JC-ALG-01",
+    "result": "applies",
+    "explanation": "citywide; conflict flag for possible FAIR Act preemption from 2027-07-01",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "JC-RENT-01",
+    "result": "unknown",
+    "explanation": "1–4 unit properties are exempt; Jersey City rows have no unit counts",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-ALG-01",
+    "result": "not_yet_effective",
+    "explanation": "enacted, effective 2027-07-01 > 2026-10-01; possible preemption of the local ordinance (T3 conflict flag)",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "NJ-DEP-01",
+    "result": "unknown",
+    "explanation": "owner-occupied ≤2-unit exclusion cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-FEE-01",
+    "result": "unknown",
+    "explanation": "one- or two-family dwelling exemption cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-JUST-01",
+    "result": "unknown",
+    "explanation": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-SCRN-01",
+    "result": "unknown",
+    "explanation": "small owner-occupied building exemption cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-SCRN-02",
+    "result": "unknown",
+    "explanation": "LAD owner-occupied small-building exemption cannot be excluded",
+    "conflict_flag": false
+   }
+  ],
+  "A0331": [
+   {
+    "team_rule_id": "NJ-ALG-01",
+    "result": "not_yet_effective",
+    "explanation": "enacted, effective 2027-07-01 > 2026-10-01",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-DEP-01",
+    "result": "unknown",
+    "explanation": "owner-occupied ≤2-unit exclusion cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-FEE-01",
+    "result": "unknown",
+    "explanation": "one- or two-family dwelling exemption cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-JUST-01",
+    "result": "unknown",
+    "explanation": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-SCRN-01",
+    "result": "unknown",
+    "explanation": "small owner-occupied building exemption cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-SCRN-02",
+    "result": "unknown",
+    "explanation": "LAD owner-occupied small-building exemption cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NWK-RENT-01",
+    "result": "applies",
+    "explanation": "year_built 1910 → outside any 30-year new-construction exemption; multiple dwelling with no small-building exemption",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NWK-SCRN-01",
+    "result": "unknown",
+    "explanation": "owner-occupied two-family exemption cannot be excluded",
+    "conflict_flag": false
+   }
+  ],
+  "A0003": [
+   {
+    "team_rule_id": "NJ-ALG-01",
+    "result": "not_yet_effective",
+    "explanation": "enacted, effective 2027-07-01 > 2026-10-01",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-DEP-01",
+    "result": "unknown",
+    "explanation": "owner-occupied ≤2-unit exclusion cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-FEE-01",
+    "result": "unknown",
+    "explanation": "one- or two-family dwelling exemption cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-JUST-01",
+    "result": "unknown",
+    "explanation": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-SCRN-01",
+    "result": "unknown",
+    "explanation": "small owner-occupied building exemption cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NJ-SCRN-02",
+    "result": "unknown",
+    "explanation": "LAD owner-occupied small-building exemption cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NWK-RENT-01",
+    "result": "unknown",
+    "explanation": "new-construction exemption (30 years / mortgage amortisation) cannot be tested without year_built",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "NWK-SCRN-01",
+    "result": "unknown",
+    "explanation": "owner-occupied two-family exemption cannot be excluded",
+    "conflict_flag": false
+   }
+  ],
+  "A0065": [
+   {
+    "team_rule_id": "BOS-JUST-01",
+    "result": "applies",
+    "explanation": "applies to all Boston landlords ending a tenancy (notice-only; categorisation flagged)",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "BOS-SCRN-01",
+    "result": "applies",
+    "explanation": "Boston Fair Housing Commission protections apply to all Boston rentals",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "BOS-SCRN-02",
+    "result": "unknown",
+    "explanation": "Fair Chance policy applies only to DND-funded / IDP housing providers; funding status not in data",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "MA-ALG-P1",
+    "result": "pending",
+    "explanation": "bill not enacted; reported as pending for every address in the state",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-ALG-P2",
+    "result": "pending",
+    "explanation": "bill not enacted; reported as pending for every address in the state",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-DEP-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-FEE-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-FEE-02",
+    "result": "applies",
+    "explanation": "statewide; attaches to any brokered rental",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-SCRN-01",
+    "result": "unknown",
+    "explanation": "owner-occupied two-family exemption cannot be excluded",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-SCRN-02",
+    "result": "applies",
+    "explanation": "statewide regulation of CORI use by housing providers (text not captured; low confidence)",
+    "conflict_flag": false
+   }
+  ],
+  "A0036": [
+   {
+    "team_rule_id": "BOS-JUST-01",
+    "result": "applies",
+    "explanation": "applies to all Boston landlords ending a tenancy (notice-only; categorisation flagged)",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "BOS-SCRN-01",
+    "result": "applies",
+    "explanation": "Boston Fair Housing Commission protections apply to all Boston rentals",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "BOS-SCRN-02",
+    "result": "unknown",
+    "explanation": "Fair Chance policy applies only to DND-funded / IDP housing providers; funding status not in data",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "MA-ALG-P1",
+    "result": "pending",
+    "explanation": "bill not enacted; reported as pending for every address in the state",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-ALG-P2",
+    "result": "pending",
+    "explanation": "bill not enacted; reported as pending for every address in the state",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-DEP-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-FEE-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-FEE-02",
+    "result": "applies",
+    "explanation": "statewide; attaches to any brokered rental",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-SCRN-01",
+    "result": "applies",
+    "explanation": "7+ units → owner-occupied two-family exemption impossible",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-SCRN-02",
+    "result": "applies",
+    "explanation": "statewide regulation of CORI use by housing providers (text not captured; low confidence)",
+    "conflict_flag": false
+   }
+  ],
+  "A0015": [
+   {
+    "team_rule_id": "CAM-JUST-01",
+    "result": "applies",
+    "explanation": "applies to all residential rental agreements in Cambridge (notice-only; categorisation flagged)",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "CAM-SCRN-01",
+    "result": "applies",
+    "explanation": "citywide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-ALG-P1",
+    "result": "pending",
+    "explanation": "bill not enacted; reported as pending for every address in the state",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-ALG-P2",
+    "result": "pending",
+    "explanation": "bill not enacted; reported as pending for every address in the state",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-DEP-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-FEE-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-FEE-02",
+    "result": "applies",
+    "explanation": "statewide; attaches to any brokered rental",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-SCRN-01",
+    "result": "applies",
+    "explanation": "83+ units → owner-occupied two-family exemption impossible",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-SCRN-02",
+    "result": "applies",
+    "explanation": "statewide regulation of CORI use by housing providers (text not captured; low confidence)",
+    "conflict_flag": false
+   }
+  ],
+  "A0048": [
+   {
+    "team_rule_id": "BOS-JUST-01",
+    "result": "applies",
+    "explanation": "applies to all Boston landlords ending a tenancy (notice-only; categorisation flagged)",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "BOS-SCRN-01",
+    "result": "applies",
+    "explanation": "Boston Fair Housing Commission protections apply to all Boston rentals",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "BOS-SCRN-02",
+    "result": "unknown",
+    "explanation": "Fair Chance policy applies only to DND-funded / IDP housing providers; funding status not in data",
+    "conflict_flag": true
+   },
+   {
+    "team_rule_id": "MA-ALG-P1",
+    "result": "pending",
+    "explanation": "bill not enacted; reported as pending for every address in the state",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-ALG-P2",
+    "result": "pending",
+    "explanation": "bill not enacted; reported as pending for every address in the state",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-DEP-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-FEE-01",
+    "result": "applies",
+    "explanation": "statewide; no coverage condition",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-FEE-02",
+    "result": "applies",
+    "explanation": "statewide; attaches to any brokered rental",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-SCRN-01",
+    "result": "applies",
+    "explanation": "7+ units → owner-occupied two-family exemption impossible",
+    "conflict_flag": false
+   },
+   {
+    "team_rule_id": "MA-SCRN-02",
+    "result": "applies",
+    "explanation": "statewide regulation of CORI use by housing providers (text not captured; low confidence)",
+    "conflict_flag": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,8 @@
+SOURCE: https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_6189660/File/City%20Hall/Housing%20Economic%20Development/Tenant%20Landlord%20Relations/4.10.2024%20-%20June%202024%20CPI.pdf
+RETRIEVED: 2026-10-03T20:15Z
+VERIFIED_BY: AI-draft (web check 2026-10-03 ~20:00-20:25 UTC; corpus copies as retrieved by organisers/team)
+SHA256: 1a500336e096eeb25cc296e8bc8998272ce7760f5c37609db22dac2814878643
+NOTE: EXCERPT ONLY – text as returned by a single-page WebFetch summary on 2026-10-03; full page not saved (cloud shell cannot reach the site). Verify against the URL before quoting.. Source type: official-agency. Publisher: City of Jersey City (Office of Landlord/Tenant Relations). live fetch; excerpt saved: lesser of 4% or CPI
+---- BEGIN TEXT ----
+Jersey City CPI notice (WebFetch excerpt 2026-10-03): "no landlord of any dwelling as defined in § 260-1 may request or receive a percentage increase in rent which is greater than four percent or the percentage difference between the consumer price index three months prior to the expiration or termination of the lease and three months prior to the commencement of the lease term, whichever is less." (§ 260-3, For Rent Controlled Properties).
+---- END TEXT ----

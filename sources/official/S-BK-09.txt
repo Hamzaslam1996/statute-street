@@ -1,0 +1,8 @@
+SOURCE: https://berkeley.municipal.codes/enactments/Ord7992-NS
+RETRIEVED: 2026-10-03T20:12Z
+VERIFIED_BY: AI-draft (web check 2026-10-03 ~20:00-20:25 UTC; corpus copies as retrieved by organisers/team)
+SHA256: bb632f815b79840b30edeecc71675f65acca0443f0a094735770011db0dbf933
+NOTE: EXCERPT ONLY – text as returned by a single-page WebFetch summary on 2026-10-03; full page not saved (cloud shell cannot reach the site). Verify against the URL before quoting.. Source type: official. Publisher: City of Berkeley (code publisher). 7992: adopted 2025-12-02 eff. 2026-01-01; 7974: adopted 2025-07-08 eff. 2025-08-07 with "shall not take effect until March 1, 2026"; 7956: adopted 2025-03-25 eff. 2025-04-24 (live fetches; excerpt saved)
+---- BEGIN TEXT ----
+berkeley.municipal.codes enactment pages (WebFetch excerpts 2026-10-03): Ord. 7992-NS "Amends Ch. 13.63 ..." adopted December 2, 2025, effective January 1, 2026. Ord. 7974-NS adopted July 8, 2025, effective August 7, 2025. Ord. 7956-NS "Adds Ch. 13.63 ..." adopted March 25, 2025, effective April 24, 2025. BMC 13.63.030 history: added 7956-NS (2025-03-25); amended 7974-NS (2025-07-08); amended 7992-NS (2025-12-02). Council item 2025-07-08 (Ord. 7,974-N.S.): "The provisions of this Chapter shall not take effect until March 1, 2026." BMC 13.76.110(A): "Effective January 1 of each year, the rent ceiling ... shall be adjusted by 65% of the percentage increase in the Consumer Price Index for All Urban Consumers (CPI-U) in the San Francisco-Oakland-San Jose region ..."; never below 0% or above 5%. BMC 13.76.050: newly constructed units after June 30, 1980 partially covered.
+---- END TEXT ----

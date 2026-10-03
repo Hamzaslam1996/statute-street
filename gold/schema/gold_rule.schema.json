@@ -1,0 +1,285 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Statute Street independent gold rule record",
+  "type": "object",
+  "required": [
+    "gold_id",
+    "jurisdiction",
+    "level",
+    "category",
+    "status",
+    "title",
+    "requirement",
+    "key_value",
+    "coverage",
+    "exemptions",
+    "effective_date",
+    "enacted_date",
+    "sunset_date",
+    "citation",
+    "source_ids",
+    "corpus_doc_ids",
+    "supplementary_doc_ids",
+    "quoted_span",
+    "quoted_span_in_corpus",
+    "interaction",
+    "conflict_flag",
+    "conflict_note",
+    "negative_finding",
+    "negative_reason",
+    "confidence",
+    "verified_against",
+    "verifier",
+    "notes",
+    "quote_verified"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "gold_id": {
+      "type": "string",
+      "pattern": "^[A-Z]{2,4}-(RENT|JUST|DEP|FEE|SCRN|ALG)-(\\d{2}|P\\d|00)$"
+    },
+    "jurisdiction": {
+      "type": "string"
+    },
+    "level": {
+      "enum": [
+        "state",
+        "city",
+        "county"
+      ]
+    },
+    "category": {
+      "enum": [
+        "rent_increase_limits",
+        "just_cause_eviction",
+        "security_deposits",
+        "application_screening_fees",
+        "screening_restrictions",
+        "algorithmic_rent_setting"
+      ]
+    },
+    "status": {
+      "enum": [
+        "in_force",
+        "not_yet_effective",
+        "pending",
+        "failed",
+        "n/a"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "requirement": {
+      "type": "string"
+    },
+    "key_value": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "coverage": {
+      "type": "object",
+      "required": [
+        "coo_cutoff",
+        "year_built_max",
+        "min_units",
+        "max_units",
+        "owner_type",
+        "tenancy_months",
+        "other"
+      ],
+      "properties": {
+        "coo_cutoff": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "year_built_max": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "min_units": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "max_units": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "owner_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tenancy_months": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "other": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "exemptions": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "effective_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+    },
+    "enacted_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+    },
+    "sunset_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+    },
+    "citation": {
+      "type": "string"
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "corpus_doc_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^D\\d{3}$"
+      }
+    },
+    "supplementary_doc_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^D\\d{3}$"
+      }
+    },
+    "quoted_span": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 20
+    },
+    "quoted_span_in_corpus": {
+      "type": "boolean"
+    },
+    "interaction": {
+      "type": "object",
+      "required": [
+        "overrides",
+        "yields_to",
+        "note"
+      ],
+      "properties": {
+        "overrides": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "yields_to": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "conflict_flag": {
+      "type": "boolean"
+    },
+    "conflict_note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "negative_finding": {
+      "type": "boolean"
+    },
+    "negative_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "verified_against": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "url",
+          "checked_at_utc"
+        ],
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "checked_at_utc": {
+            "type": "string"
+          },
+          "result": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "verifier": {
+      "type": "string"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "quote_verified": {
+      "type": "boolean",
+      "description": "true only if quoted_span was matched as an exact substring of a saved full source text (corpus or supplementary capture); false when quoted_span is null or rests on a WebFetch excerpt"
+    }
+  }
+}

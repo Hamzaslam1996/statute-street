@@ -1,0 +1,184 @@
+{
+ "addresses": [
+  {
+   "address_id": "A0016",
+   "street_address": "3515 FILLMORE ST",
+   "postal_city": "San Francisco",
+   "state": "CA",
+   "zip": "",
+   "year_built": "1926",
+   "units": "21"
+  },
+  {
+   "address_id": "A0050",
+   "street_address": "36 HOFF ST",
+   "postal_city": "San Francisco",
+   "state": "CA",
+   "zip": "",
+   "year_built": "1986",
+   "units": "49"
+  },
+  {
+   "address_id": "A0106",
+   "street_address": "250 FREMONT ST",
+   "postal_city": "San Francisco",
+   "state": "CA",
+   "zip": "",
+   "year_built": "",
+   "units": "60"
+  },
+  {
+   "address_id": "A0107",
+   "street_address": "10635 SHERMAN GROVE AVE",
+   "postal_city": "Los Angeles",
+   "state": "CA",
+   "zip": "91040",
+   "year_built": "1978",
+   "units": "20"
+  },
+  {
+   "address_id": "A0022",
+   "street_address": "10908 HARTSOOK ST",
+   "postal_city": "Los Angeles",
+   "state": "CA",
+   "zip": "91601",
+   "year_built": "2012",
+   "units": "5"
+  },
+  {
+   "address_id": "A0001",
+   "street_address": "6238 DE LONGPRE AVE",
+   "postal_city": "Los Angeles",
+   "state": "CA",
+   "zip": "90028",
+   "year_built": "1927",
+   "units": "32"
+  },
+  {
+   "address_id": "A0235",
+   "street_address": "6736 SELMA AVE",
+   "postal_city": "Los Angeles",
+   "state": "CA",
+   "zip": "90028",
+   "year_built": "",
+   "units": ""
+  },
+  {
+   "address_id": "A0322",
+   "street_address": "227 CYPRESS DR",
+   "postal_city": "San Ysidro",
+   "state": "CA",
+   "zip": "92173",
+   "year_built": "",
+   "units": "31"
+  },
+  {
+   "address_id": "A0019",
+   "street_address": "3820 HAINES ST",
+   "postal_city": "San Diego",
+   "state": "CA",
+   "zip": "92109",
+   "year_built": "",
+   "units": "16"
+  },
+  {
+   "address_id": "A0005",
+   "street_address": "1609 ADDISON ST",
+   "postal_city": "Berkeley",
+   "state": "CA",
+   "zip": "94703",
+   "year_built": "",
+   "units": ""
+  },
+  {
+   "address_id": "A0227",
+   "street_address": "1401 HUDSON ST",
+   "postal_city": "Hoboken",
+   "state": "NJ",
+   "zip": "07030",
+   "year_built": "2010",
+   "units": "2"
+  },
+  {
+   "address_id": "A0040",
+   "street_address": "69-75 JACKSON ST",
+   "postal_city": "Hoboken",
+   "state": "NJ",
+   "zip": "07030",
+   "year_built": "",
+   "units": ""
+  },
+  {
+   "address_id": "A0012",
+   "street_address": "1064 SUMMIT AVE.",
+   "postal_city": "Jersey City",
+   "state": "NJ",
+   "zip": "07728",
+   "year_built": "1900",
+   "units": ""
+  },
+  {
+   "address_id": "A0008",
+   "street_address": "1065 SUMMIT AVENUE",
+   "postal_city": "Jersey City",
+   "state": "NJ",
+   "zip": "78746",
+   "year_built": "",
+   "units": ""
+  },
+  {
+   "address_id": "A0331",
+   "street_address": "342-344 IRVINE TURNER BLV",
+   "postal_city": "Newark",
+   "state": "NJ",
+   "zip": "11219",
+   "year_built": "1910",
+   "units": ""
+  },
+  {
+   "address_id": "A0003",
+   "street_address": "876-878 S 14TH ST",
+   "postal_city": "Newark",
+   "state": "NJ",
+   "zip": "11219",
+   "year_built": "",
+   "units": ""
+  },
+  {
+   "address_id": "A0065",
+   "street_address": "63 Bailey ST",
+   "postal_city": "Dorchester",
+   "state": "MA",
+   "zip": "02124",
+   "year_built": "",
+   "units": ""
+  },
+  {
+   "address_id": "A0036",
+   "street_address": "33 WARD ST",
+   "postal_city": "South Boston",
+   "state": "MA",
+   "zip": "02127",
+   "year_built": "2019",
+   "units": ""
+  },
+  {
+   "address_id": "A0015",
+   "street_address": "15 Everett St",
+   "postal_city": "Cambridge",
+   "state": "MA",
+   "zip": "",
+   "year_built": "1930",
+   "units": "83"
+  },
+  {
+   "address_id": "A0048",
+   "street_address": "1619 COMMONWEALTH AV",
+   "postal_city": "Brighton",
+   "state": "MA",
+   "zip": "02135",
+   "year_built": "1899",
+   "units": ""
+  }
+ ]
+}

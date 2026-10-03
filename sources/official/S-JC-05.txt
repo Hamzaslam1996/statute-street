@@ -1,0 +1,8 @@
+SOURCE: https://cityofjerseycity.civicweb.net/document/436629/Ordinance%20Amending%20Chapter%20218%20Section%2012.pdf
+RETRIEVED: 2026-10-03T20:15Z
+VERIFIED_BY: AI-draft (web check 2026-10-03 ~20:00-20:25 UTC; corpus copies as retrieved by organisers/team)
+SHA256: 3fa405a7893163d73a818ecf397989e5709ff2aa758f90b6f4bb88105c4f9aa8
+NOTE: EXCERPT ONLY – text as returned by a single-page WebFetch summary on 2026-10-03; full page not saved (cloud shell cannot reach the site). Verify against the URL before quoting.. Source type: official. Publisher: City of Jersey City. robots.txt disallowed fetch – NOT read; title only
+---- BEGIN TEXT ----
+Fetch refused by robots.txt on 2026-10-03; document title as indexed: "Ordinance Amending Chapter 218 Section 12" (cityofjerseycity.civicweb.net document 436629). Not read.
+---- END TEXT ----

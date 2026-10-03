@@ -1,0 +1,8 @@
+SOURCE: https://www.nhlp.org/wp-content/uploads/SD-Municipal-Code-SOI-Article-08-Housing-1.pdf
+RETRIEVED: 2026-10-03T20:14Z
+VERIFIED_BY: AI-draft (web check 2026-10-03 ~20:00-20:25 UTC; corpus copies as retrieved by organisers/team)
+SHA256: 9fb006fd10b06cad86b82c9b900556c61efeb6824ef0f488304d1bb67b8ebbfa
+NOTE: EXCERPT ONLY – text as returned by a single-page WebFetch summary on 2026-10-03; full page not saved (cloud shell cannot reach the site). Verify against the URL before quoting.. Source type: secondary-news. Publisher: NHLP (mirror of SDMC). history: O-20986 N.S. effective 10-18-2018 (live fetch; excerpt saved)
+---- BEGIN TEXT ----
+NHLP PDF of SDMC Div. 8 (WebFetch excerpt 2026-10-03): §98.0801 "It is the purpose and intent of this Division to ensure that landlords in the City of San Diego cannot discriminate against any person based on that person's source of income." History: Ordinance O–20986 N.S.; effective 10-18-2018. §98.0803 prohibits refusing tenancy, terminating, misrepresenting availability, discriminatory terms "wholly or in part, based on a person's source of income".
+---- END TEXT ----

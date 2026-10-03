@@ -1,0 +1,8 @@
+SOURCE: https://berkeley.municipal.codes/enactments/Ord7692-NS
+RETRIEVED: 2026-10-03T20:17Z
+VERIFIED_BY: AI-draft (web check 2026-10-03 ~20:00-20:25 UTC; corpus copies as retrieved by organisers/team)
+SHA256: ddd50dcd5d5e7c3ee05eaa3af7780b5741dd0e14a89672721828fd95a9653197
+NOTE: EXCERPT ONLY – text as returned by a single-page WebFetch summary on 2026-10-03; full page not saved (cloud shell cannot reach the site). Verify against the URL before quoting.. Source type: official. Publisher: City of Berkeley (code publisher). live fetch; excerpt saved
+---- BEGIN TEXT ----
+berkeley.municipal.codes Ord7692-NS (WebFetch excerpt 2026-10-03): "Adds Ch. 13.106, prohibiting the use of criminal history in housing decisions." Adopted 2020; effective date not displayed. BMC 13.106.030 history: "(Ord. 7692-NS § 1 (part), 2020)".
+---- END TEXT ----

@@ -1,0 +1,8 @@
+SOURCE: https://cityclerk.lacity.org/lacityclerkconnect/index.cfm?fa=ccfi.viewrecord&cfnumber=23-1134
+RETRIEVED: 2026-10-03T20:10Z
+VERIFIED_BY: AI-draft (web check 2026-10-03 ~20:00-20:25 UTC; corpus copies as retrieved by organisers/team)
+SHA256: 5a94e6ac2cd69a68c6f2d95098e47f22561535f04e59754c792752ea4029e091
+NOTE: EXCERPT ONLY – text as returned by a single-page WebFetch summary on 2026-10-03; full page not saved (cloud shell cannot reach the site). Verify against the URL before quoting.. Source type: official. Publisher: Los Angeles City Clerk. adopted 2025-12-12; Mayor 2025-12-24; published 2025-12-26; effective 2026-02-02 (live fetch; excerpt saved)
+---- BEGIN TEXT ----
+Council file 23-1134 history (WebFetch excerpt 2026-10-03): Ordinance Number 188795; "Council adopted item forthwith." (12/12/2025); "Mayor Concurrence/Council Action" 12/24/2025; "Ordinance posted/published." 12/26/2025; "Ordinance effective date: February 2, 2026."
+---- END TEXT ----

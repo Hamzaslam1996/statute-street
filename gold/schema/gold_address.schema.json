@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Statute Street independent gold address record",
+  "type": "object",
+  "required": ["address_id","raw","jurisdiction_stack","expected","unknown_facts","notes"],
+  "properties": {
+    "address_id": {"type":"string"},
+    "raw": {"type":"object"},
+    "jurisdiction_stack": {"type":"array","minItems":3,"maxItems":3,"items":{"type":["string","null"]}},
+    "expected": {"type":"array","items":{"type":"object","required":["gold_id","result","reason"],
+      "properties":{"gold_id":{"type":"string"},"result":{"enum":["applies","unknown","superseded","not_yet_effective","pending"]},"reason":{"type":"string"},"conflict_flag":{"type":"boolean"}}}},
+    "unknown_facts": {"type":"array","items":{"type":"string"}},
+    "notes": {"type":["string","null"]}
+  }
+}

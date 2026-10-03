@@ -1,0 +1,8 @@
+SOURCE: https://2021.caanet.org/kb/city-of-los-angeles-source-of-income-discrimination-law/amp
+RETRIEVED: 2026-10-03T20:19Z
+VERIFIED_BY: AI-draft (web check 2026-10-03 ~20:00-20:25 UTC; corpus copies as retrieved by organisers/team)
+SHA256: 8b708b205f93fee5ca9bebec640013aa44b9c37fae40473d62b487754b54992b
+NOTE: EXCERPT ONLY – text as returned by a single-page WebFetch summary on 2026-10-03; full page not saved (cloud shell cannot reach the site). Verify against the URL before quoting.. Source type: secondary-news. Publisher: California Apartment Association. gives effective 2020-01-01
+---- BEGIN TEXT ----
+CAA knowledge base (WebFetch excerpt 2026-10-03): "Effective January 1, 2020, the City of Los Angeles prohibits discrimination based on a tenant's source of income, including the receipt of housing subsidies, such as Section 8 Housing Choice Vouchers. (Los Angeles Municipal Code Section 45.65-45.69.)"
+---- END TEXT ----

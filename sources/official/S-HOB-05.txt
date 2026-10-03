@@ -1,0 +1,8 @@
+SOURCE: https://www.hobokengirl.com/hbooken-rent-setting-algorithm-prohibit/
+RETRIEVED: 2026-10-03T20:16Z
+VERIFIED_BY: AI-draft (web check 2026-10-03 ~20:00-20:25 UTC; corpus copies as retrieved by organisers/team)
+SHA256: 7a0c9b8a23c10e7831f474faecc2a1f2a7dd6720ce2cdb56546885e7b9e01de4
+NOTE: EXCERPT ONLY – text as returned by a single-page WebFetch summary on 2026-10-03; full page not saved (cloud shell cannot reach the site). Verify against the URL before quoting.. Source type: secondary-news. Publisher: Hoboken Girl. support only
+---- BEGIN TEXT ----
+Hoboken Girl (WebFetch excerpt 2026-10-03): council vote July 9, 2025; bans AI-driven algorithmic software or data-sharing platforms to "coordinate, recommend, or implement rental prices, lease terms, or occupancy levels among competing landlords"; amendment June 4, 2025 allows public pricing information older than 365 days.
+---- END TEXT ----

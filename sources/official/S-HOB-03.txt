@@ -1,0 +1,8 @@
+SOURCE: https://ecode360.com/15252441
+RETRIEVED: 2026-10-03T20:16Z
+VERIFIED_BY: AI-draft (web check 2026-10-03 ~20:00-20:25 UTC; corpus copies as retrieved by organisers/team)
+SHA256: 6943e4699bcc80d2f961b527196f43501846ea7c402b5211eb4e4387ea34b0b0
+NOTE: EXCERPT ONLY – text as returned by a single-page WebFetch summary on 2026-10-03; full page not saved (cloud shell cannot reach the site). Verify against the URL before quoting.. Source type: official. Publisher: General Code (ecode360). live single-page read; excerpt saved
+---- BEGIN TEXT ----
+ecode360 § 155-2 Exemptions (WebFetch excerpt 2026-10-03): A. "Motels and hotels."; B. newly constructed dwellings rented for the first time (prior registration); C. "Industrial property."; D. "Nonresidential and commercial property."; E. institutional student housing; F. government-owned housing; G. buildings completely vacant since January 1, 1984; H. multiple dwellings constructed after June 25, 1987 for the amortization period of the initial mortgage or 30 years (whichever less) under N.J.S.A. 2A:42-84.1 et seq. [Amended 2-1-2023 by Ord. No. B-532]. § 155-1 "Dwelling": "Any building or structure or trailer or land used as a trailer park, rented or offered for rent to one or more tenants or family units."
+---- END TEXT ----
