@@ -259,7 +259,7 @@
   "status": "in_force",
   "title": "FEHA source-of-income protection (incl. Section 8 vouchers) – Cal. Gov. Code § 12955",
   "requirement": "Housing providers may not discriminate against applicants or tenants because of source of income, which includes federal, state or local housing subsidies such as Section 8 Housing Choice Vouchers paid to the landlord on the tenant's behalf.",
-  "key_value": "source of income (incl. Section 8 vouchers) is a protected characteristic",
+  "key_value": "'Source of income' includes federal, state or local housing subsidies incl. Section 8 vouchers; discrimination based on source of income is unlawful",
   "coverage": {
    "coo_cutoff": null,
    "year_built_max": null,
@@ -276,7 +276,8 @@
   "citation": "Cal. Gov. Code § 12955(a), (p)",
   "source_ids": [
    "S-CA-05",
-   "S-CA-06"
+   "S-CA-06",
+   "S-MAN-12"
   ],
   "corpus_doc_ids": [
    "D027",
@@ -285,7 +286,7 @@
   "supplementary_doc_ids": [
    "D021"
   ],
-  "quoted_span": "federal, state, or local housing subsidies, including, but not limited to, federal housing assistance vouchers issued under Section 8 of the United States Housing Act of 1937 (42 U.S.C. Sec. 1437f)",
+  "quoted_span": "For the purposes of this section, “source of income” means lawful, verifiable income paid directly to a tenant, or to a representative of a tenant, or paid to a housing owner or landlord on behalf of a tenant, including federal, state, or local public assistance, and federal, state, or local housing subsidies, including, but not limited to, federal housing assistance vouchers issued under Section 8 of the United States Housing Act of 1937 (42 U.S.C. Sec. 1437f).",
   "quoted_span_in_corpus": true,
   "quote_verified": true,
   "interaction": {
@@ -297,7 +298,7 @@
   "conflict_note": null,
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.8,
+  "confidence": 0.85,
   "verified_against": [
    {
     "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
@@ -308,10 +309,15 @@
     "url": "https://calcivilrights.ca.gov/housing/",
     "checked_at_utc": "2026-10-01T22:35Z",
     "result": "official-agency D016: \"Refusing to rent to a tenant with a section 8 voucher\" listed as unlawful"
+   },
+   {
+    "url": "sources/manual/CA-SCRN-01_Gov_12955_justia.pdf",
+    "checked_at_utc": "2026-10-04",
+    "result": "manual download by Hamza (Justia mirror) – same (p)(1) text as D027"
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "The voucher-inclusive definition of source of income was added by SB 329 (Stats. 2019 ch. 600), effective 2020-01-01; enactment date 2019-10-08 is from general knowledge of the chaptering date and was NOT verified against leginfo in this session (confidence reduced). Current text amended by SB 267 (Stats. 2023 ch. 776) eff. 2024-01-01. CRD regulations (2 CCR § 12264 et seq.) also restrict criminal-history screening; not separately recorded."
+  "verifier": "Hamza",
+  "notes": "The voucher-inclusive definition of source of income was added by SB 329 (Stats. 2019 ch. 600), effective 2020-01-01; enactment date 2019-10-08 is from general knowledge of the chaptering date and was NOT verified against leginfo in this session (confidence reduced). Current text amended by SB 267 (Stats. 2023 ch. 776) eff. 2024-01-01. CRD regulations (2 CCR § 12264 et seq.) also restrict criminal-history screening; not separately recorded. History note in current text states only the latest amendment: 'Amended by Stats. 2023, Ch. 776, Sec. 1. (SB 267) Effective January 1, 2024.' SB 329's 2020-01-01 date is the standard 1 January effective date for a non-urgency statute chaptered 2019-10-08 (Cal. Const. art. IV, § 8(c)); not stated in the saved text. The extractor will likely return 2024-01-01 or null — accept that mismatch. Lawyer review (Hamza, 2026-10-04) batch 4 row 12."
  },
  {
   "gold_id": "CA-ALG-01",
@@ -321,7 +327,7 @@
   "status": "in_force",
   "title": "Common pricing algorithm prohibition (AB 325, Cartwright Act) – Cal. Bus. & Prof. Code § 16729",
   "requirement": "It is unlawful to use or distribute a common pricing algorithm (software using competitor data to recommend or set prices) as part of a conspiracy to restrain trade, or to coerce another person to adopt a price it recommends. Applies to residential rent-setting software statewide.",
-  "key_value": "prohibition on use/distribution of common pricing algorithms in restraint of trade",
+  "key_value": "Unlawful to use or distribute a common pricing algorithm (a) as part of a contract, combination or conspiracy in restraint of trade, or (b) to coerce another person to adopt its recommended price or commercial term; 'common pricing algorithm' = methodology used by two or more persons that uses competitor data to recommend, align, stabilize, set or otherwise influence a price or commercial term",
   "coverage": {
    "coo_cutoff": null,
    "year_built_max": null,
@@ -335,16 +341,19 @@
   "effective_date": "2026-01-01",
   "enacted_date": "2025-10-06",
   "sunset_date": null,
-  "citation": "Cal. Bus. & Prof. Code § 16729 (added by AB 325, Stats. 2025 ch. 338)",
+  "citation": "Cal. Bus. & Prof. Code § 16729 (added by Stats. 2025, ch. 338, § 1 (AB 325))",
   "source_ids": [
    "S-CA-07",
-   "S-CA-08"
+   "S-CA-08",
+   "S-CA-09",
+   "S-MAN-08"
   ],
   "corpus_doc_ids": [
    "D022"
   ],
   "supplementary_doc_ids": [
-   "D028"
+   "D028",
+   "D093"
   ],
   "quoted_span": "It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
   "quoted_span_in_corpus": true,
@@ -358,7 +367,7 @@
   "conflict_note": null,
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.85,
+  "confidence": 0.95,
   "verified_against": [
    {
     "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB325",
@@ -369,10 +378,20 @@
     "url": "https://www.clearygottlieb.com/news-and-insights/publication-listing/californias-antitrust-law-amendments-kick-in-targeting-algorithmic-pricing",
     "checked_at_utc": "2026-10-03T18:50Z",
     "result": "team supplementary D028 (secondary): AB 325 and SB 763 \"took effect on January 1, 2026\""
+   },
+   {
+    "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=16729",
+    "checked_at_utc": "2026-10-03T22:34Z",
+    "result": "OFFICIAL leginfo section page (team capture D093; direct fetch succeeded): § 16729 text identical to the span; history note \"Effective January 1, 2026.\""
+   },
+   {
+    "url": "sources/manual/CA-ALG-01_BPC_16729_justia.pdf",
+    "checked_at_utc": "2026-10-04",
+    "result": "manual download by Hamza (Justia mirror) – same text"
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "Effective date 2026-01-01 follows from chaptering on 2025-10-06 in a regular session (Cal. Const. art. IV, § 8(c)(1): statutes enacted in regular session take effect January 1 next following a 90-day period); the bill text has no urgency clause. Fixed by change test T1: not_yet_effective as of 2025-12-31, applies as of 2026-01-02 for every CA address."
+  "verifier": "Hamza",
+  "notes": "Effective date 2026-01-01 follows from chaptering on 2025-10-06 in a regular session (Cal. Const. art. IV, § 8(c)(1): statutes enacted in regular session take effect January 1 next following a 90-day period); the bill text has no urgency clause. Fixed by change test T1: not_yet_effective as of 2025-12-31, applies as of 2026-01-02 for every CA address. Official section page captured 2026-10-03 (D093) carries the history note \"(Added by Stats. 2025, Ch. 338, Sec. 1. (AB 325) Effective January 1, 2026.)\" — an explicitly stated effective date (rulings_04 §2B). Lawyer review (Hamza, 2026-10-04) batch 3 row 6."
  },
  {
   "gold_id": "NJ-RENT-00",
@@ -745,7 +764,8 @@
   "sunset_date": null,
   "citation": "N.J.S.A. 56:9-20 to 56:9-26 (P.L.2026, c.43)",
   "source_ids": [
-   "S-NJ-09"
+   "S-NJ-09",
+   "S-MAN-13"
   ],
   "corpus_doc_ids": [
    "D069"
@@ -776,10 +796,15 @@
     "url": "https://daypitney.com/new-jersey-enacts-fair-act-to-prohibit-algorithmic-rent-setting-practices",
     "checked_at_utc": "2026-10-03T18:52Z",
     "result": "team supplementary D060 (secondary law-firm alert) – corroborates enactment"
+   },
+   {
+    "url": "sources/manual/NJ-ALG-01_secondary_NJ_State_Policy_Lab_2026-07-27.pdf",
+    "checked_at_utc": "2026-10-04",
+    "result": "secondary (NJ State Policy Lab): signed 2026-07-20, effective 2027-07-01"
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "Effective date computed: approved 2026-07-20 → first day of twelfth month next following = 2027-07-01. Change test T3: not_yet_effective on 2026-10-01; applies on 2027-07-02 for every NJ address; Jersey City and Hoboken addresses conflict_flag=true."
+  "verifier": "Hamza",
+  "notes": "Effective date computed: approved 2026-07-20 → first day of twelfth month next following = 2027-07-01. Change test T3: not_yet_effective on 2026-10-01; applies on 2027-07-02 for every NJ address; Jersey City and Hoboken addresses conflict_flag=true. Corroborated by NJ State Policy Lab (27 Jul 2026): signed 20 Jul 2026 as P.L.2026, c.43; effective 1 Jul 2027. No field changes. Lawyer review (Hamza, 2026-10-04) batch 4 row 9."
  },
  {
   "gold_id": "MA-RENT-00",
@@ -805,7 +830,8 @@
   "sunset_date": null,
   "citation": "M.G.L. c.40P, § 4",
   "source_ids": [
-   "S-MA-01"
+   "S-MA-01",
+   "S-MAN-09"
   ],
   "corpus_doc_ids": [
    "D048"
@@ -829,10 +855,15 @@
     "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40P/Section4",
     "checked_at_utc": "2026-10-01T22:36Z",
     "result": "organisers corpus copy D048 (official)"
+   },
+   {
+    "url": "sources/manual/MA-RENT-P1_Cella_v_AG_SJC-13893.pdf",
+    "checked_at_utc": "2026-10-04",
+    "result": "SJC slip opinion p. 3 restates c.40P § 2 prohibition"
    }
   ],
   "verifier": "AI-draft",
-  "notes": "Applies to Boston and Cambridge too; recorded as the reason for BOS-RENT-00 and CAM-RENT-00."
+  "notes": "Applies to Boston and Cambridge too; recorded as the reason for BOS-RENT-00 and CAM-RENT-00. Supporting restatement in Cella v. Attorney General, SJC-13893, slip op. p. 3: General Laws c. 40P, § 2, \"broadly prohibits any regulatory scheme based upon or implementing rent control.\" (secondary restatement; D048 remains primary). Lawyer review (Hamza, 2026-10-04) batch 4 row 11."
  },
  {
   "gold_id": "MA-RENT-P1",
@@ -842,7 +873,7 @@
   "status": "failed",
   "title": "Rent-control ballot initiative IP 25-21 (struck by the SJC 2026-06-23)",
   "requirement": "A proposed 2026 ballot question would have limited annual residential rent increases statewide; the Supreme Judicial Court ruled on 2026-06-23 that it could not go before voters because it related to religion. No rent cap results.",
-  "key_value": null,
+  "key_value": "NO RULE: petition barred from the November 2026 ballot (art. 48 excluded matter — relates to religion); no statewide rent cap exists; M.G.L. c.40P continues to prohibit rent control",
   "coverage": {
    "coo_cutoff": null,
    "year_built_max": null,
@@ -856,15 +887,16 @@
   "effective_date": null,
   "enacted_date": null,
   "sunset_date": null,
-  "citation": "Initiative Petition 25-21 (Mass. 2026); Cella v. Attorney General (SJC, decided 2026-06-23)",
+  "citation": "Cella v. Attorney General, SJC-13893 (Mass. June 23, 2026) (Initiative Petition 25-21, 'An Initiative Petition to Protect Tenants by Limiting Rent Increases')",
   "source_ids": [
-   "S-MA-02"
+   "S-MA-02",
+   "S-MAN-09"
   ],
   "corpus_doc_ids": [],
   "supplementary_doc_ids": [
    "D059"
   ],
-  "quoted_span": "The state’s Supreme Judicial Court ruled a ballot question seeking to bring rent control back to Massachusetts cannot go forward this November, because it includes a religious exemption.",
+  "quoted_span": "Accordingly, art. 48 bars placement of the\n\npetition on the November 2026 Statewide election ballot.",
   "quoted_span_in_corpus": false,
   "quote_verified": true,
   "interaction": {
@@ -876,7 +908,7 @@
   "conflict_note": null,
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.7,
+  "confidence": 0.95,
   "verified_against": [
    {
     "url": "https://www.wbur.org/news/2026/06/23/massachusetts-high-court-rent-control-ballot-question-struck",
@@ -887,10 +919,15 @@
     "url": "https://massrealestatelawblog.com/tag/cella-v-attorney-general/",
     "checked_at_utc": "2026-10-03T19:02Z",
     "result": "capture failed (0 bytes) – not verified"
+   },
+   {
+    "url": "sources/manual/MA-RENT-P1_Cella_v_AG_SJC-13893.pdf",
+    "checked_at_utc": "2026-10-04",
+    "result": "manual download by Hamza: official SJC slip opinion; span verified against the pdftotext copy"
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "Change test T5: status failed; affected address set empty; no rent cap reported for any Boston or Cambridge address. Status rests on a news report (WBUR) plus the organisers' README/change_tests; the SJC slip opinion was not retrieved — Hamza to confirm case name/date if a primary cite is wanted."
+  "verifier": "Hamza",
+  "notes": "Change test T5: status failed; affected address set empty; no rent cap reported for any Boston or Cambridge address. Status rests on a news report (WBUR) plus the organisers' README/change_tests; the SJC slip opinion was not retrieved — Hamza to confirm case name/date if a primary cite is wanted. SJC-13893 argued 2026-05-06, decided 2026-06-23 (official slip opinion saved in sources/manual). Lawyer review (Hamza, 2026-10-04) batch 4 row 11."
  },
  {
   "gold_id": "MA-JUST-00",
@@ -1252,7 +1289,8 @@
   "sunset_date": null,
   "citation": "M.G.L. c.112, § 87DDD½ (St. 2025, c.9, § 43, eff. 2025-08-01)",
   "source_ids": [
-   "S-MA-10"
+   "S-MA-10",
+   "S-MAN-10"
   ],
   "corpus_doc_ids": [
    "D057"
@@ -1270,16 +1308,21 @@
   "conflict_note": null,
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.85,
+  "confidence": 0.9,
   "verified_against": [
    {
     "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXVI/Chapter112/Section87DDD%201~2",
     "checked_at_utc": "2026-10-01T22:56Z",
     "result": "organisers corpus copy D057 (official): \"Text of section as amended by 2025, 9, Sec. 43 effective August 1, 2025\""
+   },
+   {
+    "url": "sources/manual/MA-FEE-02_c112_87DDD-half_masslaw.pdf",
+    "checked_at_utc": "2026-10-04",
+    "result": "manual download by Hamza (mass.gov Trial Court Law Libraries text): \"effective August 1, 2025\"; operative sentence identical to D057"
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "Decided by Hamza 2026-10-04 (L096): added; effective date 2025-08-01 stated in the official annotation (listed in the brief)."
+  "verifier": "Hamza",
+  "notes": "Decided by Hamza 2026-10-04 (L096): added; effective date 2025-08-01 stated in the official annotation (listed in the brief). Effective date 2025-08-01 confirmed by the stated line in the Trial Court Law Libraries text: \"Amended by St. 2025, c. 9, § 43, effective August 1, 2025\" (explicitly stated date; D057 official annotation agrees). Lawyer review (Hamza, 2026-10-04) batch 4 row 15."
  },
  {
   "gold_id": "MA-SCRN-02",
@@ -1289,7 +1332,7 @@
   "status": "in_force",
   "title": "CORI in housing – 803 CMR 5.00 (Criminal Offender Record Information: housing)",
   "requirement": "Housing providers that obtain Criminal Offender Record Information must follow DCJIS regulations limiting how CORI is requested, used and shared in housing decisions.",
-  "key_value": "regulated access to and use of CORI by housing providers",
+  "key_value": "CORI may be requested only as the final step of the application; before asking about criminal history or making an adverse decision the landlord must give the applicant a copy of the CORI and disclose its source; look-back limited to felonies 10 years / misdemeanours 5 years after disposition (c.6 § 172(a)(3))",
   "coverage": {
    "coo_cutoff": null,
    "year_built_max": null,
@@ -1297,23 +1340,25 @@
    "max_units": null,
    "owner_type": null,
    "tenancy_months": null,
-   "other": "Housing providers in Massachusetts that use CORI"
+   "other": "Landlords, property management companies, real estate agents and public housing authorities that request CORI (803 CMR 5.01(2))"
   },
   "exemptions": null,
   "effective_date": null,
   "enacted_date": null,
   "sunset_date": null,
-  "citation": "803 CMR 5.00",
+  "citation": "803 CMR 5.00 (CORI – Housing), esp. 5.04, 5.10; M.G.L. c.6, § 172(a)(3)",
   "source_ids": [
-   "S-MA-11"
+   "S-MA-11",
+   "S-MAN-03",
+   "S-MAN-04"
   ],
   "corpus_doc_ids": [
    "D056"
   ],
   "supplementary_doc_ids": [],
-  "quoted_span": null,
+  "quoted_span": "Each landlord, property management company, real estate agent, or public housing authority\n           shall provide a copy of a housing applicant's CORI or other criminal history information, and\n           shall disclose the source of the information, to him or her:\n               (a) before asking the applicant any questions about the criminal history; and\n               (b) before making an adverse housing decision based on the housing applicant's CORI or\n               other criminal history information.",
   "quoted_span_in_corpus": false,
-  "quote_verified": false,
+  "quote_verified": true,
   "interaction": {
    "overrides": [],
    "yields_to": [],
@@ -1323,16 +1368,26 @@
   "conflict_note": null,
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.5,
+  "confidence": 0.8,
   "verified_against": [
    {
     "url": "https://www.mass.gov/doc/803-cmr-5-criminal-offender-record-information-cori-housing/download",
     "checked_at_utc": "2026-10-03T19:03Z",
     "result": "organisers manifest D056: capture failed (403 Forbidden); team capture also failed (0 bytes). Text not seen."
+   },
+   {
+    "url": "sources/manual/MA-SCRN-02_803_CMR_5.pdf",
+    "checked_at_utc": "2026-10-04",
+    "result": "manual download by Hamza: 803 CMR 5.00 (pages dated 6/11/21); span verified against the pdftotext copy"
+   },
+   {
+    "url": "https://codes.findlaw.com/ma/part-i-administration-of-the-government-ch-1-182/ma-gen-laws-ch-6-sect-172/",
+    "checked_at_utc": "2026-10-04",
+    "result": "secondary mirror of M.G.L. c.6 § 172 (manual download); look-back periods 10y felony / 5y misdemeanour"
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "Decided by Hamza 2026-10-04 (L097): added with null span, quote_verified false, confidence 0.5; source text never retrieved — requirement wording is a general description, not quoted."
+  "verifier": "Hamza",
+  "notes": "Decided by Hamza 2026-10-04 (L097): added with null span, quote_verified false, confidence 0.5; source text never retrieved — requirement wording is a general description, not quoted. Regulation compiled 6/11/21; no effective date stated in the captured pages. Official malegislature.gov c.6 § 172 page could not be captured (connection timed out twice on 2026-10-03; FindLaw mirror saved instead). Lawyer review (Hamza, 2026-10-04) batch 1 row 2."
  },
  {
   "gold_id": "LA-RENT-01",
@@ -1360,7 +1415,8 @@
   "source_ids": [
    "S-LA-01",
    "S-LA-02",
-   "S-LA-03"
+   "S-LA-03",
+   "S-MAN-14"
   ],
   "corpus_doc_ids": [
    "D041",
@@ -1404,10 +1460,15 @@
     "url": "https://members.aagla.org/news/news-alert-la-city-passes-severely-reduced-rso-formula-ordinance",
     "checked_at_utc": "2026-10-03T20:08Z",
     "result": "secondary (AAGLA): \"effective January 24, 2026 and the new RSO formula calculation will be implemented July 1, 2026\"; 90% CPI, 1% floor, 4% cap"
+   },
+   {
+    "url": "sources/manual/LA-JUST-02_LAMC_ch15_art1_151.txt",
+    "checked_at_utc": "2026-10-04",
+    "result": "official LAMC text (manual capture): § 151.02 Rental Units ¶6 COO cutoff; § 151.06 history \"Amended by Ord. No. 188,795, Eff. 2/2/26.\""
    }
   ],
   "verifier": "AI-draft",
-  "notes": "effective_date is the Ord. 188795 date; the RSO itself dates from 1979. Year_built is not the COO date: a 1978 year_built → unknown; year_built ≤ 1977 → applies (if ≥2 units); year_built ≥ 1979 → not covered. The LAHD calculator page still shows the 2025-26 figure (3%); a 2026-27 figure (reported 3% by Hoodline, secondary) was not confirmed on an official page."
+  "notes": "effective_date is the Ord. 188795 date; the RSO itself dates from 1979. Year_built is not the COO date: a 1978 year_built → unknown; year_built ≤ 1977 → applies (if ≥2 units); year_built ≥ 1979 → not covered. The LAHD calculator page still shows the 2025-26 figure (3%); a 2026-27 figure (reported 3% by Hoodline, secondary) was not confirmed on an official page. Coverage span now from the official LAMC text (§ 151.02 definition of \"Rental Units\", exemption 6: first COO after 1978-10-01 exempt). The same text shows § 151.06 \"(Amended by Ord. No. 188,795, Eff. 2/2/26.)\", confirming the 2026-02-02 effective date in primary code text. Lawyer review batch 4 (row 14 note); verifier unchanged (AI-draft). quoted_span kept as the organisers-corpus LAHD text (predicts citation points); the official LAMC § 151.02 \"Rental Units\" ¶6 text reads: \"Housing accommodations, located in a structure for which the first Certificate of Occupancy was issued after October 1, 1978, are exempt from the provisions of this chapter. If the structure was issued a Certificate of Occupancy, including a Temporary Certificate of Occupancy, on or before October 1, 1978, the housing accommodation(s) shall be subject to the provisions of this chapter.\" (sources/manual/LA-JUST-02_LAMC_ch15_art1_151.txt)."
  },
  {
   "gold_id": "LA-JUST-01",
@@ -1484,7 +1545,7 @@
   "status": "in_force",
   "title": "RSO legal reasons for eviction and relocation assistance – LAMC § 151.09",
   "requirement": "For RSO units, a landlord may evict only for the fourteen legal reasons listed in the RSO (at-fault and no-fault); no-fault evictions require relocation assistance and a Landlord Declaration of Intent to Evict filed with LAHD, and all termination notices must be filed with LAHD within three business days.",
-  "key_value": "RSO just-cause grounds + relocation assistance",
+  "key_value": "Landlord may not evict from an RSO unit except on the legal grounds listed in § 151.09.A (e.g. non-payment, lease violation, nuisance, owner/family occupancy, demolition/withdrawal); relocation assistance due for no-fault evictions (§ 151.09.G)",
   "coverage": {
    "coo_cutoff": "1978-10-01",
    "year_built_max": null,
@@ -1498,18 +1559,19 @@
   "effective_date": null,
   "enacted_date": null,
   "sunset_date": null,
-  "citation": "L.A. Mun. Code § 151.09",
+  "citation": "L.A. Mun. Code § 151.09 (Evictions)",
   "source_ids": [
    "S-LA-01",
-   "S-LA-05"
+   "S-LA-05",
+   "S-MAN-14"
   ],
   "corpus_doc_ids": [
    "D041",
    "D043"
   ],
   "supplementary_doc_ids": [],
-  "quoted_span": "three (3) business days of service on the tenant\nper Los Angeles Municipal Code 151.09.C.9 & 165.05.B.5.",
-  "quoted_span_in_corpus": true,
+  "quoted_span": "A landlord may bring an action to recover possession of a rental unit\nonly upon one of the following grounds:",
+  "quoted_span_in_corpus": false,
   "quote_verified": true,
   "interaction": {
    "overrides": [
@@ -1522,7 +1584,7 @@
   "conflict_note": null,
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.75,
+  "confidence": 0.85,
   "verified_against": [
    {
     "url": "https://housing.lacity.gov/residents/rso-overview",
@@ -1533,10 +1595,15 @@
     "url": "https://housing.lacity.gov/wp-content/uploads/2026/08/Relocation-Assistance-Bulletins-A-and-B-Combined.pdf",
     "checked_at_utc": "2026-10-01T22:36Z",
     "result": "official-agency bulletin (corpus D043): relocation amounts effective 2026-07-01 to 2027-06-30"
+   },
+   {
+    "url": "sources/manual/LA-JUST-02_LAMC_ch15_art1_151.txt",
+    "checked_at_utc": "2026-10-04",
+    "result": "manual capture by Hamza of LAMC ch. XV art. 1 (American Legal); § 151.09 text; span verified"
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "effective_date null: the RSO eviction provisions date from 1979 and have been amended many times; no single effective date verified. Hamza may prefer to merge LA-JUST-01/02 into one LA just-cause rule."
+  "verifier": "Hamza",
+  "notes": "effective_date null: the RSO eviction provisions date from 1979 and have been amended many times; no single effective date verified. Hamza may prefer to merge LA-JUST-01/02 into one LA just-cause rule. Ordinance history in the code text gives amendment dates only (e.g. § 151.09 \"Amended by Ord. No. 154,237, Eff. 8/30/80, Oper. 9/1/80\"; A.9 \"Added by Ord. No. 165,251, Eff. 11/20/89\") — recorded here, not as the rule's date. Lawyer review (Hamza, 2026-10-04) batch 4 row 14."
  },
  {
   "gold_id": "LA-DEP-01",
@@ -1560,9 +1627,10 @@
   "effective_date": null,
   "enacted_date": null,
   "sunset_date": null,
-  "citation": "L.A. Mun. Code § 151.06.02",
+  "citation": "L.A. Mun. Code § 151.06.02 (Payment of Interest on Security Deposits; added by Ord. No. 166,368, eff. 1990-12-06)",
   "source_ids": [
-   "S-LA-01"
+   "S-LA-01",
+   "S-MAN-14"
   ],
   "corpus_doc_ids": [
    "D041"
@@ -1582,7 +1650,7 @@
   "conflict_note": null,
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.7,
+  "confidence": 0.8,
   "verified_against": [
    {
     "url": "https://housing.lacity.gov/residents/rso-overview",
@@ -1593,10 +1661,15 @@
     "url": "https://members.aagla.org/news/city-of-la-security-deposit-interest-requirement",
     "checked_at_utc": "2026-10-03T18:51Z",
     "result": "team supplementary D044 (secondary) quotes LAMC 151.06.02: interest accrues from 1990-11-01, paid monthly or yearly"
+   },
+   {
+    "url": "sources/manual/LA-JUST-02_LAMC_ch15_art1_151.txt",
+    "checked_at_utc": "2026-10-04",
+    "result": "official LAMC text (manual capture): § 151.06.02 added by Ord. No. 166,368, Eff. 12/6/90; B amended by Ord. No. 174,017, Eff. 7/16/01"
    }
   ],
   "verifier": "AI-draft",
-  "notes": "quoted_span is a heading on the official LAHD page (short but ≥20 chars); the operative text is only available in the secondary AAGLA capture. Category fit (security_deposits) is reasonable but this is an interest duty, not a cap — flagged for Hamza."
+  "notes": "quoted_span is a heading on the official LAHD page (short but ≥20 chars); the operative text is only available in the secondary AAGLA capture. Category fit (security_deposits) is reasonable but this is an interest duty, not a cap — flagged for Hamza. quoted_span kept as the organisers-corpus LAHD text (predicts citation points); the official LAMC § 151.06.02.B text reads: \"A landlord who is subject to the provisions of Section 1950.5 of the California Civil Code shall pay annually interest on all security deposits held for at\" (sources/manual/LA-JUST-02_LAMC_ch15_art1_151.txt)."
  },
  {
   "gold_id": "LA-FEE-00",
@@ -2355,15 +2428,16 @@
   "citation": "San Diego Mun. Code § 98.0803 (O-20986 N.S.)",
   "source_ids": [
    "S-SD-02",
-   "S-SD-03"
+   "S-SD-03",
+   "S-SD-06"
   ],
   "corpus_doc_ids": [],
   "supplementary_doc_ids": [
    "D075"
   ],
-  "quoted_span": null,
+  "quoted_span": "It is unlawful for any person to do any of the following acts, wholly or in \npart, based on a person’s source of income",
   "quoted_span_in_corpus": false,
-  "quote_verified": false,
+  "quote_verified": true,
   "interaction": {
    "overrides": [],
    "yields_to": [],
@@ -2384,10 +2458,15 @@
     "url": "https://gocodebook.com/library/us/ca/san-diego-zoning/division-8-prohibition-of-discrimination-based-on-a-tenant-s-source-of-income/98.0801-purpose-and-intent",
     "checked_at_utc": "2026-10-03T20:13Z",
     "result": "code publisher returned HTTP 500 on fetch; team capture D075 contains only the site TOC"
+   },
+   {
+    "url": "https://docs.sandiego.gov/municode/municodechapter09/ch09art08division08.pdf",
+    "checked_at_utc": "2026-10-03T21:16Z",
+    "result": "OFFICIAL SDMC Division 8 PDF (team re-capture D075): § 98.0803(a) text"
    }
   ],
   "verifier": "AI-draft",
-  "notes": "quoted_span null: no saved copy of the operative text (official SDMC PDF for Division 8 not retrieved; 500 error from code publisher). enacted_date 2018-09-18 from the CAA ordinance copy filename (SD_Section8Ord_091118) – low confidence. Decided by Hamza 2026-10-04 (L033): effective_date 2019-08-01 (code history 2018-10-18 noted). Checked 2026-10-04: corpus_supplementary/text/D075.txt (31,868 bytes) contains only the GoCodebook site table of contents — no Division 8 text, no \"source of income\" string — so quoted_span stays null and quote_verified false."
+  "notes": "quoted_span null: no saved copy of the operative text (official SDMC PDF for Division 8 not retrieved; 500 error from code publisher). enacted_date 2018-09-18 from the CAA ordinance copy filename (SD_Section8Ord_091118) – low confidence. Decided by Hamza 2026-10-04 (L033): effective_date 2019-08-01 (code history 2018-10-18 noted). Checked 2026-10-04: corpus_supplementary/text/D075.txt (31,868 bytes) contains only the GoCodebook site table of contents — no Division 8 text, no \"source of income\" string — so quoted_span stays null and quote_verified false. Update 2026-10-04: D075 was re-captured by the team from the official SDMC Division 8 PDF (6,849 chars); quoted_span now taken from § 98.0803(a). The 2018-10-18 / 2019-08-01 date question is unchanged."
  },
  {
   "gold_id": "SD-ALG-01",
@@ -2423,7 +2502,7 @@
    "D074"
   ],
   "quoted_span": "It is unlawful for a landlord to use an algorithmic device to set rental rates or",
-  "quoted_span_in_corpus": false,
+  "quoted_span_in_corpus": true,
   "quote_verified": true,
   "interaction": {
    "overrides": [],
@@ -2458,7 +2537,7 @@
   "status": "in_force",
   "title": "Rent Stabilization Ordinance annual general adjustment – BMC § 13.76.110",
   "requirement": "For fully covered units (generally multifamily buildings built before 1980), rent ceilings may rise each January by the Annual General Adjustment of 65% of CPI, never above 5%: 1.0% for 2026.",
-  "key_value": "1.0% for 2026 (65% of CPI; 5% cap)",
+  "key_value": "AGA for 2026 is 1.0% (65% of Bay Area CPI July–June, capped at 5% under Measure BB); applies to units fully covered by the Rent Ordinance; no increase in the year the tenancy began plus one further calendar year",
   "coverage": {
    "coo_cutoff": "1980-06-30",
    "year_built_max": null,
@@ -2469,14 +2548,15 @@
    "other": "Fully covered units: multifamily units with a certificate of occupancy on or before 1980-06-30 (new construction after June 1980 is only partially covered: no rent control)"
   },
   "exemptions": "New construction (COO after June 1980) – partially covered, no rent ceiling; single-family homes with tenancies from 1996 onward; most condominiums; golden duplexes; owner-shared units; ADUs with owner occupancy; nonprofit cooperatives; dormitories",
-  "effective_date": null,
+  "effective_date": "2026-01-01",
   "enacted_date": null,
   "sunset_date": null,
   "citation": "Berkeley Mun. Code § 13.76.110(A)",
   "source_ids": [
    "S-BK-01",
    "S-BK-02",
-   "S-BK-03"
+   "S-BK-03",
+   "S-MAN-11"
   ],
   "corpus_doc_ids": [
    "D008",
@@ -2484,8 +2564,8 @@
    "D006"
   ],
   "supplementary_doc_ids": [],
-  "quoted_span": "adopted the Annual General Adjustment (AGA) Order for Year 2026 which will allow \neligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than \nJanuary 1, 2026.",
-  "quoted_span_in_corpus": true,
+  "quoted_span": "On\nJanuary 1, the rent ceilings for most units fully covered by the Rent Ordinance increase by the\nAGA, which allows landlords to raise rents (with proper notice) up to the new rent ceiling.",
+  "quoted_span_in_corpus": false,
   "quote_verified": true,
   "interaction": {
    "overrides": [
@@ -2498,7 +2578,7 @@
   "conflict_note": null,
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.85,
+  "confidence": 0.9,
   "verified_against": [
    {
     "url": "https://rentboard.berkeleyca.gov/sites/default/files/documents/AGA%20Public%20Notice.pdf",
@@ -2514,10 +2594,15 @@
     "url": "https://berkeley.municipal.codes/BMC/13.76.110",
     "checked_at_utc": "2026-10-03T20:16Z",
     "result": "official code publisher: 65% of CPI-U, never below 0% or above 5%; history Ord. 7950-NS (2024) back to Ord. 5261-NS (1980)"
+   },
+   {
+    "url": "sources/manual/BERK-RENT-01_AGA_page.pdf",
+    "checked_at_utc": "2026-10-04",
+    "result": "manual download by Hamza: official Rent Board AGA page: \"The AGA for 2026 is 1.0%\"; span verified against the pdftotext copy"
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "Berkeley rows have no year_built or units → coverage unknown for every sample address (missing facts: COO/year_built). effective_date null (1980 ordinance, amended by Measure BB 2024)."
+  "verifier": "Hamza",
+  "notes": "Berkeley rows have no year_built or units → coverage unknown for every sample address (missing facts: COO/year_built). effective_date null (1980 ordinance, amended by Measure BB 2024). Notice: 30-day written notice for increases ≤10%, 90-day for >10% (state law). effective_date = date the 2026 AGA took effect (\"On January 1, the rent ceilings ... increase by the AGA\"); the ordinance itself dates from 1980. Lawyer review (Hamza, 2026-10-04) batch 4 row 13."
  },
  {
   "gold_id": "BERK-JUST-01",
@@ -2649,7 +2734,7 @@
   "status": "in_force",
   "title": "Tenant screening fee disclosure and renewal-fee ban – BMC ch. 13.78",
   "requirement": "An owner charging a screening fee must give the applicant a clear tenant-screening-fee rights statement and state the maximum fee permitted under Cal. Civ. Code § 1950.6(b) (BMC 13.78.010); non-refundable fees to existing tenants for renewals or roommate changes are prohibited (BMC 13.78.016).",
-  "key_value": "disclosure of state fee cap required; no non-refundable renewal/roommate fees",
+  "key_value": "No separate local fee cap: landlord must give a written Tenant Screening Fee Rights Statement and disclose the current Cal. Civ. Code § 1950.6(b) cap; non-refundable fees to existing tenants for renewal or adding/replacing a roommate are unlawful",
   "coverage": {
    "coo_cutoff": null,
    "year_built_max": null,
@@ -2660,19 +2745,24 @@
    "other": "All residential rental agreements in Berkeley"
   },
   "exemptions": null,
-  "effective_date": null,
+  "effective_date": "2020",
   "enacted_date": null,
   "sunset_date": null,
-  "citation": "Berkeley Mun. Code §§ 13.78.010, 13.78.016",
+  "citation": "Berkeley Mun. Code §§ 13.78.010 (fee-cap disclosure duty), 13.78.016 (ban on non-refundable renewal/roommate fees) (Ord. 7697-NS § 1, 2020)",
   "source_ids": [
-   "S-BK-05"
+   "S-BK-05",
+   "S-BK-10",
+   "S-BK-11"
   ],
   "corpus_doc_ids": [
    "D005"
   ],
-  "supplementary_doc_ids": [],
-  "quoted_span": "cannot charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part, including any fee associated with the departure of a roommate or to request to add or replace a roommate in a pre-existing household.",
-  "quoted_span_in_corpus": true,
+  "supplementary_doc_ids": [
+   "D091",
+   "D092"
+  ],
+  "quoted_span": "It is unlawful for an owner of residential rental property or the owner's agent to charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part, including any fee associated with the departure of a roommate or to request to add or replace a roommate in a pre-existing household.",
+  "quoted_span_in_corpus": false,
   "quote_verified": true,
   "interaction": {
    "overrides": [],
@@ -2683,16 +2773,26 @@
   "conflict_note": "Borderline categorisation: BMC 13.78 is a disclosure/notice duty plus a renewal-fee ban, not a fee cap. Alternative is a negative finding (BERK-FEE-00) with the state cap governing. Decision reserved for Hamza (open_questions.md).",
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.6,
+  "confidence": 0.85,
   "verified_against": [
    {
     "url": "https://rentboard.berkeleyca.gov/laws-regulations/city-berkeley-ordinances-affecting-rental-properties/tenant-screening-and",
     "checked_at_utc": "2026-10-01T22:35Z",
     "result": "organisers corpus copy D005 (official Rent Board): BMC 13.78.010/.016/.018; 2026 maximum screening fee $68.96"
+   },
+   {
+    "url": "https://berkeley.municipal.codes/BMC/13.78.016",
+    "checked_at_utc": "2026-10-03T22:36Z",
+    "result": "code publisher (team capture D091, verbatim section): history \"(Ord. 7697-NS § 1, 2020)\""
+   },
+   {
+    "url": "https://berkeley.municipal.codes/BMC/13.78.010",
+    "checked_at_utc": "2026-10-03T22:36Z",
+    "result": "code publisher (team capture D092, verbatim section): history \"(Ord. 7697-NS § 1, 2020; Ord. 7379-NS § 1, 2014; Ord. 7171-NS § 1 (part), 2011)\""
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "effective_date null (ordinance date not verified). The Rent Board page publishes a 2026 maximum screening fee of $68.96 – a local computation of the state CPI-adjusted cap."
+  "verifier": "Hamza",
+  "notes": "effective_date null (ordinance date not verified). The Rent Board page publishes a 2026 maximum screening fee of $68.96 – a local computation of the state CPI-adjusted cap. Current text of §§ 13.78.010/.016 enacted by Ord. 7697-NS § 1 (2020) (code history). berkeley.municipal.codes returned HTTP 403 to the shell; section text obtained verbatim by a single-page WebFetch read and saved as D091/D092 (excerpts); Hamza supplied the identical span. Lawyer review (Hamza, 2026-10-04) batch 2 row 4."
  },
  {
   "gold_id": "BERK-SCRN-01",
@@ -3108,7 +3208,7 @@
   "status": "in_force",
   "title": "Prohibition on anticompetitive rent-setting software – Santa Ana Ordinance No. NS-3090 (2026)",
   "requirement": "Santa Ana prohibits the sale, licensing, provision and use of algorithmic rent-setting software that relies on nonpublic competitor data to set residential rents; violations carry civil penalties of up to $1,000 each.",
-  "key_value": "ban on sale/use of algorithmic rent-setting software",
+  "key_value": "Ban on sale, licensing, provision and use of algorithmic rent-setting software that uses nonpublic competitor data; tenant civil action, up to $1,000 per violation plus attorney's fees",
   "coverage": {
    "coo_cutoff": null,
    "year_built_max": null,
@@ -3118,35 +3218,39 @@
    "tenancy_months": null,
    "other": "Residential rental properties in Santa Ana"
   },
-  "exemptions": "Software relying only on public data",
-  "effective_date": null,
+  "exemptions": "Software relying solely on publicly available data, aggregate historical data, or tools used to comply with affordable-housing programme requirements",
+  "effective_date": "2026-04",
   "enacted_date": "2026-03-03",
   "sunset_date": null,
-  "citation": "Santa Ana Ordinance No. NS-3090 (code section not verified)",
+  "citation": "Santa Ana Ordinance No. NS-3090 (uncodified; number per challenge brief and OCBJ, not yet seen on an official page)",
   "source_ids": [
    "S-SA-03",
    "S-SA-04",
-   "S-SA-05"
+   "S-SA-05",
+   "S-SA-06",
+   "S-SA-07"
   ],
   "corpus_doc_ids": [],
   "supplementary_doc_ids": [
    "D086",
    "D087",
-   "D002"
+   "D002",
+   "D088",
+   "D089"
   ],
-  "quoted_span": null,
+  "quoted_span": "The ordinance, which was approved on March 3, 2026 for a second reading and final vote, prohibits the sale, licensing, provision and use of certain algorithmic rent-setting software for residential rental properties.",
   "quoted_span_in_corpus": false,
-  "quote_verified": false,
+  "quote_verified": true,
   "interaction": {
    "overrides": [],
    "yields_to": [],
    "note": "Additional to state AB 325 (CA-ALG-01)"
   },
   "conflict_flag": true,
-  "conflict_note": "Only secondary sources reached: PublicCEO (first reading 2026-02-17, final vote set for 2026-03-03), Voice of OC (6-0-1 vote), OCBJ, and Morgan Lewis (\"Santa Ana Ordinance No. NS-3090 (effective April 2, 2026)\"). Official ordinance text/city page not retrievable (Laserfiche portal requires cookies). Status in_force rests on secondary reporting.",
+  "conflict_note": "Ordinance number NS-3090 and the exact effective date have not been seen on an official page. Lawyer review (Hamza, 2026-10-04) addendum: if an official agenda/ordinance PDF showing NS-3090 is supplied, raise confidence to 0.9 and clear this note.",
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.5,
+  "confidence": 0.7,
   "verified_against": [
    {
     "url": "https://www.publicceo.com/2026/02/santa-ana-city-council-continues-to-strengthen-tenant-protections-by-banning-anticompetitive-rent-setting-software/",
@@ -3167,10 +3271,20 @@
     "url": "https://publicdocs.santa-ana.org/weblink/1/doc/549791/Page1.aspx",
     "checked_at_utc": "2026-10-03T20:11Z",
     "result": "official document portal – fetch failed (cookie wall)"
+   },
+   {
+    "url": "https://santa-ana.gov/santa-ana-city-council-continues-to-strengthen-tenant-protections-by-banning-anticompetitive-rent-setting-software/",
+    "checked_at_utc": "2026-10-03T22:34Z",
+    "result": "official city news (team capture D088): \"approved on March 3, 2026 for a second reading and final vote\"; up to $1,000 per violation"
+   },
+   {
+    "url": "https://santa-ana.gov/rent-stabilization-newsletter-march-2026/",
+    "checked_at_utc": "2026-10-03T22:34Z",
+    "result": "official city newsletter (team capture D089): \"Approved on March 3, 2026\""
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "effective_date null per rule 5.1/5.2 (no primary source); secondary sources give 2026-04-02. enacted_date 2026-03-03 (second reading) from PublicCEO scheduling plus OCBJ 2026-03-09 report – secondary only. quoted_span null: no official text saved. Decided by Hamza 2026-10-04 (L042): effective_date null; news reports April 2026 (Morgan Lewis: 2026-04-02)."
+  "verifier": "Hamza",
+  "notes": "Adopted 2026-03-03 per santa-ana.gov (D088/D089; D088 describes the 2026-03-03 approval as \"for a second reading and final vote\", so final adoption may be later in March); Santa Ana ordinances take effect 30 days after adoption (City Charter; cf. Cal. Gov. Code § 36937) → on or about 2026-04-02; the challenge brief lists \"Santa Ana Ord. NS-3090 (Apr 2026)\". Effective date computed from the adoption date, not stated in a saved document. Lawyer review (Hamza, 2026-10-04) batch 2 row 3 + batch 4 addendum."
  },
  {
   "gold_id": "JC-RENT-01",
@@ -3449,9 +3563,9 @@
   "level": "city",
   "category": "algorithmic_rent_setting",
   "status": "in_force",
-  "title": "Ban on algorithmic rent-setting using nonpublic competitor data – Jersey City Code § 218-12 (Ord. 25-057)",
+  "title": "Ban on contracting with algorithmic rent-coordination service providers",
   "requirement": "Landlords in Jersey City may not use rent-setting software or algorithms that process nonpublic competitor information to set or recommend rents; single owners coordinating only their own properties and licensed real-estate agents are excluded.",
-  "key_value": "ban on landlord use of algorithmic rent-setting with nonpublic competitor data",
+  "key_value": "Unlawful for any real estate lessor (or agent/subcontractor) to subscribe to, contract with, or exchange anything of value for the services of a service provider that coordinates using nonpublic competitor information; service providers may not facilitate non-compete agreements among lessors. First violation per § 1-25; subsequent violations $100–$2,000; each day a separate violation. Private right of action; attorney's fees to prevailing plaintiff.",
   "coverage": {
    "coo_cutoff": null,
    "year_built_max": null,
@@ -3459,36 +3573,38 @@
    "max_units": null,
    "owner_type": null,
    "tenancy_months": null,
-   "other": "Residential rental properties in Jersey City"
+   "other": "Residential dwelling units in Jersey City (primary residences; excludes inpatient medical, long-term care, detention facilities)"
   },
-  "exemptions": "Pricing across multiple properties under a single owner; licensed real estate agents",
+  "exemptions": "Owners of multiple properties acting only across their own properties; licensed real-estate agents acting within state regulations",
   "effective_date": "2025-06",
   "enacted_date": "2025-05-21",
   "sunset_date": null,
-  "citation": "Jersey City Code § 218-12 (Ord. 25-057)",
+  "citation": "Jersey City Code § 218-12 (Preventing Algorithmic Rent Fixing in the Rental Housing Market), added by Ord. 25-057",
   "source_ids": [
    "S-JC-03",
    "S-JC-04",
-   "S-JC-05"
+   "S-JC-05",
+   "S-MAN-05",
+   "S-MAN-06"
   ],
   "corpus_doc_ids": [],
   "supplementary_doc_ids": [
    "D035",
    "D037"
   ],
-  "quoted_span": null,
+  "quoted_span": "It is unlawful for any real estate lessor, agent, or subcontractor thereof, to subscribe to, contract with, or otherwise\nexchange anything of value in return for the services of a Service Provider.",
   "quoted_span_in_corpus": false,
-  "quote_verified": false,
+  "quote_verified": true,
   "interaction": {
    "overrides": [],
    "yields_to": [],
    "note": "Possible preemption by the NJ FAIR Act from 2027-07-01 (P.L.2026 c.43 § 6(b)) – conflict_flag per organisers (T3); FAIR Act not yet effective"
   },
   "conflict_flag": true,
-  "conflict_note": "NJ FAIR Act may preempt this ordinance once effective (2027-07-01); organisers list this as an open question (README § 9) and require conflict flags on Jersey City addresses in T3. Effective date only at month precision (NJ ordinances take effect 20 days after final passage/publication; Morgan Lewis: \"effective June 2025\").",
+  "conflict_note": "Possible preemption by the NJ FAIR Act from 2027-07-01 (T3 conflict flag). Lawyer review (Hamza, 2026-10-04)",
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.6,
+  "confidence": 0.9,
   "verified_against": [
    {
     "url": "https://hudsoncountyview.com/jersey-city-council-approves-realpage-ban-and-increasing-benefits-for-laborers/",
@@ -3509,10 +3625,15 @@
     "url": "https://cityofjerseycity.civicweb.net/document/436629/Ordinance%20Amending%20Chapter%20218%20Section%2012.pdf",
     "checked_at_utc": "2026-10-03T20:15Z",
     "result": "official ordinance PDF (\"Ordinance Amending Chapter 218 Section 12\") – robots.txt disallowed fetch; title corroborates § 218-12"
+   },
+   {
+    "url": "sources/manual/JC-ALG-01_Ord_25-057_adopted.pdf",
+    "checked_at_utc": "2026-10-04",
+    "result": "manual download by Hamza: city clerk's adopted copy of Ord. 25-057 (5 pp.); span verified against the pdftotext copy"
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "quoted_span null: no official text saved (civicweb PDF blocked). Change test T2: applies only to Jersey City addresses; never to Newark or Hoboken."
+  "verifier": "Hamza",
+  "notes": "quoted_span null: no official text saved (civicweb PDF blocked). Change test T2: applies only to Jersey City addresses; never to Newark or Hoboken. Final passage 2025-05-21; Mayor approved 2025-05-22. Ordinance states no effective date; under N.J.S.A. 40:49-2 municipal ordinances take effect 20 days after final passage and approval unless otherwise provided (≈ 2025-06-11); challenge brief lists \"Jun 2025\". Lawyer review (Hamza, 2026-10-04) batch 3 row 8."
  },
  {
   "gold_id": "HOB-RENT-01",
@@ -3800,7 +3921,7 @@
   "status": "in_force",
   "title": "Prohibition on price fixing using algorithmic pricing – Hoboken Code ch. 158 (Ord. B-781)",
   "requirement": "Landlords renting any residential dwelling unit in Hoboken may not use software, algorithms or data-sharing platforms that analyse nonpublic competitor information (less than 365 days old) to coordinate, recommend or implement rents, lease terms or occupancy levels; penalties include fines up to $2,000 and community service.",
-  "key_value": "ban on algorithmic price fixing using nonpublic competitor information",
+  "key_value": "Landlords of residential dwelling units in Hoboken prohibited from price fixing using algorithmic pricing (software/algorithms/data-sharing platforms using nonpublic competitor information to coordinate, recommend or implement rents, lease terms or occupancy); enforcement by Division of Housing or any aggrieved private citizen in Municipal Court; penalties per N.J.S.A. 40:49-5, fine up to $2,000, or up to 90 days community service",
   "coverage": {
    "coo_cutoff": null,
    "year_built_max": null,
@@ -3814,15 +3935,18 @@
   "effective_date": "2025-07",
   "enacted_date": "2025-07-09",
   "sunset_date": null,
-  "citation": "Hoboken Code ch. 158 (Ord. No. B-781, adopted 2025-07-09)",
+  "citation": "Hoboken Code § 158-2 (Art. II, adopted 7-9-2025 by Ord. No. B-781)",
   "source_ids": [
    "S-HOB-04",
-   "S-HOB-05"
+   "S-HOB-05",
+   "S-MAN-07",
+   "S-HOB-06"
   ],
   "corpus_doc_ids": [],
   "supplementary_doc_ids": [
    "D034",
-   "D002"
+   "D002",
+   "D095"
   ],
   "quoted_span": "Landlords who rent any residential dwelling unit (defined as any primary residence excluding medical/long-term care or detention facilities) in the City of Hoboken are prohibited from price fixing using algorithmic pricing.",
   "quoted_span_in_corpus": false,
@@ -3836,7 +3960,7 @@
   "conflict_note": "NJ FAIR Act may preempt this ordinance once effective (organisers' open question; T3 conflict flags for Hoboken addresses). Effective date at month precision: adopted 2025-07-09; NJ ordinances take effect ~20 days after final passage and publication; Morgan Lewis gives \"effective July 2025\".",
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.75,
+  "confidence": 0.9,
   "verified_against": [
    {
     "url": "https://ecode360.com/46833413",
@@ -3852,10 +3976,20 @@
     "url": "https://www.hobokengirl.com/hbooken-rent-setting-algorithm-prohibit/",
     "checked_at_utc": "2026-10-03T20:16Z",
     "result": "secondary news: council vote 2025-07-09"
+   },
+   {
+    "url": "sources/manual/HOB-ALG-01_Hoboken_ch158_ecode360.pdf",
+    "checked_at_utc": "2026-10-04",
+    "result": "manual download by Hamza: full ch. 158 (ecode360 PDF dated 2026-10-03); § 158-2.A text matches D034"
+   },
+   {
+    "url": "https://www.hobokennj.gov/news/city-of-hoboken-to-introduce-ordinance-prohibiting-algorithmic-rent-fixing",
+    "checked_at_utc": "2026-10-03T22:34Z",
+    "result": "official city news (team capture D095): introduction at the 2025-06-04 meeting"
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "Change test T2: applies only to Hoboken addresses; never to Jersey City or Newark. Decided by Hamza 2026-10-04 (L059): effective_date 2025-07 (month precision); adoption_date (enacted_date) 2025-07-09 per D034."
+  "verifier": "Hamza",
+  "notes": "Change test T2: applies only to Hoboken addresses; never to Jersey City or Newark. Decided by Hamza 2026-10-04 (L059): effective_date 2025-07 (month precision); adoption_date (enacted_date) 2025-07-09 per D034. Effective date at month precision: ordinance states no effective date; under N.J.S.A. 40:49-2 municipal ordinances take effect 20 days after final passage and approval unless otherwise provided. Introduction announced 2025-05-30 for the 2025-06-04 council meeting (hobokennj.gov, D095). Lawyer review (Hamza, 2026-10-04) batch 3 row 7."
  },
  {
   "gold_id": "HOB-RENT-02",
@@ -3865,7 +3999,7 @@
   "status": "in_force",
   "title": "Disclosure duties for renewal rent increases above 10% – Hoboken Code ch. 158 (Ord. B-750)",
   "requirement": "A Hoboken landlord seeking a renewal rent increase of more than 10% year over year must first give the tenant an itemisation of the costs behind the increase, a statement whether a rent algorithm was used, notice of the right to challenge an unconscionable increase, and the Division of Housing's contact details; fines up to $1,000 per incident.",
-  "key_value": "disclosures required for renewal increases > 10% (not a cap)",
+  "key_value": "For renewal rent increases over 10% year over year, landlord must disclose: itemised costs; whether a rent algorithm was used; tenant's right to sue if the increase is unconscionable; Division of Housing contact details. Fine up to $1,000 per incident.",
   "coverage": {
    "coo_cutoff": null,
    "year_built_max": null,
@@ -3879,9 +4013,10 @@
   "effective_date": "2025-04",
   "enacted_date": "2025-04-02",
   "sunset_date": null,
-  "citation": "Hoboken Code ch. 158, art. I (Ord. No. B-750, adopted 2025-04-02)",
+  "citation": "Hoboken Code § 158-1 (Art. I, adopted 4-2-2025 by Ord. No. B-750)",
   "source_ids": [
-   "S-HOB-04"
+   "S-HOB-04",
+   "S-MAN-07"
   ],
   "corpus_doc_ids": [],
   "supplementary_doc_ids": [
@@ -3899,16 +4034,21 @@
   "conflict_note": "Categorisation: a disclosure duty recorded under rent_increase_limits. Decided by Hamza 2026-10-04 (L095, Q15): added with conflict_flag true.",
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.7,
+  "confidence": 0.9,
   "verified_against": [
    {
     "url": "https://ecode360.com/46833413",
     "checked_at_utc": "2026-10-03T18:51Z",
     "result": "team supplementary capture D034 (code publisher): \"[Adopted 4-2-2025 by Ord. No. B-750]\" and disclosure text"
+   },
+   {
+    "url": "sources/manual/HOB-ALG-01_Hoboken_ch158_ecode360.pdf",
+    "checked_at_utc": "2026-10-04",
+    "result": "manual download by Hamza: full ch. 158; § 158-1.A text matches D034"
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "effective_date month precision (NJ ordinances take effect ~20 days after final passage/publication); adoption 2025-04-02."
+  "verifier": "Hamza",
+  "notes": "Effective date at month precision: ordinance states no effective date; under N.J.S.A. 40:49-2 municipal ordinances take effect 20 days after final passage and approval unless otherwise provided. Lawyer review (Hamza, 2026-10-04) batch 3 row 7."
  },
  {
   "gold_id": "NWK-RENT-01",
@@ -4355,7 +4495,7 @@
   "status": "in_force",
   "title": "Housing Stability Notification Act (notice of tenants' rights on termination) – Boston Ordinance (2020) [notice-only]",
   "requirement": "Any landlord ending a Boston tenancy (notice to quit or non-renewal) must give the tenant the City's Notice of Tenants' Rights and Resources at the same time and file a copy with the Office of Housing Stability; it does not itself require just cause.",
-  "key_value": "notice-of-rights duty on termination (no just-cause requirement)",
+  "key_value": "[notice-only] With any notice to quit or notice of lease non-renewal, landlord must serve a copy on the Office of Housing Stability and give the tenant a notice of basic housing rights and resources; no just-cause requirement",
   "coverage": {
    "coo_cutoff": null,
    "year_built_max": null,
@@ -4369,18 +4509,21 @@
   "effective_date": "2020-11-06",
   "enacted_date": "2020-10",
   "sunset_date": null,
-  "citation": "Boston Code of Ordinances ch. 9, § 9-20 (Housing Stability Notification Act)",
+  "citation": "Boston Code of Ordinances ch. X, § 10-11 (Housing Stability Notification Act), Ord. 2020 (Docket filed 2020-10-21)",
   "source_ids": [
    "S-BOS-02",
-   "S-BOS-03"
+   "S-BOS-03",
+   "S-BOS-06"
   ],
   "corpus_doc_ids": [
    "D013",
    "D014"
   ],
-  "supplementary_doc_ids": [],
-  "quoted_span": "The Housing Stability Notification Act requires any landlord to provide renters with a Notice of Tenant’s Rights and Resources when planning to end a tenancy agreement.",
-  "quoted_span_in_corpus": true,
+  "supplementary_doc_ids": [
+   "D090"
+  ],
+  "quoted_span": "When a landlord or foreclosing owner serves the tenant or former homeowners any\nnotice to quit or notice of lease nonrenewal or expiration, such landlord or foreclosing\nowner shall, at the same time, also serve a copy of said notice to quit or notice of\nlease nonrenewal or expiration on the City of Boston's Office of Housing Stability. All\nnotice to quit or notice of lease nonrenewal or expiration to tenant or former\nhomeowners shall also include a notice of basic housing rights and resources,\ncontaining a list of organizations available to assist tenants and​/​or former homeowners\nwith their contact information on a form or forms prepared by the City of Boston's\nOffice of Housing Stability, which shall be attached thereto.",
+  "quoted_span_in_corpus": false,
   "quote_verified": true,
   "interaction": {
    "overrides": [],
@@ -4391,7 +4534,7 @@
   "conflict_note": "Decided by Hamza 2026-10-04 (Q5): recorded as a just_cause_eviction rule, notice-only (no just-cause requirement); conflict_flag retained to signal the categorisation choice.",
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.6,
+  "confidence": 0.8,
   "verified_against": [
    {
     "url": "https://www.boston.gov/housing-stability-notification-act",
@@ -4402,10 +4545,20 @@
     "url": "https://www.boston.gov/sites/default/files/file/2020/11/Housing%20Stability%20Notification%20Act%20Tenant%20FAQs.pdf",
     "checked_at_utc": "2026-10-01T22:35Z",
     "result": "organisers corpus copy D014 (official FAQ): \"The HSNA becomes effective on November 6, 2020\"; passed October 2020"
+   },
+   {
+    "url": "https://www.boston.gov/sites/default/files/file/2021/03/Housing%20Stability%20Notification%20Act.pdf",
+    "checked_at_utc": "2026-10-03T22:34Z",
+    "result": "official ordinance PDF (team capture D090): inserts § 10-11 after § 10-10; § 10-11.4 Required Notice; \"shall become effective immediately\""
+   },
+   {
+    "url": "https://codelibrary.amlegal.com/codes/boston/latest/boston_ma/0-0-0-7149",
+    "checked_at_utc": "2026-10-04",
+    "result": "code publisher location of ch. X § 10-11 (per Hamza; not fetched)"
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "Code section (ch. 9, § 9-20) from general knowledge – Hamza to confirm. Q5 decided: notice-only just_cause_eviction rule. Decided by Hamza 2026-10-04 (L082): adopt 2020-11-06 (official FAQ D014)."
+  "verifier": "Hamza",
+  "notes": "Code section (ch. 9, § 9-20) from general knowledge – Hamza to confirm. Q5 decided: notice-only just_cause_eviction rule. Decided by Hamza 2026-10-04 (L082): adopt 2020-11-06 (official FAQ D014). Ordinance text (D090): \"The provisions of this ordinance shall become effective immediately.\"; city FAQ (D014) gives 2020-11-06. Lawyer review (Hamza, 2026-10-04) batch 2 row 5."
  },
  {
   "gold_id": "BOS-DEP-00",
@@ -4629,7 +4782,7 @@
   "status": "in_force",
   "title": "Boston Fair Chance Tenant Selection Policy (DND-funded and IDP housing) – Feb 2017",
   "requirement": "Housing providers that receive Department of Neighborhood Development funding or land, or have income-restricted units under the BPDA Inclusionary Development Policy, may not impose blanket criminal-history bans and must disregard non-convictions, sealed/expunged records, juvenile records and convictions over five years old, assessing applicants case by case.",
-  "key_value": "no blanket criminal-history denials; 5-year look-back (city-funded/IDP housing)",
+  "key_value": "No blanket denial for arrests/convictions; may not consider arrests without conviction, sealed/expunged/relieved convictions, juvenile records, or convictions more than 5 years old (case-by-case review required)",
   "coverage": {
    "coo_cutoff": null,
    "year_built_max": null,
@@ -4637,23 +4790,25 @@
    "max_units": null,
    "owner_type": null,
    "tenancy_months": null,
-   "other": "City-funded housing only: providers receiving DND funding/land or with BPDA Inclusionary Development Policy units"
+   "other": "Housing providers receiving DND funding and/or land, or with income-restricted units created under the BPDA Inclusionary Development Policy; per Boston Bar Journal (Aug 2023) applies to all units in such a development incl. market-rate. Funding status not in the address data → Module B result unknown."
   },
   "exemptions": "Market-rate housing without DND funding or IDP units; where federal/state law imposes a conflicting criminal-history requirement",
-  "effective_date": "2017-02",
+  "effective_date": null,
   "enacted_date": null,
   "sunset_date": null,
-  "citation": "Boston Fair Chance Tenant Selection Policy (DND, February 2017) – policy, not ordinance",
+  "citation": "Boston Fair Chance Tenant Selection Policy (Department of Neighborhood Development, February 2017)",
   "source_ids": [
    "S-BOS-04",
-   "S-BOS-05"
+   "S-BOS-05",
+   "S-MAN-01",
+   "S-MAN-02"
   ],
   "corpus_doc_ids": [
    "D010",
    "D012"
   ],
   "supplementary_doc_ids": [],
-  "quoted_span": "Housing providers receiving Department of Neighborhood Development (DND) funding and/or \nland, or that have income restricted units created under the Boston Planning and Development \nAgency (BPDA) Inclusionary Development Policy will not impose a blanket policy that denies \nhousing to anyone with arrests and or convictions.",
+  "quoted_span": "Housing providers receiving Department of Neighborhood Development (DND) funding and/or\nland, or that have income restricted units created under the Boston Planning and Development\nAgency (BPDA) Inclusionary Development Policy will not impose a blanket policy that denies\nhousing to anyone with arrests and or convictions.",
   "quoted_span_in_corpus": true,
   "quote_verified": true,
   "interaction": {
@@ -4662,10 +4817,10 @@
    "note": "Boston Fair Housing Commission also enforces local/state fair housing law (D012); M.G.L. c.151B § 4(10) applies statewide"
   },
   "conflict_flag": true,
-  "conflict_note": "Policy (not legislation) with city-funded scope; Decided by Hamza 2026-10-04 (L088): recorded as BOS-SCRN-02, scope city-funded only, conflict_flag true, low confidence.",
+  "conflict_note": "City POLICY adopted by agreement, not a codified ordinance; scope depends on DND funding / IDP status (not in data). Lawyer review (Hamza, 2026-10-04)",
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.5,
+  "confidence": 0.7,
   "verified_against": [
    {
     "url": "https://drive.google.com/file/d/1j4U3fDtmnYuwcUWhx5BMUcXc1bnKT8Ku/view?usp=sharing",
@@ -4676,10 +4831,20 @@
     "url": "https://www.boston.gov/departments/fair-housing-and-equity/boston-fair-housing-regulations",
     "checked_at_utc": "2026-10-01T22:35Z",
     "result": "organisers corpus copy D012 (official Fair Housing Commission page)"
+   },
+   {
+    "url": "sources/manual/BOS-SCRN-02_boston_fair_chance_policy_2017.pdf",
+    "checked_at_utc": "2026-10-04",
+    "result": "manual download by Hamza (DND policy, 3 pp., footer \"February 2017\"); span verified against the pdftotext copy"
+   },
+   {
+    "url": "sources/manual/BOS-SCRN-02_secondary_BBJ_2023.pdf",
+    "checked_at_utc": "2026-10-04",
+    "result": "secondary: Boston Bar Journal 31 Aug 2023 fn. 23 – scope incl. market-rate units in covered developments"
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "effective_date at month precision from the document header \"(February 2017)\". Decided by Hamza 2026-10-04 (L088): added as a second Boston screening row."
+  "verifier": "Hamza",
+  "notes": "effective_date at month precision from the document header \"(February 2017)\". Decided by Hamza 2026-10-04 (L088): added as a second Boston screening row. Policy document dated February 2017; no effective date stated. Lawyer review (Hamza, 2026-10-04) batch 1 row 1."
  },
  {
   "gold_id": "CAM-RENT-00",

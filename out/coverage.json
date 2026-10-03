@@ -134,19 +134,13 @@
      "op": ">",
      "value": 3
     }
-   },
-   {
-    "field": "tenancy_months",
-    "op": ">=",
-    "value": 12,
-    "source_text": "the AGA may not adjust rents of tenancies that began on or after January 1, 2025 whose rents were set pursuant to the Costa-Hawkins Rental Housing Act",
-    "note": "Tenancies that began on or after Jan 1, 2025 with Costa-Hawkins rents are excluded from the AGA. Tenancy start date is not visible, so the result is unknown.",
-    "defeated_if": null
    }
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "The criteria come from the related D006 and D009 statements on fully covered units: most multifamily built before 1980, and single-family homes whose tenancies began before 1996. Partially covered and exempt units are not subject to the AGA ceiling."
+  "notes": "The criteria come from the related D006 and D009 statements on fully covered units: most multifamily built before 1980, and single-family homes whose tenancies began before 1996. Partially covered and exempt units are not subject to the AGA ceiling.",
+  "reviewed_by": "Hamza (commercial/IP lawyer)",
+  "review_ruling": "instructions/rulings_05.md #2: tenancy length is a tenant-level fact that decides when an increase may be taken, not whether the building is covered. Drop the tenancy_months test; keep COO 1980 cutoff, condo/single-family, dormitory/co-op and golden-duplex tests."
  },
  "r-0006": {
   "key": "r-0006:6f3c286b9a",
@@ -596,14 +590,36 @@
   "notes": "Coverage is all residential landlords raising rent by more than 10% on renewal for a current tenant, and no exemptions are stated. The 10% increase is the trigger for the disclosure duty, not a building-level limit, so no test is written for it. The related rent control record (Chapter 155) concerns a different rule, so its incomplete applicability does not carry over."
  },
  "r-0025": {
-  "key": "r-0025:1c67e8459f",
+  "key": "r-0025:f318475a1c",
   "jurisdiction": "Hoboken, NJ",
   "category": "rent_increase_limits",
-  "title": "Hoboken Rent Control: cost-of-living increase cap (Code § 155-5)",
-  "tests": [],
+  "title": "Hoboken Rent Control: annual rent increase cap (§ 155-5)",
+  "tests": [
+   {
+    "field": "building_type",
+    "op": "not_in",
+    "value": [
+     "hotel",
+     "motel"
+    ],
+    "source_text": "Motels and hotels",
+    "note": "Hotels and motels are exempt from rent control.",
+    "on_fail": "exclude",
+    "defeated_if": null
+   },
+   {
+    "field": "coo_age_years",
+    "op": ">=",
+    "value": 30,
+    "source_text": "multiple dwellings built after June 25, 1987 for the lesser of mortgage amortization or 30 years (N.J.S.A. 2A:42-84.1)",
+    "note": "Exemption depends on mortgage term and filings the data cannot show. A newer building is unknown, not excluded.",
+    "on_fail": "unknown",
+    "defeated_if": null
+   }
+  ],
   "applies_to_all_residential": false,
-  "coverage_incomplete": true,
-  "notes": "The rule covers housing space in dwellings to which Chapter 155 applies, but the texts say applicability and exemptions are defined elsewhere in the chapter and are not in this capture. No exemptions are listed, and the related records contain no coverage or exemption statements for Hoboken rent control. The engine should answer unknown rather than applies."
+  "coverage_incomplete": false,
+  "notes": "Other exemptions (newly constructed dwellings on first rental, industrial/commercial property, school-owned, government-owned, vacant since 1984, condo/co-op owner-occupant decontrol) depend on facts not in the data and are not tested. Coverage is stated as all dwelling units except those exempt under § 155-2, so coverage is not marked incomplete."
  },
  "r-0026": {
   "key": "r-0026:50442175bb",
@@ -1365,9 +1381,12 @@
   "category": "just_cause_eviction",
   "title": "San Francisco Rent Ordinance just cause eviction (S.F. Admin. Code § 37.9(a))",
   "tests": [],
-  "applies_to_all_residential": false,
-  "coverage_incomplete": true,
-  "notes": "Coverage is defined only as units covered by the Rent Ordinance, which would be circular as a test. Neither this rule nor the related records state the Ordinance's actual building-level criteria (the rent-increase-limits record says coverage thresholds are not stated). The coverage text lists the June 13, 1979 certificate of occupancy cutoff and Costa-Hawkins only as units exempt from rent increase limits that remain subject to just cause, so these are inclusions and get no exclusion tests. The D082 exemption (temporary capital improvement evictions under 20 days governed by Civ. Code 1947.9) concerns the type of eviction, not building characteristics, so no test is created."
+  "applies_to_all_residential": true,
+  "coverage_incomplete": false,
+  "notes": "Coverage is defined only as units covered by the Rent Ordinance, which would be circular as a test. Neither this rule nor the related records state the Ordinance's actual building-level criteria (the rent-increase-limits record says coverage thresholds are not stated). The coverage text lists the June 13, 1979 certificate of occupancy cutoff and Costa-Hawkins only as units exempt from rent increase limits that remain subject to just cause, so these are inclusions and get no exclusion tests. The D082 exemption (temporary capital improvement evictions under 20 days governed by Civ. Code 1947.9) concerns the type of eviction, not building characteristics, so no test is created.",
+  "explanation_note": "statutory exemptions (certain owner-occupied shared units, institutional housing) not testable from county data",
+  "reviewed_by": "Hamza (commercial/IP lawyer)",
+  "review_ruling": "instructions/rulings_05.md #1: S.F. Admin. Code § 37.9 just-cause protection extends to units regardless of construction date; D079 states inclusions, not exclusions. Treat coverage as all residential rental units in SF. Remaining statutory exemptions are not testable from parcel data and rare in a 5+ unit sample."
  },
  "r-0057": {
   "key": "r-0057:e8550181cc",

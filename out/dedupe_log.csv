@@ -20,6 +20,7 @@ D079,S.F. Admin. Code § 37.9(a),D083,S.F. Admin. Code § 37.9C,in_force,"San Fr
 D085,"Santa Ana Municipal Code, Rent Stabilization Ordinance (section number not stated in source)",D084,"Santa Ana Municipal Code, Rent Stabilization and Just Cause Eviction Ordinance",in_force,"Santa Ana, CA",rent_increase_limits,citation similarity 82 (no section numbers)
 D009,Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance),D007,Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance),in_force,"Berkeley, CA",security_deposits,same section
 D085,"Santa Ana Municipal Code, Just Cause Eviction Ordinance (section number not stated in source)",D084,"Santa Ana Municipal Code, Rent Stabilization and Just Cause Eviction Ordinance",in_force,"Santa Ana, CA",just_cause_eviction,citation similarity 82 (no section numbers)
+D032,Hoboken Code § 155-5,D033,"Hoboken, N.J., Code § 155-5",in_force,"Hoboken, NJ",rent_increase_limits,same section
 D081,S.F. Admin. Code § 37.10C,D002,S.F. Admin. Code § 37.10C,in_force,"San Francisco, CA",algorithmic_rent_setting,same section
 D074,San Diego Municipal Code § 98.1103 (Ord. O-21955 N.S.),D002,San Diego Mun. Code §§ 98.1101–98.1104,in_force,"San Diego, CA",algorithmic_rent_setting,same section
 D001,"Berkeley Municipal Code § 13.63.030 (Ord. No. 7,992-N.S.)",D002,Berkeley Mun. Code ch. 13.63 (Ord. 7992),in_force,"Berkeley, CA",algorithmic_rent_setting,same section

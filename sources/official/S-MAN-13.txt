@@ -1,0 +1,8 @@
+SOURCE: sources/manual/NJ-ALG-01_secondary_NJ_State_Policy_Lab_2026-07-27.pdf
+RETRIEVED: 2026-10-04
+VERIFIED_BY: Hamza (lawyer review 2026-10-04) / AI-draft registration
+SHA256: 26b16a9333e3faf107e031f35aeeff81379dd64387a7903ebc51d4531bba74c7
+NOTE: PDF in sources/manual; no text copy. Source type: secondary-news. Publisher: NJ State Policy Lab. manual download by Hamza; PDF only
+---- BEGIN TEXT ----
+(PDF only; no text extracted)
+---- END TEXT ----

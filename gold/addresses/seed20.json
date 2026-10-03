@@ -2,6 +2,7 @@
  "as_of": "2026-10-01",
  "verifier": "AI-draft",
  "method": "Expected results derived from gold/rules/all.json coverage logic; see gold/README.md. Rules that do not cover the address are listed in not_covered (the submission format omits them). Negative findings and failed measures are listed for completeness and are never reported as applying.",
+ "selection_method": "hand-picked to exercise the README traps",
  "sample_gaps": [
   "No San Francisco row has year_built 1979 (two SF rows lack year_built and are used instead for the cutoff trap).",
   "No Los Angeles row has a postal_city other than \"Los Angeles\" (Van Nuys etc. absent); the postal_city trap is exercised with Boston neighbourhoods and San Ysidro."

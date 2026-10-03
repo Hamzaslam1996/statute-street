@@ -2,18 +2,43 @@
   "doc_id": "D032",
   "model": "claude-sonnet-5-5",
   "attempt": 1,
-  "extracted_at": "2026-10-03T20:49:38+00:00",
-  "source_url": "https://ecode360.com/15252438",
-  "retrieved": "2026-10-03 19:02 UTC",
-  "source_type": "code publisher",
+  "extracted_at": "2026-10-03T22:44:53+00:00",
+  "source_url": "https://ecode360.com/HO0741 (Hoboken Code ch. 155 Rent Control, PDF download dated 2026-10-03)",
+  "retrieved": "2026-10-04 (saved by Hamza from his browser; single chapter download)",
+  "source_type": "code publisher (official code)",
   "n_chunks": 1,
-  "document_summary": "Table of contents and history note for Chapter 155 (Rent Control) of the Hoboken, NJ city code, with no operative rule text or numeric limits in this capture.",
-  "rules": [],
+  "document_summary": "Hoboken, NJ Code chapter 155 (Rent Control / Rent Leveling and Stabilization), a municipal rent-stabilisation ordinance with annual CPI-based caps, surcharges, vacancy decontrol and registration rules.",
+  "rules": [
+    {
+      "jurisdiction": "Hoboken, NJ",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Hoboken Rent Control: annual rent increase cap (§ 155-5)",
+      "requirement": "At lease expiration or termination of a periodic tenancy, a landlord may not impose an increase greater than the lesser of 5% or the CPI change over the lease term. Only one such cost-of-living increase is allowed in any 12-month period. Landlords must give 30 days' written notice with reasons, include a certificate of substantial compliance, and show proof of prior rent paid.",
+      "key_value": "Lesser of 5% or CPI change; one increase per 12 months",
+      "coverage_conditions": "All dwelling units as defined in § 155-1 (housing space rented or offered for rent), except those exempt under § 155-2. Rents are controlled at the October 1, 1985 base rent.",
+      "exemptions": "Motels and hotels; newly constructed dwellings on first rental only (must be registered before first rental); industrial and commercial property; school-owned student housing; government-owned housing; buildings completely vacant since January 1, 1984 (first rental only); multiple dwellings built after June 25, 1987 for the lesser of mortgage amortization or 30 years (N.J.S.A. 2A:42-84.1). Condo/co-op owner-occupant initial rental decontrol (§ 155-37).",
+      "interaction": "Chapter is preempted during any period when a governmental agency regulates the rent under contract and its authority supersedes the City's (§ 155-2.1). Landlord rent-registration and proof-of-previous-rent requirements apply (§§ 155-1.1, 155-30).",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Hoboken Code § 155-5",
+      "quoted_span": "At the expiration of a lease or at the termination of a lease of a periodic tenant, no landlord\n     may request or receive a percentage increase in rent which is greater than 5% or the percentage\n     difference between the consumer price index three months prior to the expiration or termination\n     of the lease and three months prior to the commencement of the lease term, whichever is less.",
+      "confidence": 0.9,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "record_role": "headline",
+      "out_of_scope": false,
+      "out_of_scope_reason": null,
+      "extraction_notes": "Section history shows 'Amended 2-1-2023 by Ord. No. B-532'. The text does not say whether that amendment changed the cap, and no operative date is stated, so effective_date is null. Other terms in the chapter: vacancy decontrol allows a 25% increase on a new tenant's initial rent (§ 155-31, once per three years per unit); a Board-approved capital improvement surcharge may not raise base rent by more than 33 1/3% in 12 months (§ 155-10); tax, water/sewer and hardship surcharges are available with Board or Officer approval. The COVID moratorium (§ 155-38) ended May 7, 2022."
+    }
+  ],
   "usage": {
-    "input_tokens": 7439,
-    "output_tokens": 227,
-    "cost_usd": 0.0171,
-    "seconds": 3.6
+    "input_tokens": 29891,
+    "output_tokens": 1932,
+    "cost_usd": 0.0791,
+    "seconds": 15.1
   },
   "errors": []
 }

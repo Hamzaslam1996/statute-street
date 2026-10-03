@@ -1,0 +1,100 @@
+address_id,city,raw_code,units_derived,rule
+A0002,Hoboken,6B-20U-G,20,sum of all 'NNU' groups in the MOD-IV code
+A0008,Jersey City,10S-B-A-151U-HE,151,sum of all 'NNU' groups in the MOD-IV code
+A0012,Jersey City,3S-F-D-6U,6,sum of all 'NNU' groups in the MOD-IV code
+A0017,Jersey City,3S-F-D-6U-NH,6,sum of all 'NNU' groups in the MOD-IV code
+A0026,Jersey City,4S-B-D-8U-NH,8,sum of all 'NNU' groups in the MOD-IV code
+A0028,Newark,3SF3UG,3,sum of all 'NNU' groups in the MOD-IV code
+A0032,Jersey City,4S-B-D-8U-NH,8,sum of all 'NNU' groups in the MOD-IV code
+A0040,Hoboken,3B-7U/4B-24U-G,31,sum of all 'NNU' groups in the MOD-IV code
+A0042,Jersey City,2S-B-A-6U,6,sum of all 'NNU' groups in the MOD-IV code
+A0047,Jersey City,3S-B-D-6U-H,6,sum of all 'NNU' groups in the MOD-IV code
+A0049,Hoboken,3S-6U-AFFORDABL,6,sum of all 'NNU' groups in the MOD-IV code
+A0051,Jersey City,3S+BT-F-6U,6,sum of all 'NNU' groups in the MOD-IV code
+A0076,Newark,3SB2UG,2,sum of all 'NNU' groups in the MOD-IV code
+A0078,Jersey City,4S-B-A-16U-H,16,sum of all 'NNU' groups in the MOD-IV code
+A0087,Hoboken,"2,4B-16U-H-X",16,sum of all 'NNU' groups in the MOD-IV code
+A0089,Hoboken,5B-10U-H-BA,10,sum of all 'NNU' groups in the MOD-IV code
+A0099,Hoboken,4B-5U-H-BA,5,sum of all 'NNU' groups in the MOD-IV code
+A0101,Jersey City,2-4S-B-A-26U-H,26,sum of all 'NNU' groups in the MOD-IV code
+A0102,Hoboken,4B-5U-H-BA,5,sum of all 'NNU' groups in the MOD-IV code
+A0108,Jersey City,3S-B-D-6U-H,6,sum of all 'NNU' groups in the MOD-IV code
+A0116,Jersey City,3S-F-D-6U-H,6,sum of all 'NNU' groups in the MOD-IV code
+A0119,Hoboken,2F-4U/2F-2U,6,sum of all 'NNU' groups in the MOD-IV code
+A0125,Hoboken,5B-5U-H-(CO-OP),5,sum of all 'NNU' groups in the MOD-IV code
+A0129,Newark,3SB1UG,1,sum of all 'NNU' groups in the MOD-IV code
+A0131,Jersey City,3S-F-D-6U,6,sum of all 'NNU' groups in the MOD-IV code
+A0136,Hoboken,5B-26U-H-CO-OP,26,sum of all 'NNU' groups in the MOD-IV code
+A0137,Newark,3SF5UG,5,sum of all 'NNU' groups in the MOD-IV code
+A0139,Jersey City,3S-F-5U-NH,5,sum of all 'NNU' groups in the MOD-IV code
+A0146,Newark,2SF3UG,3,sum of all 'NNU' groups in the MOD-IV code
+A0160,Jersey City,3S-B-A-22U,22,sum of all 'NNU' groups in the MOD-IV code
+A0161,Jersey City,4S-B-A-21U-H,21,sum of all 'NNU' groups in the MOD-IV code
+A0163,Jersey City,3&4S-B&F-14U,14,sum of all 'NNU' groups in the MOD-IV code
+A0168,Hoboken,5B-64U/5B-64U-G,128,sum of all 'NNU' groups in the MOD-IV code
+A0171,Jersey City,3S-B-D-7U-NH,7,sum of all 'NNU' groups in the MOD-IV code
+A0177,Jersey City,3S-F-D-6U-NH,6,sum of all 'NNU' groups in the MOD-IV code
+A0181,Hoboken,5B-10U-BA,10,sum of all 'NNU' groups in the MOD-IV code
+A0182,Hoboken,"2,5B-90U-H-BA",90,sum of all 'NNU' groups in the MOD-IV code
+A0185,Jersey City,3S-F-D-6U-NH,6,sum of all 'NNU' groups in the MOD-IV code
+A0186,Jersey City,3S-F-D-5U-NH,5,sum of all 'NNU' groups in the MOD-IV code
+A0187,Jersey City,3S-F-D-6U-NH,6,sum of all 'NNU' groups in the MOD-IV code
+A0208,Hoboken,4B-8U,8,sum of all 'NNU' groups in the MOD-IV code
+A0223,Hoboken,4B-5U-H-BA,5,sum of all 'NNU' groups in the MOD-IV code
+A0241,Hoboken,5B-14U-H-BA,14,sum of all 'NNU' groups in the MOD-IV code
+A0243,Jersey City,3S+BT-F-6U,6,sum of all 'NNU' groups in the MOD-IV code
+A0244,Hoboken,5B-12U-1BX-H-BA,12,sum of all 'NNU' groups in the MOD-IV code
+A0249,Newark,3SF4UG,4,sum of all 'NNU' groups in the MOD-IV code
+A0250,Jersey City,6S-B+F-45U-17G,45,sum of all 'NNU' groups in the MOD-IV code
+A0254,Hoboken,4B-9U-H-BA,9,sum of all 'NNU' groups in the MOD-IV code
+A0256,Hoboken,5B-20U-H,20,sum of all 'NNU' groups in the MOD-IV code
+A0265,Jersey City,3S-B-A-13U-H,13,sum of all 'NNU' groups in the MOD-IV code
+A0266,Jersey City,4S-B-D-8U-NH,8,sum of all 'NNU' groups in the MOD-IV code
+A0269,Hoboken,5B-14U,14,sum of all 'NNU' groups in the MOD-IV code
+A0270,Jersey City,4S-B-8U-H,8,sum of all 'NNU' groups in the MOD-IV code
+A0279,Jersey City,4S-B-A-17U,17,sum of all 'NNU' groups in the MOD-IV code
+A0287,Hoboken,4B-7U-H-BA,7,sum of all 'NNU' groups in the MOD-IV code
+A0288,Jersey City,3S-B-12U,12,sum of all 'NNU' groups in the MOD-IV code
+A0299,Hoboken,4B-8U-BA,8,sum of all 'NNU' groups in the MOD-IV code
+A0307,Newark,3SB3UG,3,sum of all 'NNU' groups in the MOD-IV code
+A0308,Hoboken,5B-11U-H-BA-G,11,sum of all 'NNU' groups in the MOD-IV code
+A0320,Hoboken,4F-6U,6,sum of all 'NNU' groups in the MOD-IV code
+A0321,Jersey City,3S-F-D-7U-NH,7,sum of all 'NNU' groups in the MOD-IV code
+A0325,Jersey City,4S-B-A-21U,21,sum of all 'NNU' groups in the MOD-IV code
+A0331,Newark,2.5SF4UG,4,sum of all 'NNU' groups in the MOD-IV code
+A0344,Jersey City,4S-B-44U,44,sum of all 'NNU' groups in the MOD-IV code
+A0348,Hoboken,4F-7U,7,sum of all 'NNU' groups in the MOD-IV code
+A0350,Jersey City,3S-B-D-6U-NH,6,sum of all 'NNU' groups in the MOD-IV code
+A0358,Newark,3SB-2UG,2,sum of all 'NNU' groups in the MOD-IV code
+A0359,Hoboken,5B-10U-H-BA,10,sum of all 'NNU' groups in the MOD-IV code
+A0360,Jersey City,3S-B-A-14U-H,14,sum of all 'NNU' groups in the MOD-IV code
+A0371,Newark,USCB16UG,16,sum of all 'NNU' groups in the MOD-IV code
+A0372,Jersey City,4S-B-D-7U-NH-G,7,sum of all 'NNU' groups in the MOD-IV code
+A0377,Hoboken,5B-14U-H-BA,14,sum of all 'NNU' groups in the MOD-IV code
+A0388,Jersey City,3S-F-D-6U-H,6,sum of all 'NNU' groups in the MOD-IV code
+A0389,Hoboken,5B-10U-H-BA,10,sum of all 'NNU' groups in the MOD-IV code
+A0393,Jersey City,4S-BA-21U-H,21,sum of all 'NNU' groups in the MOD-IV code
+A0394,Jersey City,3S-B-A-13U-H,13,sum of all 'NNU' groups in the MOD-IV code
+A0399,Hoboken,4B-9U,9,sum of all 'NNU' groups in the MOD-IV code
+A0404,Jersey City,3S-F-D-8U-H,8,sum of all 'NNU' groups in the MOD-IV code
+A0410,Jersey City,4-S-BT-21U-H,21,sum of all 'NNU' groups in the MOD-IV code
+A0415,Jersey City,4S-B-A-46U-H,46,sum of all 'NNU' groups in the MOD-IV code
+A0416,Jersey City,5S-BT-B-C-21U-H,21,sum of all 'NNU' groups in the MOD-IV code
+A0418,Jersey City,3S-FD-12U-H,12,sum of all 'NNU' groups in the MOD-IV code
+A0424,Hoboken,4F-8U,8,sum of all 'NNU' groups in the MOD-IV code
+A0435,Hoboken,4B-8U-H,8,sum of all 'NNU' groups in the MOD-IV code
+A0436,Hoboken,5B-6B-25U-H-BA,25,sum of all 'NNU' groups in the MOD-IV code
+A0438,Jersey City,3S-F-A-12U-H,12,sum of all 'NNU' groups in the MOD-IV code
+A0447,Hoboken,5B-35U-G,35,sum of all 'NNU' groups in the MOD-IV code
+A0450,Jersey City,3S-F-D-6U-NH,6,sum of all 'NNU' groups in the MOD-IV code
+A0455,Jersey City,4S-B-A-17U-H,17,sum of all 'NNU' groups in the MOD-IV code
+A0459,Jersey City,3S-F-7U,7,sum of all 'NNU' groups in the MOD-IV code
+A0462,Jersey City,3S-F-D-6U,6,sum of all 'NNU' groups in the MOD-IV code
+A0471,Hoboken,4 1/2B-10U-BA,10,sum of all 'NNU' groups in the MOD-IV code
+A0472,Hoboken,5B-12U-BA,12,sum of all 'NNU' groups in the MOD-IV code
+A0475,Hoboken,4B-7U-H,7,sum of all 'NNU' groups in the MOD-IV code
+A0476,Newark,2SF2UG,2,sum of all 'NNU' groups in the MOD-IV code
+A0482,Jersey City,4S-B-A-25U-H,25,sum of all 'NNU' groups in the MOD-IV code
+A0489,Hoboken,6B-30U-G,30,sum of all 'NNU' groups in the MOD-IV code
+A0490,Hoboken,4F-8U-C/3F-2U,10,sum of all 'NNU' groups in the MOD-IV code
+A0495,Jersey City,3S-B-D-6U-NH,6,sum of all 'NNU' groups in the MOD-IV code

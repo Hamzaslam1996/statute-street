@@ -279,7 +279,7 @@
     },
     "quote_verified": {
       "type": "boolean",
-      "description": "true only if quoted_span was matched as an exact substring of a saved full source text (corpus or supplementary capture); false when quoted_span is null or rests on a WebFetch excerpt"
+      "description": "true only if quoted_span is an exact substring of a saved full source text (organisers corpus, team supplementary capture, or sources/manual pdftotext copy); false when quoted_span is null. quoted_span_in_corpus is a whitespace-normalised match against the organisers corpus/text."
     }
   }
 }

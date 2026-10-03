@@ -1,0 +1,20 @@
+SOURCE: https://berkeley.municipal.codes/BMC/13.78.010
+RETRIEVED: 2026-10-03T22:36Z
+VERIFIED_BY: Hamza (lawyer review 2026-10-04) / AI-draft registration
+SHA256: d0ca4e74c4882e8745623500d54a10cc3e8d930dbd75fd145a8c512149a9288d
+NOTE: team supplementary capture D092. Source type: official. Publisher: City of Berkeley (code publisher). curl 403; WebFetch verbatim section saved (excerpt)
+---- BEGIN TEXT ----
+SOURCE: https://berkeley.municipal.codes/BMC/13.78.010
+RETRIEVED: 2026-10-03 22:36 UTC
+CAPTURED_VIA: WebFetch single-page read, section text returned verbatim (curl to berkeley.municipal.codes returned HTTP 403); EXCERPT of the section only, not the full page
+SOURCE_TYPE: code publisher
+
+13.78.010 Notification of state law limitation on tenant screening fees.
+
+When an owner of residential rental property or the owner's agent receives a request to rent residential property in the City of Berkeley from an applicant and the owner charges that applicant a fee to purchase a consumer credit report and to validate, review, or otherwise process an application for the rent or lease of residential rental property, the owner shall provide, either in the rental application or in a separate disclosure prior to receipt of the fee, a clear and conspicuous tenant screening fee rights statement and a statement of the maximum fee cap permitted under California Civil Code Section 1950.6(b). The "Tenant Screening Fee Rights Statement" shall mean the following statement or a statement substantially similar to the following statement:
+
+"Pursuant to California law you have tenant screening fee rights, including the right to a copy of your consumer credit report if one is obtained with your screening fee, a refund of any unused portion of the fee and a receipt of the costs of the screening. For more information about your rights, please visit [URL to be provided by City]."
+
+(Ord. 7697-NS § 1, 2020; Ord. 7379-NS § 1, 2014; Ord. 7171-NS § 1 (part), 2011)
+
+---- END TEXT ----

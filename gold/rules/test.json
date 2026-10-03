@@ -512,7 +512,7 @@
   "status": "in_force",
   "title": "RSO legal reasons for eviction and relocation assistance – LAMC § 151.09",
   "requirement": "For RSO units, a landlord may evict only for the fourteen legal reasons listed in the RSO (at-fault and no-fault); no-fault evictions require relocation assistance and a Landlord Declaration of Intent to Evict filed with LAHD, and all termination notices must be filed with LAHD within three business days.",
-  "key_value": "RSO just-cause grounds + relocation assistance",
+  "key_value": "Landlord may not evict from an RSO unit except on the legal grounds listed in § 151.09.A (e.g. non-payment, lease violation, nuisance, owner/family occupancy, demolition/withdrawal); relocation assistance due for no-fault evictions (§ 151.09.G)",
   "coverage": {
    "coo_cutoff": "1978-10-01",
    "year_built_max": null,
@@ -526,18 +526,19 @@
   "effective_date": null,
   "enacted_date": null,
   "sunset_date": null,
-  "citation": "L.A. Mun. Code § 151.09",
+  "citation": "L.A. Mun. Code § 151.09 (Evictions)",
   "source_ids": [
    "S-LA-01",
-   "S-LA-05"
+   "S-LA-05",
+   "S-MAN-14"
   ],
   "corpus_doc_ids": [
    "D041",
    "D043"
   ],
   "supplementary_doc_ids": [],
-  "quoted_span": "three (3) business days of service on the tenant\nper Los Angeles Municipal Code 151.09.C.9 & 165.05.B.5.",
-  "quoted_span_in_corpus": true,
+  "quoted_span": "A landlord may bring an action to recover possession of a rental unit\nonly upon one of the following grounds:",
+  "quoted_span_in_corpus": false,
   "quote_verified": true,
   "interaction": {
    "overrides": [
@@ -550,7 +551,7 @@
   "conflict_note": null,
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.75,
+  "confidence": 0.85,
   "verified_against": [
    {
     "url": "https://housing.lacity.gov/residents/rso-overview",
@@ -561,10 +562,15 @@
     "url": "https://housing.lacity.gov/wp-content/uploads/2026/08/Relocation-Assistance-Bulletins-A-and-B-Combined.pdf",
     "checked_at_utc": "2026-10-01T22:36Z",
     "result": "official-agency bulletin (corpus D043): relocation amounts effective 2026-07-01 to 2027-06-30"
+   },
+   {
+    "url": "sources/manual/LA-JUST-02_LAMC_ch15_art1_151.txt",
+    "checked_at_utc": "2026-10-04",
+    "result": "manual capture by Hamza of LAMC ch. XV art. 1 (American Legal); § 151.09 text; span verified"
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "effective_date null: the RSO eviction provisions date from 1979 and have been amended many times; no single effective date verified. Hamza may prefer to merge LA-JUST-01/02 into one LA just-cause rule."
+  "verifier": "Hamza",
+  "notes": "effective_date null: the RSO eviction provisions date from 1979 and have been amended many times; no single effective date verified. Hamza may prefer to merge LA-JUST-01/02 into one LA just-cause rule. Ordinance history in the code text gives amendment dates only (e.g. § 151.09 \"Amended by Ord. No. 154,237, Eff. 8/30/80, Oper. 9/1/80\"; A.9 \"Added by Ord. No. 165,251, Eff. 11/20/89\") — recorded here, not as the rule's date. Lawyer review (Hamza, 2026-10-04) batch 4 row 14."
  },
  {
   "gold_id": "LA-SCRN-01",
@@ -649,7 +655,8 @@
   "sunset_date": null,
   "citation": "M.G.L. c.112, § 87DDD½ (St. 2025, c.9, § 43, eff. 2025-08-01)",
   "source_ids": [
-   "S-MA-10"
+   "S-MA-10",
+   "S-MAN-10"
   ],
   "corpus_doc_ids": [
    "D057"
@@ -667,16 +674,21 @@
   "conflict_note": null,
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.85,
+  "confidence": 0.9,
   "verified_against": [
    {
     "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXVI/Chapter112/Section87DDD%201~2",
     "checked_at_utc": "2026-10-01T22:56Z",
     "result": "organisers corpus copy D057 (official): \"Text of section as amended by 2025, 9, Sec. 43 effective August 1, 2025\""
+   },
+   {
+    "url": "sources/manual/MA-FEE-02_c112_87DDD-half_masslaw.pdf",
+    "checked_at_utc": "2026-10-04",
+    "result": "manual download by Hamza (mass.gov Trial Court Law Libraries text): \"effective August 1, 2025\"; operative sentence identical to D057"
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "Decided by Hamza 2026-10-04 (L096): added; effective date 2025-08-01 stated in the official annotation (listed in the brief)."
+  "verifier": "Hamza",
+  "notes": "Decided by Hamza 2026-10-04 (L096): added; effective date 2025-08-01 stated in the official annotation (listed in the brief). Effective date 2025-08-01 confirmed by the stated line in the Trial Court Law Libraries text: \"Amended by St. 2025, c. 9, § 43, effective August 1, 2025\" (explicitly stated date; D057 official annotation agrees). Lawyer review (Hamza, 2026-10-04) batch 4 row 15."
  },
  {
   "gold_id": "MA-JUST-00",
@@ -1086,7 +1098,7 @@
   "status": "in_force",
   "title": "Prohibition on anticompetitive rent-setting software – Santa Ana Ordinance No. NS-3090 (2026)",
   "requirement": "Santa Ana prohibits the sale, licensing, provision and use of algorithmic rent-setting software that relies on nonpublic competitor data to set residential rents; violations carry civil penalties of up to $1,000 each.",
-  "key_value": "ban on sale/use of algorithmic rent-setting software",
+  "key_value": "Ban on sale, licensing, provision and use of algorithmic rent-setting software that uses nonpublic competitor data; tenant civil action, up to $1,000 per violation plus attorney's fees",
   "coverage": {
    "coo_cutoff": null,
    "year_built_max": null,
@@ -1096,35 +1108,39 @@
    "tenancy_months": null,
    "other": "Residential rental properties in Santa Ana"
   },
-  "exemptions": "Software relying only on public data",
-  "effective_date": null,
+  "exemptions": "Software relying solely on publicly available data, aggregate historical data, or tools used to comply with affordable-housing programme requirements",
+  "effective_date": "2026-04",
   "enacted_date": "2026-03-03",
   "sunset_date": null,
-  "citation": "Santa Ana Ordinance No. NS-3090 (code section not verified)",
+  "citation": "Santa Ana Ordinance No. NS-3090 (uncodified; number per challenge brief and OCBJ, not yet seen on an official page)",
   "source_ids": [
    "S-SA-03",
    "S-SA-04",
-   "S-SA-05"
+   "S-SA-05",
+   "S-SA-06",
+   "S-SA-07"
   ],
   "corpus_doc_ids": [],
   "supplementary_doc_ids": [
    "D086",
    "D087",
-   "D002"
+   "D002",
+   "D088",
+   "D089"
   ],
-  "quoted_span": null,
+  "quoted_span": "The ordinance, which was approved on March 3, 2026 for a second reading and final vote, prohibits the sale, licensing, provision and use of certain algorithmic rent-setting software for residential rental properties.",
   "quoted_span_in_corpus": false,
-  "quote_verified": false,
+  "quote_verified": true,
   "interaction": {
    "overrides": [],
    "yields_to": [],
    "note": "Additional to state AB 325 (CA-ALG-01)"
   },
   "conflict_flag": true,
-  "conflict_note": "Only secondary sources reached: PublicCEO (first reading 2026-02-17, final vote set for 2026-03-03), Voice of OC (6-0-1 vote), OCBJ, and Morgan Lewis (\"Santa Ana Ordinance No. NS-3090 (effective April 2, 2026)\"). Official ordinance text/city page not retrievable (Laserfiche portal requires cookies). Status in_force rests on secondary reporting.",
+  "conflict_note": "Ordinance number NS-3090 and the exact effective date have not been seen on an official page. Lawyer review (Hamza, 2026-10-04) addendum: if an official agenda/ordinance PDF showing NS-3090 is supplied, raise confidence to 0.9 and clear this note.",
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.5,
+  "confidence": 0.7,
   "verified_against": [
    {
     "url": "https://www.publicceo.com/2026/02/santa-ana-city-council-continues-to-strengthen-tenant-protections-by-banning-anticompetitive-rent-setting-software/",
@@ -1145,10 +1161,20 @@
     "url": "https://publicdocs.santa-ana.org/weblink/1/doc/549791/Page1.aspx",
     "checked_at_utc": "2026-10-03T20:11Z",
     "result": "official document portal – fetch failed (cookie wall)"
+   },
+   {
+    "url": "https://santa-ana.gov/santa-ana-city-council-continues-to-strengthen-tenant-protections-by-banning-anticompetitive-rent-setting-software/",
+    "checked_at_utc": "2026-10-03T22:34Z",
+    "result": "official city news (team capture D088): \"approved on March 3, 2026 for a second reading and final vote\"; up to $1,000 per violation"
+   },
+   {
+    "url": "https://santa-ana.gov/rent-stabilization-newsletter-march-2026/",
+    "checked_at_utc": "2026-10-03T22:34Z",
+    "result": "official city newsletter (team capture D089): \"Approved on March 3, 2026\""
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "effective_date null per rule 5.1/5.2 (no primary source); secondary sources give 2026-04-02. enacted_date 2026-03-03 (second reading) from PublicCEO scheduling plus OCBJ 2026-03-09 report – secondary only. quoted_span null: no official text saved. Decided by Hamza 2026-10-04 (L042): effective_date null; news reports April 2026 (Morgan Lewis: 2026-04-02)."
+  "verifier": "Hamza",
+  "notes": "Adopted 2026-03-03 per santa-ana.gov (D088/D089; D088 describes the 2026-03-03 approval as \"for a second reading and final vote\", so final adoption may be later in March); Santa Ana ordinances take effect 30 days after adoption (City Charter; cf. Cal. Gov. Code § 36937) → on or about 2026-04-02; the challenge brief lists \"Santa Ana Ord. NS-3090 (Apr 2026)\". Effective date computed from the adoption date, not stated in a saved document. Lawyer review (Hamza, 2026-10-04) batch 2 row 3 + batch 4 addendum."
  },
  {
   "gold_id": "SA-DEP-00",
@@ -1237,7 +1263,7 @@
    "D074"
   ],
   "quoted_span": "It is unlawful for a landlord to use an algorithmic device to set rental rates or",
-  "quoted_span_in_corpus": false,
+  "quoted_span_in_corpus": true,
   "quote_verified": true,
   "interaction": {
    "overrides": [],
@@ -1349,15 +1375,16 @@
   "citation": "San Diego Mun. Code § 98.0803 (O-20986 N.S.)",
   "source_ids": [
    "S-SD-02",
-   "S-SD-03"
+   "S-SD-03",
+   "S-SD-06"
   ],
   "corpus_doc_ids": [],
   "supplementary_doc_ids": [
    "D075"
   ],
-  "quoted_span": null,
+  "quoted_span": "It is unlawful for any person to do any of the following acts, wholly or in \npart, based on a person’s source of income",
   "quoted_span_in_corpus": false,
-  "quote_verified": false,
+  "quote_verified": true,
   "interaction": {
    "overrides": [],
    "yields_to": [],
@@ -1378,10 +1405,15 @@
     "url": "https://gocodebook.com/library/us/ca/san-diego-zoning/division-8-prohibition-of-discrimination-based-on-a-tenant-s-source-of-income/98.0801-purpose-and-intent",
     "checked_at_utc": "2026-10-03T20:13Z",
     "result": "code publisher returned HTTP 500 on fetch; team capture D075 contains only the site TOC"
+   },
+   {
+    "url": "https://docs.sandiego.gov/municode/municodechapter09/ch09art08division08.pdf",
+    "checked_at_utc": "2026-10-03T21:16Z",
+    "result": "OFFICIAL SDMC Division 8 PDF (team re-capture D075): § 98.0803(a) text"
    }
   ],
   "verifier": "AI-draft",
-  "notes": "quoted_span null: no saved copy of the operative text (official SDMC PDF for Division 8 not retrieved; 500 error from code publisher). enacted_date 2018-09-18 from the CAA ordinance copy filename (SD_Section8Ord_091118) – low confidence. Decided by Hamza 2026-10-04 (L033): effective_date 2019-08-01 (code history 2018-10-18 noted). Checked 2026-10-04: corpus_supplementary/text/D075.txt (31,868 bytes) contains only the GoCodebook site table of contents — no Division 8 text, no \"source of income\" string — so quoted_span stays null and quote_verified false."
+  "notes": "quoted_span null: no saved copy of the operative text (official SDMC PDF for Division 8 not retrieved; 500 error from code publisher). enacted_date 2018-09-18 from the CAA ordinance copy filename (SD_Section8Ord_091118) – low confidence. Decided by Hamza 2026-10-04 (L033): effective_date 2019-08-01 (code history 2018-10-18 noted). Checked 2026-10-04: corpus_supplementary/text/D075.txt (31,868 bytes) contains only the GoCodebook site table of contents — no Division 8 text, no \"source of income\" string — so quoted_span stays null and quote_verified false. Update 2026-10-04: D075 was re-captured by the team from the official SDMC Division 8 PDF (6,849 chars); quoted_span now taken from § 98.0803(a). The 2018-10-18 / 2019-08-01 date question is unchanged."
  },
  {
   "gold_id": "SF-FEE-00",

@@ -1,0 +1,24 @@
+{
+  "_about": "Reviewer rulings applied on top of the model-written coverage tests (coverage.py). Keyed by jurisdiction|category (+ optional citation_contains). Each entry names the ruling it implements so the judges can trace it. Never silently changes a rule's text; only the engine tests.",
+  "overrides": [
+    {
+      "jurisdiction": "San Francisco, CA",
+      "category": "just_cause_eviction",
+      "reviewer": "Hamza (commercial/IP lawyer)",
+      "ruling": "instructions/rulings_05.md #1: S.F. Admin. Code § 37.9 just-cause protection extends to units regardless of construction date; D079 states inclusions, not exclusions. Treat coverage as all residential rental units in SF. Remaining statutory exemptions are not testable from parcel data and rare in a 5+ unit sample.",
+      "set": {
+        "tests": [],
+        "applies_to_all_residential": true,
+        "coverage_incomplete": false,
+        "explanation_note": "statutory exemptions (certain owner-occupied shared units, institutional housing) not testable from county data"
+      }
+    },
+    {
+      "jurisdiction": "Berkeley, CA",
+      "category": "rent_increase_limits",
+      "reviewer": "Hamza (commercial/IP lawyer)",
+      "ruling": "instructions/rulings_05.md #2: tenancy length is a tenant-level fact that decides when an increase may be taken, not whether the building is covered. Drop the tenancy_months test; keep COO 1980 cutoff, condo/single-family, dormitory/co-op and golden-duplex tests.",
+      "drop_tests_where": {"field": "tenancy_months"}
+    }
+  ]
+}

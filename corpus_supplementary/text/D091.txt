@@ -1,0 +1,10 @@
+SOURCE: https://berkeley.municipal.codes/BMC/13.78.016
+RETRIEVED: 2026-10-03 22:36 UTC
+CAPTURED_VIA: WebFetch single-page read, section text returned verbatim (curl to berkeley.municipal.codes returned HTTP 403); EXCERPT of the section only, not the full page
+SOURCE_TYPE: code publisher
+
+13.78.016 Prohibition of Non-refundable Application Fees Associated with Existing Tenancies.
+
+It is unlawful for an owner of residential rental property or the owner's agent to charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part, including any fee associated with the departure of a roommate or to request to add or replace a roommate in a pre-existing household.
+
+Nothing in this law is intended to disallow a property owner, or the owner's agent, to charge a 'tenant screening fee' as permitted under California Civil Code Section 1950.6 to any tenant, including any new or additional roommate who seeks to be added to an existing rental agreement or lease, seeking to rent or lease residential rental property. (Ord. 7697-NS § 1, 2020)

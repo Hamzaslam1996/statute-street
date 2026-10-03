@@ -65,6 +65,12 @@ SCHEMA = {
                               "description": "number, ISO date string, category string, or list of strings"},
                     "source_text": {"type": "string", "description": "the coverage/exemption words this test comes from"},
                     "note": {"type": ["string", "null"]},
+                    "on_fail": {
+                        "type": "string", "enum": ["exclude", "unknown"],
+                        "description": "What a FALSE result means. 'exclude' (normal): the address is outside the rule. "
+                                       "'unknown': the exemption depends on further facts not in the data (mortgage term, "
+                                       "statutory filings, owner elections), so failing the proxy test leaves the answer unknown.",
+                    },
                     "defeated_if": {
                         "type": ["object", "null"],
                         "description": "Only for owner_type / tenancy_months / funding exceptions the data cannot see: an "
@@ -77,7 +83,7 @@ SCHEMA = {
                         "additionalProperties": False,
                     },
                 },
-                "required": ["field", "op", "value", "source_text", "note", "defeated_if"],
+                "required": ["field", "op", "value", "source_text", "note", "on_fail", "defeated_if"],
                 "additionalProperties": False,
             },
         },
@@ -108,6 +114,7 @@ How to express common conditions
 - Read direction carefully: "this includes units that obtained a certificate of occupancy after June 13, 1979" is an INCLUSION (those units ARE covered) and must not become an exclusion test. Only words like "exempt", "does not apply", "not subject", "excluded" create exclusion tests.
 - Do not add a test for a sub-population that another test already excludes (e.g. units exempt under Costa-Hawkins are the new-construction, single-family and condominium units; if those are already tested, no extra tenancy test is needed).
 - NEVER write a test that merely restates that the unit is "covered by / subject to the ordinance" or "a rent-controlled unit" - that is circular. Instead look in the related records below for the ordinance's actual coverage criteria and use those. If none are stated anywhere, give no test for it.
+- When an exemption is CONDITIONAL on facts the data cannot show (e.g. "newly constructed dwellings exempt for the lesser of the mortgage amortisation period or 30 years, if the landlord filed the statutory notices"), write the proxy test (coo_age_years >= 30) with on_fail "unknown": a newer building is then unknown, not excluded. Ordinary exemptions use on_fail "exclude".
 - Use field other only for a genuine condition none of the fields can carry. If the texts say coverage is defined somewhere not captured in the corpus, set coverage_incomplete true (the engine will answer unknown).
 
 Related records from the same jurisdiction are provided for context. Use a statement from them ONLY when it explicitly describes who is exempt from or covered by THIS rule's category (e.g. a just-cause page saying "units exempt from rent increase limits: those with a certificate of occupancy after June 13, 1979" tells you the rent-limit rule's cutoff). Quote in source_text the exact words each test comes from. Do not invent limits that no text states. If no building-level limits are stated, return tests [] and applies_to_all_residential true. The query date is {DEFAULT_QUERY_DATE}.
@@ -169,9 +176,40 @@ def main() -> int:
         cache[rule["team_rule_id"]] = {"key": key, "jurisdiction": rule["jurisdiction"], "category": rule["category"],
                                       "title": rule["title"], **data}
         print(f"  {rule['team_rule_id']} {rule['jurisdiction']}/{rule['category']}: {len(data['tests'])} test(s)")
+    applied = apply_overrides(cache, rules)
     COVERAGE_JSON.write_text(json.dumps(cache, indent=1, ensure_ascii=False), encoding="utf-8")
-    print(f"coverage: {len(cache)} rules cached, {calls} call(s) this run, ${spent:.3f} -> {COVERAGE_JSON}")
+    print(f"coverage: {len(cache)} rules cached, {calls} call(s) this run, ${spent:.3f}, "
+          f"{applied} reviewer override(s) applied -> {COVERAGE_JSON}")
     return 0
+
+
+def apply_overrides(cache: dict, rules: list[dict]) -> int:
+    """
+    Reviewer rulings from coverage_overrides.json, applied after the model's tests.
+    Each is recorded on the entry (reviewed_by, review_ruling) so it is traceable.
+    """
+    path = OUT.parent / "coverage_overrides.json"
+    if not path.exists():
+        return 0
+    n = 0
+    for ov in json.loads(path.read_text(encoding="utf-8")).get("overrides", []):
+        for rule in rules:
+            if rule["jurisdiction"] != ov["jurisdiction"] or rule["category"] != ov["category"]:
+                continue
+            if ov.get("citation_contains") and ov["citation_contains"].lower() not in (rule.get("citation") or "").lower():
+                continue
+            entry = cache.get(rule["team_rule_id"])
+            if not entry:
+                continue
+            if "set" in ov:
+                entry.update(ov["set"])
+            if "drop_tests_where" in ov:
+                cond = ov["drop_tests_where"]
+                entry["tests"] = [t for t in entry.get("tests", []) if not all(t.get(k) == v for k, v in cond.items())]
+            entry["reviewed_by"] = ov["reviewer"]
+            entry["review_ruling"] = ov["ruling"]
+            n += 1
+    return n
 
 
 if __name__ == "__main__":

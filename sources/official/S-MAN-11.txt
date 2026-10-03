@@ -1,0 +1,159 @@
+SOURCE: sources/manual/BERK-RENT-01_AGA_page.pdf
+RETRIEVED: 2026-10-04
+VERIFIED_BY: Hamza (lawyer review 2026-10-04) / AI-draft registration
+SHA256: 2096ad477b14ddbd0085467bb2645077907488e7f74f136a131c363fe22f5e49
+NOTE: copy of sources/manual/BERK-RENT-01_AGA_page.txt (pdftotext of the manual PDF). Source type: official-agency. Publisher: Berkeley Rent Stabilization Board. manual download by Hamza; "The AGA for 2026 is 1.0%"
+---- BEGIN TEXT ----
+SOURCE: https://rentboard.berkeleyca.gov/rights-responsibilities/annual-general-adjustment [Hamza to confirm exact URL]
+RETRIEVED: 2026-10-04 (saved by Hamza from his browser; single page)
+CAPTURED_VIA: manual download, converted with pdftotext
+SOURCE_TYPE: official agency page
+NOTE: The AGA for 2026 is 1.0%; takes effect January 1; 65% of CPI, capped at 5% (Measure BB)
+
+       CITY OF BERKELEY
+
+Berkeley Rent Board
+
+
+Annual General Adjustment
+The Annual General Adjustment (AGA) allows landlords of most units
+fully covered by Berkeley’s Rent Ordinance to raise the rent by a set
+percentage with proper notice.
+
+
+THE AGA ALLOWS LANDLORDS TO RAISE RENTS FOR MOST
+FULLY COVERED RENTAL UNITS
+Each year the Berkeley Rent Board passes an Annual General Adjustment (AGA) in October. On
+January 1, the rent ceilings for most units fully covered by the Rent Ordinance increase by the
+AGA, which allows landlords to raise rents (with proper notice) up to the new rent ceiling. The
+AGA is set by taking 65% of the Consumer Price Index for All Urban Consumers in the Bay
+Area from July 1 through June 30 of the prior year. If this formula produces an AGA that is
+greater than 5%, the AGA is capped at 5% (this cap was changed by Measure BB from 7% to
+5%).
+
+
+
+CURRENT AGA
+
+                                  The AGA for 2026 is 1.0%
+
+
+
+
+You can use our AGA Calculator to calculate the allowable rent increase.
+
+
+
+CASES WHERE A RENT INCREASE IS PROHIBITED
+Landlords cannot raise the rent for the rest of the year in which the tenancy started, and for
+one additional calendar year. For example, if a tenancy starts on March 1, 2026, the landlord
+cannot raise the rent for the rest of 2026, or in 2027. The landlord may take the Xrst AGA rent
+increase in 2028 with proper notice to the tenant.
+
+No matter when a tenancy started, a landlord cannot take the AGA if:
+
+        The landlord has not fully paid Rent Board registration fees
+
+        There is an order from the Rent Board denying AGAs (generally due to a decrease in services or
+        substandard conditions)
+
+        There are serious repair problems or outstanding housing code violations
+
+        The landlord has failed to pay interest on the security deposit for the unit
+
+
+In order to dispute a landlord's eligibility to apply an AGA, the tenant(s) must Xle a Rent Board
+petition. The hearing examiner will decide whether the landlord may use the AGA to raise the
+rent.
+
+
+
+SPECIAL NOTE ON GOVERNMENT OWNED/SUBSIDIZED
+UNITS
+After a unit’s rent ceiling is adjusted upward, by the AGA, owners must still go through the
+subsidizing agency’s rent increase approval process (if there is one) to receive more rent.
+
+
+
+TENANTS WITH A FIXED-TERM LEASE
+If a tenancy is eligible for the AGA but the tenant has a Xxed-term lease, the landlord will have
+to wait until the lease term expires to impose the AGA unless the lease allows the increase.
+
+
+
+PROPER NOTICE OF RENT INCREASE
+Landlords must provide a 30-day written notice for a rent increase of 10% or less, or a 90-day
+written notice for increases of more than 10%.
+
+
+
+“BANKING” OF UNUSED ANNUAL GENERAL ADJUSTMENTS
+   ▼ ‫ﺧﯾﺎرات‬                               ‫ اﻹﻧﺟﻠﯾزﯾﺔ‬:‫إﯾﻘﺎف ﻟﻠﻐﺔ‬   ‫ﺗرﺟﻣﺔ‬   ‫ اﻟﻌرﺑﯾﺔ‬:‫ﻋرض ھذه اﻟﺻﻔﺣﺔ ﺑﺎﻟﻠﻐﺔ‬
+If a landlord chooses not to take an AGA rent increase in a given year, they do not lose it.
+Landlords can “bank” unused AGAs and then raise the rent to the rent ceiling at any time if
+they provide the tenant with proper notice, even if the total rent increase exceeds 5%. The 5%
+AGA cap limits only the AGA percentage set by the elected Rent Board.
+
+
+
+A NOTE ABOUT THE REGISTRATION FEE PASS-THROUGH
+The Berkeley Rent Board did NOT authorize a pass-through for the FY 2026-27 registration fee.
+Landlords may adjust rents as otherwise permitted under the Rent Ordinance, but cannot
+increase any tenant’s rent as a result of the FY 26-27 registration fee.
+
+
+
+RELATED DOCUMENTS
+Notice of Rent Increase (30/90 Days) for the Annual General Adjustment (108.46 KB)
+En Espanol: Aviso de Aumento De Renta para AGA (137.15 KB)
+List of Annual General Adjustments: 1981 - 2026 (158.75 KB)
+AGA 2026 Order: Regulation 1148 (112.75 KB)
+AGA 2026: Public Notice (105.5 KB)
+AGA 2026: October 16, 2025 Staff Report (1.81 MB)
+
+
+
+
+News
+                 Berkeley Rent Board to Host Inaugural Landlord Resource Fair on July 22
+
+
+
+
+                 UPDATED: Rent Board Adopts to Extend Amnesty Period for Units Newly
+                 Required to Register Under Measure BB
+
+
+                 Need Help in Your Language? Visit Our New Language Access Services Page
+
+
+
+                 UPDATED: Registration Fees for Fiscal Year (FY) 2026-2027
+
+
+
+
+   RENT BOARD HOUSING COUNSELOR
+Email: rent@berkeleyca.gov
+
+Phone: (510) 981-7368 (RENT) Ext. 1
+
+
+
+
+                      BERKELEY RENT BOARD
+2000 Center St., Suite 400, Berkeley, CA 94704, M, T, Th, F: 9 am - 4:45 pm
+                                   (Closed Wed.)
+
+                                                     
+
+                             SIGN UP FOR OUR EMAIL LISTS
+
+
+
+                              Get alerted about emergencies
+
+
+                     © 2026 Berkeley Rent Board All rights reserved.
+
+---- END TEXT ----

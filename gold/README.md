@@ -1,6 +1,6 @@
 # Statute Street — Independent Gold Set (answer key)
 
-**Status:** v0.3 (2026-10-04): all 13 "Hamza decides" rows adjudicated (L009–L097), 4 rows added (BOS-SCRN-02, HOB-RENT-02, MA-FEE-02, MA-SCRN-02), dev/test re-split. Rows remain `verifier: "AI-draft"` until individually cleared. Every row carries `verifier: "AI-draft"` until Hamza upgrades it.
+**Status:** v0.4 (2026-10-04): lawyer review batches 1–4 (`instructions/lawyer_review_01–04.md`) applied — 15 rows now `verifier: Hamza`; 14 manual primary/secondary sources (`sources/manual/`) and 8 new captures (D088–D093, D095; D075 re-captured) registered; quoted spans re-verified. Rows remain `verifier: "AI-draft"` until individually cleared. Every row carries `verifier: "AI-draft"` until Hamza upgrades it.
 **This is internal test material, not legal advice.**
 
 ## Purpose
@@ -19,7 +19,7 @@ An independent, verifiable answer key used to score the Statute Street system (H
 | `open_questions.md` | Contested legal/categorisation questions framed as decisions |
 | `silver_vs_independent.md` | Comparison report (Step 7) |
 | `REVIEW.md` | Review pack sorted weakest-confidence first |
-| `../sources/source_register.csv`, `../sources/official/*.txt` | 77 sources with URL, retrieval time, SHA256 and saved text/excerpt |
+| `../sources/source_register.csv`, `../sources/official/*.txt` | 101 sources (incl. `sources/manual/` copies) with URL, retrieval time, SHA256 and saved text/excerpt |
 
 ## Method
 1. Read README, change tests, schema, manifest and every corpus/supplementary header; built a 78-cell jurisdiction × category matrix with provisional labels.
@@ -61,3 +61,4 @@ Edit the builder scripts (`build_rules.py`, `build_addresses.py`, `compare_silve
 v0.1 — initial independent draft (AI-draft), frozen before the silver comparison (`FREEZE_before_step7.sha256`).
 v0.2 — post-adjudication: `quote_verified` added (true = span substring-matched against a saved full text; false = null span or excerpt-only basis — 27 rows, all null-span); Q1 Berkeley 13.63 = 2026-01-01 (conflict_flag kept); Q5 Boston HSNA / Cambridge 8.71 kept as notice-only just_cause_eviction rules (conflict_flag kept); 23 citation/value disagreements adopted. 12 adjudication rows still open.
 v0.3 — Hamza's L009–L097 verdicts applied (see `adjudication_log.csv`); added BOS-SCRN-02 (Fair Chance policy, city-funded scope), HOB-RENT-02 (B-750 disclosure duty), MA-FEE-02 (broker fee reform), MA-SCRN-02 (803 CMR 5.00, null span); BOS-SCRN-01 re-identified as the Fair Housing Commission rule; address key regenerated for the new rows; dev/test re-split (seed unchanged). The 94 "no change"/"keep" rows were closed in bulk ("accepted in bulk as no-change; not individually reviewed (Hamza, 2026-10-04)"); adjudication_log has 0 open rows. D075 re-checked: no Division 8 text, SD-SCRN-01 span remains null.
+v0.4 — lawyer review batches 1–4 applied (63 adjudication-log rows, all decided_by Hamza unless marked AI-draft): BOS-SCRN-02, MA-SCRN-02, SA-ALG-01 (+addendum: 2026-04), BERK-FEE-01, BOS-JUST-01 (citation → ch. X § 10-11), JC-ALG-01 (official adopted ordinance; 20-day NJ effective-date basis applied to JC/HOB rows), HOB-ALG-01, HOB-RENT-02, CA-ALG-01 (official leginfo page D093: "Effective January 1, 2026."), MA-RENT-P1 (SJC-13893 slip opinion), MA-FEE-02, BERK-RENT-01 (eff. 2026-01-01), CA-SCRN-01, NJ-ALG-01 (secondary added), LA-JUST-02 (official LAMC text). AI-draft additions from the same material: LA-RENT-01/LA-DEP-01 citations + official LAMC text in notes (corpus spans kept); SD-SCRN-01 span from the re-captured official Division 8 PDF (D075). Not achieved: official malegislature.gov c.6 § 172 page (timed out; FindLaw mirror used); Santa Ana ordinance number still unseen on an official page. `quoted_span_in_corpus` is now a whitespace-normalised match. dev/test split unchanged (same seed, same ids). seed20/seed60 regenerated (expected results unchanged).

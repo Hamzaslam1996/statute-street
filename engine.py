@@ -83,19 +83,40 @@ def building_type(use_code: str, use_description: str) -> str | None:
     return None
 
 
-def address_facts(row: dict, juris: dict) -> dict:
+MODIV_UNITS_RE = re.compile(r"(\d+)U(?=[-/A-Z]|$)")
+
+
+def derive_units(use_description: str) -> int | None:
+    """
+    NJ MOD-IV building codes encode the unit count: '3S-B-A-13U-H' -> 13, '6B-20U-G' -> 20,
+    '2SF2UG' -> 2, '4F-8U-C/3F-2U' -> 10 (two buildings on the parcel, summed).
+    This is a DERIVED value (Hamza rulings_05 #3): shown in explanations, never asserted
+    in the submission unless --use-derived-units is given.
+    """
+    d = (use_description or "").upper()
+    if not re.search(r"\d+U(?=[-/A-Z]|$)", d) or "UNIT" in d or "APARTMENT" in d:
+        return None
+    nums = [int(n) for n in MODIV_UNITS_RE.findall(d)]
+    return sum(nums) if nums else None
+
+
+def address_facts(row: dict, juris: dict, use_derived_units: bool = False) -> dict:
     def num(x):
         try:
             return int(float(x)) if x not in (None, "") else None
         except ValueError:
             return None
+    units = num(row.get("units"))
+    derived = derive_units(row.get("use_description")) if units is None else None
     return {
         "address_id": row["address_id"],
         "state": juris.get("state") or row["state"],
         "city": juris.get("city"),
         "jurisdiction_method": juris.get("method"),
         "year_built": num(row.get("year_built")),
-        "units": num(row.get("units")),
+        "units": derived if (use_derived_units and units is None and derived) else units,
+        "units_derived": derived,
+        "units_derived_source": row.get("use_description") if derived else None,
         "building_type": building_type(row.get("use_code"), row.get("use_description")),
         # Funding is only visible when the assessor says so (Boston "SUBSD HOUSING S- 8",
         # NJ "...-AFFORDABL"); otherwise unknown, never assumed market-rate.
@@ -197,6 +218,9 @@ def run_test(test: dict, facts: dict, as_of: date) -> tuple[bool | None, str]:
 
     if field == "units":
         if units is None:
+            if facts.get("units_derived"):
+                return None, (f"unit count not in supplied data; assessor building code "
+                              f"'{facts['units_derived_source']}' suggests {facts['units_derived']} units (derived, unconfirmed)")
             return None, "unit count missing from county records"
         return compare(units, op, value), f"{units} units"
 
@@ -229,18 +253,25 @@ def evaluate_coverage(rule: dict, cov: dict | None, facts: dict, as_of: date) ->
     """-> ('applies' | 'unknown' | 'exclude', explanation)."""
     tests = (cov or {}).get("tests") or []
     if (cov or {}).get("coverage_incomplete"):
-        return "unknown", "Unknown: who the ordinance covers is defined in text not in the corpus"
+        return "unknown", "Unknown: ordinance applicability text not available in corpus"
     if not tests:
-        return "applies", f"covers all residential rentals in {rule['jurisdiction']}"
+        note = (cov or {}).get("explanation_note")
+        return "applies", f"covers all residential rentals in {rule['jurisdiction']}" + (f" ({note})" if note else "")
     reasons_true, reasons_unknown = [], []
     for t in tests:
         ok, why = run_test(t, facts, as_of)
         if ok is False:
-            return "exclude", why
+            if t.get("on_fail") == "unknown":
+                # The exemption depends on facts we cannot see; failing the proxy is not exclusion.
+                ok, why = None, f"{why}; whether the exemption applies depends on facts not in the data ({t.get('source_text', '')[:60]})"
+            else:
+                return "exclude", why
         (reasons_true if ok else reasons_unknown).append(why)
     if reasons_unknown:
         return "unknown", "Unknown: " + reasons_unknown[0]
-    return "applies", "; ".join(reasons_true[:2]).capitalize()
+    note = (cov or {}).get("explanation_note")
+    text = "; ".join(reasons_true[:2]).capitalize()
+    return "applies", text + (f" ({note})" if note else "")
 
 
 # ---------------------------------------------------------------------------
@@ -308,16 +339,21 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--as-of", default=DEFAULT_QUERY_DATE)
     ap.add_argument("--address", nargs="*", help="only these address ids")
-    ap.add_argument("--out", default=str(LOOKUPS_JSON))
+    ap.add_argument("--out", default=None)
+    ap.add_argument("--use-derived-units", action="store_true",
+                    help="treat unit counts parsed from NJ MOD-IV building codes as real; writes lookups_derived.json")
     args = ap.parse_args()
     as_of = date.fromisoformat(args.as_of)
 
     rules, coverage, juris, addresses = load_inputs()
     if args.address:
         addresses = [a for a in addresses if a["address_id"] in set(args.address)]
-    lookups, audit, counts = {}, [], {}
+    lookups, audit, counts, derived_rows = {}, [], {}, []
     for row in addresses:
-        facts = address_facts(row, juris.get(row["address_id"], {}))
+        facts = address_facts(row, juris.get(row["address_id"], {}), args.use_derived_units)
+        if facts.get("units_derived"):
+            derived_rows.append({"address_id": row["address_id"], "city": facts["city"], "raw_code": facts["units_derived_source"],
+                                 "units_derived": facts["units_derived"], "rule": "sum of all 'NNU' groups in the MOD-IV code"})
         res = evaluate_address(facts, rules, coverage, as_of)
         lookups[row["address_id"]] = res
         for r in res:
@@ -326,15 +362,29 @@ def main() -> int:
                           "result": r["result"], "conflict_flag": r["conflict_flag"], "deciding_facts": r["explanation"]})
     out = {"as_of": args.as_of, "lookups": lookups}
     OUT.mkdir(parents=True, exist_ok=True)
-    out_path = args.out if args.out != str(LOOKUPS_JSON) or args.as_of == DEFAULT_QUERY_DATE \
-        else str(OUT / f"lookups_{args.as_of}.json")
+    full_run = not args.address
+    if args.out:
+        out_path = args.out
+    elif args.use_derived_units:
+        out_path = str(OUT / ("lookups_derived.json" if args.as_of == DEFAULT_QUERY_DATE else f"lookups_derived_{args.as_of}.json"))
+    else:
+        out_path = str(LOOKUPS_JSON if args.as_of == DEFAULT_QUERY_DATE else OUT / f"lookups_{args.as_of}.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=1, ensure_ascii=False)
-    if not args.address and args.as_of == DEFAULT_QUERY_DATE:
+    if full_run and args.as_of == DEFAULT_QUERY_DATE and not args.use_derived_units:
         with open(AUDIT_CSV, "w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=["address_id", "city", "team_rule_id", "result", "conflict_flag", "deciding_facts"])
             w.writeheader(); w.writerows(audit)
-    print(f"{len(lookups)} addresses as of {args.as_of}: {counts} -> {out_path}")
+        with open(OUT / "derived_units.csv", "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=["address_id", "city", "raw_code", "units_derived", "rule"])
+            w.writeheader(); w.writerows(derived_rows)
+    print(f"{len(lookups)} addresses as of {args.as_of}" + (" (derived units)" if args.use_derived_units else "")
+          + f": {counts} -> {out_path}")
+    if args.use_derived_units and full_run and LOOKUPS_JSON.exists():
+        base = json.loads(LOOKUPS_JSON.read_text(encoding="utf-8"))["lookups"]
+        changed = sum(1 for a, rs in lookups.items()
+                      for r in rs if next((b for b in base.get(a, []) if b["team_rule_id"] == r["team_rule_id"]), {}).get("result") != r["result"])
+        print(f"results changed by derived units: {changed}")
     return 0
 
 
