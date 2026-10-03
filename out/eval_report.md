@@ -6,14 +6,14 @@ Gold rules in scope (source doc extracted): 43 of 44 positive, 7 of 9 negative f
 
 | Metric | Value |
 |---|---|
-| Found (recall) | 37/43 = 86% |
-| Missed | 6 |
-| Extra (no gold match) | 57 |
+| Found (recall) | 42/43 = 98% (5 by jurisdiction+category only, marked †) |
+| Missed | 1 |
+| Extra (no gold match) | 52 |
 | Extra colliding with a negative finding | 2 |
 | Negative findings found / missed / extra | 4 / 3 / 1 |
-| Status agrees | 37/37 = 100% |
-| Effective date exact / same year | 8/37 = 22% / 13/37 |
-| Citation similarity (mean) | 90/100 |
+| Status agrees | 42/42 = 100% |
+| Effective date exact / same year | 11/42 = 26% / 16/42 |
+| Citation similarity (mean) | 85/100 |
 | Key value similarity (mean) | 63/100 |
 | Quote check pass rate (first attempt) | 114/115 = 99% |
 | Records dropped for bad quotes | 0 |
@@ -41,18 +41,23 @@ Gold rules in scope (source doc extracted): 43 of 44 positive, 7 of 9 negative f
 | JC-RENT-01 | r-0039 | in_force / in_force | None / None | 100 | Annual increase capped at CPI, max 4% (verify) / Rent control under Ch. 260; all 1-4 unit properties are exem |
 | LA-DEP-01 | r-0046 | in_force / in_force | None / None | 76 | Landlord must pay interest on security deposits for RSO unit / Interest paid monthly or yearly at the City-set annual rate  |
 | LA-JC-01 | r-0040 | in_force / in_force | 2023-01-27 / None | 94 | Just cause required after 6 months or first lease expiry, wh / Eviction only for listed at-fault or no-fault just causes; r |
+| LA-RENT-01 † | r-0043 | in_force / in_force | 2026-02-02 / 2026-02-02 | 55 | Annual allowable increase set by LAHD formula (2026 formula; / Once per 12 months by the allowable rent increase percentage |
 | MA-ALG-P1 | r-0050 | pending / pending | None / None | 96 | Would prohibit algorithmic rent setting statewide / Would prohibit algorithmic rent setting (bill text not in th |
 | MA-ALG-P2 | r-0047 | pending / pending | None / None | 64 | Would prohibit algorithmic rent fixing in the rental housing / Pending bills to ban algorithmic rent-setting |
 | MA-DEP-01 | r-0058 | in_force / in_force | None / None | 74 | First month's rent / Security deposit capped at 1 month's rent (plus first month, |
 | MA-FEE-01 | r-0052 | in_force / in_force | None / None | 67 | Only first month's rent, last month's rent, security deposit / Landlords may not charge application fees; only first, last, |
 | MA-FEE-02 | r-0051 | in_force / in_force | 2025-08-01 / 2025-08-01 | 83 | Tenant pays a broker fee only if the tenant engaged the brok / Broker fee payable only by the party (lessor or tenant) who  |
 | MA-SCR-01 | r-0057 | in_force / in_force | None / None | 86 | Unlawful to discriminate against recipients of public assist / Ban on refusing or discriminating against tenants/applicants |
+| NJ-ALG-01 † | r-0060 | not_yet_effective / not_yet_effective | 2027-07-01 / 2027-07-01 | 54 | Prohibits use/sale of rent-setting algorithms using nonpubli / Ban on algorithmic rent-setting coordination (use of coordin |
 | NJ-DEP-01 | r-0072 | in_force / in_force | None / None | 100 | 1.5 months' rent / 1.5 months' rent maximum; annual increases limited to 10% of |
 | NJ-FEE-01 | r-0061 | in_force / in_force | 2026-05-01 / 2026-05-01 | 79 | $50 cap; penalty up to $500 per violation / $50 maximum, adjusted annually for CPI increases (NY-Norther |
 | NJ-JC-01 | r-0064 | in_force / in_force | 1974-06-25 / None | 100 | Eviction only on enumerated good-cause grounds / Good cause required to evict or fail to renew a residential  |
 | NJ-SCR-01 | r-0070 | in_force / in_force | 2022-01-01 / 2022-01-01 | 89 | No criminal-history inquiry before conditional offer; limits / No criminal-record inquiry before conditional offer; after o |
 | NJ-SCR-02 | r-0069 | in_force / in_force | None / None | 100 | Unlawful to refuse rental based on lawful source of income i / Source of lawful income may not be a basis for refusing to r |
+| NWK-RENT-01 † | r-0075 | in_force / in_force | None / 2024-09 | 51 | Annual increase capped at CPI, max 4% (verify) / CPI-U increase (NY-Northern NJ-Long Island), max 4% |
 | SA-ALG-01 | r-0095 | in_force / in_force | 2026-04 / 2026-04-02 | 87 | Prohibits use of anticompetitive rent-setting software / Ban on automated rent price-fixing |
+| SA-JC-01 † | r-0096 | in_force / in_force | 2021-11-19 / 2021-11-19 | 47 | Eviction only for enumerated causes; relocation assistance / Just cause required after 30 days; no-fault termination requ |
+| SA-RENT-01 † | r-0099 | in_force / in_force | 2021-11-19 / None | 47 | Lesser of 3% or 80% of CPI per year / Lesser of 3% or 80% of CPI change; currently 2.87% (9/1/2026 |
 | SD-ALG-01 | r-0081 | in_force / in_force | 2025-06-21 / 2025-06 | 83 | Prohibits sale and use of algorithmic devices to set rents / Ban on algorithmic rent-setting devices (similar to San Fran |
 | SD-JC-01 | r-0083 | in_force / in_force | 2023-06-24 / 2023-06-24 | 89 | Just cause and relocation assistance beyond state law / Just cause required; no-fault relocation assistance = 2 mont |
 | SF-ALG-01 | r-0085 | in_force / in_force | 2024-10-14 / 2024-10-14 | 100 | Prohibits sale or use of algorithmic devices to set rents or / Ban on sale or use of algorithmic rent-setting devices |
@@ -62,12 +67,7 @@ Gold rules in scope (source doc extracted): 43 of 44 positive, 7 of 9 negative f
 
 ## Missed gold rules (in scope)
 
-- LA-RENT-01 — Los Angeles, CA / rent_increase_limits / L.A. Mun. Code ch. XV, art. 1 (RSO); LAHD RSO overview (docs D041, D042)
 - SD-SCR-01 — San Diego, CA / screening_restrictions / S.D. Mun. Code ch. 9, art. 8, div. 8 (docs D075)
-- SA-RENT-01 — Santa Ana, CA / rent_increase_limits / Santa Ana Mun. Code ch. 8, art. XIX (Ord. NS-3011) (docs D084, D085)
-- SA-JC-01 — Santa Ana, CA / just_cause_eviction / Santa Ana Mun. Code ch. 8, art. XX (Ord. NS-3012) (docs D085)
-- NJ-ALG-01 — NJ / algorithmic_rent_setting / P.L.2026, c.43 (N.J.S.A. 56:9-?) (docs D069, D060)
-- NWK-RENT-01 — Newark, NJ / rent_increase_limits / Newark Code Title 19 (Rent Control) (docs D070, D071, D072)
 
 ## Extra rules (no gold match)
 
@@ -93,7 +93,6 @@ Gold rules in scope (source doc extracted): 43 of 44 positive, 7 of 9 negative f
 - r-0038 — Jersey City, NJ / algorithmic_rent_setting / Jersey City ordinance banning rent-setting algorithms (sponsor Councilman James Solomon), approved May 2025; ordinance number not stated in source (D035): Jersey City ban on rent-setting algorithms (RealPage-type software)
 - r-0041 — Los Angeles, CA / just_cause_eviction / L.A.M.C. § 151.09 (D041): Los Angeles RSO just cause eviction and relocation assistance
 - r-0042 — Los Angeles, CA / just_cause_eviction / L.A.M.C. §§ 151.09, 165.03, 165.06; L.A.M.C. §§ 47.06-47.07 (D043): Relocation assistance for no-fault evictions under the RSO and JCO
-- r-0043 — Los Angeles, CA / rent_increase_limits / L.A.M.C. ch. XV, art. 1, § 151.00 et seq. (Rent Stabilization Ordinance) (D041): Los Angeles Rent Stabilization Ordinance (RSO) allowable rent increases
 - r-0044 — Los Angeles, CA / rent_increase_limits / L.A.M.C. § 151.06 (Rent Stabilization Ordinance, annual allowable rent increase) (D042): Los Angeles RSO annual allowable rent increase
 - r-0045 — Los Angeles, CA / screening_restrictions / L.A.M.C. § 45.67 (D038): LAMC Sec. 45.67 Prohibited Activities (source-of-income discrimination)
 - r-0048 — MA / algorithmic_rent_setting / H.5222, 194th Gen. Court (Mass. 2025-2026) (new draft of H.1564) (D045): H.5222 - An Act relative to preventing algorithmic rent fixing in the rental housing market
@@ -101,7 +100,6 @@ Gold rules in scope (source doc extracted): 43 of 44 positive, 7 of 9 negative f
 - r-0053 — MA / just_cause_eviction / M.G.L. c. 186, § 11 (D050): Notice to quit for nonpayment of rent under written lease (M.G.L. c. 186, § 11)
 - r-0054 — MA / just_cause_eviction / M.G.L. c. 186, § 18 (D053): Tenant reprisal (retaliation) protection, M.G.L. c. 186, § 18
 - r-0059 — NJ / algorithmic_rent_setting / P.L. 2026, c. 43 (D060): New Jersey FAIR Act (Forbidding the Algorithmic Inflation of Rent)
-- r-0060 — NJ / algorithmic_rent_setting / P.L. 2026, c.43 (C.56:9-20 to 56:9-26) (D069): Forbidding the Algorithmic Inflation of Rent (FAIR) Act
 - r-0062 — NJ / just_cause_eviction / N.J.S.A. 2A:18-61.1 (D062): NJ Anti-Eviction Act: grounds for removal of tenants
 - r-0063 — NJ / just_cause_eviction / N.J.S.A. 2A:18-61.1 et seq. (D067): NJ Anti-Eviction Statute (statutory grounds for eviction)
 - r-0065 — NJ / just_cause_eviction / N.J.S.A. 2A:18-61.3 (D067): Anti-Eviction Act: good cause required for lease non-renewal
@@ -110,7 +108,6 @@ Gold rules in scope (source doc extracted): 43 of 44 positive, 7 of 9 negative f
 - r-0071 — NJ / security_deposits / N.J.S.A. 46:8-21.2 (D063): NJ Security Deposit Limitation (N.J.S.A. 46:8-21.2)
 - r-0073 — NJ / security_deposits / N.J.S.A. 46:8-26 (D064): NJ Security Deposit Act: application of act
 - r-0074 — Newark, NJ / just_cause_eviction / Newark, N.J. Rev. Gen. Ord. § 19:2-14 (D070): Newark Rent Control: retaliatory eviction prohibited
-- r-0075 — Newark, NJ / rent_increase_limits / Newark, N.J. Code § 19:2-3.1; § 19:2-3.2 (D070): Newark Rent Control: CPI-based annual rent increase cap (§ 19:2-3.1, 19:2-3.2)
 - r-0076 — Newark, NJ / rent_increase_limits / Newark, N.J. Rev. Gen. Ord. § 19:2-18.1 (D070): Newark Rent Control: new construction exemption from increase limits
 - r-0077 — Newark, NJ / rent_increase_limits / Newark, N.J. Rev. Gen. Ord. § 19:2-18.4 (D070): Newark Rent Control: rehabilitated vacant unit increase (10% max)
 - r-0078 — Newark, NJ / rent_increase_limits / Newark, N.J. Rev. Gen. Ord. § 19:2-22 (D070): Newark Rent Control: 25% annual cap on rent increases
@@ -124,10 +121,8 @@ Gold rules in scope (source doc extracted): 43 of 44 positive, 7 of 9 negative f
 - r-0092 — San Francisco, CA / security_deposits / S.F. Admin. Code § 49.2 (D083): SF security deposit interest rate
 - r-0093 — Santa Ana, CA / algorithmic_rent_setting / Santa Ana Municipal Code (algorithmic rent-setting ordinance; ordinance number not stated in source) (D086): Santa Ana ban on algorithmic rent-setting devices
 - r-0094 — Santa Ana, CA / algorithmic_rent_setting / Santa Ana Municipal Code, algorithmic rent-setting software ordinance (ordinance number and section not stated in source) (D087): Santa Ana ban on algorithmic rent-setting software
-- r-0096 — Santa Ana, CA / just_cause_eviction / Santa Ana Municipal Code, Just Cause Eviction Ordinance (section number not stated in source) (D085): Santa Ana Just Cause Eviction Ordinance
 - r-0097 — Santa Ana, CA / just_cause_eviction / Santa Ana Municipal Code, Rent Stabilization and Just Cause Eviction Ordinance (D084): Santa Ana Just Cause Eviction Ordinance
 - r-0098 — Santa Ana, CA / rent_increase_limits / Santa Ana Municipal Code, Rent Stabilization Ordinance (section number not stated in source) (D085): Santa Ana Rent Stabilization Ordinance
-- r-0099 — Santa Ana, CA / rent_increase_limits / Santa Ana Municipal Code, Rent Stabilization and Just Cause Eviction Ordinance (D084): Santa Ana Rent Stabilization Ordinance - maximum annual rent increase
 
 ## Collisions with negative findings (gold says: no rule at this level)
 

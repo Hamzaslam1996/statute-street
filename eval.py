@@ -134,18 +134,21 @@ def main() -> int:
         matches.append((scope_pos[gi], ours[oi], s))
 
     # Fallback: citations are written many ways ("L.A.M.C. § 151.00" vs "L.A. Mun.
-    # Code ch. XV"). If a gold rule is still unmatched and exactly one unmatched
-    # extracted rule sits in the same jurisdiction + category, pair them and say so.
+    # Code ch. XV"). If a gold rule is still unmatched and it is the ONLY gold rule
+    # in its jurisdiction + category, pair it with our best-scoring unmatched rule in
+    # that bucket and say so. Any further rules of ours in the bucket stay "extra",
+    # which is the real signal (near-duplicates from several documents).
     fallback_ids = set()
+    bucket = lambda r: ((r["jurisdiction"] or "").lower(), r["category"])
+    gold_bucket_counts = {}
+    for g in scope_pos:
+        gold_bucket_counts[bucket(g)] = gold_bucket_counts.get(bucket(g), 0) + 1
     for gi, g in enumerate(scope_pos):
-        if gi in matched_g:
+        if gi in matched_g or gold_bucket_counts[bucket(g)] != 1:
             continue
-        cands = [oi for oi, o in enumerate(ours)
-                 if oi not in matched_o
-                 and (o["jurisdiction"] or "").lower() == (g["jurisdiction"] or "").lower()
-                 and o["category"] == g["category"]]
-        if len(cands) == 1:
-            oi = cands[0]
+        cands = [oi for oi, o in enumerate(ours) if oi not in matched_o and bucket(o) == bucket(g)]
+        if cands:
+            oi = max(cands, key=lambda oi: cite_score(ours[oi]["citation"], g["citation"]))
             matched_g[gi] = oi
             matched_o.add(oi)
             matches.append((g, ours[oi], cite_score(ours[oi]["citation"], g["citation"])))
