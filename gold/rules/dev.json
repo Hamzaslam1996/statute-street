@@ -1423,8 +1423,8 @@
   "category": "rent_increase_limits",
   "status": "in_force",
   "title": "Rent Control – Hoboken Code ch. 155 (§ 155-5)",
-  "requirement": "At lease expiry a Hoboken landlord may not raise rent by more than the lesser of 5% or the CPI change over the lease term; one increase per 12 months. Hotels, new construction (post-1987 multiple dwellings for the statutory exemption period) and a few other categories are exempt; there is no small-building or owner-occupancy exemption.",
-  "key_value": "lesser of 5% or CPI per 12 months",
+  "requirement": "At the expiration or termination of a lease a Hoboken landlord may not request or receive a percentage rent increase greater than the lesser of 5% or the CPI change over the lease term; no more than one such cost-of-living increase in any twelve-month period (§ 155-5). Applies to all dwelling units except the § 155-2 exemptions; there is no minimum unit count and no owner-occupancy exemption.",
+  "key_value": "lesser of 5% or CPI change, once per 12 months",
   "coverage": {
    "coo_cutoff": null,
    "year_built_max": null,
@@ -1432,24 +1432,25 @@
    "max_units": null,
    "owner_type": null,
    "tenancy_months": null,
-   "other": "All dwellings rented in Hoboken except § 155-2 exemptions (no unit-count or owner-occupancy exemption)"
+   "other": "§ 155-2: all dwelling units (as defined in § 155-1) except exemptions (A)–(H). No minimum unit count and no owner-occupancy exemption (unlike Jersey City/Newark). Coverage test (rulings_05 §4a): building type not hotel/motel/commercial/industrial/institutional/government; built on or before 1987-06-25 → covered; built after 1987-06-25 and completion < 30 years before the query date → unknown (N.J.S.A. 2A:42-84.1 exemption depends on mortgage term and statutory compliance filings not in the data); built after 1987-06-25 and ≥ 30 years before the query date → covered; year missing → unknown."
   },
-  "exemptions": "Motels/hotels; newly constructed dwellings on first rental (registered); industrial/commercial property; institutional student housing; government-owned housing; buildings vacant since 1984-01-01; multiple dwellings constructed after 1987-06-25 for the mortgage-amortisation/30-year period under N.J.S.A. 2A:42-84.1 et seq.",
+  "exemptions": "§ 155-2(A) motels and hotels; (B) newly constructed dwellings for their first rental only (registered with the Rent Regulation Officer); (C) industrial property; (D) nonresidential/commercial property (apartment units in mixed buildings remain covered); (E) housing provided to students by a school/college that owns or controls it; (F) housing owned and operated by other government agencies; (G) buildings completely vacant on or before and since 1984-01-01 (first rental only, registered); (H) per N.J.S.A. 2A:42-84.1 et seq., multiple dwellings constructed after 1987-06-25, for the lesser of the initial-mortgage amortisation period or 30 years after completion (30 years if no initial mortgage), only where the landlord complied with the statute's notice requirements.",
   "effective_date": null,
   "enacted_date": "1984-01-16",
   "sunset_date": null,
-  "citation": "Hoboken Code § 155-5",
+  "citation": "Hoboken Code § 155-5; applicability § 155-2",
   "source_ids": [
    "S-HOB-01",
    "S-HOB-02",
-   "S-HOB-03"
+   "S-HOB-03",
+   "S-MAN-15"
   ],
   "corpus_doc_ids": [],
   "supplementary_doc_ids": [
    "D032",
    "D033"
   ],
-  "quoted_span": "no landlord may request or receive a percentage increase in rent which is greater than 5% or the percentage difference between the consumer price index three months prior to the expiration or termination of the lease and three months prior to the commencement of the lease term, whichever is less.",
+  "quoted_span": "At the expiration of a lease or at the termination of a lease of a periodic tenant, no landlord\n     may request or receive a percentage increase in rent which is greater than 5% or the percentage\n     difference between the consumer price index three months prior to the expiration or termination\n     of the lease and three months prior to the commencement of the lease term, whichever is less.",
   "quoted_span_in_corpus": false,
   "quote_verified": true,
   "interaction": {
@@ -1461,7 +1462,7 @@
   "conflict_note": null,
   "negative_finding": false,
   "negative_reason": null,
-  "confidence": 0.8,
+  "confidence": 0.9,
   "verified_against": [
    {
     "url": "https://ecode360.com/15252470",
@@ -1477,10 +1478,15 @@
     "url": "https://ecode360.com/15252441",
     "checked_at_utc": "2026-10-03T20:16Z",
     "result": "code publisher § 155-2 exemptions (single page read): hotels, new construction, post-1987-06-25 multiple dwellings, etc."
+   },
+   {
+    "url": "sources/manual/HOB-RENT-01_Hoboken_ch155_ecode360.pdf",
+    "checked_at_utc": "2026-10-04",
+    "result": "full ch. 155 PDF downloaded by Hamza from https://ecode360.com/HO0741 (dated 2026-10-03), 25 pp.; § 155-2 exemptions (A)–(H) and § 155-5 cap verified against the pdftotext copy; § 155-5 history \"[Amended 2-1-2023 by Ord. No. B-532]\""
    }
   ],
-  "verifier": "AI-draft",
-  "notes": "NJ construction years are mostly missing and 39/40 Hoboken rows lack units → new-construction exemption untestable → unknown unless year_built shows pre-1987 construction (then applies). ecode360 Terms of Use acknowledged; single pages only."
+  "verifier": "Hamza",
+  "notes": "Coverage test per rulings_05 §4a; Hoboken rows in the data: 36/40 lack year_built (→ unknown) and the four with a year (2000, 2001, 2007, 2010) are post-1987 and < 30 years old at the 2026-10-01 query date (→ unknown). Building-type exemptions (hotel/commercial/institutional/government) are not testable from the MOD-IV building codes in the data and are rare in a rental sample. Earlier § 155-5 span (team capture D033) is identical to the full-chapter text. ecode360 Terms of Use acknowledged."
  },
  {
   "gold_id": "HOB-RENT-02",

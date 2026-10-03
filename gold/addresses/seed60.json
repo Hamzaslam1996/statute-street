@@ -1020,104 +1020,7 @@
     {
      "gold_id": "HOB-RENT-01",
      "result": "unknown",
-     "reason": "year_built 2010 after 1987 → likely within the 30-year/mortgage-amortisation new-construction exemption, which depends on registration and mortgage facts not in the data",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "HOB-RENT-02",
-     "result": "applies",
-     "reason": "disclosure duty for renewal increases >10% applies to all residential landlords in Hoboken (categorisation flagged)",
-     "conflict_flag": true
-    },
-    {
-     "gold_id": "NJ-ALG-01",
-     "result": "not_yet_effective",
-     "reason": "enacted, effective 2027-07-01 > 2026-10-01; possible preemption of the local ordinance (T3 conflict flag)",
-     "conflict_flag": true
-    },
-    {
-     "gold_id": "NJ-DEP-01",
-     "result": "unknown",
-     "reason": "owner-occupied ≤2-unit exclusion cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-FEE-01",
-     "result": "unknown",
-     "reason": "one- or two-family dwelling exemption cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-JUST-01",
-     "result": "unknown",
-     "reason": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-SCRN-01",
-     "result": "unknown",
-     "reason": "small owner-occupied building exemption cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-SCRN-02",
-     "result": "unknown",
-     "reason": "LAD owner-occupied small-building exemption cannot be excluded",
-     "conflict_flag": false
-    }
-   ],
-   "not_covered": [],
-   "negative_or_failed_in_stack": [
-    "HOB-DEP-00",
-    "HOB-FEE-00",
-    "HOB-JUST-00",
-    "HOB-SCRN-00",
-    "NJ-RENT-00"
-   ],
-   "unknown_facts": [
-    "new-construction exemption registration / mortgage amortisation period",
-    "units (one-/two-family dwelling exemption, N.J.S.A. 46:8-18.1(c))",
-    "units / owner occupancy (Anti-Eviction Act owner-occupied two-unit exemption)",
-    "units / owner occupancy (Fair Chance in Housing Act exemptions)",
-    "units / owner occupancy (LAD exemptions)",
-    "units / owner occupancy (N.J.S.A. 46:8-26)"
-   ],
-   "notes": null
-  },
-  {
-   "address_id": "A0040",
-   "raw": {
-    "address_id": "A0040",
-    "street_address": "69-75 JACKSON ST",
-    "postal_city": "Hoboken",
-    "state": "NJ",
-    "zip": "07030",
-    "year_built": "",
-    "units": "",
-    "use_code": "4C",
-    "use_description": "3B-7U/4B-24U-G",
-    "source_dataset": "NJOGIS Parcels & MOD-IV Composite",
-    "retrieved_at": "2026-10-01T22:50Z"
-   },
-   "jurisdiction_stack": [
-    "NJ",
-    "Hudson County",
-    "Hoboken"
-   ],
-   "legal_city": "Hoboken",
-   "units_used": null,
-   "units_source": null,
-   "expected": [
-    {
-     "gold_id": "HOB-ALG-01",
-     "result": "applies",
-     "reason": "citywide; conflict flag for possible FAIR Act preemption from 2027-07-01",
-     "conflict_flag": true
-    },
-    {
-     "gold_id": "HOB-RENT-01",
-     "result": "unknown",
-     "reason": "new-construction exemption (post-1987-06-25 multiple dwellings) cannot be tested without year_built",
+     "reason": "year_built 2010 → post-1987-06-25 multiple dwelling less than 30 years old at 2026-10-01 → § 155-2(H) exemption depends on the initial-mortgage amortisation period and N.J.S.A. 2A:42-84.1 compliance filings, not in the data",
      "conflict_flag": false
     },
     {
@@ -1177,7 +1080,104 @@
     "units / owner occupancy (Fair Chance in Housing Act exemptions)",
     "units / owner occupancy (LAD exemptions)",
     "units / owner occupancy (N.J.S.A. 46:8-26)",
-    "year_built (Hoboken new-construction exemption)"
+    "§ 155-2(H) new-construction exemption: mortgage amortisation period / statutory compliance"
+   ],
+   "notes": null
+  },
+  {
+   "address_id": "A0040",
+   "raw": {
+    "address_id": "A0040",
+    "street_address": "69-75 JACKSON ST",
+    "postal_city": "Hoboken",
+    "state": "NJ",
+    "zip": "07030",
+    "year_built": "",
+    "units": "",
+    "use_code": "4C",
+    "use_description": "3B-7U/4B-24U-G",
+    "source_dataset": "NJOGIS Parcels & MOD-IV Composite",
+    "retrieved_at": "2026-10-01T22:50Z"
+   },
+   "jurisdiction_stack": [
+    "NJ",
+    "Hudson County",
+    "Hoboken"
+   ],
+   "legal_city": "Hoboken",
+   "units_used": null,
+   "units_source": null,
+   "expected": [
+    {
+     "gold_id": "HOB-ALG-01",
+     "result": "applies",
+     "reason": "citywide; conflict flag for possible FAIR Act preemption from 2027-07-01",
+     "conflict_flag": true
+    },
+    {
+     "gold_id": "HOB-RENT-01",
+     "result": "unknown",
+     "reason": "ordinance covers all dwelling units with no unit-count test, but the post-1987-06-25 new-construction exemption (§ 155-2(H)) cannot be tested without year_built",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "HOB-RENT-02",
+     "result": "applies",
+     "reason": "disclosure duty for renewal increases >10% applies to all residential landlords in Hoboken (categorisation flagged)",
+     "conflict_flag": true
+    },
+    {
+     "gold_id": "NJ-ALG-01",
+     "result": "not_yet_effective",
+     "reason": "enacted, effective 2027-07-01 > 2026-10-01; possible preemption of the local ordinance (T3 conflict flag)",
+     "conflict_flag": true
+    },
+    {
+     "gold_id": "NJ-DEP-01",
+     "result": "unknown",
+     "reason": "owner-occupied ≤2-unit exclusion cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-FEE-01",
+     "result": "unknown",
+     "reason": "one- or two-family dwelling exemption cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-JUST-01",
+     "result": "unknown",
+     "reason": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-SCRN-01",
+     "result": "unknown",
+     "reason": "small owner-occupied building exemption cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-SCRN-02",
+     "result": "unknown",
+     "reason": "LAD owner-occupied small-building exemption cannot be excluded",
+     "conflict_flag": false
+    }
+   ],
+   "not_covered": [],
+   "negative_or_failed_in_stack": [
+    "HOB-DEP-00",
+    "HOB-FEE-00",
+    "HOB-JUST-00",
+    "HOB-SCRN-00",
+    "NJ-RENT-00"
+   ],
+   "unknown_facts": [
+    "units (one-/two-family dwelling exemption, N.J.S.A. 46:8-18.1(c))",
+    "units / owner occupancy (Anti-Eviction Act owner-occupied two-unit exemption)",
+    "units / owner occupancy (Fair Chance in Housing Act exemptions)",
+    "units / owner occupancy (LAD exemptions)",
+    "units / owner occupancy (N.J.S.A. 46:8-26)",
+    "year_built (Hoboken § 155-2(H) new-construction exemption)"
    ],
    "notes": null
   },
@@ -3642,298 +3642,7 @@
     {
      "gold_id": "HOB-RENT-01",
      "result": "unknown",
-     "reason": "year_built 2001 after 1987 → likely within the 30-year/mortgage-amortisation new-construction exemption, which depends on registration and mortgage facts not in the data",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "HOB-RENT-02",
-     "result": "applies",
-     "reason": "disclosure duty for renewal increases >10% applies to all residential landlords in Hoboken (categorisation flagged)",
-     "conflict_flag": true
-    },
-    {
-     "gold_id": "NJ-ALG-01",
-     "result": "not_yet_effective",
-     "reason": "enacted, effective 2027-07-01 > 2026-10-01; possible preemption of the local ordinance (T3 conflict flag)",
-     "conflict_flag": true
-    },
-    {
-     "gold_id": "NJ-DEP-01",
-     "result": "unknown",
-     "reason": "owner-occupied ≤2-unit exclusion cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-FEE-01",
-     "result": "unknown",
-     "reason": "one- or two-family dwelling exemption cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-JUST-01",
-     "result": "unknown",
-     "reason": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-SCRN-01",
-     "result": "unknown",
-     "reason": "small owner-occupied building exemption cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-SCRN-02",
-     "result": "unknown",
-     "reason": "LAD owner-occupied small-building exemption cannot be excluded",
-     "conflict_flag": false
-    }
-   ],
-   "not_covered": [],
-   "negative_or_failed_in_stack": [
-    "HOB-DEP-00",
-    "HOB-FEE-00",
-    "HOB-JUST-00",
-    "HOB-SCRN-00",
-    "NJ-RENT-00"
-   ],
-   "unknown_facts": [
-    "new-construction exemption registration / mortgage amortisation period",
-    "units (one-/two-family dwelling exemption, N.J.S.A. 46:8-18.1(c))",
-    "units / owner occupancy (Anti-Eviction Act owner-occupied two-unit exemption)",
-    "units / owner occupancy (Fair Chance in Housing Act exemptions)",
-    "units / owner occupancy (LAD exemptions)",
-    "units / owner occupancy (N.J.S.A. 46:8-26)"
-   ],
-   "notes": null
-  },
-  {
-   "address_id": "A0168",
-   "raw": {
-    "address_id": "A0168",
-    "street_address": "600 JACKSON/601 HARRISON",
-    "postal_city": "Hoboken",
-    "state": "NJ",
-    "zip": "07030",
-    "year_built": "2007",
-    "units": "",
-    "use_code": "4C",
-    "use_description": "5B-64U/5B-64U-G",
-    "source_dataset": "NJOGIS Parcels & MOD-IV Composite",
-    "retrieved_at": "2026-10-01T22:50Z"
-   },
-   "jurisdiction_stack": [
-    "NJ",
-    "Hudson County",
-    "Hoboken"
-   ],
-   "legal_city": "Hoboken",
-   "units_used": null,
-   "units_source": null,
-   "expected": [
-    {
-     "gold_id": "HOB-ALG-01",
-     "result": "applies",
-     "reason": "citywide; conflict flag for possible FAIR Act preemption from 2027-07-01",
-     "conflict_flag": true
-    },
-    {
-     "gold_id": "HOB-RENT-01",
-     "result": "unknown",
-     "reason": "year_built 2007 after 1987 → likely within the 30-year/mortgage-amortisation new-construction exemption, which depends on registration and mortgage facts not in the data",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "HOB-RENT-02",
-     "result": "applies",
-     "reason": "disclosure duty for renewal increases >10% applies to all residential landlords in Hoboken (categorisation flagged)",
-     "conflict_flag": true
-    },
-    {
-     "gold_id": "NJ-ALG-01",
-     "result": "not_yet_effective",
-     "reason": "enacted, effective 2027-07-01 > 2026-10-01; possible preemption of the local ordinance (T3 conflict flag)",
-     "conflict_flag": true
-    },
-    {
-     "gold_id": "NJ-DEP-01",
-     "result": "unknown",
-     "reason": "owner-occupied ≤2-unit exclusion cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-FEE-01",
-     "result": "unknown",
-     "reason": "one- or two-family dwelling exemption cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-JUST-01",
-     "result": "unknown",
-     "reason": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-SCRN-01",
-     "result": "unknown",
-     "reason": "small owner-occupied building exemption cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-SCRN-02",
-     "result": "unknown",
-     "reason": "LAD owner-occupied small-building exemption cannot be excluded",
-     "conflict_flag": false
-    }
-   ],
-   "not_covered": [],
-   "negative_or_failed_in_stack": [
-    "HOB-DEP-00",
-    "HOB-FEE-00",
-    "HOB-JUST-00",
-    "HOB-SCRN-00",
-    "NJ-RENT-00"
-   ],
-   "unknown_facts": [
-    "new-construction exemption registration / mortgage amortisation period",
-    "units (one-/two-family dwelling exemption, N.J.S.A. 46:8-18.1(c))",
-    "units / owner occupancy (Anti-Eviction Act owner-occupied two-unit exemption)",
-    "units / owner occupancy (Fair Chance in Housing Act exemptions)",
-    "units / owner occupancy (LAD exemptions)",
-    "units / owner occupancy (N.J.S.A. 46:8-26)"
-   ],
-   "notes": null
-  },
-  {
-   "address_id": "A0489",
-   "raw": {
-    "address_id": "A0489",
-    "street_address": "204 GRAND ST",
-    "postal_city": "Hoboken",
-    "state": "NJ",
-    "zip": "06901",
-    "year_built": "2000",
-    "units": "",
-    "use_code": "4C",
-    "use_description": "6B-30U-G",
-    "source_dataset": "NJOGIS Parcels & MOD-IV Composite",
-    "retrieved_at": "2026-10-01T22:50Z"
-   },
-   "jurisdiction_stack": [
-    "NJ",
-    "Hudson County",
-    "Hoboken"
-   ],
-   "legal_city": "Hoboken",
-   "units_used": null,
-   "units_source": null,
-   "expected": [
-    {
-     "gold_id": "HOB-ALG-01",
-     "result": "applies",
-     "reason": "citywide; conflict flag for possible FAIR Act preemption from 2027-07-01",
-     "conflict_flag": true
-    },
-    {
-     "gold_id": "HOB-RENT-01",
-     "result": "unknown",
-     "reason": "year_built 2000 after 1987 → likely within the 30-year/mortgage-amortisation new-construction exemption, which depends on registration and mortgage facts not in the data",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "HOB-RENT-02",
-     "result": "applies",
-     "reason": "disclosure duty for renewal increases >10% applies to all residential landlords in Hoboken (categorisation flagged)",
-     "conflict_flag": true
-    },
-    {
-     "gold_id": "NJ-ALG-01",
-     "result": "not_yet_effective",
-     "reason": "enacted, effective 2027-07-01 > 2026-10-01; possible preemption of the local ordinance (T3 conflict flag)",
-     "conflict_flag": true
-    },
-    {
-     "gold_id": "NJ-DEP-01",
-     "result": "unknown",
-     "reason": "owner-occupied ≤2-unit exclusion cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-FEE-01",
-     "result": "unknown",
-     "reason": "one- or two-family dwelling exemption cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-JUST-01",
-     "result": "unknown",
-     "reason": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-SCRN-01",
-     "result": "unknown",
-     "reason": "small owner-occupied building exemption cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-SCRN-02",
-     "result": "unknown",
-     "reason": "LAD owner-occupied small-building exemption cannot be excluded",
-     "conflict_flag": false
-    }
-   ],
-   "not_covered": [],
-   "negative_or_failed_in_stack": [
-    "HOB-DEP-00",
-    "HOB-FEE-00",
-    "HOB-JUST-00",
-    "HOB-SCRN-00",
-    "NJ-RENT-00"
-   ],
-   "unknown_facts": [
-    "new-construction exemption registration / mortgage amortisation period",
-    "units (one-/two-family dwelling exemption, N.J.S.A. 46:8-18.1(c))",
-    "units / owner occupancy (Anti-Eviction Act owner-occupied two-unit exemption)",
-    "units / owner occupancy (Fair Chance in Housing Act exemptions)",
-    "units / owner occupancy (LAD exemptions)",
-    "units / owner occupancy (N.J.S.A. 46:8-26)"
-   ],
-   "notes": null
-  },
-  {
-   "address_id": "A0049",
-   "raw": {
-    "address_id": "A0049",
-    "street_address": "721 CLINTON ST",
-    "postal_city": "Hoboken",
-    "state": "NJ",
-    "zip": "07856",
-    "year_built": "",
-    "units": "",
-    "use_code": "4C",
-    "use_description": "3S-6U-AFFORDABL",
-    "source_dataset": "NJOGIS Parcels & MOD-IV Composite",
-    "retrieved_at": "2026-10-01T22:50Z"
-   },
-   "jurisdiction_stack": [
-    "NJ",
-    "Hudson County",
-    "Hoboken"
-   ],
-   "legal_city": "Hoboken",
-   "units_used": null,
-   "units_source": null,
-   "expected": [
-    {
-     "gold_id": "HOB-ALG-01",
-     "result": "applies",
-     "reason": "citywide; conflict flag for possible FAIR Act preemption from 2027-07-01",
-     "conflict_flag": true
-    },
-    {
-     "gold_id": "HOB-RENT-01",
-     "result": "unknown",
-     "reason": "new-construction exemption (post-1987-06-25 multiple dwellings) cannot be tested without year_built",
+     "reason": "year_built 2001 → post-1987-06-25 multiple dwelling less than 30 years old at 2026-10-01 → § 155-2(H) exemption depends on the initial-mortgage amortisation period and N.J.S.A. 2A:42-84.1 compliance filings, not in the data",
      "conflict_flag": false
     },
     {
@@ -3993,7 +3702,298 @@
     "units / owner occupancy (Fair Chance in Housing Act exemptions)",
     "units / owner occupancy (LAD exemptions)",
     "units / owner occupancy (N.J.S.A. 46:8-26)",
-    "year_built (Hoboken new-construction exemption)"
+    "§ 155-2(H) new-construction exemption: mortgage amortisation period / statutory compliance"
+   ],
+   "notes": null
+  },
+  {
+   "address_id": "A0168",
+   "raw": {
+    "address_id": "A0168",
+    "street_address": "600 JACKSON/601 HARRISON",
+    "postal_city": "Hoboken",
+    "state": "NJ",
+    "zip": "07030",
+    "year_built": "2007",
+    "units": "",
+    "use_code": "4C",
+    "use_description": "5B-64U/5B-64U-G",
+    "source_dataset": "NJOGIS Parcels & MOD-IV Composite",
+    "retrieved_at": "2026-10-01T22:50Z"
+   },
+   "jurisdiction_stack": [
+    "NJ",
+    "Hudson County",
+    "Hoboken"
+   ],
+   "legal_city": "Hoboken",
+   "units_used": null,
+   "units_source": null,
+   "expected": [
+    {
+     "gold_id": "HOB-ALG-01",
+     "result": "applies",
+     "reason": "citywide; conflict flag for possible FAIR Act preemption from 2027-07-01",
+     "conflict_flag": true
+    },
+    {
+     "gold_id": "HOB-RENT-01",
+     "result": "unknown",
+     "reason": "year_built 2007 → post-1987-06-25 multiple dwelling less than 30 years old at 2026-10-01 → § 155-2(H) exemption depends on the initial-mortgage amortisation period and N.J.S.A. 2A:42-84.1 compliance filings, not in the data",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "HOB-RENT-02",
+     "result": "applies",
+     "reason": "disclosure duty for renewal increases >10% applies to all residential landlords in Hoboken (categorisation flagged)",
+     "conflict_flag": true
+    },
+    {
+     "gold_id": "NJ-ALG-01",
+     "result": "not_yet_effective",
+     "reason": "enacted, effective 2027-07-01 > 2026-10-01; possible preemption of the local ordinance (T3 conflict flag)",
+     "conflict_flag": true
+    },
+    {
+     "gold_id": "NJ-DEP-01",
+     "result": "unknown",
+     "reason": "owner-occupied ≤2-unit exclusion cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-FEE-01",
+     "result": "unknown",
+     "reason": "one- or two-family dwelling exemption cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-JUST-01",
+     "result": "unknown",
+     "reason": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-SCRN-01",
+     "result": "unknown",
+     "reason": "small owner-occupied building exemption cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-SCRN-02",
+     "result": "unknown",
+     "reason": "LAD owner-occupied small-building exemption cannot be excluded",
+     "conflict_flag": false
+    }
+   ],
+   "not_covered": [],
+   "negative_or_failed_in_stack": [
+    "HOB-DEP-00",
+    "HOB-FEE-00",
+    "HOB-JUST-00",
+    "HOB-SCRN-00",
+    "NJ-RENT-00"
+   ],
+   "unknown_facts": [
+    "units (one-/two-family dwelling exemption, N.J.S.A. 46:8-18.1(c))",
+    "units / owner occupancy (Anti-Eviction Act owner-occupied two-unit exemption)",
+    "units / owner occupancy (Fair Chance in Housing Act exemptions)",
+    "units / owner occupancy (LAD exemptions)",
+    "units / owner occupancy (N.J.S.A. 46:8-26)",
+    "§ 155-2(H) new-construction exemption: mortgage amortisation period / statutory compliance"
+   ],
+   "notes": null
+  },
+  {
+   "address_id": "A0489",
+   "raw": {
+    "address_id": "A0489",
+    "street_address": "204 GRAND ST",
+    "postal_city": "Hoboken",
+    "state": "NJ",
+    "zip": "06901",
+    "year_built": "2000",
+    "units": "",
+    "use_code": "4C",
+    "use_description": "6B-30U-G",
+    "source_dataset": "NJOGIS Parcels & MOD-IV Composite",
+    "retrieved_at": "2026-10-01T22:50Z"
+   },
+   "jurisdiction_stack": [
+    "NJ",
+    "Hudson County",
+    "Hoboken"
+   ],
+   "legal_city": "Hoboken",
+   "units_used": null,
+   "units_source": null,
+   "expected": [
+    {
+     "gold_id": "HOB-ALG-01",
+     "result": "applies",
+     "reason": "citywide; conflict flag for possible FAIR Act preemption from 2027-07-01",
+     "conflict_flag": true
+    },
+    {
+     "gold_id": "HOB-RENT-01",
+     "result": "unknown",
+     "reason": "year_built 2000 → post-1987-06-25 multiple dwelling less than 30 years old at 2026-10-01 → § 155-2(H) exemption depends on the initial-mortgage amortisation period and N.J.S.A. 2A:42-84.1 compliance filings, not in the data",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "HOB-RENT-02",
+     "result": "applies",
+     "reason": "disclosure duty for renewal increases >10% applies to all residential landlords in Hoboken (categorisation flagged)",
+     "conflict_flag": true
+    },
+    {
+     "gold_id": "NJ-ALG-01",
+     "result": "not_yet_effective",
+     "reason": "enacted, effective 2027-07-01 > 2026-10-01; possible preemption of the local ordinance (T3 conflict flag)",
+     "conflict_flag": true
+    },
+    {
+     "gold_id": "NJ-DEP-01",
+     "result": "unknown",
+     "reason": "owner-occupied ≤2-unit exclusion cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-FEE-01",
+     "result": "unknown",
+     "reason": "one- or two-family dwelling exemption cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-JUST-01",
+     "result": "unknown",
+     "reason": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-SCRN-01",
+     "result": "unknown",
+     "reason": "small owner-occupied building exemption cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-SCRN-02",
+     "result": "unknown",
+     "reason": "LAD owner-occupied small-building exemption cannot be excluded",
+     "conflict_flag": false
+    }
+   ],
+   "not_covered": [],
+   "negative_or_failed_in_stack": [
+    "HOB-DEP-00",
+    "HOB-FEE-00",
+    "HOB-JUST-00",
+    "HOB-SCRN-00",
+    "NJ-RENT-00"
+   ],
+   "unknown_facts": [
+    "units (one-/two-family dwelling exemption, N.J.S.A. 46:8-18.1(c))",
+    "units / owner occupancy (Anti-Eviction Act owner-occupied two-unit exemption)",
+    "units / owner occupancy (Fair Chance in Housing Act exemptions)",
+    "units / owner occupancy (LAD exemptions)",
+    "units / owner occupancy (N.J.S.A. 46:8-26)",
+    "§ 155-2(H) new-construction exemption: mortgage amortisation period / statutory compliance"
+   ],
+   "notes": null
+  },
+  {
+   "address_id": "A0049",
+   "raw": {
+    "address_id": "A0049",
+    "street_address": "721 CLINTON ST",
+    "postal_city": "Hoboken",
+    "state": "NJ",
+    "zip": "07856",
+    "year_built": "",
+    "units": "",
+    "use_code": "4C",
+    "use_description": "3S-6U-AFFORDABL",
+    "source_dataset": "NJOGIS Parcels & MOD-IV Composite",
+    "retrieved_at": "2026-10-01T22:50Z"
+   },
+   "jurisdiction_stack": [
+    "NJ",
+    "Hudson County",
+    "Hoboken"
+   ],
+   "legal_city": "Hoboken",
+   "units_used": null,
+   "units_source": null,
+   "expected": [
+    {
+     "gold_id": "HOB-ALG-01",
+     "result": "applies",
+     "reason": "citywide; conflict flag for possible FAIR Act preemption from 2027-07-01",
+     "conflict_flag": true
+    },
+    {
+     "gold_id": "HOB-RENT-01",
+     "result": "unknown",
+     "reason": "ordinance covers all dwelling units with no unit-count test, but the post-1987-06-25 new-construction exemption (§ 155-2(H)) cannot be tested without year_built",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "HOB-RENT-02",
+     "result": "applies",
+     "reason": "disclosure duty for renewal increases >10% applies to all residential landlords in Hoboken (categorisation flagged)",
+     "conflict_flag": true
+    },
+    {
+     "gold_id": "NJ-ALG-01",
+     "result": "not_yet_effective",
+     "reason": "enacted, effective 2027-07-01 > 2026-10-01; possible preemption of the local ordinance (T3 conflict flag)",
+     "conflict_flag": true
+    },
+    {
+     "gold_id": "NJ-DEP-01",
+     "result": "unknown",
+     "reason": "owner-occupied ≤2-unit exclusion cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-FEE-01",
+     "result": "unknown",
+     "reason": "one- or two-family dwelling exemption cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-JUST-01",
+     "result": "unknown",
+     "reason": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-SCRN-01",
+     "result": "unknown",
+     "reason": "small owner-occupied building exemption cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-SCRN-02",
+     "result": "unknown",
+     "reason": "LAD owner-occupied small-building exemption cannot be excluded",
+     "conflict_flag": false
+    }
+   ],
+   "not_covered": [],
+   "negative_or_failed_in_stack": [
+    "HOB-DEP-00",
+    "HOB-FEE-00",
+    "HOB-JUST-00",
+    "HOB-SCRN-00",
+    "NJ-RENT-00"
+   ],
+   "unknown_facts": [
+    "units (one-/two-family dwelling exemption, N.J.S.A. 46:8-18.1(c))",
+    "units / owner occupancy (Anti-Eviction Act owner-occupied two-unit exemption)",
+    "units / owner occupancy (Fair Chance in Housing Act exemptions)",
+    "units / owner occupancy (LAD exemptions)",
+    "units / owner occupancy (N.J.S.A. 46:8-26)",
+    "year_built (Hoboken § 155-2(H) new-construction exemption)"
    ],
    "notes": null
   },

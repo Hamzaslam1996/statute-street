@@ -146,9 +146,14 @@ def build(aid):
             E('JC-RENT-01','unknown','1–4 unit properties are exempt; Jersey City rows have no unit counts'); U('units (Jersey City 1–4 unit exemption)')
             E('JC-ALG-01','applies','citywide; conflict flag for possible FAIR Act preemption from 2027-07-01',cf=True)
         if city=='Hoboken':
-            if yb is None: E('HOB-RENT-01','unknown','new-construction exemption (post-1987-06-25 multiple dwellings) cannot be tested without year_built'); U('year_built (Hoboken new-construction exemption)')
-            elif yb>1987: E('HOB-RENT-01','unknown',f'year_built {yb} after 1987 → likely within the 30-year/mortgage-amortisation new-construction exemption, which depends on registration and mortgage facts not in the data'); U('new-construction exemption registration / mortgage amortisation period')
-            else: E('HOB-RENT-01','applies',f'year_built {yb} before 1987 → new-construction exemption impossible; no small-building or owner-occupancy exemption in ch. 155')
+            # rulings_05 §4a (Hamza): § 155-2 has NO unit-count test. Built ≤ 1987-06-25 → covered; built after and completion
+            # < 30 years before the query date (2026-10-01) → unknown (N.J.S.A. 2A:42-84.1 exemption depends on mortgage term and
+            # compliance filings not in the data); built after and ≥ 30 years ago → covered; year missing → unknown.
+            # Year granularity: ≤1995 is certainly ≥30 years before 2026-10-01; 1996 could be either side → unknown.
+            if yb is None: E('HOB-RENT-01','unknown','ordinance covers all dwelling units with no unit-count test, but the post-1987-06-25 new-construction exemption (§ 155-2(H)) cannot be tested without year_built'); U('year_built (Hoboken § 155-2(H) new-construction exemption)')
+            elif yb<=1987: E('HOB-RENT-01','applies',f'year_built {yb} → built on/before 1987-06-25 (or, if later in 1987, completion ≥ 30 years before 2026-10-01) → § 155-2(H) exemption cannot apply; no unit-count or owner-occupancy exemption in § 155-2')
+            elif yb<=1995: E('HOB-RENT-01','applies',f'year_built {yb} → post-1987-06-25 construction but completion ≥ 30 years before 2026-10-01 → § 155-2(H) exemption (lesser of mortgage term or 30 years) has expired; no unit-count test')
+            else: E('HOB-RENT-01','unknown',f'year_built {yb} → post-1987-06-25 multiple dwelling less than 30 years old at 2026-10-01 → § 155-2(H) exemption depends on the initial-mortgage amortisation period and N.J.S.A. 2A:42-84.1 compliance filings, not in the data'); U('§ 155-2(H) new-construction exemption: mortgage amortisation period / statutory compliance')
             E('HOB-ALG-01','applies','citywide; conflict flag for possible FAIR Act preemption from 2027-07-01',cf=True)
             E('HOB-RENT-02','applies','disclosure duty for renewal increases >10% applies to all residential landlords in Hoboken (categorisation flagged)',cf=True)
         if city=='Newark':
