@@ -115,6 +115,24 @@ def main() -> int:
         matched_o.add(oi)
         matches.append((scope_pos[gi], ours[oi], s))
 
+    # Fallback: citations are written many ways ("L.A.M.C. § 151.00" vs "L.A. Mun.
+    # Code ch. XV"). If a gold rule is still unmatched and exactly one unmatched
+    # extracted rule sits in the same jurisdiction + category, pair them and say so.
+    fallback_ids = set()
+    for gi, g in enumerate(scope_pos):
+        if gi in matched_g:
+            continue
+        cands = [oi for oi, o in enumerate(ours)
+                 if oi not in matched_o
+                 and (o["jurisdiction"] or "").lower() == (g["jurisdiction"] or "").lower()
+                 and o["category"] == g["category"]]
+        if len(cands) == 1:
+            oi = cands[0]
+            matched_g[gi] = oi
+            matched_o.add(oi)
+            matches.append((g, ours[oi], cite_score(ours[oi]["citation"], g["citation"])))
+            fallback_ids.add(g["gold_id"])
+
     missed = [g for gi, g in enumerate(scope_pos) if gi not in matched_g]
     extra = [o for oi, o in enumerate(ours) if oi not in matched_o]
 
@@ -146,7 +164,8 @@ def main() -> int:
     lines.append(f"Gold rules in scope (source doc extracted): {len(scope_pos)} of {len(gold_pos)} positive, "
                  f"{len(scope_neg)} of {len(gold_neg)} negative findings\n")
     lines.append("| Metric | Value |\n|---|---|")
-    lines.append(f"| Found (recall) | {n}/{len(scope_pos)} = {pct(n, len(scope_pos))} |")
+    lines.append(f"| Found (recall) | {n}/{len(scope_pos)} = {pct(n, len(scope_pos))}"
+                 + (f" ({len(fallback_ids)} by jurisdiction+category only, marked †)" if fallback_ids else "") + " |")
     lines.append(f"| Missed | {len(missed)} |")
     lines.append(f"| Extra (no gold match) | {len(extra)} |")
     lines.append(f"| Extra colliding with a negative finding | {len(neg_hits)} |")
@@ -164,7 +183,8 @@ def main() -> int:
     lines.append("| Gold id | Ours | Status (gold / ours) | Eff. date (gold / ours) | Cite score | Key value (gold / ours) |\n|---|---|---|---|---|---|")
     for g, o, s in sorted(matches, key=lambda m: m[0]["gold_id"]):
         flag = "" if g.get("status") == o.get("status") else " ⚠"
-        lines.append(f"| {g['gold_id']} | {o['team_rule_id']} | {g.get('status')} / {o.get('status')}{flag} | "
+        gid = g["gold_id"] + (" †" if g["gold_id"] in fallback_ids else "")
+        lines.append(f"| {gid} | {o['team_rule_id']} | {g.get('status')} / {o.get('status')}{flag} | "
                      f"{g.get('effective_date')} / {o.get('effective_date')} | {s:.0f} | "
                      f"{str(g.get('key_value'))[:60]} / {str(o.get('key_value'))[:60]} |")
 

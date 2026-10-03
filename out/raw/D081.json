@@ -1,0 +1,39 @@
+{
+  "doc_id": "D081",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:17:35+00:00",
+  "source_url": "https://www.sf.gov/news/new-law-prohibits-algorithmic-devices-used-set-rents-san-francisco",
+  "retrieved": "2026-10-01 22:37 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "San Francisco Rent Board news notice announcing a new Rent Ordinance section (37.10C) that prohibits sale or use of algorithmic devices to set rents or manage occupancy for residential units in San Francisco, CA.",
+  "rules": [
+    {
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "S.F. Rent Ordinance Section 37.10C - Prohibition on Algorithmic Rent-Setting Devices",
+      "requirement": "Prohibits the sale or use of algorithmic devices (software that analyzes nonpublic competitor rental data to recommend rents for vacant units) to set rents or manage occupancy levels for residential units. Tenants or the City Attorney may bring a civil action for violations.",
+      "key_value": "Ban on sale or use of algorithmic rent-setting devices",
+      "coverage_conditions": "Residential units in San Francisco; 'algorithmic device' means a device such as a software program that uses algorithms to analyze nonpublic competitor rental data for the purposes of providing a landlord recommendations on what rent to charge for a vacant unit.",
+      "exemptions": null,
+      "interaction": null,
+      "effective_date": "2024-10-14",
+      "citation": "S.F. Admin. Code § 37.10C",
+      "quoted_span": "The law prohibits the sale or use of such algorithmic devices and allows a tenant or the City Attorney to bring a civil action if they believe an entity is in violation of the law.",
+      "confidence": 0.93,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary summary from the SF Rent Board news page; effective date stated in the text as October 14, 2024. The text does not give the ordinance number; citation follows the Section 37.10C reference in the Rent Ordinance (S.F. Admin. Code ch. 37)."
+    }
+  ],
+  "usage": {
+    "input_tokens": 3558,
+    "output_tokens": 635,
+    "cost_usd": 0.0135,
+    "seconds": 5.1
+  },
+  "errors": []
+}

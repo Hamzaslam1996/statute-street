@@ -1,0 +1,39 @@
+{
+  "doc_id": "D048",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:17:15+00:00",
+  "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40P/Section4",
+  "retrieved": "2026-10-01 22:36 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Massachusetts General Laws c. 40P, § 4, the statewide prohibition on municipal rent control with a narrow, voluntary, compensated exception for towns that accept the chapter.",
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Statewide prohibition on rent control (M.G.L. c. 40P, § 4)",
+      "requirement": "No city or town may enact, maintain or enforce rent control of any kind. A municipality that accepts chapter 40P may adopt only a limited regime that is voluntary for owners after six months, does not regulate occupancy, services, evictions, condominium conversion or removal from regulation, and compensates owners from general funds.",
+      "key_value": "General ban on rent control; narrow exception only for rent control that is voluntary for owners and funded by compensation to owners",
+      "coverage_conditions": "Applies to every Massachusetts city and town. Exception rent control may not apply to any rental unit owned by a person or entity owning less than ten rental units, or to any unit with a fair market rent exceeding $400.",
+      "exemptions": "Exception for a city or town that accepts chapter 40P: compliance becomes entirely voluntary after six months from initial adoption, and the municipality must compensate owners for the difference between fair market rent and the below-market controlled rent from general funds.",
+      "interaction": "Preempts municipal rent control ordinances statewide, including in Boston and Cambridge. Local rent control or rent stabilization is effectively barred unless it meets the voluntary and compensated exception.",
+      "effective_date": null,
+      "citation": "M.G.L. c. 40P, § 4",
+      "quoted_span": "No city or town may enact, maintain or enforce rent control of any kind, except that any city or town that accepts this chapter may adopt rent control regulation that provides:",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "The document is the statute text only and gives no effective date or enactment history, so effective_date is null. Status is in_force based on the current official statute text retrieved on the query date. The document does not say whether any municipality has accepted chapter 40P."
+    }
+  ],
+  "usage": {
+    "input_tokens": 4112,
+    "output_tokens": 1125,
+    "cost_usd": 0.0195,
+    "seconds": 9.0
+  },
+  "errors": []
+}

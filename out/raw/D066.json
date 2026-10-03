@@ -1,0 +1,39 @@
+{
+  "doc_id": "D066",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:17:30+00:00",
+  "source_url": "https://pub.njleg.gov/bills/2024/PL25/405_.HTM",
+  "retrieved": "2026-10-01 22:37 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "New Jersey P.L. 2025, c.405, a state law capping residential rental application fees at $50 (CPI-adjusted annually), approved January 20, 2026.",
+  "rules": [
+    {
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Residential rental application fee cap (P.L. 2025, c.405)",
+      "requirement": "A landlord or agent may not require an application or similar fee to apply to lease or sublease a residential rental property that exceeds $50. Violators face civil penalties and must refund the amount wrongfully charged to the applicant.",
+      "key_value": "$50 maximum, adjusted annually for CPI increases (NY-Northern NJ-Long Island CPI-U)",
+      "coverage_conditions": "Residential rental property leased or subleased for dwelling purposes; applies to landlords and their agents.",
+      "exemptions": "Dwelling units in a one-family or two-family dwelling offered for rent; New Jersey Real Estate Commission licensees, unless the licensee is the landlord of the property.",
+      "interaction": "State-wide cap with no stated preemption of local rules; local ordinances are not addressed in this document.",
+      "effective_date": "2026-05-01",
+      "citation": "N.J.S.A. 46:8-18.1; P.L. 2025, c.405",
+      "quoted_span": "shall not require an application or other similar fee to apply\nto lease or sublease a residential rental property for dwelling purposes, which\nexceeds $50.",
+      "confidence": 0.95,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Section 3 says the act takes effect on the first day of the fourth month next following enactment. Enactment (approval) was January 20, 2026, so the fourth month after is May, giving 2026-05-01. This is in force as of the 2026-10-01 query date. Penalties: up to $500 first offense, $750 second, $1,000 subsequent. The CPI adjustment begins January 1 of the year after enactment (2027), applies only if CPI change is greater than zero, and the Director of Consumer Affairs publishes the adjusted limit annually."
+    }
+  ],
+  "usage": {
+    "input_tokens": 4651,
+    "output_tokens": 1083,
+    "cost_usd": 0.0201,
+    "seconds": 8.7
+  },
+  "errors": []
+}

@@ -1,4 +1,30 @@
 doc_id,attempt,citation,title,span_ok,fuzzy_score,span_preview
-D024,1,Cal. Civ. Code § 1947.12,"California statewide rent cap (Tenant Protection Act, Civ. Code § 1947.12)",True,100.0,"an owner of residential real property shall not, over the course of any 12-month"
-D063,1,N.J.S.A. 46:8-21.2,Limitation on amount of security deposit (N.J.S.A. 46:8-21.2),True,100.0,An owner or lessee may not require more than a sum equal to 1 1/2 times 1 month'
-D069,1,"P.L. 2026, c.43 (N.J.S.A. 56:9-20 to 56:9-26)",Forbidding the Algorithmic Inflation of Rent (FAIR) Act,True,100.0,"shall be unlawful and a violation of the “New Jersey Antitrust Act,” P.L.1970,"
+D001,1,"Berkeley Municipal Code § 13.63.030 (Ch. 13.63, as amended by Ordinance No. 7,992-N.S.)",Prohibition on Coordinated Pricing Algorithms to Set Rents or Manage Occupancy (BMC Ch. 13.63),True,100.0,"It shall be unlawful to sell, license, or otherwise provide to City of Berkeley"
+D024,1,Cal. Civ. Code § 1947.12,California Tenant Protection Act statewide rent cap,True,100.0,"an owner of residential real property shall not, over the course of any 12-month"
+D025,1,Cal. Civ. Code § 1950.5(c),Cal. Civ. Code § 1950.5 – Security deposit cap,True,100.0,"a landlord shall not demand or receive security, however denominated, in an amou"
+D025,1,Cal. Civ. Code § 1950.5(h),Cal. Civ. Code § 1950.5 – Return of deposit and itemized statement within 21 days,True,100.0,"No later than 21 calendar days after the tenant has vacated the premises, but no"
+D025,1,Cal. Civ. Code § 1950.5(g),Cal. Civ. Code § 1950.5 – Landlord photograph requirements,True,100.0,"For tenancies that begin on or after July 1, 2025, the landlord shall take photo"
+D025,1,Cal. Civ. Code § 1950.5(n),Cal. Civ. Code § 1950.5 – No 'nonrefundable' deposits,True,100.0,A lease or rental agreement shall not contain a provision characterizing any sec
+D026,1,Cal. Civ. Code § 1950.6,California application screening fee cap and conditions (Civ. Code § 1950.6),True,100.0,In no case shall the amount of the application screening fee charged by the land
+D034,1,Hoboken City Code § 158-1 (Ord. No. B-750),Mandatory disclosures for rent increases over 10% (Hoboken Code § 158-1),True,100.0,All residential landlords seeking to increase rent by more than 10% upon a renew
+D034,1,Hoboken City Code § 158-2 (Ord. No. B-781),Algorithmic rent fixing prohibited (Hoboken Code § 158-2),True,100.0,Landlords who rent any residential dwelling unit (defined as any primary residen
+D041,1,L.A.M.C. § 151.00 et seq. (Rent Stabilization Ordinance),Los Angeles Rent Stabilization Ordinance - annual allowable rent increase,True,100.0,Rent may be increased once every 12 months by the allowable rent increase percen
+D041,1,L.A.M.C. § 151.09,Los Angeles RSO - legal grounds for eviction and relocation assistance,True,100.0,No-fault evictions require the payment of
+D046,1,"Mass. S. 2983, 194th Gen. Ct. (2025-2026)",An Act prohibiting algorithmic rent setting (S.2983),True,100.0,of Cindy F. Friedman and Julian Cyr for legislation to prohibit algorithmic rent
+D048,1,"M.G.L. c. 40P, § 4","Statewide prohibition on rent control (M.G.L. c. 40P, § 4)",True,100.0,"No city or town may enact, maintain or enforce rent control of any kind, except "
+D059,1,"Mass. Const. amend. art. 48 (Initiative Petitions, The Initiative, II, § 2); Mass. SJC ruling on rent control ballot petition (June 2026)",Massachusetts 2026 rent control ballot initiative (struck by SJC),True,100.0,"The proposal limits annual rent increases for residences, but it carved out exem"
+D063,1,N.J.S.A. 46:8-21.2,NJ Security Deposit Limitation (N.J.S.A. 46:8-21.2),True,100.0,An owner or lessee may not require more than a sum equal to 1 1/2 times 1 month'
+D066,1,"N.J.S.A. 46:8-18.1; P.L. 2025, c.405","Residential rental application fee cap (P.L. 2025, c.405)",True,100.0,"shall not require an application or other similar fee to apply
+to lease or suble"
+D069,1,"P.L. 2026, c.43 (N.J.S.A. 56:9-20 to 56:9-26)",Forbidding the Algorithmic Inflation of Rent (FAIR) Act,True,100.0,any person to perform a coordinating function.
+D081,1,S.F. Admin. Code § 37.10C,S.F. Rent Ordinance Section 37.10C - Prohibition on Algorithmic Rent-Setting Devices,True,100.0,The law prohibits the sale or use of such algorithmic devices and allows a tenan
+D083,1,S.F. Admin. Code § 37.3,San Francisco annual allowable rent increase (2026-27),True,100.0,"1.6% for March 1, 2026 – February 28, 2027"
+D083,1,S.F. Admin. Code § 49.2,San Francisco security deposit interest rate (2026-27),True,100.0,"4.2% for March 1, 2026 – February 28, 2027"
+D083,1,S.F. Admin. Code § 37.9C,San Francisco relocation payments for no-fault evictions (Rent Ordinance 37.9C),True,100.0,"3/01/26 – 2/28/27
+$8,245.00
+$24,733.00
+$5,497.00"
+D083,1,S.F. Admin. Code § 37.9A,San Francisco Ellis Act eviction relocation payments (Rent Ordinance 37.9A),True,100.0,"3/01/26 – 2/28/27
+$11,110.05
+$33,330.13
+$7,443.90"

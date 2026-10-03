@@ -1,0 +1,39 @@
+{
+  "doc_id": "D026",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:16:28+00:00",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6",
+  "retrieved": "2026-10-01 22:35 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "California Civil Code section 1950.6, the statute on tenant application screening fees, covering California statewide and shown as amended by AB 1170 effective 2026-01-01.",
+  "rules": [
+    {
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "California application screening fee cap and conditions (Civ. Code § 1950.6)",
+      "requirement": "A landlord may charge an application screening fee only up to actual out-of-pocket costs plus the reasonable value of time spent, and never more than $30 per applicant (CPI-adjustable). No fee may be charged when no unit is or will soon be available. The landlord must offer either first-come-first-served screening or a refund to unselected applicants, and must give an itemized receipt and a copy of any credit report.",
+      "key_value": "$30 per applicant, adjustable annually for CPI increases beginning January 1, 1998",
+      "coverage_conditions": "Applies to a landlord (an owner of residential rental property) or their agent charging an applicant (including a guarantor or cosignor) to rent a residential housing unit.",
+      "exemptions": "Not intended to preempt provisions or regulations governing deposits and fees under federal or state housing assistance programs. A landlord may accept a reusable screening report under Section 1950.1. No refund is required for an applicant denied after consideration for failing established screening criteria. The fee is not treated as an 'advance fee' or as 'security'.",
+      "interaction": "Applies notwithstanding Section 1950.5 (security deposits); the fee is not considered 'security' under that section. Does not preempt federal or state housing assistance program rules on deposits and fees.",
+      "effective_date": null,
+      "citation": "Cal. Civ. Code § 1950.6",
+      "quoted_span": "In no case shall the amount of the application screening fee charged by the landlord or their agent be greater than thirty dollars ($30) per applicant.",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "The document does not state when the $30 cap first took effect. The only date tied to the cap is the CPI adjustment 'beginning on January 1, 1998', so effective_date is null. The section is shown as amended by Stats. 2025, Ch. 67, Sec. 29 (AB 1170), effective 2026-01-01. The text does not show that the amendment changed the key value, so the date was not reset. The current CPI-adjusted dollar figure is not given in the document."
+    }
+  ],
+  "usage": {
+    "input_tokens": 5671,
+    "output_tokens": 1392,
+    "cost_usd": 0.0253,
+    "seconds": 10.5
+  },
+  "errors": []
+}

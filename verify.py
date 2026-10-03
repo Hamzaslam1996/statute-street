@@ -251,6 +251,13 @@ def main() -> int:
             candidates.append(rec)
 
     kept, dropped_dups = dedupe(candidates)
+
+    # TODO (Hamza ruling 2026-10-04, #3): cross-rule conflict pass after extraction.
+    # Where a state rule's `interaction` contains preemption language ("preempt",
+    # "conflict", "municipality shall be prohibited") and a city rule exists in the
+    # same category within that state, set conflict_flag on both and cross-reference
+    # them in conflict_note / overrides. Example: NJ FAIR Act vs Jersey City and
+    # Hoboken algorithmic-rent ordinances (README T3).
     counts["dropped_duplicate"] = len(dropped_dups)
     for d, k in dropped_dups:
         log_rows.append({"doc_id": d["source_doc_id"], "attempt": "-", "citation": d["citation"],

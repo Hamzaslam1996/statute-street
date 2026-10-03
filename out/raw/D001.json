@@ -1,0 +1,39 @@
+{
+  "doc_id": "D001",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:15:54+00:00",
+  "source_url": "https://berkeleyca.gov/sites/default/files/documents/2025-12-02%20Item%2001%20Ordinance%207992.pdf",
+  "retrieved": "2026-10-01 22:44 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Berkeley Ordinance No. 7,992-N.S. (Council item of 2025-12-02) amends Berkeley Municipal Code Chapter 13.63 to prohibit the sale or use of coordinated pricing algorithms to set rents or occupancy levels for residential units in Berkeley, CA.",
+  "rules": [
+    {
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Prohibition on Coordinated Pricing Algorithms to Set Rents or Manage Occupancy (BMC Ch. 13.63)",
+      "requirement": "It is unlawful to sell, license, or provide to Berkeley landlords a coordinated pricing algorithm that sets or recommends rents or occupancy levels for residential units in Berkeley, and unlawful for landlords to use one when setting rents or occupancy levels. Each month of violation and each affected unit is a separate violation.",
+      "key_value": "Civil penalties up to $1,000 per violation (enforceable by City Attorney or aggrieved tenant)",
+      "coverage_conditions": "Applies to residential dwelling units in the City of Berkeley and to sellers/providers of algorithms to City of Berkeley landlords. 'Competitor Data' is nonpublic data on actual rents, occupancy, lease dates, etc. for other properties that is less than 90 days old.",
+      "exemptions": "Excludes (a) products that publish aggregated, anonymous rental data without recommending rents, fees, or occupancy; (b) products used to set rent or income limits under affordable housing guidelines; (c) products used for market research for project financing, appraisals, or research/testing/training for software development (so long as Competitor Data is not an input when a recommendation is calculated for a Berkeley landlord).",
+      "interaction": "Local ordinance only; it does not regulate the amount of rent a landlord may charge and does not restrict software that uses public data.",
+      "effective_date": null,
+      "citation": "Berkeley Municipal Code § 13.63.030 (Ch. 13.63, as amended by Ordinance No. 7,992-N.S.)",
+      "quoted_span": "It shall be unlawful to sell, license, or otherwise provide to City of Berkeley",
+      "confidence": 0.7,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "The document text states that the Ordinance was passed to print on November 18, 2025 and does not state its effective date or final adoption date. The file name suggests a December 2, 2025 Council item, which is probably the second reading. Effective date is therefore left null. Status 'in_force' is a best reading as of 2026-10-01 and assumes the Ordinance was adopted. The text says Chapter 13.63 is 'amended to read as follows', which implies an earlier version existed, and the original effective date is not given here."
+    }
+  ],
+  "usage": {
+    "input_tokens": 6104,
+    "output_tokens": 1840,
+    "cost_usd": 0.0306,
+    "seconds": 14.3
+  },
+  "errors": []
+}

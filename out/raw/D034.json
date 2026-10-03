@@ -1,0 +1,58 @@
+{
+  "doc_id": "D034",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:16:40+00:00",
+  "source_url": "https://ecode360.com/46833413",
+  "retrieved": "2026-10-03 18:51 UTC",
+  "source_type": "code publisher",
+  "n_chunks": 1,
+  "document_summary": "Chapter 158 of the Hoboken, NJ City Code, which requires disclosures for rent increases over 10% on lease renewal (Art. I) and prohibits algorithmic rent fixing (Art. II).",
+  "rules": [
+    {
+      "jurisdiction": "Hoboken, NJ",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Mandatory disclosures for rent increases over 10% (Hoboken Code § 158-1)",
+      "requirement": "Residential landlords who raise rent by more than 10% year over year on renewal of a current tenant's lease must give the tenant specified disclosures before the increase takes effect. The disclosures are an itemization of costs, a statement on whether a rent algorithm was used, notice of the tenant's right to take legal action, and Division of Housing contact information. They go either on the first page of the renewal lease or on a Division of Housing form.",
+      "key_value": "Disclosure required for increases of more than 10% year over year; fine up to $1,000 per incident",
+      "coverage_conditions": "All residential landlords seeking to increase rent by more than 10% upon renewal of a lease with a current tenant, year over year.",
+      "exemptions": null,
+      "interaction": "This is a disclosure requirement, not a cap on rent increases. It does not displace state law; the required notice itself refers to local or state law limits.",
+      "effective_date": null,
+      "citation": "Hoboken City Code § 158-1 (Ord. No. B-750)",
+      "quoted_span": "All residential landlords seeking to increase rent by more than 10% upon a renewal of a lease with a current tenant year over year shall be required to make the following disclosures to existing tenants either in the lease upon renewal (must be clearly indicated on the first page) or on a form provided by the Hoboken Division of Housing prior to the increase being implemented:",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Article I is stated as 'Adopted 4-2-2025 by Ord. No. B-750'. The text gives no separate effective date, so effective_date is null. Status is in_force because the ordinance was adopted well before the query date. Categorised as rent_increase_limits because it is a notice and disclosure rule on rent increases, not a cap. Penalty: fine not exceeding $1,000 per incident on a guilty plea or finding of guilt."
+    },
+    {
+      "jurisdiction": "Hoboken, NJ",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Algorithmic rent fixing prohibited (Hoboken Code § 158-2)",
+      "requirement": "Landlords renting any residential dwelling unit in Hoboken may not fix prices using algorithmic pricing. That means using software, algorithms or data-sharing platforms to collect and analyze nonpublic competitor information in order to coordinate, recommend or implement rents, lease terms or occupancy levels among competing lessors.",
+      "key_value": "Prohibition on algorithmic price fixing; penalties up to a $2,000 fine and/or up to 90 days community service, or as prescribed under N.J.S.A. 40:49-5",
+      "coverage_conditions": "Any residential dwelling unit, defined as any primary residence, in the City of Hoboken. 'Nonpublic competitor information' is information less than 365 days old that is not widely and readily available to the public at no cost.",
+      "exemptions": "Medical/long-term care and detention facilities are excluded from the definition of residential dwelling unit.",
+      "interaction": "Enforced by the Division of Housing or any aggrieved private citizen in Hoboken Municipal Court. The document does not discuss interaction with state law.",
+      "effective_date": null,
+      "citation": "Hoboken City Code § 158-2 (Ord. No. B-781)",
+      "quoted_span": "Landlords who rent any residential dwelling unit (defined as any primary residence excluding medical/long-term care or detention facilities) in the City of Hoboken are prohibited from price fixing using algorithmic pricing.",
+      "confidence": 0.88,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Article II is stated as 'Adopted 7-9-2025 by Ord. No. B-781'. The text gives no separate effective date, so effective_date is null. Status is in_force because the ordinance was adopted before the query date."
+    }
+  ],
+  "usage": {
+    "input_tokens": 5508,
+    "output_tokens": 1991,
+    "cost_usd": 0.0309,
+    "seconds": 12.9
+  },
+  "errors": []
+}

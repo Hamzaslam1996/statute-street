@@ -130,8 +130,9 @@ RULE_PROPERTIES = {
     "conflict_note": nullable("string"),
     "extraction_notes": {
         **nullable("string"),
-        "description": "Anything the reviewer should know: how a date was computed, ambiguity, "
-                       "whether this document is a summary of law found elsewhere.",
+        "description": "Anything the reviewer should know: how a date was computed, last-amended "
+                       "info (e.g. 'as amended by SB 567, eff. 2024-04-01'), why effective_date is "
+                       "null, ambiguity, whether this document is a summary of law found elsewhere.",
     },
 }
 
@@ -173,12 +174,15 @@ What counts as a rule
 - A document may yield zero rules (e.g. a navigation page or a document about another topic). Return an empty list rather than inventing anything.
 - If the document is a secondary source (law firm alert, news article, Justia mirror), still extract what it says, cite the underlying law in `citation`, but the `quoted_span` must come from THIS document.
 - Bills that have not been enacted are `pending`. Measures that were defeated, vetoed, or struck down by a court are `failed`. Enacted laws are `in_force` or `not_yet_effective` depending on whether their effective date is on or before the query date {DEFAULT_QUERY_DATE}.
+- `effective_date` means the date the specific extracted requirement first took effect. If a later amendment changed the key value itself (e.g. a lower cap), use the amendment date instead, and record the amendment in `extraction_notes` (e.g. "as amended by SB 567, eff. 2024-04-01"). A re-enactment that kept the same requirement does NOT reset the date.
 - Record effective dates as precisely as the text allows. If the text says the act takes effect a set time after enactment and gives the enactment date, compute the date and say how in `extraction_notes`.
+- Never infer an effective date from amendment history, legislative history notes, or the citations at the end of a statute (e.g. "L.1971,c.223; amended 2003, c.188"). If the text does not state when the requirement took effect, return null and explain in `extraction_notes`.
 - Record coverage thresholds exactly as written (e.g. "certificate of occupancy issued before 1979-06-13" is different from "built before 1979").
 - When the document shows a conflict, open question, or a possible preemption of another level of government, set `conflict_flag` true and explain in `conflict_note` and `interaction`.
 
 Quoted spans
 - `quoted_span` must be a verbatim, contiguous excerpt of the document text, 20-600 characters, that directly supports the requirement and key value. Copy it exactly as it appears, including odd spacing or line breaks within the passage. Never paraphrase. Every record is rejected automatically if its span is not found in the document.
+- Choose the OPERATIVE sentence: the one that states the duty, cap or prohibition (look for "shall", "shall not", "may not", "unlawful", "prohibited") and, where possible, contains the key value. Do not quote a definition, a purpose or findings clause, a penalty or cross-reference, or a heading.
 
 Respond only with JSON matching the schema."""
 

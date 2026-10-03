@@ -2,3 +2,17 @@ timestamp,doc_id,chunk,model,attempt,input_tokens,output_tokens,cache_read_token
 2026-10-03T20:09:40+00:00,D024,1/1,claude-sonnet-5-5,1,8359,1601,0,0.0327,14.4,1,end_turn,req_011Cffuj7adFLTccHSKMDHVb
 2026-10-03T20:09:46+00:00,D063,1/1,claude-sonnet-5-5,1,8115,655,0,0.0228,6.2,1,end_turn,req_011CffukAdD1tNiBTmbnC363
 2026-10-03T20:10:00+00:00,D069,1/1,claude-sonnet-5-5,1,6281,1960,0,0.0322,14.1,1,end_turn,req_011Cffukd8utXk5L9dXkid8h
+2026-10-03T20:15:22+00:00,D024,1/1,claude-sonnet-5-5,1,8720,1857,0,0.036,13.9,1,end_turn,req_011CffvARAVMApDHgwWWiwnV
+2026-10-03T20:15:27+00:00,D063,1/1,claude-sonnet-5-5,1,8476,573,0,0.0227,4.9,1,end_turn,req_011CffvBSBYEfMT3c3m8MPpF
+2026-10-03T20:15:38+00:00,D069,1/1,claude-sonnet-5-5,1,6642,1533,0,0.0286,11.2,1,end_turn,req_011CffvBo6e4SFSGZ15GwJpo
+2026-10-03T20:15:54+00:00,D001,1/1,claude-sonnet-5-5,1,6104,1840,0,0.0306,14.3,1,end_turn,req_011CffvCiohXPV8r4rMoeoAr
+2026-10-03T20:16:17+00:00,D025,1/1,claude-sonnet-5-5,1,12094,3625,0,0.0604,23.0,4,end_turn,req_011CffvDmVCh78VRLWyS8xKC
+2026-10-03T20:16:28+00:00,D026,1/1,claude-sonnet-5-5,1,5671,1392,0,0.0253,10.5,1,end_turn,req_011CffvFTs7Wj4L7cBtJJDcM
+2026-10-03T20:16:40+00:00,D034,1/1,claude-sonnet-5-5,1,5508,1991,0,0.0309,12.9,2,end_turn,req_011CffvGEXxG4FHf4aR8PAAB
+2026-10-03T20:16:58+00:00,D041,1/1,claude-sonnet-5-5,1,6990,2466,0,0.0386,17.2,2,end_turn,req_011CffvHBzS86asj1oHnn5Nk
+2026-10-03T20:17:06+00:00,D046,1/1,claude-sonnet-5-5,1,4387,1027,0,0.019,8.4,1,end_turn,req_011CffvJTYMF2hZxR72V5hSV
+2026-10-03T20:17:15+00:00,D048,1/1,claude-sonnet-5-5,1,4112,1125,0,0.0195,9.0,1,end_turn,req_011CffvK5dzdVBmoyAqUasZT
+2026-10-03T20:17:22+00:00,D059,1/1,claude-sonnet-5-5,1,7021,697,0,0.021,6.5,1,end_turn,req_011CffvKkU79YgTeccr1LjdY
+2026-10-03T20:17:30+00:00,D066,1/1,claude-sonnet-5-5,1,4651,1083,0,0.0201,8.7,1,end_turn,req_011CffvLE8znhiVbrKZ8EnkB
+2026-10-03T20:17:35+00:00,D081,1/1,claude-sonnet-5-5,1,3558,635,0,0.0135,5.1,1,end_turn,req_011CffvLsLNeKfuoBF8e5h1j
+2026-10-03T20:17:56+00:00,D083,1/1,claude-sonnet-5-5,1,5417,3434,0,0.0452,21.0,4,end_turn,req_011CffvMEoDWo8C4NzEygAPg
