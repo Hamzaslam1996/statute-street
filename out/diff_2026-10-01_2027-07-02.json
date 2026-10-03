@@ -1,0 +1,1270 @@
+{
+ "before": "2026-10-01",
+ "after": "2027-07-02",
+ "addresses_changed": 140,
+ "transitions": {
+  "not_yet_effective -> applies": 140
+ },
+ "changes": {
+  "A0002": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0003": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0008": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0011": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0012": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0013": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0017": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0020": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for government affordability controls | government-administered affordable housing p. Assessor type apartments"
+   }
+  ],
+  "A0026": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0028": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0029": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0032": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0040": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0042": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0044": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0047": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0049": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0051": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0057": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0059": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0076": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0078": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0087": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0089": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0090": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0099": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0101": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0102": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0104": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0108": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0110": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0116": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0119": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0120": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0125": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0129": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0130": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0131": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0132": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0136": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0137": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0139": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0146": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0148": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0159": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0160": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0161": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0163": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0168": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0171": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0177": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0181": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0182": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0185": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0186": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0187": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0190": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0204": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0208": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0223": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0227": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0241": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0243": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0244": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0249": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0250": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0254": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0256": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0261": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0264": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0265": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0266": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0269": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0270": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0279": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0287": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0288": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0296": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0297": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0299": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0307": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0308": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0311": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0313": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0320": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0321": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0325": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0326": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0329": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0331": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0337": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0338": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0343": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0344": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0348": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0350": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0352": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0358": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0359": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0360": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0371": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0372": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0377": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0381": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0388": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0389": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0390": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0393": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0394": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0399": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0400": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0404": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0410": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0412": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0415": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0416": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0418": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0424": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0428": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for government affordability controls | government-administered affordable housing p. Assessor type apartments"
+   }
+  ],
+  "A0435": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0436": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0438": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0447": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0448": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0449": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0450": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0455": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0459": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0460": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0462": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0471": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0472": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0475": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0476": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0482": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0489": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0490": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0023 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0491": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ],
+  "A0495": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ; may pre-empt local rule(s) r-0027, r-0028 — flagged for human review, preemption not decided here"
+   }
+  ],
+  "A0498": [
+   {
+    "team_rule_id": "r-0047",
+    "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "Applies unless the property falls within the exemption for Residential dwelling unit excludes inpatient medical care, licensed long-term ca; the property falls within the exemption for government affordability controls | government-administered affordable housing p. covers residential rentals in NJ"
+   }
+  ]
+ }
+}

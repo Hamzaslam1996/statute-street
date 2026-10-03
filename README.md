@@ -87,6 +87,45 @@ back to its own tests only when the local rule is genuinely unknown.
 codes ("3S-B-A-13U-H" → 13) as real; the submission does not, because the
 organisers state that those rows have no unit counts (see `out/derived_units.csv`).
 
+### A note on M.G.L. c. 151B § 4(10)
+
+Our engine reports the Massachusetts ban on discriminating against recipients of
+public or rental assistance (c. 151B § 4(10)) as applying to every Massachusetts
+rental. The owner-occupied two-family exemption is written into § 4(6) and § 4(7)
+only; § 4(10) contains no such exemption, so no exemption test is applied to it.
+
+## Module C — change tracking
+
+```
+python changes.py                                          # -> out/changes.json (T1-T5), changes_detail.json, changes_eval.md
+python changes.py --diff --before 2025-12-31 --after 2026-01-02   # -> out/diff_2025-12-31_2026-01-02.json (T1)
+python changes.py --diff --before 2026-10-01 --after 2027-07-02   # -> out/diff_2026-10-01_2027-07-02.json (T3)
+python open_questions.py                                   # -> out/open_questions.json
+python -m pytest tests/ -q
+```
+
+Module C is deterministic: the rule engine is run at the dates each test names
+and the affected sets are plain set arithmetic over the 500 addresses. No model
+calls. "Affected" means the addresses whose answer the change touches (the
+test's rule is reported for the address on at least one of the dates). T3 also
+sets conflict flags on every Jersey City and Hoboken row, because the FAIR Act's
+§ 6(b) may pre-empt the local bans; we flag that for human review, we do not
+decide it. T5's set is empty by construction: a struck ballot question is a
+failed measure and failed measures are never reported for an address.
+
+### Known open questions (organisers' brief §9)
+
+`out/open_questions.json` lists each with both sources and dates:
+
+1. Berkeley ch. 13.63 algorithmic ban: 1 March 2026 (ordinance text) vs January 2026
+   (law-firm alert, Aug 2026). We record the stated date we have and flag the conflict.
+2. NJ FAIR Act vs the Jersey City and Hoboken ordinances: possible preemption from
+   2027-07-01, flagged on every affected row.
+3. LA RSO new formula: 2026-02-02 (LAHD) vs 2026-01-24 (landlord association). We use the
+   agency date and flag the other.
+4. CA screening-fee cap: the statute gives $30 adjusted by CPI and no 2026 dollar figure;
+   we keep the formula.
+
 ## Audit trail notes
 
 - The independent gold key v0.4 (`gold/`, `sources/official/`, D088–D095) was

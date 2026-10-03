@@ -1,0 +1,212 @@
+[
+ {
+  "id": "OQ1",
+  "question": "Berkeley algorithmic-rent ban (BMC ch. 13.63, Ord. 7992): two published effective dates.",
+  "positions": [
+   {
+    "claim": "1 March 2026 (ordinance text, per the organisers' brief)",
+    "doc_ids": [
+     "D001"
+    ],
+    "sources": [
+     {
+      "doc_id": "D001",
+      "url": "https://berkeleyca.gov/sites/default/files/documents/2025-12-02%20Item%2001%20Ordinance%207992.pdf",
+      "retrieved": "2026-10-01",
+      "source_type": "official"
+     }
+    ]
+   },
+   {
+    "claim": "January 2026 (law-firm alert, August 2026)",
+    "doc_ids": [
+     "D002",
+     "D037"
+    ],
+    "sources": [
+     {
+      "doc_id": "D002",
+      "url": "https://morganlewis.com/pubs/2026/08/algorithmic-rent-pricing-litigation-expands-under-new-state-and-local-laws",
+      "retrieved": "2026-10-03",
+      "source_type": "secondary (law firm / news / mirror)"
+     }
+    ]
+   }
+  ],
+  "jurisdiction": "Berkeley, CA",
+  "category": "algorithmic_rent_setting",
+  "our_answer": [
+   {
+    "team_rule_id": "r-0001",
+    "effective_date": "2026-01",
+    "key_value": "Ban on sale or use of coordinated pricing algorithms (using nonpublic competitor data under 90 days old) for setting rents or occupancy levels",
+    "conflict_flag": true,
+    "conflict_note": "Open question: two published effective dates exist for this ban (1 March 2026 in the ordinance text per the brief; January 2026 per an August 2026 law-firm alert). Neither effective date is stated in this capture.",
+    "date_source_doc_id": "D002"
+   }
+  ],
+  "how_we_handle_it": "We record the date stated in a corpus document (January 2026 from the law-firm alert, month precision) and set conflict_flag with a note naming both dates; the rule is in force on the default query date either way."
+ },
+ {
+  "id": "OQ2",
+  "question": "New Jersey FAIR Act (P.L. 2026, c.43) may pre-empt the Jersey City (§ 218-12) and Hoboken (ch. 158) algorithmic-rent ordinances once effective on 2027-07-01.",
+  "positions": [
+   {
+    "claim": "FAIR Act § 6(b): municipalities may not enact conflicting ordinances",
+    "doc_ids": [
+     "D069",
+     "D060"
+    ],
+    "sources": [
+     {
+      "doc_id": "D069",
+      "url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+      "retrieved": "2026-10-01",
+      "source_type": "official"
+     },
+     {
+      "doc_id": "D060",
+      "url": "https://daypitney.com/new-jersey-enacts-fair-act-to-prohibit-algorithmic-rent-setting-practices",
+      "retrieved": "2026-10-03",
+      "source_type": "secondary (law firm / news / mirror)"
+     }
+    ]
+   },
+   {
+    "claim": "Local bans adopted 2025 remain on the books",
+    "doc_ids": [
+     "M_JC-ALG-01_Ord_25-057_adopted",
+     "M_HOB-ALG-01_Hoboken_ch158_ecode360",
+     "D034"
+    ],
+    "sources": [
+     {
+      "doc_id": "M_JC-ALG-01_Ord_25-057_adopted",
+      "url": "https://cityofjerseycity.civicweb.net/ (Jersey City Ord. 25-057, adopted copy)",
+      "retrieved": "2026-10-04",
+      "source_type": "official ordinance (city clerk copy)"
+     },
+     {
+      "doc_id": "M_HOB-ALG-01_Hoboken_ch158_ecode360",
+      "url": "https://ecode360.com/HO0741 (Hoboken Code ch. 158, PDF download dated 2026-10-03)",
+      "retrieved": "2026-10-04",
+      "source_type": "code publisher (official code)"
+     },
+     {
+      "doc_id": "D034",
+      "url": "https://ecode360.com/46833413",
+      "retrieved": "2026-10-03",
+      "source_type": "code publisher"
+     }
+    ]
+   }
+  ],
+  "jurisdiction": "NJ",
+  "category": "algorithmic_rent_setting",
+  "our_answer": [
+   {
+    "team_rule_id": "r-0047",
+    "effective_date": "2027-07-01",
+    "key_value": "Ban on algorithmic rent-setting coordination (use of coordinators / algorithmic devices performing a coordinating function)",
+    "conflict_flag": true,
+    "conflict_note": "Possible preemption of the Jersey City and Hoboken algorithmic-rent ordinances: section 6(b) bars municipal ordinances that conflict with the act. This document does not name those ordinances or resolve whether they conflict.",
+    "date_source_doc_id": null
+   }
+  ],
+  "how_we_handle_it": "The engine flags every Jersey City and Hoboken algorithmic-ban row and the FAIR Act row with conflict_flag and 'Possible preemption by the NJ FAIR Act from 2027-07-01 — flagged for human review'. We do not decide preemption."
+ },
+ {
+  "id": "OQ3",
+  "question": "Los Angeles RSO new allowable-increase formula: two published effective dates.",
+  "positions": [
+   {
+    "claim": "2026-02-02 (Los Angeles Housing Department)",
+    "doc_ids": [
+     "D041",
+     "D042"
+    ],
+    "sources": [
+     {
+      "doc_id": "D041",
+      "url": "https://housing.lacity.gov/residents/rso-overview",
+      "retrieved": "2026-10-01",
+      "source_type": "official"
+     },
+     {
+      "doc_id": "D042",
+      "url": "https://housing.lacity.gov/rso-rent-increase-calculator",
+      "retrieved": "2026-10-01",
+      "source_type": "official"
+     }
+    ]
+   },
+   {
+    "claim": "2026-01-24 (landlord association)",
+    "doc_ids": [
+     "D044"
+    ],
+    "sources": [
+     {
+      "doc_id": "D044",
+      "url": "https://members.aagla.org/news/city-of-la-security-deposit-interest-requirement",
+      "retrieved": "2026-10-03",
+      "source_type": "secondary (law firm / news / mirror)"
+     }
+    ]
+   }
+  ],
+  "jurisdiction": "Los Angeles, CA",
+  "category": "rent_increase_limits",
+  "our_answer": [
+   {
+    "team_rule_id": "r-0032",
+    "effective_date": "2026-02-02",
+    "key_value": "Once per 12 months by the allowable rent increase percentage (percentage is in a linked PDF, not in this text); no utilities add-on since 2026-02-02",
+    "conflict_flag": true,
+    "conflict_note": "Open question: the new RSO formula has two published effective dates, 2026-02-02 per LAHD and 2026-01-24 per a landlord association. This LAHD page gives February 2, 2026; the landlord-association date is not found in this capture.",
+    "date_source_doc_id": null
+   }
+  ],
+  "how_we_handle_it": "We use the LAHD date (official agency page) as effective_date and set conflict_flag with a note recording the landlord-association date."
+ },
+ {
+  "id": "OQ4",
+  "question": "California application screening-fee cap (Civ. Code § 1950.6): no single official 2026 dollar figure.",
+  "positions": [
+   {
+    "claim": "Statute: $30 base adjusted annually by CPI since 1998; the current figure is not stated",
+    "doc_ids": [
+     "D026",
+     "D017"
+    ],
+    "sources": [
+     {
+      "doc_id": "D026",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6",
+      "retrieved": "2026-10-01",
+      "source_type": "official"
+     },
+     {
+      "doc_id": "D017",
+      "url": "https://california.public.law/codes/civil_code_section_1950.6",
+      "retrieved": "2026-10-03",
+      "source_type": "secondary (law firm / news / mirror)"
+     }
+    ]
+   }
+  ],
+  "jurisdiction": "CA",
+  "category": "application_screening_fees",
+  "our_answer": [
+   {
+    "team_rule_id": "r-0014",
+    "effective_date": null,
+    "key_value": "$30 per applicant, adjustable annually for CPI increases beginning January 1, 1998",
+    "conflict_flag": false,
+    "conflict_note": null,
+    "date_source_doc_id": null
+   }
+  ],
+  "how_we_handle_it": "key_value stays the statutory formula ($30 adjusted by CPI) rather than a dollar figure; the statute states no 2026 amount."
+ }
+]

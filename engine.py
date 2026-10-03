@@ -161,9 +161,10 @@ def address_facts(row: dict, juris: dict, use_derived_units: bool = False) -> di
         "units_derived": derived,
         "units_derived_source": row.get("use_description") if derived else None,
         "building_type": building_type(row.get("use_code"), row.get("use_description")),
-        # Funding is only visible when the assessor says so (Boston "SUBSD HOUSING S- 8",
-        # NJ "...-AFFORDABL"); otherwise unknown, never assumed market-rate.
-        "funding": "subsidized" if re.search(r"subsd|s- ?8|section 8|affordabl", (row.get("use_description") or ""), re.I) else None,
+        # Funding is only visible when the assessor says so in words (Boston "SUBSD HOUSING S- 8");
+        # a cryptic NJ MOD-IV suffix ("-AFFORDABL") is derived data and is not asserted (rulings_05 #3).
+        # Otherwise unknown, never assumed market-rate.
+        "funding": "subsidized" if re.search(r"subsd|s- ?8|section 8", (row.get("use_description") or ""), re.I) else None,
         "use_description": row.get("use_description"),
     }
 
@@ -479,10 +480,15 @@ def evaluate_address(facts: dict, rules: list[dict], coverage: dict, as_of: date
         for s in [r for r in rs if r["_rule"]["level"] == "state"]:
             if PREEMPT_RE.search(s["_rule"].get("interaction") or "") and locals_:
                 s["conflict_flag"] = True
+                sr = s["_rule"]
+                m = re.search(r"\(([A-Z]{2,8})\)", sr.get("title") or "")   # "(FAIR)" -> "FAIR Act"
+                short = f"the {sr['jurisdiction']} {m.group(1)} Act" if m else f"state rule {s['team_rule_id']} ({sr['title'][:40]})"
+                since = f" from {sr['effective_date']}" if sr.get("effective_date") else ""
                 for loc in locals_:
                     loc["conflict_flag"] = True
-                    loc["explanation"] += f"; possible conflict with state rule {s['team_rule_id']} (pre-emption language)"
-                s["explanation"] += f"; may pre-empt local rule(s) {', '.join(l['team_rule_id'] for l in locals_)}"
+                    loc["explanation"] += f"; Possible preemption by {short}{since} — flagged for human review."
+                s["explanation"] += (f"; may pre-empt local rule(s) {', '.join(l['team_rule_id'] for l in locals_)} "
+                                     f"— flagged for human review, preemption not decided here")
     for r in results:
         r.pop("_rule"); r.pop("_unknown", None)
     return results

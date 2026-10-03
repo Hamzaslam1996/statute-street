@@ -166,8 +166,9 @@ def build(aid):
     if st=='MA':
         E('MA-DEP-01','applies','statewide; no coverage condition')
         E('MA-FEE-01','applies','statewide; no coverage condition')
-        if units is not None and units>=3: E('MA-SCRN-01','applies',f'{units}+ units → owner-occupied two-family exemption impossible')
-        else: E('MA-SCRN-01','unknown','owner-occupied two-family exemption cannot be excluded'); U('units / owner occupancy (c.151B owner-occupied two-family exemption)')
+        # Adjudicated after comparison (Hamza, 2026-10-04): MA-SCRN-01 is c.151B § 4(10), which has no owner-occupied two-family
+        # exemption (that proviso is in § 4(7) and § 4(11)(3) only, official text D049) → applies to every MA rental regardless of units.
+        E('MA-SCRN-01','applies','c.151B § 4(10) (public assistance / housing subsidy) has no owner-occupied two-family exemption; applies to all rental accommodations')
         E('MA-FEE-02','applies','statewide; attaches to any brokered rental')
         E('MA-SCRN-02','applies','statewide regulation of CORI use by housing providers (text not captured; low confidence)')
         if city=='Boston':
@@ -194,16 +195,46 @@ PICK40=['A0257','A0030','A0105','A0283',            # SF: no year; 1908 flat&sto
         'A0052','A0093','A0123','A0083','A0144',      # Boston: Allston 1965; Jamaica Plain 2004 A/118; East Boston 2013 A/125; Roxbury 1890 A/125; Roxbury 1910 A/112
         'A0009','A0034','A0039','A0046','A0043','A0064']  # Cambridge: 1915/1886/1920 6u; 1910 32u; 1975 44u; 1890 84u
 assert len(PICK40)==40 and not set(PICK)&set(PICK40)
-import sys
+import sys, random
 MODE=sys.argv[1] if len(sys.argv)>1 else 'seed20'
-PICKS=PICK if MODE=='seed20' else PICK+PICK40
+# ---- holdout20: mechanical, seeded selection (no hand-picking) from rows NOT in seed20/seed60.
+# Quota: 2 per legal city (18) + 1 extra each to the two cities with the most remaining rows (ties broken by city name).
+# Per city (fixed order): 1 edge case drawn from that city's edge-case pool (if any), the rest drawn from all remaining rows of the city.
+# Edge-case pool (same traps as seed60): year_built missing; CA year_built ≥ 2011 (AB 1482 15-year COO rolling exemption);
+# LA 1977–1979, SF 1978–1980, Berkeley 1979–1980 (cutoff neighbours); NJ year_built > 1987 (new-construction exemptions);
+# Boston postal_city ≠ 'Boston' (neighbourhood names). RNG: random.Random(20261005) over sorted ids.
+def holdout_picks():
+    used=set(PICK)|set(PICK40); rng=random.Random(20261005)
+    order=['San Francisco','Los Angeles','San Diego','Berkeley','Hoboken','Jersey City','Newark','Boston','Cambridge']
+    rem={c:sorted(a for a,r in rows.items() if a not in used and legal_city(r)==c) for c in order}
+    quota={c:2 for c in order}
+    for c in sorted(order,key=lambda c:(-len(rem[c]),c))[:2]: quota[c]+=1
+    def edge(r,c):
+        yb=int(r['year_built']) if r['year_built'] else None
+        if yb is None: return True
+        if r['state']=='CA' and yb>=2011: return True
+        if c=='Los Angeles' and 1977<=yb<=1979: return True
+        if c=='San Francisco' and 1978<=yb<=1980: return True
+        if c=='Berkeley' and 1979<=yb<=1980: return True
+        if r['state']=='NJ' and yb>1987: return True
+        if c=='Boston' and r['postal_city']!='Boston': return True
+        return False
+    out=[]
+    for c in order:
+        pool=[a for a in rem[c] if edge(rows[a],c)]; got=[]
+        if pool: got.append(rng.choice(pool))
+        rest=[a for a in rem[c] if a not in got]; got+=rng.sample(rest,quota[c]-len(got))
+        out+=got
+    assert len(out)==20 and not set(out)&used and len(set(out))==20
+    return out
+PICKS=PICK if MODE=='seed20' else (holdout_picks() if MODE=='holdout20' else PICK+PICK40)
 recs=[build(a) for a in PICKS]
 import jsonschema
 schema=json.load(open(f'{OUT}/gold/schema/gold_address.schema.json'))
 schema['properties']['expected']['items']['properties']['result']['enum']=['applies','unknown','superseded','not_yet_effective','pending']
 for x in recs: jsonschema.validate(x,schema)
 out=OrderedDict(as_of='2026-10-01',verifier='AI-draft',method='Expected results derived from gold/rules/all.json coverage logic; see gold/README.md. Rules that do not cover the address are listed in not_covered (the submission format omits them). Negative findings and failed measures are listed for completeness and are never reported as applying.',
-                selection_method=('seed20: hand-picked to exercise the README traps (see README). seed60 = seed20 + 40 rows chosen so every legal city has ≥5 (SF 7, LA 7, SD 7, Berkeley 6, Hoboken 6, Jersey City 6, Newark 6, Boston 8, Cambridge 7): per city, first every available edge case (cutoff-year neighbours 1977/1986, rows missing year_built or units, postal_city ≠ legal city, post-1987 NJ new construction, 2019/2013 recent construction), then fillers drawn with random.Random(20261004) from the remaining rows of that city. Expected results computed by the same coverage logic as seed20 (build_addresses.py).' if MODE=='seed60' else 'hand-picked to exercise the README traps'),
+                selection_method=('seed20: hand-picked to exercise the README traps (see README). seed60 = seed20 + 40 rows chosen so every legal city has ≥5 (SF 7, LA 7, SD 7, Berkeley 6, Hoboken 6, Jersey City 6, Newark 6, Boston 8, Cambridge 7): per city, first every available edge case (cutoff-year neighbours 1977/1986, rows missing year_built or units, postal_city ≠ legal city, post-1987 NJ new construction, 2019/2013 recent construction), then fillers drawn with random.Random(20261004) from the remaining rows of that city. Expected results computed by the same coverage logic as seed20 (build_addresses.py).' if MODE=='seed60' else ('holdout20: 20 rows from sample_addresses.csv not in seed20/seed60, selected mechanically by build_addresses.py holdout_picks() — quota 2 per legal city + 1 extra to each of the two cities with most remaining rows; per city one edge case (missing year_built, CA ≥2011, cutoff-year neighbours, NJ post-1987, Boston neighbourhood postal_city) drawn first, then fillers; random.Random(20261005) over sorted ids. Not hand-picked; frozen by holdout20.sha256 before any engine scoring.' if MODE=='holdout20' else 'hand-picked to exercise the README traps')),
                 sample_gaps=['No San Francisco row has year_built 1979 (two SF rows lack year_built and are used instead for the cutoff trap).','No Los Angeles row has a postal_city other than "Los Angeles" (Van Nuys etc. absent); the postal_city trap is exercised with Boston neighbourhoods and San Ysidro.'],
                 addresses=recs)
 json.dump(out,open(f'{OUT}/gold/addresses/{MODE}.json','w'),indent=1,ensure_ascii=False)

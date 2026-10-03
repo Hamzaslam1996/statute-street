@@ -2,24 +2,24 @@
  "as_of": "2026-10-01",
  "verifier": "AI-draft",
  "method": "Expected results derived from gold/rules/all.json coverage logic; see gold/README.md. Rules that do not cover the address are listed in not_covered (the submission format omits them). Negative findings and failed measures are listed for completeness and are never reported as applying.",
- "selection_method": "hand-picked to exercise the README traps",
+ "selection_method": "holdout20: 20 rows from sample_addresses.csv not in seed20/seed60, selected mechanically by build_addresses.py holdout_picks() — quota 2 per legal city + 1 extra to each of the two cities with most remaining rows; per city one edge case (missing year_built, CA ≥2011, cutoff-year neighbours, NJ post-1987, Boston neighbourhood postal_city) drawn first, then fillers; random.Random(20261005) over sorted ids. Not hand-picked; frozen by holdout20.sha256 before any engine scoring.",
  "sample_gaps": [
   "No San Francisco row has year_built 1979 (two SF rows lack year_built and are used instead for the cutoff trap).",
   "No Los Angeles row has a postal_city other than \"Los Angeles\" (Van Nuys etc. absent); the postal_city trap is exercised with Boston neighbourhoods and San Ysidro."
  ],
  "addresses": [
   {
-   "address_id": "A0016",
+   "address_id": "A0253",
    "raw": {
-    "address_id": "A0016",
-    "street_address": "3515 FILLMORE ST",
+    "address_id": "A0253",
+    "street_address": "2250 NORTH POINT ST",
     "postal_city": "San Francisco",
     "state": "CA",
     "zip": "",
-    "year_built": "1926",
-    "units": "21",
-    "use_code": "A15",
-    "use_description": "Apartment 15 Units or more",
+    "year_built": "1928",
+    "units": "7",
+    "use_code": "A5",
+    "use_description": "Apartment 5 to 14 Units",
     "source_dataset": "DataSF wv5m-vpq2 (2025 roll)",
     "retrieved_at": "2026-10-01T22:50Z"
    },
@@ -29,7 +29,7 @@
     "San Francisco"
    ],
    "legal_city": "San Francisco",
-   "units_used": 21,
+   "units_used": 7,
    "units_source": "units column",
    "expected": [
     {
@@ -41,7 +41,7 @@
     {
      "gold_id": "CA-DEP-01",
      "result": "applies",
-     "reason": "21 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
+     "reason": "7 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
      "conflict_flag": false
     },
     {
@@ -89,7 +89,7 @@
     {
      "gold_id": "SF-RENT-01",
      "result": "applies",
-     "reason": "year_built 1926 before 1979 → COO on or before 1979-06-13 inferred",
+     "reason": "year_built 1928 before 1979 → COO on or before 1979-06-13 inferred",
      "conflict_flag": false
     },
     {
@@ -109,17 +109,17 @@
    "notes": null
   },
   {
-   "address_id": "A0050",
+   "address_id": "A0486",
    "raw": {
-    "address_id": "A0050",
-    "street_address": "36 HOFF ST",
+    "address_id": "A0486",
+    "street_address": "2280 MISSION ST",
     "postal_city": "San Francisco",
     "state": "CA",
     "zip": "",
-    "year_built": "1986",
-    "units": "49",
-    "use_code": "A15",
-    "use_description": "Apartment 15 Units or more",
+    "year_built": "1910",
+    "units": "9",
+    "use_code": "A5",
+    "use_description": "Apartment 5 to 14 Units",
     "source_dataset": "DataSF wv5m-vpq2 (2025 roll)",
     "retrieved_at": "2026-10-01T22:50Z"
    },
@@ -129,7 +129,7 @@
     "San Francisco"
    ],
    "legal_city": "San Francisco",
-   "units_used": 49,
+   "units_used": 9,
    "units_source": "units column",
    "expected": [
     {
@@ -141,7 +141,7 @@
     {
      "gold_id": "CA-DEP-01",
      "result": "applies",
-     "reason": "49 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
+     "reason": "9 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
      "conflict_flag": false
     },
     {
@@ -158,107 +158,8 @@
     },
     {
      "gold_id": "CA-RENT-01",
-     "result": "applies",
-     "reason": "no local rent control for this unit; year_built 1986 is more than 15 years old so the COO exemption cannot apply",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "CA-SCRN-01",
-     "result": "applies",
-     "reason": "statewide; no coverage condition",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "SF-ALG-01",
-     "result": "applies",
-     "reason": "citywide; effective 2024-10-14",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "SF-DEP-01",
-     "result": "applies",
-     "reason": "citywide deposit-interest duty",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "SF-JUST-01",
-     "result": "applies",
-     "reason": "just cause covers Rent Ordinance units including post-1979 construction",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "SF-SCRN-01",
-     "result": "unknown",
-     "reason": "Fair Chance housing provisions cover affordable housing only; affordability status not in the data",
-     "conflict_flag": false
-    }
-   ],
-   "not_covered": [
-    {
-     "gold_id": "SF-RENT-01",
-     "reason": "year_built 1986 after 1979 → exempt from rent limits (just cause still applies)"
-    }
-   ],
-   "negative_or_failed_in_stack": [
-    "SF-FEE-00"
-   ],
-   "unknown_facts": [
-    "affordable-housing status (SF Fair Chance Ordinance coverage)"
-   ],
-   "notes": null
-  },
-  {
-   "address_id": "A0106",
-   "raw": {
-    "address_id": "A0106",
-    "street_address": "250 FREMONT ST",
-    "postal_city": "San Francisco",
-    "state": "CA",
-    "zip": "",
-    "year_built": "",
-    "units": "60",
-    "use_code": "A15",
-    "use_description": "Apartment 15 Units or more",
-    "source_dataset": "DataSF wv5m-vpq2 (2025 roll)",
-    "retrieved_at": "2026-10-01T22:50Z"
-   },
-   "jurisdiction_stack": [
-    "CA",
-    "San Francisco County",
-    "San Francisco"
-   ],
-   "legal_city": "San Francisco",
-   "units_used": 60,
-   "units_source": "units column",
-   "expected": [
-    {
-     "gold_id": "CA-ALG-01",
-     "result": "applies",
-     "reason": "statewide; effective 2026-01-01 (T1)",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "CA-DEP-01",
-     "result": "applies",
-     "reason": "60 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "CA-FEE-01",
-     "result": "applies",
-     "reason": "statewide; no coverage condition",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "CA-JUST-01",
      "result": "superseded",
-     "reason": "San Francisco just-cause ordinance governs instead (Civ. Code § 1946.2(i))",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "CA-RENT-01",
-     "result": "unknown",
-     "reason": "state cap applies only if the unit is outside local rent control and older than 15 years; local coverage and/or COO age cannot be determined from the data",
+     "reason": "San Francisco local rent control covers this unit (Civ. Code § 1947.12(d)(3)); stricter local cap governs",
      "conflict_flag": false
     },
     {
@@ -287,8 +188,8 @@
     },
     {
      "gold_id": "SF-RENT-01",
-     "result": "unknown",
-     "reason": "COO cutoff 1979-06-13 cannot be tested",
+     "result": "applies",
+     "reason": "year_built 1910 before 1979 → COO on or before 1979-06-13 inferred",
      "conflict_flag": false
     },
     {
@@ -303,22 +204,120 @@
     "SF-FEE-00"
    ],
    "unknown_facts": [
-    "affordable-housing status (SF Fair Chance Ordinance coverage)",
-    "year_built (AB 1482 15-year certificate-of-occupancy exemption)",
-    "year_built (Rent Ordinance certificate-of-occupancy cutoff 1979-06-13)"
+    "affordable-housing status (SF Fair Chance Ordinance coverage)"
    ],
    "notes": null
   },
   {
-   "address_id": "A0107",
+   "address_id": "A0268",
    "raw": {
-    "address_id": "A0107",
-    "street_address": "10635 SHERMAN GROVE AVE",
+    "address_id": "A0268",
+    "street_address": "1848 FRANKLIN ST",
+    "postal_city": "San Francisco",
+    "state": "CA",
+    "zip": "",
+    "year_built": "1914",
+    "units": "7",
+    "use_code": "A5",
+    "use_description": "Apartment 5 to 14 Units",
+    "source_dataset": "DataSF wv5m-vpq2 (2025 roll)",
+    "retrieved_at": "2026-10-01T22:50Z"
+   },
+   "jurisdiction_stack": [
+    "CA",
+    "San Francisco County",
+    "San Francisco"
+   ],
+   "legal_city": "San Francisco",
+   "units_used": 7,
+   "units_source": "units column",
+   "expected": [
+    {
+     "gold_id": "CA-ALG-01",
+     "result": "applies",
+     "reason": "statewide; effective 2026-01-01 (T1)",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "CA-DEP-01",
+     "result": "applies",
+     "reason": "7 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "CA-FEE-01",
+     "result": "applies",
+     "reason": "statewide; no coverage condition",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "CA-JUST-01",
+     "result": "superseded",
+     "reason": "San Francisco just-cause ordinance governs instead (Civ. Code § 1946.2(i))",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "CA-RENT-01",
+     "result": "superseded",
+     "reason": "San Francisco local rent control covers this unit (Civ. Code § 1947.12(d)(3)); stricter local cap governs",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "CA-SCRN-01",
+     "result": "applies",
+     "reason": "statewide; no coverage condition",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "SF-ALG-01",
+     "result": "applies",
+     "reason": "citywide; effective 2024-10-14",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "SF-DEP-01",
+     "result": "applies",
+     "reason": "citywide deposit-interest duty",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "SF-JUST-01",
+     "result": "applies",
+     "reason": "just cause covers Rent Ordinance units including post-1979 construction",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "SF-RENT-01",
+     "result": "applies",
+     "reason": "year_built 1914 before 1979 → COO on or before 1979-06-13 inferred",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "SF-SCRN-01",
+     "result": "unknown",
+     "reason": "Fair Chance housing provisions cover affordable housing only; affordability status not in the data",
+     "conflict_flag": false
+    }
+   ],
+   "not_covered": [],
+   "negative_or_failed_in_stack": [
+    "SF-FEE-00"
+   ],
+   "unknown_facts": [
+    "affordable-housing status (SF Fair Chance Ordinance coverage)"
+   ],
+   "notes": null
+  },
+  {
+   "address_id": "A0432",
+   "raw": {
+    "address_id": "A0432",
+    "street_address": "14605 RAYEN ST",
     "postal_city": "Los Angeles",
     "state": "CA",
-    "zip": "91040",
+    "zip": "91402",
     "year_built": "1978",
-    "units": "20",
+    "units": "23",
     "use_code": "0500",
     "use_description": "Five or more apartments",
     "source_dataset": "LA County eGIS parcels",
@@ -330,7 +329,7 @@
     "Los Angeles"
    ],
    "legal_city": "Los Angeles",
-   "units_used": 20,
+   "units_used": 23,
    "units_source": "units column",
    "expected": [
     {
@@ -342,7 +341,7 @@
     {
      "gold_id": "CA-DEP-01",
      "result": "applies",
-     "reason": "20 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
+     "reason": "23 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
      "conflict_flag": false
     },
     {
@@ -411,15 +410,15 @@
    "notes": null
   },
   {
-   "address_id": "A0022",
+   "address_id": "A0142",
    "raw": {
-    "address_id": "A0022",
-    "street_address": "10908 HARTSOOK ST",
+    "address_id": "A0142",
+    "street_address": "4615 AVALON BLVD",
     "postal_city": "Los Angeles",
     "state": "CA",
-    "zip": "91601",
-    "year_built": "2012",
-    "units": "5",
+    "zip": "90011",
+    "year_built": "1957",
+    "units": "8",
     "use_code": "0500",
     "use_description": "Five or more apartments",
     "source_dataset": "LA County eGIS parcels",
@@ -431,7 +430,7 @@
     "Los Angeles"
    ],
    "legal_city": "Los Angeles",
-   "units_used": 5,
+   "units_used": 8,
    "units_source": "units column",
    "expected": [
     {
@@ -443,99 +442,7 @@
     {
      "gold_id": "CA-DEP-01",
      "result": "applies",
-     "reason": "5 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "CA-FEE-01",
-     "result": "applies",
-     "reason": "statewide; no coverage condition",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "CA-JUST-01",
-     "result": "superseded",
-     "reason": "Los Angeles just-cause ordinance governs instead (Civ. Code § 1946.2(i))",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "CA-SCRN-01",
-     "result": "applies",
-     "reason": "statewide; no coverage condition",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "LA-JUST-01",
-     "result": "applies",
-     "reason": "non-RSO residential unit (year_built 2012); tenancy length (6 months) not in data but the rule attaches to the unit",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "LA-SCRN-01",
-     "result": "applies",
-     "reason": "citywide; no coverage condition",
-     "conflict_flag": false
-    }
-   ],
-   "not_covered": [
-    {
-     "gold_id": "CA-RENT-01",
-     "reason": "year_built 2012: certificate of occupancy necessarily within the previous 15 years → exempt (§ 1947.12(d)(4))"
-    },
-    {
-     "gold_id": "LA-RENT-01",
-     "reason": "year_built 2012 after 1978 → not an RSO unit"
-    },
-    {
-     "gold_id": "LA-JUST-02",
-     "reason": "year_built 2012 after 1978 → not an RSO unit"
-    },
-    {
-     "gold_id": "LA-DEP-01",
-     "reason": "year_built 2012 after 1978 → not an RSO unit"
-    }
-   ],
-   "negative_or_failed_in_stack": [
-    "LA-ALG-00",
-    "LA-FEE-00"
-   ],
-   "unknown_facts": [],
-   "notes": null
-  },
-  {
-   "address_id": "A0001",
-   "raw": {
-    "address_id": "A0001",
-    "street_address": "6238 DE LONGPRE AVE",
-    "postal_city": "Los Angeles",
-    "state": "CA",
-    "zip": "90028",
-    "year_built": "1927",
-    "units": "32",
-    "use_code": "0500",
-    "use_description": "Five or more apartments",
-    "source_dataset": "LA County eGIS parcels",
-    "retrieved_at": "2026-10-01T22:50Z"
-   },
-   "jurisdiction_stack": [
-    "CA",
-    "Los Angeles County",
-    "Los Angeles"
-   ],
-   "legal_city": "Los Angeles",
-   "units_used": 32,
-   "units_source": "units column",
-   "expected": [
-    {
-     "gold_id": "CA-ALG-01",
-     "result": "applies",
-     "reason": "statewide; effective 2026-01-01 (T1)",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "CA-DEP-01",
-     "result": "applies",
-     "reason": "32 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
+     "reason": "8 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
      "conflict_flag": false
     },
     {
@@ -577,7 +484,7 @@
     {
      "gold_id": "LA-RENT-01",
      "result": "applies",
-     "reason": "year_built 1927 < 1978 and ≥2 units → RSO unit (COO on or before 1978-10-01 inferred from year_built)",
+     "reason": "year_built 1957 < 1978 and ≥2 units → RSO unit (COO on or before 1978-10-01 inferred from year_built)",
      "conflict_flag": false
     },
     {
@@ -601,16 +508,16 @@
    "notes": null
   },
   {
-   "address_id": "A0235",
+   "address_id": "A0080",
    "raw": {
-    "address_id": "A0235",
-    "street_address": "6736 SELMA AVE",
+    "address_id": "A0080",
+    "street_address": "690 S CATALINA ST",
     "postal_city": "Los Angeles",
     "state": "CA",
-    "zip": "90028",
-    "year_built": "",
-    "units": "",
-    "use_code": "050V",
+    "zip": "90005",
+    "year_built": "2002",
+    "units": "90",
+    "use_code": "0500",
     "use_description": "Five or more apartments",
     "source_dataset": "LA County eGIS parcels",
     "retrieved_at": "2026-10-01T22:50Z"
@@ -621,8 +528,8 @@
     "Los Angeles"
    ],
    "legal_city": "Los Angeles",
-   "units_used": 5,
-   "units_source": "use_description implies 5+ units",
+   "units_used": 90,
+   "units_source": "units column",
    "expected": [
     {
      "gold_id": "CA-ALG-01",
@@ -633,7 +540,7 @@
     {
      "gold_id": "CA-DEP-01",
      "result": "applies",
-     "reason": "5 units (use_description implies 5+ units) > 4 defeats the small-landlord two-month exception; one-month cap applies",
+     "reason": "90 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
      "conflict_flag": false
     },
     {
@@ -650,8 +557,8 @@
     },
     {
      "gold_id": "CA-RENT-01",
-     "result": "unknown",
-     "reason": "state cap applies only if the unit is outside local rent control and older than 15 years; local coverage and/or COO age cannot be determined from the data",
+     "result": "applies",
+     "reason": "no local rent control for this unit; year_built 2002 is more than 15 years old so the COO exemption cannot apply",
      "conflict_flag": false
     },
     {
@@ -661,27 +568,9 @@
      "conflict_flag": false
     },
     {
-     "gold_id": "LA-DEP-01",
-     "result": "unknown",
-     "reason": "RSO coverage depends on the certificate-of-occupancy date, which cannot be fixed from year_built",
-     "conflict_flag": false
-    },
-    {
      "gold_id": "LA-JUST-01",
-     "result": "unknown",
-     "reason": "JCO covers non-RSO units; RSO status unknown",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "LA-JUST-02",
-     "result": "unknown",
-     "reason": "RSO coverage depends on the certificate-of-occupancy date, which cannot be fixed from year_built",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "LA-RENT-01",
-     "result": "unknown",
-     "reason": "RSO coverage depends on the certificate-of-occupancy date, which cannot be fixed from year_built",
+     "result": "applies",
+     "reason": "non-RSO residential unit (year_built 2002); tenancy length (6 months) not in data but the rule attaches to the unit",
      "conflict_flag": false
     },
     {
@@ -691,118 +580,38 @@
      "conflict_flag": false
     }
    ],
-   "not_covered": [],
+   "not_covered": [
+    {
+     "gold_id": "LA-RENT-01",
+     "reason": "year_built 2002 after 1978 → not an RSO unit"
+    },
+    {
+     "gold_id": "LA-JUST-02",
+     "reason": "year_built 2002 after 1978 → not an RSO unit"
+    },
+    {
+     "gold_id": "LA-DEP-01",
+     "reason": "year_built 2002 after 1978 → not an RSO unit"
+    }
+   ],
    "negative_or_failed_in_stack": [
     "LA-ALG-00",
     "LA-FEE-00"
    ],
-   "unknown_facts": [
-    "year_built (AB 1482 15-year certificate-of-occupancy exemption)",
-    "year_built (RSO certificate-of-occupancy cutoff 1978-10-01)"
-   ],
-   "notes": "units inferred from use_description (\"Five or more apartments\") – inference, not a data field; results relying on it are marked"
+   "unknown_facts": [],
+   "notes": null
   },
   {
-   "address_id": "A0322",
+   "address_id": "A0431",
    "raw": {
-    "address_id": "A0322",
-    "street_address": "227 CYPRESS DR",
-    "postal_city": "San Ysidro",
-    "state": "CA",
-    "zip": "92173",
-    "year_built": "",
-    "units": "31",
-    "use_code": "15",
-    "use_description": "SANDAG asr_landuse 14-16 (5+ units)",
-    "source_dataset": "SANDAG/SanGIS parcels",
-    "retrieved_at": "2026-10-01T22:50Z"
-   },
-   "jurisdiction_stack": [
-    "CA",
-    "San Diego County",
-    "San Diego"
-   ],
-   "legal_city": "San Diego",
-   "units_used": 31,
-   "units_source": "units column",
-   "expected": [
-    {
-     "gold_id": "CA-ALG-01",
-     "result": "applies",
-     "reason": "statewide; effective 2026-01-01 (T1)",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "CA-DEP-01",
-     "result": "applies",
-     "reason": "31 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "CA-FEE-01",
-     "result": "applies",
-     "reason": "statewide; no coverage condition",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "CA-JUST-01",
-     "result": "superseded",
-     "reason": "San Diego TPO (more protective, adopted 2023) governs where either applies; both share the 15-year COO exemption, which cannot be tested without year_built",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "CA-RENT-01",
-     "result": "unknown",
-     "reason": "year_built straddles the 15-year COO cutoff",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "CA-SCRN-01",
-     "result": "applies",
-     "reason": "statewide; no coverage condition",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "SD-ALG-01",
-     "result": "applies",
-     "reason": "citywide; effective 2025-06-21",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "SD-JUST-01",
-     "result": "unknown",
-     "reason": "TPO exempts housing with a COO within the previous 15 years; San Diego rows have no year_built",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "SD-SCRN-01",
-     "result": "applies",
-     "reason": "citywide; no coverage condition",
-     "conflict_flag": false
-    }
-   ],
-   "not_covered": [],
-   "negative_or_failed_in_stack": [
-    "SD-DEP-00",
-    "SD-FEE-00",
-    "SD-RENT-00"
-   ],
-   "unknown_facts": [
-    "year_built (AB 1482 15-year certificate-of-occupancy exemption)"
-   ],
-   "notes": "postal_city \"San Ysidro\" resolved to legal city San Diego"
-  },
-  {
-   "address_id": "A0019",
-   "raw": {
-    "address_id": "A0019",
-    "street_address": "3820 HAINES ST",
+    "address_id": "A0431",
+    "street_address": "245 EUCLID AVE",
     "postal_city": "San Diego",
     "state": "CA",
-    "zip": "92109",
+    "zip": "92114",
     "year_built": "",
-    "units": "16",
-    "use_code": "15",
+    "units": "5",
+    "use_code": "14",
     "use_description": "SANDAG asr_landuse 14-16 (5+ units)",
     "source_dataset": "SANDAG/SanGIS parcels",
     "retrieved_at": "2026-10-01T22:50Z"
@@ -813,7 +622,7 @@
     "San Diego"
    ],
    "legal_city": "San Diego",
-   "units_used": 16,
+   "units_used": 5,
    "units_source": "units column",
    "expected": [
     {
@@ -825,7 +634,7 @@
     {
      "gold_id": "CA-DEP-01",
      "result": "applies",
-     "reason": "16 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
+     "reason": "5 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
      "conflict_flag": false
     },
     {
@@ -883,13 +692,103 @@
    "notes": null
   },
   {
-   "address_id": "A0005",
+   "address_id": "A0420",
    "raw": {
-    "address_id": "A0005",
-    "street_address": "1609 ADDISON ST",
+    "address_id": "A0420",
+    "street_address": "4419 CLEVELAND AVE",
+    "postal_city": "San Diego",
+    "state": "CA",
+    "zip": "92116",
+    "year_built": "",
+    "units": "10",
+    "use_code": "14",
+    "use_description": "SANDAG asr_landuse 14-16 (5+ units)",
+    "source_dataset": "SANDAG/SanGIS parcels",
+    "retrieved_at": "2026-10-01T22:50Z"
+   },
+   "jurisdiction_stack": [
+    "CA",
+    "San Diego County",
+    "San Diego"
+   ],
+   "legal_city": "San Diego",
+   "units_used": 10,
+   "units_source": "units column",
+   "expected": [
+    {
+     "gold_id": "CA-ALG-01",
+     "result": "applies",
+     "reason": "statewide; effective 2026-01-01 (T1)",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "CA-DEP-01",
+     "result": "applies",
+     "reason": "10 units > 4 defeats the small-landlord two-month exception; one-month cap applies",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "CA-FEE-01",
+     "result": "applies",
+     "reason": "statewide; no coverage condition",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "CA-JUST-01",
+     "result": "superseded",
+     "reason": "San Diego TPO (more protective, adopted 2023) governs where either applies; both share the 15-year COO exemption, which cannot be tested without year_built",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "CA-RENT-01",
+     "result": "unknown",
+     "reason": "year_built straddles the 15-year COO cutoff",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "CA-SCRN-01",
+     "result": "applies",
+     "reason": "statewide; no coverage condition",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "SD-ALG-01",
+     "result": "applies",
+     "reason": "citywide; effective 2025-06-21",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "SD-JUST-01",
+     "result": "unknown",
+     "reason": "TPO exempts housing with a COO within the previous 15 years; San Diego rows have no year_built",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "SD-SCRN-01",
+     "result": "applies",
+     "reason": "citywide; no coverage condition",
+     "conflict_flag": false
+    }
+   ],
+   "not_covered": [],
+   "negative_or_failed_in_stack": [
+    "SD-DEP-00",
+    "SD-FEE-00",
+    "SD-RENT-00"
+   ],
+   "unknown_facts": [
+    "year_built (AB 1482 15-year certificate-of-occupancy exemption)"
+   ],
+   "notes": null
+  },
+  {
+   "address_id": "A0091",
+   "raw": {
+    "address_id": "A0091",
+    "street_address": "2229 DWIGHT WAY",
     "postal_city": "Berkeley",
     "state": "CA",
-    "zip": "94703",
+    "zip": "94704",
     "year_built": "",
     "units": "",
     "use_code": "7700",
@@ -988,114 +887,122 @@
    "notes": "units inferred from use_description (\"Alameda County use code (5+ units)\") – inference, not a data field; results relying on it are marked"
   },
   {
-   "address_id": "A0227",
+   "address_id": "A0158",
    "raw": {
-    "address_id": "A0227",
-    "street_address": "1401 HUDSON ST",
-    "postal_city": "Hoboken",
-    "state": "NJ",
-    "zip": "07030",
-    "year_built": "2010",
-    "units": "2",
-    "use_code": "4C",
-    "use_description": "13B-93U-2C-G",
-    "source_dataset": "NJOGIS Parcels & MOD-IV Composite",
+    "address_id": "A0158",
+    "street_address": "2522 HILGARD AVE",
+    "postal_city": "Berkeley",
+    "state": "CA",
+    "zip": "94709",
+    "year_built": "",
+    "units": "",
+    "use_code": "7700",
+    "use_description": "Alameda County use code (5+ units)",
+    "source_dataset": "Alameda County parcels",
     "retrieved_at": "2026-10-01T22:50Z"
    },
    "jurisdiction_stack": [
-    "NJ",
-    "Hudson County",
-    "Hoboken"
+    "CA",
+    "Alameda County",
+    "Berkeley"
    ],
-   "legal_city": "Hoboken",
-   "units_used": 2,
-   "units_source": "units column",
+   "legal_city": "Berkeley",
+   "units_used": 5,
+   "units_source": "use_description implies 5+ units",
    "expected": [
     {
-     "gold_id": "HOB-ALG-01",
+     "gold_id": "BERK-ALG-01",
      "result": "applies",
-     "reason": "citywide; conflict flag for possible FAIR Act preemption from 2027-07-01",
+     "reason": "citywide; effective 2026-01-01 (date conflict flagged on the rule)",
      "conflict_flag": true
     },
     {
-     "gold_id": "HOB-RENT-01",
-     "result": "unknown",
-     "reason": "year_built 2010 → post-1987-06-25 multiple dwelling less than 30 years old at 2026-10-01 → § 155-2(H) exemption depends on the initial-mortgage amortisation period and N.J.S.A. 2A:42-84.1 compliance filings, not in the data",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "HOB-RENT-02",
+     "gold_id": "BERK-DEP-01",
      "result": "applies",
-     "reason": "disclosure duty for renewal increases >10% applies to all residential landlords in Hoboken (categorisation flagged)",
+     "reason": "deposit interest covers fully and partially covered units",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "BERK-FEE-01",
+     "result": "applies",
+     "reason": "applies to all residential rental agreements in Berkeley",
      "conflict_flag": true
     },
     {
-     "gold_id": "NJ-ALG-01",
-     "result": "not_yet_effective",
-     "reason": "enacted, effective 2027-07-01 > 2026-10-01; possible preemption of the local ordinance (T3 conflict flag)",
-     "conflict_flag": true
-    },
-    {
-     "gold_id": "NJ-DEP-01",
-     "result": "unknown",
-     "reason": "owner-occupied ≤2-unit exclusion cannot be excluded",
+     "gold_id": "BERK-JUST-01",
+     "result": "applies",
+     "reason": "just cause covers fully and partially covered units; multifamily (5+ units per use code) cannot fall in the exempt categories",
      "conflict_flag": false
     },
     {
-     "gold_id": "NJ-FEE-01",
+     "gold_id": "BERK-RENT-01",
      "result": "unknown",
-     "reason": "one- or two-family dwelling exemption cannot be excluded",
+     "reason": "rent ceiling applies only to fully covered units (COO on or before 1980-06-30); Berkeley rows have no year_built",
      "conflict_flag": false
     },
     {
-     "gold_id": "NJ-JUST-01",
-     "result": "unknown",
-     "reason": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
+     "gold_id": "BERK-SCRN-01",
+     "result": "applies",
+     "reason": "owner-occupied 1–3 unit exemption impossible for a 5+ unit building (use code)",
      "conflict_flag": false
     },
     {
-     "gold_id": "NJ-SCRN-01",
-     "result": "unknown",
-     "reason": "small owner-occupied building exemption cannot be excluded",
+     "gold_id": "CA-ALG-01",
+     "result": "applies",
+     "reason": "statewide; effective 2026-01-01 (T1)",
      "conflict_flag": false
     },
     {
-     "gold_id": "NJ-SCRN-02",
+     "gold_id": "CA-DEP-01",
+     "result": "applies",
+     "reason": "5 units (use_description implies 5+ units) > 4 defeats the small-landlord two-month exception; one-month cap applies",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "CA-FEE-01",
+     "result": "applies",
+     "reason": "statewide; no coverage condition",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "CA-JUST-01",
+     "result": "superseded",
+     "reason": "Berkeley just-cause ordinance governs instead (Civ. Code § 1946.2(i))",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "CA-RENT-01",
      "result": "unknown",
-     "reason": "LAD owner-occupied small-building exemption cannot be excluded",
+     "reason": "state cap applies only if the unit is outside local rent control and older than 15 years; local coverage and/or COO age cannot be determined from the data",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "CA-SCRN-01",
+     "result": "applies",
+     "reason": "statewide; no coverage condition",
      "conflict_flag": false
     }
    ],
    "not_covered": [],
-   "negative_or_failed_in_stack": [
-    "HOB-DEP-00",
-    "HOB-FEE-00",
-    "HOB-JUST-00",
-    "HOB-SCRN-00",
-    "NJ-RENT-00"
-   ],
+   "negative_or_failed_in_stack": [],
    "unknown_facts": [
-    "units (one-/two-family dwelling exemption, N.J.S.A. 46:8-18.1(c))",
-    "units / owner occupancy (Anti-Eviction Act owner-occupied two-unit exemption)",
-    "units / owner occupancy (Fair Chance in Housing Act exemptions)",
-    "units / owner occupancy (LAD exemptions)",
-    "units / owner occupancy (N.J.S.A. 46:8-26)",
-    "§ 155-2(H) new-construction exemption: mortgage amortisation period / statutory compliance"
+    "year_built (AB 1482 15-year certificate-of-occupancy exemption)",
+    "year_built / certificate of occupancy (Berkeley full coverage requires COO on or before 1980-06-30)"
    ],
-   "notes": null
+   "notes": "units inferred from use_description (\"Alameda County use code (5+ units)\") – inference, not a data field; results relying on it are marked"
   },
   {
-   "address_id": "A0040",
+   "address_id": "A0181",
    "raw": {
-    "address_id": "A0040",
-    "street_address": "69-75 JACKSON ST",
+    "address_id": "A0181",
+    "street_address": "931 GARDEN ST",
     "postal_city": "Hoboken",
     "state": "NJ",
     "zip": "07030",
     "year_built": "",
     "units": "",
     "use_code": "4C",
-    "use_description": "3B-7U/4B-24U-G",
+    "use_description": "5B-10U-BA",
     "source_dataset": "NJOGIS Parcels & MOD-IV Composite",
     "retrieved_at": "2026-10-01T22:50Z"
    },
@@ -1182,131 +1089,46 @@
    "notes": null
   },
   {
-   "address_id": "A0012",
+   "address_id": "A0308",
    "raw": {
-    "address_id": "A0012",
-    "street_address": "1064 SUMMIT AVE.",
-    "postal_city": "Jersey City",
+    "address_id": "A0308",
+    "street_address": "1032 HUDSON ST",
+    "postal_city": "Hoboken",
     "state": "NJ",
-    "zip": "07728",
-    "year_built": "1900",
-    "units": "",
-    "use_code": "4C",
-    "use_description": "3S-F-D-6U",
-    "source_dataset": "NJOGIS Parcels & MOD-IV Composite",
-    "retrieved_at": "2026-10-01T22:50Z"
-   },
-   "jurisdiction_stack": [
-    "NJ",
-    "Hudson County",
-    "Jersey City"
-   ],
-   "legal_city": "Jersey City",
-   "units_used": null,
-   "units_source": null,
-   "expected": [
-    {
-     "gold_id": "JC-ALG-01",
-     "result": "applies",
-     "reason": "citywide; conflict flag for possible FAIR Act preemption from 2027-07-01",
-     "conflict_flag": true
-    },
-    {
-     "gold_id": "JC-RENT-01",
-     "result": "unknown",
-     "reason": "1–4 unit properties are exempt; Jersey City rows have no unit counts",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-ALG-01",
-     "result": "not_yet_effective",
-     "reason": "enacted, effective 2027-07-01 > 2026-10-01; possible preemption of the local ordinance (T3 conflict flag)",
-     "conflict_flag": true
-    },
-    {
-     "gold_id": "NJ-DEP-01",
-     "result": "unknown",
-     "reason": "owner-occupied ≤2-unit exclusion cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-FEE-01",
-     "result": "unknown",
-     "reason": "one- or two-family dwelling exemption cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-JUST-01",
-     "result": "unknown",
-     "reason": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-SCRN-01",
-     "result": "unknown",
-     "reason": "small owner-occupied building exemption cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-SCRN-02",
-     "result": "unknown",
-     "reason": "LAD owner-occupied small-building exemption cannot be excluded",
-     "conflict_flag": false
-    }
-   ],
-   "not_covered": [],
-   "negative_or_failed_in_stack": [
-    "JC-DEP-00",
-    "JC-FEE-00",
-    "JC-JUST-00",
-    "JC-SCRN-00",
-    "NJ-RENT-00"
-   ],
-   "unknown_facts": [
-    "units (Jersey City 1–4 unit exemption)",
-    "units (one-/two-family dwelling exemption, N.J.S.A. 46:8-18.1(c))",
-    "units / owner occupancy (Anti-Eviction Act owner-occupied two-unit exemption)",
-    "units / owner occupancy (Fair Chance in Housing Act exemptions)",
-    "units / owner occupancy (LAD exemptions)",
-    "units / owner occupancy (N.J.S.A. 46:8-26)"
-   ],
-   "notes": null
-  },
-  {
-   "address_id": "A0008",
-   "raw": {
-    "address_id": "A0008",
-    "street_address": "1065 SUMMIT AVENUE",
-    "postal_city": "Jersey City",
-    "state": "NJ",
-    "zip": "78746",
+    "zip": "07024",
     "year_built": "",
     "units": "",
     "use_code": "4C",
-    "use_description": "10S-B-A-151U-HE",
+    "use_description": "5B-11U-H-BA-G",
     "source_dataset": "NJOGIS Parcels & MOD-IV Composite",
     "retrieved_at": "2026-10-01T22:50Z"
    },
    "jurisdiction_stack": [
     "NJ",
     "Hudson County",
-    "Jersey City"
+    "Hoboken"
    ],
-   "legal_city": "Jersey City",
+   "legal_city": "Hoboken",
    "units_used": null,
    "units_source": null,
    "expected": [
     {
-     "gold_id": "JC-ALG-01",
+     "gold_id": "HOB-ALG-01",
      "result": "applies",
      "reason": "citywide; conflict flag for possible FAIR Act preemption from 2027-07-01",
      "conflict_flag": true
     },
     {
-     "gold_id": "JC-RENT-01",
+     "gold_id": "HOB-RENT-01",
      "result": "unknown",
-     "reason": "1–4 unit properties are exempt; Jersey City rows have no unit counts",
+     "reason": "ordinance covers all dwelling units with no unit-count test, but the post-1987-06-25 new-construction exemption (§ 155-2(H)) cannot be tested without year_built",
      "conflict_flag": false
+    },
+    {
+     "gold_id": "HOB-RENT-02",
+     "result": "applies",
+     "reason": "disclosure duty for renewal increases >10% applies to all residential landlords in Hoboken (categorisation flagged)",
+     "conflict_flag": true
     },
     {
      "gold_id": "NJ-ALG-01",
@@ -1347,102 +1169,11 @@
    ],
    "not_covered": [],
    "negative_or_failed_in_stack": [
-    "JC-DEP-00",
-    "JC-FEE-00",
-    "JC-JUST-00",
-    "JC-SCRN-00",
+    "HOB-DEP-00",
+    "HOB-FEE-00",
+    "HOB-JUST-00",
+    "HOB-SCRN-00",
     "NJ-RENT-00"
-   ],
-   "unknown_facts": [
-    "units (Jersey City 1–4 unit exemption)",
-    "units (one-/two-family dwelling exemption, N.J.S.A. 46:8-18.1(c))",
-    "units / owner occupancy (Anti-Eviction Act owner-occupied two-unit exemption)",
-    "units / owner occupancy (Fair Chance in Housing Act exemptions)",
-    "units / owner occupancy (LAD exemptions)",
-    "units / owner occupancy (N.J.S.A. 46:8-26)"
-   ],
-   "notes": null
-  },
-  {
-   "address_id": "A0331",
-   "raw": {
-    "address_id": "A0331",
-    "street_address": "342-344 IRVINE TURNER BLV",
-    "postal_city": "Newark",
-    "state": "NJ",
-    "zip": "11219",
-    "year_built": "1910",
-    "units": "",
-    "use_code": "4C",
-    "use_description": "2.5SF4UG",
-    "source_dataset": "NJOGIS Parcels & MOD-IV Composite",
-    "retrieved_at": "2026-10-01T22:50Z"
-   },
-   "jurisdiction_stack": [
-    "NJ",
-    "Essex County",
-    "Newark"
-   ],
-   "legal_city": "Newark",
-   "units_used": null,
-   "units_source": null,
-   "expected": [
-    {
-     "gold_id": "NJ-ALG-01",
-     "result": "not_yet_effective",
-     "reason": "enacted, effective 2027-07-01 > 2026-10-01",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-DEP-01",
-     "result": "unknown",
-     "reason": "owner-occupied ≤2-unit exclusion cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-FEE-01",
-     "result": "unknown",
-     "reason": "one- or two-family dwelling exemption cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-JUST-01",
-     "result": "unknown",
-     "reason": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-SCRN-01",
-     "result": "unknown",
-     "reason": "small owner-occupied building exemption cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NJ-SCRN-02",
-     "result": "unknown",
-     "reason": "LAD owner-occupied small-building exemption cannot be excluded",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NWK-RENT-01",
-     "result": "applies",
-     "reason": "year_built 1910 → outside any 30-year new-construction exemption; multiple dwelling with no small-building exemption",
-     "conflict_flag": false
-    },
-    {
-     "gold_id": "NWK-SCRN-01",
-     "result": "unknown",
-     "reason": "owner-occupied two-family exemption cannot be excluded",
-     "conflict_flag": false
-    }
-   ],
-   "not_covered": [],
-   "negative_or_failed_in_stack": [
-    "NJ-RENT-00",
-    "NWK-ALG-00",
-    "NWK-DEP-00",
-    "NWK-FEE-00",
-    "NWK-JUST-00"
    ],
    "unknown_facts": [
     "units (one-/two-family dwelling exemption, N.J.S.A. 46:8-18.1(c))",
@@ -1450,22 +1181,204 @@
     "units / owner occupancy (Fair Chance in Housing Act exemptions)",
     "units / owner occupancy (LAD exemptions)",
     "units / owner occupancy (N.J.S.A. 46:8-26)",
-    "units / owner occupancy (Newark § 2:31-1 exemptions)"
+    "year_built (Hoboken § 155-2(H) new-construction exemption)"
    ],
    "notes": null
   },
   {
-   "address_id": "A0003",
+   "address_id": "A0455",
    "raw": {
-    "address_id": "A0003",
-    "street_address": "876-878 S 14TH ST",
-    "postal_city": "Newark",
+    "address_id": "A0455",
+    "street_address": "78 STEVENS AVE.",
+    "postal_city": "Jersey City",
     "state": "NJ",
-    "zip": "11219",
+    "zip": "07108",
     "year_built": "",
     "units": "",
     "use_code": "4C",
-    "use_description": "4SB",
+    "use_description": "4S-B-A-17U-H",
+    "source_dataset": "NJOGIS Parcels & MOD-IV Composite",
+    "retrieved_at": "2026-10-01T22:50Z"
+   },
+   "jurisdiction_stack": [
+    "NJ",
+    "Hudson County",
+    "Jersey City"
+   ],
+   "legal_city": "Jersey City",
+   "units_used": null,
+   "units_source": null,
+   "expected": [
+    {
+     "gold_id": "JC-ALG-01",
+     "result": "applies",
+     "reason": "citywide; conflict flag for possible FAIR Act preemption from 2027-07-01",
+     "conflict_flag": true
+    },
+    {
+     "gold_id": "JC-RENT-01",
+     "result": "unknown",
+     "reason": "1–4 unit properties are exempt; Jersey City rows have no unit counts",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-ALG-01",
+     "result": "not_yet_effective",
+     "reason": "enacted, effective 2027-07-01 > 2026-10-01; possible preemption of the local ordinance (T3 conflict flag)",
+     "conflict_flag": true
+    },
+    {
+     "gold_id": "NJ-DEP-01",
+     "result": "unknown",
+     "reason": "owner-occupied ≤2-unit exclusion cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-FEE-01",
+     "result": "unknown",
+     "reason": "one- or two-family dwelling exemption cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-JUST-01",
+     "result": "unknown",
+     "reason": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-SCRN-01",
+     "result": "unknown",
+     "reason": "small owner-occupied building exemption cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-SCRN-02",
+     "result": "unknown",
+     "reason": "LAD owner-occupied small-building exemption cannot be excluded",
+     "conflict_flag": false
+    }
+   ],
+   "not_covered": [],
+   "negative_or_failed_in_stack": [
+    "JC-DEP-00",
+    "JC-FEE-00",
+    "JC-JUST-00",
+    "JC-SCRN-00",
+    "NJ-RENT-00"
+   ],
+   "unknown_facts": [
+    "units (Jersey City 1–4 unit exemption)",
+    "units (one-/two-family dwelling exemption, N.J.S.A. 46:8-18.1(c))",
+    "units / owner occupancy (Anti-Eviction Act owner-occupied two-unit exemption)",
+    "units / owner occupancy (Fair Chance in Housing Act exemptions)",
+    "units / owner occupancy (LAD exemptions)",
+    "units / owner occupancy (N.J.S.A. 46:8-26)"
+   ],
+   "notes": null
+  },
+  {
+   "address_id": "A0265",
+   "raw": {
+    "address_id": "A0265",
+    "street_address": "102 BALDWIN AVE.",
+    "postal_city": "Jersey City",
+    "state": "NJ",
+    "zip": "07306",
+    "year_built": "1912",
+    "units": "",
+    "use_code": "4C",
+    "use_description": "3S-B-A-13U-H",
+    "source_dataset": "NJOGIS Parcels & MOD-IV Composite",
+    "retrieved_at": "2026-10-01T22:50Z"
+   },
+   "jurisdiction_stack": [
+    "NJ",
+    "Hudson County",
+    "Jersey City"
+   ],
+   "legal_city": "Jersey City",
+   "units_used": null,
+   "units_source": null,
+   "expected": [
+    {
+     "gold_id": "JC-ALG-01",
+     "result": "applies",
+     "reason": "citywide; conflict flag for possible FAIR Act preemption from 2027-07-01",
+     "conflict_flag": true
+    },
+    {
+     "gold_id": "JC-RENT-01",
+     "result": "unknown",
+     "reason": "1–4 unit properties are exempt; Jersey City rows have no unit counts",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-ALG-01",
+     "result": "not_yet_effective",
+     "reason": "enacted, effective 2027-07-01 > 2026-10-01; possible preemption of the local ordinance (T3 conflict flag)",
+     "conflict_flag": true
+    },
+    {
+     "gold_id": "NJ-DEP-01",
+     "result": "unknown",
+     "reason": "owner-occupied ≤2-unit exclusion cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-FEE-01",
+     "result": "unknown",
+     "reason": "one- or two-family dwelling exemption cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-JUST-01",
+     "result": "unknown",
+     "reason": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-SCRN-01",
+     "result": "unknown",
+     "reason": "small owner-occupied building exemption cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-SCRN-02",
+     "result": "unknown",
+     "reason": "LAD owner-occupied small-building exemption cannot be excluded",
+     "conflict_flag": false
+    }
+   ],
+   "not_covered": [],
+   "negative_or_failed_in_stack": [
+    "JC-DEP-00",
+    "JC-FEE-00",
+    "JC-JUST-00",
+    "JC-SCRN-00",
+    "NJ-RENT-00"
+   ],
+   "unknown_facts": [
+    "units (Jersey City 1–4 unit exemption)",
+    "units (one-/two-family dwelling exemption, N.J.S.A. 46:8-18.1(c))",
+    "units / owner occupancy (Anti-Eviction Act owner-occupied two-unit exemption)",
+    "units / owner occupancy (Fair Chance in Housing Act exemptions)",
+    "units / owner occupancy (LAD exemptions)",
+    "units / owner occupancy (N.J.S.A. 46:8-26)"
+   ],
+   "notes": null
+  },
+  {
+   "address_id": "A0337",
+   "raw": {
+    "address_id": "A0337",
+    "street_address": "66 MONROE ST",
+    "postal_city": "Newark",
+    "state": "NJ",
+    "zip": "07032",
+    "year_built": "",
+    "units": "",
+    "use_code": "4C",
+    "use_description": "4S.B",
     "source_dataset": "NJOGIS Parcels & MOD-IV Composite",
     "retrieved_at": "2026-10-01T22:50Z"
    },
@@ -1547,17 +1460,109 @@
    "notes": null
   },
   {
-   "address_id": "A0065",
+   "address_id": "A0491",
    "raw": {
-    "address_id": "A0065",
-    "street_address": "63 Bailey ST",
-    "postal_city": "Dorchester",
-    "state": "MA",
-    "zip": "02124",
+    "address_id": "A0491",
+    "street_address": "37 IRVING ST",
+    "postal_city": "Newark",
+    "state": "NJ",
+    "zip": "07104",
     "year_built": "",
     "units": "",
-    "use_code": "A/120",
-    "use_description": "LUXURY APARTMENT",
+    "use_code": "4C",
+    "use_description": "3SF",
+    "source_dataset": "NJOGIS Parcels & MOD-IV Composite",
+    "retrieved_at": "2026-10-01T22:50Z"
+   },
+   "jurisdiction_stack": [
+    "NJ",
+    "Essex County",
+    "Newark"
+   ],
+   "legal_city": "Newark",
+   "units_used": null,
+   "units_source": null,
+   "expected": [
+    {
+     "gold_id": "NJ-ALG-01",
+     "result": "not_yet_effective",
+     "reason": "enacted, effective 2027-07-01 > 2026-10-01",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-DEP-01",
+     "result": "unknown",
+     "reason": "owner-occupied ≤2-unit exclusion cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-FEE-01",
+     "result": "unknown",
+     "reason": "one- or two-family dwelling exemption cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-JUST-01",
+     "result": "unknown",
+     "reason": "owner-occupied ≤2-unit exemption cannot be excluded (units and owner occupancy not in data)",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-SCRN-01",
+     "result": "unknown",
+     "reason": "small owner-occupied building exemption cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NJ-SCRN-02",
+     "result": "unknown",
+     "reason": "LAD owner-occupied small-building exemption cannot be excluded",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NWK-RENT-01",
+     "result": "unknown",
+     "reason": "new-construction exemption (30 years / mortgage amortisation) cannot be tested without year_built",
+     "conflict_flag": false
+    },
+    {
+     "gold_id": "NWK-SCRN-01",
+     "result": "unknown",
+     "reason": "owner-occupied two-family exemption cannot be excluded",
+     "conflict_flag": false
+    }
+   ],
+   "not_covered": [],
+   "negative_or_failed_in_stack": [
+    "NJ-RENT-00",
+    "NWK-ALG-00",
+    "NWK-DEP-00",
+    "NWK-FEE-00",
+    "NWK-JUST-00"
+   ],
+   "unknown_facts": [
+    "units (one-/two-family dwelling exemption, N.J.S.A. 46:8-18.1(c))",
+    "units / owner occupancy (Anti-Eviction Act owner-occupied two-unit exemption)",
+    "units / owner occupancy (Fair Chance in Housing Act exemptions)",
+    "units / owner occupancy (LAD exemptions)",
+    "units / owner occupancy (N.J.S.A. 46:8-26)",
+    "units / owner occupancy (Newark § 2:31-1 exemptions)",
+    "year_built (Newark new-construction exemption)"
+   ],
+   "notes": null
+  },
+  {
+   "address_id": "A0220",
+   "raw": {
+    "address_id": "A0220",
+    "street_address": "21-23 Faulkner ST",
+    "postal_city": "Dorchester",
+    "state": "MA",
+    "zip": "02122",
+    "year_built": "1900",
+    "units": "",
+    "use_code": "A/125",
+    "use_description": "SUBSD HOUSING S- 8",
     "source_dataset": "Boston Property Assessment FY2026",
     "retrieved_at": "2026-10-01T22:50Z"
    },
@@ -1648,17 +1653,17 @@
    "notes": "postal_city \"Dorchester\" resolved to legal city Boston"
   },
   {
-   "address_id": "A0036",
+   "address_id": "A0376",
    "raw": {
-    "address_id": "A0036",
-    "street_address": "33 WARD ST",
-    "postal_city": "South Boston",
+    "address_id": "A0376",
+    "street_address": "ST JAMES ST",
+    "postal_city": "Roxbury",
     "state": "MA",
-    "zip": "02127",
-    "year_built": "2019",
+    "zip": "02119",
+    "year_built": "",
     "units": "",
-    "use_code": "A/112",
-    "use_description": "APT 7-30 UNITS",
+    "use_code": "A/125",
+    "use_description": "SUBSD HOUSING S- 8",
     "source_dataset": "Boston Property Assessment FY2026",
     "retrieved_at": "2026-10-01T22:50Z"
    },
@@ -1668,8 +1673,8 @@
     "Boston"
    ],
    "legal_city": "Boston",
-   "units_used": 7,
-   "units_source": "use_description implies 7-30 units",
+   "units_used": null,
+   "units_source": null,
    "expected": [
     {
      "gold_id": "BOS-JUST-01",
@@ -1746,18 +1751,18 @@
    "unknown_facts": [
     "DND funding / Inclusionary Development Policy status (Boston Fair Chance policy coverage)"
    ],
-   "notes": "postal_city \"South Boston\" resolved to legal city Boston; units inferred from use_description (\"APT 7-30 UNITS\") – inference, not a data field; results relying on it are marked"
+   "notes": "postal_city \"Roxbury\" resolved to legal city Boston"
   },
   {
-   "address_id": "A0015",
+   "address_id": "A0286",
    "raw": {
-    "address_id": "A0015",
-    "street_address": "15 Everett St",
+    "address_id": "A0286",
+    "street_address": "27 Irving Ter",
     "postal_city": "Cambridge",
     "state": "MA",
     "zip": "",
-    "year_built": "1930",
-    "units": "83",
+    "year_built": "1925",
+    "units": "29",
     "use_code": "112",
     "use_description": ">8-UNIT-APT",
     "source_dataset": "Cambridge Property Database FY2026 (waa7-ibdu)",
@@ -1769,7 +1774,7 @@
     "Cambridge"
    ],
    "legal_city": "Cambridge",
-   "units_used": 83,
+   "units_used": 29,
    "units_source": "units column",
    "expected": [
     {
@@ -1841,46 +1846,40 @@
    "notes": null
   },
   {
-   "address_id": "A0048",
+   "address_id": "A0176",
    "raw": {
-    "address_id": "A0048",
-    "street_address": "1619 COMMONWEALTH AV",
-    "postal_city": "Brighton",
+    "address_id": "A0176",
+    "street_address": "15 Chester St",
+    "postal_city": "Cambridge",
     "state": "MA",
-    "zip": "02135",
-    "year_built": "1899",
-    "units": "",
-    "use_code": "A/112",
-    "use_description": "APT 7-30 UNITS",
-    "source_dataset": "Boston Property Assessment FY2026",
+    "zip": "",
+    "year_built": "1965",
+    "units": "29",
+    "use_code": "112",
+    "use_description": ">8-UNIT-APT",
+    "source_dataset": "Cambridge Property Database FY2026 (waa7-ibdu)",
     "retrieved_at": "2026-10-01T22:50Z"
    },
    "jurisdiction_stack": [
     "MA",
-    "Suffolk County",
-    "Boston"
+    "Middlesex County",
+    "Cambridge"
    ],
-   "legal_city": "Boston",
-   "units_used": 7,
-   "units_source": "use_description implies 7-30 units",
+   "legal_city": "Cambridge",
+   "units_used": 29,
+   "units_source": "units column",
    "expected": [
     {
-     "gold_id": "BOS-JUST-01",
+     "gold_id": "CAM-JUST-01",
      "result": "applies",
-     "reason": "applies to all Boston landlords ending a tenancy (notice-only; categorisation flagged)",
+     "reason": "applies to all residential rental agreements in Cambridge (notice-only; categorisation flagged)",
      "conflict_flag": true
     },
     {
-     "gold_id": "BOS-SCRN-01",
+     "gold_id": "CAM-SCRN-01",
      "result": "applies",
-     "reason": "Boston Fair Housing Commission protections apply to all Boston rentals",
+     "reason": "citywide; no coverage condition",
      "conflict_flag": false
-    },
-    {
-     "gold_id": "BOS-SCRN-02",
-     "result": "unknown",
-     "reason": "Fair Chance policy applies only to DND-funded / IDP housing providers; funding status not in data",
-     "conflict_flag": true
     },
     {
      "gold_id": "MA-ALG-P1",
@@ -1927,19 +1926,16 @@
    ],
    "not_covered": [],
    "negative_or_failed_in_stack": [
-    "BOS-ALG-00",
-    "BOS-DEP-00",
-    "BOS-FEE-00",
-    "BOS-RENT-00",
-    "BOS-RENT-P1",
+    "CAM-ALG-00",
+    "CAM-DEP-00",
+    "CAM-FEE-00",
+    "CAM-RENT-00",
     "MA-JUST-00",
     "MA-RENT-00",
     "MA-RENT-P1"
    ],
-   "unknown_facts": [
-    "DND funding / Inclusionary Development Policy status (Boston Fair Chance policy coverage)"
-   ],
-   "notes": "postal_city \"Brighton\" resolved to legal city Boston; units inferred from use_description (\"APT 7-30 UNITS\") – inference, not a data field; results relying on it are marked"
+   "unknown_facts": [],
+   "notes": null
   }
  ]
 }

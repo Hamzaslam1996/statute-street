@@ -1,0 +1,2821 @@
+{
+ "before": "2025-12-31",
+ "after": "2026-01-02",
+ "addresses_changed": 250,
+ "transitions": {
+  "not_yet_effective -> applies": 250,
+  "not_yet_effective -> unknown": 80
+ },
+ "changes": {
+  "A0001": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0004": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0005": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0007": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0014": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0016": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0018": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0019": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0021": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0022": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0023": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0025": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0027": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0030": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0031": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0033": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0035": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0037": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0038": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0041": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0045": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0050": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0055": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0058": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0060": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0061": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0062": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0066": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0067": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0069": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0072": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0074": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0079": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0080": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0081": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0084": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0085": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0088": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0091": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0092": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0094": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0097": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0100": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0103": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0105": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0106": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0107": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0109": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0111": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0112": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0113": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0114": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0115": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0117": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0121": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0122": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0126": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0127": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0133": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0135": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0138": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0141": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0142": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0145": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0147": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0150": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0152": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0153": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0154": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0156": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0157": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0158": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0162": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0164": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0165": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0167": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0170": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0172": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0173": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0178": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0179": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0180": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0183": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0184": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0188": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0189": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0192": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0193": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0196": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0197": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0200": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0201": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0202": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0205": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0206": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0207": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0210": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0212": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0213": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0215": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0216": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0219": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0222": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0224": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0225": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0228": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0229": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0231": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0234": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0235": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0236": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0237": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0238": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0239": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0240": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0246": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0247": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0248": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0251": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0252": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0253": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0255": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0257": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0259": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0260": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0262": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0263": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0267": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0268": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0271": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0273": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0274": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0275": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0276": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0277": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0278": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0280": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0281": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0282": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0283": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0285": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0289": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0293": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0303": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0304": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0305": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0309": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0314": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0315": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0316": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0317": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0318": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0319": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0322": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0323": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0324": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0327": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0328": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0330": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0333": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0334": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0335": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0340": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0341": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0345": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0346": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0347": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0349": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0351": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0353": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0355": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0357": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0363": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0364": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0365": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0367": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0368": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0369": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0370": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0373": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0374": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0375": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0378": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0379": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0382": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0383": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0384": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0385": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0386": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0387": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0391": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0392": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0395": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0396": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0397": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0398": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0401": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0402": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0405": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0407": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0408": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0409": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0411": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0413": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0414": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0417": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0419": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0420": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0421": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0425": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0426": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0427": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0430": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0431": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0432": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0433": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0434": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0437": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0439": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0440": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0441": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0442": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0443": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0445": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0451": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0452": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0454": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0456": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0457": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0458": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0461": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0469": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0470": [
+   {
+    "team_rule_id": "r-0001",
+    "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "effective date only known as 2026-01; query date 2026-01-02 falls inside it"
+   },
+   {
+    "team_rule_id": "r-0005",
+    "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+    "before": "not_yet_effective",
+    "after": "unknown",
+    "explanation_after": "Unknown: year built missing from county records"
+   },
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0474": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0477": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0478": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0479": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0480": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0481": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0483": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0484": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0486": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0487": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0492": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0493": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0494": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0496": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0497": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0499": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ],
+  "A0500": [
+   {
+    "team_rule_id": "r-0013",
+    "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+    "before": "not_yet_effective",
+    "after": "applies",
+    "explanation_after": "covers all residential rentals in CA"
+   }
+  ]
+ }
+}

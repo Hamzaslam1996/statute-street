@@ -767,9 +767,9 @@
    "max_units": null,
    "owner_type": null,
    "tenancy_months": null,
-   "other": "All rental accommodations subject to c.151B (owner-occupied two-family exemptions in c.151B § 4(6)/(11) not quoted)"
+   "other": "All rental accommodations; § 4(10) has no owner-occupancy or unit-count exemption"
   },
-  "exemptions": "Owner-occupied two-family dwellings for certain provisions (M.G.L. c.151B, § 4(6)) – not quoted",
+  "exemptions": null,
   "effective_date": null,
   "enacted_date": null,
   "sunset_date": null,
@@ -802,7 +802,7 @@
    }
   ],
   "verifier": "AI-draft",
-  "notes": "effective_date null: long-standing statute. 803 CMR 5 (CORI in housing) could not be captured (mass.gov 403) and is not recorded as a separate rule."
+  "notes": "effective_date null: long-standing statute. 803 CMR 5 (CORI in housing) could not be captured (mass.gov 403) and is not recorded as a separate rule. Adjudicated after comparison (Hamza, 2026-10-04): the owner-occupied two-family proviso is in § 4(7) and § 4(11)(3) only; § 4(10) has none, so the rule applies to every MA rental address."
  },
  {
   "gold_id": "NJ-DEP-01",
