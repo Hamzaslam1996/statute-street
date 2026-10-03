@@ -389,7 +389,7 @@ def evaluate_coverage(rule: dict, cov: dict | None, facts: dict, as_of: date) ->
         if ok is False:
             return "exclude", why, [], []
         if ok is None:
-            src = (t.get("source_text") or "").strip()[:80]
+            src = (t.get("source_text") or "").strip()[:80].rstrip(".;,")
             if kind == "timing":
                 assumptions.append(f"protection begins per the timing condition: {src}")
                 continue
