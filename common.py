@@ -281,8 +281,12 @@ def sections_match(cite_a: str, cite_b: str) -> bool:
     return False
 
 
+_ORDINANCE_NO = re.compile(r"^[a-z]{1,2}-\d+(-\d+)?$")   # 'ns-3090', 'o-21955', 'b-781': an instrument, not a section
+
+
 def has_sections(cite: str) -> bool:
-    return bool(citation_sections(cite))
+    """Does the citation point at a specific code section (as opposed to just naming an ordinance)?"""
+    return any(not _ORDINANCE_NO.match(t) for tup in citation_sections(cite) for t in tup)
 
 
 def normalise_citation(cite: str) -> str:

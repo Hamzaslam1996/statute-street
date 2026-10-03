@@ -221,7 +221,8 @@ def dedupe(records: list[dict]) -> tuple[list[dict], list[dict]]:
     merge is logged. A proposal is always folded into the enacted version.
     Returns (kept, merge_log_rows).
     """
-    order = sorted(records, key=lambda r: (r["_rank"], r["status"] not in ENACTED,
+    # Enacted law always outranks a proposal, whatever the source; then best source, then confidence.
+    order = sorted(records, key=lambda r: (r["status"] not in ENACTED, r["_rank"],
                                            -(r["confidence"] or 0)))
     buckets: dict[tuple, list[dict]] = {}
     log = []

@@ -113,8 +113,11 @@ def main() -> int:
 
     # Our own negative findings ("no rule at this level") are scored against the
     # gold negative findings by jurisdiction + category, separately from real rules.
+    # A failed or pending MEASURE (ballot question, home-rule petition) is flagged
+    # negative_finding by our rules but is a real instrument, so it may match either
+    # a gold rule or a gold negative finding. Derived "no rule" records only match negatives.
     ours_neg = [o for o in ours if o.get("negative_finding")]
-    ours = [o for o in ours if not o.get("negative_finding")]
+    ours = [o for o in ours if not o.get("negative_finding") or o.get("status") in ("failed", "pending")]
     neg_found, neg_missed, used = [], [], set()
     for g in scope_neg:
         cands = [o for o in ours_neg

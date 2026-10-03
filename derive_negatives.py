@@ -53,6 +53,10 @@ ENACTED = ("in_force", "not_yet_effective")
 LOCAL_RE = re.compile(r"\b(local|municipal\w*|city|cities|town|towns|county|counties)\b", re.I)
 BAR_RE = re.compile(r"\b(bar|bars|barred|prohibit\w*|pre-?empt\w*|may not (enact|adopt)|shall not (enact|adopt)|"
                     r"no (city|town|municipality)|supersede\w*)\b", re.I)
+# Sentences that say a law does NOT bar local rules ("no stated preemption", "does not preempt",
+# "local ordinances are not addressed"). Written so that "No city or town may enact" still counts.
+NEGATED_RE = re.compile(r"\b(no (stated|express|explicit)? ?pre-?emption|not pre-?empt\w*|does not|do not|"
+                        r"not addressed|not stated|without pre-?empt\w*|silent on)\b", re.I)
 
 
 def rule_text(r: dict) -> str:
@@ -60,13 +64,20 @@ def rule_text(r: dict) -> str:
 
 
 def find_preempting_state_rule(rules: list[dict], state: str, category: str) -> dict | None:
-    """A state-level record in the same category whose text says it bars local rules."""
+    """
+    A state-level record in the same category, already in force, with a sentence
+    that both mentions local government and bars/pre-empts it (e.g. "No city or
+    town may enact ... rent control"). A law that is not yet in force cannot bar
+    anything today, so not_yet_effective rules do not count.
+    """
     cands = [r for r in rules
-             if r["jurisdiction"] == state and r["category"] == category and r["status"] in ENACTED]
+             if r["jurisdiction"] == state and r["category"] == category and r["status"] == "in_force"]
     for r in cands:
-        t = rule_text(r)
-        if LOCAL_RE.search(t) and BAR_RE.search(t):
-            return r
+        for sentence in re.split(r"(?<=[.;])\s+", rule_text(r)):
+            if NEGATED_RE.search(sentence):
+                continue  # "no stated preemption of local rules" is the opposite of a bar
+            if LOCAL_RE.search(sentence) and BAR_RE.search(sentence):
+                return r
     return None
 
 
