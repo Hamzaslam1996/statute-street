@@ -1,0 +1,4 @@
+timestamp,doc_id,chunk,model,attempt,input_tokens,output_tokens,cache_read_tokens,cost_usd,seconds,n_rules,stop_reason,request_id
+2026-10-03T20:09:40+00:00,D024,1/1,claude-sonnet-5-5,1,8359,1601,0,0.0327,14.4,1,end_turn,req_011Cffuj7adFLTccHSKMDHVb
+2026-10-03T20:09:46+00:00,D063,1/1,claude-sonnet-5-5,1,8115,655,0,0.0228,6.2,1,end_turn,req_011CffukAdD1tNiBTmbnC363
+2026-10-03T20:10:00+00:00,D069,1/1,claude-sonnet-5-5,1,6281,1960,0,0.0322,14.1,1,end_turn,req_011Cffukd8utXk5L9dXkid8h

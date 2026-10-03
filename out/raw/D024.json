@@ -1,0 +1,39 @@
+{
+  "doc_id": "D024",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:09:40+00:00",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12",
+  "retrieved": "2026-10-01 22:35 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "California Civil Code § 1947.12 (as added by SB 567, 2023), the statewide residential rent increase cap (Tenant Protection Act), operative April 1, 2024 and repealed January 1, 2030.",
+  "rules": [
+    {
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "California statewide rent cap (Tenant Protection Act, Civ. Code § 1947.12)",
+      "requirement": "An owner may not raise the gross rental rate over any 12-month period by more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower, measured from the lowest gross rental rate charged in the prior 12 months. No more than two increments are allowed in 12 months for the same tenant, and notice must be given under Civ. Code § 827.",
+      "key_value": "5% + CPI change, max 10% (whichever is lower), in any 12-month period; max two increments per 12 months",
+      "coverage_conditions": "Applies to residential real property (any dwelling or unit intended for human habitation, including units in mobilehome parks). Does not apply to housing issued a certificate of occupancy within the previous 15 years (unless a mobilehome). A new tenancy in which no prior tenant remains in lawful possession may be set at an initial rent not subject to the cap. Does not apply to a homeowner of a mobilehome.",
+      "exemptions": "Deed-restricted or subsidized affordable housing; dormitories of higher education or K-12 schools; housing under local rent/price control that limits annual increases to less than the state cap; housing with a certificate of occupancy issued within the previous 15 years (not mobilehomes); separately alienable property (e.g. single-family homes/condos) if the owner is not a REIT, corporation, or LLC with a corporate member (or mobilehome park management) and the tenant received the required written exemption notice; duplexes where the owner occupies one unit as principal residence (neither unit an ADU/JADU).",
+      "interaction": "Does not apply where a public entity's valid local rent or price control (consistent with Civ. Code ch. 2.7, § 1954.50 et seq.) restricts annual increases to less than the state cap. The section does not expand or limit local authority to adopt rent controls consistent with ch. 2.7 and does not authorize local limits not otherwise permissible under that chapter.",
+      "effective_date": "2024-04-01",
+      "citation": "Cal. Civ. Code § 1947.12",
+      "quoted_span": "an owner of residential real property shall not, over the course of any 12-month period, increase the gross rental rate for a dwelling or a unit more than 5 percent plus the percentage change in the cost of living, or 10 percent, whichever is lower",
+      "confidence": 0.95,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "This version (SB 567, Stats. 2023, Ch. 290) was effective January 1, 2024 and operative April 1, 2024 by its own provisions (subd. (n)); it is repealed as of January 1, 2030 (subd. (o)). The rent cap has applied to rent increases since March 15, 2019 (subd. (h)) and, for mobilehome tenancies, since February 18, 2021 (subd. (i)). Violators face civil liability including up to treble damages for willful violations (subd. (k)). A Legislative Analyst's Office report is due by January 1, 2030."
+    }
+  ],
+  "usage": {
+    "input_tokens": 8359,
+    "output_tokens": 1601,
+    "cost_usd": 0.0327,
+    "seconds": 14.4
+  },
+  "errors": []
+}

@@ -1,0 +1,39 @@
+{
+  "doc_id": "D069",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:10:00+00:00",
+  "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
+  "retrieved": "2026-10-01 22:56 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "New Jersey P.L. 2026, c.43, the Forbidding the Algorithmic Inflation of Rent (FAIR) Act, which bans algorithmic or software-based rent coordination among residential landlords statewide and was approved July 20, 2026.",
+  "rules": [
+    {
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "algorithmic_rent_setting",
+      "status": "not_yet_effective",
+      "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+      "requirement": "It is unlawful, and a violation of the NJ Antitrust Act, for a rental property owner to pay for or subscribe to a coordinator's services, for a coordinator to facilitate agreements restricting competition, for any person to perform a coordinating function, or for two or more persons to engage in or facilitate parallel pricing coordination. A coordinating function includes using nonpublic data from two or more owners in an algorithm to set or recommend rents, material lease terms or occupancy levels.",
+      "key_value": "Ban on algorithmic coordination of rents, material lease terms and occupancy levels; enforced as an NJ Antitrust Act violation",
+      "coverage_conditions": "Applies to any rental property owner (a person owning, directly or indirectly, one or more rental residential dwelling units) and to any coordinator operating algorithmic revenue management software or an algorithmic device. A residential dwelling unit is a house, apartment, accessory unit or other unit intended as a primary residence in the State.",
+      "exemptions": "Residential dwelling units exclude inpatient medical care, licensed long-term care, and detention or correctional facilities. Not a coordinating function: research, statistical analysis or testing that does not feed into pricing; rent estimates made available to the public at no cost; real estate brokerage databases available on equal terms that do not set or recommend rents or collect competitively sensitive information; and government entities setting or limiting rents through affordability controls. Algorithmic device excludes certain human-analysis spreadsheets without AI and databases that only use an algorithm to query unprocessed data.",
+      "interaction": "Supplements the New Jersey Antitrust Act (P.L.1970, c.73) and does not authorize conduct already unlawful under other law. Section 6(b) bars municipalities from enacting ordinances that conflict with the act, except ordinances explicitly authorized or required by other law. Enforcement uses Antitrust Act sections 6 through 17, and the Attorney General must set up a complaint portal and may adopt rules.",
+      "effective_date": "2027-07-01",
+      "citation": "P.L. 2026, c.43 (N.J.S.A. 56:9-20 to 56:9-26)",
+      "quoted_span": "shall be unlawful and a violation of the “New Jersey Antitrust Act,” P.L.1970,",
+      "confidence": 0.9,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Effective date computed from section 9: the act takes effect on the first day of the twelfth month next following the date of enactment. Enactment was July 20, 2026, so August 2026 is the first month following and July 2027 is the twelfth, giving 2027-07-01. The query date is 2026-10-01, so the act is not yet effective. The document is the official chaptered text (first reprint of A3497). Statutory codification is given as C.56:9-20 to 56:9-26."
+    }
+  ],
+  "usage": {
+    "input_tokens": 6281,
+    "output_tokens": 1960,
+    "cost_usd": 0.0322,
+    "seconds": 14.1
+  },
+  "errors": []
+}

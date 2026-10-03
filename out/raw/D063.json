@@ -1,0 +1,39 @@
+{
+  "doc_id": "D063",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:09:46+00:00",
+  "source_url": "https://law.justia.com/codes/new-jersey/title-46/section-46-8-21-2/",
+  "retrieved": "2026-10-03 18:49 UTC",
+  "source_type": "secondary (law firm / news / mirror)",
+  "n_chunks": 1,
+  "document_summary": "Justia mirror of N.J.S.A. 46:8-21.2 (2025), the New Jersey statute limiting residential security deposits to 1.5 months' rent and capping annual increases in additional security at 10% of the current deposit.",
+  "rules": [
+    {
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Limitation on amount of security deposit (N.J.S.A. 46:8-21.2)",
+      "requirement": "An owner or lessee may not require a security deposit of more than 1.5 times one month's rent for residential dwelling property. Any additional security collected from a tenant in a year may not exceed 10 percent of the current security deposit.",
+      "key_value": "1.5 months' rent maximum; additional annual security max 10% of current deposit",
+      "coverage_conditions": "Real property used for dwelling purposes; applies to owners or lessees collecting security from a tenant.",
+      "exemptions": null,
+      "interaction": "State-wide rule; the document does not discuss municipal interaction.",
+      "effective_date": "2003",
+      "citation": "N.J.S.A. 46:8-21.2",
+      "quoted_span": "An owner or lessee may not require more than a sum equal to 1 1/2 times 1 month's rental according to the terms of contract, lease, or agreement as a security for the use or rental of real property used for dwelling purposes.",
+      "confidence": 0.88,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Original statute L.1971, c.223, s.4; amended by L.2003, c.188, s.5. Effective date set to 2003 as the year of the most recent amendment shown; the exact effective date of the current text is not given in the document. The document is a Justia mirror (secondary source) and carries a disclaimer that it may not be the most current version. Exemptions (e.g., owner-occupied buildings with two or fewer units under the Security Deposit Act) are not stated in this section and are not extracted."
+    }
+  ],
+  "usage": {
+    "input_tokens": 8115,
+    "output_tokens": 655,
+    "cost_usd": 0.0228,
+    "seconds": 6.2
+  },
+  "errors": []
+}
