@@ -163,7 +163,25 @@ Agreement figures measure our engine against an independently built key that
 applies the same reviewed legal rulings; they test faithful implementation, not
 legal correctness beyond those rulings. The organisers' hidden key is the real
 test. Across the whole sample (500 addresses, 5,298 rule rows) the unknown rate
-is 27.3% and 2,081 rows rest on a presumption ("Applies unless …").
+is 31.2% and 1,919 rows rest on a presumption ("Applies unless …") after
+rulings_09 made owner-type exceptions unknown; the three keys were built before
+that ruling and the gold session is re-adjudicating the affected rows (Berkeley
+just-cause, deposit-interest and Fair Chance rows, and the LA / San Diego
+state-just-cause precedence rows).
+
+## Evidence basis
+
+Organiser ruling (Discord, 4 Oct 2026): self-saved link-only texts may be used for
+research but do not count toward the citation metric, which is based on the
+supplied, verifiable corpus text (`corpus/text/D###.txt`). Every rule therefore
+carries `evidence_basis`: `supplied_corpus` when its primary quote is from a
+starter-pack document, `link_only_capture` when only our single-page capture of
+a link-only source supports it, `manual_primary` when only a hand-saved page
+does. Wherever a supplied-corpus document supports a rule it is the primary
+evidence (URL, citation and verified quote); our own captures are supporting
+documents in `rules_full.json` and the audit trail (`out/evidence_log.csv`,
+`out/evidence_report.md`). Rules with no supplied-corpus text are kept, the law
+being real and verified, with the official manifest URL as `source_url`.
 
 After the duplicate-rule fold of rulings_08 the three keys were re-scored as a
 regression check (nothing moved); that was a check that the dedupe changed no

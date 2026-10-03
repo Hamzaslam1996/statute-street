@@ -169,7 +169,11 @@ def build_record(raw: dict, doc: Doc, query: date) -> dict:
         "effective_date": eff,
         "citation": raw.get("citation"),
         "source_doc_id": doc.doc_id,
-        "source_url": doc.source_url,
+        # The manifest URL is the citable source; where our single-page capture came from a
+        # different address (e.g. the official PDF behind a publisher's TOC page) it is kept too.
+        "source_url": doc.manifest.get("url") or doc.source_url,
+        **({"capture_url": doc.source_url} if doc.manifest.get("url") and doc.source_url
+           and doc.source_url.split(" ")[0] != doc.manifest["url"] else {}),
         "quoted_span": raw.get("quoted_span"),
         "confidence": confidence,
         "conflict_flag": bool(raw.get("conflict_flag")) or bool(note),
@@ -240,7 +244,9 @@ def dedupe(records: list[dict]) -> tuple[list[dict], list[dict]]:
             r.setdefault("supporting_doc_ids", [])
             kept_here.append(r)
             continue
-        # fold r into target
+        # fold r into target, keeping r's evidence for the evidence-basis pass
+        target.setdefault("_folded", []).append(evidence_of(r))
+        target["_folded"] += r.get("_folded", [])
         if r["status"] == "pending" and target["status"] in ENACTED:
             reason += "; proposal folded into enacted rule"
             note = f"Proposal ({r['citation']}, {r['source_doc_id']}) adopted as {target['citation']}."
@@ -314,6 +320,8 @@ def apply_dedupe_overrides(kept: list[dict]) -> tuple[list[dict], list[dict]]:
                   f"{'source' if not src else 'target'} not found", file=sys.stderr)
             continue
         s, t = src[0], tgt[0]
+        t.setdefault("_folded", []).append(evidence_of(s))
+        t["_folded"] += s.get("_folded", [])
         for d in [s["source_doc_id"], *s.get("supporting_doc_ids", [])]:
             if d != t["source_doc_id"] and d not in t["supporting_doc_ids"]:
                 t["supporting_doc_ids"].append(d)
@@ -328,6 +336,72 @@ def apply_dedupe_overrides(kept: list[dict]) -> tuple[list[dict], list[dict]]:
         log.append({"kept_doc": t["source_doc_id"], "kept_citation": t["citation"], "dropped_doc": s["source_doc_id"],
                     "dropped_citation": s["citation"], "dropped_status": s["status"], "jurisdiction": s["jurisdiction"],
                     "category": s["category"], "reason": f"reviewer fold ({ov['reviewer']}): {ov['reason']}"})
+    return kept, log
+
+
+def evidence_of(r: dict) -> dict:
+    """The evidence a record carries: where its verified quote came from."""
+    return {k: r.get(k) for k in ("source_doc_id", "source_url", "capture_url", "citation", "quoted_span",
+                                  "retrieved_at", "status", "_rank")}
+
+
+def evidence_basis(doc: Doc) -> str:
+    """Organiser ruling (Discord, 4 Oct): only the starter pack's corpus/text counts toward the citation metric."""
+    if not doc.supplementary:
+        return "supplied_corpus"
+    return "manual_primary" if doc.doc_id.startswith("M_") else "link_only_capture"
+
+
+def prefer_supplied_corpus(kept: list[dict], docs: dict) -> tuple[list[dict], list[dict]]:
+    """
+    rulings_10: make a supplied-corpus document the primary evidence whenever one supports the
+    rule. Order of preference: (1) an enacted folded duplicate extracted from a starter-pack text
+    (its verified quote, citation and URL take over; the former primary becomes a supporting doc);
+    (2) the kept quote itself is an exact passage of some starter-pack text (re-sourced to it).
+    Proposal texts (pending) never replace an enacted rule's evidence. Every record gets
+    `evidence_basis`. Returns (kept, log rows).
+    """
+    starter_norm = {d.doc_id: normalise(d.body) for d in docs.values() if not d.supplementary}
+    log = []
+    for r in kept:
+        doc = docs.get(r["source_doc_id"])
+        before = r["source_doc_id"]
+        how = "primary already from supplied corpus" if doc and not doc.supplementary else None
+        if how is None:
+            cands = [f for f in r.get("_folded", []) if f.get("source_doc_id") in starter_norm
+                     and (f.get("status") in ENACTED or r["status"] not in ENACTED)]
+            cands.sort(key=lambda f: (f.get("_rank") or 9))
+            if cands:
+                f = cands[0]
+                old = {k: r.get(k) for k in ("source_doc_id", "source_url", "capture_url", "citation", "quoted_span", "retrieved_at")}
+                for k in ("source_doc_id", "source_url", "citation", "quoted_span", "retrieved_at"):
+                    r[k] = f.get(k)
+                r.pop("capture_url", None)
+                if old["source_doc_id"] not in r["supporting_doc_ids"]:
+                    r["supporting_doc_ids"].insert(0, old["source_doc_id"])
+                r["supporting_doc_ids"] = [d for d in r["supporting_doc_ids"] if d != r["source_doc_id"]]
+                r["notes"] = (f"{r.get('notes') or ''} Primary evidence is the supplied corpus text {f['source_doc_id']}; "
+                              f"{old['source_doc_id']} (cited as {old['citation']}) is kept as a supporting document.").strip()
+                how = f"switched to folded corpus record {f['source_doc_id']}"
+            else:
+                span = normalise(r.get("quoted_span") or "")
+                hits = [d for d, body in starter_norm.items() if span and span in body]
+                if hits:
+                    d = docs[hits[0]]
+                    if before not in r["supporting_doc_ids"]:
+                        r["supporting_doc_ids"].insert(0, before)
+                    r["source_doc_id"], r["source_url"], r["retrieved_at"] = d.doc_id, d.manifest.get("url") or d.source_url, d.retrieved_date
+                    r.pop("capture_url", None)
+                    r["notes"] = f"{r.get('notes') or ''} The quoted passage also appears verbatim in supplied corpus text {d.doc_id}, which is cited as primary.".strip()
+                    how = f"quote found verbatim in corpus doc {d.doc_id}"
+                else:
+                    only = [f["source_doc_id"] for f in r.get("_folded", []) if f.get("source_doc_id") in starter_norm]
+                    how = ("no supplied-corpus text supports this rule" if not only
+                           else f"supplied corpus has only a proposal/non-enacted text ({', '.join(only)}); kept primary")
+        r["evidence_basis"] = evidence_basis(docs[r["source_doc_id"]])
+        log.append({"team_rule_id": None, "jurisdiction": r["jurisdiction"], "category": r["category"],
+                    "citation": r["citation"], "primary_before": before, "primary_after": r["source_doc_id"],
+                    "evidence_basis": r["evidence_basis"], "how": how})
     return kept, log
 
 
@@ -421,6 +495,7 @@ def main() -> int:
     kept, merge_log = dedupe(candidates)
     kept, override_log = apply_dedupe_overrides(kept)
     merge_log += override_log
+    kept, evidence_log = prefer_supplied_corpus(kept, docs)
     with open(DEDUPE_CSV, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["kept_doc", "kept_citation", "dropped_doc", "dropped_citation",
                                           "dropped_status", "jurisdiction", "category", "reason"])
@@ -445,7 +520,13 @@ def main() -> int:
     final = []
     for i, rec in enumerate(kept, start=1):
         rec.pop("_rank", None)
+        rec.pop("_folded", None)
         rec["team_rule_id"] = f"r-{i:04d}"
+        for row in evidence_log:
+            if row["team_rule_id"] is None and row["citation"] == rec["citation"] and row["jurisdiction"] == rec["jurisdiction"] \
+                    and row["category"] == rec["category"]:
+                row["team_rule_id"] = rec["team_rule_id"]
+                break
         errors = sorted(validator.iter_errors(rec), key=lambda e: list(e.path))
         if errors:
             counts["dropped_schema"] += 1
@@ -465,6 +546,27 @@ def main() -> int:
         w.writerows(log_rows)
     counts["final_rules"] = len(final)
     counts["query_date"] = args.query_date
+    # Evidence-basis audit (rulings_10)
+    with open(OUT / "evidence_log.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=["team_rule_id", "jurisdiction", "category", "citation", "primary_before",
+                                          "primary_after", "evidence_basis", "how"])
+        w.writeheader(); w.writerows(evidence_log)
+    basis_counts = {}
+    for r in final:
+        basis_counts[r["evidence_basis"]] = basis_counts.get(r["evidence_basis"], 0) + 1
+    switched = [row for row in evidence_log if row["primary_before"] != row["primary_after"]]
+    non_corpus = [r for r in final if r["evidence_basis"] != "supplied_corpus"]
+    rep = ["# Evidence basis (rulings_10)", "",
+           "Organiser ruling (Discord, 4 Oct): self-saved link-only texts may be used for research but do not count "
+           "toward the citation metric; the metric is based on the supplied corpus text.", "",
+           "| evidence_basis | rules |", "|---|---|"] + [f"| {k} | {v} |" for k, v in sorted(basis_counts.items())]
+    rep += ["", f"Primaries switched to a supplied-corpus document: {len(switched)}", ""]
+    rep += [f"- {row['team_rule_id']} {row['jurisdiction']} / {row['category']}: {row['primary_before']} -> {row['primary_after']} ({row['how']})" for row in switched]
+    rep += ["", f"Rules whose only verified quote is NOT from the supplied corpus: {len(non_corpus)}", ""]
+    rep += [f"- {r['team_rule_id']} [{r['evidence_basis']}] {r['jurisdiction']} / {r['category']}: {r['citation'][:60]} (doc {r['source_doc_id']})" for r in non_corpus]
+    (OUT / "evidence_report.md").write_text("\n".join(rep) + "\n", encoding="utf-8")
+    counts["evidence_basis"] = basis_counts
+    print(f"Evidence basis: {basis_counts}; {len(switched)} primaries switched to supplied corpus -> evidence_report.md")
     attempted = counts["raw_records"]
     counts["span_pass_rate_first_attempt"] = round(counts["span_pass"] / attempted, 3) if attempted else None
     SUMMARY_JSON.write_text(json.dumps(counts, indent=2), encoding="utf-8")

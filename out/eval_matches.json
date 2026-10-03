@@ -247,13 +247,12 @@
    "D010",
    "D012"
   ],
-  "our_doc": "M_BOS-SCRN-02_boston_fair_chance_policy_2017",
+  "our_doc": "D010",
   "our_title": "Boston Fair Chance Tenant Selection Policy (criminal history)",
   "our_supporting": [
-   "D010",
    "M_BOS-SCRN-02_boston_fair_chance_policy_2017"
   ],
-  "our_notes": "Effective date null: the page footer shows only 'February 2017' as the policy date, with no stated effective or operative date. Official policy/guidance document, not an ordinance; applies via funding or land conditions."
+  "our_notes": "Effective date null: the page footer shows only 'February 2017' as the policy date, with no stated effective or operative date. Official policy/guidance document, not an ordinance; applies via funding or land conditions. Primary evidence is the supplied corpus text D010; M_BOS-SCRN-02_boston_fair_chance_policy_2017 (cited as Boston DND Fair Chance Tenant Selection Policy (Feb. 2017)) is kept as a supporting document."
  },
  {
   "gold_id": "BERK-RENT-01",

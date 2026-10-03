@@ -11,5 +11,10 @@
   "retries": 0,
   "final_rules": 64,
   "query_date": "2026-10-01",
+  "evidence_basis": {
+    "supplied_corpus": 47,
+    "link_only_capture": 12,
+    "manual_primary": 5
+  },
   "span_pass_rate_first_attempt": 1.0
 }
