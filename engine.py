@@ -59,11 +59,18 @@ PREEMPT_RE = re.compile(r"\b(pre-?empt\w*|conflict\w* (with|municipal)|municipal
 # Address facts
 # ---------------------------------------------------------------------------
 def building_type(use_code: str, use_description: str) -> str | None:
-    """Map assessor wording to a coarse type the coverage tests understand."""
+    """
+    Map assessor wording to a coarse type the coverage tests understand. The sample's
+    descriptions: LA "Five or more apartments", SANDAG "(5+ units)", Alameda "(5+ units)",
+    SF "Apartment 5 to 14 Units" / "Flats 5 to 14 units" / "Flat & Store", Cambridge
+    "4-8-UNIT-APT" / ">8-UNIT-APT", Boston "APT 7-30 UNITS" / "LUXURY APARTMENT" /
+    "SUBSD HOUSING S- 8", NJ class 4C (apartments) with MOD-IV codes like "3S-B-A-13U-H".
+    """
     d = (use_description or "").lower()
     c = (use_code or "").upper()
-    if "apartment" in d or "five or more" in d or "multi" in d or c.startswith("4C") or c.startswith("A/") \
-            or re.match(r"^\d+ ?units?$", d) or "residential income" in d or "dwelling units" in d:
+    if ("apartment" in d or "apt" in d or "five or more" in d or "5+ units" in d or "multi" in d
+            or "flat" in d or "subsd housing" in d or "class 4c" in d or c.startswith("4C") or c.startswith("A/")
+            or re.search(r"\d\s*(?:to\s*\d+\s*)?units?", d) or "residential income" in d or "dwelling units" in d):
         return "apartments"
     if "condo" in d:
         return "condo"
@@ -90,6 +97,9 @@ def address_facts(row: dict, juris: dict) -> dict:
         "year_built": num(row.get("year_built")),
         "units": num(row.get("units")),
         "building_type": building_type(row.get("use_code"), row.get("use_description")),
+        # Funding is only visible when the assessor says so (Boston "SUBSD HOUSING S- 8",
+        # NJ "...-AFFORDABL"); otherwise unknown, never assumed market-rate.
+        "funding": "subsidized" if re.search(r"subsd|s- ?8|section 8|affordabl", (row.get("use_description") or ""), re.I) else None,
         "use_description": row.get("use_description"),
     }
 
@@ -177,7 +187,9 @@ def run_test(test: dict, facts: dict, as_of: date) -> tuple[bool | None, str]:
         else:
             cutoff_year = as_of.year - int(float(value))
             label = f"{int(float(value))}-year certificate-of-occupancy window (built before {cutoff_year})"
-        older_ok = op in ("<", "<=")          # rule covers OLDER buildings (built before the cutoff)
+        # Which side does the rule cover? coo_date <= 1979-06-13 covers OLDER buildings;
+        # coo_age_years >= 15 ("certificate at least 15 years old") also covers OLDER buildings.
+        older_ok = op in ("<", "<=") if field == "coo_date" else op in (">", ">=")
         if yb == cutoff_year:
             return None, f"built {yb}, the cutoff year itself: year built is not the certificate date"
         is_older = yb < cutoff_year
@@ -193,6 +205,17 @@ def run_test(test: dict, facts: dict, as_of: date) -> tuple[bool | None, str]:
             return None, f"building type unclear from assessor description '{facts.get('use_description')}'"
         return compare(btype, op, value), f"assessor type {btype}"
 
+    if field == "funding" and facts.get("funding") == "subsidized":
+        # The assessor says the building is subsidised. Test values are free text
+        # ("deed_restricted", "public_housing", "market_rate"); map them to our two categories.
+        def canon(v):
+            v = str(v).lower()
+            return "subsidized" if re.search(r"subsid|afford|deed|public|section|government|regulated", v) else \
+                   "market_rate" if "market" in v else v
+        vals = [canon(v) for v in value] if isinstance(value, list) else canon(value)
+        ok = compare("subsidized", op, vals)
+        return ok, f"assessor marks the building as subsidised housing ('{facts.get('use_description')}')"
+
     # owner_type, tenancy_months, funding, other: not in the data
     d = test.get("defeated_if")
     if d:
@@ -205,6 +228,8 @@ def run_test(test: dict, facts: dict, as_of: date) -> tuple[bool | None, str]:
 def evaluate_coverage(rule: dict, cov: dict | None, facts: dict, as_of: date) -> tuple[str, str]:
     """-> ('applies' | 'unknown' | 'exclude', explanation)."""
     tests = (cov or {}).get("tests") or []
+    if (cov or {}).get("coverage_incomplete"):
+        return "unknown", "Unknown: who the ordinance covers is defined in text not in the corpus"
     if not tests:
         return "applies", f"covers all residential rentals in {rule['jurisdiction']}"
     reasons_true, reasons_unknown = [], []
@@ -250,7 +275,8 @@ def evaluate_address(facts: dict, rules: list[dict], coverage: dict, as_of: date
             if not YIELDS_RE.search(s["_rule"].get("interaction") or ""):
                 continue
             for loc in locals_:
-                if loc["result"] == "applies" and s["result"] == "applies":
+                if loc["result"] == "applies":
+                    # A stricter local rule governs, whatever the state rule's own answer was.
                     s["result"] = "superseded"
                     s["explanation"] = f"Stricter local rule {loc['team_rule_id']} ({loc['_rule']['title'][:50]}) governs here"
                 elif loc["result"] == "unknown" and s["result"] == "applies":

@@ -247,6 +247,12 @@ def dedupe(records: list[dict]) -> tuple[list[dict], list[dict]]:
             target["notes"] = f"{target['notes'] or ''} {note}".strip()
         if r["source_doc_id"] not in target["supporting_doc_ids"]:
             target["supporting_doc_ids"].append(r["source_doc_id"])
+        # Keep coverage knowledge from the folded record: a rate notice says little about
+        # who is covered, while the folded ordinance summary may carry the COO cutoff.
+        for fld in ("coverage_conditions", "exemptions"):
+            extra = (r.get(fld) or "").strip()
+            if extra and extra.lower() not in (target.get(fld) or "").lower():
+                target[fld] = f"{target.get(fld) or ''} | [{r['source_doc_id']}] {extra}".strip(" |")
         log.append({"kept_doc": target["source_doc_id"], "kept_citation": target["citation"],
                     "dropped_doc": r["source_doc_id"], "dropped_citation": r["citation"],
                     "dropped_status": r["status"], "jurisdiction": r["jurisdiction"],

@@ -83,9 +83,13 @@ SCHEMA = {
         },
         "applies_to_all_residential": {"type": "boolean",
                                        "description": "true if the rule covers every residential rental in the jurisdiction with no building-level limits"},
+        "coverage_incomplete": {"type": "boolean",
+                                "description": "true when the texts say coverage/applicability is defined somewhere NOT in the corpus "
+                                               "(e.g. 'applicability defined elsewhere in the chapter, not in this capture'), so the "
+                                               "engine should answer unknown rather than applies"},
         "notes": {"type": ["string", "null"]},
     },
-    "required": ["tests", "applies_to_all_residential", "notes"],
+    "required": ["tests", "applies_to_all_residential", "coverage_incomplete", "notes"],
     "additionalProperties": False,
 }
 
@@ -93,8 +97,20 @@ SYSTEM = f"""You convert the coverage conditions and exemptions of a rental-hous
 
 The engine knows these facts about an address: year_built (assessor's year, may be missing), units (count, may be missing), building_type from the assessor's use code (apartments, condo, single_family, duplex, mixed), state and city. It does NOT know the owner's identity, the tenancy length, subsidy status, or the certificate-of-occupancy date (year_built is used as a proxy with the cutoff year treated as unknown).
 
-Write tests such that the rule APPLIES to an address only when ALL tests are true. Exemptions become tests that exclude the exempt case (e.g. exemption "housing issued a certificate of occupancy within the previous 15 years" -> field coo_age_years, op >=, value 15). Use coo_date (op <=, ISO date) for fixed certificate cutoffs (e.g. "on or before June 13, 1979" -> value "1979-06-13"). Use year_built only when the text itself speaks of construction year. Use owner_type / tenancy_months / funding tests when the text conditions on them even though the engine will return unknown; it needs them to explain the unknown. A condition the engine cannot express at all -> field other.
-Quote in source_text the exact words each test comes from. Do not invent limits that the text does not state. If the text states no building-level limits, return tests [] and applies_to_all_residential true. The query date is {DEFAULT_QUERY_DATE}.
+Write tests such that the rule APPLIES to an address only when ALL tests are true. Exemptions become tests that exclude the exempt case.
+
+How to express common conditions
+- A cutoff given with a full month/day date ("first built on or before October 1, 1978", "certificate of occupancy after June 13, 1979", "constructed after February 1, 1995") is a certificate-of-occupancy cutoff -> field coo_date, op <= (rule covers buildings up to that date), value the ISO date. A year-only statement ("built before 1995") -> field year_built.
+- "exempt if built / certificate of occupancy within the previous N years" or "new construction exempt for N years" -> field coo_age_years, op >=, value N.
+- Exclusions of hotels, motels, transient occupancy, hospitals, care facilities, dormitories, fraternity houses, religious facilities, shelters -> ONE test field building_type, op not_in, value a list of those categories (an apartment building passes it). Do NOT put these under other.
+- Unit-count thresholds -> field units. Single-family / condo / duplex limits -> building_type.
+- Owner identity, owner occupancy, tenancy length, subsidy / deed restriction -> owner_type / tenancy_months / funding (the engine will say unknown and needs the test to explain why). Where another visible fact makes the exception impossible, set defeated_if (e.g. CA small-landlord deposit exception: units > 4).
+- Read direction carefully: "this includes units that obtained a certificate of occupancy after June 13, 1979" is an INCLUSION (those units ARE covered) and must not become an exclusion test. Only words like "exempt", "does not apply", "not subject", "excluded" create exclusion tests.
+- Do not add a test for a sub-population that another test already excludes (e.g. units exempt under Costa-Hawkins are the new-construction, single-family and condominium units; if those are already tested, no extra tenancy test is needed).
+- NEVER write a test that merely restates that the unit is "covered by / subject to the ordinance" or "a rent-controlled unit" - that is circular. Instead look in the related records below for the ordinance's actual coverage criteria and use those. If none are stated anywhere, give no test for it.
+- Use field other only for a genuine condition none of the fields can carry. If the texts say coverage is defined somewhere not captured in the corpus, set coverage_incomplete true (the engine will answer unknown).
+
+Related records from the same jurisdiction are provided for context. Use a statement from them ONLY when it explicitly describes who is exempt from or covered by THIS rule's category (e.g. a just-cause page saying "units exempt from rent increase limits: those with a certificate of occupancy after June 13, 1979" tells you the rent-limit rule's cutoff). Quote in source_text the exact words each test comes from. Do not invent limits that no text states. If no building-level limits are stated, return tests [] and applies_to_all_residential true. The query date is {DEFAULT_QUERY_DATE}.
 Respond only with JSON."""
 
 
@@ -107,6 +123,7 @@ def rule_key(rule: dict) -> str:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--only", nargs="*", help="redo only these team_rule_ids")
     ap.add_argument("--budget", type=float, default=1.50)
     args = ap.parse_args()
 
@@ -119,18 +136,25 @@ def main() -> int:
             continue  # negative findings never "apply"; no coverage tests needed
         key = rule_key(rule)
         cached = cache.get(rule["team_rule_id"])
-        if cached and cached.get("key") == key:
+        if args.only:
+            if rule["team_rule_id"] not in args.only:
+                continue
+        elif cached and cached.get("key") == key:
             continue
         if spent >= args.budget:
             print("budget reached; stopping", file=sys.stderr)
             break
+        related = [x for x in rules if x["jurisdiction"] == rule["jurisdiction"] and x is not rule
+                   and not x.get("negative_finding")]
         msg = "\n".join([
             f"Rule: {rule['title']}", f"Jurisdiction: {rule['jurisdiction']} ({rule['level']})",
             f"Category: {rule['category']}", f"Requirement: {rule['requirement']}",
             f"Key value: {rule.get('key_value')}", f"Coverage conditions: {rule.get('coverage_conditions')}",
             f"Exemptions: {rule.get('exemptions')}", f"Interaction: {rule.get('interaction')}",
-            f"Notes: {(rule.get('notes') or '')[:800]}",
-        ])
+            f"Notes: {rule.get('notes') or ''}",
+            "", "Related records in the same jurisdiction (context only):",
+        ] + [f"- [{x['category']}] {x['title'][:80]} | coverage: {(x.get('coverage_conditions') or '')[:400]} "
+             f"| exemptions: {(x.get('exemptions') or '')[:300]}" for x in related[:12]])
         resp = client.messages.create(
             model=MODEL, max_tokens=4000, system=SYSTEM,
             messages=[{"role": "user", "content": msg}],
