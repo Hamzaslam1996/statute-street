@@ -138,6 +138,13 @@ failed measure and failed measures are never reported for an address.
 4. CA screening-fee cap: the statute gives $30 adjusted by CPI and no 2026 dollar figure;
    we keep the formula.
 
+## Blind holdout (single run)
+
+`gold/addresses/holdout20.json` (20 addresses, frozen 2026-10-04 04:30 PKT, sha256 verified
+against `holdout20.sha256`) was scored exactly once, at code state `b93d42f`, after Module C was
+complete: exact result agreement 192/192 = 100.0%, weighted 300/300 = 100.0%. No code, coverage or rule
+change was made in response to the holdout result; the full report is `out/lookup_eval_holdout20.md`.
+
 ## Audit trail notes
 
 - The independent gold key v0.4 (`gold/`, `sources/official/`, D088–D095) was
