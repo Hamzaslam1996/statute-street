@@ -1,7 +1,7 @@
 [
  {
   "gold_id": "SF-JUST-01",
-  "team_rule_id": "r-0061",
+  "team_rule_id": "r-0059",
   "jurisdiction": "San Francisco, CA",
   "category": "just_cause_eviction",
   "gold_citation": "S.F. Admin. Code § 37.9(a)",
@@ -23,7 +23,7 @@
  },
  {
   "gold_id": "SF-DEP-01",
-  "team_rule_id": "r-0064",
+  "team_rule_id": "r-0062",
   "jurisdiction": "San Francisco, CA",
   "category": "security_deposits",
   "gold_citation": "S.F. Admin. Code ch. 49 (§ 49.2)",
@@ -42,7 +42,7 @@
  },
  {
   "gold_id": "SF-ALG-01",
-  "team_rule_id": "r-0060",
+  "team_rule_id": "r-0058",
   "jurisdiction": "San Francisco, CA",
   "category": "algorithmic_rent_setting",
   "gold_citation": "S.F. Admin. Code § 37.10C",
@@ -63,7 +63,7 @@
  },
  {
   "gold_id": "NJ-JUST-01",
-  "team_rule_id": "r-0049",
+  "team_rule_id": "r-0047",
   "jurisdiction": "NJ",
   "category": "just_cause_eviction",
   "gold_citation": "N.J.S.A. 2A:18-61.1",
@@ -85,7 +85,7 @@
  },
  {
   "gold_id": "JC-ALG-01",
-  "team_rule_id": "r-0027",
+  "team_rule_id": "r-0026",
   "jurisdiction": "Jersey City, NJ",
   "category": "algorithmic_rent_setting",
   "gold_citation": "Jersey City Code § 218-12 (Preventing Algorithmic Rent Fixing in the Rental Housing Market), added by Ord. 25-057",
@@ -98,13 +98,14 @@
   "our_doc": "M_JC-ALG-01_Ord_25-057_adopted",
   "our_title": "Preventing Algorithmic Rent-Fixing in the Rental Housing Market (Ord. 25-057, § 218-12)",
   "our_supporting": [
-   "D002"
+   "D002",
+   "D035"
   ],
-  "our_notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Adopted on second and final reading May 21 2025; mayor approved May 22 2025. Ordinance text is internally inconsistent in section naming (Chapter 218 titled 'Multiple Dwellings' vs 'Fees and Charges'); penalties not extracted."
+  "our_notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Adopted on second and final reading May 21 2025; mayor approved May 22 2025. Ordinance text is internally inconsistent in section naming (Chapter 218 titled 'Multiple Dwellings' vs 'Fees and Charges'); penalties not extracted. Folded by reviewer ruling: rulings_07 #2: the Hudson County View article (secondary) reports the same ordinance as the official adopted copy of Ord. 25-057 (Jersey City Code § 218-12). Keep the official record's citation, quote and date."
  },
  {
   "gold_id": "HOB-RENT-01",
-  "team_rule_id": "r-0026",
+  "team_rule_id": "r-0025",
   "jurisdiction": "Hoboken, NJ",
   "category": "rent_increase_limits",
   "gold_citation": "Hoboken Code § 155-5; applicability § 155-2",
@@ -137,9 +138,10 @@
   "our_title": "Algorithmic rent fixing in rental housing market prohibited",
   "our_supporting": [
    "D034",
-   "D002"
+   "D002",
+   "D095"
   ],
-  "our_notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Adopted 7-9-2025 by Ord. No. B-781. Enforcement is by the Division of Housing or an aggrieved private citizen in Municipal Court."
+  "our_notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Adopted 7-9-2025 by Ord. No. B-781. Enforcement is by the Division of Housing or an aggrieved private citizen in Municipal Court. Folded by reviewer ruling: rulings_07 #1: D095 is the May 2025 press release announcing the proposed ordinance that was then enacted as Hoboken Code ch. 158 (Ord. B-781); it is no longer pending. D095 becomes legislative-history support for the enacted rule. No Hoboken address should show a pending algorithmic rule."
  },
  {
   "gold_id": "CA-SCRN-01",
@@ -213,7 +215,7 @@
  },
  {
   "gold_id": "HOB-RENT-02",
-  "team_rule_id": "r-0025",
+  "team_rule_id": "r-0024",
   "jurisdiction": "Hoboken, NJ",
   "category": "rent_increase_limits",
   "gold_citation": "Hoboken Code § 158-1 (Art. I, adopted 4-2-2025 by Ord. No. B-750)",
@@ -280,7 +282,7 @@
  },
  {
   "gold_id": "NWK-SCRN-01",
-  "team_rule_id": "r-0056",
+  "team_rule_id": "r-0054",
   "jurisdiction": "Newark, NJ",
   "category": "screening_restrictions",
   "gold_citation": "Newark Code § 2:31-2 (Ord. 6 PSF-B, 4-15-2015)",
@@ -335,7 +337,7 @@
  },
  {
   "gold_id": "SA-JUST-01",
-  "team_rule_id": "r-0067",
+  "team_rule_id": "r-0064",
   "jurisdiction": "Santa Ana, CA",
   "category": "just_cause_eviction",
   "gold_citation": "Santa Ana Mun. Code (Just Cause Eviction Ordinance, 2021)",
@@ -377,7 +379,7 @@
  },
  {
   "gold_id": "NJ-FEE-01",
-  "team_rule_id": "r-0048",
+  "team_rule_id": "r-0046",
   "jurisdiction": "NJ",
   "category": "application_screening_fees",
   "gold_citation": "N.J.S.A. 46:8-18.1 (P.L.2025, c.405, § 1)",
@@ -415,7 +417,7 @@
  },
  {
   "gold_id": "MA-ALG-P2",
-  "team_rule_id": "r-0035",
+  "team_rule_id": "r-0033",
   "jurisdiction": "MA",
   "category": "algorithmic_rent_setting",
   "gold_citation": "Mass. H.5222 (194th General Court)",
@@ -436,7 +438,7 @@
  },
  {
   "gold_id": "JC-RENT-01",
-  "team_rule_id": "r-0029",
+  "team_rule_id": "r-0027",
   "jurisdiction": "Jersey City, NJ",
   "category": "rent_increase_limits",
   "gold_citation": "Jersey City Code § 260-3",
@@ -478,7 +480,7 @@
  },
  {
   "gold_id": "MA-RENT-P1",
-  "team_rule_id": "r-0040",
+  "team_rule_id": "r-0038",
   "jurisdiction": "MA",
   "category": "rent_increase_limits",
   "gold_citation": "Cella v. Attorney General, SJC-13893 (Mass. June 23, 2026) (Initiative Petition 25-21, 'An Initiative Petition to Protect Tenants by Limiting Rent Increases')",
@@ -516,7 +518,7 @@
  },
  {
   "gold_id": "SA-RENT-01",
-  "team_rule_id": "r-0068",
+  "team_rule_id": "r-0065",
   "jurisdiction": "Santa Ana, CA",
   "category": "rent_increase_limits",
   "gold_citation": "Santa Ana Mun. Code § 8-1998 et seq. (Rent Stabilization Ordinance)",
@@ -538,7 +540,7 @@
  },
  {
   "gold_id": "SF-SCRN-01",
-  "team_rule_id": "r-0063",
+  "team_rule_id": "r-0061",
   "jurisdiction": "San Francisco, CA",
   "category": "screening_restrictions",
   "gold_citation": "S.F. Police Code art. 49 (§§ 4901 et seq.)",
@@ -557,7 +559,7 @@
  },
  {
   "gold_id": "MA-DEP-01",
-  "team_rule_id": "r-0046",
+  "team_rule_id": "r-0044",
   "jurisdiction": "MA",
   "category": "security_deposits",
   "gold_citation": "M.G.L. c.186, § 15B(1)(b)(iii)",
@@ -576,7 +578,7 @@
  },
  {
   "gold_id": "NJ-ALG-01",
-  "team_rule_id": "r-0047",
+  "team_rule_id": "r-0045",
   "jurisdiction": "NJ",
   "category": "algorithmic_rent_setting",
   "gold_citation": "N.J.S.A. 56:9-20 to 56:9-26 (P.L.2026, c.43)",
@@ -597,7 +599,7 @@
  },
  {
   "gold_id": "NJ-SCRN-01",
-  "team_rule_id": "r-0053",
+  "team_rule_id": "r-0051",
   "jurisdiction": "NJ",
   "category": "screening_restrictions",
   "gold_citation": "N.J.S.A. 46:8-55 (P.L.2021, c.110)",
@@ -616,7 +618,7 @@
  },
  {
   "gold_id": "MA-FEE-01",
-  "team_rule_id": "r-0039",
+  "team_rule_id": "r-0037",
   "jurisdiction": "MA",
   "category": "application_screening_fees",
   "gold_citation": "M.G.L. c.186, § 15B(1)(b)",
@@ -700,7 +702,7 @@
  },
  {
   "gold_id": "SD-JUST-01",
-  "team_rule_id": "r-0058",
+  "team_rule_id": "r-0056",
   "jurisdiction": "San Diego, CA",
   "category": "just_cause_eviction",
   "gold_citation": "San Diego Mun. Code § 98.0704 (O-21647 N.S.)",
@@ -721,7 +723,7 @@
  },
  {
   "gold_id": "LA-DEP-01",
-  "team_rule_id": "r-0034",
+  "team_rule_id": "r-0032",
   "jurisdiction": "Los Angeles, CA",
   "category": "security_deposits",
   "gold_citation": "L.A. Mun. Code § 151.06.02 (Payment of Interest on Security Deposits; added by Ord. No. 166,368, eff. 1990-12-06)",
@@ -743,7 +745,7 @@
  },
  {
   "gold_id": "MA-ALG-P1",
-  "team_rule_id": "r-0036",
+  "team_rule_id": "r-0034",
   "jurisdiction": "MA",
   "category": "algorithmic_rent_setting",
   "gold_citation": "Mass. S.2983 (194th General Court)",
@@ -763,7 +765,7 @@
  },
  {
   "gold_id": "LA-JUST-01",
-  "team_rule_id": "r-0030",
+  "team_rule_id": "r-0028",
   "jurisdiction": "Los Angeles, CA",
   "category": "just_cause_eviction",
   "gold_citation": "L.A. Mun. Code § 165.03 (Art. 5.3, Ch. XVI; Ord. No. 187737)",
@@ -783,7 +785,7 @@
  },
  {
   "gold_id": "LA-RENT-01",
-  "team_rule_id": "r-0032",
+  "team_rule_id": "r-0030",
   "jurisdiction": "Los Angeles, CA",
   "category": "rent_increase_limits",
   "gold_citation": "L.A. Mun. Code § 151.06 (as amended by Ord. No. 188795)",

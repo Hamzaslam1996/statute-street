@@ -105,7 +105,7 @@
   "category": "algorithmic_rent_setting",
   "our_answer": [
    {
-    "team_rule_id": "r-0047",
+    "team_rule_id": "r-0045",
     "effective_date": "2027-07-01",
     "key_value": "Ban on algorithmic rent-setting coordination (use of coordinators / algorithmic devices performing a coordinating function)",
     "conflict_flag": true,
@@ -159,7 +159,7 @@
   "category": "rent_increase_limits",
   "our_answer": [
    {
-    "team_rule_id": "r-0032",
+    "team_rule_id": "r-0030",
     "effective_date": "2026-02-02",
     "key_value": "Once per 12 months by the allowable rent increase percentage (percentage is in a linked PDF, not in this text); no utilities add-on since 2026-02-02",
     "conflict_flag": true,

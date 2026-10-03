@@ -32,12 +32,17 @@ import sys
 import anthropic
 from dotenv import load_dotenv
 
-from common import OUT, list_docs
+from common import OUT, list_docs, normalise_citation
 from dates import DateHit, find_adoption_dates, find_effective_dates
 
 load_dotenv()
 RULES_JSON = OUT / "rules.json"
 LOG_CSV = OUT / "date_resolve_log.csv"
+CACHE_JSON = OUT / "date_resolve_cache.json"   # decisions already taken, keyed by jurisdiction|category|citation
+
+
+def cache_key(rule: dict) -> str:
+    return f"{rule['jurisdiction']}|{rule['category']}|{normalise_citation(rule.get('citation') or '')}"
 MODEL = os.environ.get("EXTRACT_MODEL", "claude-sonnet-5-5")
 PRICE_IN, PRICE_OUT = 2.00, 10.00   # US$ per million tokens (Sonnet 5.5)
 
@@ -114,12 +119,29 @@ def main() -> int:
     docs = list_docs()
     client = None if args.no_model else anthropic.Anthropic()
     spent, log, changed = 0.0, [], 0
+    cache = json.loads(CACHE_JSON.read_text(encoding="utf-8")) if CACHE_JSON.exists() else {}
 
     for rule in rules:
         if rule.get("derived") or not doubtful(rule):
             continue
-        eff, adopt = candidates_for(rule, docs)
         before = rule.get("effective_date")
+        hit = cache.get(cache_key(rule))
+        if hit and hit.get("effective_date"):
+            # A decision already taken for this provision (same jurisdiction, category, citation):
+            # reuse it rather than asking the model again. Rebuilds therefore need no API calls.
+            rule["effective_date"] = hit["effective_date"]
+            rule["date_source_doc_id"] = hit["date_source_doc_id"]
+            if hit.get("adoption_date"):
+                rule["adoption_date"] = hit["adoption_date"]
+            tag = hit.get("kind", "Effective date")
+            if f"{tag} from {hit['date_source_doc_id']}" not in (rule.get("notes") or ""):
+                rule["notes"] = f"{rule.get('notes') or ''} {tag} from {hit['date_source_doc_id']}: \"{hit.get('sentence', '')}\"".strip()
+            changed += before != hit["effective_date"]
+            log.append({"team_rule_id": rule["team_rule_id"], "citation": rule["citation"], "before": before,
+                        "after": rule["effective_date"], "source_doc": hit["date_source_doc_id"],
+                        "how": "cached decision reused (" + hit.get("decided_by", "earlier run") + ")", "candidates": ""})
+            continue
+        eff, adopt = candidates_for(rule, docs)
         new, source, sentence, how = None, None, None, None
 
         dates = sorted({h.date for h in eff})
@@ -164,11 +186,15 @@ def main() -> int:
             tag = "Adoption date" if "adoption" in how else "Effective date"
             rule["notes"] = f"{rule.get('notes') or ''} {tag} from {source}: \"{sentence}\"".strip()
             changed += 1
+            cache[cache_key(rule)] = {"effective_date": new, "date_source_doc_id": source, "adoption_date": rule.get("adoption_date"),
+                                      "kind": tag, "sentence": sentence, "decided_by": f"{MODEL}: {how[:160]}",
+                                      "team_rule_id_at_decision": rule["team_rule_id"]}
         log.append({"team_rule_id": rule["team_rule_id"], "citation": rule["citation"], "before": before,
                     "after": rule.get("effective_date"), "source_doc": source, "how": how,
                     "candidates": "; ".join(f"{h.doc_id}:{h.date}" for h in eff)})
 
     RULES_JSON.write_text(json.dumps({"rules": rules}, indent=2, ensure_ascii=False), encoding="utf-8")
+    CACHE_JSON.write_text(json.dumps(cache, indent=1, ensure_ascii=False), encoding="utf-8")
     with open(LOG_CSV, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["team_rule_id", "citation", "before", "after", "source_doc", "how", "candidates"])
         w.writeheader(); w.writerows(log)

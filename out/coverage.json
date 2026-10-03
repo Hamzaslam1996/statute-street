@@ -1,6 +1,6 @@
 {
  "r-0001": {
-  "key": "r-0001:042c185d23",
+  "key": "c:ef54d039fc6d",
   "jurisdiction": "Berkeley, CA",
   "category": "algorithmic_rent_setting",
   "title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
@@ -18,30 +18,36 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "The ban covers residential dwelling units in Berkeley with no building-level limits such as year built, unit count or building type. The exemptions for products that publish aggregated anonymous data, and for market research, appraisal, project-financing or software testing uses, concern the type of product or use rather than address facts, so no test is written for them. The one affordable-housing exemption is carried as a niche_exemption. The chapter does not regulate the amount of rent."
+  "notes": "The ban covers residential dwelling units in Berkeley with no building-level limits such as year built, unit count or building type. The exemptions for products that publish aggregated anonymous data, and for market research, appraisal, project-financing or software testing uses, concern the type of product or use rather than address facts, so no test is written for them. The one affordable-housing exemption is carried as a niche_exemption. The chapter does not regulate the amount of rent.",
+  "citation": "Berkeley Municipal Code § 13.63.030 (Ord. No. 7,992-N.S.)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0002": {
-  "key": "r-0002:eb521e82a4",
+  "key": "c:b807a933b9fa",
   "jurisdiction": "Berkeley, CA",
   "category": "application_screening_fees",
   "title": "Notification of state law limitation on tenant screening fees (BMC 13.78.010)",
   "tests": [],
   "applies_to_all_residential": true,
   "coverage_incomplete": false,
-  "notes": "Covers all residential rental property in Berkeley where the owner or agent charges a screening fee. The fee charge is the trigger for the duty, not a building-level limit, and no exemptions are stated, so there are no tests."
+  "notes": "Covers all residential rental property in Berkeley where the owner or agent charges a screening fee. The fee charge is the trigger for the duty, not a building-level limit, and no exemptions are stated, so there are no tests.",
+  "citation": "BMC 13.78.010",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0003": {
-  "key": "r-0003:1e167bc751",
+  "key": "c:288063c15fc7",
   "jurisdiction": "Berkeley, CA",
   "category": "application_screening_fees",
   "title": "Prohibition of non-refundable application fees for existing tenancies (BMC 13.78.016)",
   "tests": [],
   "applies_to_all_residential": true,
   "coverage_incomplete": false,
-  "notes": "BMC 13.78.016 covers all residential rental agreements in Berkeley (BMC 13.78.018) with no building-level limits. The Civ. Code 1950.6 screening-fee carve-out is a permitted fee type, not a property exemption, so it gets no test. No adoption or effective date is given."
+  "notes": "BMC 13.78.016 covers all residential rental agreements in Berkeley (BMC 13.78.018) with no building-level limits. The Civ. Code 1950.6 screening-fee carve-out is a permitted fee type, not a property exemption, so it gets no test. No adoption or effective date is given.",
+  "citation": "BMC 13.78.016",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0004": {
-  "key": "r-0004:660216395c",
+  "key": "c:bbf8126d4bdf",
   "jurisdiction": "Berkeley, CA",
   "category": "just_cause_eviction",
   "title": "Berkeley just cause eviction rules as amended by Measure BB",
@@ -109,10 +115,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Just cause applies to fully and partially covered units, so the pre-1980 and post-1980 CO distinctions do not limit coverage and give no test. Exempt classes only are tested. Government-owned or subsidized units are now required to register as covered, so no exemption is added for them."
+  "notes": "Just cause applies to fully and partially covered units, so the pre-1980 and post-1980 CO distinctions do not limit coverage and give no test. Exempt classes only are tested. Government-owned or subsidized units are now required to register as covered, so no exemption is added for them.",
+  "citation": "Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance), as amended by Measure BB (Nov. 2024)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0005": {
-  "key": "r-0005:ab91757b54",
+  "key": "c:af01d37ce84f",
   "jurisdiction": "Berkeley, CA",
   "category": "rent_increase_limits",
   "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
@@ -206,10 +214,12 @@
   "coverage_incomplete": false,
   "notes": "Coverage follows the Berkeley Rent Ordinance as described in D006/D009: multifamily buildings built before 1980 are fully covered. The AGA conditions (unpaid registration fees, Rent Board orders, code violations, unpaid deposit interest, fixed-term leases) are landlord-specific eligibility conditions, not building-level tests, and are left out. A 2-unit owner-occupied 'Golden Duplex' is excluded.",
   "reviewed_by": "Hamza (commercial/IP lawyer)",
-  "review_ruling": "instructions/rulings_05.md #2: tenancy length is a tenant-level fact that decides when an increase may be taken, not whether the building is covered. Drop the tenancy_months test; keep COO 1980 cutoff, condo/single-family, dormitory/co-op and golden-duplex tests."
+  "review_ruling": "instructions/rulings_05.md #2: tenancy length is a tenant-level fact that decides when an increase may be taken, not whether the building is covered. Drop the tenancy_months test; keep COO 1980 cutoff, condo/single-family, dormitory/co-op and golden-duplex tests.",
+  "citation": "Berkeley Municipal Code § 13.76.110(A); Berkeley Rent Stabilization Board Regulation 1148",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0006": {
-  "key": "r-0006:6f3c286b9a",
+  "key": "c:67bf403a9be3",
   "jurisdiction": "Berkeley, CA",
   "category": "screening_restrictions",
   "title": "Ronald V. Dellums Fair Chance Access to Housing Ordinance",
@@ -261,10 +271,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Covers rental housing providers in Berkeley with respect to current or prospective tenants. The lifetime sex offender exemption applies to individual tenants, not to buildings, so it gets no building-level test. No effective date is stated in the source."
+  "notes": "Covers rental housing providers in Berkeley with respect to current or prospective tenants. The lifetime sex offender exemption applies to individual tenants, not to buildings, so it gets no building-level test. No effective date is stated in the source.",
+  "citation": "Berkeley Municipal Code ch. 13.106",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0007": {
-  "key": "r-0007:3ac1de5394",
+  "key": "c:bc007dded4c3",
   "jurisdiction": "Berkeley, CA",
   "category": "security_deposits",
   "title": "Berkeley security deposit interest coverage",
@@ -333,10 +345,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Coverage is tied to the Rent Ordinance's fully and partially covered unit types, which together span nearly all residential rentals, so no coverage test is added because it would be circular. The stated exemptions are the only limits. The interest rate and deposit cap are not given."
+  "notes": "Coverage is tied to the Rent Ordinance's fully and partially covered unit types, which together span nearly all residential rentals, so no coverage test is added because it would be circular. The stated exemptions are the only limits. The interest rate and deposit cap are not given.",
+  "citation": "Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0008": {
-  "key": "r-0008:dcffc1cb97",
+  "key": "c:01e9ac126383",
   "jurisdiction": "Boston, MA",
   "category": "just_cause_eviction",
   "title": "[notice-only] Boston Housing Stability Notification Act",
@@ -359,10 +373,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Coverage is all rental units in Boston where a tenancy is being ended. The only exemptions are for health-care and treatment facilities. The ordinance is notice-only and takes effect November 6, 2020, so it is in force on the query date."
+  "notes": "Coverage is all rental units in Boston where a tenancy is being ended. The only exemptions are for health-care and treatment facilities. The ordinance is notice-only and takes effect November 6, 2020, so it is in force on the query date.",
+  "citation": "Boston Municipal Code § 10-11.7 (Housing Stability Notification Act)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0011": {
-  "key": "r-0011:632d058565",
+  "key": "c:b50ab5aa3ffa",
   "jurisdiction": "Boston, MA",
   "category": "screening_restrictions",
   "title": "Boston Fair Chance Tenant Selection Policy (criminal history)",
@@ -380,40 +396,48 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "The direct-relationship/unreasonable-risk, current criminal behavior and preemption carve-outs depend on individual applicant facts, not on building characteristics, so they are not written as address-level tests. Effective date is not stated."
+  "notes": "The direct-relationship/unreasonable-risk, current criminal behavior and preemption carve-outs depend on individual applicant facts, not on building characteristics, so they are not written as address-level tests. Effective date is not stated.",
+  "citation": "Boston DND Fair Chance Tenant Selection Policy (Feb. 2017)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0012": {
-  "key": "r-0012:c19e260cdf",
+  "key": "c:11847eed8420",
   "jurisdiction": "Boston, MA",
   "category": "screening_restrictions",
   "title": "Boston fair housing protection for renters using rental assistance",
   "tests": [],
   "applies_to_all_residential": true,
   "coverage_incomplete": false,
-  "notes": "Covers housing in the City of Boston with no stated exemptions. The related records' limits (hospital/health facility exemptions in the Housing Stability Notification Act, DND/IDP funding in the Fair Chance policy) apply to those rules, not this one, so no building-level tests are added."
+  "notes": "Covers housing in the City of Boston with no stated exemptions. The related records' limits (hospital/health facility exemptions in the Housing Stability Notification Act, DND/IDP funding in the Fair Chance policy) apply to those rules, not this one, so no building-level tests are added.",
+  "citation": "Boston Fair Housing Commission regulations; see also M.G.L. c. 151B, § 4(10)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0013": {
-  "key": "r-0013:e4070aa96d",
+  "key": "c:33a5bd5942e0",
   "jurisdiction": "CA",
   "category": "algorithmic_rent_setting",
   "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
   "tests": [],
   "applies_to_all_residential": true,
   "coverage_incomplete": false,
-  "notes": "General antitrust rule that applies to any person using or distributing a common pricing algorithm in any industry, rental housing included. The only exemption is for end consumers, which is not an address-level fact. The single-firm/own-data exclusion is part of the definition of a common pricing algorithm and not a building-level limit. No building-level tests are needed."
+  "notes": "General antitrust rule that applies to any person using or distributing a common pricing algorithm in any industry, rental housing included. The only exemption is for end consumers, which is not an address-level fact. The single-firm/own-data exclusion is part of the definition of a common pricing algorithm and not a building-level limit. No building-level tests are needed.",
+  "citation": "Cal. Bus. & Prof. Code § 16729",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0014": {
-  "key": "r-0014:a7e7ce00e0",
+  "key": "c:013489d5df15",
   "jurisdiction": "CA",
   "category": "application_screening_fees",
   "title": "California application screening fee cap and conditions (Civ. Code § 1950.6)",
   "tests": [],
   "applies_to_all_residential": true,
   "coverage_incomplete": false,
-  "notes": "Section 1950.6 reaches any landlord or agent charging an applicant a screening fee for residential rental housing, with no building-level limits. The reusable screening report option and the no-refund rule for applicants denied after consideration are conduct provisions, not coverage tests. The non-preemption of federal or state housing assistance program rules on deposits and fees is a preemption savings clause, not a defined exempt class of properties, so no test is created for it."
+  "notes": "Section 1950.6 reaches any landlord or agent charging an applicant a screening fee for residential rental housing, with no building-level limits. The reusable screening report option and the no-refund rule for applicants denied after consideration are conduct provisions, not coverage tests. The non-preemption of federal or state housing assistance program rules on deposits and fees is a preemption savings clause, not a defined exempt class of properties, so no test is created for it.",
+  "citation": "Cal. Civ. Code § 1950.6",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0015": {
-  "key": "r-0015:75999ddcd8",
+  "key": "c:6b6e7807a6d7",
   "jurisdiction": "CA",
   "category": "just_cause_eviction",
   "title": "California Tenant Protection Act - just cause for termination",
@@ -525,10 +549,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Mobilehome owners exemption is not testable with the data. The local just-cause ordinance interaction is not modeled as a building-level test."
+  "notes": "Mobilehome owners exemption is not testable with the data. The local just-cause ordinance interaction is not modeled as a building-level test.",
+  "citation": "Cal. Civ. Code § 1946.2",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0016": {
-  "key": "r-0016:9ac4b5b994",
+  "key": "c:33308e3f2449",
   "jurisdiction": "CA",
   "category": "rent_increase_limits",
   "title": "Statewide rent cap (Tenant Protection Act), Civ. Code § 1947.12",
@@ -600,20 +626,24 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Local rent control stricter than the state cap is an exemption that depends on the city, and the engine cannot test it at the building level, so it is not encoded. The mobilehome carve-outs and the date-based application windows are not building-level tests. The tenancy-start rule (increases only after the initial rent for a new tenancy) is timing and is not encoded. The section is repealed on 2030-01-01, which is after the query date."
+  "notes": "Local rent control stricter than the state cap is an exemption that depends on the city, and the engine cannot test it at the building level, so it is not encoded. The mobilehome carve-outs and the date-based application windows are not building-level tests. The tenancy-start rule (increases only after the initial rent for a new tenancy) is timing and is not encoded. The section is repealed on 2030-01-01, which is after the query date.",
+  "citation": "Cal. Civ. Code § 1947.12",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0017": {
-  "key": "r-0017:a12a2fe341",
+  "key": "c:f9b0cc2d7d3f",
   "jurisdiction": "CA",
   "category": "screening_restrictions",
   "title": "Criminal history screening limits (Civil Rights Council regulations)",
   "tests": [],
   "applies_to_all_residential": true,
   "coverage_incomplete": false,
-  "notes": "Coverage is housing decisions by California landlords using criminal history, with no building-level limits and no stated exemptions. The related source-of-income record mentions an owner-occupied home renting to one additional person, but that is about a different rule and is not stated for this one, so no test is added."
+  "notes": "Coverage is housing decisions by California landlords using criminal history, with no building-level limits and no stated exemptions. The related source-of-income record mentions an owner-occupied home renting to one additional person, but that is about a different rule and is not stated for this one, so no test is added.",
+  "citation": "Cal. Code Regs. tit. 2, § 12265 (Civil Rights Council regulations, eff. 2020-01-01)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0018": {
-  "key": "r-0018:6f31d4e1e9",
+  "key": "c:0f6ce365e9d2",
   "jurisdiction": "CA",
   "category": "screening_restrictions",
   "title": "Source-of-income discrimination ban and subsidy-tenant credit/income screening limits (FEHA)",
@@ -635,10 +665,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "The rule covers owners of any housing accommodation. The subd. (o) credit-history and income-standard rules apply only where a government rent subsidy exists, which is a fact about the tenancy and not a building-level limit. Asking about the level or source of income is not discrimination, which is conduct and not a coverage exemption. No construction-date, unit-count or building-type limits are stated. The one test reflects the owner-occupied roomer exception mentioned in the FAQ, which may or may not extend to source of income."
+  "notes": "The rule covers owners of any housing accommodation. The subd. (o) credit-history and income-standard rules apply only where a government rent subsidy exists, which is a fact about the tenancy and not a building-level limit. Asking about the level or source of income is not discrimination, which is conduct and not a coverage exemption. No construction-date, unit-count or building-type limits are stated. The one test reflects the owner-occupied roomer exception mentioned in the FAQ, which may or may not extend to source of income.",
+  "citation": "Cal. Gov. Code § 12955",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0019": {
-  "key": "r-0019:9c20828c4f",
+  "key": "c:47648e5ad48b",
   "jurisdiction": "CA",
   "category": "security_deposits",
   "title": "California residential security deposit cap and return rules (Civ. Code § 1950.5)",
@@ -656,20 +688,24 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "The statute covers residential rental agreements generally, so no building-level tests apply. The small-landlord 2-month cap (natural person or all-natural-person LLC owning no more than two properties and four units) only raises the cap from 1 to 2 months and is not an exemption from the rule. The service-member and six-month-advance-payment provisions are not building-level limits either. The 1-month cap still applies to all residential rentals."
+  "notes": "The statute covers residential rental agreements generally, so no building-level tests apply. The small-landlord 2-month cap (natural person or all-natural-person LLC owning no more than two properties and four units) only raises the cap from 1 to 2 months and is not an exemption from the rule. The service-member and six-month-advance-payment provisions are not building-level limits either. The 1-month cap still applies to all residential rentals.",
+  "citation": "Cal. Civ. Code § 1950.5",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0020": {
-  "key": "r-0020:9355e06876",
+  "key": "c:9319758d2938",
   "jurisdiction": "Cambridge, MA",
   "category": "algorithmic_rent_setting",
   "title": "Cambridge policy order initiating ban on algorithmic rent-setting services",
   "tests": [],
   "applies_to_all_residential": true,
   "coverage_incomplete": false,
-  "notes": "The policy order only directs the city manager to draft options. It covers residential property managers in general and states no building-level limits or exemptions. The 'large or corporate' wording is descriptive, not a stated threshold. The exemptions in the related records belong to other rules and are not applied here. No ordinance is enacted, so the status is pending."
+  "notes": "The policy order only directs the city manager to draft options. It covers residential property managers in general and states no building-level limits or exemptions. The 'large or corporate' wording is descriptive, not a stated threshold. The exemptions in the related records belong to other rules and are not applied here. No ordinance is enacted, so the status is pending.",
+  "citation": "Cambridge City Council policy order (June 2026), directing city manager to draft ordinance language; no ordinance cited",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0021": {
-  "key": "r-0021:d5078d5804",
+  "key": "c:da31ead786e6",
   "jurisdiction": "Cambridge, MA",
   "category": "just_cause_eviction",
   "title": "[notice-only] Tenants Rights and Resources Notification Ordinance (Cambridge M.C. ch. 8.71)",
@@ -693,10 +729,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Notice-only ordinance covering residential rental agreements generally, with no building-level size or age limits. The only exclusions are institutional or treatment facilities and short-term rental units. The 2-family owner-occupied exemption in the related Fair Housing record applies to that ordinance, not to this one, so it is not used."
+  "notes": "Notice-only ordinance covering residential rental agreements generally, with no building-level size or age limits. The only exclusions are institutional or treatment facilities and short-term rental units. The 2-family owner-occupied exemption in the related Fair Housing record applies to that ordinance, not to this one, so it is not used.",
+  "citation": "Cambridge Municipal Code ch. 8.71",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0022": {
-  "key": "r-0022:7e0f6e581c",
+  "key": "c:5cedee551ae6",
   "jurisdiction": "Cambridge, MA",
   "category": "screening_restrictions",
   "title": "Cambridge Fair Housing Ordinance: source-of-income protection (incl. Section 8)",
@@ -718,10 +756,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Only stated limit is the owner-occupied 2-family exemption. The ordinance text is not in the corpus, but the summary states coverage as all rental housing transactions in Cambridge, so no coverage gap is flagged."
+  "notes": "Only stated limit is the owner-occupied 2-family exemption. The ordinance text is not in the corpus, but the summary states coverage as all rental housing transactions in Cambridge, so no coverage gap is flagged.",
+  "citation": "Cambridge Municipal Code ch. 14.04 (Fair Housing Ordinance)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0023": {
-  "key": "r-0023:1005fd6b5b",
+  "key": "c:49e530d3703d",
   "jurisdiction": "Hoboken, NJ",
   "category": "algorithmic_rent_setting",
   "title": "Algorithmic rent fixing in rental housing market prohibited",
@@ -743,46 +783,24 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Covers any residential dwelling unit (primary residence) in Hoboken, with no unit-count, age or ownership limits. The only exclusion is medical/long-term care and detention facilities. The NJ FAIR Act preemption is not addressed and is not a building-level test."
+  "notes": "Covers any residential dwelling unit (primary residence) in Hoboken, with no unit-count, age or ownership limits. The only exclusion is medical/long-term care and detention facilities. The NJ FAIR Act preemption is not addressed and is not a building-level test.",
+  "citation": "Hoboken Code § 158-2 (Ord. No. B-781)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
  "r-0024": {
-  "key": "r-0024:1f26b6b639",
-  "jurisdiction": "Hoboken, NJ",
-  "category": "algorithmic_rent_setting",
-  "title": "Proposed Hoboken ordinance prohibiting algorithmic rent-fixing",
-  "tests": [
-   {
-    "field": "building_type",
-    "op": "not_in",
-    "value": [
-     "hospital",
-     "medical_facility",
-     "long_term_care",
-     "detention_facility"
-    ],
-    "source_text": "Medical, long-term care, or detention facilities.",
-    "note": "Excluded from the definition of residential dwelling unit; an apartment building passes this test.",
-    "kind": "niche_exemption",
-    "on_fail": "exclude",
-    "defeated_if": null
-   }
-  ],
-  "applies_to_all_residential": false,
-  "coverage_incomplete": false,
-  "notes": "Covers all residential rental units (primary residences) in Hoboken; the only exemption is medical, long-term care and detention facilities. The NJ FAIR Act preemption question is not addressed here. The ordinance is proposed and pending."
- },
- "r-0025": {
-  "key": "r-0025:edb1eb9502",
+  "key": "c:bbe9d6070755",
   "jurisdiction": "Hoboken, NJ",
   "category": "rent_increase_limits",
   "title": "Mandatory disclosures for rental increases over 10%",
   "tests": [],
   "applies_to_all_residential": true,
   "coverage_incomplete": false,
-  "notes": "The rule covers all residential landlords raising rent by more than 10% on renewal with a current tenant. No building-level limits or exemptions are stated. The 10% increase and current-tenant renewal conditions are about the transaction, not the property, so they are not tests. Rent control exemptions in Chapter 155 are a separate rule and are not carried over here."
+  "notes": "The rule covers all residential landlords raising rent by more than 10% on renewal with a current tenant. No building-level limits or exemptions are stated. The 10% increase and current-tenant renewal conditions are about the transaction, not the property, so they are not tests. Rent control exemptions in Chapter 155 are a separate rule and are not carried over here.",
+  "citation": "Hoboken City Code § 158-1 (Ord. No. B-750)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0026": {
-  "key": "r-0026:f318475a1c",
+ "r-0025": {
+  "key": "c:0dd3fc354a23",
   "jurisdiction": "Hoboken, NJ",
   "category": "rent_increase_limits",
   "title": "Hoboken Rent Control: annual rent increase cap (§ 155-5)",
@@ -841,10 +859,12 @@
   "coverage_incomplete": false,
   "notes": "Coverage is all dwelling units under § 155-1 except those exempt under § 155-2. The exemptions are written as tests. The preemption where a government agency regulates rent by contract (§ 155-2.1) is a niche exemption the data cannot show and is not encoded. The buildings-vacant-since-1984 exemption is first rental only and not testable. Related records on algorithmic rent setting and the over-10% disclosure rule are not coverage limits for this rule.",
   "reviewed_by": "Hamza (commercial/IP lawyer)",
-  "review_ruling": "instructions/rulings_06.md #4: Hoboken Code § 155-5 cap (lesser of 5% or CPI, once per 12 months), applicability § 155-2. Built on or before 1987-06-25 -> applies; built after and 30 full years before the query date -> applies; otherwise post-1987 -> unknown (exemption lasts the shorter of the mortgage term or 30 years; mortgage term not in data); year missing -> unknown. No unit-count test. Hotels/motels and institutional/government housing are niche exemptions."
+  "review_ruling": "instructions/rulings_06.md #4: Hoboken Code § 155-5 cap (lesser of 5% or CPI, once per 12 months), applicability § 155-2. Built on or before 1987-06-25 -> applies; built after and 30 full years before the query date -> applies; otherwise post-1987 -> unknown (exemption lasts the shorter of the mortgage term or 30 years; mortgage term not in data); year missing -> unknown. No unit-count test. Hotels/motels and institutional/government housing are niche exemptions.",
+  "citation": "Hoboken Code § 155-5",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0027": {
-  "key": "r-0027:ebc7c509cc",
+ "r-0026": {
+  "key": "c:5204aa1a89cd",
   "jurisdiction": "Jersey City, NJ",
   "category": "algorithmic_rent_setting",
   "title": "Preventing Algorithmic Rent-Fixing in the Rental Housing Market (Ord. 25-057, § 218-12)",
@@ -867,45 +887,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "The exemptions for multi-property owners acting only on their own properties and for licensed real estate agents depend on conduct and licensing, not on building facts, so they are not tested. The 1-4 unit exemption applies only to rent control, not to this rule. The 365-day nonpublic-information definition describes the data covered, not building coverage. The FAIR Act preemption is noted in the source but is not a building-level test."
+  "notes": "The exemptions for multi-property owners acting only on their own properties and for licensed real estate agents depend on conduct and licensing, not on building facts, so they are not tested. The 1-4 unit exemption applies only to rent control, not to this rule. The 365-day nonpublic-information definition describes the data covered, not building coverage. The FAIR Act preemption is noted in the source but is not a building-level test.",
+  "citation": "Jersey City Code § 218-12 (Ord. 25-057)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0028": {
-  "key": "r-0028:152a8e8a9b",
-  "jurisdiction": "Jersey City, NJ",
-  "category": "algorithmic_rent_setting",
-  "title": "Jersey City ban on rent-setting algorithms (RealPage-type software)",
-  "tests": [
-   {
-    "field": "building_type",
-    "op": "not_in",
-    "value": [
-     "hospital",
-     "care_facility",
-     "detention_facility"
-    ],
-    "source_text": "residential dwelling units exclude inpatient medical care, licensed long-term care, and detention or correctional facilities",
-    "note": "Related record Ord. 25-057 excludes these facility types from residential dwelling units. Apartment buildings pass.",
-    "kind": "niche_exemption",
-    "on_fail": "exclude",
-    "defeated_if": null
-   },
-   {
-    "field": "other",
-    "op": "==",
-    "value": "not a licensed real estate agent",
-    "source_text": "licensed real estate agents operating in accordance with state regulations",
-    "note": "Real estate agents are excluded; this concerns the actor and cannot be read from address data. Recorded for transparency; not an address-level test.",
-    "kind": "niche_exemption",
-    "on_fail": "exclude",
-    "defeated_if": null
-   }
-  ],
-  "applies_to_all_residential": false,
-  "coverage_incomplete": false,
-  "notes": "Ord. 25-057 applies to lessors of residential dwelling units (primary residences) with no unit-count or building-age limits. The exemption for owners of multiple properties covers only actions related exclusively to properties controlled by the same owner, so it is an actor-conduct carve-out and not an address-level test. The rent control 1-4 unit exemption belongs to a different rule and is not applied here. Possible NJ FAIR Act preemption is an interaction and not a coverage test."
- },
- "r-0029": {
-  "key": "r-0029:44343a05a9",
+ "r-0027": {
+  "key": "c:e38d448ba4b8",
   "jurisdiction": "Jersey City, NJ",
   "category": "rent_increase_limits",
   "title": "Jersey City Rent Control Ordinance (Municipal Code Chapter 260)",
@@ -923,10 +910,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "The page gives only the 1-4 unit exemption. The other permitted exemptions are not listed, so no tests are written for them. The CPI-based cap is not stated on this page."
+  "notes": "The page gives only the 1-4 unit exemption. The other permitted exemptions are not listed, so no tests are written for them. The CPI-based cap is not stated on this page.",
+  "citation": "Jersey City Municipal Code ch. 260",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0030": {
-  "key": "r-0030:050bac7dd4",
+ "r-0028": {
+  "key": "c:15b163fc33b6",
   "jurisdiction": "Los Angeles, CA",
   "category": "just_cause_eviction",
   "title": "Los Angeles Just Cause for Eviction Ordinance (JCO)",
@@ -987,10 +976,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "The JCO covers most residential units not regulated by the RSO. A coo_date > 1978-10-01 test is the proxy, with on_fail unknown because RSO-exempt older units (single-family homes, post-1995 condos) can also be JCO-covered. The owner's roommate exemption is a shared-living carve-out that cannot be detected from the data and is not tested. The page gives no original effective date."
+  "notes": "The JCO covers most residential units not regulated by the RSO. A coo_date > 1978-10-01 test is the proxy, with on_fail unknown because RSO-exempt older units (single-family homes, post-1995 condos) can also be JCO-covered. The owner's roommate exemption is a shared-living carve-out that cannot be detected from the data and is not tested. The page gives no original effective date.",
+  "citation": "L.A. Mun. Code § 165.00 et seq. (Just Cause for Eviction Ordinance)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0031": {
-  "key": "r-0031:59bd6aa979",
+ "r-0029": {
+  "key": "c:05bb65faf2d9",
   "jurisdiction": "Los Angeles, CA",
   "category": "just_cause_eviction",
   "title": "Relocation assistance for no-fault evictions under the RSO and JCO",
@@ -1043,10 +1034,12 @@
   "coverage_incomplete": false,
   "notes": "Coverage is RSO or JCO units. JCO covers most residential properties not under the RSO, including post-1978 buildings and single-family dwellings, so the combined reach is essentially all residential rentals apart from the listed exemptions. No building-level coverage test is added because RSO or JCO coverage is circular. The Mom & Pop reduced amounts (4 or fewer units) only change the fee amount, not coverage. The resident-manager replacement and natural-disaster exceptions concern the eviction ground, not the property. The six-month tenancy trigger for the JCO is timing and is not added as a test, since the RSO applies from the start of tenancy.",
   "reviewed_by": "Hamza (commercial/IP lawyer)",
-  "review_ruling": "instructions/rulings_06.md #2.3: the RSO (incl. its eviction section § 151.09) covers units with a certificate of occupancy on or before 1 Oct 1978. year_built < 1978 -> applies; == 1978 -> unknown (cutoff year); > 1978 -> does not apply (the JCO governs instead). The merged record's own text only says 'units covered by the RSO', so the cutoff is restated here from LAMC § 151.02 (rental units first built on or before October 1, 1978)."
+  "review_ruling": "instructions/rulings_06.md #2.3: the RSO (incl. its eviction section § 151.09) covers units with a certificate of occupancy on or before 1 Oct 1978. year_built < 1978 -> applies; == 1978 -> unknown (cutoff year); > 1978 -> does not apply (the JCO governs instead). The merged record's own text only says 'units covered by the RSO', so the cutoff is restated here from LAMC § 151.02 (rental units first built on or before October 1, 1978).",
+  "citation": "L.A.M.C. §§ 151.09, 165.03, 165.06; L.A.M.C. §§ 47.06-47.07",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0032": {
-  "key": "r-0032:f703516961",
+ "r-0030": {
+  "key": "c:0fd696f647b3",
   "jurisdiction": "Los Angeles, CA",
   "category": "rent_increase_limits",
   "title": "Los Angeles Rent Stabilization Ordinance (RSO) allowable rent increases",
@@ -1101,20 +1094,24 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Luxury housing certified by the Department is exempt, and condo and townhome rents are unregulated for tenancies that began after 1995 (Costa-Hawkins). The data cannot show either, so neither is tested; condos are not excluded by the building type. Utilities add-on removal and the other conditions are not coverage tests. Replacement units under LAMC 151.28 can be covered even if built after 1978, so the CO cutoff is only a proxy for them."
+  "notes": "Luxury housing certified by the Department is exempt, and condo and townhome rents are unregulated for tenancies that began after 1995 (Costa-Hawkins). The data cannot show either, so neither is tested; condos are not excluded by the building type. Utilities add-on removal and the other conditions are not coverage tests. Replacement units under LAMC 151.28 can be covered even if built after 1978, so the CO cutoff is only a proxy for them.",
+  "citation": "L.A.M.C. ch. XV, art. 1, § 151.00 et seq. (Rent Stabilization Ordinance)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0033": {
-  "key": "r-0033:e0c492b3cf",
+ "r-0031": {
+  "key": "c:2788d8b77ea2",
   "jurisdiction": "Los Angeles, CA",
   "category": "screening_restrictions",
   "title": "LAMC Sec. 45.67 Prohibited Activities (source-of-income discrimination)",
   "tests": [],
   "applies_to_all_residential": true,
   "coverage_incomplete": false,
-  "notes": "Covers any person offering, renting, or listing housing in the City of Los Angeles; no building-level limits or exemptions are stated, so no tests are needed."
+  "notes": "Covers any person offering, renting, or listing housing in the City of Los Angeles; no building-level limits or exemptions are stated, so no tests are needed.",
+  "citation": "L.A.M.C. § 45.67",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0034": {
-  "key": "r-0034:5a36e4f586",
+ "r-0032": {
+  "key": "c:744d33133aa3",
   "jurisdiction": "Los Angeles, CA",
   "category": "security_deposits",
   "title": "LA payment of interest on security deposits (LAMC § 151.06.02)",
@@ -1154,50 +1151,60 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Coverage is limited to RSO-covered units, using the October 1, 1978 cutoff from the related rent-limit record. The Civ. Code § 1950.5 reference is a cross-reference to the state statute, not a separate coverage limit. The one-year deposit holding period is recorded as a timing assumption."
+  "notes": "Coverage is limited to RSO-covered units, using the October 1, 1978 cutoff from the related rent-limit record. The Civ. Code § 1950.5 reference is a cross-reference to the state statute, not a separate coverage limit. The one-year deposit holding period is recorded as a timing assumption.",
+  "citation": "L.A.M.C. § 151.06.02 B",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0035": {
-  "key": "r-0035:bdd3613e43",
+ "r-0033": {
+  "key": "c:706980e074d9",
   "jurisdiction": "MA",
   "category": "algorithmic_rent_setting",
   "title": "H.5222 - An Act relative to preventing algorithmic rent fixing in the rental housing market",
   "tests": [],
   "applies_to_all_residential": false,
   "coverage_incomplete": true,
-  "notes": "Status page only for bill H.5222; the bill text, scope and exemptions are not in this capture, so coverage cannot be determined. The bill is not law as of 2026-10-01. Check the bill text itself."
+  "notes": "Status page only for bill H.5222; the bill text, scope and exemptions are not in this capture, so coverage cannot be determined. The bill is not law as of 2026-10-01. Check the bill text itself.",
+  "citation": "H.5222, 194th Gen. Court (Mass. 2025-2026) (new draft of H.1564)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0036": {
-  "key": "r-0036:59295ae905",
+ "r-0034": {
+  "key": "c:0b90b2e6a07d",
   "jurisdiction": "MA",
   "category": "algorithmic_rent_setting",
   "title": "An Act prohibiting algorithmic rent setting (S.2983)",
   "tests": [],
   "applies_to_all_residential": false,
   "coverage_incomplete": true,
-  "notes": "The page for S.2983 gives only the title and committee history, and the bill text is not in the corpus. The related record H.5222 lists no coverage or exemption terms either. The scope, definitions and exemptions of the bill are therefore unknown, so coverage is incomplete and no tests are written. The bill is also pending and not enacted."
+  "notes": "The page for S.2983 gives only the title and committee history, and the bill text is not in the corpus. The related record H.5222 lists no coverage or exemption terms either. The scope, definitions and exemptions of the bill are therefore unknown, so coverage is incomplete and no tests are written. The bill is also pending and not enacted.",
+  "citation": "Mass. S. 2983, 194th Gen. Ct. (2025-2026)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0037": {
-  "key": "r-0037:3b08f813d4",
+ "r-0035": {
+  "key": "c:a2e78d68e357",
   "jurisdiction": "MA",
   "category": "application_screening_fees",
   "title": "Rental broker fees payable only by the party who engaged the broker",
   "tests": [],
   "applies_to_all_residential": true,
   "coverage_incomplete": false,
-  "notes": "The rule covers persons who find rental dwellings for a fee and requires them to hold a broker or salesperson license under c.112 § 87PP. This is a condition on the person, not on the building. No building-level coverage limits or exemptions are stated, so there are no tests."
+  "notes": "The rule covers persons who find rental dwellings for a fee and requires them to hold a broker or salesperson license under c.112 § 87PP. This is a condition on the person, not on the building. No building-level coverage limits or exemptions are stated, so there are no tests.",
+  "citation": "M.G.L. c. 112, § 87DDD-1/2",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0038": {
-  "key": "r-0038:3ae11c0bde",
+ "r-0036": {
+  "key": "c:a976b7e32e02",
   "jurisdiction": "MA",
   "category": "application_screening_fees",
   "title": "Broker fee payable only by the party who engaged the broker",
   "tests": [],
   "applies_to_all_residential": true,
   "coverage_incomplete": false,
-  "notes": "The rule applies to licensed brokers and salespersons finding rental residential property. It sets no building-level limits and lists no exemptions. The broker licensing requirement under c.112 § 87PP is a condition on the actor, not on the property, so it gets no test. Applicability therefore does not depend on year built, unit count, or building type."
+  "notes": "The rule applies to licensed brokers and salespersons finding rental residential property. It sets no building-level limits and lists no exemptions. The broker licensing requirement under c.112 § 87PP is a condition on the actor, not on the property, so it gets no test. Applicability therefore does not depend on year built, unit count, or building type.",
+  "citation": "M.G.L. c. 112, § 87DDD½, as amended by St. 2025, c. 9, § 43",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0039": {
-  "key": "r-0039:d4b5143a41",
+ "r-0037": {
+  "key": "c:c35c999a6e1c",
   "jurisdiction": "MA",
   "category": "application_screening_fees",
   "title": "No application fees by landlords (M.G.L. c. 186, § 15B)",
@@ -1220,30 +1227,36 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "The rule covers lessors before a tenancy begins and has no unit-count, age or ownership limits. The licensed-broker exception under 254 CMR 7 concerns who charges the fee (a broker), not the property, so it gets no building-level test. The vacation-rental carve-out comes from the same statute (§ 15B(9)) as stated in the related security-deposit record."
+  "notes": "The rule covers lessors before a tenancy begins and has no unit-count, age or ownership limits. The licensed-broker exception under 254 CMR 7 concerns who charges the fee (a broker), not the property, so it gets no building-level test. The vacation-rental carve-out comes from the same statute (§ 15B(9)) as stated in the related security-deposit record.",
+  "citation": "M.G.L. c. 186, § 15B; 254 C.M.R. 7",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0044": {
-  "key": "r-0044:e5a121d0b6",
+ "r-0042": {
+  "key": "c:301c812ec13f",
   "jurisdiction": "MA",
   "category": "screening_restrictions",
   "title": "Source-of-income / housing subsidy discrimination ban (M.G.L. c. 151B, § 4(10))",
   "tests": [],
   "applies_to_all_residential": true,
   "coverage_incomplete": false,
-  "notes": "The statute applies to any person furnishing rental accommodations and lists no exemptions or building-level limits. The reference to 'any person furnishing... rental accommodations' is a general scope statement, not a building-level limit, so no tests are produced."
+  "notes": "The statute applies to any person furnishing rental accommodations and lists no exemptions or building-level limits. The reference to 'any person furnishing... rental accommodations' is a general scope statement, not a building-level limit, so no tests are produced.",
+  "citation": "M.G.L. c. 151B, § 4(10)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0045": {
-  "key": "r-0045:a82338c1df",
+ "r-0043": {
+  "key": "c:539cf76987eb",
   "jurisdiction": "MA",
   "category": "screening_restrictions",
   "title": "CORI access limits for evaluating rental housing applicants",
   "tests": [],
   "applies_to_all_residential": true,
   "coverage_incomplete": false,
-  "notes": "The CORI rule applies to any requestor screening rental applicants, including market-rate and subsidized housing. It sets no building-level limits such as year built, unit count or building type. The exemptions described cover permanent availability of certain offenses, open-access requests for other individuals, and separate housing-authority access under (a)(7). These concern the type of information or requestor, not building characteristics, so no building tests are written."
+  "notes": "The CORI rule applies to any requestor screening rental applicants, including market-rate and subsidized housing. It sets no building-level limits such as year built, unit count or building type. The exemptions described cover permanent availability of certain offenses, open-access requests for other individuals, and separate housing-authority access under (a)(7). These concern the type of information or requestor, not building characteristics, so no building tests are written.",
+  "citation": "M.G.L. c. 6, § 172(a)(3), (c)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0046": {
-  "key": "r-0046:13dc85b0c0",
+ "r-0044": {
+  "key": "c:443d9b259f6a",
   "jurisdiction": "MA",
   "category": "security_deposits",
   "title": "Massachusetts security deposit limits and handling (M.G.L. c. 186, § 15B)",
@@ -1266,10 +1279,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Statewide statute covering residential leases and tenancies-at-will with no building-level limits (year built, unit count, owner type). The only exemption is the vacation or recreational rental of 100 days or less. The 2025 amendment does not change coverage."
+  "notes": "Statewide statute covering residential leases and tenancies-at-will with no building-level limits (year built, unit count, owner type). The only exemption is the vacation or recreational rental of 100 days or less. The 2025 amendment does not change coverage.",
+  "citation": "M.G.L. c. 186, § 15B",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0047": {
-  "key": "r-0047:73e8c6e331",
+ "r-0045": {
+  "key": "c:3f669f22c097",
   "jurisdiction": "NJ",
   "category": "algorithmic_rent_setting",
   "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
@@ -1302,10 +1317,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Software and tool exemptions (spreadsheets requiring human analysis, databases that query only unprocessed data, free public rent estimates, brokerage listing databases, research use) concern the type of tool and not the building, so they are not tested. The rule takes effect 2027-07-01 and is not yet effective on the 2026-10-01 query date. Section 6(b) preemption of local ordinances is an interaction note, not a coverage test."
+  "notes": "Software and tool exemptions (spreadsheets requiring human analysis, databases that query only unprocessed data, free public rent estimates, brokerage listing databases, research use) concern the type of tool and not the building, so they are not tested. The rule takes effect 2027-07-01 and is not yet effective on the 2026-10-01 query date. Section 6(b) preemption of local ordinances is an interaction note, not a coverage test.",
+  "citation": "P.L. 2026, c.43 (C.56:9-20 to 56:9-26)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0048": {
-  "key": "r-0048:2211e38734",
+ "r-0046": {
+  "key": "c:16f4784d32c2",
   "jurisdiction": "NJ",
   "category": "application_screening_fees",
   "title": "Residential rental application fee cap (P.L. 2025, c.405)",
@@ -1336,10 +1353,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Effective 2026-05-01, in force as of the query date, so no timing test is required. The statewide cap covers residential rentals except units in one-family or two-family dwellings and fees charged by NJ Real Estate Commission licensees who are not the landlord."
+  "notes": "Effective 2026-05-01, in force as of the query date, so no timing test is required. The statewide cap covers residential rentals except units in one-family or two-family dwellings and fees charged by NJ Real Estate Commission licensees who are not the landlord.",
+  "citation": "N.J.S.A. 46:8-18.1; P.L. 2025, c.405",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0049": {
-  "key": "r-0049:568fdc4256",
+ "r-0047": {
+  "key": "c:80c62710906e",
   "jurisdiction": "NJ",
   "category": "just_cause_eviction",
   "title": "Anti-Eviction Act (good cause required)",
@@ -1386,10 +1405,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Coverage is broad (houses, apartments, mobile homes, rooming and boarding homes), so no coverage tests are needed. Notice to Quit periods and the additional rules for public housing and senior/disabled tenancies are not coverage limits."
+  "notes": "Coverage is broad (houses, apartments, mobile homes, rooming and boarding homes), so no coverage tests are needed. Notice to Quit periods and the additional rules for public housing and senior/disabled tenancies are not coverage limits.",
+  "citation": "N.J.S.A. 2A:18-61.1 et seq.; N.J.S.A. 2A:18-53",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0050": {
-  "key": "r-0050:e31a03e95e",
+ "r-0048": {
+  "key": "c:e9018cf6e37d",
   "jurisdiction": "NJ",
   "category": "just_cause_eviction",
   "title": "Anti-Eviction Act: good cause required for lease non-renewal",
@@ -1426,10 +1447,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "The list of good causes and any relocation duties are in other parts of the guide and do not limit coverage. No effective date is stated."
+  "notes": "The list of good causes and any relocation duties are in other parts of the guide and do not limit coverage. No effective date is stated.",
+  "citation": "N.J.S.A. 2A:18-61.3",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0052": {
-  "key": "r-0052:1e285d3ebb",
+ "r-0050": {
+  "key": "c:2485f877f438",
   "jurisdiction": "NJ",
   "category": "screening_restrictions",
   "title": "NJ Law Against Discrimination: source of lawful income / rent payment protection",
@@ -1465,10 +1488,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Coverage is all property (business or residential), so there are no coverage tests. The religious-organization preference and the housing-for-older-persons and single-sex housing carve-outs relate to other protected classes (religion, familial status, sex), not source of income, so no tests are added for them. The related FAIR Act, application fee and Fair Chance records have their own exemptions that do not carry over to this rule."
+  "notes": "Coverage is all property (business or residential), so there are no coverage tests. The religious-organization preference and the housing-for-older-persons and single-sex housing carve-outs relate to other protected classes (religion, familial status, sex), not source of income, so no tests are added for them. The related FAIR Act, application fee and Fair Chance records have their own exemptions that do not carry over to this rule.",
+  "citation": "N.J.S.A. 10:5-12 (NJ Law Against Discrimination)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0053": {
-  "key": "r-0053:0942162c42",
+ "r-0051": {
+  "key": "c:7ed71d94d597",
   "jurisdiction": "NJ",
   "category": "screening_restrictions",
   "title": "Fair Chance in Housing Act (criminal record screening limits)",
@@ -1490,10 +1515,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Only the owner-occupied 1-4 unit exclusion creates a building-level limit. The exceptions for methamphetamine manufacture in federally assisted housing and for lifetime sex offender registration restrict what a provider may consider. They do not limit which properties are covered, so they get no test."
+  "notes": "Only the owner-occupied 1-4 unit exclusion creates a building-level limit. The exceptions for methamphetamine manufacture in federally assisted housing and for lifetime sex offender registration restrict what a provider may consider. They do not limit which properties are covered, so they get no test.",
+  "citation": "N.J.S.A. 46:8-52 et seq. (P.L. 2021, c.110)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0054": {
-  "key": "r-0054:3aa952f6bb",
+ "r-0052": {
+  "key": "c:765b4b556927",
   "jurisdiction": "NJ",
   "category": "security_deposits",
   "title": "NJ Security Deposit Law: cap of 1.5 months' rent",
@@ -1530,10 +1557,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Statute covers all rental premises used for dwelling purposes. The owner-occupied exemption covers two- or three-family dwellings (the guide) or premises with no more than two rental units (N.J.S.A. 46:8-26). The units > 3 defeater is conservative: owner-occupied buildings with 4 or more units are not covered by either exemption wording."
+  "notes": "Statute covers all rental premises used for dwelling purposes. The owner-occupied exemption covers two- or three-family dwellings (the guide) or premises with no more than two rental units (N.J.S.A. 46:8-26). The units > 3 defeater is conservative: owner-occupied buildings with 4 or more units are not covered by either exemption wording.",
+  "citation": "N.J.S.A. 46:8-21.2; N.J.S.A. 46:8-19; N.J.S.A. 46:8-21.1",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0055": {
-  "key": "r-0055:71996ca094",
+ "r-0053": {
+  "key": "c:72abb7b92e7d",
   "jurisdiction": "Newark, NJ",
   "category": "rent_increase_limits",
   "title": "Newark Rent Control: annual CPI-based rent increase cap",
@@ -1575,10 +1604,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Coverage is all multiple dwellings under § 19:2-2. The definition is a cross-reference, so it does not make coverage incomplete. Commercial space is not residential and gets no test. The vacant-dwelling exemption (§ 19:2-18.2) is not in the corpus and depends on vacancy, which the engine cannot see, so no test is written for it. The 25% ceiling and the surcharges are separate from this cap."
+  "notes": "Coverage is all multiple dwellings under § 19:2-2. The definition is a cross-reference, so it does not make coverage incomplete. Commercial space is not residential and gets no test. The vacant-dwelling exemption (§ 19:2-18.2) is not in the corpus and depends on vacancy, which the engine cannot see, so no test is written for it. The 25% ceiling and the surcharges are separate from this cap.",
+  "citation": "Newark, N.J., Code § 19:2-3.1",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0056": {
-  "key": "r-0056:141dc3d054",
+ "r-0054": {
+  "key": "c:de9e6c340fc6",
   "jurisdiction": "Newark, NJ",
   "category": "screening_restrictions",
   "title": "Newark Ban the Box - Housing (criminal record check practices)",
@@ -1610,10 +1641,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "The exemption for cases where federal or state law requires or permits consideration of criminal history is offense-specific and not testable at address level, so no test is written for it. The related rent-control exemptions belong to a different rule and are not applied here."
+  "notes": "The exemption for cases where federal or state law requires or permits consideration of criminal history is offense-specific and not testable at address level, so no test is written for it. The related rent-control exemptions belong to a different rule and are not applied here.",
+  "citation": "Newark Municipal Code § 2:31-1 to 2:31-9 (Ord. 6 PSF-B, 4-15-2015)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0057": {
-  "key": "r-0057:97c13c5725",
+ "r-0055": {
+  "key": "c:9e52ee0fb0f7",
   "jurisdiction": "San Diego, CA",
   "category": "algorithmic_rent_setting",
   "title": "San Diego Prohibition of Anti-Competitive Automated Rent Price Fixing (SDMC §98.1103)",
@@ -1631,10 +1664,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Covers residential rental property citywide with no building-level limits. The exemptions for historical or public-data report software and for appraisal software concern the type of software, not the property, so no address test is possible for them. The 'algorithmic device' definition describes the software, not the building."
+  "notes": "Covers residential rental property citywide with no building-level limits. The exemptions for historical or public-data report software and for appraisal software concern the type of software, not the property, so no address test is possible for them. The 'algorithmic device' definition describes the software, not the building.",
+  "citation": "San Diego Municipal Code § 98.1103 (Ord. O-21955 N.S.)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0058": {
-  "key": "r-0058:aca96bf617",
+ "r-0056": {
+  "key": "c:cc6fe569efff",
   "jurisdiction": "San Diego, CA",
   "category": "just_cause_eviction",
   "title": "San Diego Residential Tenant Protections (just cause for termination of tenancy)",
@@ -1752,10 +1787,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Mobilehomes under the MRL are excluded by the ordinance but are not a building_type the engine carries, so no test is written for them."
+  "notes": "Mobilehomes under the MRL are excluded by the ordinance but are not a building_type the engine carries, so no test is written for them.",
+  "citation": "San Diego Municipal Code §§ 98.0701–98.0710",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0059": {
-  "key": "r-0059:19d1aac61d",
+ "r-0057": {
+  "key": "c:b777d5cae16e",
   "jurisdiction": "San Diego, CA",
   "category": "screening_restrictions",
   "title": "San Diego Prohibition of Discrimination Based on a Tenant's Source of Income",
@@ -1773,20 +1810,24 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "The reference to SDMC 98.0720 is a definitions cross-reference, not a coverage limit. The exception for acts necessary to comply with program requirements is conduct-based and has no building-level test. No other building-level limits are stated."
+  "notes": "The reference to SDMC 98.0720 is a definitions cross-reference, not a coverage limit. The exception for acts necessary to comply with program requirements is conduct-based and has no building-level test. No other building-level limits are stated.",
+  "citation": "San Diego Municipal Code §§ 98.0801-98.0806 (Ord. O-20986 N.S.)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0060": {
-  "key": "r-0060:8c2971b94f",
+ "r-0058": {
+  "key": "c:33f0e1db8d31",
   "jurisdiction": "San Francisco, CA",
   "category": "algorithmic_rent_setting",
   "title": "S.F. Rent Ordinance Section 37.10C - Prohibition on Algorithmic Rent-Setting Devices",
   "tests": [],
   "applies_to_all_residential": true,
   "coverage_incomplete": false,
-  "notes": "The ban covers residential units in San Francisco and states no exemptions or building-level limits. The definition of 'algorithmic device' describes the prohibited software, not a limit on which properties are covered. The related records' rent-control coverage criteria are not imported, because this rule is not stated to be limited to Rent Ordinance units."
+  "notes": "The ban covers residential units in San Francisco and states no exemptions or building-level limits. The definition of 'algorithmic device' describes the prohibited software, not a limit on which properties are covered. The related records' rent-control coverage criteria are not imported, because this rule is not stated to be limited to Rent Ordinance units.",
+  "citation": "S.F. Admin. Code § 37.10C",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0061": {
-  "key": "r-0061:3079d1a778",
+ "r-0059": {
+  "key": "c:5b957177c6fb",
   "jurisdiction": "San Francisco, CA",
   "category": "just_cause_eviction",
   "title": "San Francisco Rent Ordinance just cause eviction (S.F. Admin. Code § 37.9(a))",
@@ -1796,10 +1837,12 @@
   "notes": "The rule covers units subject to the Rent Ordinance. That wording is circular, and no related record states actual building-level coverage criteria such as a construction cutoff or unit-count threshold. The mention of units with a certificate of occupancy after June 13, 1979 is an inclusion: those units are covered for just cause even though they are exempt from rent increase limits, so no exclusion test is created. The D082 exemption about temporary capital improvements under 20 days concerns the type of eviction and not property coverage, so no test is created. Coverage is therefore flagged incomplete.",
   "explanation_note": "statutory exemptions (certain owner-occupied shared units, institutional housing) not testable from county data",
   "reviewed_by": "Hamza (commercial/IP lawyer)",
-  "review_ruling": "instructions/rulings_05.md #1: S.F. Admin. Code § 37.9 just-cause protection extends to units regardless of construction date; D079 states inclusions, not exclusions. Treat coverage as all residential rental units in SF. Remaining statutory exemptions are not testable from parcel data and rare in a 5+ unit sample."
+  "review_ruling": "instructions/rulings_05.md #1: S.F. Admin. Code § 37.9 just-cause protection extends to units regardless of construction date; D079 states inclusions, not exclusions. Treat coverage as all residential rental units in SF. Remaining statutory exemptions are not testable from parcel data and rare in a 5+ unit sample.",
+  "citation": "S.F. Admin. Code § 37.9(a)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0062": {
-  "key": "r-0062:e8550181cc",
+ "r-0060": {
+  "key": "c:fbad786c41ab",
   "jurisdiction": "San Francisco, CA",
   "category": "rent_increase_limits",
   "title": "San Francisco annual allowable rent increase (3/1/2026\\u20132/28/2027)",
@@ -1817,10 +1860,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "The rule's own coverage text is circular (rent-controlled units subject to the Rent Ordinance), so the only test comes from the related just-cause record. Costa-Hawkins single-family and condo exemptions are not tested because the related text gives no building-level criteria for them."
+  "notes": "The rule's own coverage text is circular (rent-controlled units subject to the Rent Ordinance), so the only test comes from the related just-cause record. Costa-Hawkins single-family and condo exemptions are not tested because the related text gives no building-level criteria for them.",
+  "citation": "S.F. Admin. Code ch. 37 (Rent Ordinance), § 37.3",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0063": {
-  "key": "r-0063:453d8b91d0",
+ "r-0061": {
+  "key": "c:1f880154c097",
   "jurisdiction": "San Francisco, CA",
   "category": "screening_restrictions",
   "title": "Fair Chance Ordinance (affordable housing)",
@@ -1838,41 +1883,24 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "The page states only that the ordinance protects residents with arrest or conviction history in affordable housing decisions. It gives no thresholds and lists no exemptions. The only limit is the affordable-housing programme requirement."
+  "notes": "The page states only that the ordinance protects residents with arrest or conviction history in affordable housing decisions. It gives no thresholds and lists no exemptions. The only limit is the affordable-housing programme requirement.",
+  "citation": "S.F. Police Code art. 49 (Fair Chance Ordinance)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0064": {
-  "key": "r-0064:d6969f46d9",
+ "r-0062": {
+  "key": "c:818a8f788976",
   "jurisdiction": "San Francisco, CA",
   "category": "security_deposits",
   "title": "SF security deposit interest rate",
   "tests": [],
   "applies_to_all_residential": true,
   "coverage_incomplete": false,
-  "notes": "No building-level limits or exemptions are stated for the security deposit interest rate. The phrase 'subject to San Francisco's security deposit interest rules' is circular, and the related records do not give any coverage criteria for this rule's category, so no tests are written."
+  "notes": "No building-level limits or exemptions are stated for the security deposit interest rate. The phrase 'subject to San Francisco's security deposit interest rules' is circular, and the related records do not give any coverage criteria for this rule's category, so no tests are written.",
+  "citation": "S.F. Admin. Code § 49.2",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0065": {
-  "key": "r-0065:c058663177",
-  "jurisdiction": "Santa Ana, CA",
-  "category": "algorithmic_rent_setting",
-  "title": "Santa Ana ordinance limiting algorithmic rent-setting software",
-  "tests": [
-   {
-    "field": "funding",
-    "op": "!=",
-    "value": "affordable_housing_compliance_tool",
-    "source_text": "tools used to comply with affordable housing program requirements",
-    "note": "Exemption applies to software used for affordable housing program compliance; the data cannot show the type of tool, so the rule is treated as applying with this exemption recorded as an assumption.",
-    "kind": "niche_exemption",
-    "on_fail": "exclude",
-    "defeated_if": null
-   }
-  ],
-  "applies_to_all_residential": false,
-  "coverage_incomplete": false,
-  "notes": "Applies to residential rental property within Santa Ana city limits with no building-level limits. The exemption for software relying solely on publicly available or aggregate historical data concerns the type of tool, not the building, so it cannot be tested from address data and is not encoded as a test. The affordable-housing compliance tool exemption is recorded as a niche exemption."
- },
- "r-0066": {
-  "key": "r-0066:9d5b1f0e68",
+ "r-0063": {
+  "key": "c:d5f5365a2029",
   "jurisdiction": "Santa Ana, CA",
   "category": "algorithmic_rent_setting",
   "title": "Santa Ana Ordinance NS-3090 (automated rent price-fixing)",
@@ -1890,10 +1918,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "Coverage is residential rental property within Santa Ana city limits, with no unit-count or building-level limits stated, so there are no coverage tests. The exemption for software relying solely on publicly available or aggregate historical data concerns the type of software used, not the property. It cannot be tested against address data and is not turned into a test. The just-cause and rent-cap cutoffs in related records belong to other rules and are not applied here."
+  "notes": "Coverage is residential rental property within Santa Ana city limits, with no unit-count or building-level limits stated, so there are no coverage tests. The exemption for software relying solely on publicly available or aggregate historical data concerns the type of software used, not the property. It cannot be tested against address data and is not turned into a test. The just-cause and rent-cap cutoffs in related records belong to other rules and are not applied here.",
+  "citation": "Santa Ana Ordinance No. NS-3090",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0067": {
-  "key": "r-0067:ce29c81130",
+ "r-0064": {
+  "key": "c:cc0ff976e84d",
   "jurisdiction": "Santa Ana, CA",
   "category": "just_cause_eviction",
   "title": "Santa Ana Just Cause Eviction Ordinance",
@@ -1949,10 +1979,12 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "The 15-year new-construction exemption is shown as coo_age_years < 15 to keep covered buildings. The engine reads it as exempt when coo_age_years is below 15. The related rent-stabilization 1995 cutoff is a different rule and was not used."
+  "notes": "The 15-year new-construction exemption is shown as coo_age_years < 15 to keep covered buildings. The engine reads it as exempt when coo_age_years is below 15. The related rent-stabilization 1995 cutoff is a different rule and was not used.",
+  "citation": "Santa Ana Municipal Code, Just Cause Eviction Ordinance (section number not stated in source)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  },
- "r-0068": {
-  "key": "r-0068:a4bf9a3577",
+ "r-0065": {
+  "key": "c:4d699ee67187",
   "jurisdiction": "Santa Ana, CA",
   "category": "rent_increase_limits",
   "title": "Santa Ana Rent Stabilization Ordinance",
@@ -1970,6 +2002,8 @@
   ],
   "applies_to_all_residential": false,
   "coverage_incomplete": false,
-  "notes": "The mobile home space exemption (offered for rent after January 1, 1990) is not testable with the available fields. The fair-return petition is an owner relief process, not a coverage exemption. Coverage details beyond the press release are not stated, but the cutoff gives a usable limit."
+  "notes": "The mobile home space exemption (offered for rent after January 1, 1990) is not testable with the available fields. The fair-return petition is an owner relief process, not a coverage exemption. Coverage details beyond the press release are not stated, but the cutoff gives a usable limit.",
+  "citation": "Santa Ana Municipal Code, Rent Stabilization Ordinance (section number not stated in source)",
+  "carried_over": "tests reused from the previous coverage of this citation; rule text changed since (no model call allowed in this run)"
  }
 }

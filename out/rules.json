@@ -669,8 +669,8 @@
       "title": "Algorithmic rent fixing in rental housing market prohibited",
       "requirement": "Landlords of residential dwelling units in Hoboken may not price-fix using algorithmic pricing, meaning software, algorithms or data-sharing platforms that use nonpublic competitor information to coordinate, recommend or implement rents, lease terms or occupancy levels among competing lessors.",
       "key_value": "Ban on algorithmic rent-fixing using nonpublic competitor information",
-      "coverage_conditions": "Any residential dwelling unit, defined as any primary residence, in the City of Hoboken. Nonpublic competitor information is information less than 365 days old that is not widely and readily available to the public at no cost. | [D034] Any residential dwelling unit, defined as any primary residence, in the City of Hoboken. 'Nonpublic competitor information' is information less than 365 days old that is not widely and readily available to the public at no cost.",
-      "exemptions": "Medical/long-term care and detention facilities are excluded from the definition of residential dwelling unit. | [D034] Medical/long-term care and detention facilities are excluded from 'residential dwelling unit'.",
+      "coverage_conditions": "Any residential dwelling unit, defined as any primary residence, in the City of Hoboken. Nonpublic competitor information is information less than 365 days old that is not widely and readily available to the public at no cost. | [D034] Any residential dwelling unit, defined as any primary residence, in the City of Hoboken. 'Nonpublic competitor information' is information less than 365 days old that is not widely and readily available to the public at no cost. | [D095] All residential rental units in Hoboken.",
+      "exemptions": "Medical/long-term care and detention facilities are excluded from the definition of residential dwelling unit. | [D034] Medical/long-term care and detention facilities are excluded from 'residential dwelling unit'. | [D095] Medical, long-term care, or detention facilities.",
       "overrides": [],
       "interaction": "New Jersey's FAIR Act (P.L. 2026, c.43) may preempt this ordinance once it takes effect. This capture does not address the FAIR Act.",
       "effective_date": "2025-07",
@@ -684,43 +684,16 @@
       "negative_finding": false,
       "record_role": "headline",
       "adoption_date": "2025-07-09",
-      "notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Adopted 7-9-2025 by Ord. No. B-781. Enforcement is by the Division of Housing or an aggrieved private citizen in Municipal Court.",
+      "notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Adopted 7-9-2025 by Ord. No. B-781. Enforcement is by the Division of Housing or an aggrieved private citizen in Municipal Court. Folded by reviewer ruling: rulings_07 #1: D095 is the May 2025 press release announcing the proposed ordinance that was then enacted as Hoboken Code ch. 158 (Ord. B-781); it is no longer pending. D095 becomes legislative-history support for the enacted rule. No Hoboken address should show a pending algorithmic rule.",
       "retrieved_at": "2026-10-04",
       "supporting_doc_ids": [
         "D034",
-        "D002"
+        "D002",
+        "D095"
       ]
     },
     {
       "team_rule_id": "r-0024",
-      "jurisdiction": "Hoboken, NJ",
-      "level": "city",
-      "category": "algorithmic_rent_setting",
-      "status": "pending",
-      "title": "Proposed Hoboken ordinance prohibiting algorithmic rent-fixing",
-      "requirement": "The proposed ordinance would make it unlawful for landlords of residential dwelling units in Hoboken to engage in price-fixing through algorithmic rent-fixing, defined as using software, algorithms or data-sharing platforms to coordinate, recommend or implement rents, lease terms or occupancy levels among competing landlords.",
-      "key_value": "Ban on algorithmic rent-fixing (proposed)",
-      "coverage_conditions": "All residential rental units in Hoboken.",
-      "exemptions": "Medical, long-term care, or detention facilities.",
-      "overrides": [],
-      "interaction": "The NJ FAIR Act (P.L. 2026, c.43) may preempt this ordinance once it takes effect; this document does not address that.",
-      "effective_date": null,
-      "citation": "Proposed Hoboken ordinance (to be introduced at the June 4, 2025 City Council meeting); no code citation given in source",
-      "source_doc_id": "D095",
-      "source_url": "https://www.hobokennj.gov/news/city-of-hoboken-to-introduce-ordinance-prohibiting-algorithmic-rent-fixing",
-      "quoted_span": "The proposed ordinance would make it unlawful for landlords renting residential dwelling units in Hoboken to engage in price-fixing through algorithmic rent-fixing.",
-      "confidence": 0.6,
-      "conflict_flag": true,
-      "conflict_note": "Possible preemption by NJ's FAIR Act (P.L. 2026, c.43): not found in this capture. The page is a May 2025 announcement of introduction only; whether the ordinance was adopted is not shown.",
-      "negative_finding": false,
-      "record_role": "headline",
-      "adoption_date": null,
-      "notes": "Press release dated 2025-05-30 announcing introduction on June 4, 2025. It states no adoption or effective date, so both are null and status is 'pending' on this document alone. The release lists penalties of up to 90 days' imprisonment, a fine (typo '$2,0000' in source), or community service; these are not used as the key value.",
-      "retrieved_at": "2026-10-03",
-      "supporting_doc_ids": []
-    },
-    {
-      "team_rule_id": "r-0025",
       "jurisdiction": "Hoboken, NJ",
       "level": "city",
       "category": "rent_increase_limits",
@@ -750,7 +723,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0026",
+      "team_rule_id": "r-0025",
       "jurisdiction": "Hoboken, NJ",
       "level": "city",
       "category": "rent_increase_limits",
@@ -780,7 +753,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0027",
+      "team_rule_id": "r-0026",
       "jurisdiction": "Jersey City, NJ",
       "level": "city",
       "category": "algorithmic_rent_setting",
@@ -788,8 +761,8 @@
       "title": "Preventing Algorithmic Rent-Fixing in the Rental Housing Market (Ord. 25-057, § 218-12)",
       "requirement": "Real estate lessors, their agents and subcontractors may not subscribe to, contract with, or pay a service provider that coordinates nonpublic competitor rental information; service providers may not facilitate agreements not to compete among lessors on rental pricing, fees or other terms.",
       "key_value": "Ban on contracting with algorithmic rent-setting service providers",
-      "coverage_conditions": "Applies to real estate lessors of residential dwelling units (primary residences) in Jersey City; 'nonpublic competitor information' is less than 365 days old and not widely and readily available to the public at no cost.",
-      "exemptions": "Owners of multiple properties for actions related exclusively to properties controlled by the same owner; licensed real estate agents operating in accordance with state regulations; residential dwelling units exclude inpatient medical care, licensed long-term care, and detention or correctional facilities.",
+      "coverage_conditions": "Applies to real estate lessors of residential dwelling units (primary residences) in Jersey City; 'nonpublic competitor information' is less than 365 days old and not widely and readily available to the public at no cost. | [D035] Landlords/owners of multifamily rental housing in Jersey City, per the article's description. The ordinance text is not reproduced.",
+      "exemptions": "Owners of multiple properties for actions related exclusively to properties controlled by the same owner; licensed real estate agents operating in accordance with state regulations; residential dwelling units exclude inpatient medical care, licensed long-term care, and detention or correctional facilities. | [D035] Per the article, real estate agents were excluded at the sponsor's agreement; owners of multiple buildings using algorithms but not colluding were described as outside the ban. Multiple Listing Service exclusion was discussed but its outcome is unclear.",
       "overrides": [],
       "interaction": "New Jersey's FAIR Act (P.L. 2026, c.43) may preempt this ordinance once it takes effect; not addressed in this document.",
       "effective_date": "2025-05",
@@ -803,42 +776,15 @@
       "negative_finding": false,
       "record_role": "headline",
       "adoption_date": "2025-05-21",
-      "notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Adopted on second and final reading May 21 2025; mayor approved May 22 2025. Ordinance text is internally inconsistent in section naming (Chapter 218 titled 'Multiple Dwellings' vs 'Fees and Charges'); penalties not extracted.",
+      "notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Adopted on second and final reading May 21 2025; mayor approved May 22 2025. Ordinance text is internally inconsistent in section naming (Chapter 218 titled 'Multiple Dwellings' vs 'Fees and Charges'); penalties not extracted. Folded by reviewer ruling: rulings_07 #2: the Hudson County View article (secondary) reports the same ordinance as the official adopted copy of Ord. 25-057 (Jersey City Code § 218-12). Keep the official record's citation, quote and date.",
       "retrieved_at": "2026-10-04",
       "supporting_doc_ids": [
-        "D002"
+        "D002",
+        "D035"
       ]
     },
     {
-      "team_rule_id": "r-0028",
-      "jurisdiction": "Jersey City, NJ",
-      "level": "city",
-      "category": "algorithmic_rent_setting",
-      "status": "in_force",
-      "title": "Jersey City ban on rent-setting algorithms (RealPage-type software)",
-      "requirement": "The Jersey City Council approved an ordinance banning landlords' use of rent-setting algorithms such as RealPage, which rely on certain nonpublic data. The article says it does not reach real estate agents, and owners who use algorithms without colluding were described as excluded.",
-      "key_value": "Ban on rent-setting algorithms such as RealPage",
-      "coverage_conditions": "Landlords/owners of multifamily rental housing in Jersey City, per the article's description. The ordinance text is not reproduced.",
-      "exemptions": "Per the article, real estate agents were excluded at the sponsor's agreement; owners of multiple buildings using algorithms but not colluding were described as outside the ban. Multiple Listing Service exclusion was discussed but its outcome is unclear.",
-      "overrides": [],
-      "interaction": "Possible preemption by the NJ FAIR Act (P.L. 2026, c.43) once it takes effect; this article does not discuss it. It notes only that Congress was considering barring municipalities from such rules.",
-      "effective_date": "2025-05",
-      "citation": "Jersey City ordinance banning rent-setting algorithms (sponsor Councilman James Solomon), approved May 2025; ordinance number not stated in source",
-      "source_doc_id": "D035",
-      "source_url": "https://hudsoncountyview.com/jersey-city-council-approves-realpage-ban-and-increasing-benefits-for-laborers/",
-      "quoted_span": "The Jersey City Council unanimously approved (9-0) a measure banning rent-setting algorithms such as RealPage, as well as increasing benefits for laborers, at last night’s meeting.",
-      "confidence": 0.6,
-      "conflict_flag": true,
-      "conflict_note": "Open question: the NJ FAIR Act (P.L. 2026, c.43) may preempt this ordinance once effective. Not found in this capture. The article mentions only that the U.S. House was considering banning municipal AI/algorithm regulation. Council members said amendments might still follow, and ordinance text and final adoption details are not in this capture. Secondary source (secondary (law firm / news / mirror)); confirm against the official text.",
-      "negative_finding": false,
-      "record_role": "headline",
-      "adoption_date": "2025-05-21",
-      "notes": "Secondary news source dated 2025-05-22 reporting a vote at 'last night's meeting' (adoption date computed as 2025-05-21). Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Ordinance number and codification not stated. Penalty mentioned by a speaker (a $2,000 daily fine) is not extracted as the key value. Whether this vote was a final adoption is not stated, so status is a best reading.",
-      "retrieved_at": "2026-10-03",
-      "supporting_doc_ids": []
-    },
-    {
-      "team_rule_id": "r-0029",
+      "team_rule_id": "r-0027",
       "jurisdiction": "Jersey City, NJ",
       "level": "city",
       "category": "rent_increase_limits",
@@ -866,7 +812,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0030",
+      "team_rule_id": "r-0028",
       "jurisdiction": "Los Angeles, CA",
       "level": "city",
       "category": "just_cause_eviction",
@@ -894,7 +840,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0031",
+      "team_rule_id": "r-0029",
       "jurisdiction": "Los Angeles, CA",
       "level": "city",
       "category": "just_cause_eviction",
@@ -925,7 +871,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0032",
+      "team_rule_id": "r-0030",
       "jurisdiction": "Los Angeles, CA",
       "level": "city",
       "category": "rent_increase_limits",
@@ -956,7 +902,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0033",
+      "team_rule_id": "r-0031",
       "jurisdiction": "Los Angeles, CA",
       "level": "city",
       "category": "screening_restrictions",
@@ -984,7 +930,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0034",
+      "team_rule_id": "r-0032",
       "jurisdiction": "Los Angeles, CA",
       "level": "city",
       "category": "security_deposits",
@@ -1015,7 +961,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0035",
+      "team_rule_id": "r-0033",
       "jurisdiction": "MA",
       "level": "state",
       "category": "algorithmic_rent_setting",
@@ -1045,7 +991,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0036",
+      "team_rule_id": "r-0034",
       "jurisdiction": "MA",
       "level": "state",
       "category": "algorithmic_rent_setting",
@@ -1073,7 +1019,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0037",
+      "team_rule_id": "r-0035",
       "jurisdiction": "MA",
       "level": "state",
       "category": "application_screening_fees",
@@ -1101,7 +1047,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0038",
+      "team_rule_id": "r-0036",
       "jurisdiction": "MA",
       "level": "state",
       "category": "application_screening_fees",
@@ -1129,7 +1075,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0039",
+      "team_rule_id": "r-0037",
       "jurisdiction": "MA",
       "level": "state",
       "category": "application_screening_fees",
@@ -1157,7 +1103,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0040",
+      "team_rule_id": "r-0038",
       "jurisdiction": "MA",
       "level": "state",
       "category": "rent_increase_limits",
@@ -1185,7 +1131,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0041",
+      "team_rule_id": "r-0039",
       "jurisdiction": "MA",
       "level": "state",
       "category": "rent_increase_limits",
@@ -1213,7 +1159,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0042",
+      "team_rule_id": "r-0040",
       "jurisdiction": "MA",
       "level": "state",
       "category": "rent_increase_limits",
@@ -1241,7 +1187,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0043",
+      "team_rule_id": "r-0041",
       "jurisdiction": "MA",
       "level": "state",
       "category": "rent_increase_limits",
@@ -1269,7 +1215,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0044",
+      "team_rule_id": "r-0042",
       "jurisdiction": "MA",
       "level": "state",
       "category": "screening_restrictions",
@@ -1297,7 +1243,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0045",
+      "team_rule_id": "r-0043",
       "jurisdiction": "MA",
       "level": "state",
       "category": "screening_restrictions",
@@ -1328,7 +1274,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0046",
+      "team_rule_id": "r-0044",
       "jurisdiction": "MA",
       "level": "state",
       "category": "security_deposits",
@@ -1356,7 +1302,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0047",
+      "team_rule_id": "r-0045",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "algorithmic_rent_setting",
@@ -1386,7 +1332,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0048",
+      "team_rule_id": "r-0046",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "application_screening_fees",
@@ -1414,7 +1360,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0049",
+      "team_rule_id": "r-0047",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "just_cause_eviction",
@@ -1445,7 +1391,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0050",
+      "team_rule_id": "r-0048",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "just_cause_eviction",
@@ -1473,7 +1419,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0051",
+      "team_rule_id": "r-0049",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "rent_increase_limits",
@@ -1501,7 +1447,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0052",
+      "team_rule_id": "r-0050",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "screening_restrictions",
@@ -1532,7 +1478,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0053",
+      "team_rule_id": "r-0051",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "screening_restrictions",
@@ -1560,7 +1506,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0054",
+      "team_rule_id": "r-0052",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "security_deposits",
@@ -1591,7 +1537,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0055",
+      "team_rule_id": "r-0053",
       "jurisdiction": "Newark, NJ",
       "level": "city",
       "category": "rent_increase_limits",
@@ -1619,7 +1565,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0056",
+      "team_rule_id": "r-0054",
       "jurisdiction": "Newark, NJ",
       "level": "city",
       "category": "screening_restrictions",
@@ -1647,7 +1593,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0057",
+      "team_rule_id": "r-0055",
       "jurisdiction": "San Diego, CA",
       "level": "city",
       "category": "algorithmic_rent_setting",
@@ -1678,7 +1624,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0058",
+      "team_rule_id": "r-0056",
       "jurisdiction": "San Diego, CA",
       "level": "city",
       "category": "just_cause_eviction",
@@ -1708,7 +1654,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0059",
+      "team_rule_id": "r-0057",
       "jurisdiction": "San Diego, CA",
       "level": "city",
       "category": "screening_restrictions",
@@ -1736,7 +1682,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0060",
+      "team_rule_id": "r-0058",
       "jurisdiction": "San Francisco, CA",
       "level": "city",
       "category": "algorithmic_rent_setting",
@@ -1766,7 +1712,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0061",
+      "team_rule_id": "r-0059",
       "jurisdiction": "San Francisco, CA",
       "level": "city",
       "category": "just_cause_eviction",
@@ -1797,7 +1743,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0062",
+      "team_rule_id": "r-0060",
       "jurisdiction": "San Francisco, CA",
       "level": "city",
       "category": "rent_increase_limits",
@@ -1827,7 +1773,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0063",
+      "team_rule_id": "r-0061",
       "jurisdiction": "San Francisco, CA",
       "level": "city",
       "category": "screening_restrictions",
@@ -1855,7 +1801,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0064",
+      "team_rule_id": "r-0062",
       "jurisdiction": "San Francisco, CA",
       "level": "city",
       "category": "security_deposits",
@@ -1883,37 +1829,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0065",
-      "jurisdiction": "Santa Ana, CA",
-      "level": "city",
-      "category": "algorithmic_rent_setting",
-      "status": "in_force",
-      "title": "Santa Ana ordinance limiting algorithmic rent-setting software",
-      "requirement": "Landlords may not use certain algorithmic rent-setting tools, meaning software that relies on nonpublic market data, in the Santa Ana residential rental market. Tenants may sue, and need only show the prohibited software was used rather than prove active collusion.",
-      "key_value": "Ban on certain algorithmic rent-setting (price-fixing) software",
-      "coverage_conditions": "Residential rental housing in Santa Ana. | [D088] Residential rental property within Santa Ana city limits.",
-      "exemptions": "Does not restrict tools that rely on publicly available data or historical trends, or tools used for affordable housing compliance. | [D088] Pricing software relying solely on publicly available data or aggregate historical data, and tools used to comply with affordable housing program requirements.",
-      "overrides": [],
-      "interaction": "The newsletter says the ordinance is intended to complement broader state-level protections; no preemption issue is stated.",
-      "effective_date": "2026-03",
-      "citation": "Santa Ana Municipal Code (ordinance approved by City Council March 3, 2026; ordinance number and section not stated in source)",
-      "source_doc_id": "D089",
-      "source_url": "https://santa-ana.gov/rent-stabilization-newsletter-march-2026/",
-      "quoted_span": "Bans Price-Fixing Software: Prohibits the use of certain algorithmic rent-setting tools in the local rental market.",
-      "confidence": 0.8,
-      "conflict_flag": false,
-      "conflict_note": null,
-      "negative_finding": false,
-      "record_role": "headline",
-      "adoption_date": "2026-03-03",
-      "notes": "Month of adoption; exact effective date not stated in source (California ordinances generally take effect after adoption, often 30 days after final passage). Secondary newsletter summary; the ordinance text, number and code section are not in this document. Civil remedies: damages, injunctive relief, up to $1,000 per violation, attorney's fees.",
-      "retrieved_at": "2026-10-03",
-      "supporting_doc_ids": [
-        "D088"
-      ]
-    },
-    {
-      "team_rule_id": "r-0066",
+      "team_rule_id": "r-0063",
       "jurisdiction": "Santa Ana, CA",
       "level": "city",
       "category": "algorithmic_rent_setting",
@@ -1921,8 +1837,8 @@
       "title": "Santa Ana Ordinance NS-3090 (automated rent price-fixing)",
       "requirement": "Santa Ana prohibits specified anticompetitive automated rent price-fixing, and tenants may bring private claims.",
       "key_value": "Ban on automated rent price-fixing",
-      "coverage_conditions": "[D086] Apartment owners and landlords in the City of Santa Ana; no unit-count or other thresholds stated in the article. | [D087] Residential rental property within Santa Ana city limits.",
-      "exemptions": "[D087] Pricing software that relies solely on publicly available data, aggregate historical data, or tools used to comply with affordable housing program requirements.",
+      "coverage_conditions": "[D086] Apartment owners and landlords in the City of Santa Ana; no unit-count or other thresholds stated in the article. | [D087] Residential rental property within Santa Ana city limits. | [D089] Residential rental housing in Santa Ana. | [D088] Residential rental property within Santa Ana city limits.",
+      "exemptions": "[D087] Pricing software that relies solely on publicly available data, aggregate historical data, or tools used to comply with affordable housing program requirements. | [D089] Does not restrict tools that rely on publicly available data or historical trends, or tools used for affordable housing compliance. | [D088] Pricing software relying solely on publicly available data or aggregate historical data, and tools used to comply with affordable housing program requirements.",
       "overrides": [],
       "interaction": null,
       "effective_date": "2026-04-02",
@@ -1936,15 +1852,17 @@
       "negative_finding": false,
       "record_role": "headline",
       "adoption_date": null,
-      "notes": "Secondary source. Effective date from the table ('effective April 2, 2026'). Municipal code section not given in the document. Proposal (Santa Ana Municipal Code, algorithmic rent-setting software ordinance (ordinance number and section not stated in source), D087) adopted as Santa Ana Ordinance No. NS-3090.",
+      "notes": "Secondary source. Effective date from the table ('effective April 2, 2026'). Municipal code section not given in the document. Proposal (Santa Ana Municipal Code, algorithmic rent-setting software ordinance (ordinance number and section not stated in source), D087) adopted as Santa Ana Ordinance No. NS-3090. Folded by reviewer ruling: rulings_07 #3: the March 2026 Rent Stabilization newsletter describes the same ordinance as Ord. NS-3090 (adopted 2026-03-03, effective 2026-04-02 under the 30-day rule). Keep the NS-3090 record.",
       "retrieved_at": "2026-10-03",
       "supporting_doc_ids": [
         "D086",
-        "D087"
+        "D087",
+        "D089",
+        "D088"
       ]
     },
     {
-      "team_rule_id": "r-0067",
+      "team_rule_id": "r-0064",
       "jurisdiction": "Santa Ana, CA",
       "level": "city",
       "category": "just_cause_eviction",
@@ -1974,7 +1892,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0068",
+      "team_rule_id": "r-0065",
       "jurisdiction": "Santa Ana, CA",
       "level": "city",
       "category": "rent_increase_limits",
@@ -2015,9 +1933,9 @@
       "coverage_conditions": null,
       "exemptions": null,
       "overrides": [
-        "r-0041"
+        "r-0039"
       ],
-      "interaction": "Derived from state rule r-0041.",
+      "interaction": "Derived from state rule r-0039.",
       "effective_date": null,
       "citation": "M.G.L. c. 40P, § 4",
       "source_doc_id": "D048",

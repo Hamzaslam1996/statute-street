@@ -1,0 +1,29 @@
+{
+ "Berkeley, CA|algorithmic_rent_setting|berkeley municipal code 13.63.030 ord. no. 7 992-n.s.": {
+  "effective_date": "2026-01",
+  "date_source_doc_id": "D002",
+  "adoption_date": null,
+  "kind": "Effective date",
+  "sentence": "13.63 (effective January 2026) Prohibits coordinated pricing algorithms;",
+  "decided_by": "model (Sonnet 5.5), see date_resolve_log.csv",
+  "team_rule_id_at_decision": "r-0001"
+ },
+ "Berkeley, CA|screening_restrictions|berkeley municipal code ch. 13.106": {
+  "effective_date": "2020-04",
+  "date_source_doc_id": "D003",
+  "adoption_date": "2020-04-14",
+  "kind": "Adoption date",
+  "sentence": "On April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106).",
+  "decided_by": "model (Sonnet 5.5), see date_resolve_log.csv",
+  "team_rule_id_at_decision": "r-0006"
+ },
+ "CA|algorithmic_rent_setting|cal. bus. prof. code 16729": {
+  "effective_date": "2026-01-01",
+  "date_source_doc_id": "M_CA-ALG-01_BPC_16729_justia",
+  "adoption_date": "2025-10-06",
+  "kind": "Effective date",
+  "sentence": "(AB 325) Effective January 1, 2026.",
+  "decided_by": "model (Sonnet 5.5), see date_resolve_log.csv",
+  "team_rule_id_at_decision": "r-0013"
+ }
+}

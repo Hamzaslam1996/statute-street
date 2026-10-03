@@ -1,46 +1,43 @@
 team_rule_id,citation,before,after,source_doc,how,candidates
-r-0001,"Berkeley Municipal Code § 13.63.030 (Ord. No. 7,992-N.S.)",,2026-01,D002,"model chose among 11 date(s): Candidate 2 is the only one that cites BMC ch. 13.63, the Berkeley provision at issue, and gives its effective date as January 2026. The other candidates concern different jurisdictions or different code sections. Candidate 3 refers to NS-3090, which is not identified as the ordinance at issue (Ord. No. 7,992-N.S.), so its April 2, 2026 date does not clearly govern.",D002:2024-10; D002:2025-06; D002:2026-01; D002:2026-04-02; D002:2025-02; D002:2026-03-01; D002:2025-05; D002:2025-07; D002:2025-10; D002:2026-02; D002:2027-01-01
+r-0001,"Berkeley Municipal Code § 13.63.030 (Ord. No. 7,992-N.S.)",,2026-01,D002,"cached decision reused (model (Sonnet 5.5), see date_resolve_log.csv)",
 r-0002,BMC 13.78.010,,,,no explicit statement found,
 r-0003,BMC 13.78.016,,,,no explicit statement found,
-r-0004,"Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance), as amended by Measure BB (Nov. 2024)",,,,"model: none governs (The only candidate gives a January 1, 2026 date for relocation assistance payment increases, which is a different provision from the nonpayment threshold of one month of HUD Fair Market Rent. It does not state when the nonpayment requirement took effect, so no candidate clearly governs.)",D004:2026-01-01
-r-0006,Berkeley Municipal Code ch. 13.106,,2020-04,D003,"adoption date -> adoption month (ruling B): Candidate 0 states that the Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106) on April 14, 2020. This is the same ordinance and citation as the rule, and it matches the rule's note about the passage date.",
-r-0007,Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance),,,,"model: no adoption statement is about this provision (The only candidate describes the Rent Stabilization Board adopting the Annual General Adjustment Order for 2026, which is an annual rent ceiling adjustment and not the adoption of ch. 13.76 or its security deposit interest provision.)",
+r-0004,"Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance), as amended by Measure BB (Nov. 2024)",,,,1 candidate date(s) left unresolved (no model / budget),D004:2026-01-01
+r-0006,Berkeley Municipal Code ch. 13.106,,2020-04,D003,"cached decision reused (model (Sonnet 5.5), see date_resolve_log.csv)",
+r-0007,Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance),,,,adoption candidates left unresolved (no model / budget),
 r-0009,"Mass. H.3744 (193rd General Court, 2023-2024)",,,,no explicit statement found,
 r-0010,"Mass. H.3744 (193rd General Court, 2023-2024)",,,,no explicit statement found,
 r-0011,Boston DND Fair Chance Tenant Selection Policy (Feb. 2017),,,,no explicit statement found,
 r-0012,"Boston Fair Housing Commission regulations; see also M.G.L. c. 151B, § 4(10)",,,,no explicit statement found,
-r-0013,Cal. Bus. & Prof. Code § 16729,,2026-01-01,M_CA-ALG-01_BPC_16729_justia,"model chose among 1 date(s): Candidate 2 comes from the record's own source (BPC 16729 on Justia) and states AB 325 took effect January 1, 2026. Candidate 1 gives the same date but from a different document. Candidate 0 is a generic reference to unspecified 'laws' and is less specific. The notes say the text gives no effective date, but California statutes enacted in 2025 take effect January 1, 2026 by default, and the candidate that comes straight from the statute record is the strongest.",D028:2026-01-01; D093:2026-01-01; M_CA-ALG-01_BPC_16729_justia:2026-01-01
-r-0014,Cal. Civ. Code § 1950.6,,,,"model: none governs (The only candidate is the January 1, 2026 effective date of the AB 1170 amendment. Nothing indicates that amendment changed the $30 cap, so under the rule it does not reset the date. The date the cap first took effect is not stated, and the 1998 CPI adjustment start is not a clear first-effective date. No candidate clearly governs.)",D026:2026-01-01
-r-0019,Cal. Civ. Code § 1950.5,,,,"model: none governs (None of the candidates gives the date the one-month cap first took effect. The notes say that start date is not stated in the text, and that the 2026-01-01 AB 414 amendment did not change the cap, so it does not govern. Candidate 1 (AB 1170) concerns a different bill. Candidates 0 and 2 are AB 414 amendment dates that left the cap unchanged. The application date in (c)(6) is not an effective date, so the effective_date stays null.)",D025:2026-01-01; D026:2026-01-01; D020:2026-01-01
+r-0013,Cal. Bus. & Prof. Code § 16729,,2026-01-01,M_CA-ALG-01_BPC_16729_justia,"cached decision reused (model (Sonnet 5.5), see date_resolve_log.csv)",
+r-0014,Cal. Civ. Code § 1950.6,,,,1 candidate date(s) left unresolved (no model / budget),D026:2026-01-01
+r-0019,Cal. Civ. Code § 1950.5,,,,1 candidate date(s) left unresolved (no model / budget),D025:2026-01-01; D026:2026-01-01; D020:2026-01-01
 r-0020,"Cambridge City Council policy order (June 2026), directing city manager to draft ordinance language; no ordinance cited",,,,no explicit statement found,
 r-0021,Cambridge Municipal Code ch. 8.71,,,,no explicit statement found,
 r-0022,Cambridge Municipal Code ch. 14.04 (Fair Housing Ordinance),,,,no explicit statement found,
-r-0023,Hoboken Code § 158-2 (Ord. No. B-781),2025-07,2025-07,D002,"model chose among 11 date(s): Candidate 7 cites Code § 158-2, the Hoboken provision at issue, and gives its date as July 2025. That matches the adoption on 7-9-2025 by Ord. No. B-781. The other candidates are dates for other jurisdictions' provisions, so they do not count.",D002:2024-10; D002:2025-06; D002:2026-01; D002:2026-04-02; D002:2025-02; D002:2026-03-01; D002:2025-05; D002:2025-07; D002:2025-10; D002:2026-02; D002:2027-01-01
-r-0024,"Proposed Hoboken ordinance (to be introduced at the June 4, 2025 City Council meeting); no code citation given in source",,,,no explicit statement found,
-r-0025,Hoboken City Code § 158-1 (Ord. No. B-750),2025-04,2025-04,,no explicit statement found,
-r-0026,Hoboken Code § 155-5,,,,"model: none governs (The only candidate's January 1, 2023 date applies to a different provision: the registration fee penalty (double the annual fee) and the possible denial of a CPI increase for failure to register. It does not state when the § 155-5 cap (lesser of 5% or CPI, one increase per 12 months) first took effect or that an amendment changed that cap. No candidate clearly governs.)",D032:2023-01-01
-r-0027,Jersey City Code § 218-12 (Ord. 25-057),2025-05,2025-05,,"model: none governs (None of the candidates concerns Jersey City's Ord. 25-057 (§ 218-12). Each describes a different jurisdiction's code section, such as § 37.10C, §§ 98.1101-98.1104, § 9-813, Minneapolis, Portland, and Rockville. Those dates belong to other provisions, so none governs here.)",D002:2024-10; D002:2025-06; D002:2026-01; D002:2026-04-02; D002:2025-02; D002:2026-03-01; D002:2025-05; D002:2025-07; D002:2025-10; D002:2026-02; D002:2027-01-01
-r-0028,"Jersey City ordinance banning rent-setting algorithms (sponsor Councilman James Solomon), approved May 2025; ordinance number not stated in source",2025-05,2025-05,,no explicit statement found,
-r-0029,Jersey City Municipal Code ch. 260,,,,no explicit statement found,
-r-0030,L.A. Mun. Code § 165.00 et seq. (Just Cause for Eviction Ordinance),,,,"model: none governs (None of the candidates gives the date the JCO's just-cause requirement first took effect. Candidate 0 is the March 27, 2023 FMR nonpayment limit, a later related provision that does not change the core just-cause requirement. Candidate 1 is a rent increase cap, a different provision. Candidates 2, 3 and 4 concern relocation amounts, fees and updates, not the original requirement. Candidate 5 is the operative date of the RSO chapter (LAMC ch. XV art. 1), a different ordinance, not the JCO.)",D040:2023-03-27; D040:2024-08-01; D043:2025-02-11; D043:2026-07-01; D043:2025-07-01; M_LA-JUST-02_LAMC_ch15_art1_151:1979-05-01
-r-0033,L.A.M.C. § 45.67,,,,no explicit statement found,
-r-0035,"H.5222, 194th Gen. Court (Mass. 2025-2026) (new draft of H.1564)",,,,no explicit statement found,
-r-0036,"Mass. S. 2983, 194th Gen. Ct. (2025-2026)",,,,no explicit statement found,
-r-0039,"M.G.L. c. 186, § 15B; 254 C.M.R. 7",,,,no explicit statement found,
-r-0040,"Initiative Petition 25-21; Mass. Const. Amend. art. 48, The Initiative, II, § 2; Cella v. Attorney General, SJC-13893 (2026)",,,,no explicit statement found,
-r-0041,"M.G.L. c. 40P, § 4",,,,no explicit statement found,
-r-0042,"M.G.L. c. 40P, §§ 2-3",,,,no explicit statement found,
-r-0043,"Mass. Const. amend. art. 48, The Initiative, Pt. II, § 2 (SJC ruling, June 2026)",,,,no explicit statement found,
-r-0044,"M.G.L. c. 151B, § 4(10)",,,,no explicit statement found,
-r-0045,"M.G.L. c. 6, § 172(a)(3), (c)",,,,no explicit statement found,
-r-0046,"M.G.L. c. 186, § 15B",,,,"model: none governs (The only candidate gives 2025-08-01, the effective date of the 2025 amendment. That amendment added 'agent of the lessor' and an optional fee in lieu of a deposit, but it did not change the 1-month cap or the 30-day return requirement, which are the key values. Under the rule, that date does not govern, and no candidate gives the date the original requirement first took effect.)",D052:2025-08-01
-r-0049,N.J.S.A. 2A:18-61.1 et seq.; N.J.S.A. 2A:18-53,,,,no explicit statement found,
-r-0050,N.J.S.A. 2A:18-61.3,,,,no explicit statement found,
-r-0051,N.J.S.A. 2A:18-61.1(f); N.J.S.A. 2A:42-84.5,,,,no explicit statement found,
-r-0052,N.J.S.A. 10:5-12 (NJ Law Against Discrimination),,,,no explicit statement found,
-r-0054,N.J.S.A. 46:8-21.2; N.J.S.A. 46:8-19; N.J.S.A. 46:8-21.1,,,,no explicit statement found,
-r-0055,"Newark, N.J., Code § 19:2-3.1",2024-09,2024-09,,no explicit statement found,
-r-0056,"Newark Municipal Code § 2:31-1 to 2:31-9 (Ord. 6 PSF-B, 4-15-2015)",2015-04,2015-04,,no explicit statement found,
-r-0061,S.F. Admin. Code § 37.9(a),,,,"model: none governs (The only candidate is about the annual allowable rent increase and security deposit interest rate for March 2026 to February 2027. That is a different provision and does not say when the just cause eviction requirement in Section 37.9(a) first took effect, so no candidate governs.)",D083:2026-03-01
-r-0063,S.F. Police Code art. 49 (Fair Chance Ordinance),,,,no explicit statement found,
-r-0065,"Santa Ana Municipal Code (ordinance approved by City Council March 3, 2026; ordinance number and section not stated in source)",2026-03,2026-03,,no explicit statement found,
+r-0023,Hoboken Code § 158-2 (Ord. No. B-781),2025-07,2025-07,,11 candidate date(s) left unresolved (no model / budget),D002:2024-10; D002:2025-06; D002:2026-01; D002:2026-04-02; D002:2025-02; D002:2026-03-01; D002:2025-05; D002:2025-07; D002:2025-10; D002:2026-02; D002:2027-01-01
+r-0024,Hoboken City Code § 158-1 (Ord. No. B-750),2025-04,2025-04,,no explicit statement found,
+r-0025,Hoboken Code § 155-5,,,,1 candidate date(s) left unresolved (no model / budget),D032:2023-01-01
+r-0026,Jersey City Code § 218-12 (Ord. 25-057),2025-05,2025-05,,11 candidate date(s) left unresolved (no model / budget),D002:2024-10; D002:2025-06; D002:2026-01; D002:2026-04-02; D002:2025-02; D002:2026-03-01; D002:2025-05; D002:2025-07; D002:2025-10; D002:2026-02; D002:2027-01-01
+r-0027,Jersey City Municipal Code ch. 260,,,,no explicit statement found,
+r-0028,L.A. Mun. Code § 165.00 et seq. (Just Cause for Eviction Ordinance),,,,6 candidate date(s) left unresolved (no model / budget),D040:2023-03-27; D040:2024-08-01; D043:2025-02-11; D043:2026-07-01; D043:2025-07-01; M_LA-JUST-02_LAMC_ch15_art1_151:1979-05-01
+r-0031,L.A.M.C. § 45.67,,,,no explicit statement found,
+r-0033,"H.5222, 194th Gen. Court (Mass. 2025-2026) (new draft of H.1564)",,,,no explicit statement found,
+r-0034,"Mass. S. 2983, 194th Gen. Ct. (2025-2026)",,,,no explicit statement found,
+r-0037,"M.G.L. c. 186, § 15B; 254 C.M.R. 7",,,,no explicit statement found,
+r-0038,"Initiative Petition 25-21; Mass. Const. Amend. art. 48, The Initiative, II, § 2; Cella v. Attorney General, SJC-13893 (2026)",,,,no explicit statement found,
+r-0039,"M.G.L. c. 40P, § 4",,,,no explicit statement found,
+r-0040,"M.G.L. c. 40P, §§ 2-3",,,,no explicit statement found,
+r-0041,"Mass. Const. amend. art. 48, The Initiative, Pt. II, § 2 (SJC ruling, June 2026)",,,,no explicit statement found,
+r-0042,"M.G.L. c. 151B, § 4(10)",,,,no explicit statement found,
+r-0043,"M.G.L. c. 6, § 172(a)(3), (c)",,,,no explicit statement found,
+r-0044,"M.G.L. c. 186, § 15B",,,,1 candidate date(s) left unresolved (no model / budget),D052:2025-08-01
+r-0047,N.J.S.A. 2A:18-61.1 et seq.; N.J.S.A. 2A:18-53,,,,no explicit statement found,
+r-0048,N.J.S.A. 2A:18-61.3,,,,no explicit statement found,
+r-0049,N.J.S.A. 2A:18-61.1(f); N.J.S.A. 2A:42-84.5,,,,no explicit statement found,
+r-0050,N.J.S.A. 10:5-12 (NJ Law Against Discrimination),,,,no explicit statement found,
+r-0052,N.J.S.A. 46:8-21.2; N.J.S.A. 46:8-19; N.J.S.A. 46:8-21.1,,,,no explicit statement found,
+r-0053,"Newark, N.J., Code § 19:2-3.1",2024-09,2024-09,,no explicit statement found,
+r-0054,"Newark Municipal Code § 2:31-1 to 2:31-9 (Ord. 6 PSF-B, 4-15-2015)",2015-04,2015-04,,no explicit statement found,
+r-0059,S.F. Admin. Code § 37.9(a),,,,1 candidate date(s) left unresolved (no model / budget),D083:2026-03-01
+r-0061,S.F. Police Code art. 49 (Fair Chance Ordinance),,,,no explicit statement found,

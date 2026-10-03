@@ -91,8 +91,20 @@ organisers state that those rows have no unit counts (see `out/derived_units.csv
 
 Our engine reports the Massachusetts ban on discriminating against recipients of
 public or rental assistance (c. 151B § 4(10)) as applying to every Massachusetts
-rental. The owner-occupied two-family exemption is written into § 4(6) and § 4(7)
-only; § 4(10) contains no such exemption, so no exemption test is applied to it.
+rental. In the official text (D049) the owner-occupied two-family exemption is
+written into § 4(7) and § 4(11)(3) only; § 4(10) contains no such exemption, so
+no exemption test is applied to it.
+
+### Reviewer folds (rulings_07)
+
+`dedupe_overrides.json` records three deterministic folds ruled by the reviewer
+after the automatic dedupe: the Hoboken press release announcing the proposal
+that became ch. 158 (no longer pending), the news report of Jersey City Ord.
+25-057, and the Santa Ana newsletter describing Ord. NS-3090. Each folded source
+stays on the kept rule as a supporting document and the fold is logged with its
+reason in `out/dedupe_log.csv`. Coverage tests and resolved effective dates are
+cached by content and citation (`out/coverage.json`, `out/date_resolve_cache.json`)
+so a rebuild after such folds needs no model calls.
 
 ## Module C — change tracking
 

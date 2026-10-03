@@ -294,6 +294,41 @@ def dedupe(records: list[dict]) -> tuple[list[dict], list[dict]]:
     return kept, log
 
 
+def apply_dedupe_overrides(kept: list[dict]) -> tuple[list[dict], list[dict]]:
+    """
+    Reviewer-ruled folds from dedupe_overrides.json (rulings_07): the record extracted from
+    `from_doc` is folded into the record whose citation contains `into_citation_contains`,
+    within the same jurisdiction + category. Logged with the reviewer's reason.
+    """
+    path = OUT.parent / "dedupe_overrides.json"
+    if not path.exists():
+        return kept, []
+    log = []
+    for ov in json.loads(path.read_text(encoding="utf-8")).get("folds", []):
+        bucket = [r for r in kept if r["jurisdiction"] == ov["jurisdiction"] and r["category"] == ov["category"]]
+        src = [r for r in bucket if r["source_doc_id"] == ov["from_doc"]]
+        tgt = [r for r in bucket if ov["into_citation_contains"].lower() in (r["citation"] or "").lower()
+               and r["source_doc_id"] != ov["from_doc"]]
+        if not src or not tgt:
+            print(f"  dedupe override not applicable ({ov['from_doc']} -> *{ov['into_citation_contains']}*): "
+                  f"{'source' if not src else 'target'} not found", file=sys.stderr)
+            continue
+        s, t = src[0], tgt[0]
+        for d in [s["source_doc_id"], *s.get("supporting_doc_ids", [])]:
+            if d != t["source_doc_id"] and d not in t["supporting_doc_ids"]:
+                t["supporting_doc_ids"].append(d)
+        for fld in ("coverage_conditions", "exemptions"):
+            extra = (s.get(fld) or "").strip()
+            if extra and extra.lower() not in (t.get(fld) or "").lower():
+                t[fld] = f"{t.get(fld) or ''} | [{s['source_doc_id']}] {extra}".strip(" |")
+        t["notes"] = f"{t.get('notes') or ''} Folded by reviewer ruling: {ov['reason']}".strip()
+        kept = [r for r in kept if r is not s]
+        log.append({"kept_doc": t["source_doc_id"], "kept_citation": t["citation"], "dropped_doc": s["source_doc_id"],
+                    "dropped_citation": s["citation"], "dropped_status": s["status"], "jurisdiction": s["jurisdiction"],
+                    "category": s["category"], "reason": f"reviewer fold ({ov['reviewer']}): {ov['reason']}"})
+    return kept, log
+
+
 def act_prefix(cite: str) -> str | None:
     """'N.J.S.A. 46:8-26' -> '46:8'; 'Newark § 19:2-22' -> '19:2'; 'Cal. Civ. Code § 1950.5' -> '1950'."""
     for tup in citation_sections(cite or ""):
@@ -382,6 +417,8 @@ def main() -> int:
             candidates.append(rec)
 
     kept, merge_log = dedupe(candidates)
+    kept, override_log = apply_dedupe_overrides(kept)
+    merge_log += override_log
     with open(DEDUPE_CSV, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["kept_doc", "kept_citation", "dropped_doc", "dropped_citation",
                                           "dropped_status", "jurisdiction", "category", "reason"])

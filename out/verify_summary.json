@@ -7,9 +7,9 @@
   "span_pass_after_retry": 0,
   "dropped_span": 0,
   "dropped_schema": 0,
-  "dropped_duplicate": 73,
+  "dropped_duplicate": 76,
   "retries": 0,
-  "final_rules": 68,
+  "final_rules": 65,
   "query_date": "2026-10-01",
   "span_pass_rate_first_attempt": 1.0
 }

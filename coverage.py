@@ -138,9 +138,15 @@ Respond only with JSON."""
 
 
 def rule_key(rule: dict) -> str:
-    h = hashlib.sha1(json.dumps([rule.get("coverage_conditions"), rule.get("exemptions"), rule.get("requirement"),
-                                 rule.get("interaction")], ensure_ascii=False).encode()).hexdigest()[:10]
-    return f"{rule['team_rule_id']}:{h}"
+    """Content key, independent of the team_rule_id (ids shift when rules merge)."""
+    h = hashlib.sha1(json.dumps([rule["jurisdiction"], rule["category"], rule.get("citation"), rule.get("coverage_conditions"),
+                                 rule.get("exemptions"), rule.get("requirement"), rule.get("interaction")],
+                                ensure_ascii=False).encode()).hexdigest()[:12]
+    return f"c:{h}"
+
+
+def cite_key(rule: dict) -> str:
+    return f"{rule['jurisdiction']}|{rule['category']}|{(rule.get('citation') or '').strip().lower()}"
 
 
 def main() -> int:
@@ -148,21 +154,55 @@ def main() -> int:
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--only", nargs="*", help="redo only these team_rule_ids")
     ap.add_argument("--budget", type=float, default=1.50)
+    ap.add_argument("--no-model", action="store_true",
+                    help="never call the API: reuse cached tests by content, else carry the previous tests of the same citation")
     args = ap.parse_args()
 
     rules = json.loads(RULES_FULL.read_text(encoding="utf-8"))["rules"]
-    cache = json.loads(COVERAGE_JSON.read_text(encoding="utf-8")) if COVERAGE_JSON.exists() and not args.force else {}
-    client = anthropic.Anthropic()
-    spent, calls = 0.0, 0
+    old = json.loads(COVERAGE_JSON.read_text(encoding="utf-8")) if COVERAGE_JSON.exists() and not args.force else {}
+    # Index the previous run by content key and by citation, so a rule that was renumbered
+    # (ids shift when rules merge) still finds its tests.
+    by_key = {e.get("key"): e for e in old.values()}
+    by_cite = {f"{e['jurisdiction']}|{e['category']}|{(e.get('citation') or '').strip().lower()}": e
+               for e in old.values() if e.get("citation")}
+    by_title = {(e["jurisdiction"], e["category"], e.get("title")): e for e in old.values()}
+    by_bucket: dict = {}
+    for e in old.values():
+        by_bucket.setdefault((e["jurisdiction"], e["category"]), []).append(e)
+
+    def previous_entry(rule: dict):
+        """The old entry for this rule, found WITHOUT using the (shifting) team_rule_id."""
+        return (by_title.get((rule["jurisdiction"], rule["category"], rule["title"]))
+                or by_cite.get(cite_key(rule))
+                or (by_bucket.get((rule["jurisdiction"], rule["category"]), [None] * 2)[0]
+                    if len(by_bucket.get((rule["jurisdiction"], rule["category"]), [])) == 1 else None))
+    cache: dict = {}
+    client = None if args.no_model else anthropic.Anthropic()
+    spent, calls, carried = 0.0, 0, 0
     for rule in rules:
         if rule.get("negative_finding") or rule.get("derived"):
             continue  # negative findings never "apply"; no coverage tests needed
         key = rule_key(rule)
-        cached = cache.get(rule["team_rule_id"])
-        if args.only:
-            if rule["team_rule_id"] not in args.only:
-                continue
-        elif cached and cached.get("key") == key:
+        rid = rule["team_rule_id"]
+        if args.only and rid not in args.only:
+            prev = previous_entry(rule)
+            if prev:
+                cache[rid] = {**prev, "key": prev.get("key"), "citation": rule.get("citation")}
+            continue
+        hit = by_key.get(key) if not args.only else None
+        if hit is not None:
+            cache[rid] = {**hit, "key": key, "citation": rule.get("citation")}
+            continue
+        if client is None:
+            prev = previous_entry(rule)
+            if prev:
+                cache[rid] = {**prev, "key": key, "citation": rule.get("citation"),
+                              "carried_over": "tests reused from the previous coverage of this citation; rule text "
+                                              "changed since (no model call allowed in this run)"}
+                carried += 1
+            else:
+                print(f"  {rid} {rule['jurisdiction']}/{rule['category']}: no cached tests and no model allowed; "
+                      f"engine will treat as applies-to-all", file=sys.stderr)
             continue
         if spent >= args.budget:
             print("budget reached; stopping", file=sys.stderr)
@@ -190,11 +230,11 @@ def main() -> int:
             continue
         data = json.loads(next(b.text for b in resp.content if b.type == "text"))
         cache[rule["team_rule_id"]] = {"key": key, "jurisdiction": rule["jurisdiction"], "category": rule["category"],
-                                      "title": rule["title"], **data}
+                                      "title": rule["title"], "citation": rule.get("citation"), **data}
         print(f"  {rule['team_rule_id']} {rule['jurisdiction']}/{rule['category']}: {len(data['tests'])} test(s)")
     applied = apply_overrides(cache, rules)
     COVERAGE_JSON.write_text(json.dumps(cache, indent=1, ensure_ascii=False), encoding="utf-8")
-    print(f"coverage: {len(cache)} rules cached, {calls} call(s) this run, ${spent:.3f}, "
+    print(f"coverage: {len(cache)} rules cached, {calls} call(s) this run, ${spent:.3f}, {carried} carried over by citation, "
           f"{applied} reviewer override(s) applied -> {COVERAGE_JSON}")
     return 0
 

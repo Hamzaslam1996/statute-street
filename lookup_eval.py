@@ -45,10 +45,15 @@ def build_mapping(gold: dict, rules: list[dict]) -> tuple[dict, list[str]]:
     """gold_id -> team_rule_id. Dev matches first, then reasons' section numbers, then unique bucket."""
     mapping, notes = {}, []
     matches_path = OUT / "eval_matches.json"
+    by_id = {r["team_rule_id"]: r for r in rules}
     if matches_path.exists():
         for m in json.loads(matches_path.read_text(encoding="utf-8")):
-            mapping[m["gold_id"]] = m["team_rule_id"]
-    by_id = {r["team_rule_id"]: r for r in rules}
+            r = by_id.get(m["team_rule_id"])
+            # ids shift when rules merge: only trust a stored match whose rule is still in the gold id's bucket
+            if r and (bucket_of(m["gold_id"]) in (None, (r["jurisdiction"], r["category"]))):
+                mapping[m["gold_id"]] = m["team_rule_id"]
+            else:
+                notes.append(f"{m['gold_id']}: stale stored match {m['team_rule_id']} ignored")
     reasons = collections.defaultdict(set)
     gold_ids = set()
     for a in gold["addresses"]:

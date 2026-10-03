@@ -1,0 +1,29 @@
+{
+  "_about": "Reviewer-ruled folds applied by verify.py AFTER the automatic dedupe (instructions/rulings_07.md). Each folds the record extracted from `from_doc` into the record whose citation contains `into_citation_contains`, in the same jurisdiction + category. The folded source stays on the kept rule as a supporting document and the fold is logged in out/dedupe_log.csv with the reason. Raw outputs are never deleted.",
+  "folds": [
+    {
+      "jurisdiction": "Hoboken, NJ",
+      "category": "algorithmic_rent_setting",
+      "from_doc": "D095",
+      "into_citation_contains": "158-2",
+      "reviewer": "Hamza (commercial/IP lawyer)",
+      "reason": "rulings_07 #1: D095 is the May 2025 press release announcing the proposed ordinance that was then enacted as Hoboken Code ch. 158 (Ord. B-781); it is no longer pending. D095 becomes legislative-history support for the enacted rule. No Hoboken address should show a pending algorithmic rule."
+    },
+    {
+      "jurisdiction": "Jersey City, NJ",
+      "category": "algorithmic_rent_setting",
+      "from_doc": "D035",
+      "into_citation_contains": "25-057",
+      "reviewer": "Hamza (commercial/IP lawyer)",
+      "reason": "rulings_07 #2: the Hudson County View article (secondary) reports the same ordinance as the official adopted copy of Ord. 25-057 (Jersey City Code § 218-12). Keep the official record's citation, quote and date."
+    },
+    {
+      "jurisdiction": "Santa Ana, CA",
+      "category": "algorithmic_rent_setting",
+      "from_doc": "D089",
+      "into_citation_contains": "NS-3090",
+      "reviewer": "Hamza (commercial/IP lawyer)",
+      "reason": "rulings_07 #3: the March 2026 Rent Stabilization newsletter describes the same ordinance as Ord. NS-3090 (adopted 2026-03-03, effective 2026-04-02 under the 30-day rule). Keep the NS-3090 record."
+    }
+  ]
+}
