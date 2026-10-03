@@ -2531,17 +2531,20 @@
   "effective_date": null,
   "enacted_date": null,
   "sunset_date": null,
-  "citation": "803 CMR 5.00 (CORI – Housing), esp. 5.04, 5.10; M.G.L. c.6, § 172(a)(3)",
+  "citation": "M.G.L. c.6, § 172(a)(3); 803 CMR 5.00 (CORI – Housing), esp. 5.04, 5.10",
   "source_ids": [
    "S-MA-11",
    "S-MAN-03",
-   "S-MAN-04"
+   "S-MAN-04",
+   "S-MA-12"
   ],
   "corpus_doc_ids": [
    "D056"
   ],
-  "supplementary_doc_ids": [],
-  "quoted_span": "Each landlord, property management company, real estate agent, or public housing authority\n           shall provide a copy of a housing applicant's CORI or other criminal history information, and\n           shall disclose the source of the information, to him or her:\n               (a) before asking the applicant any questions about the criminal history; and\n               (b) before making an adverse housing decision based on the housing applicant's CORI or\n               other criminal history information.",
+  "supplementary_doc_ids": [
+   "D094"
+  ],
+  "quoted_span": "Criminal offender record information made available under this section shall be limited to the following: (i) felony convictions or findings of not guilty by reason of insanity for 10 years following the disposition thereof, including termination of any period of incarceration or custody, (ii) misdemeanor convictions for 5 years following the disposition thereof, including termination of any period of incarceration or custody, and (iii) pending criminal charges, which shall include cases that have been continued without a finding until such time as the case is dismissed pursuant to section 18 of chapter 278; provided, however, that prior misdemeanor and felony conviction records shall be available for the entire period that the subject's last available conviction record is available under this section; and provided further, that a violation of section 7 of chapter 209A and a violation of section 9 of chapter 258E shall be treated as a felony for purposes of this section.",
   "quoted_span_in_corpus": false,
   "quote_verified": true,
   "interaction": {
@@ -2556,6 +2559,11 @@
   "confidence": 0.8,
   "verified_against": [
    {
+    "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleII/Chapter6/Section172",
+    "checked_at_utc": "2026-10-03T22:58Z",
+    "result": "official page captured as D094 (HTTP 200, whole-page text); § 172(a)(3) quoted verbatim; FindLaw mirror now secondary only"
+   },
+   {
     "url": "https://www.mass.gov/doc/803-cmr-5-criminal-offender-record-information-cori-housing/download",
     "checked_at_utc": "2026-10-03T19:03Z",
     "result": "organisers manifest D056: capture failed (403 Forbidden); team capture also failed (0 bytes). Text not seen."
@@ -2568,11 +2576,11 @@
    {
     "url": "https://codes.findlaw.com/ma/part-i-administration-of-the-government-ch-1-182/ma-gen-laws-ch-6-sect-172/",
     "checked_at_utc": "2026-10-04",
-    "result": "secondary mirror of M.G.L. c.6 § 172 (manual download); look-back periods 10y felony / 5y misdemeanour"
+    "result": "SECONDARY (mirror) — superseded as basis by the official page D094; kept for the record: secondary mirror of M.G.L. c.6 § 172 (manual download); look-back periods 10y felony / 5y misdemeanour"
    }
   ],
   "verifier": "Hamza",
-  "notes": "Decided by Hamza 2026-10-04 (L097): added with null span, quote_verified false, confidence 0.5; source text never retrieved — requirement wording is a general description, not quoted. Regulation compiled 6/11/21; no effective date stated in the captured pages. Official malegislature.gov c.6 § 172 page could not be captured (connection timed out twice on 2026-10-03; FindLaw mirror saved instead). Lawyer review (Hamza, 2026-10-04) batch 1 row 2."
+  "notes": "v0.4.2 (Hamza, 2026-10-04): quoted_span = second sentence of M.G.L. c.6 § 172(a)(3) (look-back limits; the housing-applicant purpose \"(ii) to evaluate applicants for rental or lease of housing\" is in the preceding sentence of the same paragraph) from the official malegislature.gov page (D094); the 803 CMR 5.10 copy-before-questioning passage previously used as the span (verified against sources/manual/MA-SCRN-02_803_CMR_5.txt, pages dated 6/11/21) is retained here: \"Each landlord, property management company, real estate agent, or public housing authority shall provide a copy of a housing applicant's CORI or other criminal history information, and shall disclose the source of the information, to him or her: (a) before asking the applicant any questions about the criminal history; and (b) before making an adverse housing decision based on the housing applicant's CORI or other criminal history information.\". History: added by L097 (null span, confidence 0.5); lawyer review batch 1 row 2 supplied the 803 CMR 5 manual text; D094 captured 2026-10-03 22:58 UTC after two TLS failures from the Mac VM. No effective date stated in either text (Q17 rule)."
  },
  {
   "gold_id": "NJ-ALG-01",
