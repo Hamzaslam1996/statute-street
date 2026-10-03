@@ -179,14 +179,28 @@ def build(aid):
                        not_covered=notc, negative_or_failed_in_stack=sorted(neg),
                        unknown_facts=sorted(unknown), notes='; '.join(notes) if notes else None)
 
-recs=[build(a) for a in PICK]
+PICK40=['A0257','A0030','A0105','A0283',            # SF: no year; 1908 flat&store 5u; 2019 (15-yr COO); 1986 51u
+        'A0445','A0267','A0037',                      # LA: 1977 (year before cutoff); no year/no units; 2001 47u
+        'A0114','A0219','A0273','A0275','A0346',      # SD: 5 fillers = random.Random(20261004).sample(remaining SD ids sorted, 5); all no year
+        'A0018','A0430','A0103','A0193','A0263',      # Berkeley: use-code edge cases 7200 and 7800, then 3 fillers = random.Random(20261004).sample(remaining, 3)
+        'A0002','A0168','A0489','A0049',              # Hoboken: 2001/2007/2000 (post-1987 new-construction exemption); no year 'AFFORDABL'
+        'A0026','A0042','A0017','A0032',              # Jersey City: 1901/1912 (pre-exemption); two no year
+        'A0352','A0011','A0013','A0020',              # Newark: 1900; three no year
+        'A0052','A0093','A0123','A0083','A0144',      # Boston: Allston 1965; Jamaica Plain 2004 A/118; East Boston 2013 A/125; Roxbury 1890 A/125; Roxbury 1910 A/112
+        'A0009','A0034','A0039','A0046','A0043','A0064']  # Cambridge: 1915/1886/1920 6u; 1910 32u; 1975 44u; 1890 84u
+assert len(PICK40)==40 and not set(PICK)&set(PICK40)
+import sys
+MODE=sys.argv[1] if len(sys.argv)>1 else 'seed20'
+PICKS=PICK if MODE=='seed20' else PICK+PICK40
+recs=[build(a) for a in PICKS]
 import jsonschema
 schema=json.load(open(f'{OUT}/gold/schema/gold_address.schema.json'))
 schema['properties']['expected']['items']['properties']['result']['enum']=['applies','unknown','superseded','not_yet_effective','pending']
 for x in recs: jsonschema.validate(x,schema)
 out=OrderedDict(as_of='2026-10-01',verifier='AI-draft',method='Expected results derived from gold/rules/all.json coverage logic; see gold/README.md. Rules that do not cover the address are listed in not_covered (the submission format omits them). Negative findings and failed measures are listed for completeness and are never reported as applying.',
+                selection_method=('seed20: hand-picked to exercise the README traps (see README). seed60 = seed20 + 40 rows chosen so every legal city has ≥5 (SF 7, LA 7, SD 7, Berkeley 6, Hoboken 6, Jersey City 6, Newark 6, Boston 8, Cambridge 7): per city, first every available edge case (cutoff-year neighbours 1977/1986, rows missing year_built or units, postal_city ≠ legal city, post-1987 NJ new construction, 2019/2013 recent construction), then fillers drawn with random.Random(20261004) from the remaining rows of that city. Expected results computed by the same coverage logic as seed20 (build_addresses.py).' if MODE=='seed60' else 'hand-picked to exercise the README traps'),
                 sample_gaps=['No San Francisco row has year_built 1979 (two SF rows lack year_built and are used instead for the cutoff trap).','No Los Angeles row has a postal_city other than "Los Angeles" (Van Nuys etc. absent); the postal_city trap is exercised with Boston neighbourhoods and San Ysidro.'],
                 addresses=recs)
-json.dump(out,open(f'{OUT}/gold/addresses/seed20.json','w'),indent=1,ensure_ascii=False)
+json.dump(out,open(f'{OUT}/gold/addresses/{MODE}.json','w'),indent=1,ensure_ascii=False)
 print(len(recs),'addresses;',sum(len(x['expected']) for x in recs),'expected entries;',sum(1 for x in recs for e in x['expected'] if e['result']=='unknown'),'unknowns')
 for x in recs: print(x['address_id'],x['legal_city'],x['raw']['year_built'] or '-',x['units_used'],[ (e['gold_id'],e['result'][:4]) for e in x['expected']][:6],'...')

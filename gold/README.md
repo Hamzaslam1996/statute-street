@@ -12,7 +12,8 @@ An independent, verifiable answer key used to score the Statute Street system (H
 | `schema/gold_rule.schema.json`, `gold_address.schema.json`, `gold_change.schema.json` | Schemas (all three keys validate) |
 | `rules/all.json` | 87 rows: 55 rules/pending/failed entries + 32 negative findings ("no rule at this level"); every cell of the 13 × 6 matrix resolved |
 | `rules/dev.json`, `rules/test.json` | Stratified split (61 / 26) — see below |
-| `addresses/seed20.json` | 20 trap-exercising addresses with expected result for every rule in the jurisdiction stack |
+| `addresses/seed20.json` | 20 trap-exercising addresses with expected result for every rule in the jurisdiction stack (frozen; unchanged since v0.3) |
+| `addresses/seed60.json` | seed20 + 40 more (60 total, every city ≥ 5) — selection method below |
 | `changes/T1-T5.json` | Change-test key with affected address ids computed from `data/addresses_raw.csv` |
 | `adjudication_log.csv` | Field-level disagreements with the silver key (Step 7); `decided_by` blank until Hamza decides |
 | `open_questions.md` | Contested legal/categorisation questions framed as decisions |
@@ -26,6 +27,9 @@ An independent, verifiable answer key used to score the Statute Street system (H
 3. Wrote one object per rule and per negative finding. **Every `quoted_span` was checked by exact substring match against the saved source text before writing** (`build_rules.py` aborts on any mismatch). `quoted_span_in_corpus` = true only if the same span exists verbatim in the organisers' `corpus/text`.
 4. `effective_date` is given only where a primary source supports it (or can be computed from an enactment clause); `YYYY-MM` where the day is unverifiable; otherwise null with the reason in `notes`. **Q17 rule (Hamza, 2026-10-04): long-standing statutes carry null unless the source text itself states an effective date.** Adoption dates go in `enacted_date`.
 5. Address expectations follow the README traps: year_built ≠ certificate-of-occupancy date (cutoff-year rows → unknown); postal_city ≠ legal city; owner-type conditions → unknown unless units make the exception impossible; missing year/units → unknown. Where `units` is empty but `use_description` states a unit range (e.g. "5+ units", "APT 7-30 UNITS") the record says so and marks the inference.
+
+## Address selection (seed60)
+seed60 = the 20 seed20 rows (identical, same order) + 40 rows chosen per legal city so that every city has at least 5: SF 7, LA 7, SD 7, Berkeley 6, Hoboken 6, Jersey City 6, Newark 6, Boston 8, Cambridge 7. Within each city the picks are, in order: (1) every available cutoff-year neighbour (SF 1986 post-cutoff, LA 1977 pre-cutoff; no SF 1979 or LA 1979–80 rows exist), (2) rows missing year_built and/or units, (3) postal_city ≠ legal city (Allston, Jamaica Plain, East Boston, Roxbury), (4) recent construction that trips the 15-year COO exemption (SF 2019, Boston 2013) and NJ post-1987 new construction (Hoboken 2000/2001/2007), (5) unit-count variety for owner-type exemptions (Cambridge 6 vs 32/44/84 units), then (6) fillers drawn with `random.Random(20261004).sample(sorted(remaining ids), k)` where a city still needed rows (San Diego 5, Berkeley 3). The exact 40 ids and the reason for each are in `build_addresses.py` (`PICK40`); run `python3 build_addresses.py seed60` to regenerate. Expected results use the same coverage logic as seed20. Totals: 569 expected entries, 176 unknown (each names the missing fact); 27 rows lack year_built, 33 lack units, 9 have postal_city ≠ legal city.
 
 ## Independence rules
 - Silver key quarantined until Step 7; opened only after `rules/all.json`, `addresses/seed20.json` and `changes/T1-T5.json` were frozen (see commit/mtime).
