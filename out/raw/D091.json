@@ -1,0 +1,44 @@
+{
+  "doc_id": "D091",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T22:55:46+00:00",
+  "source_url": "https://berkeley.municipal.codes/BMC/13.78.016",
+  "retrieved": "2026-10-03 22:36 UTC",
+  "source_type": "code publisher",
+  "n_chunks": 1,
+  "document_summary": "Berkeley Municipal Code § 13.78.016 bans non-refundable fees charged to existing tenants for renewing a tenancy or changing roommates, while preserving tenant screening fees allowed under Cal. Civ. Code § 1950.6 (Berkeley, CA).",
+  "rules": [
+    {
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Prohibition of Non-refundable Application Fees Associated with Existing Tenancies",
+      "requirement": "Owners and their agents may not charge an existing tenant a non-refundable fee to renew a tenancy, including fees tied to a roommate's departure or a request to add or replace a roommate. Screening fees permitted under Civ. Code § 1950.6 may still be charged, including to a new or additional roommate.",
+      "key_value": "Ban on non-refundable renewal/roommate-change fees for existing tenants",
+      "coverage_conditions": "Owners of residential rental property in Berkeley and their agents; protects existing tenants and households.",
+      "exemptions": "Tenant screening fees permitted under Cal. Civ. Code § 1950.6 are not disallowed, including for a new or additional roommate seeking to be added to an existing lease.",
+      "interaction": "Works alongside the state screening-fee cap in Cal. Civ. Code § 1950.6, which this ordinance expressly preserves.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Berkeley Municipal Code § 13.78.016 (Ord. 7697-NS § 1, 2020)",
+      "quoted_span": "It is unlawful for an owner of residential rental property or the owner's agent to charge a non-refundable fee to any existing tenant for the purpose of renewing a tenancy, in whole or in part, including any fee associated with the departure of a roommate or to request to add or replace a roommate in a pre-existing household.",
+      "confidence": 0.9,
+      "conflict_flag": true,
+      "conflict_note": "The permitted screening fee is governed by Civ. Code § 1950.6, which has no single official 2026 dollar figure. The figure is not found in this capture.",
+      "record_role": "headline",
+      "out_of_scope": false,
+      "out_of_scope_reason": null,
+      "extraction_notes": "The history note gives only 'Ord. 7697-NS § 1, 2020', with no adoption or effective date, so both dates are null. This is a code-publisher capture of the municipal code."
+    }
+  ],
+  "usage": {
+    "input_tokens": 6083,
+    "output_tokens": 1130,
+    "cost_usd": 0.0235,
+    "seconds": 7.9
+  },
+  "errors": []
+}

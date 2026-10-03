@@ -99,7 +99,7 @@ def main() -> int:
 
     extracted_docs = {r["source_doc_id"] for r in ours if r.get("source_doc_id")}
     # Which documents did we run? Use the raw cache, not just the surviving rules.
-    raw_docs = {p.stem for p in (OUT / "raw").glob("D*.json") if ".attempt" not in p.name}
+    raw_docs = {p.stem for p in (OUT / "raw").glob("*.json") if ".attempt" not in p.name and ".truncated" not in p.name}
     extracted_docs |= raw_docs
 
     def in_scope(g: dict) -> bool:

@@ -1,0 +1,44 @@
+{
+  "doc_id": "M_MA-SCRN-02_803_CMR_5",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T22:54:57+00:00",
+  "source_url": "https://www.mass.gov/doc/803-cmr-5-criminal-offender-record-information-cori-housing/download",
+  "retrieved": "2026-10-04 (saved by Hamza from his browser; single page)",
+  "source_type": "official regulation",
+  "n_chunks": 1,
+  "document_summary": "Massachusetts regulation 803 CMR 5.00 (DCJIS), governing how landlords, property managers, real estate agents and housing authorities may obtain and use CORI (criminal offender record information) to screen rental housing applicants.",
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "CORI housing screening limits (803 CMR 5.00)",
+      "requirement": "Landlords, property managers and real estate agents may request CORI on a housing applicant only as the final step in the application process. They must give the applicant a copy of the CORI and its source before asking about criminal history and before any adverse decision, and must follow the notice and dispute steps in 5.14.",
+      "key_value": "CORI check only as the final step of the application process",
+      "coverage_conditions": "Applies to landlords, real estate agents, public housing authorities and property management companies that request CORI to screen applicants to rent or lease housing, including market-rate and subsidized housing.",
+      "exemptions": "Standard access CORI may not be used to screen other household members, but open access CORI may be requested for individuals other than the applicant (5.04(3)-(4)). Landlords may still make an adverse decision based on an applicant's refusal to consent to a lawful CORI request (5.06(3)).",
+      "interaction": "Sits alongside federal FCRA requirements, which apply where a consumer reporting agency is used (5.14-5.15). Subsidized housing screening must also follow state and federal law (5.05(3)).",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "803 CMR 5.04(2); authority M.G.L. c. 6, §§ 167A and 172",
+      "quoted_span": "CORI shall only be requested for a housing applicant as the final step in the application process.",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "record_role": "headline",
+      "out_of_scope": false,
+      "out_of_scope_reason": null,
+      "extraction_notes": "Effective date not stated in the document. Page footers show 6/11/21, which looks like a revision or print date and is not a stated effective date. Procedural duties from 5.06, 5.10, 5.14 and 5.15 (acknowledgment form, copy of CORI, pre-adverse notice, dispute opportunity, CRA authorization) are folded into this record."
+    }
+  ],
+  "usage": {
+    "input_tokens": 13576,
+    "output_tokens": 1221,
+    "cost_usd": 0.0394,
+    "seconds": 9.4
+  },
+  "errors": []
+}

@@ -1,0 +1,44 @@
+{
+  "doc_id": "M_MA-SCRN-02_MGL_c6_s172_findlaw",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T22:55:09+00:00",
+  "source_url": "https://codes.findlaw.com/ma/part-i-administration-of-the-government-ch-1-182/ma-gen-laws-ch-6-sect-172/ (mirror of M.G.L. c.6 s.172; official: https://malegislature.gov/Laws/GeneralLaws/PartI/TitleII/Chapter6/Section172)",
+  "retrieved": "2026-10-04 (saved by Hamza from his browser; single page)",
+  "source_type": "secondary mirror of statute",
+  "n_chunks": 1,
+  "document_summary": "FindLaw mirror of M.G.L. c. 6, § 172 (Massachusetts CORI access statute, current as of Jan. 1, 2025), which limits the criminal history a housing provider can obtain about rental applicants; it covers Massachusetts statewide.",
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "CORI access limits for rental applicants (M.G.L. c. 6, § 172)",
+      "requirement": "A landlord may obtain from the state database only limited criminal offender record information to evaluate rental applicants: felony convictions for 10 years, misdemeanor convictions for 5 years, and pending charges. A landlord holding an applicant's criminal history must give the applicant a copy before questioning about it and before any adverse decision based on it.",
+      "key_value": "Lookback: felonies 10 years, misdemeanors 5 years after disposition (incl. custody), plus pending charges",
+      "coverage_conditions": "Applies to a requestor evaluating applicants for rental or lease of housing, under subsection (a)(3). Requestor must certify purpose and have the applicant's signed acknowledgement form, and must verify the applicant's identity.",
+      "exemptions": "Under subsection (b), murder, voluntary and involuntary manslaughter, and state-prison-punishable sex offenses remain available permanently unless sealed. Prior convictions stay available for as long as the subject's last available conviction record is available. Housing authorities have separate access under (a)(7).",
+      "interaction": "State-level limit on database access; this document does not discuss local ordinances. Under subsection (d), it is unlawful to request or require a person's CORI copy except as authorized by the section.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "M.G.L. c. 6, § 172(a)(3)",
+      "quoted_span": "Criminal offender record information made available under this section shall be limited to the following: (i) felony convictions or findings of not guilty by reason of insanity for 10 years following the disposition thereof, including termination of any period of incarceration or custody, (ii) misdemeanor convictions for 5 years following the disposition thereof, including termination of any period of incarceration or custody, and (iii) pending criminal charges, which shall include cases that have been continued without a finding until such time as the case is dismissed pursuant to section 18 of chapter 278;",
+      "confidence": 0.8,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "record_role": "headline",
+      "out_of_scope": false,
+      "out_of_scope_reason": null,
+      "extraction_notes": "Secondary mirror (FindLaw, current as of 2025-01-01); no effective date stated in the text, so effective_date is null. The full sentence exceeds 800 characters, so the quote stops at the end of item (iii). The applicant-copy duty comes from the unnumbered paragraph after subsection (c). Official text should be checked for later amendments."
+    }
+  ],
+  "usage": {
+    "input_tokens": 13516,
+    "output_tokens": 1926,
+    "cost_usd": 0.0463,
+    "seconds": 12.5
+  },
+  "errors": []
+}

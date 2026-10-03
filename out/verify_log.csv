@@ -56,12 +56,6 @@ D034,1,Hoboken City Code § 158-1 (Ord. No. B-750),Mandatory disclosures for ren
 D034,1,Hoboken City Code § 158-2 (Ord. No. B-781),Algorithmic rent fixing in rental housing market prohibited,True,100.0,Landlords who rent any residential dwelling unit (defined as any primary residen
 D035,1,"Jersey City ordinance banning rent-setting algorithms (sponsor Councilman James Solomon), approved May 2025; ordinance number not stated in source",Jersey City ban on rent-setting algorithms (RealPage-type software),True,100.0,The Jersey City Council unanimously approved (9-0) a measure banning rent-settin
 D036,1,Jersey City Municipal Code ch. 260,Jersey City Rent Control Ordinance (Municipal Code Chapter 260),True,100.0,(Please Note: All 1-4 Unit Properties are exempt from rent control)
-D037,1,S.F. Admin. Code § 37.10C,San Francisco ban on algorithmic rent-setting devices,True,100.0,The ordinance prohibits landlords from using qualifying algorithmic devices that
-D037,1,San Diego Mun. Code §§ 98.1101–98.1104,San Diego ban on algorithmic rent-setting,True,100.0,"Similar prohibition and private remedy of up to $1,000 per violation; now at iss"
-D037,1,Berkeley Mun. Code ch. 13.63 (Ord. 7992),Berkeley ban on coordinated pricing algorithms,True,100.0,Prohibits coordinated pricing algorithms; recurring unit/month violations and pr
-D037,1,Santa Ana Ordinance No. NS-3090,Santa Ana Ordinance NS-3090 on automated rent price-fixing,True,100.0,Ordinance NS-3090 prohibits specified anticompetitive automated rent price-fixin
-D037,1,Jersey City Code § 218-12,Jersey City ban on algorithmic rent coordination services,True,100.0,Prohibits a landlord’s use of algorithmic rent coordination services; includes p
-D037,1,Hoboken City Code ch. 158-2,Hoboken ban on algorithmic rent coordination,True,100.0,"Prohibits landlords from using software, algorithms or data-sharing platforms to"
 D038,1,L.A.M.C. § 45.67,LAMC Sec. 45.67 Prohibited Activities (source-of-income discrimination),True,100.0,"It shall be unlawful for any person offering for rent, renting, or listing any h"
 D040,1,L.A. Mun. Code § 165.00 et seq. (Just Cause for Eviction Ordinance),Los Angeles Just Cause for Eviction Ordinance (JCO),True,100.0,It prohibits terminations of tenancies without just cause and requires relocatio
 D040,1,Cal. Civ. Code § 1947.12,California Tenant Protection Act of 2019 (AB 1482) rent cap,True,100.0,rent increases are limited to no more than 5% plus the percentage change in the 
@@ -73,7 +67,6 @@ D043,1,"L.A.M.C. §§ 151.09, 165.03, 165.06; L.A.M.C. §§ 47.06-47.07",Relocat
 D044,1,L.A.M.C. § 151.06.02,Security deposit interest for RSO units (LAMC 151.06.02),True,100.0,A tenant shall be given the unpaid accrued interest in the form of either a dire
 D045,1,"H.5222, 194th Gen. Court (Mass. 2025-2026) (new draft of H.1564)",H.5222 - An Act relative to preventing algorithmic rent fixing in the rental housing market,True,100.0,An Act relative to preventing algorithmic rent fixing in the rental housing mark
 D046,1,"Mass. S. 2983, 194th Gen. Ct. (2025-2026)",An Act prohibiting algorithmic rent setting (S.2983),True,100.0,of Cindy F. Friedman and Julian Cyr for legislation to prohibit algorithmic rent
-D047,1,"Mass. Senate Bill S.2983, 194th General Court (2025-2026)",S.2983 An Act prohibiting algorithmic rent setting (bill),True,100.0,"The committee on Housing, to whom was referred the petitions (accompanied by bil"
 D048,1,"M.G.L. c. 40P, § 4","No local rent control permitted (state bar), G.L. c. 40P, § 4",True,100.0,"No city or town may enact, maintain or enforce rent control of any kind, except "
 D049,1,"M.G.L. c. 151B, § 4(10)","Source-of-income / housing subsidy discrimination ban (M.G.L. c. 151B, § 4(10))",True,100.0,"For any person furnishing credit, services or rental accommodations to discrimin"
 D052,1,"M.G.L. c. 186, § 15B","Massachusetts security deposit limits and handling (M.G.L. c. 186, § 15B)",True,100.0,"(b) At or prior to the commencement of any tenancy, no lessor or agent of the le"
@@ -130,3 +123,44 @@ D085,1,"Santa Ana Municipal Code, Rent Stabilization Ordinance (section number n
 D085,1,"Santa Ana Municipal Code, Just Cause Eviction Ordinance (section number not stated in source)",Santa Ana Just Cause Eviction Ordinance,True,100.0,"After 30 days, an owner shall not terminate a tenancy without just cause, which "
 D086,1,Santa Ana Municipal Code (algorithmic rent-setting ordinance; ordinance number not stated in source),Santa Ana ban on algorithmic rent-setting devices,True,100.0,"To protect renters, city leaders have approved a new ordinance that stops apartm"
 D087,1,"Santa Ana Municipal Code, algorithmic rent-setting software ordinance (ordinance number and section not stated in source)",Santa Ana ban on algorithmic rent-setting software,True,100.0,"The ordinance, approved on Tuesday, Feb. 17, for a first reading and set for a f"
+D088,1,Santa Ana Municipal Code (ordinance number not stated in source),Santa Ana ban on algorithmic rent-setting software,True,100.0,"The ordinance, which was approved on March 3, 2026 for a second reading and fina"
+D089,1,"Santa Ana Municipal Code (ordinance approved by City Council March 3, 2026; ordinance number and section not stated in source)",Santa Ana ordinance limiting algorithmic rent-setting software,True,100.0,Bans Price-Fixing Software: Prohibits the use of certain algorithmic rent-settin
+D090,1,"City of Boston Code, Ordinances, ch. X, § 10-11",[notice-only] Boston Housing Stability Notification Act,True,100.0,"When a landlord or foreclosing owner serves the tenant or former homeowners any
+"
+D091,1,"Berkeley Municipal Code § 13.78.016 (Ord. 7697-NS § 1, 2020)",Prohibition of Non-refundable Application Fees Associated with Existing Tenancies,True,100.0,It is unlawful for an owner of residential rental property or the owner's agent 
+D092,1,Berkeley Municipal Code § 13.78.010,Notification of state law limitation on tenant screening fees,True,100.0,When an owner of residential rental property or the owner's agent receives a req
+D093,1,Cal. Bus. & Prof. Code § 16729,"Common pricing algorithm prohibition (Cartwright Act, AB 325)",True,100.0,It shall be unlawful for a person to use or distribute a common pricing algorith
+D095,1,"Proposed Hoboken ordinance (to be introduced at the June 4, 2025 City Council meeting); no code citation given in source",Proposed Hoboken ordinance prohibiting algorithmic rent-fixing,True,100.0,The proposed ordinance would make it unlawful for landlords renting residential 
+M_BERK-RENT-01_AGA_page,1,Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance); Berkeley Rent Board Reg. 1148 (AGA 2026 Order),Berkeley Rent Ordinance Annual General Adjustment (AGA),True,100.0,The AGA is set by taking 65% of the Consumer Price Index for All Urban Consumers
+M_BOS-SCRN-02_boston_fair_chance_policy_2017,1,Boston DND Fair Chance Tenant Selection Policy (Feb. 2017),Boston Fair Chance Tenant Selection Policy (criminal history),True,100.0,Housing providers receiving Department of Neighborhood Development (DND) funding
+M_BOS-SCRN-02_boston_fair_chance_policy_2017,1,Boston DND Fair Chance Tenant Selection Policy (Feb. 2017),Boston Fair Chance Tenant Selection Policy (credit),True,100.0,The agent agrees not to use the applicant credit score to approve or deny housin
+M_CA-ALG-01_BPC_16729_justia,1,Cal. Bus. & Prof. Code § 16729,"Common pricing algorithm prohibition (Cartwright Act amendment, AB 325)",True,100.0,"(a) It shall be unlawful for a person to use or distribute a common pricing
+algo"
+M_CA-SCRN-01_Gov_12955_justia,1,Cal. Gov. Code § 12955,FEHA housing discrimination: source of income and subsidy credit-history limits (Gov. Code § 12955),True,100.0,"It shall be unlawful:
+
+(a) For the owner of any housing accommodation to discrim"
+M_HOB-ALG-01_Hoboken_ch158_ecode360,1,Hoboken Code § 158-2 (Ord. No. B-781),Algorithmic rent fixing in rental housing market prohibited,True,100.0,Landlords who rent any residential dwelling unit (defined as any primary residen
+M_HOB-ALG-01_Hoboken_ch158_ecode360,1,Hoboken Code § 158-1 (Ord. No. B-750),Mandatory disclosures for rental increases over 10%,True,100.0,All residential landlords seeking to increase rent by more than 10% upon a renew
+M_JC-ALG-01_Ord_25-057_adopted,1,Jersey City Code § 218-12 (Ord. 25-057),"Preventing Algorithmic Rent-Fixing in the Rental Housing Market (Ord. 25-057, § 218-12)",True,100.0,"It is unlawful for any real estate lessor, agent, or subcontractor thereof, to s"
+M_LA-JUST-02_LAMC_ch15_art1_151,1,L.A.M.C. § 151.06 D,LA RSO annual allowable rent increase (LAMC § 151.06 D),True,100.0,The allowable annual rent adjustment shall be 90 percent of the percentage chang
+M_LA-JUST-02_LAMC_ch15_art1_151,1,L.A.M.C. § 151.06.02,LA RSO payment of interest on security deposits (LAMC § 151.06.02),True,100.0,"A landlord who is subject
+to the provisions of Section 1950.5 of the California "
+M_LA-JUST-02_LAMC_ch15_art1_151,1,L.A.M.C. § 151.06 G,LA RSO additional-tenant rent increase (LAMC § 151.06 G),True,100.0,"The landlord may increase the maximum rent or maximum adjusted rent by
+   an amo"
+M_LA-JUST-02_LAMC_ch15_art1_151,1,L.A.M.C. § 151.07 A.1,"LA RSO individual rent adjustments and surcharges (LAMC §§ 151.06.1, 151.06.2, 151.07)",True,100.0,"Except that, for any capital improvement work for which a rent increase
+applicat"
+M_LA-JUST-02_LAMC_ch15_art1_151,1,L.A.M.C. § 151.06.02 B,LA payment of interest on security deposits (LAMC § 151.06.02),True,100.0,"A landlord who is subject to the provisions of Section 1950.5 of the California
+"
+M_LA-JUST-02_LAMC_ch15_art1_151,1,L.A.M.C. § 151.09 A,LA RSO eviction only for enumerated grounds (LAMC § 151.09 A),True,100.0,"A landlord may bring an action to recover possession of a rental unit
+only upon "
+M_LA-JUST-02_LAMC_ch15_art1_151,1,L.A.M.C. § 151.09 G.,LAMC § 151.09 G. relocation fees for no-fault evictions (RSO),True,100.0,Except for relocation fees owed pursuant to the provisions of Subsection E. of S
+M_LA-JUST-02_LAMC_ch15_art1_151,1,L.A.M.C. § 151.23,LAMC § 151.23 Ellis Act withdrawal notice (120 days / one year),True,100.0,The date on which the rental units are to be withdrawn from rental housing use s
+M_LA-JUST-02_LAMC_ch15_art1_151,1,LAMC § 151.30,"LAMC § 151.30 – Evictions for owner, family, or resident manager occupancy",True,100.0,A landlord may recover possession of a rental unit pursuant to the provisions of
+M_LA-JUST-02_LAMC_ch15_art1_151,1,LAMC § 151.26,LAMC § 151.26 – Rent on re-offer after Ellis Act withdrawal,True,100.0,If a rental unit that was removed from rental housing use pursuant to the provis
+M_MA-FEE-02_c112_87DDD-half_masslaw,1,"M.G.L. c. 112, § 87DDD-1/2",Rental broker fees payable only by the party who engaged the broker,True,100.0,"Any fee shall only be paid by the party, lessor or tenant who originally engaged"
+M_MA-RENT-P1_Cella_v_AG_SJC-13893,1,"M.G.L. c. 40P, §§ 2-3","No rent control permitted (state bar, G. L. c. 40P)",True,100.0,"General Laws c. 40P, § 2, ""broadly prohibits any regulatory scheme based upon or"
+M_MA-RENT-P1_Cella_v_AG_SJC-13893,1,"Initiative Petition 25-21; Mass. Const. Amend. art. 48, The Initiative, II, § 2; Cella v. Attorney General, SJC-13893 (2026)",Initiative Petition 25-21 (statewide rent increase limit) barred from ballot,True,100.0,"The petition proposes a
+
+limit on annual rent increases for residential dwelling"
+M_MA-SCRN-02_803_CMR_5,1,"803 CMR 5.04(2); authority M.G.L. c. 6, §§ 167A and 172",CORI housing screening limits (803 CMR 5.00),True,100.0,CORI shall only be requested for a housing applicant as the final step in the ap
+M_MA-SCRN-02_MGL_c6_s172_findlaw,1,"M.G.L. c. 6, § 172(a)(3)","CORI access limits for rental applicants (M.G.L. c. 6, § 172)",True,100.0,Criminal offender record information made available under this section shall be 

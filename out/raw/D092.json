@@ -1,0 +1,44 @@
+{
+  "doc_id": "D092",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T22:55:55+00:00",
+  "source_url": "https://berkeley.municipal.codes/BMC/13.78.010",
+  "retrieved": "2026-10-03 22:36 UTC",
+  "source_type": "code publisher",
+  "n_chunks": 1,
+  "document_summary": "Berkeley Municipal Code § 13.78.010 requires landlords in Berkeley, CA who charge applicants a screening fee to disclose a tenant screening fee rights statement and the state-law maximum fee cap.",
+  "rules": [
+    {
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Notification of state law limitation on tenant screening fees",
+      "requirement": "An owner or agent who charges an applicant a fee for a credit report and application processing must give, in the application or a separate disclosure before receiving the fee, a clear and conspicuous Tenant Screening Fee Rights Statement and a statement of the maximum fee cap under Cal. Civ. Code § 1950.6(b).",
+      "key_value": "Disclosure of Tenant Screening Fee Rights Statement and the Civ. Code § 1950.6(b) maximum fee cap before collecting any screening fee",
+      "coverage_conditions": "Residential rental property in the City of Berkeley where the owner charges an applicant a fee to purchase a consumer credit report and to validate, review, or otherwise process a rental application.",
+      "exemptions": null,
+      "interaction": "Local disclosure duty that relies on the state cap in Cal. Civ. Code § 1950.6(b); it sets no separate Berkeley dollar cap.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Berkeley Municipal Code § 13.78.010",
+      "quoted_span": "When an owner of residential rental property or the owner's agent receives a request to rent residential property in the City of Berkeley from an applicant and the owner charges that applicant a fee to purchase a consumer credit report and to validate, review, or otherwise process an application for the rent or lease of residential rental property, the owner shall provide, either in the rental application or in a separate disclosure prior to receipt of the fee, a clear and conspicuous tenant screening fee rights statement and a statement of the maximum fee cap permitted under California Civil Code Section 1950.6(b).",
+      "confidence": 0.9,
+      "conflict_flag": true,
+      "conflict_note": "Open question: California's screening-fee cap (Civ. Code § 1950.6) has no single official 2026 dollar figure. The dollar figure is not found in this capture; the section only cross-references the state cap.",
+      "record_role": "headline",
+      "out_of_scope": false,
+      "out_of_scope_reason": null,
+      "extraction_notes": "History note lists Ord. 7697-NS (2020), 7379-NS (2014), 7171-NS (2011) with years only, so no full adoption date or effective date is stated; effective_date left null. The rights statement text is prescribed (or a substantially similar statement)."
+    }
+  ],
+  "usage": {
+    "input_tokens": 6223,
+    "output_tokens": 1415,
+    "cost_usd": 0.0266,
+    "seconds": 9.3
+  },
+  "errors": []
+}

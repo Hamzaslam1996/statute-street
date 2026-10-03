@@ -24,7 +24,15 @@ STARTER_TEXT = STARTER / "corpus" / "text"
 MANIFEST_CSV = STARTER / "corpus" / "corpus_manifest.csv"
 SCHEMA_JSON = STARTER / "schema" / "rule_record.schema.json"
 SUPP_TEXT = ROOT / "corpus_supplementary" / "text"           # pages we captured ourselves
+MANUAL_TEXT = ROOT / "sources" / "manual"                    # pages Hamza saved by hand (same header format)
 OUT = ROOT / "out"
+
+# Gold-id prefixes used in file names like "HOB-RENT-01_...txt" -> jurisdiction hint
+GOLD_PREFIX_JURISDICTION = {
+    "CA": "CA", "NJ": "NJ", "MA": "MA", "SF": "San Francisco, CA", "LA": "Los Angeles, CA",
+    "SD": "San Diego, CA", "BERK": "Berkeley, CA", "SA": "Santa Ana, CA", "JC": "Jersey City, NJ",
+    "HOB": "Hoboken, NJ", "NWK": "Newark, NJ", "BOS": "Boston, MA", "CAM": "Cambridge, MA",
+}
 RAW_DIR = OUT / "raw"
 GOLD_DIR = ROOT / "gold"
 
@@ -118,23 +126,31 @@ def list_docs() -> dict[str, Doc]:
     """
     manifest = load_manifest()
     docs: dict[str, Doc] = {}
+    seen_bodies: dict[str, str] = {}   # sha256 of body -> doc_id, to skip exact duplicates
 
-    def add(path: Path, supplementary: bool):
+    def add(path: Path, supplementary: bool, doc_id: str | None = None, manifest_row: dict | None = None):
         if "_to_delete" in path.parts:
             return
-        doc_id = path.stem
+        doc_id = doc_id or path.stem
         if doc_id in docs:
             return  # starter pack takes precedence (it is added first)
         text = path.read_text(encoding="utf-8", errors="replace")
         header, body = parse_header(text)
+        import hashlib
+        digest = hashlib.sha256(body.strip().encode("utf-8")).hexdigest()
+        if digest in seen_bodies:
+            return  # same text already in the corpus under another id (e.g. ch. 155 as D032)
+        seen_bodies[digest] = doc_id
+        row = manifest_row if manifest_row is not None else manifest.get(doc_id, {})
+        source = re.sub(r"\s*\[[^\]]*\]\s*$", "", header.get("SOURCE", row.get("url", "")))  # drop "[Hamza to confirm]" notes
         docs[doc_id] = Doc(
             doc_id=doc_id,
             path=path,
-            source_url=header.get("SOURCE", manifest.get(doc_id, {}).get("url", "")),
-            retrieved=header.get("RETRIEVED", manifest.get(doc_id, {}).get("retrieved_at", "")),
+            source_url=source,
+            retrieved=header.get("RETRIEVED", row.get("retrieved_at", "")),
             header=header,
             body=body,
-            manifest=manifest.get(doc_id, {}),
+            manifest=row,
             supplementary=supplementary,
         )
 
@@ -143,6 +159,12 @@ def list_docs() -> dict[str, Doc]:
     if SUPP_TEXT.exists():
         for p in sorted(SUPP_TEXT.glob("D*.txt")):
             add(p, supplementary=True)
+    if MANUAL_TEXT.exists():
+        # Hand-saved sources: id "M_<file stem>", jurisdiction hint from the gold-id prefix in the name
+        for p in sorted(MANUAL_TEXT.glob("*.txt")):
+            prefix = p.stem.split("-")[0]
+            row = {"jurisdictions": GOLD_PREFIX_JURISDICTION.get(prefix, ""), "source_type": "", "url": ""}
+            add(p, supplementary=True, doc_id=f"M_{p.stem}", manifest_row=row)
     return docs
 
 

@@ -46,6 +46,7 @@ LOOKUPS_JSON = OUT / "lookups.json"
 AUDIT_CSV = OUT / "lookup_audit.csv"
 
 UNKNOWABLE = {"owner_type", "tenancy_months", "funding", "other"}
+NO_UNITS_FLOOR = False   # set by --no-units-floor: ignore unit minimums stated in assessor descriptions
 
 # A state rule "yields" to local law when its interaction text says so.
 YIELDS_RE = re.compile(r"\b(yield\w*|does not apply (where|to housing subject to)|local (rent|price) control|"
@@ -100,6 +101,42 @@ def derive_units(use_description: str) -> int | None:
     return sum(nums) if nums else None
 
 
+def units_floor(use_description: str) -> int | None:
+    """
+    A MINIMUM unit count stated in words by the assessor's own description column:
+    "Five or more apartments" -> 5, "SANDAG asr_landuse 14-16 (5+ units)" -> 5,
+    "Apartment 5 to 14 Units" -> 5, "Apartment 15 Units or more" -> 15, "4-8-UNIT-APT" -> 4,
+    ">8-UNIT-APT" -> 9, "APT 7-30 UNITS" -> 7. Used only to decide tests like units > 4
+    (a floor of 5 settles them); never treated as the exact count.
+    """
+    d = (use_description or "").lower()
+    if "five or more" in d:
+        return 5
+    m = re.search(r"(\d+)\+ ?units", d) or re.search(r"(\d+) units? or more", d)
+    if m:
+        return int(m.group(1))
+    m = re.search(r">(\d+)-unit", d)
+    if m:
+        return int(m.group(1)) + 1
+    m = re.search(r"(\d+)\s*(?:to|-)\s*(\d+)\s*-?\s*units?", d)
+    if m:
+        return int(m.group(1))
+    return None
+
+
+def compare_with_floor(floor: int, op: str, value) -> bool | None:
+    """Can a 'units' test be settled knowing only that units >= floor?"""
+    try:
+        v = float(value)
+    except (TypeError, ValueError):
+        return None
+    if op in (">", ">=") and compare(floor, op, v):
+        return True          # the floor already clears the threshold
+    if op in ("<", "<=") and not compare(floor, op, v):
+        return False         # even the floor is too many
+    return None
+
+
 def address_facts(row: dict, juris: dict, use_derived_units: bool = False) -> dict:
     def num(x):
         try:
@@ -115,6 +152,7 @@ def address_facts(row: dict, juris: dict, use_derived_units: bool = False) -> di
         "jurisdiction_method": juris.get("method"),
         "year_built": num(row.get("year_built")),
         "units": derived if (use_derived_units and units is None and derived) else units,
+        "units_min": units_floor(row.get("use_description")) if units is None else None,
         "units_derived": derived,
         "units_derived_source": row.get("use_description") if derived else None,
         "building_type": building_type(row.get("use_code"), row.get("use_description")),
@@ -217,6 +255,10 @@ def run_test(test: dict, facts: dict, as_of: date) -> tuple[bool | None, str]:
         return (is_older if older_ok else not is_older), f"built {yb}, {'before' if is_older else 'after'} the {label}"
 
     if field == "units":
+        if units is None and facts.get("units_min") and not NO_UNITS_FLOOR:
+            settled = compare_with_floor(facts["units_min"], op, value)
+            if settled is not None:
+                return settled, f"assessor description '{facts.get('use_description')}' implies at least {facts['units_min']} units"
         if units is None:
             if facts.get("units_derived"):
                 return None, (f"unit count not in supplied data; assessor building code "
@@ -246,6 +288,10 @@ def run_test(test: dict, facts: dict, as_of: date) -> tuple[bool | None, str]:
         actual = {"units": units, "year_built": yb, "building_type": btype}.get(d["field"])
         if actual is not None and compare(actual, d["op"], d["value"]):
             return True, f"{field} exception cannot apply ({d['field']} {d['op']} {d['value']}: {actual})"
+        if d["field"] == "units" and units is None and facts.get("units_min") and not NO_UNITS_FLOOR \
+                and compare_with_floor(facts["units_min"], d["op"], d["value"]):
+            return True, (f"{field} exception cannot apply: assessor description '{facts.get('use_description')}' "
+                          f"implies at least {facts['units_min']} units")
     return None, f"{field.replace('_', ' ')} not in the data ({test.get('source_text', '')[:60]})"
 
 
@@ -342,7 +388,11 @@ def main() -> int:
     ap.add_argument("--out", default=None)
     ap.add_argument("--use-derived-units", action="store_true",
                     help="treat unit counts parsed from NJ MOD-IV building codes as real; writes lookups_derived.json")
+    ap.add_argument("--no-units-floor", action="store_true",
+                    help="ignore unit minimums stated in words in the assessor description ('5+ units')")
     args = ap.parse_args()
+    global NO_UNITS_FLOOR
+    NO_UNITS_FLOOR = args.no_units_floor
     as_of = date.fromisoformat(args.as_of)
 
     rules, coverage, juris, addresses = load_inputs()

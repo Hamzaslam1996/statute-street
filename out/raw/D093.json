@@ -1,0 +1,44 @@
+{
+  "doc_id": "D093",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T22:56:01+00:00",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=16729",
+  "retrieved": "2026-10-03 22:34 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "California Business and Professions Code section 16729 (AB 325), which bars use or distribution of a common pricing algorithm in restraint of trade; it applies statewide to all products and services, including rental housing.",
+  "rules": [
+    {
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Common pricing algorithm prohibition (Cartwright Act, AB 325)",
+      "requirement": "It is unlawful to use or distribute a common pricing algorithm as part of a contract, combination or conspiracy in restraint of trade, or to coerce another person to adopt a price or commercial term the algorithm recommends.",
+      "key_value": "Ban on using or distributing a common pricing algorithm (competitor-data-based) to set prices or commercial terms in restraint of trade or through coercion",
+      "coverage_conditions": "Applies to any person using or distributing a methodology (including software) used by two or more persons that uses competitor data to recommend, align, stabilize, set, or otherwise influence a price or commercial term. It is not limited to housing; it covers rental pricing as a product or service.",
+      "exemptions": "Does not apply to end consumers of a product or service.",
+      "interaction": "Does not impair or limit the applicability of other antitrust laws. It is a statewide rule that applies alongside any local algorithmic rent-setting ordinances.",
+      "effective_date": "2026-01-01",
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Cal. Bus. & Prof. Code § 16729",
+      "quoted_span": "It shall be unlawful for a person to use or distribute a common pricing algorithm as part of a contract, combination in the form of a trust, or conspiracy to restrain trade or commerce in violation of this chapter.",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "record_role": "headline",
+      "out_of_scope": false,
+      "out_of_scope_reason": null,
+      "extraction_notes": "Added by Stats. 2025, Ch. 338, Sec. 1 (AB 325), effective January 1, 2026, per the history note. The text is general antitrust law and does not mention rent or housing expressly; it is included because a common pricing algorithm can cover rent-setting software."
+    }
+  ],
+  "usage": {
+    "input_tokens": 7217,
+    "output_tokens": 751,
+    "cost_usd": 0.0219,
+    "seconds": 5.8
+  },
+  "errors": []
+}

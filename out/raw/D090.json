@@ -1,0 +1,44 @@
+{
+  "doc_id": "D090",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T22:55:38+00:00",
+  "source_url": "https://www.boston.gov/sites/default/files/file/2021/03/Housing%20Stability%20Notification%20Act.pdf",
+  "retrieved": "2026-10-03 22:34 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Boston City Council ordinance (Housing Stability Notification Act, City of Boston Code ch. X, \"10-11\") requiring landlords and foreclosing owners to give notice of rights and resources, and to copy the Office of Housing Stability, with notices to quit or of lease nonrenewal.",
+  "rules": [
+    {
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "[notice-only] Boston Housing Stability Notification Act",
+      "requirement": "A landlord or foreclosing owner must serve a copy of any notice to quit or notice of lease nonrenewal/expiration on the Office of Housing Stability and attach a notice of housing rights and resources. For nonrenewal, the written notice must be given at least thirty days before starting a summary process action.",
+      "key_value": "Notice-of-rights requirement only; no just-cause protection",
+      "coverage_conditions": "All rental units and housing accommodations in Boston where a notice to quit or notice of lease nonrenewal or expiration has been served (or should have been served) on a tenant or former homeowner.",
+      "exemptions": "Rental units in any hospital, skilled nursing facility or health facility; rental units in a nonprofit facility whose primary purpose is short-term (thirty or fewer days) treatment, assistance or therapy for alcohol, drug or other substance abuse.",
+      "interaction": "Local notice requirement that sits alongside state eviction law (e.g., M.G.L. c. 186 notice-to-quit rules); it does not limit the grounds for eviction or non-renewal.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "City of Boston Code, Ordinances, ch. X, § 10-11",
+      "quoted_span": "When a landlord or foreclosing owner serves the tenant or former homeowners any\nnotice to quit or notice of lease nonrenewal or expiration, such landlord or foreclosing\nowner shall, at the same time, also serve a copy of said notice to quit or notice of\nlease nonrenewal or expiration on the City of Boston's Office of Housing Stability.",
+      "confidence": 0.8,
+      "conflict_flag": true,
+      "conflict_note": "Notice-only ordinance: it provides no just-cause eviction protection and should not be read as limiting eviction grounds.",
+      "record_role": "headline",
+      "out_of_scope": false,
+      "out_of_scope_reason": null,
+      "extraction_notes": "Section 2 says the ordinance \"shall become effective immediately\" and the document shows only \"Filed in Council: October 21, 2020\". The filing date is not an adoption or effective date, so effective_date and adoption_date are null. This document is the filed text; the final enactment date is not stated here."
+    }
+  ],
+  "usage": {
+    "input_tokens": 9197,
+    "output_tokens": 1433,
+    "cost_usd": 0.0327,
+    "seconds": 9.5
+  },
+  "errors": []
+}

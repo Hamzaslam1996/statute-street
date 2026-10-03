@@ -27,8 +27,7 @@
       "notes": "This document states no effective date, so effective_date is null. It records only that the Council passed the ordinance to print on November 18, 2025 (first reading). The final adoption date is not stated, so adoption_date is null. Status is in_force on the assumption that the ordinance took effect before the 2026-10-01 query date under either published date. Civil remedies of up to $1,000 per violation are omitted from key_value. Effective date from D002: \"13.63 (effective January 2026) Prohibits coordinated pricing algorithms;\"",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [
-        "D002",
-        "D037"
+        "D002"
       ],
       "date_source_doc_id": "D002"
     },
@@ -41,7 +40,7 @@
       "title": "Notification of state law limitation on tenant screening fees (BMC 13.78.010)",
       "requirement": "An owner who charges a screening fee must give applicants a clear and conspicuous tenant screening fee rights statement and a statement of the state maximum fee cap, in the application or in a separate disclosure before receiving the fee.",
       "key_value": "Must disclose the fee rights statement and the Civ. Code § 1950.6(b) maximum fee cap before collecting a screening fee",
-      "coverage_conditions": "Owners or agents who charge a fee to purchase a consumer credit report and to validate, review, or otherwise process a rental application for residential property in Berkeley.",
+      "coverage_conditions": "Owners or agents who charge a fee to purchase a consumer credit report and to validate, review, or otherwise process a rental application for residential property in Berkeley. | [D092] Residential rental property in the City of Berkeley where the owner charges an applicant a fee to purchase a consumer credit report and to validate, review, or otherwise process a rental application.",
       "exemptions": null,
       "overrides": [],
       "interaction": "Implements disclosure of the state cap under Cal. Civ. Code § 1950.6(b); the dollar cap itself is set by state law.",
@@ -58,7 +57,9 @@
       "adoption_date": null,
       "notes": "The page gives no adoption or effective date for BMC 13.78.010, so both dates are null. The page notes the URL in the rights statement is still to be provided by the City.",
       "retrieved_at": "2026-10-01",
-      "supporting_doc_ids": []
+      "supporting_doc_ids": [
+        "D092"
+      ]
     },
     {
       "team_rule_id": "r-0003",
@@ -69,8 +70,8 @@
       "title": "Prohibition of non-refundable application fees for existing tenancies (BMC 13.78.016)",
       "requirement": "Owners may not charge existing tenants a non-refundable fee to renew a tenancy, including fees tied to a roommate's departure or to adding or replacing a roommate.",
       "key_value": "Ban on non-refundable renewal and roommate-change fees charged to existing tenants",
-      "coverage_conditions": "Existing tenants of residential rental property in Berkeley. Chapter 13.78 applies to all residential rental agreements regardless of contrary lease language (BMC 13.78.018).",
-      "exemptions": null,
+      "coverage_conditions": "Existing tenants of residential rental property in Berkeley. Chapter 13.78 applies to all residential rental agreements regardless of contrary lease language (BMC 13.78.018). | [D091] Owners of residential rental property in Berkeley and their agents; protects existing tenants and households.",
+      "exemptions": "[D091] Tenant screening fees permitted under Cal. Civ. Code § 1950.6 are not disallowed, including for a new or additional roommate seeking to be added to an existing lease.",
       "overrides": [],
       "interaction": null,
       "effective_date": null,
@@ -86,7 +87,9 @@
       "adoption_date": null,
       "notes": "The page gives no adoption or effective date for BMC 13.78.016, so both dates are null. Lease provisions that violate chapter 13.78 are unenforceable under BMC 13.78.018.",
       "retrieved_at": "2026-10-01",
-      "supporting_doc_ids": []
+      "supporting_doc_ids": [
+        "D091"
+      ]
     },
     {
       "team_rule_id": "r-0004",
@@ -128,8 +131,8 @@
       "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
       "requirement": "Eligible landlords may raise 2025 permanent rent ceilings by 1.0% no earlier than January 1, 2026, using the AGA set at 65% of the Bay Area CPI-U increase. The Order sets qualifying conditions and tenant notice requirements.",
       "key_value": "1.0% (65% of 1.5% Bay Area CPI-U, July 1, 2024 - June 30, 2025)",
-      "coverage_conditions": "Eligible landlords of units under Berkeley rent stabilization; the AGA may not adjust rents of tenancies that began on or after January 1, 2025 whose rents were set pursuant to the Costa-Hawkins Rental Housing Act. | [D006] Fully covered rental units under the Rent Ordinance, now including fully covered government-owned or -subsidized units (e.g. Section 8, Shelter Plus Care). Fully covered units include most multifamily units built before 1980 and single-family homes with tenancies that began before 1996. | [D009] Fully covered: most units in multifamily properties built before 1980; single family homes with current tenancies that began before 1996; rooming houses (single-family homes with five or more rooms rented out individually with separate leases). Not rent controlled: new construction built and issued a Certificate of Occupancy after June 1980; single-family home tenancies beginning on or after January 1, 1996; most condominiums; certain HUD-subsidized units (Section 202, Section 811, and some project-based programs with HUD-insured or HUD-held mortgages).",
-      "exemptions": "Tenancies beginning on or after January 1, 2025 with rents set under Costa-Hawkins are not adjusted by the 2026 AGA. | [D006] Partially covered and exempt units are not subject to the AGA rent ceiling. | [D009] Exempt from the ordinance: 'Golden Duplex' (owner-occupied on December 31, 1979 and currently has an owner in one unit); owner shares kitchen or bath with tenant if owner lived on the property when the tenancy started; tenancies started after Nov 7, 2018 on properties where one unit is an ADU and either unit is owner-occupied; university rental units such as dormitories; nonprofit cooperatives.",
+      "coverage_conditions": "Eligible landlords of units under Berkeley rent stabilization; the AGA may not adjust rents of tenancies that began on or after January 1, 2025 whose rents were set pursuant to the Costa-Hawkins Rental Housing Act. | [D006] Fully covered rental units under the Rent Ordinance, now including fully covered government-owned or -subsidized units (e.g. Section 8, Shelter Plus Care). Fully covered units include most multifamily units built before 1980 and single-family homes with tenancies that began before 1996. | [D009] Fully covered: most units in multifamily properties built before 1980; single family homes with current tenancies that began before 1996; rooming houses (single-family homes with five or more rooms rented out individually with separate leases). Not rent controlled: new construction built and issued a Certificate of Occupancy after June 1980; single-family home tenancies beginning on or after January 1, 1996; most condominiums; certain HUD-subsidized units (Section 202, Section 811, and some project-based programs with HUD-insured or HUD-held mortgages). | [M_BERK-RENT-01_AGA_page] Most units fully covered by the Berkeley Rent Ordinance. No increase for the rest of the year the tenancy started and one additional calendar year. Notice: 30 days for increases of 10% or less, 90 days for more than 10%.",
+      "exemptions": "Tenancies beginning on or after January 1, 2025 with rents set under Costa-Hawkins are not adjusted by the 2026 AGA. | [D006] Partially covered and exempt units are not subject to the AGA rent ceiling. | [D009] Exempt from the ordinance: 'Golden Duplex' (owner-occupied on December 31, 1979 and currently has an owner in one unit); owner shares kitchen or bath with tenant if owner lived on the property when the tenancy started; tenancies started after Nov 7, 2018 on properties where one unit is an ADU and either unit is owner-occupied; university rental units such as dormitories; nonprofit cooperatives. | [M_BERK-RENT-01_AGA_page] No AGA if registration fees are unpaid, a Rent Board order denies AGAs, there are serious repair problems or outstanding housing code violations, or interest on the security deposit is unpaid. Fixed-term leases wait until the term expires unless the lease allows the increase. Unused AGAs may be banked, and the 5% cap applies only to the AGA percentage.",
       "overrides": [],
       "interaction": "Operates under Berkeley Municipal Code 13.76.110A; Costa-Hawkins (state law) limits which tenancies the AGA reaches.",
       "effective_date": "2026-01-01",
@@ -147,7 +150,8 @@
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [
         "D006",
-        "D009"
+        "D009",
+        "M_BERK-RENT-01_AGA_page"
       ]
     },
     {
@@ -218,8 +222,8 @@
       "title": "[notice-only] Boston Housing Stability Notification Act",
       "requirement": "A landlord or foreclosing owner ending a tenancy must give the tenant a Notice of Tenants' Rights and Resources at the same time as the Notice to Quit or notice of lease non-renewal. A copy of the notice, with a Certificate of Compliance/Service, must also be sent to the City's Office of Housing Stability.",
       "key_value": "Notice-of-rights requirement only; no just-cause protection",
-      "coverage_conditions": "All landlords/foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston. | [D013] All landlords (and foreclosing owners for the City submission) planning to end a tenancy agreement in Boston.",
-      "exemptions": "Residences in any hospital, skilled nursing facility or health facility; and in a non-profit facility whose primary purpose is providing short-term treatment, assistance or therapy for alcohol, drug, or other substance abuse.",
+      "coverage_conditions": "All landlords/foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston. | [D090] All rental units and housing accommodations in Boston where a notice to quit or notice of lease nonrenewal or expiration has been served (or should have been served) on a tenant or former homeowner. | [D013] All landlords (and foreclosing owners for the City submission) planning to end a tenancy agreement in Boston.",
+      "exemptions": "Residences in any hospital, skilled nursing facility or health facility; and in a non-profit facility whose primary purpose is providing short-term treatment, assistance or therapy for alcohol, drug, or other substance abuse. | [D090] Rental units in any hospital, skilled nursing facility or health facility; rental units in a nonprofit facility whose primary purpose is short-term (thirty or fewer days) treatment, assistance or therapy for alcohol, drug or other substance abuse.",
       "overrides": [],
       "interaction": "Notice-only ordinance; does not limit the grounds for eviction or non-renewal under state law. A violation does not halt the eviction process.",
       "effective_date": "2020-11-06",
@@ -236,6 +240,7 @@
       "notes": "Effective date from 'The HSNA becomes effective on November 6, 2020.' The ordinance was passed in October 2020 (exact day not stated). Enforcement: warning for 1st offense, then $300 per day. Source is a city FAQ summarizing the ordinance.",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [
+        "D090",
         "D013"
       ]
     },
@@ -301,28 +306,29 @@
       "level": "city",
       "category": "screening_restrictions",
       "status": "in_force",
-      "title": "Boston Fair Chance Tenant Selection Policy - criminal history",
-      "requirement": "Covered housing providers may not use a blanket ban on applicants with arrests or convictions and must review applicants case-by-case. They may not consider non-conviction arrests, judicially relieved convictions, juvenile records, or convictions more than 5 years old when determining eligibility or considering eviction.",
-      "key_value": "No consideration of non-conviction arrests, expunged/sealed convictions, juvenile records, or convictions over 5 years old",
-      "coverage_conditions": "Housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or with income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy; also applied to the Office of Fair Housing and Equity Affirmative Marketing Program. | [D010] Housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or with income restricted units created under the BPDA Inclusionary Development Policy.",
-      "exemptions": "Does not apply where there is a direct relationship between a conviction and the housing sought and/or unreasonable risk of substantial harm to the safety of others; does not apply to current criminal behavior; conflicting federal or state criminal-history requirements preempt the policy.",
+      "title": "Boston Fair Chance Tenant Selection Policy (criminal history)",
+      "requirement": "Covered housing providers may not use a blanket policy denying housing to anyone with arrests or convictions and must assess applicants case by case. They may not consider non-conviction arrests, convictions subject to judicial relief (expungement, sealing), juvenile records, or convictions more than 5 years old.",
+      "key_value": "No blanket bans; exclude non-conviction arrests, sealed/expunged convictions, juvenile records, and convictions over 5 years old",
+      "coverage_conditions": "Housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or with income restricted units created under the BPDA Inclusionary Development Policy; also applied to the Office of Fair Housing and Equity Affirmative Marketing Program. Not a general private-market rule. | [D010] Housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or with income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy; also applied to the Office of Fair Housing and Equity Affirmative Marketing Program. | [D010] Housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or with income restricted units created under the BPDA Inclusionary Development Policy. | [M_BOS-SCRN-02_boston_fair_chance_policy_2017] Housing providers receiving DND funding and/or land, or with income restricted units created under the BPDA Inclusionary Development Policy; also applied to the Office of Fair Housing and Equity Affirmative Marketing Program.",
+      "exemptions": "Does not apply where there is a direct relationship between a conviction and the housing sought and/or unreasonable risk of substantial harm to the safety of others, or to current criminal behavior. Conflicting federal or state criminal history requirements preempt the policy. | [D010] Does not apply where there is a direct relationship between a conviction and the housing sought and/or unreasonable risk of substantial harm to the safety of others; does not apply to current criminal behavior; conflicting federal or state criminal-history requirements preempt the policy.",
       "overrides": [],
       "interaction": "Federal or state law imposing a conflicting criminal history requirement preempts this policy.",
       "effective_date": null,
       "citation": "Boston DND Fair Chance Tenant Selection Policy (Feb. 2017)",
-      "source_doc_id": "D010",
-      "source_url": "https://drive.google.com/file/d/1j4U3fDtmnYuwcUWhx5BMUcXc1bnKT8Ku/view?usp=sharing",
-      "quoted_span": "The Developer/Agent (Agent) agrees to not consider any of the following categories when determining housing eligibility and or considering eviction: a) Arrests that did not result in conviction. This includes dismissed charges, diversion programs, and similar non-convictions. b) Convictions that are subject to a form of judicial relief, such as expungement, sealing, and certificates for relief from disabilities. c) Juvenile records d) A conviction more than 5 years old.",
-      "confidence": 0.8,
+      "source_doc_id": "M_BOS-SCRN-02_boston_fair_chance_policy_2017",
+      "source_url": "https://www.boston.gov/ (Boston Fair Chance Tenant Selection Policy, DND, Feb 2017)",
+      "quoted_span": "Housing providers receiving Department of Neighborhood Development (DND) funding and/or land, or that have income restricted units created under the Boston Planning and Development Agency (BPDA) Inclusionary Development Policy will not impose a blanket policy that denies housing to anyone with arrests and or convictions.",
+      "confidence": 0.85,
       "conflict_flag": false,
       "conflict_note": null,
       "negative_finding": false,
       "record_role": "headline",
       "adoption_date": null,
-      "notes": "Policy is dated February 2017 (page header); no effective date stated, so effective_date is null. Applies to funded/inclusionary housing providers by agreement, not all Boston landlords. Mitigating-factor guidance and appeals process are encouraged/'should' items, folded out.",
-      "retrieved_at": "2026-10-01",
+      "notes": "Effective date null: the page footer shows only 'February 2017' as the policy date, with no stated effective or operative date. Official policy/guidance document, not an ordinance; applies via funding or land conditions.",
+      "retrieved_at": "2026-10-04",
       "supporting_doc_ids": [
-        "D010"
+        "D010",
+        "M_BOS-SCRN-02_boston_fair_chance_policy_2017"
       ]
     },
     {
@@ -362,8 +368,8 @@
       "title": "Cartwright Act ban on common pricing algorithms (AB 325)",
       "requirement": "It is unlawful to use or distribute a common pricing algorithm as part of a contract, combination or conspiracy to restrain trade, or to use or distribute one while coercing another person to adopt its recommended price or commercial term.",
       "key_value": "Ban on using or distributing a common pricing algorithm in a combination/conspiracy to restrain trade, or while coercing adoption of its recommended prices",
-      "coverage_conditions": "General antitrust law, not rental-specific. A 'common pricing algorithm' is any methodology, including a computer, software, or other technology, used by two or more persons that uses competitor data to recommend, align, stabilize, set, or otherwise influence a price or commercial term. | [D028] A pricing algorithm is 'common' if it has two or more users and uses competitor data to recommend or influence prices or other commercial terms. Applies to any industry, not only rental housing.",
-      "exemptions": "'Person' does not include the end consumer of a product or service. | [D028] Single-firm or proprietary algorithms that use only the business's own data are not covered.",
+      "coverage_conditions": "General antitrust law, not rental-specific. A 'common pricing algorithm' is any methodology, including a computer, software, or other technology, used by two or more persons that uses competitor data to recommend, align, stabilize, set, or otherwise influence a price or commercial term. | [D093] Applies to any person using or distributing a methodology (including software) used by two or more persons that uses competitor data to recommend, align, stabilize, set, or otherwise influence a price or commercial term. It is not limited to housing; it covers rental pricing as a product or service. | [D028] A pricing algorithm is 'common' if it has two or more users and uses competitor data to recommend or influence prices or other commercial terms. Applies to any industry, not only rental housing. | [M_CA-ALG-01_BPC_16729_justia] Applies to any 'person' (as defined in Bus. & Prof. Code § 16702), excluding end consumers. 'Common pricing algorithm' means any methodology, including a computer, software, or other technology, used by two or more persons that uses competitor data to recommend, align, stabilize, set, or otherwise influence a price or commercial term.",
+      "exemptions": "'Person' does not include the end consumer of a product or service. | [D093] Does not apply to end consumers of a product or service. | [D028] Single-firm or proprietary algorithms that use only the business's own data are not covered. | [M_CA-ALG-01_BPC_16729_justia] End consumers of a product or service are not covered 'persons'.",
       "overrides": [],
       "interaction": "Statewide; Section 16729(c) says it does not impair or limit the applicability of antitrust laws. Does not address local ordinances in this text.",
       "effective_date": "2026-01-01",
@@ -377,12 +383,14 @@
       "negative_finding": false,
       "record_role": "headline",
       "adoption_date": "2025-10-06",
-      "notes": "Approved by the Governor and filed 2025-10-06 (Chapter 338). The text gives no effective or operative date, so effective_date is null; it is treated as in_force because it was enacted well before the 2026-10-01 query date. Section 16756.1 (pleading standard: plausibility of conspiracy, no need to exclude independent action) is procedural and folded into this record. Rental housing is not mentioned in the text. Effective date from D093: \"(AB 325) Effective January 1, 2026.\"",
+      "notes": "Approved by the Governor and filed 2025-10-06 (Chapter 338). The text gives no effective or operative date, so effective_date is null; it is treated as in_force because it was enacted well before the 2026-10-01 query date. Section 16756.1 (pleading standard: plausibility of conspiracy, no need to exclude independent action) is procedural and folded into this record. Rental housing is not mentioned in the text. Effective date from M_CA-ALG-01_BPC_16729_justia: \"(AB 325) Effective January 1, 2026.\"",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [
-        "D028"
+        "D093",
+        "D028",
+        "M_CA-ALG-01_BPC_16729_justia"
       ],
-      "date_source_doc_id": "D093"
+      "date_source_doc_id": "M_CA-ALG-01_BPC_16729_justia"
     },
     {
       "team_rule_id": "r-0014",
@@ -513,8 +521,8 @@
       "title": "Source-of-income discrimination ban and subsidy-tenant credit/income screening limits (FEHA)",
       "requirement": "Owners may not discriminate against or harass a rental applicant or tenant because of source of income, which includes Section 8 and other housing vouchers and public assistance. Where a government rent subsidy applies, income standards must be based on the tenant's portion of rent, and applicants must be allowed to offer alternative evidence in place of credit history.",
       "key_value": "Ban on source-of-income discrimination (incl. Section 8 / HUD-VASH vouchers); landlords may still ask about the level or source of income",
-      "coverage_conditions": "Applies to owners of any housing accommodation; the credit-history and income-standard rules in subd. (o) apply only where there is a government rent subsidy. | [D016] Applies to most housing providers and housing-related services covered by FEHA, including landlords, property managers and tenant screening companies. | [D016] Applies to most housing providers and tenant screening companies covered by FEHA. | [D015] Landlords subject to FEHA; applies to government housing subsidy programs such as the Section 8 Housing Choice Voucher program. | [D015] Applicants with a government rental subsidy, such as Section 8. | [D021] Owners of housing accommodations in California; the subsidy-specific rules apply where there is a government rent subsidy.",
-      "exemptions": "Inquiring about the level or source of income is not discrimination; landlords may still verify employment, request landlord references and verify identity. | [D016] Owner-occupied home renting to one additional person may exclude applicants based on protected characteristics (per the FAQ); the page does not say whether this applies to source of income specifically. | [D021] Landlords may still inquire about the level or source of income, verify employment, request landlord references and verify identity.",
+      "coverage_conditions": "Applies to owners of any housing accommodation; the credit-history and income-standard rules in subd. (o) apply only where there is a government rent subsidy. | [D016] Applies to most housing providers and housing-related services covered by FEHA, including landlords, property managers and tenant screening companies. | [D016] Applies to most housing providers and tenant screening companies covered by FEHA. | [D015] Landlords subject to FEHA; applies to government housing subsidy programs such as the Section 8 Housing Choice Voucher program. | [D015] Applicants with a government rental subsidy, such as Section 8. | [D021] Owners of housing accommodations in California; the subsidy-specific rules apply where there is a government rent subsidy. | [M_CA-SCRN-01_Gov_12955_justia] Owners of housing accommodations and others in real-estate-related transactions; the credit-history and income-standard rules in subd. (o) apply only where there is a government rent subsidy.",
+      "exemptions": "Inquiring about the level or source of income is not discrimination; landlords may still verify employment, request landlord references and verify identity. | [D016] Owner-occupied home renting to one additional person may exclude applicants based on protected characteristics (per the FAQ); the page does not say whether this applies to source of income specifically. | [D021] Landlords may still inquire about the level or source of income, verify employment, request landlord references and verify identity. | [M_CA-SCRN-01_Gov_12955_justia] Asking about the level or source of income is not discrimination (subd. (p)(2)). Landlords may still request employment verification, landlord references and identity verification (subd. (o)(2)).",
       "overrides": [],
       "interaction": "Statewide floor; this excerpt does not address local source-of-income ordinances.",
       "effective_date": "2024-01-01",
@@ -533,7 +541,8 @@
       "supporting_doc_ids": [
         "D016",
         "D015",
-        "D021"
+        "D021",
+        "M_CA-SCRN-01_Gov_12955_justia"
       ]
     },
     {
@@ -658,32 +667,60 @@
       "category": "algorithmic_rent_setting",
       "status": "in_force",
       "title": "Algorithmic rent fixing in rental housing market prohibited",
-      "requirement": "Landlords of residential dwelling units in Hoboken may not price-fix using algorithmic pricing. That means using software, algorithms or data-sharing platforms to collect and analyze nonpublic competitor information in order to coordinate, recommend or implement rents, lease terms or occupancy levels among competing lessors.",
-      "key_value": "Ban on price fixing using algorithmic pricing (software or data-sharing platforms using nonpublic competitor information)",
-      "coverage_conditions": "Any residential dwelling unit, defined as any primary residence, in the City of Hoboken. 'Nonpublic competitor information' is information less than 365 days old that is not widely and readily available to the public at no cost.",
-      "exemptions": "Medical/long-term care and detention facilities are excluded from 'residential dwelling unit'.",
+      "requirement": "Landlords of residential dwelling units in Hoboken may not price-fix using algorithmic pricing, meaning software, algorithms or data-sharing platforms that use nonpublic competitor information to coordinate, recommend or implement rents, lease terms or occupancy levels among competing lessors.",
+      "key_value": "Ban on algorithmic rent-fixing using nonpublic competitor information",
+      "coverage_conditions": "Any residential dwelling unit, defined as any primary residence, in the City of Hoboken. Nonpublic competitor information is information less than 365 days old that is not widely and readily available to the public at no cost. | [D034] Any residential dwelling unit, defined as any primary residence, in the City of Hoboken. 'Nonpublic competitor information' is information less than 365 days old that is not widely and readily available to the public at no cost.",
+      "exemptions": "Medical/long-term care and detention facilities are excluded from the definition of residential dwelling unit. | [D034] Medical/long-term care and detention facilities are excluded from 'residential dwelling unit'.",
       "overrides": [],
-      "interaction": "Possible preemption by New Jersey's FAIR Act (P.L. 2026, c.43) once it takes effect. The FAIR Act is not addressed in this document.",
+      "interaction": "New Jersey's FAIR Act (P.L. 2026, c.43) may preempt this ordinance once it takes effect. This capture does not address the FAIR Act.",
       "effective_date": "2025-07",
-      "citation": "Hoboken City Code § 158-2 (Ord. No. B-781)",
-      "source_doc_id": "D034",
-      "source_url": "https://ecode360.com/46833413",
+      "citation": "Hoboken Code § 158-2 (Ord. No. B-781)",
+      "source_doc_id": "M_HOB-ALG-01_Hoboken_ch158_ecode360",
+      "source_url": "https://ecode360.com/HO0741 (Hoboken Code ch. 158, PDF download dated 2026-10-03)",
       "quoted_span": "Landlords who rent any residential dwelling unit (defined as any primary residence excluding medical/long-term care or detention facilities) in the City of Hoboken are prohibited from price fixing using algorithmic pricing.",
-      "confidence": 0.9,
+      "confidence": 0.93,
       "conflict_flag": true,
-      "conflict_note": "Open question: NJ's FAIR Act (P.L. 2026, c.43) may preempt Hoboken's algorithmic-rent ordinance once it takes effect. Not found in this capture.",
+      "conflict_note": "Open question: the NJ FAIR Act (P.L. 2026, c.43) may preempt this ordinance once effective. Not found in this capture; the document says nothing about the FAIR Act or preemption.",
       "negative_finding": false,
       "record_role": "headline",
       "adoption_date": "2025-07-09",
-      "notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Enforcement is by the Division of Housing or aggrieved private citizens in Hoboken Municipal Court. Penalties (up to $2,000 fine, up to 90 days community service, or N.J.S.A. 40:49-5 penalties) are omitted from key_value.",
-      "retrieved_at": "2026-10-03",
+      "notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Adopted 7-9-2025 by Ord. No. B-781. Enforcement is by the Division of Housing or an aggrieved private citizen in Municipal Court.",
+      "retrieved_at": "2026-10-04",
       "supporting_doc_ids": [
-        "D002",
-        "D037"
+        "D034",
+        "D002"
       ]
     },
     {
       "team_rule_id": "r-0024",
+      "jurisdiction": "Hoboken, NJ",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "Proposed Hoboken ordinance prohibiting algorithmic rent-fixing",
+      "requirement": "The proposed ordinance would make it unlawful for landlords of residential dwelling units in Hoboken to engage in price-fixing through algorithmic rent-fixing, defined as using software, algorithms or data-sharing platforms to coordinate, recommend or implement rents, lease terms or occupancy levels among competing landlords.",
+      "key_value": "Ban on algorithmic rent-fixing (proposed)",
+      "coverage_conditions": "All residential rental units in Hoboken.",
+      "exemptions": "Medical, long-term care, or detention facilities.",
+      "overrides": [],
+      "interaction": "The NJ FAIR Act (P.L. 2026, c.43) may preempt this ordinance once it takes effect; this document does not address that.",
+      "effective_date": null,
+      "citation": "Proposed Hoboken ordinance (to be introduced at the June 4, 2025 City Council meeting); no code citation given in source",
+      "source_doc_id": "D095",
+      "source_url": "https://www.hobokennj.gov/news/city-of-hoboken-to-introduce-ordinance-prohibiting-algorithmic-rent-fixing",
+      "quoted_span": "The proposed ordinance would make it unlawful for landlords renting residential dwelling units in Hoboken to engage in price-fixing through algorithmic rent-fixing.",
+      "confidence": 0.6,
+      "conflict_flag": true,
+      "conflict_note": "Possible preemption by NJ's FAIR Act (P.L. 2026, c.43): not found in this capture. The page is a May 2025 announcement of introduction only; whether the ordinance was adopted is not shown.",
+      "negative_finding": false,
+      "record_role": "headline",
+      "adoption_date": null,
+      "notes": "Press release dated 2025-05-30 announcing introduction on June 4, 2025. It states no adoption or effective date, so both are null and status is 'pending' on this document alone. The release lists penalties of up to 90 days' imprisonment, a fine (typo '$2,0000' in source), or community service; these are not used as the key value.",
+      "retrieved_at": "2026-10-03",
+      "supporting_doc_ids": []
+    },
+    {
+      "team_rule_id": "r-0025",
       "jurisdiction": "Hoboken, NJ",
       "level": "city",
       "category": "rent_increase_limits",
@@ -691,7 +728,7 @@
       "title": "Mandatory disclosures for rental increases over 10%",
       "requirement": "Residential landlords raising rent by more than 10% year over year on a lease renewal must give the existing tenant specified disclosures before the increase takes effect. These are an itemization of the costs, a statement on whether a rent algorithm was used, notice of the tenant's right to take legal action, and Division of Housing contact information.",
       "key_value": "Disclosures required for renewal rent increases of more than 10% (no cap on the increase itself)",
-      "coverage_conditions": "All residential landlords increasing rent by more than 10% upon renewal of a lease with a current tenant, year over year",
+      "coverage_conditions": "All residential landlords increasing rent by more than 10% upon renewal of a lease with a current tenant, year over year | [M_HOB-ALG-01_Hoboken_ch158_ecode360] All residential landlords seeking to increase rent by more than 10% year over year upon renewal of a lease with a current tenant.",
       "exemptions": null,
       "overrides": [],
       "interaction": "This is a disclosure rule, not a rent cap. It also requires a statement on whether a rent algorithm was used, which links it to the algorithmic rent-fixing ban in § 158-2.",
@@ -708,10 +745,12 @@
       "adoption_date": "2025-04-02",
       "notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Classified under rent_increase_limits as an increase-notice requirement, although it sets no cap. Penalty (fine up to $1,000 per incident) omitted from key_value.",
       "retrieved_at": "2026-10-03",
-      "supporting_doc_ids": []
+      "supporting_doc_ids": [
+        "M_HOB-ALG-01_Hoboken_ch158_ecode360"
+      ]
     },
     {
-      "team_rule_id": "r-0025",
+      "team_rule_id": "r-0026",
       "jurisdiction": "Hoboken, NJ",
       "level": "city",
       "category": "rent_increase_limits",
@@ -741,37 +780,37 @@
       ]
     },
     {
-      "team_rule_id": "r-0026",
+      "team_rule_id": "r-0027",
       "jurisdiction": "Jersey City, NJ",
       "level": "city",
       "category": "algorithmic_rent_setting",
       "status": "in_force",
-      "title": "Jersey City ban on algorithmic rent coordination services",
-      "requirement": "Landlords may not use algorithmic rent coordination services. The ordinance has both public and private enforcement.",
-      "key_value": "Ban on landlord use of algorithmic rent coordination services",
-      "coverage_conditions": null,
-      "exemptions": null,
+      "title": "Preventing Algorithmic Rent-Fixing in the Rental Housing Market (Ord. 25-057, § 218-12)",
+      "requirement": "Real estate lessors, their agents and subcontractors may not subscribe to, contract with, or pay a service provider that coordinates nonpublic competitor rental information; service providers may not facilitate agreements not to compete among lessors on rental pricing, fees or other terms.",
+      "key_value": "Ban on contracting with algorithmic rent-setting service providers",
+      "coverage_conditions": "Applies to real estate lessors of residential dwelling units (primary residences) in Jersey City; 'nonpublic competitor information' is less than 365 days old and not widely and readily available to the public at no cost.",
+      "exemptions": "Owners of multiple properties for actions related exclusively to properties controlled by the same owner; licensed real estate agents operating in accordance with state regulations; residential dwelling units exclude inpatient medical care, licensed long-term care, and detention or correctional facilities.",
       "overrides": [],
-      "interaction": "Possible preemption by New Jersey's FAIR Act (P.L. 2026, c.43) once effective; not addressed in this document.",
-      "effective_date": "2025-06",
-      "citation": "Jersey City Code § 218-12",
-      "source_doc_id": "D002",
-      "source_url": "https://morganlewis.com/pubs/2026/08/algorithmic-rent-pricing-litigation-expands-under-new-state-and-local-laws",
-      "quoted_span": "Prohibits a landlord’s use of algorithmic rent coordination services; includes public and private enforcement; fines up to $2,000 per day.",
-      "confidence": 0.7,
+      "interaction": "New Jersey's FAIR Act (P.L. 2026, c.43) may preempt this ordinance once it takes effect; not addressed in this document.",
+      "effective_date": "2025-05",
+      "citation": "Jersey City Code § 218-12 (Ord. 25-057)",
+      "source_doc_id": "M_JC-ALG-01_Ord_25-057_adopted",
+      "source_url": "https://cityofjerseycity.civicweb.net/ (Jersey City Ord. 25-057, adopted copy)",
+      "quoted_span": "It is unlawful for any real estate lessor, agent, or subcontractor thereof, to subscribe to, contract with, or otherwise\nexchange anything of value in return for the services of a Service Provider.",
+      "confidence": 0.9,
       "conflict_flag": true,
-      "conflict_note": "Open question whether the NJ FAIR Act (P.L. 2026, c.43) preempts this ordinance once effective. Not found in this capture. Secondary source (secondary (law firm / news / mirror)); confirm against the official text.",
+      "conflict_note": "Possible preemption by New Jersey's FAIR Act (P.L. 2026, c.43) once effective. This document does not mention the FAIR Act or its effective date.",
       "negative_finding": false,
       "record_role": "headline",
-      "adoption_date": null,
-      "notes": "Secondary source. Effective date from the table ('effective June 2025'); exact day not stated.",
-      "retrieved_at": "2026-10-03",
+      "adoption_date": "2025-05-21",
+      "notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Adopted on second and final reading May 21 2025; mayor approved May 22 2025. Ordinance text is internally inconsistent in section naming (Chapter 218 titled 'Multiple Dwellings' vs 'Fees and Charges'); penalties not extracted.",
+      "retrieved_at": "2026-10-04",
       "supporting_doc_ids": [
-        "D037"
+        "D002"
       ]
     },
     {
-      "team_rule_id": "r-0027",
+      "team_rule_id": "r-0028",
       "jurisdiction": "Jersey City, NJ",
       "level": "city",
       "category": "algorithmic_rent_setting",
@@ -799,7 +838,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0028",
+      "team_rule_id": "r-0029",
       "jurisdiction": "Jersey City, NJ",
       "level": "city",
       "category": "rent_increase_limits",
@@ -827,7 +866,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0029",
+      "team_rule_id": "r-0030",
       "jurisdiction": "Los Angeles, CA",
       "level": "city",
       "category": "just_cause_eviction",
@@ -855,7 +894,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0030",
+      "team_rule_id": "r-0031",
       "jurisdiction": "Los Angeles, CA",
       "level": "city",
       "category": "just_cause_eviction",
@@ -863,8 +902,8 @@
       "title": "Relocation assistance for no-fault evictions under the RSO and JCO",
       "requirement": "Landlords evicting for a tenant not-at-fault reason must file a Declaration of Intent to Evict with LAHD before serving notice, and must pay relocation assistance per unit within 15 days of serving the notice. Amounts depend on eligible or qualified status, length of tenancy and income.",
       "key_value": "Eligible tenant: $11,000 (<3 yrs) / $14,400 (3+ yrs or low income); Qualified tenant: $23,150 / $27,400; one month's rent for JCO single-family dwellings owned by natural persons. Valid July 1, 2026 to June 30, 2027.",
-      "coverage_conditions": "Units covered by the Rent Stabilization Ordinance (RSO) or Just Cause Ordinance (JCO). Qualified tenant: 62 or older, handicapped or disabled, or with one or more minor dependent children. Mom & Pop reduced amounts ($10,550 eligible / $21,250 qualified) apply only for owner or family occupancy evictions where the building has four or fewer rental units and other LAMC 151.30 conditions are met. | [D041] Units subject to the Rent Stabilization Ordinance; non-RSO units remain covered by the City's Just Cause Ordinance.",
-      "exemptions": "No relocation payment when evicting a resident manager to replace with another resident manager (unless a manager-tenant with free or reduced rent only), or when hazardous conditions caused by a natural disaster, not by landlord negligence, require eviction. Landlord may offset accumulated rent unless the eviction is due to a government order to vacate or an order for an unpermitted dwelling.",
+      "coverage_conditions": "Units covered by the Rent Stabilization Ordinance (RSO) or Just Cause Ordinance (JCO). Qualified tenant: 62 or older, handicapped or disabled, or with one or more minor dependent children. Mom & Pop reduced amounts ($10,550 eligible / $21,250 qualified) apply only for owner or family occupancy evictions where the building has four or fewer rental units and other LAMC 151.30 conditions are met. | [D041] Units subject to the Rent Stabilization Ordinance; non-RSO units remain covered by the City's Just Cause Ordinance. | [M_LA-JUST-02_LAMC_ch15_art1_151] Units subject to the Rent Stabilization Ordinance where termination rests on Subdivisions 8., 10., 11., 12., 13. or 14. of Subsection A. Where more than one fee applies, the landlord pays the highest. | [M_LA-JUST-02_LAMC_ch15_art1_151] Rental units covered by LAMC ch. XV art. 1 (RSO). Coverage definitions are not in this part.",
+      "exemptions": "No relocation payment when evicting a resident manager to replace with another resident manager (unless a manager-tenant with free or reduced rent only), or when hazardous conditions caused by a natural disaster, not by landlord negligence, require eviction. Landlord may offset accumulated rent unless the eviction is due to a government order to vacate or an order for an unpermitted dwelling. | [M_LA-JUST-02_LAMC_ch15_art1_151] Subsection G.4. exceptions include a replacement resident manager in the same unit and units made unsafe by fire, flood, earthquake or similar events beyond the owner's control. Resident-manager replacement allowed where the building has an existing resident manager. Protected tenants (10+ year residents aged 62+ or disabled; terminally ill) cannot be evicted under this ground. Small-landlord relocation-fee exception as described in coverage_conditions. Residential hotels as defined in Health & Safety Code § 50519 and LAMC § 47.70 et seq. (§ 151.22).",
       "overrides": [],
       "interaction": "For demolition of Protected Units for new construction, lower-income households get higher amounts under the Resident Protections Ordinance (eff. 2/11/2025) and the state Housing Crisis Act. Chart B standardized payments: $115,480 extremely low, $96,750 very low, $87,450 low income. The higher of state or city amounts applies.",
       "effective_date": "2026-07-01",
@@ -878,14 +917,15 @@
       "negative_finding": false,
       "record_role": "headline",
       "adoption_date": null,
-      "notes": "Effective date 2026-07-01 is the start of the current annual dollar schedule (Chart A, 'Effective July 1, 2026 through June 30, 2027'; amounts increase every July 1). The underlying relocation requirement is older. Secondary fees (Relocation Service Fee, administrative fees) are omitted. This is an official LAHD summary of the LAMC.",
+      "notes": "Effective date 2026-07-01 is the start of the current annual dollar schedule (Chart A, 'Effective July 1, 2026 through June 30, 2027'; amounts increase every July 1). The underlying relocation requirement is older. Secondary fees (Relocation Service Fee, administrative fees) are omitted. This is an official LAHD summary of the LAMC. Supplementary provision folded in (LAMC § 151.30: A landlord may evict an RSO tenant for owner, relative or resident-manager occupancy only if the landlord meets the ownership thresholds and good-faith two-year occupancy rules, no comparable unit is vacant, and no protected tenant is in the unit. Relocation fees under § 151.09 G apply, with fixed fees for qualifying small landlords.) Supplementary provision folded in (L.A.M.C. § 151.23: A landlord withdrawing or demolishing RSO units must file a Notice of Intent to Withdraw with the Department, and the withdrawal date must be at least 120 days after delivery. Qualifying tenants who are 62 or older or disabled and have lived in the unit at least one year get an extension to one year.)",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [
-        "D041"
+        "D041",
+        "M_LA-JUST-02_LAMC_ch15_art1_151"
       ]
     },
     {
-      "team_rule_id": "r-0031",
+      "team_rule_id": "r-0032",
       "jurisdiction": "Los Angeles, CA",
       "level": "city",
       "category": "rent_increase_limits",
@@ -893,8 +933,8 @@
       "title": "Los Angeles Rent Stabilization Ordinance (RSO) allowable rent increases",
       "requirement": "Rent on RSO units may be increased only once every 12 months by the annual allowable rent increase percentage. Effective February 2, 2026, landlords can no longer add a utilities percentage, and the extra 10% for an added dependent is no longer permitted (10% for an additional non-dependent tenant is still allowed).",
       "key_value": "Once per 12 months by the allowable rent increase percentage (percentage is in a linked PDF, not in this text); no utilities add-on since 2026-02-02",
-      "coverage_conditions": "Rental properties first built on or before October 1, 1978, plus replacement units under LAMC Section 151.28; includes apartments, duplexes, condominiums and townhomes, ADUs and JADUs, and rooms in hotels or rooming houses occupied by the same tenant for more than 30 consecutive days. Mobile homes and RVs in mobile home parks are also covered. | [D042] Rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO); check status at zimas.lacity.org.",
-      "exemptions": "Rent amount is not regulated for condominium and townhome tenancies that commenced after December 31, 1995. Luxury exemption available if the monthly rent charged on or before May 31, 1978 can be established. Rent may go to market rate after voluntary move-out, certain at-fault evictions, or a Tenant Buyout Agreement. | [D042] Non-RSO properties are not covered by this figure; the page refers them to LAHD for allowable increases.",
+      "coverage_conditions": "Rental properties first built on or before October 1, 1978, plus replacement units under LAMC Section 151.28; includes apartments, duplexes, condominiums and townhomes, ADUs and JADUs, and rooms in hotels or rooming houses occupied by the same tenant for more than 30 consecutive days. Mobile homes and RVs in mobile home parks are also covered. | [D042] Rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO); check status at zimas.lacity.org. | [M_LA-JUST-02_LAMC_ch15_art1_151] Rental units under the RSO; housing in structures whose first Certificate of Occupancy was issued after October 1, 1978 is exempt. One-family dwellings are exempt unless two or more dwelling units are on the same parcel (duplexes and condominiums are not excepted). The Department publishes the allowable adjustment by May 30 each year; it applies to increases effective July 1 through June 30. | [M_LA-JUST-02_LAMC_ch15_art1_151] Applies to rental units that were the subject of a Notice of Intent to Withdraw under § 151.23 A and are re-offered for rent or lease within five years of the notice filing or of the withdrawal. | [M_LA-JUST-02_LAMC_ch15_art1_151] Rental units subject to the RSO. The increase is available only after the additional tenant has lived in the unit for 30 consecutive days. | [M_LA-JUST-02_LAMC_ch15_art1_151] Rental units subject to the RSO. Applications must be filed within 12 months after the work is completed.",
+      "exemptions": "Rent amount is not regulated for condominium and townhome tenancies that commenced after December 31, 1995. Luxury exemption available if the monthly rent charged on or before May 31, 1978 can be established. Rent may go to market rate after voluntary move-out, certain at-fault evictions, or a Tenant Buyout Agreement. | [D042] Non-RSO properties are not covered by this figure; the page refers them to LAHD for allowable increases. | [M_LA-JUST-02_LAMC_ch15_art1_151] Exempt from the RSO: certificate of occupancy first issued after October 1, 1978; luxury housing certified by the Department; hotels/motels (until more than 30 days' occupancy); certain government-owned or regulated housing; affordable housing with a recorded 55-year regulatory agreement and an exemption certificate; and others. Housing Choice Voucher units are NOT exempt. No annual increase is allowed while a Franchise Tax Board noncompliance notice, a rent reduction or Rent Escrow Account Program placement, or a related criminal conviction remains uncorrected. | [M_LA-JUST-02_LAMC_ch15_art1_151] Replacement units built after demolition are governed by § 151.28, which allows the owner to set the initial rent but applies the RSO, with exemptions for replacement affordable units and certain owner-occupants. | [M_LA-JUST-02_LAMC_ch15_art1_151] Not available if the landlord knew of the additional tenant for more than 60 days and did not give notice of the increase. Not available for dependents added to an existing tenancy. | [M_LA-JUST-02_LAMC_ch15_art1_151] Seismic Retrofit Work does not qualify as capital improvement, rehabilitation or primary renovation work. Exceptions apply where the unit is subject to a Franchise Tax Board noncompliance notice, a rent reduction or REAP notice, or a related criminal conviction.",
       "overrides": [],
       "interaction": "Citywide local rent stabilization. The state Tenant Protection Act cap does not apply to units already covered by local rent control.",
       "effective_date": "2026-02-02",
@@ -911,11 +951,12 @@
       "notes": "The effective date is for the 2026 change (utility add-on removed, dependent 10% removed). The numeric allowable percentage is in a linked PDF not captured here. The page also lists surcharges, registration fees and approved-increase programs (capital improvement, primary renovation, etc.), not extracted separately. Source is LAHD summary page, last modified 2026-09-22.",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [
-        "D042"
+        "D042",
+        "M_LA-JUST-02_LAMC_ch15_art1_151"
       ]
     },
     {
-      "team_rule_id": "r-0032",
+      "team_rule_id": "r-0033",
       "jurisdiction": "Los Angeles, CA",
       "level": "city",
       "category": "screening_restrictions",
@@ -943,35 +984,38 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0033",
+      "team_rule_id": "r-0034",
       "jurisdiction": "Los Angeles, CA",
       "level": "city",
       "category": "security_deposits",
       "status": "in_force",
-      "title": "Security deposit interest for RSO units (LAMC 151.06.02)",
-      "requirement": "Landlords of rent-stabilized units must pay tenants accrued interest on security deposits, either as a direct payment or a rent credit, on a monthly or yearly basis, and must tell the tenant in writing which method they chose. The City sets the interest rate annually.",
-      "key_value": "Interest paid monthly or yearly at the City-set annual rate (4.320% for calendar year 2025)",
-      "coverage_conditions": "Properties within the City of Los Angeles subject to the Los Angeles Rent Stabilization Ordinance (LARSO).",
-      "exemptions": null,
+      "title": "LA payment of interest on security deposits (LAMC § 151.06.02)",
+      "requirement": "Landlords subject to Civ. Code § 1950.5 must pay tenants interest annually on security deposits held for at least one year. The landlord uses either the Rent Adjustment Commission's annual rate or the actual interest earned, and pays it as a payment or a rent credit.",
+      "key_value": "Annual interest on deposits held 1+ year at the RAC-set rate (or actual interest earned)",
+      "coverage_conditions": "Landlords subject to Cal. Civ. Code § 1950.5, for deposits held at least one year. | [M_LA-JUST-02_LAMC_ch15_art1_151] Landlords subject to Civil Code § 1950.5 with RSO tenants; deposits held for at least one year. | [D044] Properties within the City of Los Angeles subject to the Los Angeles Rent Stabilization Ordinance (LARSO).",
+      "exemptions": "Does not govern mobile home parks.",
       "overrides": [],
-      "interaction": "Applies in addition to state security deposit law (Cal. Civ. Code § 1950.5); this document does not discuss that interaction.",
-      "effective_date": null,
-      "citation": "L.A.M.C. § 151.06.02",
-      "source_doc_id": "D044",
-      "source_url": "https://members.aagla.org/news/city-of-la-security-deposit-interest-requirement",
-      "quoted_span": "A tenant shall be given the unpaid accrued interest in the form of either a direct payment or a credit against the tenant’s rent. The landlord shall choose between these two methods of payment and notify the tenant in writing of his or her choice. The landlord may elect to pay the accrued interest on a monthly or yearly basis.",
-      "confidence": 0.7,
+      "interaction": "Adds a local interest requirement on top of the state security-deposit statute, Civ. Code § 1950.5.",
+      "effective_date": "2003-02-01",
+      "citation": "L.A.M.C. § 151.06.02 B",
+      "source_doc_id": "M_LA-JUST-02_LAMC_ch15_art1_151",
+      "source_url": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-322208 (LAMC ch. XV art. 1, incl. s 151.09 Evictions)",
+      "quoted_span": "A landlord who is subject to the provisions of Section 1950.5 of the California\nCivil Code shall pay annually interest on all security deposits held for at least one year for their\ntenants as follows:",
+      "confidence": 0.8,
       "conflict_flag": false,
-      "conflict_note": "Secondary source (secondary (law firm / news / mirror)); confirm against the official text.",
+      "conflict_note": null,
       "negative_finding": false,
       "record_role": "headline",
       "adoption_date": null,
-      "notes": "Secondary source (landlord association article) quoting the LAMC. The quoted text says interest 'shall begin accruing on November 1, 1990', which is an accrual date and not a stated effective date, so effective_date is null. The rate table runs through 2025 only (4.320%, updated 5/21/25); rates for 2026 are not in this capture. Article notes laws may have changed since publication.",
-      "retrieved_at": "2026-10-03",
-      "supporting_doc_ids": []
+      "notes": "Section added by Ord. 166,368 (eff. 12/6/90) with a 5% rate. The current rate-setting method (RAC rate or actual interest) dates from Ord. 175,020 (eff. 2/1/03), which is used as the effective date. Subsection B.4 was amended eff. 8/8/21 to have LAHD publish the rate. The current RAC rate is not stated in this document.",
+      "retrieved_at": "2026-10-04",
+      "supporting_doc_ids": [
+        "M_LA-JUST-02_LAMC_ch15_art1_151",
+        "D044"
+      ]
     },
     {
-      "team_rule_id": "r-0034",
+      "team_rule_id": "r-0035",
       "jurisdiction": "MA",
       "level": "state",
       "category": "algorithmic_rent_setting",
@@ -996,41 +1040,68 @@
       "adoption_date": null,
       "notes": "Status page only; substantive provisions (scope, prohibitions) not in this capture, so key_value is null. Bill history: 3/12/2026 reported from Housing Committee as a new draft of H1564 and referred to House Ways and Means. Not enacted as of the 2026-10-01 query date per this page, so no effective date.Rule text should be checked in the bill itself.",
       "retrieved_at": "2026-10-01",
-      "supporting_doc_ids": []
-    },
-    {
-      "team_rule_id": "r-0035",
-      "jurisdiction": "MA",
-      "level": "state",
-      "category": "algorithmic_rent_setting",
-      "status": "pending",
-      "title": "S.2983 An Act prohibiting algorithmic rent setting (bill)",
-      "requirement": "Proposed legislation to prohibit algorithmic rent setting in Massachusetts. It is a new draft combining S.994 and S.1016, and it has not been enacted.",
-      "key_value": "Would prohibit algorithmic rent setting (bill text not in this capture)",
-      "coverage_conditions": null,
-      "exemptions": null,
-      "overrides": [],
-      "interaction": null,
-      "effective_date": null,
-      "citation": "Mass. Senate Bill S.2983, 194th General Court (2025-2026)",
-      "source_doc_id": "D047",
-      "source_url": "https://malegislature.gov/Bills/194/S2983/BillHistory",
-      "quoted_span": "The committee on Housing, to whom was referred the petitions (accompanied by bill, Senate, No. 994) of Cindy F. Friedman and Julian Cyr for legislation to prohibit algorithmic rent setting;",
-      "confidence": 0.8,
-      "conflict_flag": false,
-      "conflict_note": null,
-      "negative_finding": false,
-      "record_role": "headline",
-      "adoption_date": null,
-      "notes": "Bill history page only; the operative bill text, definitions, exemptions and effective date are not in this capture. Status as of the page: referred to Senate Committee on Ways and Means after a favorable report on 2026-03-12. Not law, so effective_date is null.",
-      "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [
-        "D046",
         "D030"
       ]
     },
     {
       "team_rule_id": "r-0036",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "An Act prohibiting algorithmic rent setting (S.2983)",
+      "requirement": "Pending bill that would prohibit algorithmic rent setting in Massachusetts. The page gives only the title and committee history, so the operative terms (definitions, scope, penalties) cannot be read from this document.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "overrides": [],
+      "interaction": "Not law; no effect on existing state or local rules unless enacted. It is a new draft of S.994 and S.1016, which includes the 'Preventing Algorithmic Rent Fixing in the Rental Housing Market Act' proposal.",
+      "effective_date": null,
+      "citation": "Mass. S. 2983, 194th Gen. Ct. (2025-2026)",
+      "source_doc_id": "D046",
+      "source_url": "https://malegislature.gov/Bills/194/S2983",
+      "quoted_span": "of Cindy F. Friedman and Julian Cyr for legislation to prohibit algorithmic rent setting",
+      "confidence": 0.6,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "negative_finding": false,
+      "record_role": "headline",
+      "adoption_date": null,
+      "notes": "Bill status per page: reported favorably by the Housing Committee 3/12/2026 and referred to Senate Ways and Means, so not enacted. The page has no bill text, so the requirement is described only from the title and committee report language. No effective date is stated, so it is null.",
+      "retrieved_at": "2026-10-01",
+      "supporting_doc_ids": []
+    },
+    {
+      "team_rule_id": "r-0037",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Rental broker fees payable only by the party who engaged the broker",
+      "requirement": "Only a licensed broker or salesperson may find dwelling accommodations for prospective tenants for a fee. Any fee must be paid only by the lessor or tenant who originally engaged and contracted with the broker or salesperson.",
+      "key_value": "Broker fee payable only by the party (landlord or tenant) who hired the broker",
+      "coverage_conditions": "Persons engaged in finding rental dwelling accommodations for prospective tenants for a fee; the broker or salesperson must be licensed under c.112 § 87PP.",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": null,
+      "effective_date": "2025-08-01",
+      "citation": "M.G.L. c. 112, § 87DDD-1/2",
+      "source_doc_id": "M_MA-FEE-02_c112_87DDD-half_masslaw",
+      "source_url": "https://www.mass.gov/info-details/mass-general-laws-c112-ss-87ddd-12 (Trial Court Law Libraries unofficial text)",
+      "quoted_span": "Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson.",
+      "confidence": 0.6,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "negative_finding": false,
+      "record_role": "headline",
+      "adoption_date": null,
+      "notes": "Effective date taken from the page's update note: amended by St. 2025, c. 9, § 43, effective August 1, 2025. A broker-fee rule is not strictly an application or screening fee; it is filed here as the nearest category (fees charged to rental applicants). The document is an unofficial text of the statute.",
+      "retrieved_at": "2026-10-04",
+      "supporting_doc_ids": []
+    },
+    {
+      "team_rule_id": "r-0038",
       "jurisdiction": "MA",
       "level": "state",
       "category": "application_screening_fees",
@@ -1058,7 +1129,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0037",
+      "team_rule_id": "r-0039",
       "jurisdiction": "MA",
       "level": "state",
       "category": "application_screening_fees",
@@ -1086,7 +1157,35 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0038",
+      "team_rule_id": "r-0040",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "rent_increase_limits",
+      "status": "failed",
+      "title": "Initiative Petition 25-21 (statewide rent increase limit) barred from ballot",
+      "requirement": "The petition would have repealed c. 40P and capped annual rent increases for covered dwelling units. The SJC held it relates to religion because of its exemption for religious facilities, so art. 48 bars it from the November 2026 ballot.",
+      "key_value": "Would have capped annual rent increases at the lower of CPI increase or 5%; not law",
+      "coverage_conditions": "Would have covered all dwelling units leased for residential, but not commercial, use.",
+      "exemptions": "Owner-occupied buildings with four or fewer units; units with rents regulated by a public authority; units rented primarily to transient guests for under 14 consecutive days; units in facilities operated solely for educational, religious, or non-profit purposes; units whose first residential certificate of occupancy is less than 10 years old (for 10 years from issuance).",
+      "overrides": [],
+      "interaction": "Would have ended the statewide prohibition on rent control in G. L. c. 40P; that prohibition remains in force.",
+      "effective_date": null,
+      "citation": "Initiative Petition 25-21; Mass. Const. Amend. art. 48, The Initiative, II, § 2; Cella v. Attorney General, SJC-13893 (2026)",
+      "source_doc_id": "M_MA-RENT-P1_Cella_v_AG_SJC-13893",
+      "source_url": "https://www.mass.gov/doc/cella-v-attorney-general (SJC-13893 slip opinion)",
+      "quoted_span": "The petition proposes a\n\nlimit on annual rent increases for residential dwelling units\n\nbut exempts several categories of units, including those in\n\n\"facilities operated solely for . . . religious . . . purposes.\"",
+      "confidence": 0.93,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "negative_finding": true,
+      "record_role": "headline",
+      "adoption_date": null,
+      "notes": "Opinion decided June 23, 2026. The court remanded for entry of judgment declaring the petition non-compliant with art. 48 and enjoining the Secretary from placing it on the 2026 ballot. The court did not reach the plaintiffs' alternative arguments.",
+      "retrieved_at": "2026-10-04",
+      "supporting_doc_ids": []
+    },
+    {
+      "team_rule_id": "r-0041",
       "jurisdiction": "MA",
       "level": "state",
       "category": "rent_increase_limits",
@@ -1114,7 +1213,35 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0039",
+      "team_rule_id": "r-0042",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "No rent control permitted (state bar, G. L. c. 40P)",
+      "requirement": "Massachusetts law broadly prohibits any regulatory scheme based on or implementing rent control, including any regulation requiring below-market residential rents.",
+      "key_value": "No rent cap: state law bars rent control",
+      "coverage_conditions": "Statewide; residential properties. Rent control is defined to include any regulation that in any way requires below-market rents for residential properties (G. L. c. 40P, § 3).",
+      "exemptions": null,
+      "overrides": [],
+      "interaction": "Bars local rent control ordinances. Initiative Petition 25-21 would have struck out c. 40P, but the SJC held it cannot be placed on the November 2026 ballot, so the ban remains.",
+      "effective_date": null,
+      "citation": "M.G.L. c. 40P, §§ 2-3",
+      "source_doc_id": "M_MA-RENT-P1_Cella_v_AG_SJC-13893",
+      "source_url": "https://www.mass.gov/doc/cella-v-attorney-general (SJC-13893 slip opinion)",
+      "quoted_span": "General Laws c. 40P, § 2, \"broadly prohibits any regulatory scheme based upon or implementing rent control.\"",
+      "confidence": 0.9,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "negative_finding": true,
+      "record_role": "headline",
+      "adoption_date": null,
+      "notes": "Secondary description of c. 40P in a court opinion; the statute's enactment/effective date is not stated in this document, so effective_date is null.",
+      "retrieved_at": "2026-10-04",
+      "supporting_doc_ids": []
+    },
+    {
+      "team_rule_id": "r-0043",
       "jurisdiction": "MA",
       "level": "state",
       "category": "rent_increase_limits",
@@ -1142,7 +1269,37 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0040",
+      "team_rule_id": "r-0044",
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "CORI housing screening limits (803 CMR 5.00)",
+      "requirement": "Landlords, property managers and real estate agents may request CORI on a housing applicant only as the final step in the application process. They must give the applicant a copy of the CORI and its source before asking about criminal history and before any adverse decision, and must follow the notice and dispute steps in 5.14.",
+      "key_value": "CORI check only as the final step of the application process",
+      "coverage_conditions": "Applies to landlords, real estate agents, public housing authorities and property management companies that request CORI to screen applicants to rent or lease housing, including market-rate and subsidized housing. | [M_MA-SCRN-02_MGL_c6_s172_findlaw] Applies to a requestor evaluating applicants for rental or lease of housing, under subsection (a)(3). Requestor must certify purpose and have the applicant's signed acknowledgement form, and must verify the applicant's identity.",
+      "exemptions": "Standard access CORI may not be used to screen other household members, but open access CORI may be requested for individuals other than the applicant (5.04(3)-(4)). Landlords may still make an adverse decision based on an applicant's refusal to consent to a lawful CORI request (5.06(3)). | [M_MA-SCRN-02_MGL_c6_s172_findlaw] Under subsection (b), murder, voluntary and involuntary manslaughter, and state-prison-punishable sex offenses remain available permanently unless sealed. Prior convictions stay available for as long as the subject's last available conviction record is available. Housing authorities have separate access under (a)(7).",
+      "overrides": [],
+      "interaction": "Sits alongside federal FCRA requirements, which apply where a consumer reporting agency is used (5.14-5.15). Subsidized housing screening must also follow state and federal law (5.05(3)).",
+      "effective_date": null,
+      "citation": "803 CMR 5.04(2); authority M.G.L. c. 6, §§ 167A and 172",
+      "source_doc_id": "M_MA-SCRN-02_803_CMR_5",
+      "source_url": "https://www.mass.gov/doc/803-cmr-5-criminal-offender-record-information-cori-housing/download",
+      "quoted_span": "CORI shall only be requested for a housing applicant as the final step in the application process.",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "negative_finding": false,
+      "record_role": "headline",
+      "adoption_date": null,
+      "notes": "Effective date not stated in the document. Page footers show 6/11/21, which looks like a revision or print date and is not a stated effective date. Procedural duties from 5.06, 5.10, 5.14 and 5.15 (acknowledgment form, copy of CORI, pre-adverse notice, dispute opportunity, CRA authorization) are folded into this record.",
+      "retrieved_at": "2026-10-04",
+      "supporting_doc_ids": [
+        "M_MA-SCRN-02_MGL_c6_s172_findlaw"
+      ]
+    },
+    {
+      "team_rule_id": "r-0045",
       "jurisdiction": "MA",
       "level": "state",
       "category": "screening_restrictions",
@@ -1170,7 +1327,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0041",
+      "team_rule_id": "r-0046",
       "jurisdiction": "MA",
       "level": "state",
       "category": "security_deposits",
@@ -1198,7 +1355,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0042",
+      "team_rule_id": "r-0047",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "algorithmic_rent_setting",
@@ -1228,7 +1385,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0043",
+      "team_rule_id": "r-0048",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "application_screening_fees",
@@ -1256,7 +1413,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0044",
+      "team_rule_id": "r-0049",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "just_cause_eviction",
@@ -1287,7 +1444,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0045",
+      "team_rule_id": "r-0050",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "just_cause_eviction",
@@ -1315,7 +1472,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0046",
+      "team_rule_id": "r-0051",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "rent_increase_limits",
@@ -1343,7 +1500,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0047",
+      "team_rule_id": "r-0052",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "screening_restrictions",
@@ -1374,7 +1531,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0048",
+      "team_rule_id": "r-0053",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "screening_restrictions",
@@ -1402,7 +1559,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0049",
+      "team_rule_id": "r-0054",
       "jurisdiction": "NJ",
       "level": "state",
       "category": "security_deposits",
@@ -1433,7 +1590,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0050",
+      "team_rule_id": "r-0055",
       "jurisdiction": "Newark, NJ",
       "level": "city",
       "category": "rent_increase_limits",
@@ -1461,7 +1618,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0051",
+      "team_rule_id": "r-0056",
       "jurisdiction": "Newark, NJ",
       "level": "city",
       "category": "screening_restrictions",
@@ -1489,7 +1646,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0052",
+      "team_rule_id": "r-0057",
       "jurisdiction": "San Diego, CA",
       "level": "city",
       "category": "algorithmic_rent_setting",
@@ -1497,7 +1654,7 @@
       "title": "San Diego Prohibition of Anti-Competitive Automated Rent Price Fixing (SDMC §98.1103)",
       "requirement": "It is unlawful to sell, license or provide an algorithmic device to a landlord, and unlawful for a landlord to use an algorithmic device to set rental rates or occupancy levels for residential rental property.",
       "key_value": "Ban on selling, licensing, or using algorithmic rent-setting devices (software using nonpublic competitor data of two or more landlords)",
-      "coverage_conditions": "Applies to residential rental property in the City of San Diego; 'algorithmic device' means software that uses algorithms to calculate nonpublic competitor data of two or more landlords to recommend rental rates or occupancy levels. | [D037] Landlords or rental property owners using the covered algorithmic rent-setting products; each month and affected rental property may be a separate violation. | [D076] Residential rental property in the City of San Diego; applies to any person who sells or provides such devices to a landlord and to landlords who use them. 'Algorithmic device' means software that performs calculations on nonpublic competitor data to advise or recommend rental rates or occupancy levels.",
+      "coverage_conditions": "Applies to residential rental property in the City of San Diego; 'algorithmic device' means software that uses algorithms to calculate nonpublic competitor data of two or more landlords to recommend rental rates or occupancy levels. | [D076] Residential rental property in the City of San Diego; applies to any person who sells or provides such devices to a landlord and to landlords who use them. 'Algorithmic device' means software that performs calculations on nonpublic competitor data to advise or recommend rental rates or occupancy levels.",
       "exemptions": "Excludes software that publishes reports from aggregated historical nonpublic data more than 90 days old or public information without recommending future rates; software used to set rents or income limits under affordable housing program guidelines; appraisal software that does not recommend rental rates during runtime. | [D076] Excludes (a) software that publishes reports from aggregated historical nonpublic competitor data more than 90 days old, or from publicly available information, and does not recommend rates or occupancy levels for future leases or renewals; and (b) software used to set rents or income limits under local, state or federal affordable housing program guidelines.",
       "overrides": [],
       "interaction": "No state or other-level interaction stated in this document. Remedies are cumulative with other law.",
@@ -1516,12 +1673,11 @@
       "retrieved_at": "2026-10-03",
       "supporting_doc_ids": [
         "D002",
-        "D037",
         "D076"
       ]
     },
     {
-      "team_rule_id": "r-0053",
+      "team_rule_id": "r-0058",
       "jurisdiction": "San Diego, CA",
       "level": "city",
       "category": "just_cause_eviction",
@@ -1551,7 +1707,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0054",
+      "team_rule_id": "r-0059",
       "jurisdiction": "San Diego, CA",
       "level": "city",
       "category": "screening_restrictions",
@@ -1579,7 +1735,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0055",
+      "team_rule_id": "r-0060",
       "jurisdiction": "San Francisco, CA",
       "level": "city",
       "category": "algorithmic_rent_setting",
@@ -1587,7 +1743,7 @@
       "title": "S.F. Rent Ordinance Section 37.10C - Prohibition on Algorithmic Rent-Setting Devices",
       "requirement": "Prohibits the sale or use of algorithmic devices (software that analyzes nonpublic competitor rental data to recommend rents for vacant units) to set rents or manage occupancy levels for residential units. Tenants or the City Attorney may bring a civil action for violations.",
       "key_value": "Ban on sale or use of algorithmic rent-setting devices",
-      "coverage_conditions": "Residential units in San Francisco; 'algorithmic device' means a device such as a software program that uses algorithms to analyze nonpublic competitor rental data for the purposes of providing a landlord recommendations on what rent to charge for a vacant unit. | [D037] Landlords using qualifying algorithmic devices that calculate nonpublic competitor information.",
+      "coverage_conditions": "Residential units in San Francisco; 'algorithmic device' means a device such as a software program that uses algorithms to analyze nonpublic competitor rental data for the purposes of providing a landlord recommendations on what rent to charge for a vacant unit.",
       "exemptions": null,
       "overrides": [],
       "interaction": null,
@@ -1605,12 +1761,11 @@
       "notes": "Secondary summary from the SF Rent Board news page; effective date stated in the text as October 14, 2024. The text does not give the ordinance number; citation follows the Section 37.10C reference in the Rent Ordinance (S.F. Admin. Code ch. 37).",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [
-        "D002",
-        "D037"
+        "D002"
       ]
     },
     {
-      "team_rule_id": "r-0056",
+      "team_rule_id": "r-0061",
       "jurisdiction": "San Francisco, CA",
       "level": "city",
       "category": "just_cause_eviction",
@@ -1641,7 +1796,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0057",
+      "team_rule_id": "r-0062",
       "jurisdiction": "San Francisco, CA",
       "level": "city",
       "category": "rent_increase_limits",
@@ -1671,7 +1826,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0058",
+      "team_rule_id": "r-0063",
       "jurisdiction": "San Francisco, CA",
       "level": "city",
       "category": "screening_restrictions",
@@ -1699,7 +1854,7 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0059",
+      "team_rule_id": "r-0064",
       "jurisdiction": "San Francisco, CA",
       "level": "city",
       "category": "security_deposits",
@@ -1727,7 +1882,37 @@
       "supporting_doc_ids": []
     },
     {
-      "team_rule_id": "r-0060",
+      "team_rule_id": "r-0065",
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Santa Ana ordinance limiting algorithmic rent-setting software",
+      "requirement": "Landlords may not use certain algorithmic rent-setting tools, meaning software that relies on nonpublic market data, in the Santa Ana residential rental market. Tenants may sue, and need only show the prohibited software was used rather than prove active collusion.",
+      "key_value": "Ban on certain algorithmic rent-setting (price-fixing) software",
+      "coverage_conditions": "Residential rental housing in Santa Ana. | [D088] Residential rental property within Santa Ana city limits.",
+      "exemptions": "Does not restrict tools that rely on publicly available data or historical trends, or tools used for affordable housing compliance. | [D088] Pricing software relying solely on publicly available data or aggregate historical data, and tools used to comply with affordable housing program requirements.",
+      "overrides": [],
+      "interaction": "The newsletter says the ordinance is intended to complement broader state-level protections; no preemption issue is stated.",
+      "effective_date": "2026-03",
+      "citation": "Santa Ana Municipal Code (ordinance approved by City Council March 3, 2026; ordinance number and section not stated in source)",
+      "source_doc_id": "D089",
+      "source_url": "https://santa-ana.gov/rent-stabilization-newsletter-march-2026/",
+      "quoted_span": "Bans Price-Fixing Software: Prohibits the use of certain algorithmic rent-setting tools in the local rental market.",
+      "confidence": 0.8,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "negative_finding": false,
+      "record_role": "headline",
+      "adoption_date": "2026-03-03",
+      "notes": "Month of adoption; exact effective date not stated in source (California ordinances generally take effect after adoption, often 30 days after final passage). Secondary newsletter summary; the ordinance text, number and code section are not in this document. Civil remedies: damages, injunctive relief, up to $1,000 per violation, attorney's fees.",
+      "retrieved_at": "2026-10-03",
+      "supporting_doc_ids": [
+        "D088"
+      ]
+    },
+    {
+      "team_rule_id": "r-0066",
       "jurisdiction": "Santa Ana, CA",
       "level": "city",
       "category": "algorithmic_rent_setting",
@@ -1753,13 +1938,12 @@
       "notes": "Secondary source. Effective date from the table ('effective April 2, 2026'). Municipal code section not given in the document. Proposal (Santa Ana Municipal Code, algorithmic rent-setting software ordinance (ordinance number and section not stated in source), D087) adopted as Santa Ana Ordinance No. NS-3090.",
       "retrieved_at": "2026-10-03",
       "supporting_doc_ids": [
-        "D037",
         "D086",
         "D087"
       ]
     },
     {
-      "team_rule_id": "r-0061",
+      "team_rule_id": "r-0067",
       "jurisdiction": "Santa Ana, CA",
       "level": "city",
       "category": "just_cause_eviction",
@@ -1789,7 +1973,7 @@
       ]
     },
     {
-      "team_rule_id": "r-0062",
+      "team_rule_id": "r-0068",
       "jurisdiction": "Santa Ana, CA",
       "level": "city",
       "category": "rent_increase_limits",
@@ -1866,7 +2050,7 @@
       "conflict_note": "A pending measure could change this.",
       "negative_finding": true,
       "derived": true,
-      "notes": "Pending: H.5222, 194th Gen. Court (Mass. 2025-2026) (new draft of H.1564) (r-0034); Mass. Senate Bill S.2983, 194th General Court (2025-2026) (r-0035)"
+      "notes": "Pending: H.5222, 194th Gen. Court (Mass. 2025-2026) (new draft of H.1564) (r-0035); Mass. S. 2983, 194th Gen. Ct. (2025-2026) (r-0036)"
     },
     {
       "team_rule_id": "n-0003",
@@ -2480,9 +2664,9 @@
       "coverage_conditions": null,
       "exemptions": null,
       "overrides": [
-        "r-0038"
+        "r-0041"
       ],
-      "interaction": "Derived from state rule r-0038.",
+      "interaction": "Derived from state rule r-0041.",
       "effective_date": null,
       "citation": "M.G.L. c. 40P, § 4",
       "source_doc_id": "D048",

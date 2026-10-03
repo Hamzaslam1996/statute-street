@@ -1,31 +1,31 @@
-# Module B lookup evaluation (seed60, after manual sources + D088-D095, with units floor)
+# Module B lookup evaluation (seed60, before manual, WITH units floor)
 
 Gold: `gold/addresses/seed60.json` (60 addresses, 569 expectations, verifier AI-draft)  
 Ours: `/Users/hamzaaslamkhan/Downloads/03 RealPage - Codebase and Data/navigator/out/lookups.json`
 
 | Metric | Value |
 |---|---|
-| Exact result agreement | 480/569 = 84.4% |
-| Weighted score (missed 'applies' count double) | 739/883 = 83.7% |
-| Missed 'applies' (gold applies, ours not) | 55 |
+| Exact result agreement | 489/569 = 85.9% |
+| Weighted score (missed 'applies' count double) | 749/883 = 84.8% |
+| Missed 'applies' (gold applies, ours not) | 54 |
 | Expectations we did not report at all | 5 |
-| Our unknown rate (these addresses) | 265/653 = 40.6% |
+| Our unknown rate (these addresses) | 266/617 = 43.1% |
 
 ## Confusion (gold → ours)
 
 | gold \ ours | applies | superseded | not_yet_effective | pending | unknown | not_reported |
 |---|---|---|---|---|---|---|
-| applies | 259 | 0 | 0 | 0 | 55 | 0 |
-| superseded | 0 | 10 | 0 | 0 | 19 | 2 |
+| applies | 260 | 0 | 0 | 0 | 54 | 0 |
+| superseded | 0 | 13 | 0 | 0 | 16 | 2 |
 | not_yet_effective | 0 | 0 | 18 | 0 | 0 | 0 |
 | pending | 0 | 0 | 0 | 30 | 0 | 0 |
-| unknown | 10 | 0 | 0 | 0 | 163 | 3 |
+| unknown | 5 | 0 | 0 | 0 | 168 | 3 |
 
 ## Disagreement types
 
-- gold applies → ours unknown: 55
-- gold superseded → ours unknown: 19
-- gold unknown → ours applies: 10
+- gold applies → ours unknown: 54
+- gold superseded → ours unknown: 16
+- gold unknown → ours applies: 5
 - gold unknown → ours not_reported: 3
 - gold superseded → ours not_reported: 2
 
@@ -50,14 +50,14 @@ Ours: `/Users/hamzaaslamkhan/Downloads/03 RealPage - Codebase and Data/navigator
 - CA-DEP-01 -> r-0019 (only rule in bucket)
 - CA-FEE-01 -> r-0014 (only rule in bucket)
 - CA-JUST-01 -> r-0015 (section in reason)
-- LA-JUST-02 -> r-0031 (only rule in bucket)
-- LA-SCRN-01 -> r-0033 (only rule in bucket)
-- MA-FEE-02 -> r-0037 (ambiguous bucket of 2)
-- MA-SCRN-01 -> r-0045 (ambiguous bucket of 2)
-- MA-SCRN-02 -> r-0044 (only rule in bucket)
-- NJ-DEP-01 -> r-0054 (only rule in bucket)
-- NJ-SCRN-02 -> r-0052 (only rule in bucket)
-- NWK-RENT-01 -> r-0055 (only rule in bucket)
-- SD-ALG-01 -> r-0057 (only rule in bucket)
-- SD-SCRN-01 -> r-0059 (only rule in bucket)
-- SF-RENT-01 -> r-0062 (only rule in bucket)
+- LA-JUST-02 -> r-0030 (only rule in bucket)
+- LA-SCRN-01 -> r-0032 (only rule in bucket)
+- MA-FEE-02 -> r-0036 (only rule in bucket)
+- MA-SCRN-01 -> r-0040 (only rule in bucket)
+- MA-SCRN-02 -> r-0040 (only rule in bucket)
+- NJ-DEP-01 -> r-0049 (only rule in bucket)
+- NJ-SCRN-02 -> r-0047 (only rule in bucket)
+- NWK-RENT-01 -> r-0050 (only rule in bucket)
+- SD-ALG-01 -> r-0052 (only rule in bucket)
+- SD-SCRN-01 -> r-0054 (only rule in bucket)
+- SF-RENT-01 -> r-0057 (only rule in bucket)

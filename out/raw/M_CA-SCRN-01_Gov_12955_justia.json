@@ -1,0 +1,44 @@
+{
+  "doc_id": "M_CA-SCRN-01_Gov_12955_justia",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T22:51:41+00:00",
+  "source_url": "https://law.justia.com/codes/california/code-gov/title-2/division-3/part-2-8/chapter-6/article-2/section-12955/ (mirror; official corpus copy is D027)",
+  "retrieved": "2026-10-04 (saved by Hamza from his browser; single page)",
+  "source_type": "secondary mirror of statute",
+  "n_chunks": 1,
+  "document_summary": "Justia mirror of California Government Code § 12955 (FEHA housing discrimination), a statewide law covering California, including its source-of-income and subsidy-related credit-history screening limits.",
+  "rules": [
+    {
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "FEHA housing discrimination: source of income and subsidy credit-history limits (Gov. Code § 12955)",
+      "requirement": "Owners may not discriminate against or harass a rental applicant because of source of income (including Section 8 and other housing subsidies and HUD-VASH vouchers). Where a government rent subsidy applies, the income standard must be based on the tenant's portion of the rent, and an applicant who offers alternative evidence of ability to pay must be allowed to substitute it for credit history.",
+      "key_value": "Ban on source-of-income discrimination (incl. vouchers); with a rent subsidy, income tests use the tenant's rent portion and applicants may offer alternatives to credit history",
+      "coverage_conditions": "Owners of housing accommodations and others in real-estate-related transactions; the credit-history and income-standard rules in subd. (o) apply only where there is a government rent subsidy.",
+      "exemptions": "Asking about the level or source of income is not discrimination (subd. (p)(2)). Landlords may still request employment verification, landlord references and identity verification (subd. (o)(2)).",
+      "interaction": "Statewide floor; local ordinances in the listed cities may add further screening restrictions. No preemption issue appears in this document.",
+      "effective_date": "2024-01-01",
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Cal. Gov. Code § 12955",
+      "quoted_span": "It shall be unlawful:\n\n(a) For the owner of any housing accommodation to discriminate against or harass\nany person because of the race, color, religion, sex, gender, gender identity, gender\nexpression, sexual orientation, marital status, national origin, ancestry, familial\nstatus, source of income, disability, veteran or military status, or genetic\ninformation of that person.",
+      "confidence": 0.8,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "record_role": "headline",
+      "out_of_scope": false,
+      "out_of_scope_reason": null,
+      "extraction_notes": "Secondary mirror (Justia) of the statute. Effective date is from the history note 'Amended by Stats. 2023, Ch. 776, Sec. 1. (SB 267) Effective January 1, 2024', which added the credit-history provisions in subd. (o). The basic source-of-income ban may have an earlier effective date that this document does not state. The section also contains general anti-discrimination and anti-retaliation provisions, which are not extracted separately."
+    }
+  ],
+  "usage": {
+    "input_tokens": 9026,
+    "output_tokens": 1650,
+    "cost_usd": 0.0346,
+    "seconds": 12.5
+  },
+  "errors": []
+}

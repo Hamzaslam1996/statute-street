@@ -1,0 +1,44 @@
+{
+  "doc_id": "M_JC-ALG-01_Ord_25-057_adopted",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T22:52:01+00:00",
+  "source_url": "https://cityofjerseycity.civicweb.net/ (Jersey City Ord. 25-057, adopted copy)",
+  "retrieved": "2026-10-04 (saved by Hamza from his browser; single page)",
+  "source_type": "official ordinance (city clerk copy)",
+  "n_chunks": 1,
+  "document_summary": "Adopted Jersey City, NJ Ordinance 25-057 adding § 218-12 to Chapter 218, banning landlords from using third-party service providers that coordinate nonpublic competitor rental information (algorithmic rent-fixing).",
+  "rules": [
+    {
+      "jurisdiction": "Jersey City, NJ",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Preventing Algorithmic Rent-Fixing in the Rental Housing Market (Ord. 25-057, § 218-12)",
+      "requirement": "Real estate lessors, their agents and subcontractors may not subscribe to, contract with, or pay a service provider that coordinates nonpublic competitor rental information; service providers may not facilitate agreements not to compete among lessors on rental pricing, fees or other terms.",
+      "key_value": "Ban on contracting with algorithmic rent-setting service providers",
+      "coverage_conditions": "Applies to real estate lessors of residential dwelling units (primary residences) in Jersey City; 'nonpublic competitor information' is less than 365 days old and not widely and readily available to the public at no cost.",
+      "exemptions": "Owners of multiple properties for actions related exclusively to properties controlled by the same owner; licensed real estate agents operating in accordance with state regulations; residential dwelling units exclude inpatient medical care, licensed long-term care, and detention or correctional facilities.",
+      "interaction": "New Jersey's FAIR Act (P.L. 2026, c.43) may preempt this ordinance once it takes effect; not addressed in this document.",
+      "effective_date": "2025-05",
+      "adoption_date": "2025-05-21",
+      "negative_finding": false,
+      "citation": "Jersey City Code § 218-12 (Ord. 25-057)",
+      "quoted_span": "It is unlawful for any real estate lessor, agent, or subcontractor thereof, to subscribe to, contract with, or otherwise\nexchange anything of value in return for the services of a Service Provider.",
+      "confidence": 0.9,
+      "conflict_flag": true,
+      "conflict_note": "Possible preemption by New Jersey's FAIR Act (P.L. 2026, c.43) once effective. This document does not mention the FAIR Act or its effective date.",
+      "record_role": "headline",
+      "out_of_scope": false,
+      "out_of_scope_reason": null,
+      "extraction_notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Adopted on second and final reading May 21 2025; mayor approved May 22 2025. Ordinance text is internally inconsistent in section naming (Chapter 218 titled 'Multiple Dwellings' vs 'Fees and Charges'); penalties not extracted."
+    }
+  ],
+  "usage": {
+    "input_tokens": 10510,
+    "output_tokens": 924,
+    "cost_usd": 0.0303,
+    "seconds": 6.3
+  },
+  "errors": []
+}

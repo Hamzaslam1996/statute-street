@@ -1,0 +1,44 @@
+{
+  "doc_id": "M_MA-FEE-02_c112_87DDD-half_masslaw",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T22:54:35+00:00",
+  "source_url": "https://www.mass.gov/info-details/mass-general-laws-c112-ss-87ddd-12 (Trial Court Law Libraries unofficial text)",
+  "retrieved": "2026-10-04 (saved by Hamza from his browser; single page)",
+  "source_type": "official-agency unofficial statute text",
+  "n_chunks": 1,
+  "document_summary": "Unofficial Trial Court Law Libraries text of Mass. Gen. Laws c.112 § 87DDD-1/2, which licenses persons who find rental housing for a fee and says which party must pay the broker's fee; it covers Massachusetts.",
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Rental broker fees payable only by the party who engaged the broker",
+      "requirement": "Only a licensed broker or salesperson may find dwelling accommodations for prospective tenants for a fee. Any fee must be paid only by the lessor or tenant who originally engaged and contracted with the broker or salesperson.",
+      "key_value": "Broker fee payable only by the party (landlord or tenant) who hired the broker",
+      "coverage_conditions": "Persons engaged in finding rental dwelling accommodations for prospective tenants for a fee; the broker or salesperson must be licensed under c.112 § 87PP.",
+      "exemptions": null,
+      "interaction": null,
+      "effective_date": "2025-08-01",
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "M.G.L. c. 112, § 87DDD-1/2",
+      "quoted_span": "Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson.",
+      "confidence": 0.6,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "record_role": "headline",
+      "out_of_scope": false,
+      "out_of_scope_reason": null,
+      "extraction_notes": "Effective date taken from the page's update note: amended by St. 2025, c. 9, § 43, effective August 1, 2025. A broker-fee rule is not strictly an application or screening fee; it is filed here as the nearest category (fees charged to rental applicants). The document is an unofficial text of the statute."
+    }
+  ],
+  "usage": {
+    "input_tokens": 6906,
+    "output_tokens": 1153,
+    "cost_usd": 0.0253,
+    "seconds": 8.8
+  },
+  "errors": []
+}

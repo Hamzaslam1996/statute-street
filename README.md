@@ -33,4 +33,55 @@ numbers; secondary sources are capped at confidence 0.7.
 
 Corpus: the organisers' starter pack (read-only) plus `corpus_supplementary/`
 (single-page captures of link-only sources, with retrieval dates in
-`capture_log.csv`).
+`capture_log.csv`) and `sources/manual/` (pages saved by hand from a browser,
+same header format; the extractor reads them as `M_<file name>`).
+
+## Module B — address lookup
+
+```
+python resolve.py                  # Census Geocoder: legal city for each address -> out/jurisdictions.json
+python coverage.py                 # one Claude call per rule: coverage text -> machine tests -> out/coverage.json
+python engine.py [--as-of DATE]    # deterministic rule engine -> out/lookups.json, out/lookup_audit.csv
+python -m pytest tests/ -q         # acceptance tests (SF 1979 trap, Dorchester = Boston, FAIR Act dates, ...)
+python lookup_eval.py --gold gold/addresses/seed60.json   # score -> out/lookup_eval.md
+```
+
+`coverage_overrides.json` records the reviewer's (Hamza's) rulings that sit on
+top of the model-written tests, each naming the ruling it implements.
+
+### Exemptions and presumptions (how "unknown" is decided)
+
+Every condition the engine tests is one of three kinds:
+
+- **Coverage condition** — the law reaches the property only if the condition
+  holds (a unit-count threshold, a funding requirement, a certificate-of-occupancy
+  cutoff). If the data cannot show it, the answer is **unknown**. Year built is
+  only a proxy for the certificate date, so a building from the cutoff year
+  itself is unknown.
+- **Niche exemption** — a narrow carve-out for an ownership, funding or use class
+  that whoever claims it must prove (non-profit co-operatives, public housing,
+  deed-restricted affordable housing, hotels and vacation lets, hospitals,
+  dormitories). Exemptions to remedial housing statutes are read narrowly, so
+  when the data is silent the answer is **applies**, the explanation starts
+  "Applies unless …", and the exemption is listed in the row's `assumptions`.
+- **Plausible exemption** — an exception the data cannot rule out and that is
+  common for the property type (an owner-occupied two-family; a single-family
+  home or condo owned by a natural person; a new-construction window the year
+  built falls inside). The answer is **unknown**, unless the assessor's use code
+  makes the exemption impossible (a 5+ unit apartment building cannot be an
+  owner-occupied two-family), in which case it **applies**.
+
+Conditions about the tenancy itself (protection starts after six months of
+occupancy) are not about the property and never make a rule unknown; they are
+recorded as assumptions.
+
+`--use-derived-units` treats unit counts parsed from New Jersey MOD-IV building
+codes ("3S-B-A-13U-H" → 13) as real; the submission does not, because the
+organisers state that those rows have no unit counts (see `out/derived_units.csv`).
+
+## Audit trail notes
+
+- The independent gold key v0.4 (`gold/`, `sources/official/`, D088–D095) was
+  written by a separate session and was swept into commit `84c4030` together with
+  Module B code; v0.4.1 is commit `772335e` on its own. History was not rewritten.
+- `corpus_supplementary/text/D094.txt` was not delivered and is not in the corpus.

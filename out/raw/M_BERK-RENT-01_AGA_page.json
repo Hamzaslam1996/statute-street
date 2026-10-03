@@ -1,0 +1,44 @@
+{
+  "doc_id": "M_BERK-RENT-01_AGA_page",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T22:51:09+00:00",
+  "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/annual-general-adjustment",
+  "retrieved": "2026-10-04 (saved by Hamza from his browser; single page)",
+  "source_type": "official agency page",
+  "n_chunks": 1,
+  "document_summary": "Berkeley Rent Board web page explaining the Annual General Adjustment (AGA), the annual rent increase ceiling under Berkeley's Rent Ordinance, including the 2026 AGA of 1.0%.",
+  "rules": [
+    {
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Berkeley Rent Ordinance Annual General Adjustment (AGA)",
+      "requirement": "Landlords of most fully covered units may raise rent annually only up to the AGA, set at 65% of the Bay Area CPI-U change, capped at 5%, with proper written notice. The 2026 AGA is 1.0%.",
+      "key_value": "65% of Bay Area CPI-U, max 5%; 2026 AGA = 1.0%",
+      "coverage_conditions": "Most units fully covered by the Berkeley Rent Ordinance. No increase for the rest of the year the tenancy started and one additional calendar year. Notice: 30 days for increases of 10% or less, 90 days for more than 10%.",
+      "exemptions": "No AGA if registration fees are unpaid, a Rent Board order denies AGAs, there are serious repair problems or outstanding housing code violations, or interest on the security deposit is unpaid. Fixed-term leases wait until the term expires unless the lease allows the increase. Unused AGAs may be banked, and the 5% cap applies only to the AGA percentage.",
+      "interaction": "Government-owned or subsidized units must still go through the subsidizing agency's rent increase approval process. The cap was lowered from 7% to 5% by Measure BB.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance); Berkeley Rent Board Reg. 1148 (AGA 2026 Order)",
+      "quoted_span": "The AGA is set by taking 65% of the Consumer Price Index for All Urban Consumers in the Bay Area from July 1 through June 30 of the prior year.",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "record_role": "headline",
+      "out_of_scope": false,
+      "out_of_scope_reason": null,
+      "extraction_notes": "Agency summary page; the Measure BB change from 7% to 5% has no date stated on this page, so effective_date is null. The AGA is adjusted each year in October and takes effect on January 1 (2026 AGA 1.0%). The BMC chapter citation is inferred from the Rent Ordinance and is not given in this document."
+    }
+  ],
+  "usage": {
+    "input_tokens": 7913,
+    "output_tokens": 897,
+    "cost_usd": 0.0248,
+    "seconds": 7.7
+  },
+  "errors": []
+}

@@ -319,7 +319,8 @@ def main() -> int:
     schema = json.loads(SCHEMA_JSON.read_text(encoding="utf-8"))
     validator = Draft202012Validator(schema)
 
-    raw_files = sorted(p for p in RAW_DIR.glob("D*.json") if ".attempt" not in p.name)
+    raw_files = sorted(p for p in RAW_DIR.glob("*.json")
+                       if ".attempt" not in p.name and ".truncated" not in p.name)
     if not raw_files:
         print("No raw output in out/raw/. Run extract.py first.", file=sys.stderr)
         return 1

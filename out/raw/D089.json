@@ -1,0 +1,44 @@
+{
+  "doc_id": "D089",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T22:55:28+00:00",
+  "source_url": "https://santa-ana.gov/rent-stabilization-newsletter-march-2026/",
+  "retrieved": "2026-10-03 22:34 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "City of Santa Ana March 2026 Rent Stabilization Newsletter, an official summary of a new ordinance limiting algorithmic rent-setting software in Santa Ana, CA.",
+  "rules": [
+    {
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Santa Ana ordinance limiting algorithmic rent-setting software",
+      "requirement": "Landlords may not use certain algorithmic rent-setting tools, meaning software that relies on nonpublic market data, in the Santa Ana residential rental market. Tenants may sue, and need only show the prohibited software was used rather than prove active collusion.",
+      "key_value": "Ban on certain algorithmic rent-setting (price-fixing) software",
+      "coverage_conditions": "Residential rental housing in Santa Ana.",
+      "exemptions": "Does not restrict tools that rely on publicly available data or historical trends, or tools used for affordable housing compliance.",
+      "interaction": "The newsletter says the ordinance is intended to complement broader state-level protections; no preemption issue is stated.",
+      "effective_date": "2026-03",
+      "adoption_date": "2026-03-03",
+      "negative_finding": false,
+      "citation": "Santa Ana Municipal Code (ordinance approved by City Council March 3, 2026; ordinance number and section not stated in source)",
+      "quoted_span": "Bans Price-Fixing Software: Prohibits the use of certain algorithmic rent-setting tools in the local rental market.",
+      "confidence": 0.8,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "record_role": "headline",
+      "out_of_scope": false,
+      "out_of_scope_reason": null,
+      "extraction_notes": "Month of adoption; exact effective date not stated in source (California ordinances generally take effect after adoption, often 30 days after final passage). Secondary newsletter summary; the ordinance text, number and code section are not in this document. Civil remedies: damages, injunctive relief, up to $1,000 per violation, attorney's fees."
+    }
+  ],
+  "usage": {
+    "input_tokens": 9438,
+    "output_tokens": 1207,
+    "cost_usd": 0.0309,
+    "seconds": 9.0
+  },
+  "errors": []
+}

@@ -1,30 +1,48 @@
 kept_doc,kept_citation,dropped_doc,dropped_citation,dropped_status,jurisdiction,category,reason
 D008,Berkeley Municipal Code § 13.76.110(A); Berkeley Rent Stabilization Board Regulation 1148,D006,"Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance), as amended by Measure BB (Nov. 2024)",in_force,"Berkeley, CA",rent_increase_limits,same section
 D067,N.J.S.A. 2A:18-61.1 et seq.; N.J.S.A. 2A:18-53,D067,N.J.S.A. 2A:18-61.1 et seq.,in_force,NJ,just_cause_eviction,same section
+D022,Cal. Bus. & Prof. Code § 16729,D093,Cal. Bus. & Prof. Code § 16729,in_force,CA,algorithmic_rent_setting,same section
 D026,Cal. Civ. Code § 1950.6,D005,Cal. Civ. Code § 1950.6,in_force,CA,application_screening_fees,same section
 D008,Berkeley Municipal Code § 13.76.110(A); Berkeley Rent Stabilization Board Regulation 1148,D009,Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance),in_force,"Berkeley, CA",rent_increase_limits,same section
 D006,"Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance), as amended by Measure BB (Nov. 2024)",D009,Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance),in_force,"Berkeley, CA",just_cause_eviction,same section
 D024,Cal. Civ. Code § 1947.12,D040,Cal. Civ. Code § 1947.12,in_force,CA,rent_increase_limits,same section
+D014,Boston Municipal Code § 10-11.7 (Housing Stability Notification Act),D090,"City of Boston Code, Ordinances, ch. X, § 10-11",in_force,"Boston, MA",just_cause_eviction,same section
 D068,N.J.S.A. 10:5-12 (NJ Law Against Discrimination),D067,N.J.S.A. 10:5-12(g)-(h),in_force,NJ,screening_restrictions,same section
 D025,Cal. Civ. Code § 1950.5,D007,Cal. Civ. Code § 1950.5 (as amended by AB 12),in_force,CA,security_deposits,same section
 D014,Boston Municipal Code § 10-11.7 (Housing Stability Notification Act),D013,Boston Ordinances § 10-11.7 (Housing Stability Notification Act),in_force,"Boston, MA",just_cause_eviction,same section
 D006,"Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance), as amended by Measure BB (Nov. 2024)",D004,Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Good Cause for Eviction Ordinance); Berkeley Ellis Implementation Ordinance (BMC ch. 13.77),in_force,"Berkeley, CA",just_cause_eviction,same section
 D027,Cal. Gov. Code § 12955,D016,Cal. Gov. Code § 12955 (FEHA),in_force,CA,screening_restrictions,same section
 D080,"S.F. Admin. Code ch. 37 (Rent Ordinance), § 37.3",D083,S.F. Admin. Code § 37.3(a),in_force,"San Francisco, CA",rent_increase_limits,same section
-D010,Boston DND Fair Chance Tenant Selection Policy (Feb. 2017),D010,Boston DND Fair Chance Tenant Selection Policy (Feb. 2017),in_force,"Boston, MA",screening_restrictions,citation similarity 100 (no section numbers)
+D008,Berkeley Municipal Code § 13.76.110(A); Berkeley Rent Stabilization Board Regulation 1148,M_BERK-RENT-01_AGA_page,Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance); Berkeley Rent Board Reg. 1148 (AGA 2026 Order),in_force,"Berkeley, CA",rent_increase_limits,same section
+M_BOS-SCRN-02_boston_fair_chance_policy_2017,Boston DND Fair Chance Tenant Selection Policy (Feb. 2017),D010,Boston DND Fair Chance Tenant Selection Policy (Feb. 2017),in_force,"Boston, MA",screening_restrictions,citation similarity 100 (no section numbers)
+M_BOS-SCRN-02_boston_fair_chance_policy_2017,Boston DND Fair Chance Tenant Selection Policy (Feb. 2017),D010,Boston DND Fair Chance Tenant Selection Policy (Feb. 2017),in_force,"Boston, MA",screening_restrictions,citation similarity 100 (no section numbers)
 D027,Cal. Gov. Code § 12955,D016,Cal. Gov. Code § 12955; 2 C.C.R. § 12265,in_force,CA,screening_restrictions,same section
 D043,"L.A.M.C. §§ 151.09, 165.03, 165.06; L.A.M.C. §§ 47.06-47.07",D041,L.A.M.C. § 151.09,in_force,"Los Angeles, CA",just_cause_eviction,same section
 D041,"L.A.M.C. ch. XV, art. 1, § 151.00 et seq. (Rent Stabilization Ordinance)",D042,"L.A.M.C. § 151.06 (Rent Stabilization Ordinance, annual allowable rent increase)",in_force,"Los Angeles, CA",rent_increase_limits,same section
 D079,S.F. Admin. Code § 37.9(a),D082,S.F. Admin. Code § 37.9C; § 37.9A (Ellis Act relocation),in_force,"San Francisco, CA",just_cause_eviction,same section
 D079,S.F. Admin. Code § 37.9(a),D083,S.F. Admin. Code § 37.9C,in_force,"San Francisco, CA",just_cause_eviction,same section
 D085,"Santa Ana Municipal Code, Rent Stabilization Ordinance (section number not stated in source)",D084,"Santa Ana Municipal Code, Rent Stabilization and Just Cause Eviction Ordinance",in_force,"Santa Ana, CA",rent_increase_limits,citation similarity 82 (no section numbers)
+M_BOS-SCRN-02_boston_fair_chance_policy_2017,Boston DND Fair Chance Tenant Selection Policy (Feb. 2017),M_BOS-SCRN-02_boston_fair_chance_policy_2017,Boston DND Fair Chance Tenant Selection Policy (Feb. 2017),in_force,"Boston, MA",screening_restrictions,citation similarity 100 (no section numbers)
 D009,Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance),D007,Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance),in_force,"Berkeley, CA",security_deposits,same section
 D085,"Santa Ana Municipal Code, Just Cause Eviction Ordinance (section number not stated in source)",D084,"Santa Ana Municipal Code, Rent Stabilization and Just Cause Eviction Ordinance",in_force,"Santa Ana, CA",just_cause_eviction,citation similarity 82 (no section numbers)
+D089,"Santa Ana Municipal Code (ordinance approved by City Council March 3, 2026; ordinance number and section not stated in source)",D088,Santa Ana Municipal Code (ordinance number not stated in source),in_force,"Santa Ana, CA",algorithmic_rent_setting,citation similarity 100
+M_HOB-ALG-01_Hoboken_ch158_ecode360,Hoboken Code § 158-2 (Ord. No. B-781),D034,Hoboken City Code § 158-2 (Ord. No. B-781),in_force,"Hoboken, NJ",algorithmic_rent_setting,same section
+D005,BMC 13.78.016,D091,"Berkeley Municipal Code § 13.78.016 (Ord. 7697-NS § 1, 2020)",in_force,"Berkeley, CA",application_screening_fees,same section
+D005,BMC 13.78.010,D092,Berkeley Municipal Code § 13.78.010,in_force,"Berkeley, CA",application_screening_fees,same section
+D041,"L.A.M.C. ch. XV, art. 1, § 151.00 et seq. (Rent Stabilization Ordinance)",M_LA-JUST-02_LAMC_ch15_art1_151,L.A.M.C. § 151.06 D,in_force,"Los Angeles, CA",rent_increase_limits,same section
+D043,"L.A.M.C. §§ 151.09, 165.03, 165.06; L.A.M.C. §§ 47.06-47.07",M_LA-JUST-02_LAMC_ch15_art1_151,L.A.M.C. § 151.09 G.,in_force,"Los Angeles, CA",just_cause_eviction,same section
 D032,Hoboken Code § 155-5,D033,"Hoboken, N.J., Code § 155-5",in_force,"Hoboken, NJ",rent_increase_limits,same section
+D043,"L.A.M.C. §§ 151.09, 165.03, 165.06; L.A.M.C. §§ 47.06-47.07",M_LA-JUST-02_LAMC_ch15_art1_151,L.A.M.C. § 151.09 A,in_force,"Los Angeles, CA",just_cause_eviction,same section
+D041,"L.A.M.C. ch. XV, art. 1, § 151.00 et seq. (Rent Stabilization Ordinance)",M_LA-JUST-02_LAMC_ch15_art1_151,LAMC § 151.26,in_force,"Los Angeles, CA",rent_increase_limits,same section
+D034,Hoboken City Code § 158-1 (Ord. No. B-750),M_HOB-ALG-01_Hoboken_ch158_ecode360,Hoboken Code § 158-1 (Ord. No. B-750),in_force,"Hoboken, NJ",rent_increase_limits,same section
+D041,"L.A.M.C. ch. XV, art. 1, § 151.00 et seq. (Rent Stabilization Ordinance)",M_LA-JUST-02_LAMC_ch15_art1_151,L.A.M.C. § 151.06 G,in_force,"Los Angeles, CA",rent_increase_limits,same section
+D041,"L.A.M.C. ch. XV, art. 1, § 151.00 et seq. (Rent Stabilization Ordinance)",M_LA-JUST-02_LAMC_ch15_art1_151,L.A.M.C. § 151.07 A.1,in_force,"Los Angeles, CA",rent_increase_limits,same section
+M_LA-JUST-02_LAMC_ch15_art1_151,L.A.M.C. § 151.06.02 B,M_LA-JUST-02_LAMC_ch15_art1_151,L.A.M.C. § 151.06.02,in_force,"Los Angeles, CA",security_deposits,same section
 D081,S.F. Admin. Code § 37.10C,D002,S.F. Admin. Code § 37.10C,in_force,"San Francisco, CA",algorithmic_rent_setting,same section
 D074,San Diego Municipal Code § 98.1103 (Ord. O-21955 N.S.),D002,San Diego Mun. Code §§ 98.1101–98.1104,in_force,"San Diego, CA",algorithmic_rent_setting,same section
 D001,"Berkeley Municipal Code § 13.63.030 (Ord. No. 7,992-N.S.)",D002,Berkeley Mun. Code ch. 13.63 (Ord. 7992),in_force,"Berkeley, CA",algorithmic_rent_setting,same section
-D034,Hoboken City Code § 158-2 (Ord. No. B-781),D002,Hoboken City Code ch. 158-2,in_force,"Hoboken, NJ",algorithmic_rent_setting,same section
+M_JC-ALG-01_Ord_25-057_adopted,Jersey City Code § 218-12 (Ord. 25-057),D002,Jersey City Code § 218-12,in_force,"Jersey City, NJ",algorithmic_rent_setting,same section
+M_HOB-ALG-01_Hoboken_ch158_ecode360,Hoboken Code § 158-2 (Ord. No. B-781),D002,Hoboken City Code ch. 158-2,in_force,"Hoboken, NJ",algorithmic_rent_setting,same section
 D027,Cal. Gov. Code § 12955,D015,Cal. Gov. Code § 12955 (as amended by SB 329 (2019)),in_force,CA,screening_restrictions,same section
 D027,Cal. Gov. Code § 12955,D015,Cal. Gov. Code § 12955 (as amended by SB 267 (2023)),in_force,CA,screening_restrictions,same section
 D026,Cal. Civ. Code § 1950.6,D017,Cal. Civ. Code § 1950.6,in_force,CA,application_screening_fees,same section
@@ -33,23 +51,22 @@ D024,Cal. Civ. Code § 1947.12,D019,Cal. Civ. Code § 1947.12,in_force,CA,rent_i
 D025,Cal. Civ. Code § 1950.5,D020,Cal. Civ. Code § 1950.5,in_force,CA,security_deposits,same section
 D027,Cal. Gov. Code § 12955,D021,Cal. Gov. Code § 12955,in_force,CA,screening_restrictions,same section
 D022,Cal. Bus. & Prof. Code § 16729,D028,Cal. Bus. & Prof. Code § 16729 (as amended by A.B. 325),in_force,CA,algorithmic_rent_setting,same section
-D081,S.F. Admin. Code § 37.10C,D037,S.F. Admin. Code § 37.10C,in_force,"San Francisco, CA",algorithmic_rent_setting,same section
-D074,San Diego Municipal Code § 98.1103 (Ord. O-21955 N.S.),D037,San Diego Mun. Code §§ 98.1101–98.1104,in_force,"San Diego, CA",algorithmic_rent_setting,same section
-D001,"Berkeley Municipal Code § 13.63.030 (Ord. No. 7,992-N.S.)",D037,Berkeley Mun. Code ch. 13.63 (Ord. 7992),in_force,"Berkeley, CA",algorithmic_rent_setting,same section
-D002,Santa Ana Ordinance No. NS-3090,D037,Santa Ana Ordinance No. NS-3090,in_force,"Santa Ana, CA",algorithmic_rent_setting,same section
-D002,Jersey City Code § 218-12,D037,Jersey City Code § 218-12,in_force,"Jersey City, NJ",algorithmic_rent_setting,same section
-D034,Hoboken City Code § 158-2 (Ord. No. B-781),D037,Hoboken City Code ch. 158-2,in_force,"Hoboken, NJ",algorithmic_rent_setting,same section
+M_LA-JUST-02_LAMC_ch15_art1_151,L.A.M.C. § 151.06.02 B,D044,L.A.M.C. § 151.06.02,in_force,"Los Angeles, CA",security_deposits,same section
 D069,"P.L. 2026, c.43 (C.56:9-20 to 56:9-26)",D060,"P.L. 2026, c. 43",not_yet_effective,NJ,algorithmic_rent_setting,same section
 D068,N.J.S.A. 10:5-12 (NJ Law Against Discrimination),D061,"N.J.S.A. 10:5-12(g)(4), (h)(4)",in_force,NJ,screening_restrictions,same section
 D067,N.J.S.A. 2A:18-61.1 et seq.; N.J.S.A. 2A:18-53,D062,N.J.S.A. 2A:18-61.1,in_force,NJ,just_cause_eviction,same section
 D067,N.J.S.A. 46:8-21.2; N.J.S.A. 46:8-19; N.J.S.A. 46:8-21.1,D063,N.J.S.A. 46:8-21.2,in_force,NJ,security_deposits,same section
 D073,San Diego Municipal Code §§ 98.0701–98.0710,D077,"San Diego Municipal Code ch. 9, art. 8, div. 7 (§§ 98.0701 et seq.)",in_force,"San Diego, CA",just_cause_eviction,same section
 D002,Santa Ana Ordinance No. NS-3090,D086,Santa Ana Municipal Code (algorithmic rent-setting ordinance; ordinance number not stated in source),in_force,"Santa Ana, CA",algorithmic_rent_setting,citation similarity 76 (no section numbers)
-D047,"Mass. Senate Bill S.2983, 194th General Court (2025-2026)",D046,"Mass. S. 2983, 194th Gen. Ct. (2025-2026)",pending,MA,algorithmic_rent_setting,same section
+D022,Cal. Bus. & Prof. Code § 16729,M_CA-ALG-01_BPC_16729_justia,Cal. Bus. & Prof. Code § 16729,in_force,CA,algorithmic_rent_setting,same section
+D027,Cal. Gov. Code § 12955,M_CA-SCRN-01_Gov_12955_justia,Cal. Gov. Code § 12955,in_force,CA,screening_restrictions,same section
+M_MA-SCRN-02_803_CMR_5,"803 CMR 5.04(2); authority M.G.L. c. 6, §§ 167A and 172",M_MA-SCRN-02_MGL_c6_s172_findlaw,"M.G.L. c. 6, § 172(a)(3)",in_force,MA,screening_restrictions,same section
 D074,San Diego Municipal Code § 98.1103 (Ord. O-21955 N.S.),D076,S.D. Mun. Code § 98.1103 (proposed; Ord. O-2025-107),pending,"San Diego, CA",algorithmic_rent_setting,same section; proposal folded into enacted rule
-D047,"Mass. Senate Bill S.2983, 194th General Court (2025-2026)",D030,"H.1564 and S.2983, 194th General Court of Massachusetts (pending bills)",pending,MA,algorithmic_rent_setting,same section
+D045,"H.5222, 194th Gen. Court (Mass. 2025-2026) (new draft of H.1564)",D030,"H.1564 and S.2983, 194th General Court of Massachusetts (pending bills)",pending,MA,algorithmic_rent_setting,same section
 D002,Santa Ana Ordinance No. NS-3090,D087,"Santa Ana Municipal Code, algorithmic rent-setting software ordinance (ordinance number and section not stated in source)",pending,"Santa Ana, CA",algorithmic_rent_setting,citation similarity 76 (no section numbers); proposal folded into enacted rule
 D067,N.J.S.A. 46:8-21.2; N.J.S.A. 46:8-19; N.J.S.A. 46:8-21.1,D064,N.J.S.A. 46:8-26,in_force,NJ,security_deposits,supplementary provision folded into headline rule
+D043,"L.A.M.C. §§ 151.09, 165.03, 165.06; L.A.M.C. §§ 47.06-47.07",M_LA-JUST-02_LAMC_ch15_art1_151,LAMC § 151.30,in_force,"Los Angeles, CA",just_cause_eviction,supplementary provision folded into headline rule
+D043,"L.A.M.C. §§ 151.09, 165.03, 165.06; L.A.M.C. §§ 47.06-47.07",M_LA-JUST-02_LAMC_ch15_art1_151,L.A.M.C. § 151.23,in_force,"Los Angeles, CA",just_cause_eviction,supplementary provision folded into headline rule
 D070,"Newark, N.J., Code § 19:2-3.1",D070,Newark Rev. Gen. Ord. § 19:2-22,in_force,"Newark, NJ",rent_increase_limits,supplementary provision folded into headline rule
 D070,"Newark, N.J., Code § 19:2-3.1",D070,Newark Rev. Gen. Ord. § 19:2-18.1,in_force,"Newark, NJ",rent_increase_limits,supplementary provision folded into headline rule
 D070,"Newark, N.J., Code § 19:2-3.1",D070,Newark Rev. Gen. Ord. § 19:2-18.4,in_force,"Newark, NJ",rent_increase_limits,supplementary provision folded into headline rule

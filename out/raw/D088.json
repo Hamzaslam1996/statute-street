@@ -1,0 +1,44 @@
+{
+  "doc_id": "D088",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T22:55:19+00:00",
+  "source_url": "https://santa-ana.gov/santa-ana-city-council-continues-to-strengthen-tenant-protections-by-banning-anticompetitive-rent-setting-software/",
+  "retrieved": "2026-10-03 22:34 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "City of Santa Ana news release (posted March 5, 2026) describing a new ordinance banning algorithmic rent-setting software for residential rentals in Santa Ana, CA.",
+  "rules": [
+    {
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Santa Ana ban on algorithmic rent-setting software",
+      "requirement": "Prohibits the sale, licensing, provision and use of certain algorithmic rent-setting software for residential rental properties in Santa Ana. Tenants may sue directly and need only prove the landlord used the prohibited technology, not intentional collusion.",
+      "key_value": "Ban on sale, licensing, provision and use of algorithmic rent-setting software using nonpublic competitor data",
+      "coverage_conditions": "Residential rental property within Santa Ana city limits.",
+      "exemptions": "Pricing software relying solely on publicly available data or aggregate historical data, and tools used to comply with affordable housing program requirements.",
+      "interaction": "Structured to operate alongside existing and proposed state antitrust laws while providing stronger local protections.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Santa Ana Municipal Code (ordinance number not stated in source)",
+      "quoted_span": "The ordinance, which was approved on March 3, 2026 for a second reading and final vote, prohibits the sale, licensing, provision and use of certain algorithmic rent-setting software for residential rental properties.",
+      "confidence": 0.7,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "record_role": "headline",
+      "out_of_scope": false,
+      "out_of_scope_reason": null,
+      "extraction_notes": "Secondary press release. Source says the ordinance was approved March 3, 2026 for second reading and final vote, so the final adoption date and effective date are not stated; both left null. Status in_force is inferred from the release's wording that the council passed the ordinance and the query date of 2026-10-01. Remedies (injunctive relief, damages, civil penalties up to $1,000 per violation plus attorney's fees) are not the key value."
+    }
+  ],
+  "usage": {
+    "input_tokens": 7024,
+    "output_tokens": 1335,
+    "cost_usd": 0.0274,
+    "seconds": 9.8
+  },
+  "errors": []
+}

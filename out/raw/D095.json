@@ -1,0 +1,44 @@
+{
+  "doc_id": "D095",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T22:56:09+00:00",
+  "source_url": "https://www.hobokennj.gov/news/city-of-hoboken-to-introduce-ordinance-prohibiting-algorithmic-rent-fixing",
+  "retrieved": "2026-10-03 22:35 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Hoboken, NJ city press release (May 30, 2025) announcing a proposed ordinance to prohibit algorithmic rent-fixing in the local rental housing market.",
+  "rules": [
+    {
+      "jurisdiction": "Hoboken, NJ",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "Proposed Hoboken ordinance prohibiting algorithmic rent-fixing",
+      "requirement": "The proposed ordinance would make it unlawful for landlords of residential dwelling units in Hoboken to engage in price-fixing through algorithmic rent-fixing, defined as using software, algorithms or data-sharing platforms to coordinate, recommend or implement rents, lease terms or occupancy levels among competing landlords.",
+      "key_value": "Ban on algorithmic rent-fixing (proposed)",
+      "coverage_conditions": "All residential rental units in Hoboken.",
+      "exemptions": "Medical, long-term care, or detention facilities.",
+      "interaction": "The NJ FAIR Act (P.L. 2026, c.43) may preempt this ordinance once it takes effect; this document does not address that.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Proposed Hoboken ordinance (to be introduced at the June 4, 2025 City Council meeting); no code citation given in source",
+      "quoted_span": "The proposed ordinance would make it unlawful for landlords renting residential dwelling units in Hoboken to engage in price-fixing through algorithmic rent-fixing.",
+      "confidence": 0.6,
+      "conflict_flag": true,
+      "conflict_note": "Possible preemption by NJ's FAIR Act (P.L. 2026, c.43): not found in this capture. The page is a May 2025 announcement of introduction only; whether the ordinance was adopted is not shown.",
+      "record_role": "headline",
+      "out_of_scope": false,
+      "out_of_scope_reason": null,
+      "extraction_notes": "Press release dated 2025-05-30 announcing introduction on June 4, 2025. It states no adoption or effective date, so both are null and status is 'pending' on this document alone. The release lists penalties of up to 90 days' imprisonment, a fine (typo '$2,0000' in source), or community service; these are not used as the key value."
+    }
+  ],
+  "usage": {
+    "input_tokens": 7803,
+    "output_tokens": 1177,
+    "cost_usd": 0.0274,
+    "seconds": 8.2
+  },
+  "errors": []
+}
