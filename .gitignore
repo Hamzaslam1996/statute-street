@@ -1,0 +1,5 @@
+.env
+.venv/
+__pycache__/
+corpus_supplementary/_to_delete/
+.DS_Store
