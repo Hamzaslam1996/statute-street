@@ -315,6 +315,27 @@ def run_test(test: dict, facts: dict, as_of: date) -> tuple[bool | None, str]:
     return None, f"{field.replace('_', ' ')} not in the data ({test.get('source_text', '')[:60]})"
 
 
+STRICT_UNKNOWN = False   # --strict-unknown: use/funding niche exemptions also answer unknown when data is silent
+SHARED_RE = re.compile(r"shar\w*[^.;]{0,30}(kitchen|bath)|(kitchen|bath)[^.;]{0,30}shar", re.I)
+OWNER_RE = re.compile(r"\bowner|landlord[^.;]{0,25}(resid|liv|occup|shares)|natural person|co-?operative|resident-controlled|"
+                      r"small landlord|government-owned", re.I)
+
+
+def niche_class(t: dict) -> str:
+    """
+    Which kind of niche exemption (rulings_09): 'owner_type' turns on who the owner is or how
+    they occupy the building (never in parcel data -> unknown, per the organisers' README section 4);
+    'use_or_funding' turns on the use of the building or its funding (hotels, dormitories,
+    hospitals, public housing, deed-restricted housing) -> applies with an assumption.
+    """
+    if t.get("field") == "owner_type":
+        return "owner_type"
+    if t.get("field") == "funding":
+        return "use_or_funding"
+    text = f"{t.get('source_text') or ''} {t.get('note') or ''} {t.get('value') or ''}"
+    return "owner_type" if OWNER_RE.search(text) else "use_or_funding"
+
+
 def test_kind(t: dict) -> str:
     """The test's kind (rulings_06 #1); older cached tests without one are classified by field."""
     k = t.get("kind")
@@ -373,6 +394,24 @@ def evaluate_coverage(rule: dict, cov: dict | None, facts: dict, as_of: date) ->
                 assumptions.append(f"protection begins per the timing condition: {src}")
                 continue
             if kind == "niche_exemption":
+                if niche_class(t) == "owner_type" and SHARED_RE.search(f"{t.get('source_text') or ''} {t.get('value') or ''}"):
+                    # rulings_06 class B: an owner sharing kitchen or bath with the tenant is a niche
+                    # case only when the use code shows 3+ units; with that many units the exception
+                    # is treated as impossible (use-code defeat under rulings_09).
+                    n = facts.get("units") if facts.get("units") is not None else facts.get("units_min")
+                    if n is not None and n >= 3 and not NO_UNITS_FLOOR:
+                        reasons_true.append(f"{'at least ' if facts.get('units') is None else ''}{n} units, so the owner-shares-kitchen-or-bath exception cannot apply")
+                        continue
+                if niche_class(t) == "owner_type":
+                    # Organisers' README section 4: owner names are excluded, so an owner-type
+                    # exception is unknown unless something explains why it cannot apply.
+                    reasons_unknown.append(f"owner type not in the data; the exception for {src} cannot be ruled out")
+                    unknown_fields.append(f"{t.get('field')} {t.get('op')} {t.get('value')}")
+                    continue
+                if STRICT_UNKNOWN:
+                    reasons_unknown.append(f"use or funding status not in the data; the exception for {src} cannot be ruled out")
+                    unknown_fields.append(f"{t.get('field')} {t.get('op')} {t.get('value')}")
+                    continue
                 assumptions.append(f"not within the exemption for {src}")
                 continue
             reasons_unknown.append(why)
@@ -514,9 +553,12 @@ def main() -> int:
                     help="ignore unit minimums stated in words in the assessor description ('5+ units')")
     ap.add_argument("--report-not-covered", action="store_true",
                     help="also report rules whose coverage tests exclude the property, as unknown with the reason")
+    ap.add_argument("--strict-unknown", action="store_true",
+                    help="use/funding niche exemptions (hotels, subsidised housing, ...) also answer unknown when data is silent")
     args = ap.parse_args()
-    global NO_UNITS_FLOOR, NOT_COVERED_MODE
+    global NO_UNITS_FLOOR, NOT_COVERED_MODE, STRICT_UNKNOWN
     NO_UNITS_FLOOR = args.no_units_floor
+    STRICT_UNKNOWN = args.strict_unknown
     NOT_COVERED_MODE = "unknown" if args.report_not_covered else "omit"
     as_of = date.fromisoformat(args.as_of)
 

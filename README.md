@@ -58,12 +58,24 @@ Every condition the engine tests is one of three kinds:
   cutoff). If the data cannot show it, the answer is **unknown**. Year built is
   only a proxy for the certificate date, so a building from the cutoff year
   itself is unknown.
-- **Niche exemption** — a narrow carve-out for an ownership, funding or use class
-  that whoever claims it must prove (non-profit co-operatives, public housing,
-  deed-restricted affordable housing, hotels and vacation lets, hospitals,
-  dormitories). Exemptions to remedial housing statutes are read narrowly, so
-  when the data is silent the answer is **applies**, the explanation starts
-  "Applies unless …", and the exemption is listed in the row's `assumptions`.
+- **Niche exemption** — a narrow carve-out that whoever claims it must prove.
+  Two classes:
+  - *Owner type* (who the owner is or how they occupy the building: non-profit
+    or resident-controlled co-operatives, government-owned units, natural-person
+    owners, small-landlord exceptions, an owner sharing kitchen or bath). The
+    organisers' README §4 states that owner names are excluded from the data and
+    that owner-type exceptions must be answered "unknown" unless we can explain
+    why the exception cannot apply. So the answer is **unknown**, naming the
+    missing fact, unless the use code makes the exception impossible (a 5+ unit
+    building cannot be an owner-occupied 1–4 unit property), in which case it
+    **applies** with that reason.
+  - *Use or funding* (hotels and vacation lets, dormitories, hospitals, care
+    facilities, public housing and government-contract units, deed-restricted
+    or subsidised housing, software used under affordable programmes). Exemptions
+    to remedial housing statutes are read narrowly, so when the data is silent the
+    answer is **applies**, the explanation starts "Applies unless …", and the
+    exemption is listed in the row's `assumptions`. `engine.py --strict-unknown`
+    turns these to unknown as well, pending the organisers' answer on funding cases.
 - **Plausible exemption** — an exception the data cannot rule out and that is
   common for the property type (an owner-occupied two-family; a single-family
   home or condo owned by a natural person; a new-construction window the year
