@@ -1,0 +1,41 @@
+{
+  "doc_id": "D077",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:56:18+00:00",
+  "source_url": "https://www.lassd.org/resource/city-of-san-diego-tenant-protection-ordinance/",
+  "retrieved": "2026-10-03 18:53 UTC",
+  "source_type": "secondary (law firm / news / mirror)",
+  "n_chunks": 1,
+  "document_summary": "Legal Aid Society of San Diego fact sheet (updated Sept. 21, 2023) summarizing the City of San Diego Residential Tenant Protection Ordinance, which requires just cause for tenancy termination and relocation assistance for no-fault evictions.",
+  "rules": [
+    {
+      "jurisdiction": "San Diego, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "San Diego Residential Tenant Protection Ordinance (just cause and relocation assistance)",
+      "requirement": "Landlords must have at-fault or no-fault just cause to terminate a covered tenancy and must state the cause in the notice. For no-fault terminations, landlords must give relocation assistance by direct payment or rent waiver of two months' rent (three months if the tenant is senior or disabled).",
+      "key_value": "Just cause required; no-fault relocation assistance = 2 months' rent (3 months if tenant is senior 62+ or disabled)",
+      "coverage_conditions": "Applies only to a 'Tenancy' (right to occupy more than 30 days; excludes fixed-term leases of 3 months or less). Excluded: housing issued a certificate of occupancy within the previous 15 years (unless a mobilehome).",
+      "exemptions": "Transient/tourist hotels; stays of 30 consecutive days or less; deed-restricted or subsidized affordable housing (not applicable to Section 8 voucher tenants); mobilehomes subject to the MRL; nonprofit hospital, religious, extended care or licensed elder care and nonprofit transitional housing; school-owned dormitories; shared bath/kitchen with owner; owner-occupied single-family homes renting no more than two units or bedrooms; owner-occupied duplex; separately alienable units (e.g., condo) not owned by a REIT, corporation, or LLC with a corporate member, with written exemption notice.",
+      "interaction": "Consistent with state just cause law (Cal. Civ. Code § 1946.2); the ordinance provides greater relocation assistance and additional protections. The notice also references the state rent cap (Civ. Code § 1947.12).",
+      "effective_date": "2023-06-24",
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "San Diego Municipal Code ch. 9, art. 8, div. 7 (§§ 98.0701 et seq.)",
+      "quoted_span": "The Ordinance goes into effect June 24, 2023.",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary source (Legal Aid Society fact sheet, updated 2023-09-21); the fact sheet may be out of date. Relocation amounts folded into one record. The SDHC notice-portal requirement was described as not yet in effect (est. July 2024) as of the sheet's date. Also includes buyout agreement disclosure rules, and a 5-year right of offer after no-fault eviction."
+    }
+  ],
+  "usage": {
+    "input_tokens": 16471,
+    "output_tokens": 990,
+    "cost_usd": 0.0428,
+    "seconds": 7.4
+  },
+  "errors": []
+}

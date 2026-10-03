@@ -1,0 +1,41 @@
+{
+  "doc_id": "D050",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:52:08+00:00",
+  "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section11",
+  "retrieved": "2026-10-01 22:37 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Massachusetts General Laws c. 186, § 11, the state statute on notice to quit and the tenant's right to cure when rent is unpaid under a written lease (MA).",
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Notice to quit for nonpayment of rent under written lease (M.G.L. c. 186, § 11)",
+      "requirement": "A landlord may end a written lease for nonpayment of rent with 14 days' written notice to quit. The tenant can defeat termination by paying all rent due, with interest and costs, on or before the answer day in an eviction action.",
+      "key_value": "14 days' written notice to quit for nonpayment; tenant may cure by paying rent, interest and costs by the answer date",
+      "coverage_conditions": "Tenancies under a written lease where rent is neglected or refused.",
+      "exemptions": null,
+      "interaction": "Procedural notice and cure rule. It does not itself create a statewide just-cause requirement, and local rules are not addressed in this document.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "M.G.L. c. 186, § 11",
+      "quoted_span": "Upon the neglect or refusal to pay the rent due under a written lease, fourteen days' notice to quit, given in writing by the landlord to the tenant, shall be sufficient to determine the lease, unless the tenant, on or before the day the answer is due, in an action by the landlord to recover possession of the premises, pays or tenders to the landlord or to his attorney all rent then due, with interest and costs of suit.",
+      "confidence": 0.5,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Effective date null: the page shows no effective date or session-law history. This is a procedural nonpayment notice and cure provision, and fits the just_cause_eviction category only loosely. Also provides that if nonpayment was caused by a government payment delay, the court continues the hearing at least 7 days and treats the tenancy as not terminated if rent is tendered in that time."
+    }
+  ],
+  "usage": {
+    "input_tokens": 5648,
+    "output_tokens": 1112,
+    "cost_usd": 0.0224,
+    "seconds": 9.3
+  },
+  "errors": []
+}

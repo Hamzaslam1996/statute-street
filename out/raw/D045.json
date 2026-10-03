@@ -1,0 +1,41 @@
+{
+  "doc_id": "D045",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:51:41+00:00",
+  "source_url": "https://malegislature.gov/Bills/194/H5222",
+  "retrieved": "2026-10-01 22:36 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Massachusetts Legislature bill-status page for H.5222 (194th General Court), a pending bill on preventing algorithmic rent fixing, reported favorably by the Housing Committee on 3/12/2026 and referred to House Ways and Means.",
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "H.5222 - An Act relative to preventing algorithmic rent fixing in the rental housing market",
+      "requirement": "Bill that, by its title, would address algorithmic rent fixing in the rental housing market. It is not law; it is awaiting action in House Ways and Means. The page does not reproduce the bill text.",
+      "key_value": null,
+      "coverage_conditions": null,
+      "exemptions": null,
+      "interaction": null,
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "H.5222, 194th Gen. Court (Mass. 2025-2026) (new draft of H.1564)",
+      "quoted_span": "An Act relative to preventing algorithmic rent fixing in the rental housing market",
+      "confidence": 0.6,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Status page only; substantive provisions (scope, prohibitions) not in this capture, so key_value is null. Bill history: 3/12/2026 reported from Housing Committee as a new draft of H1564 and referred to House Ways and Means. Not enacted as of the 2026-10-01 query date per this page, so no effective date.Rule text should be checked in the bill itself."
+    }
+  ],
+  "usage": {
+    "input_tokens": 5812,
+    "output_tokens": 801,
+    "cost_usd": 0.0196,
+    "seconds": 7.9
+  },
+  "errors": []
+}

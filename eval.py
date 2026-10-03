@@ -95,6 +95,24 @@ def main() -> int:
     scope_pos = [g for g in gold_pos if in_scope(g)]
     scope_neg = [g for g in gold_neg if in_scope(g)]
 
+    # Our own negative findings ("no rule at this level") are scored against the
+    # gold negative findings by jurisdiction + category, separately from real rules.
+    ours_neg = [o for o in ours if o.get("negative_finding")]
+    ours = [o for o in ours if not o.get("negative_finding")]
+    neg_found, neg_missed, used = [], [], set()
+    for g in scope_neg:
+        cands = [o for o in ours_neg
+                 if id(o) not in used
+                 and (o["jurisdiction"] or "").lower() == (g["jurisdiction"] or "").lower()
+                 and o["category"] == g["category"]]
+        # prefer the candidate whose status agrees (failed measure vs standing bar)
+        cands.sort(key=lambda o: o.get("status") != g.get("status"))
+        hit = cands[0] if cands else None
+        if hit:
+            used.add(id(hit))
+        (neg_found if hit else neg_missed).append((g, hit))
+    neg_extra = [o for o in ours_neg if id(o) not in used]
+
     # --- matching: greedy, best citation score first -----------------------
     pairs = []
     for gi, g in enumerate(scope_pos):
@@ -169,6 +187,7 @@ def main() -> int:
     lines.append(f"| Missed | {len(missed)} |")
     lines.append(f"| Extra (no gold match) | {len(extra)} |")
     lines.append(f"| Extra colliding with a negative finding | {len(neg_hits)} |")
+    lines.append(f"| Negative findings found / missed / extra | {len(neg_found)} / {len(neg_missed)} / {len(neg_extra)} |")
     lines.append(f"| Status agrees | {status_ok}/{n} = {pct(status_ok, n)} |")
     lines.append(f"| Effective date exact / same year | {date_exact}/{n} = {pct(date_exact, n)} / "
                  f"{date_exact + date_year}/{n} |")
@@ -199,6 +218,13 @@ def main() -> int:
     if neg_hits:
         lines.append("\n## Collisions with negative findings (gold says: no rule at this level)\n")
         lines += [f"- {o['team_rule_id']} {o['citation']} vs {g['gold_id']}: {g['title']}" for o, g in neg_hits]
+
+    if scope_neg or ours_neg:
+        lines.append("\n## Negative findings\n")
+        lines += [f"- found: {g['gold_id']} ← {h['team_rule_id']} ({h['status']}) {h['title']}" for g, h in neg_found]
+        lines += [f"- missed: {g['gold_id']} — {g['title']} (docs {', '.join(g['source_doc_ids'])})" for g, _ in neg_missed]
+        lines += [f"- extra: {o['team_rule_id']} — {o['jurisdiction']} / {o['category']} / {o['title']} ({o['source_doc_id']})"
+                  for o in neg_extra]
 
     REPORT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines[:16]))

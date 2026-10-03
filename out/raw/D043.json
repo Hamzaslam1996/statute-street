@@ -1,0 +1,41 @@
+{
+  "doc_id": "D043",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:51:24+00:00",
+  "source_url": "https://housing.lacity.gov/wp-content/uploads/2026/08/Relocation-Assistance-Bulletins-A-and-B-Combined.pdf",
+  "retrieved": "2026-10-01 22:36 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Los Angeles Housing Department Relocation Assistance Bulletins A and B (rev. July 1, 2026) on relocation payments, filing duties and fees for no-fault evictions under the RSO and JCO in the City of Los Angeles, including demolition for new construction under the Resident Protections Ordinance.",
+  "rules": [
+    {
+      "jurisdiction": "Los Angeles, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Relocation assistance for no-fault evictions under the RSO and JCO",
+      "requirement": "Landlords evicting for a tenant not-at-fault reason must file a Declaration of Intent to Evict with LAHD before serving notice, and must pay relocation assistance per unit within 15 days of serving the notice. Amounts depend on eligible or qualified status, length of tenancy and income.",
+      "key_value": "Eligible tenant: $11,000 (<3 yrs) / $14,400 (3+ yrs or low income); Qualified tenant: $23,150 / $27,400; one month's rent for JCO single-family dwellings owned by natural persons. Valid July 1, 2026 to June 30, 2027.",
+      "coverage_conditions": "Units covered by the Rent Stabilization Ordinance (RSO) or Just Cause Ordinance (JCO). Qualified tenant: 62 or older, handicapped or disabled, or with one or more minor dependent children. Mom & Pop reduced amounts ($10,550 eligible / $21,250 qualified) apply only for owner or family occupancy evictions where the building has four or fewer rental units and other LAMC 151.30 conditions are met.",
+      "exemptions": "No relocation payment when evicting a resident manager to replace with another resident manager (unless a manager-tenant with free or reduced rent only), or when hazardous conditions caused by a natural disaster, not by landlord negligence, require eviction. Landlord may offset accumulated rent unless the eviction is due to a government order to vacate or an order for an unpermitted dwelling.",
+      "interaction": "For demolition of Protected Units for new construction, lower-income households get higher amounts under the Resident Protections Ordinance (eff. 2/11/2025) and the state Housing Crisis Act. Chart B standardized payments: $115,480 extremely low, $96,750 very low, $87,450 low income. The higher of state or city amounts applies.",
+      "effective_date": "2026-07-01",
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "L.A.M.C. §§ 151.09, 165.03, 165.06; L.A.M.C. §§ 47.06-47.07",
+      "quoted_span": "All tenant not- at-fault evictions require payment of relocation assistance and the filing of a \nDeclaration of Intent to Evict form with the Los Angeles Housing Department (LAHD) before \nevicting tenants from units covered by the Rent Stabilization Ordinance (RSO) or the Just Cause \nOrdinance (JCO).",
+      "confidence": 0.88,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Effective date 2026-07-01 is the start of the current annual dollar schedule (Chart A, 'Effective July 1, 2026 through June 30, 2027'; amounts increase every July 1). The underlying relocation requirement is older. Secondary fees (Relocation Service Fee, administrative fees) are omitted. This is an official LAHD summary of the LAMC."
+    }
+  ],
+  "usage": {
+    "input_tokens": 17748,
+    "output_tokens": 1879,
+    "cost_usd": 0.0543,
+    "seconds": 12.9
+  },
+  "errors": []
+}

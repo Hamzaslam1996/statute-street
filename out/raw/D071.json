@@ -1,0 +1,19 @@
+{
+  "doc_id": "D071",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:55:31+00:00",
+  "source_url": "https://ecode360.com/36637822",
+  "retrieved": "2026-10-03 18:53 UTC",
+  "source_type": "code publisher",
+  "n_chunks": 6,
+  "document_summary": "Part 1 of 6 of Newark, NJ Code Chapter 2:10 (Department of Economic and Housing Development), covering the table of contents and the department's divisions and homeowner and housing assistance programs; the § 2:10-11 unconscionable rent increase text is listed in the contents but does not appear in this part. | Part 2 of 6 of Newark, NJ municipal code (Title 2, Chapter 10) text on abandoned property tax-lien sales, rehabilitation and a senior homeowner repair program; it contains no rent control, eviction, deposit, screening or algorithmic rent-setting rules. | Part 3 of an ecode360 capture of Newark, NJ municipal code covering Title 2 provisions on a senior homeowner repair program, vacant-lot leases, vacant and foreclosure property registration, and maintenance, none of which falls within the six rental-housing categories. | Part 4 of 6 of Newark, NJ Revised General Ordinances Title II, Chapter 10 (Dept. of Economic and Housing Development): foreclosure-property maintenance, planning and board administration, municipal employee housing grants, historic preservation, and a commercial facade loan program, with no rules in the tracked rental categories. | Part 5 of 6 of Newark, NJ municipal code Title 2, Chapter 10 (economic development): Facade Improvement Program, South Ward Rehabilitation Program, and Live Newark Loan Forgiveness Program; it contains no rental-housing rules in the scoped categories. | Part 6 of 6 of Newark, NJ City Code Title 2, Chapter 10 (ecode360): Live Newark loan default provisions, the Employee Ownership Loan Program, the affordable-housing deed restriction on City land sales, the Homeownership Revitalization Program, and only the opening definition of the Unconscionable Rent Increase section; it contains no operative rule in the tracked rental categories.",
+  "rules": [],
+  "usage": {
+    "input_tokens": 159388,
+    "output_tokens": 1322,
+    "cost_usd": 0.332,
+    "seconds": 21.0
+  },
+  "errors": []
+}

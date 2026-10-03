@@ -1,0 +1,41 @@
+{
+  "doc_id": "D076",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:56:10+00:00",
+  "source_url": "https://sandiego.gov/sites/default/files/2025-04/automated-rent-price-fixing-prohibition-ordinance-materials.pdf",
+  "retrieved": "2026-10-01 22:37 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "City of San Diego staff report and draft ordinance (O-2025-107) proposing a ban on the sale, licensing and use of algorithmic rent-setting software, to be added as San Diego Municipal Code Chapter 9, Article 8, Division 11 (§§ 98.1101-98.1104).",
+  "rules": [
+    {
+      "jurisdiction": "San Diego, CA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "Prohibition of Anti-Competitive Automated Rent Price-Fixing Ordinance (proposed SDMC Div. 11)",
+      "requirement": "Makes it unlawful to sell, license or otherwise provide an algorithmic rent-setting device to a landlord, and unlawful for a landlord to use one to set rental rates or occupancy levels for residential rental property. Tenants may sue for injunctive relief, damages, or civil penalties of up to $1,000 per violation, plus attorney's fees.",
+      "key_value": "Ban on sale, licensing and use of algorithmic devices (using nonpublic competitor data) to set rents or occupancy levels",
+      "coverage_conditions": "Residential rental property in the City of San Diego; applies to any person who sells or provides such devices to a landlord and to landlords who use them. 'Algorithmic device' means software that performs calculations on nonpublic competitor data to advise or recommend rental rates or occupancy levels.",
+      "exemptions": "Excludes (a) software that publishes reports from aggregated historical nonpublic competitor data more than 90 days old, or from publicly available information, and does not recommend rates or occupancy levels for future leases or renewals; and (b) software used to set rents or income limits under local, state or federal affordable housing program guidelines.",
+      "interaction": "No interaction with state or other local rules discussed in the document. The staff report notes San Francisco and Philadelphia adopted similar bans.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "S.D. Mun. Code § 98.1103 (proposed; Ord. O-2025-107)",
+      "quoted_span": "(a) It is unlawful for a person to sell, license, or otherwise provide an\nalgorithmic device to a landlord.\n(b) It is unlawful for a landlord to use an algorithmic device to set rental rates\nor occupancy levels for residential rental property.",
+      "confidence": 0.6,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "This is a staff report and draft ordinance. The 'date of final passage', the Council adoption certificate and the mayoral approval are all blank, so adoption is not shown. Status is 'pending' on that basis; if the ordinance was later enacted, check the official code. Section 3 says it takes effect 'on the thirtieth day from and after its final passage', but no passage date is given, so effective_date is null. The draft is dated November 14, 2024, and the staff report February 27, 2025."
+    }
+  ],
+  "usage": {
+    "input_tokens": 13491,
+    "output_tokens": 1483,
+    "cost_usd": 0.0418,
+    "seconds": 10.8
+  },
+  "errors": []
+}

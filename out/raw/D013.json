@@ -1,0 +1,19 @@
+{
+  "doc_id": "D013",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:47:13+00:00",
+  "source_url": "https://www.boston.gov/housing-stability-notification-act",
+  "retrieved": "2026-10-01 22:35 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Boston.gov page describing the City of Boston's Housing Stability Notification Act, which requires landlords to give tenants a Notice of Tenants' Rights and Resources and notify the City when ending a tenancy; it sets no rent, deposit, screening, algorithmic or just-cause rule in the scoped categories.",
+  "rules": [],
+  "usage": {
+    "input_tokens": 7550,
+    "output_tokens": 461,
+    "cost_usd": 0.0197,
+    "seconds": 4.7
+  },
+  "errors": []
+}

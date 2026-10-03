@@ -100,10 +100,24 @@ def compute_status(rec: dict, query: date) -> tuple[str, str | None]:
         return model_status, None            # nothing to compute: not an enacted law
 
     eff = rec.get("effective_date")
+    adopted = date_bounds(rec.get("adoption_date") or "")
+
+    # Ordinance with an adoption date but no exact effective date (Hamza ruling B):
+    # adopted more than 60 days before the query date -> in_force; within 60 days the
+    # rule-status enum has no 'unknown', so we say in_force but flag it for review.
+    if adopted and (not eff or len(eff) <= 7):
+        days = (query - adopted[0]).days
+        if days < 0:
+            return "not_yet_effective", None
+        if days <= 60:
+            return "in_force", (f"Adopted {adopted[0]} (within 60 days of the query date) and no effective "
+                                f"date stated; status uncertain, treat as unknown.")
+        return "in_force", None
+
     if not eff:
         if model_status == "not_yet_effective":
             return "not_yet_effective", "Model says not yet effective but gave no effective date; check."
-        return "in_force", None               # long-standing law with no stated start date
+        return "in_force", None               # enacted law with no stated start date
 
     bounds = date_bounds(eff)
     if bounds is None:
@@ -132,6 +146,9 @@ def build_record(raw: dict, doc: Doc, query: date) -> dict:
     eff = raw.get("effective_date")
     if eff and not DATE_RE.match(eff):
         eff = None  # schema requires YYYY, YYYY-MM or YYYY-MM-DD
+    adopted = raw.get("adoption_date")
+    if adopted and not DATE_RE.match(adopted):
+        adopted = None
 
     return {
         "team_rule_id": None,  # assigned after dedupe
@@ -154,6 +171,10 @@ def build_record(raw: dict, doc: Doc, query: date) -> dict:
         "confidence": confidence,
         "conflict_flag": bool(raw.get("conflict_flag")) or bool(note),
         "conflict_note": " ".join(notes) if notes else None,
+        # Extra fields (the schema permits them): see instructions/rulings_02.md
+        "negative_finding": bool(raw.get("negative_finding", False)),
+        "adoption_date": adopted,
+        "notes": raw.get("extraction_notes"),
         "retrieved_at": doc.retrieved_date,
     }
 

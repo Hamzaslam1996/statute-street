@@ -1,0 +1,41 @@
+{
+  "doc_id": "D073",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:55:51+00:00",
+  "source_url": "https://docs.sandiego.gov/municode/municodechapter09/ch09art08division07.pdf",
+  "retrieved": "2026-10-01 22:37 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "San Diego Municipal Code Chapter 9, Article 8, Division 7 (Residential Tenant Protections, formerly Tenants' Right to Know), which sets local just-cause eviction, relocation assistance and buyout rules for San Diego, CA.",
+  "rules": [
+    {
+      "jurisdiction": "San Diego, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "San Diego Residential Tenant Protections (just cause for termination of tenancy)",
+      "requirement": "A landlord may not terminate a covered tenancy without at-fault or no-fault just cause. For no-fault terminations the landlord must give relocation assistance, either as a direct payment within 15 days of the notice or as a rent waiver, and must notify the Housing Commission. Buyout agreements must follow written disclosure rules and may not be for less than the relocation amount.",
+      "key_value": "Just cause required; no-fault relocation assistance = 2 months' actual rent (3 months if tenant is a senior 62+ or disabled)",
+      "coverage_conditions": "Residential rental property with a tenancy of more than 30 days. Housing issued a certificate of occupancy within the previous 15 years is exempt (unless a mobilehome). Separately alienable property is exempt only if the landlord is not a REIT, a corporation, an LLC with a corporate member, or a mobilehome park management, and the tenant received the required written exemption notice.",
+      "exemptions": "Includes transient/tourist hotels and short-term occupancy; deed-restricted or subsidized affordable housing (but not Section 8); mobilehomes under the Mobilehome Residency Law; nonprofit hospitals, religious, care and transitional facilities; dormitories; shared-facility rentals with the landlord; owner-occupied single-family residences (up to two bedrooms or ADUs) and owner-occupied duplexes; housing with a certificate of occupancy issued within the previous 15 years; and qualifying separately alienable property with written notice. See § 98.0703.",
+      "interaction": "Consistent with and additional to California Civil Code § 1946.2; the rights are in addition to any state or federal rights. Relocation assistance is credited against any other relocation assistance required by federal, state or other local law and is in addition to return of the security deposit.",
+      "effective_date": "2023-06-24",
+      "adoption_date": "2023-05-25",
+      "negative_finding": false,
+      "citation": "San Diego Municipal Code §§ 98.0701–98.0710",
+      "quoted_span": "A landlord shall not terminate a tenancy without just cause.",
+      "confidence": 0.9,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Added 5-25-2023 by O-21647 N.S.; effective 6-24-2023. Amended 2-27-2024 by O-21769 N.S., effective 3-28-2024 (§§ 98.0702, 98.0704, 98.0709, 98.0710 added or amended). The amendment text does not show a change to the headline relocation figures, so the original effective date is used. Relocation amounts are in § 98.0706(c). At-fault grounds are in § 98.0704(a) and no-fault grounds in § 98.0704(b)."
+    }
+  ],
+  "usage": {
+    "input_tokens": 18778,
+    "output_tokens": 1481,
+    "cost_usd": 0.0524,
+    "seconds": 10.7
+  },
+  "errors": []
+}

@@ -1,0 +1,41 @@
+{
+  "doc_id": "D072",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:55:41+00:00",
+  "source_url": "https://ecode360.com/36642000",
+  "retrieved": "2026-10-03 18:53 UTC",
+  "source_type": "code publisher",
+  "n_chunks": 1,
+  "document_summary": "Newark, NJ municipal code Chapter 2:31 ('Ban the Box'): Article 1 limits criminal-history screening of rental applicants by landlords and brokers, and Article 2 covers City licensing, which is not relevant here.",
+  "rules": [
+    {
+      "jurisdiction": "Newark, NJ",
+      "level": "city",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Newark Ban the Box - Housing (criminal record check practices)",
+      "requirement": "A landlord or real estate broker may inquire into or consider an applicant's criminal history only after a formal application is submitted, and only after giving written notice. Look-back is limited to 8 years for indictable convictions and 5 years for disorderly persons or ordinance convictions, plus pending charges. Arrests without conviction, expunged or sealed records and juvenile adjudications may not be considered.",
+      "key_value": "No criminal history inquiry until after formal application; look-back 8 years (indictable) / 5 years (disorderly persons, municipal ordinance); murder, arson, registry sex offenses and terrorism convictions may be considered regardless of when they occurred",
+      "coverage_conditions": "Applies to rental, lease or sublease of real property by landlords and real estate brokers; excludes (1) a single apartment in a two-family dwelling where the owner occupies the other unit and (2) a room or rooms in an owner-occupied one-family dwelling.",
+      "exemptions": "Prohibitions do not apply where federal or state law requires or permits consideration of criminal history (limited to those offenses and periods), or to property designated for a government program that encourages housing for people with criminal histories. Exceptions are to be interpreted narrowly.",
+      "interaction": null,
+      "effective_date": "2015-04",
+      "adoption_date": "2015-04-15",
+      "negative_finding": false,
+      "citation": "Newark Municipal Code § 2:31-1 to 2:31-9 (Ord. 6 PSF-B, 4-15-2015)",
+      "quoted_span": "Inquiry into and consideration of any applicant's criminal history shall take place only after the applicant has submitted a formal application.",
+      "confidence": 0.9,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Adoption date 4-15-2015 is taken from the Ord. 6 PSF-B citation; the Editor's Note says the earlier Ord. 6 PSF-F (2012) was repealed by Ord. 6 PSF-B. Procedural duties folded in: 3 business days to submit evidence, adverse-action notice within 10 business days by registered mail, confidentiality, and a ban on advertisements referencing criminal history. Article 2 (City licensing) is outside scope."
+    }
+  ],
+  "usage": {
+    "input_tokens": 15559,
+    "output_tokens": 1328,
+    "cost_usd": 0.0444,
+    "seconds": 9.7
+  },
+  "errors": []
+}

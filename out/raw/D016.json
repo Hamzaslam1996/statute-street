@@ -1,0 +1,62 @@
+{
+  "doc_id": "D016",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:47:49+00:00",
+  "source_url": "https://calcivilrights.ca.gov/housing/",
+  "retrieved": "2026-10-01 22:35 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "California Civil Rights Department (CRD) housing page summarizing state fair-housing law (FEHA), including source-of-income and criminal-history limits on tenant screening.",
+  "rules": [
+    {
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "FEHA source-of-income discrimination ban (incl. Section 8 vouchers)",
+      "requirement": "Landlords may not refuse to rent or apply different terms based on how a tenant will pay rent, including Housing Choice (Section 8) vouchers and other rental assistance. They must also comply with the paperwork and inspection requirements of subsidy programs, and may not advertise \"No Section 8.\"",
+      "key_value": "Ban on source-of-income discrimination, including Section 8 vouchers",
+      "coverage_conditions": "Applies to most housing providers and housing-related services covered by FEHA, including landlords, property managers and tenant screening companies.",
+      "exemptions": "Owner-occupied home renting to one additional person may exclude applicants based on protected characteristics (per the FAQ); the page does not say whether this applies to source of income specifically.",
+      "interaction": "State-wide floor; this page does not discuss local ordinances.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Cal. Gov. Code § 12955 (FEHA)",
+      "quoted_span": "No. California law protects tenants from discrimination based on how a tenant will be paying rent (“source of income”).",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary summary from the CRD website, not statutory text. No effective date stated, so effective_date is null."
+    },
+    {
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "FEHA limits on use of criminal history in tenant screening",
+      "requirement": "Landlords may check criminal history but may not consider arrests without conviction, sealed or expunged records, or juvenile-justice matters. They may not impose blanket bans, and any denial based on a conviction must be directly related to being a good tenant and not a threat to the health and safety of others or the property.",
+      "key_value": "No blanket bans on applicants with a criminal history; denial only for directly related convictions",
+      "coverage_conditions": "Applies to most housing providers and tenant screening companies covered by FEHA.",
+      "exemptions": null,
+      "interaction": "State-wide floor; this page does not discuss local fair-chance ordinances.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Cal. Gov. Code § 12955; 2 C.C.R. § 12265",
+      "quoted_span": "Housing providers are also prohibited from having “blanket bans” of all people with a criminal history.",
+      "confidence": 0.8,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary summary from the CRD website. The regulation cite (2 C.C.R. § 12265) is from general knowledge, not this page. No effective date stated, so effective_date is null."
+    }
+  ],
+  "usage": {
+    "input_tokens": 12850,
+    "output_tokens": 1670,
+    "cost_usd": 0.0424,
+    "seconds": 11.6
+  },
+  "errors": []
+}

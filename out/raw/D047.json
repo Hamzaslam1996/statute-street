@@ -1,0 +1,41 @@
+{
+  "doc_id": "D047",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:51:49+00:00",
+  "source_url": "https://malegislature.gov/Bills/194/S2983/BillHistory",
+  "retrieved": "2026-10-01 22:36 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Massachusetts Legislature bill-history page for Senate Bill S.2983 (194th General Court), 'An Act prohibiting algorithmic rent setting', reported favorably by the Housing Committee on 2026-03-12 and referred to Senate Ways and Means.",
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "S.2983 An Act prohibiting algorithmic rent setting (bill)",
+      "requirement": "Proposed legislation to prohibit algorithmic rent setting in Massachusetts. It is a new draft combining S.994 and S.1016, and it has not been enacted.",
+      "key_value": "Would prohibit algorithmic rent setting (bill text not in this capture)",
+      "coverage_conditions": null,
+      "exemptions": null,
+      "interaction": null,
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Mass. Senate Bill S.2983, 194th General Court (2025-2026)",
+      "quoted_span": "The committee on Housing, to whom was referred the petitions (accompanied by bill, Senate, No. 994) of Cindy F. Friedman and Julian Cyr for legislation to prohibit algorithmic rent setting;",
+      "confidence": 0.8,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Bill history page only; the operative bill text, definitions, exemptions and effective date are not in this capture. Status as of the page: referred to Senate Committee on Ways and Means after a favorable report on 2026-03-12. Not law, so effective_date is null."
+    }
+  ],
+  "usage": {
+    "input_tokens": 6020,
+    "output_tokens": 1048,
+    "cost_usd": 0.0225,
+    "seconds": 8.0
+  },
+  "errors": []
+}

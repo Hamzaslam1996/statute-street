@@ -1,0 +1,41 @@
+{
+  "doc_id": "D062",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:53:19+00:00",
+  "source_url": "https://law.justia.com/codes/new-jersey/title-2a/section-2a-18-61-1/",
+  "retrieved": "2026-10-03 18:52 UTC",
+  "source_type": "secondary (law firm / news / mirror)",
+  "n_chunks": 1,
+  "document_summary": "Justia mirror of N.J.S.A. 2A:18-61.1, New Jersey's Anti-Eviction Act section listing the good-cause grounds for removing residential tenants statewide.",
+  "rules": [
+    {
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "NJ Anti-Eviction Act: grounds for removal of tenants",
+      "requirement": "A residential tenant may be removed by the Superior Court only on establishing one of the enumerated good-cause grounds (e.g., nonpayment of rent, disorderly conduct, property damage, lease violations, owner retiring the building, condominium conversion, owner occupancy in small buildings).",
+      "key_value": "Eviction only for statutory good cause (grounds a. through r.)",
+      "coverage_conditions": "Houses, buildings, mobile homes or land in mobile home parks, or tenements leased for residential purposes.",
+      "exemptions": "Owner-occupied premises with not more than two rental units; hotels, motels or guest houses rented to transient or seasonal tenants; units held in trust for, or permanently occupied by, an immediate family member with a developmental disability.",
+      "interaction": "Statewide floor; subsection f. requires rent increases to comply with other laws and municipal rent ordinances.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "N.J.S.A. 2A:18-61.1",
+      "quoted_span": "No lessee or tenant or the assigns, under-tenants or legal representatives of such lessee or tenant may be removed by the Superior Court from any house, building, mobile home or land in a mobile home park or tenement leased for residential purposes",
+      "confidence": 0.9,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Effective date not stated in the text; the history line (L.1974, c.49, amended through 2013, c.51) is not used to infer one. Document is a Justia mirror of the statute. Relocation-assistance duties are not in this section."
+    }
+  ],
+  "usage": {
+    "input_tokens": 14924,
+    "output_tokens": 686,
+    "cost_usd": 0.0367,
+    "seconds": 5.8
+  },
+  "errors": []
+}

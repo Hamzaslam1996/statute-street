@@ -1,0 +1,62 @@
+{
+  "doc_id": "D011",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:46:59+00:00",
+  "source_url": "https://malegislature.gov/Bills/193/H3744",
+  "retrieved": "2026-10-01 22:35 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Massachusetts Legislature bill page for H.3744 (193rd General Court, 2023-2024), a home-rule petition to authorize Boston to implement rent stabilization and tenant eviction protections; the bill was sent to a study order and not enacted.",
+  "rules": [
+    {
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "failed",
+      "title": "H.3744 Boston rent stabilization home-rule petition (not enacted)",
+      "requirement": "Would have authorized the city of Boston to implement rent stabilization. The bill history shows it was accompanied to a study order on 9/9/2024 and was not enacted, so no Boston rent stabilization authority arises from it.",
+      "key_value": "Would have authorized Boston rent stabilization; not enacted (sent to study order 9/9/2024)",
+      "coverage_conditions": null,
+      "exemptions": null,
+      "interaction": "The bill would have given Boston special-law authority to adopt local rent stabilization. The page does not describe any state-law bar, but one has long been understood to exist in Massachusetts and was not extracted from this document.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": true,
+      "citation": "H.3744, 193rd Gen. Court (Mass. 2023-2024)",
+      "quoted_span": "By Representative Montaño of Boston, a petition (accompanied by bill, House, No. 3744) of Samantha Montaño (with the approval of the mayor and city council) that the city of Boston be authorized to implement rent stabilization and tenant eviction protections.",
+      "confidence": 0.6,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Status is based on the bill history: the last action, 9/9/2024, was 'Accompanied a study order, see H5035', and the 2023-2024 session has ended. The page gives no bill text, so no cap, formula or coverage details are available. 'Failed' is a best reading, because a study order is not a formal defeat."
+    },
+    {
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "failed",
+      "title": "H.3744 Boston tenant eviction protections home-rule petition (not enacted)",
+      "requirement": "Would have authorized the city of Boston to implement tenant eviction protections. The bill was accompanied to a study order on 9/9/2024 and was not enacted, so no Boston eviction protections arise from it.",
+      "key_value": "Would have authorized Boston tenant eviction protections; not enacted (sent to study order 9/9/2024)",
+      "coverage_conditions": null,
+      "exemptions": null,
+      "interaction": "This was a home-rule petition requiring state legislative approval. The page's tag '[Local Approval Received.]' shows the city's approval, but the legislature did not enact the bill.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": true,
+      "citation": "H.3744, 193rd Gen. Court (Mass. 2023-2024)",
+      "quoted_span": "By Representative Montaño of Boston, a petition (accompanied by bill, House, No. 3744) of Samantha Montaño (with the approval of the mayor and city council) that the city of Boston be authorized to implement rent stabilization and tenant eviction protections.",
+      "confidence": 0.55,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "The page lists only the bill's summary and history, not its text, so the specific eviction grounds or relocation duties are unknown. Last action: study order (H5035) on 9/9/2024. 'Failed' is a best reading, because a study order is not a formal defeat."
+    }
+  ],
+  "usage": {
+    "input_tokens": 6222,
+    "output_tokens": 1917,
+    "cost_usd": 0.0316,
+    "seconds": 14.4
+  },
+  "errors": []
+}

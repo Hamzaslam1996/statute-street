@@ -1,0 +1,41 @@
+{
+  "doc_id": "D061",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:53:14+00:00",
+  "source_url": "https://law.justia.com/codes/new-jersey/title-10/section-10-5-12/",
+  "retrieved": "2026-10-03 18:52 UTC",
+  "source_type": "secondary (law firm / news / mirror)",
+  "n_chunks": 1,
+  "document_summary": "Justia mirror of N.J.S.A. 10:5-12 (NJ Law Against Discrimination, unlawful practices), including the housing provisions that bar refusing to rent because of source of lawful income; covers New Jersey statewide.",
+  "rules": [
+    {
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "NJ Law Against Discrimination: source-of-income protection in rental housing",
+      "requirement": "It is unlawful for a landlord, owner, agent or broker to refuse to rent or lease, or otherwise deny or withhold real property, because of the source of any lawful income or lawful rent payment, including vouchers and other lawful rental subsidies. The same bar applies to discrimination in rental terms, conditions and advertising.",
+      "key_value": "Ban on refusing to rent based on source of lawful income or source of lawful rent payment",
+      "coverage_conditions": "Applies to any person with the right to sell, rent, lease, assign or sublease real property, and to brokers, salespersons, agents and employees.",
+      "exemptions": "Not stated in the source for the source-of-income provision. The sex-specific housing carve-out and the housing-for-older-persons exemption relate to other protected classes.",
+      "interaction": "State-level baseline; the source does not address local ordinances.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "N.J.S.A. 10:5-12(g)(4), (h)(4)",
+      "quoted_span": "(4) To refuse to sell, rent, lease, assign, or sublease or otherwise to deny to or withhold from any person or group of persons any real property or part or portion thereof because of the source of any lawful income received by the person or the source of any lawful rent payment to be paid for the real property; or",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary Justia mirror of the 2025 code. The text gives only a legislative history citation list, with no statement of when the source-of-income provision took effect, so effective_date is null. The section also covers many other protected classes and employment practices, which are out of scope."
+    }
+  ],
+  "usage": {
+    "input_tokens": 22074,
+    "output_tokens": 1034,
+    "cost_usd": 0.0545,
+    "seconds": 8.2
+  },
+  "errors": []
+}

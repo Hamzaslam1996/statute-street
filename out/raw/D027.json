@@ -1,0 +1,41 @@
+{
+  "doc_id": "D027",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:49:01+00:00",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=12955",
+  "retrieved": "2026-10-01 22:35 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "California Government Code § 12955 (FEHA housing discrimination provisions), as amended by SB 267 effective 2024-01-01, which bars source-of-income discrimination, including against housing voucher holders, in rental housing statewide.",
+  "rules": [
+    {
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Source-of-income discrimination ban and subsidy-tenant credit/income screening limits (FEHA)",
+      "requirement": "Owners may not discriminate against or harass a rental applicant or tenant because of source of income, which includes Section 8 and other housing vouchers and public assistance. Where a government rent subsidy applies, income standards must be based on the tenant's portion of rent, and applicants must be allowed to offer alternative evidence in place of credit history.",
+      "key_value": "Ban on source-of-income discrimination (incl. Section 8 / HUD-VASH vouchers); landlords may still ask about the level or source of income",
+      "coverage_conditions": "Applies to owners of any housing accommodation; the credit-history and income-standard rules in subd. (o) apply only where there is a government rent subsidy.",
+      "exemptions": "Inquiring about the level or source of income is not discrimination; landlords may still verify employment, request landlord references and verify identity.",
+      "interaction": "Statewide floor; this excerpt does not address local source-of-income ordinances.",
+      "effective_date": "2024-01-01",
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Cal. Gov. Code § 12955",
+      "quoted_span": "For the owner of any housing accommodation to discriminate against or harass any person because of the race, color, religion, sex, gender, gender identity, gender expression, sexual orientation, marital status, national origin, ancestry, familial status, source of income, disability, veteran or military status, or genetic information of that person.",
+      "confidence": 0.82,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Effective date is from the document's amendment note (Stats. 2023, Ch. 776, SB 267, eff. Jan. 1, 2024), which added the subsidy-tenant credit-history alternative-evidence rule and the HUD-VASH voucher language. The document does not state when the source-of-income ban was first added, so the date reflects the amendment. Subdivisions (n), (o) and (p) are folded into this record."
+    }
+  ],
+  "usage": {
+    "input_tokens": 8443,
+    "output_tokens": 1416,
+    "cost_usd": 0.031,
+    "seconds": 11.5
+  },
+  "errors": []
+}

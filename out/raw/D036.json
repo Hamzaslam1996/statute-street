@@ -1,0 +1,41 @@
+{
+  "doc_id": "D036",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:50:11+00:00",
+  "source_url": "https://www.jerseycitynj.gov/landlordtenant",
+  "retrieved": "2026-10-01 22:36 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Official Jersey City Office of Landlord/Tenant Relations webpage describing administration of the city's Rent Control Ordinance (Chapter 260), landlord registration and rent-increase applications, and tenant petitions.",
+  "rules": [
+    {
+      "jurisdiction": "Jersey City, NJ",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Jersey City Rent Control Ordinance (Municipal Code Chapter 260)",
+      "requirement": "Jersey City regulates rent increases through its Rent Control Ordinance, which the Office of Landlord/Tenant Relations administers. Landlords must apply through the city (via the Tyler portal) for capital improvement, vacancy capital improvement and hardship rent increases.",
+      "key_value": "Rent control under Ch. 260; all 1-4 unit properties are exempt (the specific cap formula is not stated on this page)",
+      "coverage_conditions": "Rent-controlled properties are those not exempt under the ordinance; the page notes that 1-4 unit properties are exempt.",
+      "exemptions": "All 1-4 unit properties are exempt from rent control; owners may submit a 'Rent Control Exemption Request' if they meet the criteria for one of the permitted exemptions.",
+      "interaction": null,
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Jersey City Municipal Code ch. 260",
+      "quoted_span": "(Please Note: All 1-4 Unit Properties are exempt from rent control)",
+      "confidence": 0.6,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary summary page; the ordinance text with the annual allowable increase (CPI-based) is linked but not reproduced here. No effective or adoption date is stated, so effective_date is null."
+    }
+  ],
+  "usage": {
+    "input_tokens": 7906,
+    "output_tokens": 1033,
+    "cost_usd": 0.0261,
+    "seconds": 8.0
+  },
+  "errors": []
+}

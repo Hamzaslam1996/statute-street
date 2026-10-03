@@ -1,0 +1,41 @@
+{
+  "doc_id": "D029",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:49:18+00:00",
+  "source_url": "https://www.cambridgema.gov/departments/humanrightscommission",
+  "retrieved": "2026-10-01 22:36 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Cambridge Human Rights Commission web page describing enforcement of the Cambridge Fair Housing Ordinance (ch. 14.04) and Human Rights Ordinance (ch. 2.76), including source-of-income protections in housing in Cambridge, MA.",
+  "rules": [
+    {
+      "jurisdiction": "Cambridge, MA",
+      "level": "city",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Cambridge Fair Housing Ordinance: source-of-income protection (incl. Section 8)",
+      "requirement": "Landlords may not discriminate in renting based on source of income, which includes Section 8 and public benefits. Tenant selection standards must be reasonable and applied equally and uniformly to all applicants, and may be based on ability to pay rent and ability to care for the apartment and respect others' rights.",
+      "key_value": "Source of income (including Section 8 and public benefits) is a protected category in housing",
+      "coverage_conditions": "Rental housing transactions in Cambridge, including viewing or renting an apartment and terms and conditions of tenancy.",
+      "exemptions": "Exemption for 2-family dwellings when the owner lives there.",
+      "interaction": null,
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Cambridge Municipal Code ch. 14.04 (Fair Housing Ordinance)",
+      "quoted_span": "The protected categories under the Cambridge Human Rights Ordinance and the Cambridge Fair Housing Ordinance are the following:\nDisability – Defined consistent with the Americans with Disabilities Act (ADA) – a physical or mental impairment which substantially limits one or more major life activities\nRace\nColor\nNational Origin or Ancestry\nFamily Status\nSource of Income, includes Section 8 and public benefits",
+      "confidence": 0.7,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary summary on the Commission's webpage; the ordinance text itself is not in this document. No effective date stated, so effective_date is null. Civil fines of up to $300 per violation are noted on the page but are not the key value."
+    }
+  ],
+  "usage": {
+    "input_tokens": 8742,
+    "output_tokens": 1261,
+    "cost_usd": 0.0301,
+    "seconds": 8.2
+  },
+  "errors": []
+}

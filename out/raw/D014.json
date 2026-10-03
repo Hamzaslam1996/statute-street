@@ -1,0 +1,41 @@
+{
+  "doc_id": "D014",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:47:22+00:00",
+  "source_url": "https://www.boston.gov/sites/default/files/file/2020/11/Housing%20Stability%20Notification%20Act%20Tenant%20FAQs.pdf",
+  "retrieved": "2026-10-01 22:35 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "City of Boston FAQ for tenants on the Housing Stability Notification Act (HSNA), an ordinance requiring landlords to give tenants a rights notice and to copy the city on eviction and non-renewal notices (Boston, MA).",
+  "rules": [
+    {
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Housing Stability Notification Act (Notice of Tenants' Rights and Resources)",
+      "requirement": "A landlord ending a tenancy or declining to renew a lease must deliver a Notice of Tenants' Rights and Resources together with the Notice to Quit. The landlord must also send a copy of the Notice to Quit or non-renewal notice, with a Certificate of Compliance/Service, to the Office of Housing Stability.",
+      "key_value": "Notice of Tenants' Rights and Resources delivered with the Notice to Quit; copy to the Office of Housing Stability",
+      "coverage_conditions": "All landlords and foreclosing owners intending to end a tenancy or post-foreclosure occupancy of a unit in the City of Boston.",
+      "exemptions": "Residences in any hospital, skilled nursing facility or health facility; and in a non-profit facility whose primary purpose is providing short-term treatment, assistance or therapy for alcohol, drug, or other substance abuse.",
+      "interaction": "Procedural notice requirement only; it does not restrict the grounds for eviction and is separate from state eviction law. A violation does not halt the eviction process.",
+      "effective_date": "2020-11-06",
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "City of Boston Ordinances § 10-11.7 (Housing Stability Notification Act)",
+      "quoted_span": "The HSNA requires that landlords give this Notice of Tenants’ Rights and Resources\nto tenants when the landlord starts the eviction process, or when the landlord\ndecides to not offer the tenant a renewal of their lease agreement.",
+      "confidence": 0.7,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Effective date taken from the FAQ statement 'The HSNA becomes effective on November 6, 2020.' The ordinance was passed in October 2020 (exact day not stated, so adoption_date is null). The ordinance is a notice-and-reporting requirement, not a just-cause limit; it is categorized under just_cause_eviction as the closest available category. Enforcement: warning for the first offense, then $300 per day. The source is an official FAQ summary of the ordinance."
+    }
+  ],
+  "usage": {
+    "input_tokens": 6881,
+    "output_tokens": 1371,
+    "cost_usd": 0.0275,
+    "seconds": 9.2
+  },
+  "errors": []
+}

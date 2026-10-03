@@ -1,0 +1,41 @@
+{
+  "doc_id": "D052",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:52:27+00:00",
+  "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B",
+  "retrieved": "2026-10-01 22:37 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Massachusetts General Laws ch. 186, § 15B, the statewide statute on residential security deposits, last-month's rent, interest, receipts, return and landlord entry.",
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Massachusetts security deposit limits and handling (M.G.L. c. 186, § 15B)",
+      "requirement": "At or before the start of a tenancy a landlord may collect only first month's rent, last month's rent, a security deposit of no more than one month's rent, and the cost of a key and lock. The deposit must be held in a separate interest-bearing Massachusetts bank account, with 5% annual interest (or the lesser amount the bank paid) paid to the tenant. It must be returned within 30 days after the tenancy ends, less itemized, sworn deductions for allowed items.",
+      "key_value": "Security deposit capped at 1 month's rent (plus first month, last month and lock/key cost); return within 30 days",
+      "coverage_conditions": "Residential leases and tenancies-at-will. The statute is not applicable to rentals of 100 days or less for vacation or recreational purposes.",
+      "exemptions": "Subsection (9): does not apply to any lease, rental, occupancy or tenancy of one hundred days or less in duration which is for a vacation or recreational purpose.",
+      "interaction": "Statewide statute. Lease provisions that conflict with it, and tenant waivers, are void as against public policy.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "M.G.L. c. 186, § 15B",
+      "quoted_span": "(b) At or prior to the commencement of any tenancy, no lessor or agent of the lessor may require a tenant or prospective tenant to pay, to the lessor or to an agent of the lessor, any amount in excess of the following: (i) rent for the first full month of occupancy;  and, (ii) rent for the last full month of occupancy calculated at the same rate as the first month;  and, (iii) a security deposit equal to the first month's rent provided that such security deposit is deposited as required by subsection (3) and that the tenant is given the statement of condition as required by subsection (2);",
+      "confidence": 0.9,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "The document gives no effective date for the original 1-month cap, so effective_date is null. The text was amended by 2025, c. 9, §§ 54-55, effective 2025-08-01 (adds 'agent of the lessor' and lets the executive office of housing and livable communities authorize an optional fee in lieu of a deposit, capped at 1 month's rent in total). That amendment did not change the cap itself. Procedural duties (receipts, condition statement, records, transfer to successor, treble damages) are folded into this record."
+    }
+  ],
+  "usage": {
+    "input_tokens": 12773,
+    "output_tokens": 1860,
+    "cost_usd": 0.0441,
+    "seconds": 13.5
+  },
+  "errors": []
+}

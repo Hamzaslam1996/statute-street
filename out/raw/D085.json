@@ -1,0 +1,62 @@
+{
+  "doc_id": "D085",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:57:13+00:00",
+  "source_url": "https://santa-ana.gov/santa-ana-city-council-adopts-rent-stabilization-and-just-cause-eviction-ordinances-effective-nov-19",
+  "retrieved": "2026-10-01 22:37 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "City of Santa Ana press release announcing adoption of the Rent Stabilization Ordinance and Just Cause Eviction Ordinance, effective November 19, 2021 (Santa Ana, CA).",
+  "rules": [
+    {
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Santa Ana Rent Stabilization Ordinance",
+      "requirement": "Annual residential rent increases are capped at the lower of 3% or 80% of the CPI change over the most recent 12 months; no increase is allowed if CPI is negative. The City publishes the allowable increase by June 30 each year, effective September 1.",
+      "key_value": "Lower of 3% per year or 80% of CPI change (12 months); no increase if CPI negative",
+      "coverage_conditions": "Residential rental units; the cap does not apply to residential buildings constructed after February 1, 1995, or to mobile home spaces offered for rent after January 1, 1990.",
+      "exemptions": "Owners may petition the City Manager or designee for relief from the cap by showing a larger increase is necessary for a fair and reasonable return; decision within 60 days of a complete application.",
+      "interaction": null,
+      "effective_date": "2021-11-19",
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Santa Ana Municipal Code, Rent Stabilization Ordinance (section number not stated in source)",
+      "quoted_span": "Increase in residential rents are limited to the lower of 3% per year, or 80% of the percent change in the Consumer Price Index over the most recent 12-month period.",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary press release from the city; adoption date given only as 'Tuesday night' so adoption_date is null. Owners must give written notice of the ordinance at lease start or with any rent increase notice. Later amendments, if any, are not reflected in this document."
+    },
+    {
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Santa Ana Just Cause Eviction Ordinance",
+      "requirement": "After 30 days of tenancy, an owner may not terminate a tenancy without just cause stated in a written notice. For no-fault terminations the owner must give 3 months of relocation assistance or waive rent for the final 3 months.",
+      "key_value": "Just cause required after 30 days; no-fault termination requires 3 months relocation assistance or 3 months rent waiver",
+      "coverage_conditions": "Residential tenancies generally; protection begins after the first 30 days of tenancy.",
+      "exemptions": "Housing produced in the last 15 years; deed-restricted affordable housing; hotel and transient occupancy; hospital and care facilities; dormitories; and other shared living quarters.",
+      "interaction": null,
+      "effective_date": "2021-11-19",
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Santa Ana Municipal Code, Just Cause Eviction Ordinance (section number not stated in source)",
+      "quoted_span": "After 30 days, an owner shall not terminate a tenancy without just cause, which shall be stated in a written notice.",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary press release from the city; adoption date not stated (only 'Tuesday night'). At-fault causes require prior notice of the violation with a chance to cure. Owners had to notify existing tenants before December 19, 2021. Later amendments, if any, are not reflected in this document."
+    }
+  ],
+  "usage": {
+    "input_tokens": 6524,
+    "output_tokens": 1805,
+    "cost_usd": 0.0311,
+    "seconds": 11.8
+  },
+  "errors": []
+}

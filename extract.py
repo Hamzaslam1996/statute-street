@@ -52,6 +52,8 @@ PRICES = {
 
 # Documents longer than this (in characters) are split into overlapping chunks.
 # Most documents are far shorter; only one or two in the corpus exceed it.
+MAX_TOKENS = 32_000      # output cap per call; thinking tokens count towards it
+
 CHUNK_THRESHOLD = 80_000
 CHUNK_SIZE = 60_000
 CHUNK_OVERLAP = 4_000
@@ -91,7 +93,9 @@ RULE_PROPERTIES = {
     },
     "key_value": {
         **nullable("string"),
-        "description": "The headline number or formula, e.g. '1.5 months rent', '5% + CPI, max 10%'.",
+        "description": "The headline number, formula or prohibition a renter or landlord would act on, "
+                       "e.g. '1.5 months rent', '5% + CPI, max 10%', 'Ban on algorithmic rent-setting "
+                       "devices'. Never the penalty for breaking the rule.",
     },
     "coverage_conditions": {
         **nullable("string"),
@@ -106,9 +110,23 @@ RULE_PROPERTIES = {
     },
     "effective_date": {
         **nullable("string"),
-        "description": "YYYY-MM-DD, YYYY-MM or YYYY. The date the rule took or takes effect. "
-                       "If the document gives a formula (e.g. 'first day of the twelfth month "
-                       "after enactment') compute it and explain in extraction_notes. null if unknown.",
+        "description": "YYYY-MM-DD, YYYY-MM or YYYY. The date the requirement took or takes effect, "
+                       "only from text saying it 'takes effect', 'becomes operative', is 'effective' "
+                       "or 'operative' on a date. If the document gives a formula (e.g. 'first day of "
+                       "the twelfth month after enactment') compute it and explain in extraction_notes. "
+                       "For a local ordinance that states only an adoption date, give the adoption "
+                       "MONTH as YYYY-MM. null if the document states nothing.",
+    },
+    "adoption_date": {
+        **nullable("string"),
+        "description": "YYYY-MM-DD the ordinance or act was adopted/approved/passed, if stated. "
+                       "null otherwise.",
+    },
+    "negative_finding": {
+        "type": "boolean",
+        "description": "true when this record documents that NO rule applies at this level in this "
+                       "category (e.g. a state law barring local rent control, or a defeated / struck "
+                       "measure). false for an ordinary rule.",
     },
     "citation": {
         "type": "string",
@@ -118,7 +136,7 @@ RULE_PROPERTIES = {
     "quoted_span": {
         "type": "string",
         "description": "A single contiguous passage copied EXACTLY, character for character, "
-                       "from the document text below (20-600 characters). Do not paraphrase, "
+                       "from the document text below (20-800 characters). Do not paraphrase, "
                        "fix typos, add ellipses, or join separate sentences.",
     },
     "confidence": {"type": "number", "description": "0 to 1."},
@@ -169,20 +187,44 @@ Scope
   * screening_restrictions: limits on what a landlord may consider about an applicant (criminal history, source of income / vouchers, credit, eviction history).
   * algorithmic_rent_setting: bans or limits on algorithmic / software-based rent setting or price coordination.
 
-What counts as a rule
-- One record per distinct legal requirement at one jurisdiction level. Do not split a single cap and its exemptions into several records; put exemptions in `exemptions` and thresholds in `coverage_conditions`.
+What counts as a rule (granularity)
+- One record per jurisdiction x category x section, holding the HEADLINE requirement: the number or prohibition a renter or landlord would act on. Fold procedural sub-duties (return deadlines, itemised statements, photographs, "no non-refundable deposits", notice mechanics) into `requirement` or `extraction_notes`, not separate records.
+- Keep separate records only when they fall in a DIFFERENT category or carry a DIFFERENT key value that would change the answer for an address.
+- Relocation-assistance payments that follow a no-fault eviction belong in ONE just_cause_eviction record for that jurisdiction (amounts in `key_value` or `extraction_notes`), not one record per payment schedule.
+- Do not split a single cap and its exemptions into several records; put exemptions in `exemptions` and thresholds in `coverage_conditions`.
 - A document may yield zero rules (e.g. a navigation page or a document about another topic). Return an empty list rather than inventing anything.
+
+Negative findings
+- When a document establishes that NO rule exists at a level in a category, record that as a record with `negative_finding` true. Two cases:
+  (a) a law that bars rules at a lower level (e.g. a state statute prohibiting local rent control): status `in_force`, title like "No local rent control permitted (state bar)", key_value like "No rent cap: state law bars local rent control".
+  (b) a measure that was defeated, vetoed or struck down: status `failed`, key_value describing what it would have done.
+- Ordinary rules have `negative_finding` false.
 - If the document is a secondary source (law firm alert, news article, Justia mirror), still extract what it says, cite the underlying law in `citation`, but the `quoted_span` must come from THIS document.
 - Bills that have not been enacted are `pending`. Measures that were defeated, vetoed, or struck down by a court are `failed`. Enacted laws are `in_force` or `not_yet_effective` depending on whether their effective date is on or before the query date {DEFAULT_QUERY_DATE}.
 - `effective_date` means the date the specific extracted requirement first took effect. If a later amendment changed the key value itself (e.g. a lower cap), use the amendment date instead, and record the amendment in `extraction_notes` (e.g. "as amended by SB 567, eff. 2024-04-01"). A re-enactment that kept the same requirement does NOT reset the date.
 - Record effective dates as precisely as the text allows. If the text says the act takes effect a set time after enactment and gives the enactment date, compute the date and say how in `extraction_notes`.
 - Never infer an effective date from amendment history, legislative history notes, or the citations at the end of a statute (e.g. "L.1971,c.223; amended 2003, c.188"). If the text does not state when the requirement took effect, return null and explain in `extraction_notes`.
+- Only text saying a provision "takes effect", "becomes operative", is "effective" or "operative" on a date counts as an effective date. Look-back, application or "applies to increases on or after" dates are NOT effective dates (they say what the rule reaches, not when it started). An enacted section in the official code with no stated effective date is still `in_force`.
+- Local ordinances that state only an adoption date (e.g. "Adopted 7-9-2025 by Ord. No. B-781"): set `adoption_date` to the full date, set `effective_date` to the adoption MONTH (YYYY-MM), and add to `extraction_notes`: "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication)." (adapt the state name).
+- If a document states an explicit effective date for a CHANGE to the key value (e.g. "Effective February 2, 2026, the landlord can no longer include ..."), that date is the record's `effective_date` (the amendment exception above).
+
+Known open questions (from the organisers' brief; if the document concerns one of these, set `conflict_flag` true and state the open question in `conflict_note`)
+- Berkeley's algorithmic-rent ban (BMC ch. 13.63, Ord. 7992) has two published effective dates: 1 March 2026 in the ordinance text, January 2026 per an August 2026 law-firm alert.
+- New Jersey's FAIR Act (P.L. 2026, c.43) may preempt the Jersey City and Hoboken algorithmic-rent ordinances once it takes effect.
+- Los Angeles's new RSO formula has two published effective dates: 2026-02-02 per LAHD, 2026-01-24 per a landlord association.
+- California's screening-fee cap (Civ. Code § 1950.6) has no single official 2026 dollar figure.
+If the document does not itself contain the disputed date or figure, say so in `conflict_note` (e.g. "Not found in this capture.").
 - Record coverage thresholds exactly as written (e.g. "certificate of occupancy issued before 1979-06-13" is different from "built before 1979").
 - When the document shows a conflict, open question, or a possible preemption of another level of government, set `conflict_flag` true and explain in `conflict_note` and `interaction`.
 
 Quoted spans
-- `quoted_span` must be a verbatim, contiguous excerpt of the document text, 20-600 characters, that directly supports the requirement and key value. Copy it exactly as it appears, including odd spacing or line breaks within the passage. Never paraphrase. Every record is rejected automatically if its span is not found in the document.
+- `quoted_span` must be a verbatim, contiguous excerpt of the document text, 20-800 characters, that directly supports the requirement and key value. Copy it exactly as it appears, including odd spacing or line breaks within the passage. Never paraphrase. Every record is rejected automatically if its span is not found in the document.
 - Choose the OPERATIVE sentence: the one that states the duty, cap or prohibition (look for "shall", "shall not", "may not", "unlawful", "prohibited") and, where possible, contains the key value. Do not quote a definition, a purpose or findings clause, a penalty or cross-reference, or a heading.
+- Quote the COMPLETE sentence where one exists, not a clause from it: start at the sentence's first word and continue to its full stop, even if the document breaks the sentence across several lines (line breaks inside the quote are fine and expected; the checker ignores whitespace differences).
+- For list-form provisions, quote contiguously from the lead-in ("It shall be unlawful ... for:") through the relevant item, including any intervening items, as long as the whole passage is under 800 characters. Only if that is impossible quote the item's full line. Tables with no sentence may be quoted as the relevant row.
+
+Length
+- Be concise. `requirement` is one or two sentences; `extraction_notes`, `exemptions` and `coverage_conditions` each under 800 characters. Do not restate the whole statute.
 
 Respond only with JSON matching the schema."""
 
@@ -214,6 +256,14 @@ def estimate_cost(model: str, usage) -> float:
     cached = getattr(usage, "cache_read_input_tokens", 0) or 0
     # cache reads are billed at roughly a tenth of the input price
     return (usage.input_tokens * inp + cached * inp * 0.1 + usage.output_tokens * outp) / 1_000_000
+
+
+def session_spend() -> float:
+    """Total estimated US$ of every call recorded in out/extract_log.csv."""
+    if not LOG_CSV.exists():
+        return 0.0
+    with open(LOG_CSV, newline="", encoding="utf-8") as f:
+        return round(sum(float(r["cost_usd"] or 0) for r in csv.DictReader(f)), 4)
 
 
 def append_log(row: dict) -> None:
@@ -255,15 +305,18 @@ def call_model(client: anthropic.Anthropic, model: str, doc: Doc, chunk: str,
                feedback: str | None = None) -> dict:
     """One request to Claude for one chunk of one document. Returns the parsed JSON."""
     t0 = time.time()
-    response = client.messages.create(
+    # Streaming lets the request run longer than the SDK's 10-minute non-streaming
+    # limit; we only use the final assembled message.
+    with client.messages.stream(
         model=model,
-        max_tokens=16000,
+        max_tokens=MAX_TOKENS,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user",
                    "content": build_user_message(doc, chunk, chunk_no, n_chunks, feedback)}],
         output_config={"effort": "high",
                        "format": {"type": "json_schema", "schema": OUTPUT_SCHEMA}},
-    )
+    ) as stream:
+        response = stream.get_final_message()
     seconds = round(time.time() - t0, 1)
 
     if response.stop_reason == "refusal":
@@ -272,6 +325,10 @@ def call_model(client: anthropic.Anthropic, model: str, doc: Doc, chunk: str,
         data = {"document_summary": "", "rules": [], "error": f"refusal: {detail}"}
     elif response.stop_reason == "max_tokens":
         print(f"  !! {doc.doc_id}: output cut off at max_tokens", file=sys.stderr)
+        # Keep whatever came back so the failure can be diagnosed.
+        partial = "".join(getattr(b, "text", "") for b in response.content if b.type == "text")
+        RAW_DIR.mkdir(parents=True, exist_ok=True)
+        (RAW_DIR / f"{doc.doc_id}.truncated.txt").write_text(partial, encoding="utf-8")
         data = {"document_summary": "", "rules": [], "error": "max_tokens"}
     else:
         text = next((b.text for b in response.content if b.type == "text"), "")
@@ -286,7 +343,8 @@ def call_model(client: anthropic.Anthropic, model: str, doc: Doc, chunk: str,
         "cache_read_tokens": getattr(response.usage, "cache_read_input_tokens", 0) or 0,
         "cost_usd": round(estimate_cost(model, response.usage), 4),
         "seconds": seconds, "n_rules": len(data.get("rules", [])),
-        "stop_reason": response.stop_reason, "request_id": response._request_id,
+        "stop_reason": response.stop_reason,
+        "request_id": getattr(response, "_request_id", None),  # absent on streamed messages
     })
     data["_usage"] = {"input_tokens": response.usage.input_tokens,
                       "output_tokens": response.usage.output_tokens,
@@ -362,7 +420,16 @@ def main() -> int:
     ap.add_argument("--model", default=DEFAULT_MODEL, help=f"Claude model id (default {DEFAULT_MODEL})")
     ap.add_argument("--force", action="store_true", help="re-run even if out/raw/D###.json exists")
     ap.add_argument("--yes", action="store_true", help="skip the confirmation for large runs")
+    ap.add_argument("--budget", type=float, default=None,
+                    help="hard stop (US$) on cumulative spend recorded in out/extract_log.csv")
     args = ap.parse_args()
+
+    spent = session_spend()
+    if args.budget is not None:
+        print(f"Spent so far (all runs logged): ${spent:.3f}; budget ${args.budget:.2f}.")
+        if spent >= args.budget:
+            print("Budget already reached; nothing run.")
+            return 4
 
     docs = list_docs()
     if args.all:
@@ -400,8 +467,14 @@ def main() -> int:
         u = res["usage"]
         for k in total:
             total[k] = round(total[k] + u[k], 4)
+        spent += u["cost_usd"]
         print(f"{len(res['rules'])} rule(s), {u['input_tokens']:,} in / {u['output_tokens']:,} out "
               f"tokens, ${u['cost_usd']:.4f}, {u['seconds']}s")
+        if args.budget is not None and spent >= args.budget:
+            remaining = todo[todo.index(doc_id) + 1:]
+            print(f"\nBUDGET STOP: ${spent:.3f} spent >= ${args.budget:.2f}. "
+                  f"{len(remaining)} document(s) not run: {' '.join(remaining)}")
+            break
 
     print(f"\nRun total: {total['input_tokens']:,} input tokens, {total['output_tokens']:,} output "
           f"tokens, about ${total['cost_usd']:.4f}. Raw output in {RAW_DIR}/, log in {LOG_CSV}.")

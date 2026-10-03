@@ -1,0 +1,41 @@
+{
+  "doc_id": "D035",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:50:03+00:00",
+  "source_url": "https://hudsoncountyview.com/jersey-city-council-approves-realpage-ban-and-increasing-benefits-for-laborers/",
+  "retrieved": "2026-10-03 18:51 UTC",
+  "source_type": "secondary (law firm / news / mirror)",
+  "n_chunks": 1,
+  "document_summary": "Hudson County View news article (May 22, 2025) reporting the Jersey City Council's 9-0 approval of an ordinance banning rent-setting algorithms such as RealPage; covers Jersey City, NJ.",
+  "rules": [
+    {
+      "jurisdiction": "Jersey City, NJ",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Jersey City ban on rent-setting algorithms (RealPage-type software)",
+      "requirement": "The Jersey City Council approved an ordinance banning landlords' use of rent-setting algorithms such as RealPage, which rely on certain nonpublic data. The article says it does not reach real estate agents, and owners who use algorithms without colluding were described as excluded.",
+      "key_value": "Ban on rent-setting algorithms such as RealPage",
+      "coverage_conditions": "Landlords/owners of multifamily rental housing in Jersey City, per the article's description. The ordinance text is not reproduced.",
+      "exemptions": "Per the article, real estate agents were excluded at the sponsor's agreement; owners of multiple buildings using algorithms but not colluding were described as outside the ban. Multiple Listing Service exclusion was discussed but its outcome is unclear.",
+      "interaction": "Possible preemption by the NJ FAIR Act (P.L. 2026, c.43) once it takes effect; this article does not discuss it. It notes only that Congress was considering barring municipalities from such rules.",
+      "effective_date": "2025-05",
+      "adoption_date": "2025-05-21",
+      "negative_finding": false,
+      "citation": "Jersey City ordinance banning rent-setting algorithms (sponsor Councilman James Solomon), approved May 2025; ordinance number not stated in source",
+      "quoted_span": "The Jersey City Council unanimously approved (9-0) a measure banning rent-setting algorithms such as RealPage, as well as increasing benefits for laborers, at last night’s meeting.",
+      "confidence": 0.6,
+      "conflict_flag": true,
+      "conflict_note": "Open question: the NJ FAIR Act (P.L. 2026, c.43) may preempt this ordinance once effective. Not found in this capture. The article mentions only that the U.S. House was considering banning municipal AI/algorithm regulation. Council members said amendments might still follow, and ordinance text and final adoption details are not in this capture.",
+      "extraction_notes": "Secondary news source dated 2025-05-22 reporting a vote at 'last night's meeting' (adoption date computed as 2025-05-21). Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Ordinance number and codification not stated. Penalty mentioned by a speaker (a $2,000 daily fine) is not extracted as the key value. Whether this vote was a final adoption is not stated, so status is a best reading."
+    }
+  ],
+  "usage": {
+    "input_tokens": 15942,
+    "output_tokens": 1520,
+    "cost_usd": 0.0471,
+    "seconds": 11.3
+  },
+  "errors": []
+}

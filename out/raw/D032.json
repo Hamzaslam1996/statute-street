@@ -1,0 +1,19 @@
+{
+  "doc_id": "D032",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:49:38+00:00",
+  "source_url": "https://ecode360.com/15252438",
+  "retrieved": "2026-10-03 19:02 UTC",
+  "source_type": "code publisher",
+  "n_chunks": 1,
+  "document_summary": "Table of contents and history note for Chapter 155 (Rent Control) of the Hoboken, NJ city code, with no operative rule text or numeric limits in this capture.",
+  "rules": [],
+  "usage": {
+    "input_tokens": 7439,
+    "output_tokens": 227,
+    "cost_usd": 0.0171,
+    "seconds": 3.6
+  },
+  "errors": []
+}

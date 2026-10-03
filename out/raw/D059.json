@@ -2,38 +2,40 @@
   "doc_id": "D059",
   "model": "claude-sonnet-5-5",
   "attempt": 1,
-  "extracted_at": "2026-10-03T20:17:22+00:00",
+  "extracted_at": "2026-10-03T20:40:13+00:00",
   "source_url": "https://www.wbur.org/news/2026/06/23/massachusetts-high-court-rent-control-ballot-question-struck",
   "retrieved": "2026-10-03 18:52 UTC",
   "source_type": "secondary (law firm / news / mirror)",
   "n_chunks": 1,
-  "document_summary": "WBUR news article (June 23, 2026) reporting that the Massachusetts Supreme Judicial Court struck a statewide rent control ballot question from the November 2026 ballot because of its religious-purposes exemption.",
+  "document_summary": "WBUR news article (June 23, 2026) reporting that the Massachusetts Supreme Judicial Court struck from the November 2026 ballot a statewide rent control initiative because it included a religious-use exemption.",
   "rules": [
     {
       "jurisdiction": "MA",
       "level": "state",
       "category": "rent_increase_limits",
       "status": "failed",
-      "title": "Massachusetts 2026 rent control ballot initiative (struck by SJC)",
-      "requirement": "The proposed statewide initiative would have limited annual rent increases for residences, but the Supreme Judicial Court ruled it cannot go on the November 2026 ballot because its exemptions relate to religion.",
-      "key_value": null,
-      "coverage_conditions": "Residences generally; the article does not state the cap formula or unit thresholds.",
-      "exemptions": "Several types of units, including ones \"operated solely for … religious … purposes.\"",
-      "interaction": "Would have created a statewide rent cap, but it is not law; Massachusetts currently has no statewide rent control. Supporters floated a compromise bill before July 1 that top lawmakers did not take up, and they hinted at a possible 2028 petition.",
+      "title": "2026 statewide rent control ballot question (struck by SJC)",
+      "requirement": "The proposed ballot initiative would have limited annual rent increases for residences in Massachusetts, but the Supreme Judicial Court ruled it cannot go on the November 2026 ballot because its religious-use exemption makes it a measure relating to religion, which the state Constitution bars from the initiative process.",
+      "key_value": "Would have capped annual rent increases statewide; struck from ballot, so no rent cap enacted",
+      "coverage_conditions": "Proposed to cover residences statewide, with exemptions for several unit types.",
+      "exemptions": "Proposed exemptions included units \"operated solely for … religious … purposes\" and other secular unit types.",
+      "interaction": "Because the measure failed, no statewide rent control exists in Massachusetts; supporters hinted at a possible 2028 ballot petition and a legislative compromise was not passed before July 1.",
       "effective_date": null,
-      "citation": "Mass. Const. amend. art. 48 (Initiative Petitions, The Initiative, II, § 2); Mass. SJC ruling on rent control ballot petition (June 2026)",
-      "quoted_span": "The proposal limits annual rent increases for residences, but it carved out exemptions for several types of units, including ones “operated solely for … religious … purposes.\"",
-      "confidence": 0.85,
-      "conflict_flag": true,
-      "conflict_note": "Proponents suggest the petition is \"easily fixable\" and may be refiled for the 2028 ballot; a compromise bill was floated but not passed as of the article. The article does not give the SJC case name or the proposed cap details.",
-      "extraction_notes": "Secondary news source. The measure was defeated by court ruling, not enacted, so status is failed with no effective date. The citation to the underlying petition is generalized because the article does not name the case or give the petition number."
+      "adoption_date": null,
+      "negative_finding": true,
+      "citation": "Mass. Const. amend. art. 48, The Initiative, Pt. II, § 2 (SJC ruling, June 2026)",
+      "quoted_span": "The state’s Supreme Judicial Court ruled a ballot question seeking to bring rent control back to Massachusetts cannot go forward this November, because it includes a religious exemption.",
+      "confidence": 0.9,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary news source; the case name and the SJC's exact citation are not given in the article. The measure was never enacted, so effective_date is null. Article is dated June 23, 2026 (updated and originally published). Existing Massachusetts law is not addressed in this article."
     }
   ],
   "usage": {
-    "input_tokens": 7021,
-    "output_tokens": 697,
-    "cost_usd": 0.021,
-    "seconds": 6.5
+    "input_tokens": 8530,
+    "output_tokens": 694,
+    "cost_usd": 0.024,
+    "seconds": 6.0
   },
   "errors": []
 }

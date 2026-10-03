@@ -1,0 +1,19 @@
+{
+  "doc_id": "D058",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:52:59+00:00",
+  "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section31",
+  "retrieved": "2026-10-01 22:54 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Massachusetts G.L. c. 186, § 31, which requires a notice to quit for nonpayment of rent to be accompanied by a state-developed form (Massachusetts only).",
+  "rules": [],
+  "usage": {
+    "input_tokens": 5889,
+    "output_tokens": 284,
+    "cost_usd": 0.0146,
+    "seconds": 3.9
+  },
+  "errors": []
+}

@@ -1,0 +1,19 @@
+{
+  "doc_id": "D051",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:52:13+00:00",
+  "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
+  "retrieved": "2026-10-01 22:37 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Massachusetts G.L. c. 186, § 12, the notice requirements for ending a tenancy at will (three months' notice, or 14 days' notice for nonpayment with a 10-day cure right). It sets no rent cap, just-cause standard, deposit, screening or algorithmic-pricing rule.",
+  "rules": [],
+  "usage": {
+    "input_tokens": 6123,
+    "output_tokens": 462,
+    "cost_usd": 0.0169,
+    "seconds": 5.6
+  },
+  "errors": []
+}

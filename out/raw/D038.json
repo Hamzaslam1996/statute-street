@@ -1,0 +1,41 @@
+{
+  "doc_id": "D038",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:50:37+00:00",
+  "source_url": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-322208",
+  "retrieved": "2026-10-03 19:02 UTC",
+  "source_type": "code publisher",
+  "n_chunks": 1,
+  "document_summary": "Los Angeles Municipal Code Sec. 45.67 (code publisher page) prohibiting source-of-income discrimination by persons offering, renting or listing housing accommodations in the City of Los Angeles.",
+  "rules": [
+    {
+      "jurisdiction": "Los Angeles, CA",
+      "level": "city",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "LAMC Sec. 45.67 Prohibited Activities (source-of-income discrimination)",
+      "requirement": "Landlords and others offering or listing housing may not refuse to rent, renew, or terminate a tenancy, apply different terms, or advertise preferences based on a person's source of income.",
+      "key_value": "Prohibition on source-of-income discrimination in renting, terms, and advertising",
+      "coverage_conditions": "Any person offering for rent, renting, or listing any housing accommodation in the City of Los Angeles.",
+      "exemptions": null,
+      "interaction": null,
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "L.A.M.C. § 45.67",
+      "quoted_span": "It shall be unlawful for any person offering for rent, renting, or listing any housing accommodation to do or attempt to do any of the following:",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Effective date not stated in this capture, so null. Section sits in LAMC Chapter IV (Public Welfare). The document does not define 'source of income' in this capture. Subsections A-D cover refusal to rent or terminate, differing terms, misrepresenting availability, and discriminatory advertising."
+    }
+  ],
+  "usage": {
+    "input_tokens": 7500,
+    "output_tokens": 549,
+    "cost_usd": 0.0205,
+    "seconds": 4.9
+  },
+  "errors": []
+}

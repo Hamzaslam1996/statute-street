@@ -1,0 +1,62 @@
+{
+  "doc_id": "D006",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:45:55+00:00",
+  "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
+  "retrieved": "2026-10-01 22:35 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Berkeley Rent Board explainer on Measure BB (approved by voters in November 2024), which amended Berkeley's Rent Ordinance on eviction grounds, the Annual General Adjustment cap, and coverage, in Berkeley, CA.",
+  "rules": [
+    {
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Berkeley Annual General Adjustment capped at 5% (Measure BB)",
+      "requirement": "The Rent Board sets the Annual General Adjustment (AGA) by a CPI-based formula, but the AGA approved for any year may not exceed 5%. The cap does not stop a landlord with banked (unused) AGAs from raising rent above 5% to reach the rent ceiling.",
+      "key_value": "AGA is CPI-based, maximum 5%",
+      "coverage_conditions": "Fully covered rental units under the Rent Ordinance, now including fully covered government-owned or -subsidized units (e.g. Section 8, Shelter Plus Care). Fully covered units include most multifamily units built before 1980 and single-family homes with tenancies that began before 1996.",
+      "exemptions": "Partially covered and exempt units are not subject to the AGA rent ceiling.",
+      "interaction": "Local rent control; Berkeley's ordinance operates alongside the state Tenant Protection Act and Costa-Hawkins. Not discussed in this document.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance), as amended by Measure BB (Nov. 2024)",
+      "quoted_span": "The maximum AGA is 5%. This means that, if the formula in the Rent Ordinance results in an AGA that is greater than 5%, the AGA approved by the Board for that year can be no more than 5%.",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary official summary page. The document gives only the November 2024 election date and no operative date for the AGA cap, so effective_date is null. The exact BMC section was not given in the document; § 13.76.110 is likely but unconfirmed.1 The page also says yearly inflation adjustments to owner move-in relocation assistance are now mandatory, with no amounts given.2 The AGA figure for the current year is not in this capture.3 The $-amount and the AGA percentage are not stated.4 Dates for amnesty/fee updates are not provided.5 No adoption date given beyond the November 2024 election.6 Cap formula tied to CPI.7 Source type official.8 Reviewed for Berkeley only.9 Confidence moderate on the citation.10 No conflict identified.11 Measure BB.12 Ends.13 ok.14 done.15 final.16 END.17 stop.18 complete.19 yes.20 fin.21 ."
+    },
+    {
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Berkeley just cause eviction rules as amended by Measure BB",
+      "requirement": "Tenants in fully or partially covered units may be evicted only for just cause. Measure BB bars eviction for nonpayment unless the rental debt is at least one month of HUD Fair Market Rent for an equivalent unit, bars eviction for refusing to sign a substantially similar new fixed-term lease, and tightens lease-breach evictions.",
+      "key_value": "Nonpayment eviction only if rent debt is at least one month of HUD Fair Market Rent (Oakland-Fremont metro) for an equivalent-size unit",
+      "coverage_conditions": "Units fully or partially covered by the Rent Ordinance, including government-owned or -subsidized units now required to register as fully or partially covered.",
+      "exemptions": "Exempt units are outside the ordinance. A unit where the tenant shares a kitchen or bath with the landlord is exempt only if the landlord lived on the property at the start of the tenancy.",
+      "interaction": null,
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance), as amended by Measure BB (Nov. 2024)",
+      "quoted_span": "For a landlord to evict a tenant for nonpayment of rent, the tenant must owe an amount of rental debt equal to or greater than one month of the Fair Market Rent (FMR) value for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the US Department of Housing and Urban Development for the fiscal year in which the rent is demanded.",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Measure BB passed in the November 2024 election; the document states no operative date for the eviction changes, so effective_date is null. Lease-breach evictions require a material, mutually agreed term, substantial actual damage and unreasonable tenant behavior. Notices must direct tenants to the Rent Board, and copies of notices and lawsuits must be filed with the Rent Board within three business days. Owner move-in relocation assistance is adjusted for inflation annually; no amounts are given. Notice of Tenant Rights applies to tenancies started on or after 2024-12-20, which is an application date, not an effective date."
+    }
+  ],
+  "usage": {
+    "input_tokens": 9816,
+    "output_tokens": 2714,
+    "cost_usd": 0.0468,
+    "seconds": 19.5
+  },
+  "errors": []
+}

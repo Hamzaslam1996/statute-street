@@ -1,0 +1,41 @@
+{
+  "doc_id": "D082",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:56:49+00:00",
+  "source_url": "https://www.sf.gov/reports--archive-relocation-rates",
+  "retrieved": "2026-10-01 22:37 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "San Francisco Rent Board archive of annual relocation payment rates for no-fault evictions, including owner move-in, demolition, capital improvement, substantial rehabilitation and Ellis Act evictions, by date of service of the eviction notice (San Francisco, CA).",
+  "rules": [
+    {
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "San Francisco relocation payments for no-fault evictions (Rent Ordinance § 37.9C)",
+      "requirement": "Landlords must pay relocation to tenants evicted for owner/relative move-in, demolition or permanent removal, temporary capital improvement work, or substantial rehabilitation, at the rate in effect when the eviction notice is served. Ellis Act evictions carry separate, higher payments.",
+      "key_value": "Notices served 3/01/26–2/28/27: $8,245.00 per tenant, max $24,733.00 per unit, plus $5,497.00 for each elderly (60+) or disabled tenant or household with minor child(ren). Ellis Act: $11,110.05 per tenant, max $33,330.13 per unit, plus $7,443.90 per elderly (62+) or disabled tenant.",
+      "coverage_conditions": "Evictions based on owner/relative move-in, demolition/permanent removal from housing use, temporary capital improvement work or substantial rehabilitation (Ellis Act evictions have their own schedule). The rate depends on the date of service of the notice of termination of tenancy.",
+      "exemptions": "Temporary capital improvement evictions of less than 20 days are governed by Cal. Civ. Code § 1947.9, not Rent Ordinance § 37.9C.",
+      "interaction": "Temporary capital improvement evictions under 20 days fall under state law (Civ. Code § 1947.9) rather than the local ordinance.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "S.F. Admin. Code § 37.9C; § 37.9A (Ellis Act relocation)",
+      "quoted_span": "3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00",
+      "confidence": 0.8,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Archive page of annual CPI-adjusted rates. The current-year rates (3/01/26–2/28/27) are the ones that apply on the 2026-10-01 query date. effective_date is null because the page gives only service-date ranges for each rate year, not a stated effective date. Rates have been adjusted every March 1 since 2007; the original 2006 rate was $4,500 per tenant (8/10/06). The schedule is summarized here in one record; the Ellis Act table is folded in.  The section citations are not stated in the document except § 37.9C and § 1947.9."
+    }
+  ],
+  "usage": {
+    "input_tokens": 6879,
+    "output_tokens": 1594,
+    "cost_usd": 0.0297,
+    "seconds": 11.5
+  },
+  "errors": []
+}

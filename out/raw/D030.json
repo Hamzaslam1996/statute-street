@@ -1,0 +1,62 @@
+{
+  "doc_id": "D030",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:49:31+00:00",
+  "source_url": "https://www.cambridgeday.com/?p=158097",
+  "retrieved": "2026-10-03 18:50 UTC",
+  "source_type": "secondary (law firm / news / mirror)",
+  "n_chunks": 1,
+  "document_summary": "Cambridge Day news article (June 25, 2026) reporting that Cambridge, MA City Council passed a policy order to begin work on banning algorithmic rent-setting software, and noting related pending Massachusetts House and Senate bills.",
+  "rules": [
+    {
+      "jurisdiction": "Cambridge, MA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "Cambridge policy order initiating ban on algorithmic rent-setting services",
+      "requirement": "The City Council unanimously passed a policy order starting steps toward banning residential property managers from contracting with companies that use algorithmic or AI-driven models to recommend rents. The city manager is to draft policy options or ordinance language for the council later this term; no ordinance has been enacted.",
+      "key_value": "Proposed ban on algorithmic/AI rent-recommendation services (not yet law)",
+      "coverage_conditions": "Residential property management companies in Cambridge (described as large or corporate owners/managers).",
+      "exemptions": null,
+      "interaction": "Related Massachusetts House and Senate bills on the same practice are pending at the state level; no preemption is discussed.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Cambridge City Council policy order (June 2026), directing city manager to draft ordinance language; no ordinance cited",
+      "quoted_span": "City council also unanimously passed a policy order initiating steps to ban residential property management companies from contracting companies that use algorithmic and AI-driven models to recommend what they should charge for rent.",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary news source. A policy order only directs staff to draft options; it is not an enacted ordinance, so status is pending. The article says the council acted 'on Monday' (about 2026-06-22) but gives no date, so adoption_date is null. No effective date stated."
+    },
+    {
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "algorithmic_rent_setting",
+      "status": "pending",
+      "title": "Massachusetts bills banning algorithmic rent-setting (H.1564 / S.2983)",
+      "requirement": "Bills in the Massachusetts House and Senate would ban the use of algorithmic rent-setting in the rental market. They have not been enacted.",
+      "key_value": "Pending bills to ban algorithmic rent-setting",
+      "coverage_conditions": null,
+      "exemptions": null,
+      "interaction": null,
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "H.1564 and S.2983, 194th General Court of Massachusetts (pending bills)",
+      "quoted_span": "Bills banning the practice in the rental market are also working their way through the Massachusetts state [House](https://malegislature.gov/Bills/194/H1564) and [Senate](https://malegislature.gov/Bills/194/S2983).",
+      "confidence": 0.7,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary news source mentions the bills only briefly. Bill numbers come from the link URLs (H1564, S2983). The article gives no content details, so only the stated ban is recorded. Status per article as of June 2026; later developments are not covered."
+    }
+  ],
+  "usage": {
+    "input_tokens": 14486,
+    "output_tokens": 1626,
+    "cost_usd": 0.0452,
+    "seconds": 13.1
+  },
+  "errors": []
+}

@@ -2,12 +2,12 @@
   "doc_id": "D069",
   "model": "claude-sonnet-5-5",
   "attempt": 1,
-  "extracted_at": "2026-10-03T20:15:38+00:00",
+  "extracted_at": "2026-10-03T20:44:10+00:00",
   "source_url": "https://pub.njleg.state.nj.us/Bills/2026/AL26/43_.HTM",
   "retrieved": "2026-10-01 22:56 UTC",
   "source_type": "official",
   "n_chunks": 1,
-  "document_summary": "New Jersey P.L. 2026, c.43 (the FAIR Act), approved July 20, 2026, makes it an antitrust violation to use or operate algorithmic rent-setting coordination software; it applies statewide in New Jersey.",
+  "document_summary": "New Jersey P.L. 2026, c.43, the Forbidding the Algorithmic Inflation of Rent (FAIR) Act, approved July 20, 2026, which bars algorithmic rent-setting coordination and amends the state Antitrust Act framework for residential rentals statewide.",
   "rules": [
     {
       "jurisdiction": "NJ",
@@ -15,25 +15,27 @@
       "category": "algorithmic_rent_setting",
       "status": "not_yet_effective",
       "title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
-      "requirement": "It is unlawful, and a violation of the New Jersey Antitrust Act, for rental property owners to pay for or use a coordinator's services, for coordinators to facilitate agreements restricting competition, for persons to engage in or facilitate parallel pricing coordination, or for any person to perform a coordinating function (algorithmic setting or recommendation of rents, lease terms or occupancy using shared competitively sensitive information).",
-      "key_value": "Ban on algorithmic coordination of rental prices, material lease terms and occupancy levels",
-      "coverage_conditions": "Applies to rental property owners (persons owning one or more rental residential dwelling units, including controlling-interest holders), coordinators (operators of algorithmic revenue management software or algorithmic devices performing a coordinating function) and any person; residential dwelling units are units intended as a primary residence in the State.",
-      "exemptions": "Excluded from 'coordinating function': research, statistical analysis or testing not used to set or recommend prices or terms; free public rent estimates; real estate brokerage databases available on equal terms that do not set or recommend prices; government entities setting or limiting rents through affordability controls. Residential dwelling unit excludes inpatient medical care, licensed long-term care, and detention or correctional facilities. Spreadsheets without AI that require human analysis, and databases that only query unprocessed data, are not algorithmic devices.",
-      "interaction": "Section 6(b) prohibits a municipality from enacting an ordinance that conflicts with this act (except ordinances explicitly authorized or required by other law). The act supplements and does not limit the New Jersey Antitrust Act, P.L.1970, c.73; the Antitrust Act's enforcement provisions (sections 6-17) apply to violations.",
+      "requirement": "Makes it unlawful, and a violation of the NJ Antitrust Act, for rental property owners to pay for or use a coordinator's services, for coordinators to facilitate rent-restricting agreements, and for anyone to perform a coordinating function or engage in parallel pricing coordination.",
+      "key_value": "Ban on algorithmic rent-setting coordination (use of coordinators / algorithmic devices performing a coordinating function)",
+      "coverage_conditions": "Applies to rental property owners (anyone owning one or more rental residential dwelling units) and coordinators operating algorithmic revenue management software or an algorithmic device that performs a coordinating function. Residential dwelling unit excludes inpatient medical care, licensed long-term care, and detention or correctional facilities.",
+      "exemptions": "Excludes spreadsheets operating without AI and requiring human analysis, and databases that only query unprocessed data. Also excludes research/statistical/testing use of information not used to set rents, free public rent estimates, equal-terms real estate brokerage databases that do not set or recommend rents, and government affordability controls.",
+      "interaction": "Section 6(b) prohibits municipalities from enacting ordinances that conflict with this act, except ordinances explicitly authorized or required by other law. This may preempt local algorithmic-rent ordinances such as those of Jersey City and Hoboken once effective. The act is in addition to the NJ Antitrust Act.",
       "effective_date": "2027-07-01",
-      "citation": "P.L. 2026, c.43 (N.J.S.A. 56:9-20 to 56:9-26)",
-      "quoted_span": "any person to perform a coordinating function.",
-      "confidence": 0.88,
-      "conflict_flag": false,
-      "conflict_note": null,
-      "extraction_notes": "Effective date computed from section 9 ('first day of the twelfth month next following the date of enactment') with approval on July 20, 2026: the first month following is August 2026, so the twelfth is July 2027, giving 2027-07-01. This is after the query date of 2026-10-01, so the status is not_yet_effective. The document is the first reprint of the bill, with the statutory text and chapter number as shown. Codification range C.56:9-20 to 56:9-26 is taken from the header."
+      "adoption_date": "2026-07-20",
+      "negative_finding": false,
+      "citation": "P.L. 2026, c.43 (C.56:9-20 to 56:9-26)",
+      "quoted_span": "It shall be unlawful and a violation of the “New Jersey Antitrust Act,” P.L.1970, c.73 (C.56:9-1 et seq.) for: a. a rental property owner, or any agent, representative, or subcontractor thereof, to receive, subscribe to, contract for, or otherwise exchange any form of consideration in return for the use of, the services of a coordinator; b. a coordinator to facilitate a tacit or express agreement among rental property owners that restricts competition with respect to residential dwelling units, including by performing a coordinating function;",
+      "confidence": 0.9,
+      "conflict_flag": true,
+      "conflict_note": "Possible preemption of the Jersey City and Hoboken algorithmic-rent ordinances: section 6(b) bars municipal ordinances that conflict with the act. This document does not name those ordinances or resolve whether they conflict.",
+      "extraction_notes": "Section 9: takes effect on the first day of the twelfth month next following enactment. Enacted (approved) July 20, 2026, so the twelfth month following is July 2027, giving 2027-07-01. Not yet effective as of the 2026-10-01 query date. Text is the first reprint (A3497 1R ACS)."
     }
   ],
   "usage": {
-    "input_tokens": 6642,
-    "output_tokens": 1533,
-    "cost_usd": 0.0286,
-    "seconds": 11.2
+    "input_tokens": 8269,
+    "output_tokens": 1987,
+    "cost_usd": 0.0364,
+    "seconds": 13.5
   },
   "errors": []
 }

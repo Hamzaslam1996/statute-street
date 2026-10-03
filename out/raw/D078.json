@@ -1,0 +1,41 @@
+{
+  "doc_id": "D078",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:56:27+00:00",
+  "source_url": "https://sf-hrc.org/fair-chance-ordinance",
+  "retrieved": "2026-10-01 22:37 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "San Francisco Human Rights Commission (SF.gov) landing page that mentions the City's Fair Chance Ordinance only as a link teaser, with no operative text.",
+  "rules": [
+    {
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Fair Chance Ordinance (affordable housing)",
+      "requirement": "San Francisco's Fair Chance Ordinance protects residents with arrest or conviction history in affordable housing decisions. This page gives no operative details beyond that statement.",
+      "key_value": "Protection against use of arrest or conviction history in affordable housing decisions",
+      "coverage_conditions": "Affordable housing decisions only, per the page's description; no thresholds are stated.",
+      "exemptions": null,
+      "interaction": null,
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "S.F. Police Code art. 49 (Fair Chance Ordinance)",
+      "quoted_span": "San Francisco's Fair Chance Ordinance protects residents with arrest or conviction history in affordable housing decisions.",
+      "confidence": 0.4,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Navigation or teaser text on an agency landing page. The citation comes from general knowledge, not this document. The page states no effective date, adoption date or specific requirements, so effective_date is null."
+    }
+  ],
+  "usage": {
+    "input_tokens": 7313,
+    "output_tokens": 1213,
+    "cost_usd": 0.0268,
+    "seconds": 9.5
+  },
+  "errors": []
+}

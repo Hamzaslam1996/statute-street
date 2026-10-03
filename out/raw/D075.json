@@ -1,0 +1,19 @@
+{
+  "doc_id": "D075",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:56:00+00:00",
+  "source_url": "https://gocodebook.com/library/us/ca/san-diego-zoning/division-8-prohibition-of-discrimination-based-on-a-tenant-s-source-of-income",
+  "retrieved": "2026-10-03 18:53 UTC",
+  "source_type": "code publisher",
+  "n_chunks": 1,
+  "document_summary": "A GoCodebook table-of-contents page for the San Diego Municipal Code that lists division and section titles but contains no text of any rental-housing rule (the requested source-of-income division is not reproduced).",
+  "rules": [],
+  "usage": {
+    "input_tokens": 18425,
+    "output_tokens": 82,
+    "cost_usd": 0.0377,
+    "seconds": 2.4
+  },
+  "errors": []
+}

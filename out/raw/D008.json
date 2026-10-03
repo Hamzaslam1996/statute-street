@@ -1,0 +1,41 @@
+{
+  "doc_id": "D008",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:46:16+00:00",
+  "source_url": "https://rentboard.berkeleyca.gov/sites/default/files/documents/AGA%20Public%20Notice.pdf",
+  "retrieved": "2026-10-01 22:35 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Berkeley Rent Stabilization Board public notice (Oct. 17, 2025) announcing the 2026 Annual General Adjustment of 1.0% for rent-controlled units in Berkeley, CA.",
+  "rules": [
+    {
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+      "requirement": "Eligible landlords may raise 2025 permanent rent ceilings by 1.0% no earlier than January 1, 2026, using the AGA set at 65% of the Bay Area CPI-U increase. The Order sets qualifying conditions and tenant notice requirements.",
+      "key_value": "1.0% (65% of 1.5% Bay Area CPI-U, July 1, 2024 - June 30, 2025)",
+      "coverage_conditions": "Eligible landlords of units under Berkeley rent stabilization; the AGA may not adjust rents of tenancies that began on or after January 1, 2025 whose rents were set pursuant to the Costa-Hawkins Rental Housing Act.",
+      "exemptions": "Tenancies beginning on or after January 1, 2025 with rents set under Costa-Hawkins are not adjusted by the 2026 AGA.",
+      "interaction": "Operates under Berkeley Municipal Code 13.76.110A; Costa-Hawkins (state law) limits which tenancies the AGA reaches.",
+      "effective_date": "2026-01-01",
+      "adoption_date": "2025-10-16",
+      "negative_finding": false,
+      "citation": "Berkeley Municipal Code § 13.76.110(A); Berkeley Rent Stabilization Board Regulation 1148",
+      "quoted_span": "The 2026 AGA of 1.0% represents 65% of the increase in the Consumer Price Index (CPI) for All Urban Consumers in the Bay Area during the period from July 1, 2024 - June 30, 2025, which was 1.5% as posted by the Bureau of Labor Statistics.",
+      "confidence": 0.88,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Adopted at the Board's Oct. 16, 2025 meeting (notice dated Oct. 17, 2025). Effective date taken from 'no earlier than January 1, 2026', the earliest date increases may be taken; the notice does not use the word 'effective'. The 65% of CPI formula was approved by voters in Nov. 2004."
+    }
+  ],
+  "usage": {
+    "input_tokens": 5611,
+    "output_tokens": 857,
+    "cost_usd": 0.0198,
+    "seconds": 6.1
+  },
+  "errors": []
+}

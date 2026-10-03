@@ -1,0 +1,41 @@
+{
+  "doc_id": "D060",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:53:05+00:00",
+  "source_url": "https://daypitney.com/new-jersey-enacts-fair-act-to-prohibit-algorithmic-rent-setting-practices",
+  "retrieved": "2026-10-03 18:52 UTC",
+  "source_type": "secondary (law firm / news / mirror)",
+  "n_chunks": 1,
+  "document_summary": "Day Pitney law-firm alert (July 31, 2026) reporting New Jersey's enactment of the FAIR Act (P.L. 2026, c. 43), which bans algorithmic rent-setting using competitors' nonpublic data, effective July 1, 2027.",
+  "rules": [
+    {
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "algorithmic_rent_setting",
+      "status": "not_yet_effective",
+      "title": "New Jersey FAIR Act (Forbidding the Algorithmic Inflation of Rent)",
+      "requirement": "Residential rental property owners may not use algorithmic revenue management software that collects or processes competitors' nonpublic leasing information to set or recommend rents, and software providers/coordinators may not use such software to facilitate agreements or coordinate pricing among competing landlords.",
+      "key_value": "Ban on algorithmic rent-setting software using competitors' nonpublic leasing information",
+      "coverage_conditions": "Residential rental property owners, property managers, and software providers/\"coordinators\" using algorithmic revenue management software or devices that use nonpublic, competitively sensitive information from multiple residential rental property owners.",
+      "exemptions": "Does not prohibit spreadsheets requiring human analysis, publicly available rent estimation tools, traditional real estate listing databases, and government-administered affordable housing programs.",
+      "interaction": "May preempt the Jersey City and Hoboken algorithmic-rent ordinances once effective; this document does not address preemption. Preserves existing remedies under the New Jersey Antitrust Act; attorney general to set up a complaint portal.",
+      "effective_date": "2027-07-01",
+      "adoption_date": "2026-07-20",
+      "negative_finding": false,
+      "citation": "P.L. 2026, c. 43",
+      "quoted_span": "The FAIR Act prohibits residential rental property owners from using algorithmic revenue management software that collects or processes competitors' nonpublic leasing information to set or recommend rental prices.",
+      "confidence": 0.9,
+      "conflict_flag": true,
+      "conflict_note": "Open question: the FAIR Act may preempt the Jersey City and Hoboken algorithmic-rent ordinances once it takes effect on July 1, 2027. This law-firm alert does not discuss preemption of local ordinances.",
+      "extraction_notes": "Secondary source (Day Pitney alert dated July 31, 2026). Signed July 20 (2026) by Governor Sherrill; effective date July 1, 2027 per the alert, which is after the query date 2026-10-01, so status is not_yet_effective. Statutory section cite not given beyond P.L. 2026, c. 43."
+    }
+  ],
+  "usage": {
+    "input_tokens": 7672,
+    "output_tokens": 887,
+    "cost_usd": 0.0242,
+    "seconds": 6.4
+  },
+  "errors": []
+}

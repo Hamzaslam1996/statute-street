@@ -1,0 +1,41 @@
+{
+  "doc_id": "D054",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:52:47+00:00",
+  "source_url": "https://masslandlords.net/can-massachusetts-landlords-charge-an-application-fee/",
+  "retrieved": "2026-10-03 18:51 UTC",
+  "source_type": "secondary (law firm / news / mirror)",
+  "n_chunks": 1,
+  "document_summary": "MassLandlords.net article explaining that Massachusetts landlords (lessors) may not charge rental application fees under M.G.L. c. 186 § 15B, while licensed brokers may charge fees under 254 CMR 7.",
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "No application fees by landlords (M.G.L. c. 186, § 15B)",
+      "requirement": "Before a tenancy begins, a lessor may require payment only of first month's rent, last month's rent, a security deposit and a lock fee; application, pet, cleaning and amenity fees are forbidden. Licensed brokers may charge fees if they comply with 254 CMR 7 (written disclosure of fee amount, timing and contingency).",
+      "key_value": "Landlords may not charge application fees; only first, last, security deposit and locks may be collected",
+      "coverage_conditions": "Applies to lessors (landlords) before the start of a tenancy; a landlord who is also a broker is likely treated as a landlord first (not settled by appellate case law).",
+      "exemptions": "Licensed brokers may charge fees under 254 CMR 7 if they follow the board of registration's regulations, including a separate bona fide brokerage operation.",
+      "interaction": null,
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "M.G.L. c. 186, § 15B; 254 C.M.R. 7",
+      "quoted_span": "It states that prior to the beginning of a tenancy, no lessor may require payment for anything except first, last, security, and locks",
+      "confidence": 0.88,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary source (MassLandlords, updated 2025-01-14). Article says the law has been in effect since the 1970s but gives no specific effective date, so effective_date is null. Federal case Perry v. Equity Residential (2014) found up-front application fees unlawful. Requiring applicants to pay a third-party screening service is considered risky."
+    }
+  ],
+  "usage": {
+    "input_tokens": 11453,
+    "output_tokens": 688,
+    "cost_usd": 0.0298,
+    "seconds": 6.0
+  },
+  "errors": []
+}

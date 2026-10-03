@@ -1,0 +1,62 @@
+{
+  "doc_id": "D007",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:46:10+00:00",
+  "source_url": "https://rentboard.berkeleyca.gov/rights-responsibilities/security-deposits",
+  "retrieved": "2026-10-01 22:35 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Berkeley Rent Board web page summarizing California security deposit law (AB 12 caps, photographs, return and deductions) and Berkeley's security deposit interest requirement under the Rent Ordinance.",
+  "rules": [
+    {
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "California security deposit cap (AB 12)",
+      "requirement": "Landlords may generally charge a security deposit of no more than one month's rent for furnished and unfurnished units; certain small landlords may charge up to two months' rent. Deposits must be returned within 21 days after move-out with an itemized statement, and photographs of the unit are required at move-in and after move-out.",
+      "key_value": "1 month's rent (up to 2 months' rent for qualifying small landlords)",
+      "coverage_conditions": "The two-month cap applies to landlords who own only two rental properties with no more than four residential units total, where ownership is held by a natural person, family trust, or LLC in which all members are natural persons. Last month's rent counts as part of the deposit; first month's rent does not.",
+      "exemptions": null,
+      "interaction": "State floor applied in Berkeley; Berkeley adds a separate security deposit interest requirement for units covered by its Rent Ordinance.",
+      "effective_date": "2024-07-01",
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Cal. Civ. Code § 1950.5 (as amended by AB 12)",
+      "quoted_span": "Starting July 1, 2024, many landlords may only charge one month's rent for unfurnished and furnished units",
+      "confidence": 0.9,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary summary by Berkeley Rent Board of state law. Before July 1, 2024 the cap was two months' rent (unfurnished) and three months' (furnished). Photograph duties: move-in for tenancies beginning on or after 2025-07-01; post-move-out photos from 2025-04-01; proof of repairs from 2025-01-01. Return deadline 21 days. The Rent Board says it cannot determine whether a landlord may charge one or two months' rent.  Effective date 2024-07-01 per the page's 'Starting July 1, 2024'."
+    },
+    {
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "Berkeley security deposit interest requirement",
+      "requirement": "Landlords of units fully or partially covered by the Berkeley Rent Ordinance must pay tenants interest on security deposits at the end of each year, and a prorated amount if the tenant moves out before year end.",
+      "key_value": "Annual interest on the security deposit, paid at end of each year (prorated on move-out)",
+      "coverage_conditions": "Tenancies in units fully or partially covered by Berkeley's Rent Ordinance.",
+      "exemptions": null,
+      "interaction": "Supplements the California deposit cap and return rules (Civ. Code § 1950.5), which also apply in Berkeley.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance)",
+      "quoted_span": "For tenancies in units fully or partially covered by Berkeley's Rent Ordinance, landlords must pay tenants interest on their security deposit at the end of each year and a prorated amount if the tenant moves out before the end of the year.",
+      "confidence": 0.75,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Interest rate is not given in this page (refers to a separate Security Deposit Interest & Calculator page). Effective date not stated, so null. The specific BMC section is not cited in the source; chapter cite is the best reading."
+    }
+  ],
+  "usage": {
+    "input_tokens": 6426,
+    "output_tokens": 2033,
+    "cost_usd": 0.0332,
+    "seconds": 14.7
+  },
+  "errors": []
+}

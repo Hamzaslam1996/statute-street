@@ -1,0 +1,41 @@
+{
+  "doc_id": "D004",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:45:19+00:00",
+  "source_url": "https://rentboard.berkeleyca.gov/elected-rent-board/news/2026-adjustments-relocation-assistance-payments",
+  "retrieved": "2026-10-01 22:35 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Berkeley Rent Board news notice announcing the January 1, 2026 inflation adjustment of owner move-in and Ellis Act eviction relocation assistance payments under Berkeley's Rent Stabilization and Good Cause for Eviction Ordinance and Ellis Implementation Ordinance.",
+  "rules": [
+    {
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Berkeley relocation assistance for owner move-in and Ellis Act evictions (2026 adjustment)",
+      "requirement": "Owners must pay tenants relocation assistance when evicting for owner move-in or to remove the property from the rental market under the Ellis Act; payments are indexed annually to inflation. For 2026 the standard payment is $19,413, with an additional $6,471 for qualifying households.",
+      "key_value": "$19,413 standard relocation payment; additional $6,471 for qualifying households (effective 2026-01-01)",
+      "coverage_conditions": "Tenants evicted for owner move-in (Rent Stabilization and Good Cause for Eviction Ordinance) or for Ellis Act withdrawal of the property from the rental market (Ellis Implementation Ordinance).",
+      "exemptions": null,
+      "interaction": null,
+      "effective_date": "2026-01-01",
+      "adoption_date": "2025-10-16",
+      "negative_finding": false,
+      "citation": "Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Good Cause for Eviction Ordinance); Berkeley Ellis Implementation Ordinance (BMC ch. 13.77)",
+      "quoted_span": "At its October 16, 2025 Special Meeting, the Rent Board approved relocation assistance payment increases that will go into effect on January 1, 2026.",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Effective date is that of the 2026 inflation adjustment (1.5% CPI increase, approved by the Rent Board on 2025-10-16). The adoption_date is the Rent Board approval date. Amounts are adjusted annually; the document is a summary of the ordinances, whose code citations are not given in the text and are supplied from general knowledge."
+    }
+  ],
+  "usage": {
+    "input_tokens": 5707,
+    "output_tokens": 765,
+    "cost_usd": 0.0191,
+    "seconds": 5.8
+  },
+  "errors": []
+}

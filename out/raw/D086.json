@@ -1,0 +1,41 @@
+{
+  "doc_id": "D086",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:57:22+00:00",
+  "source_url": "https://www.ocbj.com/real-estate/santa-ana-bans-landlords-from-using-ai-apartment-rent-pricing-software/",
+  "retrieved": "2026-10-03 18:54 UTC",
+  "source_type": "secondary (law firm / news / mirror)",
+  "n_chunks": 1,
+  "document_summary": "Orange County Business Journal news article (March 9, 2026) reporting that the Santa Ana, CA city council approved an ordinance banning landlords' use of algorithmic rent-pricing software.",
+  "rules": [
+    {
+      "jurisdiction": "Santa Ana, CA",
+      "level": "city",
+      "category": "algorithmic_rent_setting",
+      "status": "in_force",
+      "title": "Santa Ana ban on algorithmic rent-setting devices",
+      "requirement": "Landlords and apartment owners may not use automated or AI software (\"Algorithmic Devices\") to set rental prices; the ordinance also prohibits the sale and licensing of such devices.",
+      "key_value": "Ban on algorithmic rent-setting devices (sale, licensing and use)",
+      "coverage_conditions": "Apartment owners and landlords in the City of Santa Ana; no unit-count or other thresholds stated in the article.",
+      "exemptions": null,
+      "interaction": "The article quotes the Apartment Association of Orange County as saying the state's recently adopted regulations should be allowed to work rather than a patchwork of local rules, but it identifies no preemption.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Santa Ana Municipal Code (algorithmic rent-setting ordinance; ordinance number not stated in source)",
+      "quoted_span": "To protect renters, city leaders have approved a new ordinance that stops apartment owners and landlords from using automated AI software to set rental prices.",
+      "confidence": 0.7,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary news source. It says the first vote was Feb. 17 and that \"Tuesday's\" vote was the final step to put the ordinance into effect. Neither the final vote date, the ordinance number nor the effective date is stated, so adoption_date and effective_date are null. The article reports a $1,000 fine (penalty, not the key value), enforcement through existing code enforcement, and that the ordinance is already in effect as of the query date."
+    }
+  ],
+  "usage": {
+    "input_tokens": 16313,
+    "output_tokens": 1221,
+    "cost_usd": 0.0448,
+    "seconds": 9.7
+  },
+  "errors": []
+}

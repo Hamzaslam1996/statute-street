@@ -1,0 +1,19 @@
+{
+  "doc_id": "D039",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:50:42+00:00",
+  "source_url": "https://cityclerk.lacity.org/onlinedocs/2024/24-1031_misc_9-03-24.pdf",
+  "retrieved": "2026-10-01 22:36 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "A September 2024 Los Angeles City Council motion (Councilmember Hutt) asking the Los Angeles Housing Department to report on landlords' use of algorithm-based rent-setting software and on the feasibility of banning it; the motion enacts no rule.",
+  "rules": [],
+  "usage": {
+    "input_tokens": 5816,
+    "output_tokens": 363,
+    "cost_usd": 0.0153,
+    "seconds": 4.6
+  },
+  "errors": []
+}

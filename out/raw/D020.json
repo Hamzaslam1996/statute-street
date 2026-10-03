@@ -1,0 +1,41 @@
+{
+  "doc_id": "D020",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:48:25+00:00",
+  "source_url": "https://law.justia.com/codes/california/code-civ/division-3/part-4/title-5/chapter-2/section-1950-5/",
+  "retrieved": "2026-10-03 18:50 UTC",
+  "source_type": "secondary (law firm / news / mirror)",
+  "n_chunks": 1,
+  "document_summary": "Justia mirror of California Civil Code § 1950.5 (2025 version, as amended by AB 414 effective 2026-01-01), the statewide residential security deposit statute.",
+  "rules": [
+    {
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "California residential security deposit cap and handling rules (Civ. Code § 1950.5)",
+      "requirement": "A landlord may not demand or receive security exceeding one month's rent (in addition to first month's rent), or two months' rent for qualifying small landlords. The landlord must hold the deposit for the tenant, limit deductions to reasonably necessary amounts, and return the balance with an itemized statement within 21 calendar days after the tenant vacates. Leases may not call a deposit 'nonrefundable'.",
+      "key_value": "1 month's rent cap (2 months for small landlords)",
+      "coverage_conditions": "Residential rental agreements where the property is used as the tenant's dwelling. The 2-month cap applies only if the landlord is a natural person or an LLC whose members are all natural persons, and owns no more than two residential rental properties that collectively include no more than four dwelling units offered for rent.",
+      "exemptions": "The cap does not apply to security collected or demanded before July 1, 2024. The 2-month small-landlord cap does not apply when the prospective tenant is a service member. Advance payment of not less than six months' rent is allowed if the lease term is six months or longer.",
+      "interaction": "Statewide rule. No local deposit rules are addressed in this document.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Cal. Civ. Code § 1950.5",
+      "quoted_span": "Except as provided in paragraph (2), (3), or (5), a landlord shall not demand or receive security, however denominated, in an amount or value in excess of an amount equal to one month’s rent, in addition to any rent for the first month paid on or before initial occupancy.",
+      "confidence": 0.9,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary source (Justia mirror). The section was last amended by Stats. 2025, Ch. 340 (AB 414), effective 2026-01-01. That amendment concerns electronic return and other procedures, not the cap itself. The text gives no effective date for the cap. 'July 1, 2024' is an application date for security collected, not a stated effective date, so effective_date is null. Other duties (inspection, photographs, 21-day return) are folded into this record."
+    }
+  ],
+  "usage": {
+    "input_tokens": 18229,
+    "output_tokens": 1331,
+    "cost_usd": 0.0498,
+    "seconds": 10.3
+  },
+  "errors": []
+}

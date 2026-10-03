@@ -1,0 +1,41 @@
+{
+  "doc_id": "D049",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:51:58+00:00",
+  "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXI/Chapter151B/Section4",
+  "retrieved": "2026-10-01 22:37 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Massachusetts General Laws c. 151B, § 4 (unlawful discrimination practices in employment, housing, credit); statewide, with subsection 10 being the source-of-income rule for rental accommodations.",
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Source-of-income / housing subsidy discrimination ban (M.G.L. c. 151B, § 4(10))",
+      "requirement": "It is unlawful to discriminate in furnishing rental accommodations against a person because they receive public assistance or a housing subsidy (including rental assistance), or because of any requirement of such a program.",
+      "key_value": "Ban on refusing or discriminating against tenants/applicants for receiving public assistance or housing subsidies (e.g. vouchers)",
+      "coverage_conditions": "Applies to any person furnishing credit, services or rental accommodations; covers recipients of federal, state or local public assistance, medical assistance, and tenants receiving housing subsidies or rental supplements.",
+      "exemptions": null,
+      "interaction": "Statewide floor; local ordinances in Boston or Cambridge are not addressed in this document.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "M.G.L. c. 151B, § 4(10)",
+      "quoted_span": "For any person furnishing credit, services or rental accommodations to discriminate against any individual who is a recipient of federal, state, or local public assistance, including medical assistance, or who is a tenant receiving federal, state, or local housing subsidies, including rental assistance or rental supplements, because the individual is such a recipient, or because of any requirement of such public assistance, rental assistance, or housing subsidy program.",
+      "confidence": 0.9,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Official statute text with no stated effective date or amendment history on the page, so effective_date is null. Other parts of § 4 (employment, protected-class housing discrimination, criminal-history employment inquiries) fall outside the listed categories and were not extracted."
+    }
+  ],
+  "usage": {
+    "input_tokens": 21116,
+    "output_tokens": 1100,
+    "cost_usd": 0.0532,
+    "seconds": 8.9
+  },
+  "errors": []
+}

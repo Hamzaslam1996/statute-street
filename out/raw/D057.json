@@ -1,0 +1,41 @@
+{
+  "doc_id": "D057",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:52:55+00:00",
+  "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXVI/Chapter112/Section87DDD%201~2",
+  "retrieved": "2026-10-01 22:56 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Official Massachusetts General Laws text of c. 112, § 87DDD1/2 (finding dwelling accommodations for a fee), showing the pre-August 2025 text and the amended text effective August 1, 2025; covers MA statewide.",
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "application_screening_fees",
+      "status": "in_force",
+      "title": "Broker fee payable only by the party who engaged the broker",
+      "requirement": "A licensed broker or salesperson may contract with either the prospective tenant or the landlord, not both, and any fee must be paid only by the party who originally engaged the broker. A landlord's broker therefore cannot charge the tenant a fee.",
+      "key_value": "Broker fee payable only by the party (lessor or tenant) who engaged the broker",
+      "coverage_conditions": "Licensed brokers and salespersons finding rental residential real property; persons finding dwellings for prospective tenants for a fee must be licensed.",
+      "exemptions": null,
+      "interaction": null,
+      "effective_date": "2025-08-01",
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "M.G.L. c. 112, § 87DDD½, as amended by St. 2025, c. 9, § 43",
+      "quoted_span": "Any fee shall only be paid by the party, lessor or tenant who originally engaged and entered into a contract with the licensed broker or salesperson.",
+      "confidence": 0.5,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Broker (finder's) fee rule, not strictly a screening fee. Closest fit among the allowed categories is fees charged to rental applicants. Effective date from the header 'Text of section as amended by 2025, 9, Sec. 43 effective August 1, 2025'. The earlier text only required a broker license."
+    }
+  ],
+  "usage": {
+    "input_tokens": 5842,
+    "output_tokens": 982,
+    "cost_usd": 0.0215,
+    "seconds": 7.9
+  },
+  "errors": []
+}

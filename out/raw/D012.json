@@ -1,0 +1,41 @@
+{
+  "doc_id": "D012",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:47:08+00:00",
+  "source_url": "https://www.boston.gov/departments/fair-housing-and-equity/boston-fair-housing-regulations",
+  "retrieved": "2026-10-01 22:35 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "City of Boston Fair Housing Commission web page describing local fair housing protections against housing discrimination, including based on rental assistance such as Section 8 vouchers, in Boston, MA.",
+  "rules": [
+    {
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "Boston fair housing protection for renters using rental assistance",
+      "requirement": "Landlords in Boston may not discriminate against renters or applicants because they use rental assistance, including refusing to accept Section 8, social security disability, or veterans vouchers.",
+      "key_value": "Ban on refusing rental assistance (Section 8, SSDI and veterans vouchers)",
+      "coverage_conditions": "Housing in the City of Boston; renters and applicants using rental assistance.",
+      "exemptions": null,
+      "interaction": "The Commission enforces local, state, and federal fair housing laws. Discrimination outside Boston must be reported to the state.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Boston Fair Housing Commission regulations; see also M.G.L. c. 151B, § 4(10)",
+      "quoted_span": "The landlord tells you they don't accept rental assistance. This includes Section 8 vouchers, social security disability vouchers, and veterans vouchers.",
+      "confidence": 0.6,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary summary page. No effective date or specific local ordinance citation is stated, so the citation is a best reading and the effective date is null. The page lists rental assistance as a protected class, with the voucher refusal given as an example of discrimination."
+    }
+  ],
+  "usage": {
+    "input_tokens": 6156,
+    "output_tokens": 1137,
+    "cost_usd": 0.0237,
+    "seconds": 8.7
+  },
+  "errors": []
+}

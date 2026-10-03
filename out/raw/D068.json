@@ -1,0 +1,41 @@
+{
+  "doc_id": "D068",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:54:29+00:00",
+  "source_url": "https://www.nj.gov/oag/dcr/downloads/kyrhousing02.pdf",
+  "retrieved": "2026-10-01 22:37 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "New Jersey Division on Civil Rights brochure summarizing the NJ Law Against Discrimination in housing, including its ban on source-of-lawful-income discrimination (e.g., Section 8 vouchers), covering New Jersey statewide.",
+  "rules": [
+    {
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "NJ Law Against Discrimination: source of lawful income / rent payment protection",
+      "requirement": "Landlords may not discriminate in housing based on the source of lawful income or source of lawful rent payment, so they cannot deny a Section 8 voucher holder an apartment solely because of that income source.",
+      "key_value": "Ban on refusing tenants based on source of lawful income (including Section 8 vouchers)",
+      "coverage_conditions": "Applies to the sale or rental of all property, business or residential, including open land.",
+      "exemptions": "Rental of a single apartment in a two-family dwelling where the owner occupies the other unit; rental of rooms in an owner-occupied one-family dwelling; religious-organization preference for persons of the same religion (sale/lease/rental); familial status rule does not apply to housing for older persons (N.J.S.A. 10:5-5mm).",
+      "interaction": null,
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "N.J.S.A. 10:5-12 (NJ Law Against Discrimination)",
+      "quoted_span": "The LAD also prohibits housing discrimination  based\non the source of lawful income or source of lawful rent\nor mortgage payment a tenant or purchaser uses.",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Secondary summary brochure (rev. 06.18.15) of the LAD; the document states no effective date for the source-of-income provision, so effective_date is null. Complaints filed with the Division within 180 days; the Division does not handle ordinary landlord-tenant disputes such as evictions."
+    }
+  ],
+  "usage": {
+    "input_tokens": 7139,
+    "output_tokens": 683,
+    "cost_usd": 0.0211,
+    "seconds": 5.4
+  },
+  "errors": []
+}

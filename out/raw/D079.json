@@ -1,0 +1,41 @@
+{
+  "doc_id": "D079",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:56:33+00:00",
+  "source_url": "https://sf.gov/information/overview-just-cause-evictions",
+  "retrieved": "2026-10-01 22:37 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "San Francisco Rent Board overview page explaining that landlords need one of 17 enumerated just-cause reasons under Rent Ordinance Section 37.9(a) to evict tenants in covered units in San Francisco, CA.",
+  "rules": [
+    {
+      "jurisdiction": "San Francisco, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "San Francisco Rent Ordinance just cause eviction (S.F. Admin. Code § 37.9(a))",
+      "requirement": "A landlord may evict a tenant from a unit covered by the Rent Ordinance only for a \"just cause\" reason that is the dominant motive for the eviction; 17 enumerated reasons are allowed, and expiration of a lease or change in ownership is not just cause.",
+      "key_value": "Eviction only for one of 17 enumerated just causes (Section 37.9(a))",
+      "coverage_conditions": "Units covered by the Rent Ordinance, including some units exempt from rent increase limits: newly constructed units that first obtained a Certificate of Occupancy after June 13, 1979, tenancies eligible for a rent increase under Costa-Hawkins, and some tenancies where rent is regulated by another government agency.",
+      "exemptions": null,
+      "interaction": "Applies even to some tenancies exempt from the Ordinance's rent increase limits (e.g., Costa-Hawkins-exempt units); state just cause law is not discussed in this document.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "S.F. Admin. Code § 37.9(a)",
+      "quoted_span": "In order to evict a tenant from a rental unit covered by the Rent Ordinance, a landlord must have a \"just cause\" reason that is the dominant motive for pursuing the eviction.",
+      "confidence": 0.93,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Official SF Rent Board summary page; effective date not stated in the document, so null. Relocation-assistance amounts are not covered in this document."
+    }
+  ],
+  "usage": {
+    "input_tokens": 6552,
+    "output_tokens": 694,
+    "cost_usd": 0.02,
+    "seconds": 5.6
+  },
+  "errors": []
+}

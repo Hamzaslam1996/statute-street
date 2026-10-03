@@ -1,0 +1,19 @@
+{
+  "doc_id": "D031",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:49:34+00:00",
+  "source_url": "https://www.cambridgema.gov/tenantrights",
+  "retrieved": "2026-10-01 22:36 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Cambridge, MA city webpage describing the Tenants Rights and Resources Notification Ordinance (Chapter 8.71), which requires landlords to give tenants an informational guide at the start and end of a tenancy; it sets no rent, eviction-ground, deposit, screening-fee, screening or algorithmic-pricing rules.",
+  "rules": [],
+  "usage": {
+    "input_tokens": 6906,
+    "output_tokens": 233,
+    "cost_usd": 0.0161,
+    "seconds": 3.5
+  },
+  "errors": []
+}

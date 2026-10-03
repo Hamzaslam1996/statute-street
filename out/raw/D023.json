@@ -1,0 +1,41 @@
+{
+  "doc_id": "D023",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:48:50+00:00",
+  "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2",
+  "retrieved": "2026-10-01 22:35 UTC",
+  "source_type": "official",
+  "n_chunks": 1,
+  "document_summary": "Official text of California Civil Code § 1946.2 (Tenant Protection Act just-cause eviction), as amended by AB 1529 (2025), covering California statewide.",
+  "rules": [
+    {
+      "jurisdiction": "CA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "California Tenant Protection Act - just cause for termination",
+      "requirement": "After a tenant has continuously and lawfully occupied a unit for 12 months, the owner may terminate only for a stated at-fault or no-fault just cause. For no-fault terminations the owner must pay one month's rent as relocation assistance or waive the final month's rent.",
+      "key_value": "Just cause required after 12 months' occupancy; no-fault relocation = 1 month's rent (or waiver of final month's rent)",
+      "coverage_conditions": "Tenant has occupied for 12 months (or 24 months if an additional adult tenant was added before an existing tenant reached 24 months, unless all tenants have 12+ months or one has 24+ months). Applies to residential real property generally, except as exempted.",
+      "exemptions": "Transient/tourist hotels; nonprofit hospital, religious, extended-care and licensed care facilities; school dormitories; shared bathroom/kitchen with owner-occupant; owner-occupied single-family homes renting no more than two units or bedrooms; owner-occupied duplex; housing with a certificate of occupancy issued within the previous 15 years; separately alienable property (e.g. single-family home) not owned by a REIT, corporation or LLC with a corporate member, with written exemption notice; deed-restricted affordable housing; mobilehome owners.",
+      "interaction": "Does not apply to property covered by a local just-cause ordinance adopted on or before 2019-09-01, or a later local ordinance that is more protective (with a binding local finding); property is never subject to both. A less protective local ordinance adopted after 2019-09-01 is not enforced.",
+      "effective_date": "2024-04-01",
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Cal. Civ. Code § 1946.2",
+      "quoted_span": "(a) Notwithstanding any other law, after a tenant has continuously and lawfully occupied a residential real property for 12 months, the owner of the residential real property shall not terminate a tenancy without just cause, which shall be stated in the written notice to terminate tenancy.",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "Effective date taken from subd. (m): 'This section shall become operative on April 1, 2024.' The section as amended by AB 1529 (Stats. 2025, ch. 203) is stated to be effective 2026-01-01; it did not change the headline requirement, so the date was not reset to that. The original Tenant Protection Act start date is not stated in this text. The section is repealed as of 2030-01-01 by its own terms. Relocation notice must be given within the termination notice, and payment is due within 15 calendar days of service."
+    }
+  ],
+  "usage": {
+    "input_tokens": 13087,
+    "output_tokens": 1509,
+    "cost_usd": 0.0413,
+    "seconds": 10.3
+  },
+  "errors": []
+}

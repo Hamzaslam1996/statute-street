@@ -1,0 +1,41 @@
+{
+  "doc_id": "D064",
+  "model": "claude-sonnet-5-5",
+  "attempt": 1,
+  "extracted_at": "2026-10-03T20:53:27+00:00",
+  "source_url": "https://law.justia.com/codes/new-jersey/title-46/section-46-8-26/",
+  "retrieved": "2026-10-03 18:52 UTC",
+  "source_type": "secondary (law firm / news / mirror)",
+  "n_chunks": 1,
+  "document_summary": "Justia mirror of N.J.S.A. 46:8-26, the scope provision of New Jersey's security deposit act, which says which rental premises the act covers.",
+  "rules": [
+    {
+      "jurisdiction": "NJ",
+      "level": "state",
+      "category": "security_deposits",
+      "status": "in_force",
+      "title": "NJ Security Deposit Act: application of act",
+      "requirement": "The state security deposit act applies to all rental premises or units used for dwelling purposes. Owner-occupied premises with not more than two rental units are covered only where the tenant gives the landlord 30 days written notice invoking the act.",
+      "key_value": "Applies to all dwelling rentals; owner-occupied premises with not more than two rental units only after 30 days written tenant notice",
+      "coverage_conditions": "All rental premises or units used for dwelling purposes.",
+      "exemptions": "Owner-occupied premises with not more than two rental units where the tenant has failed to provide 30 days written notice to the landlord invoking the act.",
+      "interaction": null,
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "N.J.S.A. 46:8-26",
+      "quoted_span": "The provisions of this act shall apply to all rental premises or units used for dwelling purposes except owner-occupied premises with not more than two rental units where the tenant has failed to provide 30 days written notice to the landlord invoking the provisions of this act.",
+      "confidence": 0.7,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "extraction_notes": "This is a scope section only. The deposit cap, interest and return rules are in other sections (46:8-19 et seq.) and are not in this document. Effective date set to null: the only dates are in the history note (L.1967, c. 265, eff. Jan. 1, 1968, with later amendments), which I did not treat as a stated effective date for the requirement. Secondary mirror (Justia, 2025 version) with a disclaimer that it may not be current."
+    }
+  ],
+  "usage": {
+    "input_tokens": 10081,
+    "output_tokens": 994,
+    "cost_usd": 0.0301,
+    "seconds": 7.5
+  },
+  "errors": []
+}
