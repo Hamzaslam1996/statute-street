@@ -2,18 +2,42 @@
   "doc_id": "D051",
   "model": "claude-sonnet-5-5",
   "attempt": 1,
-  "extracted_at": "2026-10-03T20:52:13+00:00",
+  "extracted_at": "2026-10-03T21:16:53+00:00",
   "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section12",
   "retrieved": "2026-10-01 22:37 UTC",
   "source_type": "official",
   "n_chunks": 1,
-  "document_summary": "Massachusetts G.L. c. 186, § 12, the notice requirements for ending a tenancy at will (three months' notice, or 14 days' notice for nonpayment with a 10-day cure right). It sets no rent cap, just-cause standard, deposit, screening or algorithmic-pricing rule.",
-  "rules": [],
+  "document_summary": "Massachusetts General Laws c. 186, § 12, setting notice periods to terminate a tenancy at will (three months' notice, or 14 days for nonpayment of rent), with a right to cure within ten days.",
+  "rules": [
+    {
+      "jurisdiction": "MA",
+      "level": "state",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "M.G.L. c. 186 § 12 - Notice to determine estate at will",
+      "requirement": "A tenancy at will may be ended by either party with three months' written notice (or the rent interval/30 days if longer), or by 14 days' notice to quit for nonpayment of rent, subject to a one-time-per-12-months right to cure within ten days.",
+      "key_value": "3 months' written notice; 14 days' notice for nonpayment",
+      "coverage_conditions": "Tenancies at will.",
+      "exemptions": null,
+      "interaction": null,
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "M.G.L. c. 186, § 12",
+      "quoted_span": "Estates at will may be determined by either party by three months' notice in writing for that purpose given to the other party;",
+      "confidence": 0.9,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "out_of_scope": true,
+      "out_of_scope_reason": "General notice-to-quit period, not a limit on grounds for eviction; excluded from just-cause scope.",
+      "extraction_notes": "No effective date stated in the source text. Massachusetts has no statewide just-cause eviction statute; this section is only a notice-to-quit provision."
+    }
+  ],
   "usage": {
-    "input_tokens": 6123,
-    "output_tokens": 462,
-    "cost_usd": 0.0169,
-    "seconds": 5.6
+    "input_tokens": 6642,
+    "output_tokens": 524,
+    "cost_usd": 0.0185,
+    "seconds": 4.6
   },
   "errors": []
 }

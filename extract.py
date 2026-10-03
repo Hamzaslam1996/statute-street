@@ -146,6 +146,13 @@ RULE_PROPERTIES = {
                        "effective dates, possible preemption, litigation, etc.).",
     },
     "conflict_note": nullable("string"),
+    "out_of_scope": {
+        "type": "boolean",
+        "description": "true for a provision a reader might expect in the category but which the "
+                       "scope rules exclude (e.g. general notice-to-quit periods, anti-retaliation). "
+                       "Such records are logged, not published. false for ordinary rules.",
+    },
+    "out_of_scope_reason": nullable("string"),
     "extraction_notes": {
         **nullable("string"),
         "description": "Anything the reviewer should know: how a date was computed, last-amended "
@@ -181,7 +188,7 @@ Scope
 - Jurisdictions: the states of California (CA), New Jersey (NJ) and Massachusetts (MA), and the cities of Los Angeles, San Francisco, San Diego, Berkeley, Santa Ana (CA); Jersey City, Hoboken, Newark (NJ); Boston, Cambridge (MA). Ignore rules of any other state or city.
 - Categories (use these exact slugs only): {", ".join(CATEGORIES)}.
   * rent_increase_limits: caps or formulas on rent increases (rent control / stabilisation, anti-gouging caps), including annual allowable increase notices.
-  * just_cause_eviction: limits on the grounds for eviction or non-renewal, and attached relocation-assistance duties.
+  * just_cause_eviction: provisions that LIMIT THE GROUNDS for eviction or non-renewal, plus their relocation-assistance duties. Also in scope: LOCAL notice-of-rights ordinances tied to eviction or non-renewal (e.g. Boston's Housing Stability Notification Act, Cambridge ch. 8.71): title them starting "[notice-only]", key_value "Notice-of-rights requirement only; no just-cause protection", conflict_flag true. OUT of scope: general notice-to-quit periods (e.g. M.G.L. c. 186 §§ 11, 12) and anti-retaliation provisions (e.g. c. 186 § 18; Newark § 19:2-14): emit these with `out_of_scope` true and a one-line `out_of_scope_reason` so they are logged, not published.
   * security_deposits: limits on deposit amount, interest, holding and return.
   * application_screening_fees: caps on, or rules about, fees charged to rental applicants.
   * screening_restrictions: limits on what a landlord may consider about an applicant (criminal history, source of income / vouchers, credit, eviction history).
@@ -192,6 +199,7 @@ What counts as a rule (granularity)
 - Keep separate records only when they fall in a DIFFERENT category or carry a DIFFERENT key value that would change the answer for an address.
 - Relocation-assistance payments that follow a no-fault eviction belong in ONE just_cause_eviction record for that jurisdiction (amounts in `key_value` or `extraction_notes`), not one record per payment schedule.
 - Do not split a single cap and its exemptions into several records; put exemptions in `exemptions` and thresholds in `coverage_conditions`.
+- Rent control chapters in particular yield ONE rent_increase_limits record: the tenant-facing annual cap. Exemptions (e.g. new construction exempt for N years), one-off vacancy or rehabilitation increases, and ceilings on surcharges a rent board may grant (hardship, capital improvement) are coverage conditions or notes of that record, never separate records.
 - A document may yield zero rules (e.g. a navigation page or a document about another topic). Return an empty list rather than inventing anything.
 
 Negative findings

@@ -8,9 +8,6 @@ D002,1,Jersey City Code § 218-12,Jersey City ban on algorithmic rent coordinati
 D002,1,Hoboken City Code ch. 158-2,Hoboken ban on algorithmic rent coordination,True,100.0,"Prohibits landlords from using software, algorithms or data-sharing platforms to"
 D003,1,Berkeley Municipal Code ch. 13.106,Ronald V. Dellums Fair Chance Access to Housing Ordinance,True,100.0,The Fair Chance Access to Housing Ordinance prohibits rental housing providers i
 D004,1,Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Good Cause for Eviction Ordinance); Berkeley Ellis Implementation Ordinance (BMC ch. 13.77),Berkeley relocation assistance for owner move-in and Ellis Act evictions (2026 adjustment),True,100.0,"At its October 16, 2025 Special Meeting, the Rent Board approved relocation assi"
-D005,1,Cal. Civ. Code § 1950.6,California tenant screening fee cap (Civ. Code § 1950.6),True,100.0,The maximum tenant screening fee for 2026 is $68.96
-D005,1,BMC § 13.78.010,Notification of state law limitation on tenant screening fees (BMC 13.78.010),False,99.8,When an owner or the owner’s agent gets a request to rent residential property i
-D005,1,BMC § 13.78.016,Prohibition of non-refundable application fees for existing tenancies (BMC 13.78.016),True,100.0,An owner of residential rental property (or the owner’s agent) cannot charge a n
 D005,2,Cal. Civ. Code § 1950.6,California tenant screening fee cap (Civ. Code § 1950.6),True,100.0,"The maximum tenant screening fee for 2026 is
 $68.96"
 D005,2,BMC 13.78.010,Notification of state law limitation on tenant screening fees (BMC 13.78.010),True,100.0,When an owner or the owner’s agent gets a request to rent residential property i
@@ -25,10 +22,13 @@ D009,1,Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Go
 D009,1,Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance),Berkeley security deposit interest coverage,True,100.0,Most units in multifamily properties built before 1980** Fully Covered Yes Yes Y
 D010,1,Boston DND Fair Chance Tenant Selection Policy (Feb. 2017),Boston Fair Chance Tenant Selection Policy - criminal history,True,100.0,The Developer/Agent (Agent) agrees to not consider any of the following categori
 D010,1,Boston DND Fair Chance Tenant Selection Policy (Feb. 2017),Boston Fair Chance Tenant Selection Policy - credit,True,100.0,The agent agrees not to use the applicant credit score to approve or deny housin
-D011,1,"H.3744, 193rd Gen. Court (Mass. 2023-2024)",H.3744 Boston rent stabilization home-rule petition (not enacted),True,100.0,"By Representative Montaño of Boston, a petition (accompanied by bill, House, No."
-D011,1,"H.3744, 193rd Gen. Court (Mass. 2023-2024)",H.3744 Boston tenant eviction protections home-rule petition (not enacted),True,100.0,"By Representative Montaño of Boston, a petition (accompanied by bill, House, No."
+D011,1,"Mass. H.3744 (193rd General Court, 2023-2024)",H.3744 Boston rent stabilization home rule petition (not enacted),True,100.0,that the city of Boston be authorized to implement rent stabilization and tenant
+D011,1,"Mass. H.3744 (193rd General Court, 2023-2024)",H.3744 Boston tenant eviction protections home rule petition (not enacted),True,100.0,that the city of Boston be authorized to implement rent stabilization and tenant
 D012,1,"Boston Fair Housing Commission regulations; see also M.G.L. c. 151B, § 4(10)",Boston fair housing protection for renters using rental assistance,True,100.0,The landlord tells you they don't accept rental assistance. This includes Sectio
-D014,1,City of Boston Ordinances § 10-11.7 (Housing Stability Notification Act),Housing Stability Notification Act (Notice of Tenants' Rights and Resources),True,100.0,The HSNA requires that landlords give this Notice of Tenants’ Rights and Resourc
+D013,1,Boston Ordinances § 10-11.7 (Housing Stability Notification Act),[notice-only] Housing Stability Notification Act,True,100.0,"The Housing Stability Notification Act requires
+ALL LANDLORDS
+planning to end a "
+D014,1,Boston Municipal Code § 10-11.7 (Housing Stability Notification Act),[notice-only] Boston Housing Stability Notification Act,True,100.0,The HSNA requires that landlords give this Notice of Tenants’ Rights and Resourc
 D015,1,"Cal. Code Regs. tit. 2, § 12265 (Civil Rights Council regulations, eff. 2020-01-01)",Criminal history screening limits (Civil Rights Council regulations),True,100.0,"Blanket bans on applicants with a criminal record are prohibited, as are policie"
 D015,1,Cal. Gov. Code § 12955 (as amended by SB 329 (2019)),Source of income protection: 'No Section 8' policies prohibited (SB 329),True,100.0,"This change meant that, as of Jan. 1, 2020, state law prohibits landlords from r"
 D015,1,Cal. Gov. Code § 12955 (as amended by SB 267 (2023)),Credit history use for subsidy holders (SB 267),True,100.0,"In addition, last year’s [SB 267 amended FEHA](https://caanet.org/whats-new-in-r"
@@ -49,6 +49,7 @@ D028,1,Cal. Bus. & Prof. Code § 16729 (as amended by A.B. 325),Cartwright Act a
 D029,1,Cambridge Municipal Code ch. 14.04 (Fair Housing Ordinance),Cambridge Fair Housing Ordinance: source-of-income protection (incl. Section 8),True,100.0,The protected categories under the Cambridge Human Rights Ordinance and the Camb
 D030,1,"Cambridge City Council policy order (June 2026), directing city manager to draft ordinance language; no ordinance cited",Cambridge policy order initiating ban on algorithmic rent-setting services,True,100.0,City council also unanimously passed a policy order initiating steps to ban resi
 D030,1,"H.1564 and S.2983, 194th General Court of Massachusetts (pending bills)",Massachusetts bills banning algorithmic rent-setting (H.1564 / S.2983),True,100.0,Bills banning the practice in the rental market are also working their way throu
+D031,1,Cambridge Municipal Code ch. 8.71,[notice-only] Tenants Rights and Resources Notification Ordinance (Cambridge M.C. ch. 8.71),True,100.0,The Ordinance also requires that a landlord provide the Guide to tenants when le
 D033,1,"Hoboken, N.J., Code § 155-5",Hoboken Rent Control: cost-of-living increase cap (Code § 155-5),True,100.0,At the expiration of a lease or at the termination of a lease of a periodic tena
 D034,1,Hoboken City Code § 158-1 (Ord. No. B-750),Mandatory disclosures for rental increases over 10%,True,100.0,All residential landlords seeking to increase rent by more than 10% upon a renew
 D034,1,Hoboken City Code § 158-2 (Ord. No. B-781),Algorithmic rent fixing in rental housing market prohibited,True,100.0,Landlords who rent any residential dwelling unit (defined as any primary residen
@@ -74,9 +75,7 @@ D046,1,"Mass. S. 2983, 194th Gen. Ct. (2025-2026)",An Act prohibiting algorithmi
 D047,1,"Mass. Senate Bill S.2983, 194th General Court (2025-2026)",S.2983 An Act prohibiting algorithmic rent setting (bill),True,100.0,"The committee on Housing, to whom was referred the petitions (accompanied by bil"
 D048,1,"M.G.L. c. 40P, § 4","No local rent control permitted (state bar), G.L. c. 40P, § 4",True,100.0,"No city or town may enact, maintain or enforce rent control of any kind, except "
 D049,1,"M.G.L. c. 151B, § 4(10)","Source-of-income / housing subsidy discrimination ban (M.G.L. c. 151B, § 4(10))",True,100.0,"For any person furnishing credit, services or rental accommodations to discrimin"
-D050,1,"M.G.L. c. 186, § 11","Notice to quit for nonpayment of rent under written lease (M.G.L. c. 186, § 11)",True,100.0,"Upon the neglect or refusal to pay the rent due under a written lease, fourteen "
 D052,1,"M.G.L. c. 186, § 15B","Massachusetts security deposit limits and handling (M.G.L. c. 186, § 15B)",True,100.0,"(b) At or prior to the commencement of any tenancy, no lessor or agent of the le"
-D053,1,"M.G.L. c. 186, § 18","Tenant reprisal (retaliation) protection, M.G.L. c. 186, § 18",True,100.0,"The receipt of any notice of termination of tenancy, except for nonpayment of re"
 D054,1,"M.G.L. c. 186, § 15B; 254 C.M.R. 7","No application fees by landlords (M.G.L. c. 186, § 15B)",True,100.0,"It states that prior to the beginning of a tenancy, no lessor may require paymen"
 D057,1,"M.G.L. c. 112, § 87DDD½, as amended by St. 2025, c. 9, § 43",Broker fee payable only by the party who engaged the broker,True,100.0,"Any fee shall only be paid by the party, lessor or tenant who originally engaged"
 D059,1,"Mass. Const. amend. art. 48, The Initiative, Pt. II, § 2 (SJC ruling, June 2026)",2026 statewide rent control ballot question (struck by SJC),True,100.0,The state’s Supreme Judicial Court ruled a ballot question seeking to bring rent
@@ -100,14 +99,13 @@ D067,1,N.J.S.A. 2A:18-61.1 et seq.,NJ Anti-Eviction Statute (statutory grounds f
 D068,1,N.J.S.A. 10:5-12 (NJ Law Against Discrimination),NJ Law Against Discrimination: source of lawful income / rent payment protection,True,100.0,"The LAD also prohibits housing discrimination  based
 on the source of lawful inc"
 D069,1,"P.L. 2026, c.43 (C.56:9-20 to 56:9-26)",Forbidding the Algorithmic Inflation of Rent (FAIR) Act,True,100.0,"It shall be unlawful and a violation of the “New Jersey Antitrust Act,” P.L.1970"
-D070,1,"Newark, N.J. Code § 19:2-3.1; § 19:2-3.2","Newark Rent Control: CPI-based annual rent increase cap (§ 19:2-3.1, 19:2-3.2)",True,100.0,At the expiration of a lease or at the termination of the lease of a periodic te
-D070,1,"Newark, N.J. Rev. Gen. Ord. § 19:2-22",Newark Rent Control: 25% annual cap on rent increases,True,100.0,Since an immediate rent increase of more than 25% above the prior monthly rent m
-D070,1,"Newark, N.J. Rev. Gen. Ord. § 19:2-18.1",Newark Rent Control: new construction exemption from increase limits,True,100.0,"The provisions of the Rent Control Ordinance, which limit the periodic or regula"
-D070,1,"Newark, N.J. Rev. Gen. Ord. § 19:2-18.4",Newark Rent Control: rehabilitated vacant unit increase (10% max),True,100.0,Any landlord that rehabilitates a vacant apartment unit by spending a total amou
-D070,1,"Newark, N.J. Rev. Gen. Ord. § 19:2-14",Newark Rent Control: retaliatory eviction prohibited,True,100.0,No landlord shall bring any action to recover possession of a dwelling unit as a
+D070,1,"Newark, N.J. Code § 19:2-3.1",Newark Rent Control: annual CPI-based rent increase cap,True,100.0,At the expiration of a lease or at the termination of the lease of a periodic te
+D070,1,Newark Rev. Gen. Ord. § 19:2-22,Newark Rent Control - limitation on increases (25% ceiling) and exemptions,True,100.0,Since an immediate rent increase of more than 25% above the prior monthly rent m
 D072,1,"Newark Municipal Code § 2:31-1 to 2:31-9 (Ord. 6 PSF-B, 4-15-2015)",Newark Ban the Box - Housing (criminal record check practices),True,100.0,Inquiry into and consideration of any applicant's criminal history shall take pl
 D073,1,San Diego Municipal Code §§ 98.0701–98.0710,San Diego Residential Tenant Protections (just cause for termination of tenancy),True,100.0,A landlord shall not terminate a tenancy without just cause.
 D074,1,San Diego Municipal Code § 98.1103 (Ord. O-21955 N.S.),San Diego Prohibition of Anti-Competitive Automated Rent Price Fixing (SDMC §98.1103),True,100.0,(b) It is unlawful for a landlord to use an algorithmic device to set rental rat
+D075,1,San Diego Municipal Code §§ 98.0801-98.0806 (Ord. O-20986 N.S.),San Diego Prohibition of Discrimination Based on a Tenant's Source of Income,True,100.0,"It is unlawful for any person to do any of the following acts, wholly or in 
+par"
 D076,1,S.D. Mun. Code § 98.1103 (proposed; Ord. O-2025-107),Prohibition of Anti-Competitive Automated Rent Price-Fixing Ordinance (proposed SDMC Div. 11),True,100.0,"(a) It is unlawful for a person to sell, license, or otherwise provide an
 algori"
 D077,1,"San Diego Municipal Code ch. 9, art. 8, div. 7 (§§ 98.0701 et seq.)",San Diego Residential Tenant Protection Ordinance (just cause and relocation assistance),True,100.0,"The Ordinance goes into effect June 24, 2023."
@@ -128,19 +126,3 @@ D085,1,"Santa Ana Municipal Code, Rent Stabilization Ordinance (section number n
 D085,1,"Santa Ana Municipal Code, Just Cause Eviction Ordinance (section number not stated in source)",Santa Ana Just Cause Eviction Ordinance,True,100.0,"After 30 days, an owner shall not terminate a tenancy without just cause, which "
 D086,1,Santa Ana Municipal Code (algorithmic rent-setting ordinance; ordinance number not stated in source),Santa Ana ban on algorithmic rent-setting devices,True,100.0,"To protect renters, city leaders have approved a new ordinance that stops apartm"
 D087,1,"Santa Ana Municipal Code, algorithmic rent-setting software ordinance (ordinance number and section not stated in source)",Santa Ana ban on algorithmic rent-setting software,True,100.0,"The ordinance, approved on Tuesday, Feb. 17, for a first reading and set for a f"
-D009,-,Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance),Berkeley security deposit interest coverage,True,100.0,DUPLICATE of D007 Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance)
-D010,-,Boston DND Fair Chance Tenant Selection Policy (Feb. 2017),Boston Fair Chance Tenant Selection Policy - credit,True,100.0,DUPLICATE of D010 Boston DND Fair Chance Tenant Selection Policy (Feb. 2017)
-D017,-,Cal. Civ. Code § 1950.6,California application screening fee cap (Civ. Code § 1950.6),True,100.0,DUPLICATE of D005 Cal. Civ. Code § 1950.6
-D018,-,Cal. Civ. Code § 1946.2,California Tenant Protection Act – Just Cause Eviction (Civ. Code § 1946.2),True,100.0,DUPLICATE of D023 Cal. Civ. Code § 1946.2
-D019,-,Cal. Civ. Code § 1947.12,"California statewide rent cap (Tenant Protection Act, Civ. Code § 1947.12)",True,100.0,DUPLICATE of D024 Cal. Civ. Code § 1947.12
-D020,-,Cal. Civ. Code § 1950.5,California residential security deposit cap and handling rules (Civ. Code § 1950.5),True,100.0,DUPLICATE of D025 Cal. Civ. Code § 1950.5
-D005,-,Cal. Civ. Code § 1950.6,California tenant screening fee cap (Civ. Code § 1950.6),True,100.0,DUPLICATE of D026 Cal. Civ. Code § 1950.6
-D021,-,Cal. Gov. Code § 12955,FEHA source-of-income protections in rental housing (Gov. Code § 12955),True,100.0,DUPLICATE of D027 Cal. Gov. Code § 12955
-D037,-,S.F. Admin. Code § 37.10C,San Francisco ban on algorithmic rent-setting devices,True,100.0,DUPLICATE of D002 S.F. Admin. Code § 37.10C
-D037,-,San Diego Mun. Code §§ 98.1101–98.1104,San Diego ban on algorithmic rent-setting,True,100.0,DUPLICATE of D002 San Diego Mun. Code §§ 98.1101–98.1104
-D037,-,Berkeley Mun. Code ch. 13.63 (Ord. 7992),Berkeley ban on coordinated pricing algorithms,True,100.0,DUPLICATE of D002 Berkeley Mun. Code ch. 13.63 (Ord. 7992)
-D037,-,Santa Ana Ordinance No. NS-3090,Santa Ana Ordinance NS-3090 on automated rent price-fixing,True,100.0,DUPLICATE of D002 Santa Ana Ordinance No. NS-3090
-D037,-,Jersey City Code § 218-12,Jersey City ban on algorithmic rent coordination services,True,100.0,DUPLICATE of D002 Jersey City Code § 218-12
-D037,-,Hoboken City Code ch. 158-2,Hoboken ban on algorithmic rent coordination,True,100.0,DUPLICATE of D002 Hoboken City Code ch. 158-2
-D040,-,Cal. Civ. Code § 1947.12,California Tenant Protection Act of 2019 (AB 1482) rent cap,True,100.0,DUPLICATE of D024 Cal. Civ. Code § 1947.12
-D002,-,S.F. Admin. Code § 37.10C,San Francisco ban on algorithmic rent-setting devices,True,100.0,DUPLICATE of D081 S.F. Admin. Code § 37.10C

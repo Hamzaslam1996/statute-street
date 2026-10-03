@@ -1,14 +1,15 @@
 {
   "docs": 85,
-  "raw_records": 115,
-  "span_pass": 114,
-  "span_fail_first": 1,
-  "span_pass_after_retry": 3,
+  "raw_records": 113,
+  "out_of_scope": 5,
+  "span_pass": 113,
+  "span_fail_first": 0,
+  "span_pass_after_retry": 0,
   "dropped_span": 0,
   "dropped_schema": 0,
-  "dropped_duplicate": 16,
-  "retries": 1,
-  "final_rules": 99,
+  "dropped_duplicate": 48,
+  "retries": 0,
+  "final_rules": 65,
   "query_date": "2026-10-01",
-  "span_pass_rate_first_attempt": 0.991
+  "span_pass_rate_first_attempt": 1.0
 }

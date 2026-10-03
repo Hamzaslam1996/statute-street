@@ -2,40 +2,42 @@
   "doc_id": "D053",
   "model": "claude-sonnet-5-5",
   "attempt": 1,
-  "extracted_at": "2026-10-03T20:52:41+00:00",
+  "extracted_at": "2026-10-03T21:16:58+00:00",
   "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section18",
   "retrieved": "2026-10-01 22:37 UTC",
   "source_type": "official",
   "n_chunks": 1,
-  "document_summary": "Massachusetts General Laws c. 186, § 18, the state anti-reprisal statute for residential tenants, which makes retaliatory terminations, rent increases or changes in tenancy terms actionable and presumes reprisal for six months after protected activity.",
+  "document_summary": "Massachusetts General Laws c. 186, § 18, the state anti-retaliation statute protecting tenants who report code violations, enforce housing laws, or join tenants' unions (Massachusetts).",
   "rules": [
     {
       "jurisdiction": "MA",
       "level": "state",
       "category": "just_cause_eviction",
       "status": "in_force",
-      "title": "Tenant reprisal (retaliation) protection, M.G.L. c. 186, § 18",
-      "requirement": "A landlord or agent may not threaten or take reprisals against a tenant for enforcing housing laws, reporting code violations, or organizing or joining a tenants' union. A termination notice (other than for nonpayment), rent increase or substantial change in tenancy terms within six months after such activity is presumed to be a reprisal, rebuttable only by clear and convincing evidence.",
-      "key_value": "Rebuttable presumption of reprisal for notices within 6 months of protected activity; damages of 1 to 3 months' rent or actual damages, whichever is greater, plus costs and attorney's fees",
-      "coverage_conditions": "Tenants of residential premises; protected activity includes court or administrative actions to enforce housing laws, reports to a board of health or housing inspection, written complaints to the landlord, and tenants' union activity.",
-      "exemptions": "Termination notices for nonpayment of rent do not trigger the presumption.",
-      "interaction": "Not a general just-cause eviction law. It limits retaliatory terminations and rent increases only. Any lease waiver of the provision is void and unenforceable.",
+      "title": "M.G.L. c. 186, § 18 - Tenant reprisal (anti-retaliation) protection",
+      "requirement": "Landlords may not threaten or take reprisals against tenants for reporting violations, enforcing housing laws, or organizing a tenants' union; a termination notice or rent increase within six months of such activity is presumed to be a reprisal.",
+      "key_value": null,
+      "coverage_conditions": "Tenants of residential premises; six-month rebuttable presumption applies to notices of termination (except for nonpayment of rent), rent increases, or substantial alterations in tenancy terms.",
+      "exemptions": null,
+      "interaction": null,
       "effective_date": null,
       "adoption_date": null,
       "negative_finding": false,
       "citation": "M.G.L. c. 186, § 18",
-      "quoted_span": "The receipt of any notice of termination of tenancy, except for nonpayment of rent, or, of increase in rent, or, of any substantial alteration in the terms of tenancy within six months after the tenant has commenced, proceeded with, or obtained relief in such action, exercised such rights, made such report or complaint, or organized or joined such tenants' union or within six months after any other person has taken such action or actions on behalf of the tenant or in, or relating to, the building in which the tenant resides, shall create a rebuttable presumption that such notice or other action is a reprisal against the tenant for engaging in such activities.",
-      "confidence": 0.5,
+      "quoted_span": "Any waiver of this provision in any lease or other rental agreement shall be void and unenforceable.",
+      "confidence": 0.9,
       "conflict_flag": false,
       "conflict_note": null,
-      "extraction_notes": "Filed under just_cause_eviction as the closest category, since this anti-retaliation rule limits the grounds for termination. It is not a general just-cause statute. The effective date is null because the source gives no effective date and shows no session-law history."
+      "out_of_scope": true,
+      "out_of_scope_reason": "Anti-retaliation provision, not a limit on grounds for eviction; excluded from scope.",
+      "extraction_notes": "No effective date stated in the document text. Damages are one to three months' rent or actual damages plus costs and attorney's fees (penalty, not a key value)."
     }
   ],
   "usage": {
-    "input_tokens": 6180,
-    "output_tokens": 1962,
-    "cost_usd": 0.032,
-    "seconds": 14.5
+    "input_tokens": 6699,
+    "output_tokens": 556,
+    "cost_usd": 0.019,
+    "seconds": 4.6
   },
   "errors": []
 }

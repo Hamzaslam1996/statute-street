@@ -1,7 +1,9 @@
-SOURCE: https://ecode360.com/36637822
-RETRIEVED: 2026-10-03 18:53 UTC
-CAPTURED_VIA: Bright Data Web Unlocker (single page, team capture)
+SOURCE: https://ecode360.com/42427482
+RETRIEVED: 2026-10-03 21:11 UTC
+CAPTURED_VIA: Bright Data Web Unlocker (markdown; single page, team capture)
 SOURCE_TYPE: code publisher
+MANIFEST_URL: https://ecode360.com/36637822
+NOTE: recaptured: manifest page was the Chapter 2:10 table of contents; this is the section 2:10-11 (Unconscionable Rent Increase) node
 
 Chapter 2:10: Department of Economic and Housing Development - City of Newark, NJ                                                         [Skip to content](#page-content)
 
@@ -35,7 +37,7 @@ Zoning
 
  search
 
-[Login](/user/login/NE4043?url=%2F36637822)
+[Login](/user/login/NE4043?url=%2F42427482)
 
 [City of Newark, NJ](/NE4043/home "City of Newark, NJ Home") chevron\_right chevron\_right [Title II Administration](/37745527 "Title II Administration") chevron\_right [Ch 2:10 Department of Economic and Housing Development](/36637822 "Ch 2:10 Department of Economic and Housing Development")
 

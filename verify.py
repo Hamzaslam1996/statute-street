@@ -37,11 +37,14 @@ from jsonschema import Draft202012Validator
 from rapidfuzz import fuzz
 
 from common import (DEFAULT_QUERY_DATE, OUT, RAW_DIR, SCHEMA_JSON, Doc,
-                    list_docs, normalise, normalise_citation)
+                    has_sections, list_docs, normalise, normalise_citation,
+                    sections_match, source_rank)
 
 RULES_JSON = OUT / "rules.json"
 VERIFY_CSV = OUT / "verify_log.csv"
 SUMMARY_JSON = OUT / "verify_summary.json"
+DEDUPE_CSV = OUT / "dedupe_log.csv"
+OUT_OF_SCOPE_CSV = OUT / "out_of_scope_log.csv"
 
 # Confidence ceiling for records whose only support is a secondary source.
 SECONDARY_CONFIDENCE_CAP = 0.7
@@ -110,8 +113,8 @@ def compute_status(rec: dict, query: date) -> tuple[str, str | None]:
         if days < 0:
             return "not_yet_effective", None
         if days <= 60:
-            return "in_force", (f"Adopted {adopted[0]} (within 60 days of the query date) and no effective "
-                                f"date stated; status uncertain, treat as unknown.")
+            return "in_force", ("Adopted within 60 days of query date; treat as unknown pending "
+                                "confirmation of effective date")
         return "in_force", None
 
     if not eff:
@@ -179,27 +182,75 @@ def build_record(raw: dict, doc: Doc, query: date) -> dict:
     }
 
 
-def dedupe(records: list[dict]) -> tuple[list[dict], list[tuple[dict, dict]]]:
+ENACTED = ("in_force", "not_yet_effective")
+
+
+def same_rule(a: dict, b: dict) -> str | None:
     """
-    Keep one record per (jurisdiction, category, citation). Prefer official
-    sources, then higher confidence. Returns (kept, [(dropped, kept_instead)]).
+    Are two records in the same jurisdiction + category the same rule?
+    Returns the reason, or None. (Hamza ruling 2026-10-04 #1, with two guards
+    found by testing: similarity alone never merges two DIFFERENT section
+    numbers, and citations with no section number at all compare at >= 75.)
     """
-    kept: dict[tuple, dict] = {}
-    dropped = []
-    for r in records:
-        key = ((r["jurisdiction"] or "").lower(), r["category"], normalise_citation(r["citation"]))
-        if key not in kept:
-            kept[key] = r
+    ca, cb = a["citation"] or "", b["citation"] or ""
+    if sections_match(ca, cb):
+        return "same section"
+    sim = fuzz.token_set_ratio(normalise_citation(ca), normalise_citation(cb))
+    if has_sections(ca) and has_sections(cb):
+        return None  # two distinct provisions (e.g. BMC 13.78.010 vs 13.78.016)
+    # At least one citation has no section number (news / agency summaries): compare
+    # the citation wording, and failing that the title + key value.
+    if not has_sections(ca) and not has_sections(cb) and sim >= 75:
+        return f"citation similarity {sim:.0f} (no section numbers)"
+    if sim >= 85:
+        return f"citation similarity {sim:.0f}"
+    kv = fuzz.token_set_ratio(normalise(f"{a['title']} {a['key_value'] or ''}").lower(),
+                              normalise(f"{b['title']} {b['key_value'] or ''}").lower())
+    if kv >= 80:
+        return f"title/key-value similarity {kv:.0f} (citation lacks section number)"
+    return None
+
+
+def dedupe(records: list[dict]) -> tuple[list[dict], list[dict]]:
+    """
+    Second-pass merge. Within each jurisdiction + category bucket, records are
+    taken best-source-first (official statute > agency page > code publisher >
+    secondary; then enacted before proposals; then confidence). Each record is
+    compared with the records already kept in that bucket; if it is the same
+    rule it is folded in: its doc id goes to `supporting_doc_ids` and the
+    merge is logged. A proposal is always folded into the enacted version.
+    Returns (kept, merge_log_rows).
+    """
+    order = sorted(records, key=lambda r: (r["_rank"], r["status"] not in ENACTED,
+                                           -(r["confidence"] or 0)))
+    buckets: dict[tuple, list[dict]] = {}
+    log = []
+    for r in order:
+        key = ((r["jurisdiction"] or "").lower(), r["category"])
+        kept_here = buckets.setdefault(key, [])
+        target, reason = None, None
+        for k in kept_here:
+            reason = same_rule(k, r)
+            if reason:
+                target = k
+                break
+        if target is None:
+            r.setdefault("supporting_doc_ids", [])
+            kept_here.append(r)
             continue
-        cur = kept[key]
-        better = ((not r["_secondary"], r["confidence"] or 0) >
-                  (not cur["_secondary"], cur["confidence"] or 0))
-        if better:
-            dropped.append((cur, r))
-            kept[key] = r
-        else:
-            dropped.append((r, cur))
-    return list(kept.values()), dropped
+        # fold r into target
+        if r["status"] == "pending" and target["status"] in ENACTED:
+            reason += "; proposal folded into enacted rule"
+            note = f"Proposal ({r['citation']}, {r['source_doc_id']}) adopted as {target['citation']}."
+            target["notes"] = f"{target['notes'] or ''} {note}".strip()
+        if r["source_doc_id"] not in target["supporting_doc_ids"]:
+            target["supporting_doc_ids"].append(r["source_doc_id"])
+        log.append({"kept_doc": target["source_doc_id"], "kept_citation": target["citation"],
+                    "dropped_doc": r["source_doc_id"], "dropped_citation": r["citation"],
+                    "dropped_status": r["status"], "jurisdiction": r["jurisdiction"],
+                    "category": r["category"], "reason": reason})
+    kept = [r for rs in buckets.values() for r in rs]
+    return kept, log
 
 
 # ---------------------------------------------------------------------------
@@ -222,8 +273,8 @@ def main() -> int:
         print("No raw output in out/raw/. Run extract.py first.", file=sys.stderr)
         return 1
 
-    log_rows, candidates = [], []
-    counts = {"docs": 0, "raw_records": 0, "span_pass": 0, "span_fail_first": 0,
+    log_rows, candidates, out_of_scope_rows = [], [], []
+    counts = {"docs": 0, "raw_records": 0, "out_of_scope": 0, "span_pass": 0, "span_fail_first": 0,
               "span_pass_after_retry": 0, "dropped_span": 0, "dropped_schema": 0,
               "dropped_duplicate": 0, "retries": 0}
 
@@ -247,6 +298,13 @@ def main() -> int:
             return good, bad
 
         records = raw.get("rules", [])
+        # Provisions the model flagged as adjacent-but-outside a category (notice-to-quit
+        # periods, anti-retaliation) are logged for the judges, not published.
+        for r in [r for r in records if r.get("out_of_scope")]:
+            out_of_scope_rows.append({"doc_id": doc.doc_id, "jurisdiction": r.get("jurisdiction"),
+                                      "category": r.get("category"), "citation": r.get("citation"),
+                                      "title": r.get("title"), "reason": r.get("out_of_scope_reason")})
+        records = [r for r in records if not r.get("out_of_scope")]
         counts["raw_records"] += len(records)
         good, bad = check(records, attempt=raw.get("attempt", 1))
         counts["span_pass"] += len(good)
@@ -268,10 +326,20 @@ def main() -> int:
 
         for r in good:
             rec = build_record(r, doc, query)
-            rec["_secondary"] = doc.is_secondary
+            rec["_rank"] = source_rank(doc)
             candidates.append(rec)
 
-    kept, dropped_dups = dedupe(candidates)
+    kept, merge_log = dedupe(candidates)
+    with open(DEDUPE_CSV, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=["kept_doc", "kept_citation", "dropped_doc", "dropped_citation",
+                                          "dropped_status", "jurisdiction", "category", "reason"])
+        w.writeheader()
+        w.writerows(merge_log)
+    with open(OUT_OF_SCOPE_CSV, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=["doc_id", "jurisdiction", "category", "citation", "title", "reason"])
+        w.writeheader()
+        w.writerows(out_of_scope_rows)
+    counts["out_of_scope"] = len(out_of_scope_rows)
 
     # TODO (Hamza ruling 2026-10-04, #3): cross-rule conflict pass after extraction.
     # Where a state rule's `interaction` contains preemption language ("preempt",
@@ -279,17 +347,13 @@ def main() -> int:
     # same category within that state, set conflict_flag on both and cross-reference
     # them in conflict_note / overrides. Example: NJ FAIR Act vs Jersey City and
     # Hoboken algorithmic-rent ordinances (README T3).
-    counts["dropped_duplicate"] = len(dropped_dups)
-    for d, k in dropped_dups:
-        log_rows.append({"doc_id": d["source_doc_id"], "attempt": "-", "citation": d["citation"],
-                         "title": d["title"], "span_ok": True, "fuzzy_score": 100.0,
-                         "span_preview": f"DUPLICATE of {k['source_doc_id']} {k['citation']}"})
+    counts["dropped_duplicate"] = len(merge_log)
 
     # Stable ordering and ids, then schema validation.
     kept.sort(key=lambda r: ((r["jurisdiction"] or ""), r["category"], (r["citation"] or "")))
     final = []
     for i, rec in enumerate(kept, start=1):
-        rec.pop("_secondary", None)
+        rec.pop("_rank", None)
         rec["team_rule_id"] = f"r-{i:04d}"
         errors = sorted(validator.iter_errors(rec), key=lambda e: list(e.path))
         if errors:
@@ -318,8 +382,9 @@ def main() -> int:
     print(f"Quote check: {counts['span_pass']} passed, {counts['span_fail_first']} failed on first attempt"
           + (f"; {counts['retries']} doc(s) retried, {counts['span_pass_after_retry']} passed after retry"
              if counts["retries"] else ""))
-    print(f"Dropped: {counts['dropped_span']} bad quote, {counts['dropped_duplicate']} duplicate, "
-          f"{counts['dropped_schema']} schema")
+    print(f"Dropped: {counts['dropped_span']} bad quote, {counts['dropped_duplicate']} merged as duplicates "
+          f"(see {DEDUPE_CSV.name}), {counts['dropped_schema']} schema, "
+          f"{counts['out_of_scope']} out of scope (see {OUT_OF_SCOPE_CSV.name})")
     print(f"Final rules: {len(final)} -> {RULES_JSON}")
     return 0
 

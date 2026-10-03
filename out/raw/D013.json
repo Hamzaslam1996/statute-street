@@ -2,18 +2,42 @@
   "doc_id": "D013",
   "model": "claude-sonnet-5-5",
   "attempt": 1,
-  "extracted_at": "2026-10-03T20:47:13+00:00",
+  "extracted_at": "2026-10-03T21:16:38+00:00",
   "source_url": "https://www.boston.gov/housing-stability-notification-act",
   "retrieved": "2026-10-01 22:35 UTC",
   "source_type": "official",
   "n_chunks": 1,
-  "document_summary": "Boston.gov page describing the City of Boston's Housing Stability Notification Act, which requires landlords to give tenants a Notice of Tenants' Rights and Resources and notify the City when ending a tenancy; it sets no rent, deposit, screening, algorithmic or just-cause rule in the scoped categories.",
-  "rules": [],
+  "document_summary": "Official Boston.gov page describing the Housing Stability Notification Act (Boston Ordinance Sec. 10-11.7), which requires landlords to give tenants a Notice of Tenants' Rights and Resources and notify the City when ending a tenancy in Boston, MA.",
+  "rules": [
+    {
+      "jurisdiction": "Boston, MA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "[notice-only] Housing Stability Notification Act",
+      "requirement": "Any landlord planning to end a tenancy must give the tenant a Notice of Tenants' Rights and Resources together with the notice to quit or notice of non-renewal, and must submit the notice and tenant contact information to the City through an online portal.",
+      "key_value": "Notice-of-rights requirement only; no just-cause protection",
+      "coverage_conditions": "All landlords (and foreclosing owners for the City submission) planning to end a tenancy agreement in Boston.",
+      "exemptions": null,
+      "interaction": "Notice-only ordinance that does not limit the grounds for eviction or non-renewal; a violation does not halt the eviction process.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Boston Ordinances § 10-11.7 (Housing Stability Notification Act)",
+      "quoted_span": "The Housing Stability Notification Act requires\nALL LANDLORDS\nplanning to end a tenancy agreement to provide the tenant with a Notice of Tenants’ Rights and Resources.",
+      "confidence": 0.9,
+      "conflict_flag": true,
+      "conflict_note": "Notice-of-rights ordinance only; it provides no just-cause protection and should not be read as limiting grounds for eviction.",
+      "out_of_scope": false,
+      "out_of_scope_reason": null,
+      "extraction_notes": "Effective date not stated in this page (the page calls the act 'new' but gives no date), so effective_date is null. Enforcement: warning for the 1st offense, $300 per day for later offenses; a violation does not halt the eviction. Source is an official city summary page, not the ordinance text."
+    }
+  ],
   "usage": {
-    "input_tokens": 7550,
-    "output_tokens": 461,
-    "cost_usd": 0.0197,
-    "seconds": 4.7
+    "input_tokens": 8069,
+    "output_tokens": 710,
+    "cost_usd": 0.0232,
+    "seconds": 8.4
   },
   "errors": []
 }

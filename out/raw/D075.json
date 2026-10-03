@@ -2,18 +2,42 @@
   "doc_id": "D075",
   "model": "claude-sonnet-5-5",
   "attempt": 1,
-  "extracted_at": "2026-10-03T20:56:00+00:00",
-  "source_url": "https://gocodebook.com/library/us/ca/san-diego-zoning/division-8-prohibition-of-discrimination-based-on-a-tenant-s-source-of-income",
-  "retrieved": "2026-10-03 18:53 UTC",
-  "source_type": "code publisher",
+  "extracted_at": "2026-10-03T21:18:05+00:00",
+  "source_url": "https://docs.sandiego.gov/municode/municodechapter09/ch09art08division08.pdf",
+  "retrieved": "2026-10-03 21:16 UTC",
+  "source_type": "official",
   "n_chunks": 1,
-  "document_summary": "A GoCodebook table-of-contents page for the San Diego Municipal Code that lists division and section titles but contains no text of any rental-housing rule (the requested source-of-income division is not reproduced).",
-  "rules": [],
+  "document_summary": "San Diego Municipal Code Chapter 9, Article 8, Division 8 (§§98.0801-98.0806), which prohibits housing discrimination based on a tenant's source of income, including rental assistance and vouchers, in the City of San Diego.",
+  "rules": [
+    {
+      "jurisdiction": "San Diego, CA",
+      "level": "city",
+      "category": "screening_restrictions",
+      "status": "in_force",
+      "title": "San Diego Prohibition of Discrimination Based on a Tenant's Source of Income",
+      "requirement": "Landlords may not refuse to enter into or renew a tenancy, terminate a tenancy, or apply income standards that ignore a tenant's entire source of income, including rental assistance and vouchers, based on source of income. Income standards must account for aggregate income of co-tenants and cosigners on the same basis as married persons.",
+      "key_value": "Ban on source-of-income discrimination (includes federal, state, local or nonprofit rental assistance and subsidies)",
+      "coverage_conditions": "Applies to rental-units and tenancies in the City of San Diego as defined in Municipal Code section 98.0720.",
+      "exemptions": "Does not apply where the owner or a family member resides in the same residential building and shares a bathroom or kitchen facility with the tenant or prospective tenant (§98.0804). Acts necessary to comply with program requirements related to source of income are excepted.",
+      "interaction": "Defines source of income more broadly than the California FEHA definition; landlords keep the right to reject applicants for other lawful reasons consistent with federal, state and local law.",
+      "effective_date": "2018-10-18",
+      "adoption_date": "2018-09-18",
+      "negative_finding": false,
+      "citation": "San Diego Municipal Code §§ 98.0801-98.0806 (Ord. O-20986 N.S.)",
+      "quoted_span": "It is unlawful for any person to do any of the following acts, wholly or in \npart, based on a person’s source of income  (except as may be necessary to \ncomply with any program requirements related to source of income ):",
+      "confidence": 0.93,
+      "conflict_flag": false,
+      "conflict_note": null,
+      "out_of_scope": false,
+      "out_of_scope_reason": null,
+      "extraction_notes": "Division added 9-18-2018 by O-20986 N.S.; effective 10-18-2018. Remedies (§98.0806) include treble one month's rent in damages for violations on or after August 1, 2019, plus injunction and fees; not used as key value."
+    }
+  ],
   "usage": {
-    "input_tokens": 18425,
-    "output_tokens": 82,
-    "cost_usd": 0.0377,
-    "seconds": 2.4
+    "input_tokens": 7940,
+    "output_tokens": 816,
+    "cost_usd": 0.024,
+    "seconds": 6.1
   },
   "errors": []
 }

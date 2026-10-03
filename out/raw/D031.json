@@ -2,18 +2,42 @@
   "doc_id": "D031",
   "model": "claude-sonnet-5-5",
   "attempt": 1,
-  "extracted_at": "2026-10-03T20:49:34+00:00",
+  "extracted_at": "2026-10-03T21:16:44+00:00",
   "source_url": "https://www.cambridgema.gov/tenantrights",
   "retrieved": "2026-10-01 22:36 UTC",
   "source_type": "official",
   "n_chunks": 1,
-  "document_summary": "Cambridge, MA city webpage describing the Tenants Rights and Resources Notification Ordinance (Chapter 8.71), which requires landlords to give tenants an informational guide at the start and end of a tenancy; it sets no rent, eviction-ground, deposit, screening-fee, screening or algorithmic-pricing rules.",
-  "rules": [],
+  "document_summary": "Official City of Cambridge, MA web page describing the Tenants Rights and Resources Notification Ordinance (Cambridge Municipal Code ch. 8.71), which requires landlords to give tenants a rights-and-resources guide at the start of a tenancy and when termination steps are taken.",
+  "rules": [
+    {
+      "jurisdiction": "Cambridge, MA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "[notice-only] Tenants Rights and Resources Notification Ordinance (Cambridge M.C. ch. 8.71)",
+      "requirement": "Owners, landlords and management companies must give tenants the city's rights-and-resources Guide at the start of a tenancy and when legal steps to terminate a tenancy are taken (e.g., Notice to Quit or Summary Process). The ordinance does not limit the grounds for eviction.",
+      "key_value": "Notice-of-rights requirement only; no just-cause protection",
+      "coverage_conditions": "Applies to residential rental agreements, including a single residential dwelling unit and tenants at will; Guide required at lease signing or first month's rent tender for new tenancies, and when termination steps are taken; not required at each renewal.",
+      "exemptions": "Rental units in a hospital, skilled nursing facility or health facility, or in a non-profit facility whose primary purpose is short-term assistance, treatment or therapy for alcohol, drug or other substance abuse; Short Term Rental Units under Cambridge Zoning Ordinance Art. 4, Sec. 4.60.",
+      "interaction": "Does not restrict eviction actions otherwise allowed by state law; it is a notice requirement layered on state eviction procedure.",
+      "effective_date": null,
+      "adoption_date": null,
+      "negative_finding": false,
+      "citation": "Cambridge Municipal Code ch. 8.71",
+      "quoted_span": "The Ordinance also requires that a landlord provide the Guide to tenants when legal steps to terminate a tenancy are taken (ex. Notice to Quit or Summary Process).",
+      "confidence": 0.9,
+      "conflict_flag": true,
+      "conflict_note": "Notice-only ordinance; it provides no just-cause or non-renewal limits, so it should not be read as just-cause eviction protection.",
+      "out_of_scope": false,
+      "out_of_scope_reason": null,
+      "extraction_notes": "Web page summary of the ordinance; no adoption or effective date stated in this capture (page posted 10/14/2020, last modified 3/17/2025, which are not effective dates). Violation fine of $300 per day omitted from key value."
+    }
+  ],
   "usage": {
-    "input_tokens": 6906,
-    "output_tokens": 233,
-    "cost_usd": 0.0161,
-    "seconds": 3.5
+    "input_tokens": 7425,
+    "output_tokens": 867,
+    "cost_usd": 0.0235,
+    "seconds": 6.5
   },
   "errors": []
 }

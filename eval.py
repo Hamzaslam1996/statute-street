@@ -41,10 +41,18 @@ def pick_gold(explicit: str | None) -> tuple[Path, str]:
     """Prefer the independent gold set if it exists, else the silver AI draft."""
     if explicit:
         return Path(explicit), "custom"
-    dev = GOLD_DIR / "rules" / "dev.json"
+    dev = GOLD_DIR / "rules" / "dev.json"   # never gold/rules/test.json (Hamza ruling #7)
     if dev.exists():
-        return dev, "gold (independent)"
+        return dev, "gold (independent, dev split)"
     return GOLD_DIR / "gold_rules.json", "SILVER (AI draft, unverified)"
+
+
+def load_gold(path: Path) -> list[dict]:
+    data = json.loads(path.read_text(encoding="utf-8"))
+    rules = data["rules"] if isinstance(data, dict) else data
+    for g in rules:  # the independent set names its doc list differently
+        g.setdefault("source_doc_ids", g.get("corpus_doc_ids") or [])
+    return rules
 
 
 def cite_score(a: str, b: str) -> float:
@@ -78,17 +86,25 @@ def main() -> int:
     if not gold_path.exists():
         print(f"No gold file at {gold_path}", file=sys.stderr)
         return 1
-    gold_all = json.loads(gold_path.read_text(encoding="utf-8"))["rules"]
+    gold_all = load_gold(gold_path)
     ours = json.loads(Path(args.rules).read_text(encoding="utf-8"))["rules"]
+    # Derived negative findings live in negatives.json (some lack a quote, so are
+    # not in rules.json); score them too, without double counting.
+    neg_path = OUT / "negatives.json"
+    if neg_path.exists():
+        have = {o["team_rule_id"] for o in ours}
+        ours += [o for o in json.loads(neg_path.read_text(encoding="utf-8"))["negatives"]
+                 if o["team_rule_id"] not in have]
     summary = json.loads(SUMMARY_JSON.read_text()) if SUMMARY_JSON.exists() else {}
 
-    extracted_docs = {r["source_doc_id"] for r in ours}
+    extracted_docs = {r["source_doc_id"] for r in ours if r.get("source_doc_id")}
     # Which documents did we run? Use the raw cache, not just the surviving rules.
     raw_docs = {p.stem for p in (OUT / "raw").glob("D*.json") if ".attempt" not in p.name}
     extracted_docs |= raw_docs
 
     def in_scope(g: dict) -> bool:
-        return any(d in extracted_docs for d in g.get("source_doc_ids", []))
+        docs = g.get("source_doc_ids") or []
+        return not docs or any(d in extracted_docs for d in docs)
 
     gold_pos = [g for g in gold_all if not g.get("negative_finding")]
     gold_neg = [g for g in gold_all if g.get("negative_finding")]
