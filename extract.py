@@ -146,6 +146,15 @@ RULE_PROPERTIES = {
                        "effective dates, possible preemption, litigation, etc.).",
     },
     "conflict_note": nullable("string"),
+    "record_role": {
+        "type": "string",
+        "enum": ["headline", "supplementary"],
+        "description": "'headline' for the rule itself. 'supplementary' for a section that only sets the "
+                       "scope, exemptions, definitions, or a ceiling/exception for a headline rule that "
+                       "lives in another section of the same act or chapter (e.g. 'application of act', "
+                       "a board's surcharge ceiling). Supplementary records are folded into the headline "
+                       "record when one exists.",
+    },
     "out_of_scope": {
         "type": "boolean",
         "description": "true for a provision a reader might expect in the category but which the "
@@ -199,7 +208,8 @@ What counts as a rule (granularity)
 - Keep separate records only when they fall in a DIFFERENT category or carry a DIFFERENT key value that would change the answer for an address.
 - Relocation-assistance payments that follow a no-fault eviction belong in ONE just_cause_eviction record for that jurisdiction (amounts in `key_value` or `extraction_notes`), not one record per payment schedule.
 - Do not split a single cap and its exemptions into several records; put exemptions in `exemptions` and thresholds in `coverage_conditions`.
-- Rent control chapters in particular yield ONE rent_increase_limits record: the tenant-facing annual cap. Exemptions (e.g. new construction exempt for N years), one-off vacancy or rehabilitation increases, and ceilings on surcharges a rent board may grant (hardship, capital improvement) are coverage conditions or notes of that record, never separate records.
+- Rent control chapters in particular yield ONE rent_increase_limits record: the tenant-facing annual cap. Exemptions (e.g. new construction exempt for N years), one-off vacancy or rehabilitation increases, and ceilings on surcharges a rent board may grant (hardship, capital improvement; e.g. Newark § 19:2-22's 25% ceiling on board-granted increases) are coverage conditions or notes of that record, never separate records. If the document contains only such a provision and not the headline cap itself, emit it with `record_role` "supplementary" so it can be folded into the headline record extracted from another document.
+- Likewise a section that only states the scope or exemptions of an act (e.g. N.J.S.A. 46:8-26 "application of act": owner-occupied buildings of two or fewer units, seasonal rentals) is `record_role` "supplementary" to the act's headline rule, with the exemptions in `exemptions`.
 - A document may yield zero rules (e.g. a navigation page or a document about another topic). Return an empty list rather than inventing anything.
 
 Negative findings
@@ -211,7 +221,7 @@ Negative findings
 - Bills that have not been enacted are `pending`. Measures that were defeated, vetoed, or struck down by a court are `failed`. Enacted laws are `in_force` or `not_yet_effective` depending on whether their effective date is on or before the query date {DEFAULT_QUERY_DATE}.
 - `effective_date` means the date the specific extracted requirement first took effect. If a later amendment changed the key value itself (e.g. a lower cap), use the amendment date instead, and record the amendment in `extraction_notes` (e.g. "as amended by SB 567, eff. 2024-04-01"). A re-enactment that kept the same requirement does NOT reset the date.
 - Record effective dates as precisely as the text allows. If the text says the act takes effect a set time after enactment and gives the enactment date, compute the date and say how in `extraction_notes`.
-- Never infer an effective date from amendment history, legislative history notes, or the citations at the end of a statute (e.g. "L.1971,c.223; amended 2003, c.188"). If the text does not state when the requirement took effect, return null and explain in `extraction_notes`.
+- Never compute an effective date from a chapter number or enactment year alone (e.g. "L.1971,c.223; amended 2003, c.188" gives NO date). But a history note, bill page or agency text that EXPLICITLY states an effective or operative date (e.g. "Added by Stats. 2019, Ch. 597 (AB 1482), effective January 1, 2020", "This act shall take effect January 1, 2020", "went into effect on October 14, 2024") IS a stated date and may be used, subject to the rule above about which date governs. If no such statement exists, return null and explain in `extraction_notes`.
 - Only text saying a provision "takes effect", "becomes operative", is "effective" or "operative" on a date counts as an effective date. Look-back, application or "applies to increases on or after" dates are NOT effective dates (they say what the rule reaches, not when it started). An enacted section in the official code with no stated effective date is still `in_force`.
 - Local ordinances that state only an adoption date (e.g. "Adopted 7-9-2025 by Ord. No. B-781"): set `adoption_date` to the full date, set `effective_date` to the adoption MONTH (YYYY-MM), and add to `extraction_notes`: "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication)." (adapt the state name).
 - If a document states an explicit effective date for a CHANGE to the key value (e.g. "Effective February 2, 2026, the landlord can no longer include ..."), that date is the record's `effective_date` (the amendment exception above).

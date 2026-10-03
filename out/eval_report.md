@@ -1,37 +1,37 @@
 # Module A evaluation
 
 Gold set: `gold/rules/dev.json` — gold (independent, dev split)  
-Our rules: 62 from 85 extracted document(s)  
+Our rules: 60 from 85 extracted document(s)  
 Gold rules in scope (source doc extracted): 39 of 40 positive, 21 of 21 negative findings
 
 | Metric | Value |
 |---|---|
 | Found (recall) | 39/39 = 100% (3 by jurisdiction+category only, marked †) |
 | Missed | 0 |
-| Extra (no gold match) | 23 |
+| Extra (no gold match) | 21 |
 | Extra colliding with a negative finding | 0 |
 | Negative findings found / missed / extra | 21 / 0 / 14 |
 | Status agrees | 39/39 = 100% |
-| Effective date exact / same year | 12/39 = 31% / 12/39 |
+| Effective date agrees (exact or both null) | 30/39 = 77% (14 exact dates, 16 both null, 9 differ, of which 1 same year) |
 | Citation similarity (mean) | 83/100 |
 | Key value similarity (mean) | 67/100 |
-| Quote check pass rate (first attempt) | 113/113 = 100% |
+| Quote check pass rate (first attempt) | 116/116 = 100% |
 | Records dropped for bad quotes | 0 |
 
 ## Matched rules
 
 | Gold id | Ours | Status (gold / ours) | Eff. date (gold / ours) | Cite score | Key value (gold / ours) |
 |---|---|---|---|---|---|
-| BERK-ALG-01 | r-0001 | in_force / in_force | 2026-01-01 / None | 87 | ban on sale/use of coordinated pricing algorithms / Ban on sale or use of coordinated pricing algorithms (using  |
+| BERK-ALG-01 | r-0001 | in_force / in_force | 2026-01-01 / 2026-01 | 87 | ban on sale/use of coordinated pricing algorithms / Ban on sale or use of coordinated pricing algorithms (using  |
 | BERK-DEP-01 | r-0007 | in_force / in_force | None / None | 63 | annual interest on deposits (covered units) / Security deposit interest required for fully and partially c |
 | BERK-FEE-01 | r-0003 | in_force / in_force | None / None | 82 | disclosure of state fee cap required; no non-refundable rene / Ban on non-refundable renewal and roommate-change fees charg |
 | BERK-JUST-01 | r-0004 | in_force / in_force | None / None | 63 | enumerated just causes; non-payment eviction only if debt ≥  / Nonpayment eviction only if rent debt is at least one month  |
 | BERK-RENT-01 | r-0005 | in_force / in_force | None / 2026-01-01 | 91 | 1.0% for 2026 (65% of CPI; 5% cap) / 1.0% (65% of 1.5% Bay Area CPI-U, July 1, 2024 - June 30, 20 |
-| BERK-SCRN-01 | r-0006 | in_force / in_force | 2020-04 / None | 66 | ban on criminal-history inquiry and use in housing decisions / Ban on inquiring about or using criminal history in rental h |
+| BERK-SCRN-01 | r-0006 | in_force / in_force | 2020-04 / 2020-04 | 66 | ban on criminal-history inquiry and use in housing decisions / Ban on inquiring about or using criminal history in rental h |
 | BOS-JUST-01 | r-0008 | in_force / in_force | 2020-11-06 / 2020-11-06 | 84 | notice-of-rights duty on termination (no just-cause requirem / Notice-of-rights requirement only; no just-cause protection |
 | BOS-RENT-P1 | r-0010 | failed / failed | None / None | 86 | None / Would have authorized Boston rent stabilization; no rent cap |
 | BOS-SCRN-02 | r-0011 | in_force / in_force | 2017-02 / None | 95 | no blanket criminal-history denials; 5-year look-back (city- / No consideration of non-conviction arrests, expunged/sealed  |
-| CA-ALG-01 | r-0013 | in_force / in_force | 2026-01-01 / None | 100 | prohibition on use/distribution of common pricing algorithms / Ban on using or distributing a common pricing algorithm in a |
+| CA-ALG-01 | r-0013 | in_force / in_force | 2026-01-01 / 2026-01-01 | 100 | prohibition on use/distribution of common pricing algorithms / Ban on using or distributing a common pricing algorithm in a |
 | CA-RENT-01 | r-0016 | in_force / in_force | 2020-01-01 / 2024-04-01 | 100 | lesser of 5% + CPI or 10% per 12 months / 5% + CPI change, max 10% (whichever is lower), per 12 months |
 | CA-SCRN-01 | r-0018 | in_force / in_force | 2020-01-01 / 2024-01-01 | 100 | source of income (incl. Section 8 vouchers) is a protected c / Ban on source-of-income discrimination (incl. Section 8 / HU |
 | CAM-JUST-01 | r-0021 | in_force / in_force | None / None | 90 | notice-of-rights duty at tenancy start and termination (no j / Notice-of-rights requirement only; no just-cause protection |
@@ -53,14 +53,14 @@ Gold rules in scope (source doc extracted): 39 of 40 positive, 21 of 21 negative
 | NJ-FEE-01 | r-0043 | in_force / in_force | 2026-05-01 / 2026-05-01 | 87 | $50 (CPI-adjusted from January 2027) / $50 maximum, adjusted annually for CPI increases (NY-Norther |
 | NJ-JUST-01 | r-0044 | in_force / in_force | None / None | 100 | statutory good cause required for removal / Good cause required to evict or fail to renew a residential  |
 | NJ-SCRN-01 | r-0048 | in_force / in_force | 2022-01-01 / 2022-01-01 | 73 | no criminal-record inquiry before conditional offer; individ / No criminal-record inquiry before conditional offer; after o |
-| NWK-SCRN-01 | r-0053 | in_force / in_force | None / 2015-04 | 91 | criminal-record inquiry limited to post-qualification stage; / No criminal history inquiry until after formal application;  |
-| SA-JUST-01 | r-0063 | in_force / in_force | 2021-11-19 / 2021-11-19 | 90 | just cause after 30 days; 3 months relocation for no-fault / Just cause required after 30 days; no-fault termination requ |
-| SA-RENT-01 | r-0064 | in_force / in_force | 2021-11-19 / 2021-11-19 | 81 | lesser of 3% or 80% of CPI; 2.87% for Sep 2026–Aug 2027 / Lower of 3% per year or 80% of CPI change (12 months); no in |
-| SD-JUST-01 | r-0055 | in_force / in_force | 2023-06-24 / 2023-06-24 | 62 | just cause required; 2 months relocation (3 for elderly/disa / Just cause required; no-fault relocation assistance = 2 mont |
-| SF-ALG-01 | r-0057 | in_force / in_force | 2024-10-14 / 2024-10-14 | 100 | ban on sale/use of algorithmic rent-setting devices / Ban on sale or use of algorithmic rent-setting devices |
-| SF-DEP-01 | r-0061 | in_force / in_force | None / 2026-03-01 | 100 | 4.2% annual interest (2026-03-01 to 2027-02-28) / 4.2% interest for March 1, 2026 – February 28, 2027 |
-| SF-JUST-01 | r-0058 | in_force / in_force | None / None | 100 | 17 enumerated just causes / Eviction only for one of 17 enumerated just causes (Section  |
-| SF-SCRN-01 | r-0060 | in_force / in_force | None / None | 79 | criminal-history limits for affordable housing providers / Protection against use of arrest or conviction history in af |
+| NWK-SCRN-01 | r-0051 | in_force / in_force | None / 2015-04 | 91 | criminal-record inquiry limited to post-qualification stage; / No criminal history inquiry until after formal application;  |
+| SA-JUST-01 | r-0061 | in_force / in_force | 2021-11-19 / 2021-11-19 | 90 | just cause after 30 days; 3 months relocation for no-fault / Just cause required after 30 days; no-fault termination requ |
+| SA-RENT-01 | r-0062 | in_force / in_force | 2021-11-19 / 2021-11-19 | 81 | lesser of 3% or 80% of CPI; 2.87% for Sep 2026–Aug 2027 / Lower of 3% per year or 80% of CPI change (12 months); no in |
+| SD-JUST-01 | r-0053 | in_force / in_force | 2023-06-24 / 2023-06-24 | 62 | just cause required; 2 months relocation (3 for elderly/disa / Just cause required; no-fault relocation assistance = 2 mont |
+| SF-ALG-01 | r-0055 | in_force / in_force | 2024-10-14 / 2024-10-14 | 100 | ban on sale/use of algorithmic rent-setting devices / Ban on sale or use of algorithmic rent-setting devices |
+| SF-DEP-01 | r-0059 | in_force / in_force | None / 2026-03-01 | 100 | 4.2% annual interest (2026-03-01 to 2027-02-28) / 4.2% interest for March 1, 2026 – February 28, 2027 |
+| SF-JUST-01 | r-0056 | in_force / in_force | None / None | 100 | 17 enumerated just causes / Eviction only for one of 17 enumerated just causes (Section  |
+| SF-SCRN-01 | r-0058 | in_force / in_force | None / None | 79 | criminal-history limits for affordable housing providers / Protection against use of arrest or conviction history in af |
 
 ## Missed gold rules (in scope)
 
@@ -84,13 +84,11 @@ Gold rules in scope (source doc extracted): 39 of 40 positive, 21 of 21 negative
 - r-0045 — NJ / just_cause_eviction / N.J.S.A. 2A:18-61.3 (D067): Anti-Eviction Act: good cause required for lease non-renewal
 - r-0047 — NJ / screening_restrictions / N.J.S.A. 10:5-12 (NJ Law Against Discrimination) (D068): NJ Law Against Discrimination: source of lawful income / rent payment protection
 - r-0049 — NJ / security_deposits / N.J.S.A. 46:8-21.2; N.J.S.A. 46:8-19; N.J.S.A. 46:8-21.1 (D067): NJ Security Deposit Law: cap of 1.5 months' rent
-- r-0050 — NJ / security_deposits / N.J.S.A. 46:8-26 (D064): NJ Security Deposit Act: application of act
-- r-0051 — Newark, NJ / rent_increase_limits / Newark Rev. Gen. Ord. § 19:2-22 (D070): Newark Rent Control - limitation on increases (25% ceiling) and exemptions
-- r-0052 — Newark, NJ / rent_increase_limits / Newark, N.J. Code § 19:2-3.1 (D070): Newark Rent Control: annual CPI-based rent increase cap
-- r-0054 — San Diego, CA / algorithmic_rent_setting / San Diego Municipal Code § 98.1103 (Ord. O-21955 N.S.) (D074): San Diego Prohibition of Anti-Competitive Automated Rent Price Fixing (SDMC §98.1103)
-- r-0056 — San Diego, CA / screening_restrictions / San Diego Municipal Code §§ 98.0801-98.0806 (Ord. O-20986 N.S.) (D075): San Diego Prohibition of Discrimination Based on a Tenant's Source of Income
-- r-0059 — San Francisco, CA / rent_increase_limits / S.F. Admin. Code ch. 37 (Rent Ordinance), § 37.3 (D080): San Francisco annual allowable rent increase (3/1/2026\u20132/28/2027)
-- r-0062 — Santa Ana, CA / algorithmic_rent_setting / Santa Ana Ordinance No. NS-3090 (D002): Santa Ana Ordinance NS-3090 (automated rent price-fixing)
+- r-0050 — Newark, NJ / rent_increase_limits / Newark, N.J., Code § 19:2-3.1 (D070): Newark Rent Control: annual CPI-based rent increase cap
+- r-0052 — San Diego, CA / algorithmic_rent_setting / San Diego Municipal Code § 98.1103 (Ord. O-21955 N.S.) (D074): San Diego Prohibition of Anti-Competitive Automated Rent Price Fixing (SDMC §98.1103)
+- r-0054 — San Diego, CA / screening_restrictions / San Diego Municipal Code §§ 98.0801-98.0806 (Ord. O-20986 N.S.) (D075): San Diego Prohibition of Discrimination Based on a Tenant's Source of Income
+- r-0057 — San Francisco, CA / rent_increase_limits / S.F. Admin. Code ch. 37 (Rent Ordinance), § 37.3 (D080): San Francisco annual allowable rent increase (3/1/2026\u20132/28/2027)
+- r-0060 — Santa Ana, CA / algorithmic_rent_setting / Santa Ana Ordinance No. NS-3090 (D002): Santa Ana Ordinance NS-3090 (automated rent price-fixing)
 
 ## Negative findings
 

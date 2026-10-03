@@ -1,0 +1,154 @@
+"""
+coverage.py - Module B, step 2: turn each rule's coverage text into machine-checkable tests.
+
+Plain-language summary
+----------------------
+A rule says in words who it covers ("units with a certificate of occupancy
+issued before June 13, 1979", "owners of more than two units", "not housing
+built within the previous 15 years"). The engine needs those as tests it can
+run against an address record (year_built, units, use code). This script asks
+Claude ONCE per rule to translate the words into tests, quoting the words each
+test came from, and caches the result in out/coverage.json. Hamza reviews the
+rent-control entries before the full run.
+
+A test is {field, op, value, source_text, note}. Fields the engine knows:
+  year_built      the assessor's year built (a number)
+  coo_date        certificate-of-occupancy cutoff (ISO date) - the engine treats year_built
+                  as a proxy: TRUE if year_built < cutoff year, FALSE if >, UNKNOWN if equal
+  coo_age_years   rolling window: certificate of occupancy at least N years before the query date
+  units           number of dwelling units
+  owner_type      never in our data -> unknown (unless another test decides)
+  tenancy_months  never in our data -> unknown
+  building_type   from use_code / use_description ("apartments", "single_family", "condo", "duplex")
+  funding         subsidised / deed-restricted -> never in our data -> unknown
+  other           anything else -> unknown
+ops: <, <=, >, >=, ==, !=, in, not_in.  All tests must be TRUE for the rule to apply.
+
+Usage:  python coverage.py           (only rules not yet cached)
+        python coverage.py --force   (redo all)
+"""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import os
+import sys
+
+import anthropic
+from dotenv import load_dotenv
+
+from common import DEFAULT_QUERY_DATE, OUT
+
+load_dotenv()
+RULES_FULL = OUT / "rules_full.json"
+COVERAGE_JSON = OUT / "coverage.json"
+MODEL = os.environ.get("EXTRACT_MODEL", "claude-sonnet-5-5")
+PRICE_IN, PRICE_OUT = 2.00, 10.00
+
+FIELDS = ["year_built", "coo_date", "coo_age_years", "units", "owner_type", "tenancy_months",
+          "building_type", "funding", "other"]
+OPS = ["<", "<=", ">", ">=", "==", "!=", "in", "not_in"]
+
+SCHEMA = {
+    "type": "object",
+    "properties": {
+        "tests": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "field": {"type": "string", "enum": FIELDS},
+                    "op": {"type": "string", "enum": OPS},
+                    "value": {"type": ["number", "string", "array"], "items": {"type": "string"},
+                              "description": "number, ISO date string, category string, or list of strings"},
+                    "source_text": {"type": "string", "description": "the coverage/exemption words this test comes from"},
+                    "note": {"type": ["string", "null"]},
+                    "defeated_if": {
+                        "type": ["object", "null"],
+                        "description": "Only for owner_type / tenancy_months / funding exceptions the data cannot see: an "
+                                       "address-level fact that makes the exception impossible, so the test counts as "
+                                       "satisfied (e.g. CA small-landlord deposit exception is impossible if units > 4).",
+                        "properties": {"field": {"type": "string", "enum": ["units", "year_built", "building_type"]},
+                                       "op": {"type": "string", "enum": OPS},
+                                       "value": {"type": ["number", "string", "array"], "items": {"type": "string"}}},
+                        "required": ["field", "op", "value"],
+                        "additionalProperties": False,
+                    },
+                },
+                "required": ["field", "op", "value", "source_text", "note", "defeated_if"],
+                "additionalProperties": False,
+            },
+        },
+        "applies_to_all_residential": {"type": "boolean",
+                                       "description": "true if the rule covers every residential rental in the jurisdiction with no building-level limits"},
+        "notes": {"type": ["string", "null"]},
+    },
+    "required": ["tests", "applies_to_all_residential", "notes"],
+    "additionalProperties": False,
+}
+
+SYSTEM = f"""You convert the coverage conditions and exemptions of a rental-housing rule into machine-checkable tests for a rule engine. Not legal advice.
+
+The engine knows these facts about an address: year_built (assessor's year, may be missing), units (count, may be missing), building_type from the assessor's use code (apartments, condo, single_family, duplex, mixed), state and city. It does NOT know the owner's identity, the tenancy length, subsidy status, or the certificate-of-occupancy date (year_built is used as a proxy with the cutoff year treated as unknown).
+
+Write tests such that the rule APPLIES to an address only when ALL tests are true. Exemptions become tests that exclude the exempt case (e.g. exemption "housing issued a certificate of occupancy within the previous 15 years" -> field coo_age_years, op >=, value 15). Use coo_date (op <=, ISO date) for fixed certificate cutoffs (e.g. "on or before June 13, 1979" -> value "1979-06-13"). Use year_built only when the text itself speaks of construction year. Use owner_type / tenancy_months / funding tests when the text conditions on them even though the engine will return unknown; it needs them to explain the unknown. A condition the engine cannot express at all -> field other.
+Quote in source_text the exact words each test comes from. Do not invent limits that the text does not state. If the text states no building-level limits, return tests [] and applies_to_all_residential true. The query date is {DEFAULT_QUERY_DATE}.
+Respond only with JSON."""
+
+
+def rule_key(rule: dict) -> str:
+    h = hashlib.sha1(json.dumps([rule.get("coverage_conditions"), rule.get("exemptions"), rule.get("requirement"),
+                                 rule.get("interaction")], ensure_ascii=False).encode()).hexdigest()[:10]
+    return f"{rule['team_rule_id']}:{h}"
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--force", action="store_true")
+    ap.add_argument("--budget", type=float, default=1.50)
+    args = ap.parse_args()
+
+    rules = json.loads(RULES_FULL.read_text(encoding="utf-8"))["rules"]
+    cache = json.loads(COVERAGE_JSON.read_text(encoding="utf-8")) if COVERAGE_JSON.exists() and not args.force else {}
+    client = anthropic.Anthropic()
+    spent, calls = 0.0, 0
+    for rule in rules:
+        if rule.get("negative_finding") or rule.get("derived"):
+            continue  # negative findings never "apply"; no coverage tests needed
+        key = rule_key(rule)
+        cached = cache.get(rule["team_rule_id"])
+        if cached and cached.get("key") == key:
+            continue
+        if spent >= args.budget:
+            print("budget reached; stopping", file=sys.stderr)
+            break
+        msg = "\n".join([
+            f"Rule: {rule['title']}", f"Jurisdiction: {rule['jurisdiction']} ({rule['level']})",
+            f"Category: {rule['category']}", f"Requirement: {rule['requirement']}",
+            f"Key value: {rule.get('key_value')}", f"Coverage conditions: {rule.get('coverage_conditions')}",
+            f"Exemptions: {rule.get('exemptions')}", f"Interaction: {rule.get('interaction')}",
+            f"Notes: {(rule.get('notes') or '')[:800]}",
+        ])
+        resp = client.messages.create(
+            model=MODEL, max_tokens=4000, system=SYSTEM,
+            messages=[{"role": "user", "content": msg}],
+            output_config={"effort": "medium", "format": {"type": "json_schema", "schema": SCHEMA}},
+        )
+        spent += (resp.usage.input_tokens * PRICE_IN + resp.usage.output_tokens * PRICE_OUT) / 1e6
+        calls += 1
+        if resp.stop_reason != "end_turn":
+            print(f"  {rule['team_rule_id']}: stop_reason {resp.stop_reason}; skipped", file=sys.stderr)
+            continue
+        data = json.loads(next(b.text for b in resp.content if b.type == "text"))
+        cache[rule["team_rule_id"]] = {"key": key, "jurisdiction": rule["jurisdiction"], "category": rule["category"],
+                                      "title": rule["title"], **data}
+        print(f"  {rule['team_rule_id']} {rule['jurisdiction']}/{rule['category']}: {len(data['tests'])} test(s)")
+    COVERAGE_JSON.write_text(json.dumps(cache, indent=1, ensure_ascii=False), encoding="utf-8")
+    print(f"coverage: {len(cache)} rules cached, {calls} call(s) this run, ${spent:.3f} -> {COVERAGE_JSON}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

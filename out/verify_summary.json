@@ -1,15 +1,15 @@
 {
   "docs": 85,
-  "raw_records": 113,
+  "raw_records": 116,
   "out_of_scope": 5,
-  "span_pass": 113,
+  "span_pass": 116,
   "span_fail_first": 0,
   "span_pass_after_retry": 0,
   "dropped_span": 0,
   "dropped_schema": 0,
-  "dropped_duplicate": 49,
+  "dropped_duplicate": 54,
   "retries": 0,
-  "final_rules": 64,
+  "final_rules": 62,
   "query_date": "2026-10-01",
   "span_pass_rate_first_attempt": 1.0
 }

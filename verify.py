@@ -37,8 +37,8 @@ from jsonschema import Draft202012Validator
 from rapidfuzz import fuzz
 
 from common import (DEFAULT_QUERY_DATE, OUT, RAW_DIR, SCHEMA_JSON, Doc,
-                    has_sections, list_docs, normalise, normalise_citation,
-                    sections_match, source_rank)
+                    citation_sections, has_sections, list_docs, normalise,
+                    normalise_citation, sections_match, source_rank)
 
 RULES_JSON = OUT / "rules.json"
 VERIFY_CSV = OUT / "verify_log.csv"
@@ -176,6 +176,7 @@ def build_record(raw: dict, doc: Doc, query: date) -> dict:
         "conflict_note": " ".join(notes) if notes else None,
         # Extra fields (the schema permits them): see instructions/rulings_02.md
         "negative_finding": bool(raw.get("negative_finding", False)),
+        "record_role": raw.get("record_role") or "headline",
         "adoption_date": adopted,
         "notes": raw.get("extraction_notes"),
         "retrieved_at": doc.retrieved_date,
@@ -250,8 +251,51 @@ def dedupe(records: list[dict]) -> tuple[list[dict], list[dict]]:
                     "dropped_doc": r["source_doc_id"], "dropped_citation": r["citation"],
                     "dropped_status": r["status"], "jurisdiction": r["jurisdiction"],
                     "category": r["category"], "reason": reason})
-    kept = [r for rs in buckets.values() for r in rs]
+    # Supplementary provisions (scope / exemption / ceiling sections) fold into the
+    # headline rule of the same act in the same bucket (Hamza rulings_04 #3). If the
+    # bucket has no headline to fold into, the record stays, so nothing is lost.
+    kept = []
+    for key, rs in buckets.items():
+        heads = [r for r in rs if r.get("record_role") != "supplementary"]
+        for r in rs:
+            if r.get("record_role") != "supplementary":
+                continue
+            target = None
+            same_act = [h for h in heads if act_prefix(h["citation"]) and act_prefix(h["citation"]) == act_prefix(r["citation"])]
+            if same_act:
+                target = same_act[0]
+            elif len(heads) == 1:
+                target = heads[0]
+            if target is None:
+                # Nothing to fold into: a scope/exemption/ceiling provision is not a rule on
+                # its own, so it is logged rather than published (e.g. Newark § 19:2-14).
+                log.append({"kept_doc": "", "kept_citation": "", "dropped_doc": r["source_doc_id"],
+                            "dropped_citation": r["citation"], "dropped_status": r["status"],
+                            "jurisdiction": r["jurisdiction"], "category": r["category"],
+                            "reason": "supplementary provision with no headline rule in this jurisdiction/category; not published"})
+                continue
+            add = f"{r['citation']}: {r['requirement']}"
+            if r.get("exemptions"):
+                target["exemptions"] = f"{target['exemptions'] or ''} {r['exemptions']}".strip()
+            target["notes"] = f"{target['notes'] or ''} Supplementary provision folded in ({add})".strip()
+            if r["source_doc_id"] not in target["supporting_doc_ids"] and r["source_doc_id"] != target["source_doc_id"]:
+                target["supporting_doc_ids"].append(r["source_doc_id"])
+            log.append({"kept_doc": target["source_doc_id"], "kept_citation": target["citation"],
+                        "dropped_doc": r["source_doc_id"], "dropped_citation": r["citation"],
+                        "dropped_status": r["status"], "jurisdiction": r["jurisdiction"],
+                        "category": r["category"], "reason": "supplementary provision folded into headline rule"})
+        kept.extend(heads)
     return kept, log
+
+
+def act_prefix(cite: str) -> str | None:
+    """'N.J.S.A. 46:8-26' -> '46:8'; 'Newark § 19:2-22' -> '19:2'; 'Cal. Civ. Code § 1950.5' -> '1950'."""
+    for tup in citation_sections(cite or ""):
+        for t in tup:
+            m = re.match(r"^([a-z]{0,2}\.?\d+[a-z]?(?::\d+[a-z]?)?)[.\-]\d", t)
+            if m:
+                return m.group(1)
+    return None
 
 
 # ---------------------------------------------------------------------------

@@ -1,0 +1,794 @@
+[
+ {
+  "gold_id": "SF-JUST-01",
+  "team_rule_id": "r-0056",
+  "jurisdiction": "San Francisco, CA",
+  "category": "just_cause_eviction",
+  "gold_citation": "S.F. Admin. Code § 37.9(a)",
+  "our_citation": "S.F. Admin. Code § 37.9(a)",
+  "gold_effective_date": null,
+  "our_effective_date": null,
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D079"
+  ],
+  "our_doc": "D079",
+  "our_title": "San Francisco Rent Ordinance just cause eviction (S.F. Admin. Code § 37.9(a))",
+  "our_supporting": [
+   "D082",
+   "D083"
+  ],
+  "our_notes": "Official SF Rent Board summary page; effective date not stated in the document, so null. Relocation-assistance amounts are not covered in this document."
+ },
+ {
+  "gold_id": "SF-DEP-01",
+  "team_rule_id": "r-0059",
+  "jurisdiction": "San Francisco, CA",
+  "category": "security_deposits",
+  "gold_citation": "S.F. Admin. Code ch. 49 (§ 49.2)",
+  "our_citation": "S.F. Admin. Code § 49.2",
+  "gold_effective_date": null,
+  "our_effective_date": "2026-03-01",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D083"
+  ],
+  "our_doc": "D083",
+  "our_title": "SF security deposit interest rate",
+  "our_supporting": [],
+  "our_notes": "Prior rates were 5.0% (3/1/25–2/28/26) and 5.2% (3/1/24–2/28/25). The citation is not given in this document and is supplied from knowledge of the SF Administrative Code."
+ },
+ {
+  "gold_id": "SF-ALG-01",
+  "team_rule_id": "r-0055",
+  "jurisdiction": "San Francisco, CA",
+  "category": "algorithmic_rent_setting",
+  "gold_citation": "S.F. Admin. Code § 37.10C",
+  "our_citation": "S.F. Admin. Code § 37.10C",
+  "gold_effective_date": "2024-10-14",
+  "our_effective_date": "2024-10-14",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D081"
+  ],
+  "our_doc": "D081",
+  "our_title": "S.F. Rent Ordinance Section 37.10C - Prohibition on Algorithmic Rent-Setting Devices",
+  "our_supporting": [
+   "D002",
+   "D037"
+  ],
+  "our_notes": "Secondary summary from the SF Rent Board news page; effective date stated in the text as October 14, 2024. The text does not give the ordinance number; citation follows the Section 37.10C reference in the Rent Ordinance (S.F. Admin. Code ch. 37)."
+ },
+ {
+  "gold_id": "NJ-JUST-01",
+  "team_rule_id": "r-0044",
+  "jurisdiction": "NJ",
+  "category": "just_cause_eviction",
+  "gold_citation": "N.J.S.A. 2A:18-61.1",
+  "our_citation": "N.J.S.A. 2A:18-61.1 et seq.; N.J.S.A. 2A:18-53",
+  "gold_effective_date": null,
+  "our_effective_date": null,
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D067"
+  ],
+  "our_doc": "D067",
+  "our_title": "Anti-Eviction Act (good cause required)",
+  "our_supporting": [
+   "D067",
+   "D062"
+  ],
+  "our_notes": "Effective date not stated in this document. Relocation-assistance duties are not addressed in this part of the guide. Summary of the statute found in the official DCA guide."
+ },
+ {
+  "gold_id": "MA-ALG-P1",
+  "team_rule_id": "r-0035",
+  "jurisdiction": "MA",
+  "category": "algorithmic_rent_setting",
+  "gold_citation": "Mass. S.2983 (194th General Court)",
+  "our_citation": "Mass. Senate Bill S.2983, 194th General Court (2025-2026)",
+  "gold_effective_date": null,
+  "our_effective_date": null,
+  "gold_status": "pending",
+  "our_status": "pending",
+  "gold_docs": [
+   "D046",
+   "D047"
+  ],
+  "our_doc": "D047",
+  "our_title": "S.2983 An Act prohibiting algorithmic rent setting (bill)",
+  "our_supporting": [
+   "D046",
+   "D030"
+  ],
+  "our_notes": "Bill history page only; the operative bill text, definitions, exemptions and effective date are not in this capture. Status as of the page: referred to Senate Committee on Ways and Means after a favorable report on 2026-03-12. Not law, so effective_date is null."
+ },
+ {
+  "gold_id": "JC-ALG-01",
+  "team_rule_id": "r-0026",
+  "jurisdiction": "Jersey City, NJ",
+  "category": "algorithmic_rent_setting",
+  "gold_citation": "Jersey City Code § 218-12 (Ord. 25-057)",
+  "our_citation": "Jersey City Code § 218-12",
+  "gold_effective_date": "2025-06",
+  "our_effective_date": "2025-06",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [],
+  "our_doc": "D002",
+  "our_title": "Jersey City ban on algorithmic rent coordination services",
+  "our_supporting": [
+   "D037"
+  ],
+  "our_notes": "Secondary source. Effective date from the table ('effective June 2025'); exact day not stated."
+ },
+ {
+  "gold_id": "HOB-RENT-01",
+  "team_rule_id": "r-0025",
+  "jurisdiction": "Hoboken, NJ",
+  "category": "rent_increase_limits",
+  "gold_citation": "Hoboken Code § 155-5",
+  "our_citation": "Hoboken, N.J., Code § 155-5",
+  "gold_effective_date": null,
+  "our_effective_date": "2023-02",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [],
+  "our_doc": "D033",
+  "our_title": "Hoboken Rent Control: cost-of-living increase cap (Code § 155-5)",
+  "our_supporting": [],
+  "our_notes": "Section 155-5 is marked 'Amended 2-1-2023 by Ord. No. B-532'. Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). The pre-2023 text and original cap are not shown, so it is unclear whether the 2023 amendment changed the 5%/CPI value. § 155-4 (amended through Ord. B-818, 10-22-2025) requires 30 days' written notice with reasons for any increase.  A disclosure statement and a two-year limitation on refunds also apply.  This document does not cover vacancy decontrol or applicability.  It also does not mention the NJ FAIR Act.  Tax, water/sewer, capital and hardship surcharges are addressed in §§ 155-6 to 155-14.  Those are folded into this record.  They do not create separate records.  No other category is addressed in this document.  The 33 1/3% cap is noted under interaction.  It is not a separate headline value.  The Article's other sections are procedural.  The Board's review timing is in § 155-17.  Nothing else here changes the headline cap."
+ },
+ {
+  "gold_id": "CA-SCRN-01",
+  "team_rule_id": "r-0018",
+  "jurisdiction": "CA",
+  "category": "screening_restrictions",
+  "gold_citation": "Cal. Gov. Code § 12955(a), (p)",
+  "our_citation": "Cal. Gov. Code § 12955",
+  "gold_effective_date": "2020-01-01",
+  "our_effective_date": "2024-01-01",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D027",
+   "D016"
+  ],
+  "our_doc": "D027",
+  "our_title": "Source-of-income discrimination ban and subsidy-tenant credit/income screening limits (FEHA)",
+  "our_supporting": [
+   "D016",
+   "D015",
+   "D021"
+  ],
+  "our_notes": "Effective date is from the document's amendment note (Stats. 2023, Ch. 776, SB 267, eff. Jan. 1, 2024), which added the subsidy-tenant credit-history alternative-evidence rule and the HUD-VASH voucher language. The document does not state when the source-of-income ban was first added, so the date reflects the amendment. Subdivisions (n), (o) and (p) are folded into this record."
+ },
+ {
+  "gold_id": "CA-RENT-01",
+  "team_rule_id": "r-0016",
+  "jurisdiction": "CA",
+  "category": "rent_increase_limits",
+  "gold_citation": "Cal. Civ. Code § 1947.12",
+  "our_citation": "Cal. Civ. Code § 1947.12",
+  "gold_effective_date": "2020-01-01",
+  "our_effective_date": "2024-04-01",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D024"
+  ],
+  "our_doc": "D024",
+  "our_title": "Statewide rent cap (Tenant Protection Act), Civ. Code § 1947.12",
+  "our_supporting": [
+   "D040",
+   "D019"
+  ],
+  "our_notes": "Section was repealed and re-added by SB 567 (Stats. 2023, ch. 290), effective 2024-01-01 and operative 2024-04-01 by its own terms (subd. (n)). The section is repealed as of 2030-01-01 (subd. (o)). The document states the operative date of this version only. The original 2020 enactment date is not stated in this text, and the March 15, 2019 date is a look-back application date, not an effective date. The reviewer may want to confirm whether the original-requirement effective date (2020-01-01) should be used instead. The cost-of-living index is the applicable metro CPI-U, with different April comparisons before and after August 1."
+ },
+ {
+  "gold_id": "CA-ALG-01",
+  "team_rule_id": "r-0013",
+  "jurisdiction": "CA",
+  "category": "algorithmic_rent_setting",
+  "gold_citation": "Cal. Bus. & Prof. Code § 16729 (added by AB 325, Stats. 2025 ch. 338)",
+  "our_citation": "Cal. Bus. & Prof. Code § 16729",
+  "gold_effective_date": "2026-01-01",
+  "our_effective_date": "2026-01-01",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D022"
+  ],
+  "our_doc": "D022",
+  "our_title": "Cartwright Act ban on common pricing algorithms (AB 325)",
+  "our_supporting": [
+   "D028"
+  ],
+  "our_notes": "Approved by the Governor and filed 2025-10-06 (Chapter 338). The text gives no effective or operative date, so effective_date is null; it is treated as in_force because it was enacted well before the 2026-10-01 query date. Section 16756.1 (pleading standard: plausibility of conspiracy, no need to exclude independent action) is procedural and folded into this record. Rental housing is not mentioned in the text. Effective date from D028: \"[[1]](#_ftn1) These laws, described below, took effect on January 1, 2026.\""
+ },
+ {
+  "gold_id": "BOS-SCRN-02",
+  "team_rule_id": "r-0011",
+  "jurisdiction": "Boston, MA",
+  "category": "screening_restrictions",
+  "gold_citation": "Boston Fair Chance Tenant Selection Policy (DND, February 2017) – policy, not ordinance",
+  "our_citation": "Boston DND Fair Chance Tenant Selection Policy (Feb. 2017)",
+  "gold_effective_date": "2017-02",
+  "our_effective_date": null,
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D010",
+   "D012"
+  ],
+  "our_doc": "D010",
+  "our_title": "Boston Fair Chance Tenant Selection Policy - criminal history",
+  "our_supporting": [
+   "D010"
+  ],
+  "our_notes": "Policy is dated February 2017 (page header); no effective date stated, so effective_date is null. Applies to funded/inclusionary housing providers by agreement, not all Boston landlords. Mitigating-factor guidance and appeals process are encouraged/'should' items, folded out."
+ },
+ {
+  "gold_id": "BERK-RENT-01",
+  "team_rule_id": "r-0005",
+  "jurisdiction": "Berkeley, CA",
+  "category": "rent_increase_limits",
+  "gold_citation": "Berkeley Mun. Code § 13.76.110(A)",
+  "our_citation": "Berkeley Municipal Code § 13.76.110(A); Berkeley Rent Stabilization Board Regulation 1148",
+  "gold_effective_date": null,
+  "our_effective_date": "2026-01-01",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D008",
+   "D009",
+   "D006"
+  ],
+  "our_doc": "D008",
+  "our_title": "Berkeley 2026 Annual General Adjustment (AGA), Rent Board Regulation 1148",
+  "our_supporting": [
+   "D006",
+   "D009"
+  ],
+  "our_notes": "Adopted at the Board's Oct. 16, 2025 meeting (notice dated Oct. 17, 2025). Effective date taken from 'no earlier than January 1, 2026', the earliest date increases may be taken; the notice does not use the word 'effective'. The 65% of CPI formula was approved by voters in Nov. 2004."
+ },
+ {
+  "gold_id": "NWK-SCRN-01",
+  "team_rule_id": "r-0051",
+  "jurisdiction": "Newark, NJ",
+  "category": "screening_restrictions",
+  "gold_citation": "Newark Code § 2:31-2 (Ord. 6 PSF-B, 4-15-2015)",
+  "our_citation": "Newark Municipal Code § 2:31-1 to 2:31-9 (Ord. 6 PSF-B, 4-15-2015)",
+  "gold_effective_date": null,
+  "our_effective_date": "2015-04",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [],
+  "our_doc": "D072",
+  "our_title": "Newark Ban the Box - Housing (criminal record check practices)",
+  "our_supporting": [],
+  "our_notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Adoption date 4-15-2015 is taken from the Ord. 6 PSF-B citation; the Editor's Note says the earlier Ord. 6 PSF-F (2012) was repealed by Ord. 6 PSF-B. Procedural duties folded in: 3 business days to submit evidence, adverse-action notice within 10 business days by registered mail, confidentiality, and a ban on advertisements referencing criminal history. Article 2 (City licensing) is outside scope."
+ },
+ {
+  "gold_id": "CAM-SCRN-01",
+  "team_rule_id": "r-0022",
+  "jurisdiction": "Cambridge, MA",
+  "category": "screening_restrictions",
+  "gold_citation": "Cambridge Mun. Code ch. 14.04",
+  "our_citation": "Cambridge Municipal Code ch. 14.04 (Fair Housing Ordinance)",
+  "gold_effective_date": null,
+  "our_effective_date": null,
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D029"
+  ],
+  "our_doc": "D029",
+  "our_title": "Cambridge Fair Housing Ordinance: source-of-income protection (incl. Section 8)",
+  "our_supporting": [],
+  "our_notes": "Secondary summary on the Commission's webpage; the ordinance text itself is not in this document. No effective date stated, so effective_date is null. Civil fines of up to $300 per violation are noted on the page but are not the key value."
+ },
+ {
+  "gold_id": "CAM-JUST-01",
+  "team_rule_id": "r-0021",
+  "jurisdiction": "Cambridge, MA",
+  "category": "just_cause_eviction",
+  "gold_citation": "Cambridge Mun. Code ch. 8.71",
+  "our_citation": "Cambridge Municipal Code ch. 8.71",
+  "gold_effective_date": null,
+  "our_effective_date": null,
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D031"
+  ],
+  "our_doc": "D031",
+  "our_title": "[notice-only] Tenants Rights and Resources Notification Ordinance (Cambridge M.C. ch. 8.71)",
+  "our_supporting": [],
+  "our_notes": "Web page summary of the ordinance; no adoption or effective date stated in this capture (page posted 10/14/2020, last modified 3/17/2025, which are not effective dates). Violation fine of $300 per day omitted from key value."
+ },
+ {
+  "gold_id": "SA-JUST-01",
+  "team_rule_id": "r-0061",
+  "jurisdiction": "Santa Ana, CA",
+  "category": "just_cause_eviction",
+  "gold_citation": "Santa Ana Mun. Code (Just Cause Eviction Ordinance, 2021)",
+  "our_citation": "Santa Ana Municipal Code, Just Cause Eviction Ordinance (section number not stated in source)",
+  "gold_effective_date": "2021-11-19",
+  "our_effective_date": "2021-11-19",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D085"
+  ],
+  "our_doc": "D085",
+  "our_title": "Santa Ana Just Cause Eviction Ordinance",
+  "our_supporting": [
+   "D084"
+  ],
+  "our_notes": "Secondary press release from the city; adoption date not stated (only 'Tuesday night'). At-fault causes require prior notice of the violation with a chance to cure. Owners had to notify existing tenants before December 19, 2021. Later amendments, if any, are not reflected in this document."
+ },
+ {
+  "gold_id": "BERK-ALG-01",
+  "team_rule_id": "r-0001",
+  "jurisdiction": "Berkeley, CA",
+  "category": "algorithmic_rent_setting",
+  "gold_citation": "Berkeley Mun. Code § 13.63.030 (Ord. 7992-NS)",
+  "our_citation": "Berkeley Municipal Code § 13.63.030 (Ord. No. 7,992-N.S.)",
+  "gold_effective_date": "2026-01-01",
+  "our_effective_date": "2026-01",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D001"
+  ],
+  "our_doc": "D001",
+  "our_title": "Prohibition on coordinated pricing algorithms to set rents or manage occupancy (BMC ch. 13.63)",
+  "our_supporting": [
+   "D002",
+   "D037"
+  ],
+  "our_notes": "This document states no effective date, so effective_date is null. It records only that the Council passed the ordinance to print on November 18, 2025 (first reading). The final adoption date is not stated, so adoption_date is null. Status is in_force on the assumption that the ordinance took effect before the 2026-10-01 query date under either published date. Civil remedies of up to $1,000 per violation are omitted from key_value. Effective date from D002: \"13.63 (effective January 2026) Prohibits coordinated pricing algorithms;\""
+ },
+ {
+  "gold_id": "NJ-FEE-01",
+  "team_rule_id": "r-0043",
+  "jurisdiction": "NJ",
+  "category": "application_screening_fees",
+  "gold_citation": "N.J.S.A. 46:8-18.1 (P.L.2025, c.405, § 1)",
+  "our_citation": "N.J.S.A. 46:8-18.1; P.L. 2025, c.405",
+  "gold_effective_date": "2026-05-01",
+  "our_effective_date": "2026-05-01",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D066"
+  ],
+  "our_doc": "D066",
+  "our_title": "Residential rental application fee cap (P.L. 2025, c.405)",
+  "our_supporting": [],
+  "our_notes": "Section 3 says the act takes effect on the first day of the fourth month next following enactment. Enactment (approval) was January 20, 2026, so the fourth month after is May, giving 2026-05-01. This is in force as of the 2026-10-01 query date. Penalties: up to $500 first offense, $750 second, $1,000 subsequent. The CPI adjustment begins January 1 of the year after enactment (2027), applies only if CPI change is greater than zero, and the Director of Consumer Affairs publishes the adjusted limit annually."
+ },
+ {
+  "gold_id": "BOS-RENT-P1",
+  "team_rule_id": "r-0010",
+  "jurisdiction": "Boston, MA",
+  "category": "rent_increase_limits",
+  "gold_citation": "Mass. H.3744 (193rd General Court) – study order H.5035 (2024-09-09)",
+  "our_citation": "Mass. H.3744 (193rd General Court, 2023-2024)",
+  "gold_effective_date": null,
+  "our_effective_date": null,
+  "gold_status": "failed",
+  "our_status": "failed",
+  "gold_docs": [
+   "D011"
+  ],
+  "our_doc": "D011",
+  "our_title": "H.3744 Boston rent stabilization home rule petition (not enacted)",
+  "our_supporting": [],
+  "our_notes": "The page lists the bill's last action as 'Accompanied a study order' (9/9/2024, H5035). It does not say the bill was defeated. 'failed' is inferred from the end of the 2023-2024 session and the study order. The bill text and any cap formula are not in this capture. The state-bar interaction comes from general background, not from this page."
+ },
+ {
+  "gold_id": "MA-ALG-P2",
+  "team_rule_id": "r-0034",
+  "jurisdiction": "MA",
+  "category": "algorithmic_rent_setting",
+  "gold_citation": "Mass. H.5222 (194th General Court)",
+  "our_citation": "H.5222, 194th Gen. Court (Mass. 2025-2026) (new draft of H.1564)",
+  "gold_effective_date": null,
+  "our_effective_date": null,
+  "gold_status": "pending",
+  "our_status": "pending",
+  "gold_docs": [
+   "D045"
+  ],
+  "our_doc": "D045",
+  "our_title": "H.5222 - An Act relative to preventing algorithmic rent fixing in the rental housing market",
+  "our_supporting": [],
+  "our_notes": "Status page only; substantive provisions (scope, prohibitions) not in this capture, so key_value is null. Bill history: 3/12/2026 reported from Housing Committee as a new draft of H1564 and referred to House Ways and Means. Not enacted as of the 2026-10-01 query date per this page, so no effective date.Rule text should be checked in the bill itself."
+ },
+ {
+  "gold_id": "JC-RENT-01",
+  "team_rule_id": "r-0028",
+  "jurisdiction": "Jersey City, NJ",
+  "category": "rent_increase_limits",
+  "gold_citation": "Jersey City Code § 260-3",
+  "our_citation": "Jersey City Municipal Code ch. 260",
+  "gold_effective_date": null,
+  "our_effective_date": null,
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D036"
+  ],
+  "our_doc": "D036",
+  "our_title": "Jersey City Rent Control Ordinance (Municipal Code Chapter 260)",
+  "our_supporting": [],
+  "our_notes": "Secondary summary page; the ordinance text with the annual allowable increase (CPI-based) is linked but not reproduced here. No effective or adoption date is stated, so effective_date is null."
+ },
+ {
+  "gold_id": "BOS-JUST-01",
+  "team_rule_id": "r-0008",
+  "jurisdiction": "Boston, MA",
+  "category": "just_cause_eviction",
+  "gold_citation": "Boston Code of Ordinances ch. 9, § 9-20 (Housing Stability Notification Act)",
+  "our_citation": "Boston Municipal Code § 10-11.7 (Housing Stability Notification Act)",
+  "gold_effective_date": "2020-11-06",
+  "our_effective_date": "2020-11-06",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D013",
+   "D014"
+  ],
+  "our_doc": "D014",
+  "our_title": "[notice-only] Boston Housing Stability Notification Act",
+  "our_supporting": [
+   "D013"
+  ],
+  "our_notes": "Effective date from 'The HSNA becomes effective on November 6, 2020.' The ordinance was passed in October 2020 (exact day not stated). Enforcement: warning for 1st offense, then $300 per day. Source is a city FAQ summarizing the ordinance."
+ },
+ {
+  "gold_id": "HOB-RENT-02",
+  "team_rule_id": "r-0024",
+  "jurisdiction": "Hoboken, NJ",
+  "category": "rent_increase_limits",
+  "gold_citation": "Hoboken Code ch. 158, art. I (Ord. No. B-750, adopted 2025-04-02)",
+  "our_citation": "Hoboken City Code § 158-1 (Ord. No. B-750)",
+  "gold_effective_date": "2025-04",
+  "our_effective_date": "2025-04",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [],
+  "our_doc": "D034",
+  "our_title": "Mandatory disclosures for rental increases over 10%",
+  "our_supporting": [],
+  "our_notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Classified under rent_increase_limits as an increase-notice requirement, although it sets no cap. Penalty (fine up to $1,000 per incident) omitted from key_value."
+ },
+ {
+  "gold_id": "HOB-ALG-01",
+  "team_rule_id": "r-0023",
+  "jurisdiction": "Hoboken, NJ",
+  "category": "algorithmic_rent_setting",
+  "gold_citation": "Hoboken Code ch. 158 (Ord. No. B-781, adopted 2025-07-09)",
+  "our_citation": "Hoboken City Code § 158-2 (Ord. No. B-781)",
+  "gold_effective_date": "2025-07",
+  "our_effective_date": "2025-07",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [],
+  "our_doc": "D034",
+  "our_title": "Algorithmic rent fixing in rental housing market prohibited",
+  "our_supporting": [
+   "D002",
+   "D037"
+  ],
+  "our_notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Enforcement is by the Division of Housing or aggrieved private citizens in Hoboken Municipal Court. Penalties (up to $2,000 fine, up to 90 days community service, or N.J.S.A. 40:49-5 penalties) are omitted from key_value."
+ },
+ {
+  "gold_id": "BERK-FEE-01",
+  "team_rule_id": "r-0003",
+  "jurisdiction": "Berkeley, CA",
+  "category": "application_screening_fees",
+  "gold_citation": "Berkeley Mun. Code §§ 13.78.010, 13.78.016",
+  "our_citation": "BMC 13.78.016",
+  "gold_effective_date": null,
+  "our_effective_date": null,
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D005"
+  ],
+  "our_doc": "D005",
+  "our_title": "Prohibition of non-refundable application fees for existing tenancies (BMC 13.78.016)",
+  "our_supporting": [],
+  "our_notes": "The page gives no adoption or effective date for BMC 13.78.016, so both dates are null. Lease provisions that violate chapter 13.78 are unenforceable under BMC 13.78.018."
+ },
+ {
+  "gold_id": "SA-RENT-01",
+  "team_rule_id": "r-0062",
+  "jurisdiction": "Santa Ana, CA",
+  "category": "rent_increase_limits",
+  "gold_citation": "Santa Ana Mun. Code § 8-1998 et seq. (Rent Stabilization Ordinance)",
+  "our_citation": "Santa Ana Municipal Code, Rent Stabilization Ordinance (section number not stated in source)",
+  "gold_effective_date": "2021-11-19",
+  "our_effective_date": "2021-11-19",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D084",
+   "D085"
+  ],
+  "our_doc": "D085",
+  "our_title": "Santa Ana Rent Stabilization Ordinance",
+  "our_supporting": [
+   "D084"
+  ],
+  "our_notes": "Secondary press release from the city; adoption date given only as 'Tuesday night' so adoption_date is null. Owners must give written notice of the ordinance at lease start or with any rent increase notice. Later amendments, if any, are not reflected in this document."
+ },
+ {
+  "gold_id": "SF-SCRN-01",
+  "team_rule_id": "r-0058",
+  "jurisdiction": "San Francisco, CA",
+  "category": "screening_restrictions",
+  "gold_citation": "S.F. Police Code art. 49 (§§ 4901 et seq.)",
+  "our_citation": "S.F. Police Code art. 49 (Fair Chance Ordinance)",
+  "gold_effective_date": null,
+  "our_effective_date": null,
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D078"
+  ],
+  "our_doc": "D078",
+  "our_title": "Fair Chance Ordinance (affordable housing)",
+  "our_supporting": [],
+  "our_notes": "Navigation or teaser text on an agency landing page. The citation comes from general knowledge, not this document. The page states no effective date, adoption date or specific requirements, so effective_date is null."
+ },
+ {
+  "gold_id": "LA-DEP-01",
+  "team_rule_id": "r-0033",
+  "jurisdiction": "Los Angeles, CA",
+  "category": "security_deposits",
+  "gold_citation": "L.A. Mun. Code § 151.06.02",
+  "our_citation": "L.A.M.C. § 151.06.02",
+  "gold_effective_date": null,
+  "our_effective_date": null,
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D041"
+  ],
+  "our_doc": "D044",
+  "our_title": "Security deposit interest for RSO units (LAMC 151.06.02)",
+  "our_supporting": [],
+  "our_notes": "Secondary source (landlord association article) quoting the LAMC. The quoted text says interest 'shall begin accruing on November 1, 1990', which is an accrual date and not a stated effective date, so effective_date is null. The rate table runs through 2025 only (4.320%, updated 5/21/25); rates for 2026 are not in this capture. Article notes laws may have changed since publication."
+ },
+ {
+  "gold_id": "MA-DEP-01",
+  "team_rule_id": "r-0041",
+  "jurisdiction": "MA",
+  "category": "security_deposits",
+  "gold_citation": "M.G.L. c.186, § 15B(1)(b)(iii)",
+  "our_citation": "M.G.L. c. 186, § 15B",
+  "gold_effective_date": null,
+  "our_effective_date": null,
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D052"
+  ],
+  "our_doc": "D052",
+  "our_title": "Massachusetts security deposit limits and handling (M.G.L. c. 186, § 15B)",
+  "our_supporting": [],
+  "our_notes": "The document gives no effective date for the original 1-month cap, so effective_date is null. The text was amended by 2025, c. 9, §§ 54-55, effective 2025-08-01 (adds 'agent of the lessor' and lets the executive office of housing and livable communities authorize an optional fee in lieu of a deposit, capped at 1 month's rent in total). That amendment did not change the cap itself. Procedural duties (receipts, condition statement, records, transfer to successor, treble damages) are folded into this record."
+ },
+ {
+  "gold_id": "NJ-ALG-01",
+  "team_rule_id": "r-0042",
+  "jurisdiction": "NJ",
+  "category": "algorithmic_rent_setting",
+  "gold_citation": "N.J.S.A. 56:9-20 to 56:9-26 (P.L.2026, c.43)",
+  "our_citation": "P.L. 2026, c.43 (C.56:9-20 to 56:9-26)",
+  "gold_effective_date": "2027-07-01",
+  "our_effective_date": "2027-07-01",
+  "gold_status": "not_yet_effective",
+  "our_status": "not_yet_effective",
+  "gold_docs": [
+   "D069"
+  ],
+  "our_doc": "D069",
+  "our_title": "Forbidding the Algorithmic Inflation of Rent (FAIR) Act",
+  "our_supporting": [
+   "D060"
+  ],
+  "our_notes": "Section 9: takes effect on the first day of the twelfth month next following enactment. Enacted (approved) July 20, 2026, so the twelfth month following is July 2027, giving 2027-07-01. Not yet effective as of the 2026-10-01 query date. Text is the first reprint (A3497 1R ACS)."
+ },
+ {
+  "gold_id": "NJ-SCRN-01",
+  "team_rule_id": "r-0048",
+  "jurisdiction": "NJ",
+  "category": "screening_restrictions",
+  "gold_citation": "N.J.S.A. 46:8-55 (P.L.2021, c.110)",
+  "our_citation": "N.J.S.A. 46:8-52 et seq. (P.L. 2021, c.110)",
+  "gold_effective_date": "2022-01-01",
+  "our_effective_date": "2022-01-01",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D065"
+  ],
+  "our_doc": "D065",
+  "our_title": "Fair Chance in Housing Act (criminal record screening limits)",
+  "our_supporting": [],
+  "our_notes": "Effective date computed from section 14: the act takes effect on the first day of the seventh month next following enactment. Enactment was June 18, 2021 (Approved June 18, 2021), so the seventh month following is January 2022, giving 2022-01-01. Also folded in: written disclosure before accepting any application fee (s.4b), no evaluation of arrests without conviction, expunged or sealed records (s.5a), and a ban on requiring drug or alcohol tests (s.9). Enforcement is through the Division on Civil Rights, with penalties up to $1,000, $5,000 or $10,000.)"
+ },
+ {
+  "gold_id": "MA-FEE-01",
+  "team_rule_id": "r-0037",
+  "jurisdiction": "MA",
+  "category": "application_screening_fees",
+  "gold_citation": "M.G.L. c.186, § 15B(1)(b)",
+  "our_citation": "M.G.L. c. 186, § 15B; 254 C.M.R. 7",
+  "gold_effective_date": null,
+  "our_effective_date": null,
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D052",
+   "D057"
+  ],
+  "our_doc": "D054",
+  "our_title": "No application fees by landlords (M.G.L. c. 186, § 15B)",
+  "our_supporting": [],
+  "our_notes": "Secondary source (MassLandlords, updated 2025-01-14). Article says the law has been in effect since the 1970s but gives no specific effective date, so effective_date is null. Federal case Perry v. Equity Residential (2014) found up-front application fees unlawful. Requiring applicants to pay a third-party screening service is considered risky."
+ },
+ {
+  "gold_id": "BERK-SCRN-01",
+  "team_rule_id": "r-0006",
+  "jurisdiction": "Berkeley, CA",
+  "category": "screening_restrictions",
+  "gold_citation": "Berkeley Mun. Code § 13.106.040 (Ord. 7692-NS)",
+  "our_citation": "Berkeley Municipal Code ch. 13.106",
+  "gold_effective_date": "2020-04",
+  "our_effective_date": "2020-04",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D003"
+  ],
+  "our_doc": "D003",
+  "our_title": "Ronald V. Dellums Fair Chance Access to Housing Ordinance",
+  "our_supporting": [],
+  "our_notes": "Source states only that City Council passed the ordinance on April 14, 2020; no effective date stated, so effective_date is null. Official city summary page; refer to the ordinance for details. Adoption date from D003: \"On April 14, 2020, Berkeley City Council passed the Fair Chance Access to Housing Ordinance (BMC 13.106).\""
+ },
+ {
+  "gold_id": "BERK-JUST-01",
+  "team_rule_id": "r-0004",
+  "jurisdiction": "Berkeley, CA",
+  "category": "just_cause_eviction",
+  "gold_citation": "Berkeley Mun. Code § 13.76.130",
+  "our_citation": "Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance), as amended by Measure BB (Nov. 2024)",
+  "gold_effective_date": null,
+  "our_effective_date": null,
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D006",
+   "D009"
+  ],
+  "our_doc": "D006",
+  "our_title": "Berkeley just cause eviction rules as amended by Measure BB",
+  "our_supporting": [
+   "D009",
+   "D004"
+  ],
+  "our_notes": "Measure BB passed in the November 2024 election; the document states no operative date for the eviction changes, so effective_date is null. Lease-breach evictions require a material, mutually agreed term, substantial actual damage and unreasonable tenant behavior. Notices must direct tenants to the Rent Board, and copies of notices and lawsuits must be filed with the Rent Board within three business days. Owner move-in relocation assistance is adjusted for inflation annually; no amounts are given. Notice of Tenant Rights applies to tenancies started on or after 2024-12-20, which is an application date, not an effective date."
+ },
+ {
+  "gold_id": "BERK-DEP-01",
+  "team_rule_id": "r-0007",
+  "jurisdiction": "Berkeley, CA",
+  "category": "security_deposits",
+  "gold_citation": "Berkeley Mun. Code § 13.76.070",
+  "our_citation": "Berkeley Municipal Code ch. 13.76 (Rent Stabilization and Eviction for Good Cause Ordinance)",
+  "gold_effective_date": null,
+  "our_effective_date": null,
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D007",
+   "D009"
+  ],
+  "our_doc": "D009",
+  "our_title": "Berkeley security deposit interest coverage",
+  "our_supporting": [
+   "D007"
+  ],
+  "our_notes": "The document does not state the interest rate or the deposit cap. The last 'Yes' column is 'Security Deposit Interest'. Exact code section for interest not given in the document; citation is to the chapter generally."
+ },
+ {
+  "gold_id": "SD-JUST-01",
+  "team_rule_id": "r-0053",
+  "jurisdiction": "San Diego, CA",
+  "category": "just_cause_eviction",
+  "gold_citation": "San Diego Mun. Code § 98.0704 (O-21647 N.S.)",
+  "our_citation": "San Diego Municipal Code §§ 98.0701–98.0710",
+  "gold_effective_date": "2023-06-24",
+  "our_effective_date": "2023-06-24",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D073"
+  ],
+  "our_doc": "D073",
+  "our_title": "San Diego Residential Tenant Protections (just cause for termination of tenancy)",
+  "our_supporting": [
+   "D077"
+  ],
+  "our_notes": "Added 5-25-2023 by O-21647 N.S.; effective 6-24-2023. Amended 2-27-2024 by O-21769 N.S., effective 3-28-2024 (§§ 98.0702, 98.0704, 98.0709, 98.0710 added or amended). The amendment text does not show a change to the headline relocation figures, so the original effective date is used. Relocation amounts are in § 98.0706(c). At-fault grounds are in § 98.0704(a) and no-fault grounds in § 98.0704(b)."
+ },
+ {
+  "gold_id": "LA-JUST-01",
+  "team_rule_id": "r-0029",
+  "jurisdiction": "Los Angeles, CA",
+  "category": "just_cause_eviction",
+  "gold_citation": "L.A. Mun. Code § 165.03 (Art. 5.3, Ch. XVI; Ord. No. 187737)",
+  "our_citation": "L.A. Mun. Code § 165.00 et seq. (Just Cause for Eviction Ordinance)",
+  "gold_effective_date": "2023-01-27",
+  "our_effective_date": null,
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D040",
+   "D043"
+  ],
+  "our_doc": "D040",
+  "our_title": "Los Angeles Just Cause for Eviction Ordinance (JCO)",
+  "our_supporting": [],
+  "our_notes": "The page does not state the JCO's original effective date or the relocation amounts, so effective_date is null. Related items on the page: effective March 27, 2023, no eviction for nonpayment unless the amount owed exceeds Fair Market Rent; eviction notices must be filed with LAHD within 3 business days; a Notice of Right to Counsel must be posted from August 20, 2025. The LAMC citation is inferred from general knowledge, not from the page.}"
+ },
+ {
+  "gold_id": "LA-RENT-01",
+  "team_rule_id": "r-0031",
+  "jurisdiction": "Los Angeles, CA",
+  "category": "rent_increase_limits",
+  "gold_citation": "L.A. Mun. Code § 151.06 (as amended by Ord. No. 188795)",
+  "our_citation": "L.A.M.C. ch. XV, art. 1, § 151.00 et seq. (Rent Stabilization Ordinance)",
+  "gold_effective_date": "2026-02-02",
+  "our_effective_date": "2026-02-02",
+  "gold_status": "in_force",
+  "our_status": "in_force",
+  "gold_docs": [
+   "D041",
+   "D042"
+  ],
+  "our_doc": "D041",
+  "our_title": "Los Angeles Rent Stabilization Ordinance (RSO) allowable rent increases",
+  "our_supporting": [
+   "D042"
+  ],
+  "our_notes": "The effective date is for the 2026 change (utility add-on removed, dependent 10% removed). The numeric allowable percentage is in a linked PDF not captured here. The page also lists surcharges, registration fees and approved-increase programs (capital improvement, primary renovation, etc.), not extracted separately. Source is LAHD summary page, last modified 2026-09-22."
+ },
+ {
+  "gold_id": "MA-RENT-P1",
+  "team_rule_id": "r-0039",
+  "jurisdiction": "MA",
+  "category": "rent_increase_limits",
+  "gold_citation": "Initiative Petition 25-21 (Mass. 2026); Cella v. Attorney General (SJC, decided 2026-06-23)",
+  "our_citation": "Mass. Const. amend. art. 48, The Initiative, Pt. II, § 2 (SJC ruling, June 2026)",
+  "gold_effective_date": null,
+  "our_effective_date": null,
+  "gold_status": "failed",
+  "our_status": "failed",
+  "gold_docs": [],
+  "our_doc": "D059",
+  "our_title": "2026 statewide rent control ballot question (struck by SJC)",
+  "our_supporting": [],
+  "our_notes": "Secondary news source; the case name and the SJC's exact citation are not given in the article. The measure was never enacted, so effective_date is null. Article is dated June 23, 2026 (updated and originally published). Existing Massachusetts law is not addressed in this article."
+ }
+]

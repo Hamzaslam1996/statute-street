@@ -53,7 +53,7 @@ Done when: `python extract.py --all && python verify.py && python eval.py` runs 
 
 ## Working rules
 - Ask before deleting or overwriting files, before git push, and before any run over ~50 documents.
-- Commit after each working milestone with a clear message (Hamza will push).
+- You own git: after each working milestone, `git add` the changed code/out files (never .env), commit with a clear message, and `git push`. Also commit any new files Hamza or other sessions add under gold/, sources/, data/ or instructions/. If .git/index.lock exists and no git process is running (check with `pgrep -fl git`), remove it and retry.
 - Never put secrets in code, logs or commits. Never edit the starter pack.
 - Prefer simple, readable Python with comments a lawyer can follow.
 - When unsure about a legal point (preemption, categories, which date governs), flag it for Hamza instead of deciding.

@@ -99,8 +99,11 @@ D067,1,N.J.S.A. 2A:18-61.1 et seq.,NJ Anti-Eviction Statute (statutory grounds f
 D068,1,N.J.S.A. 10:5-12 (NJ Law Against Discrimination),NJ Law Against Discrimination: source of lawful income / rent payment protection,True,100.0,"The LAD also prohibits housing discrimination  based
 on the source of lawful inc"
 D069,1,"P.L. 2026, c.43 (C.56:9-20 to 56:9-26)",Forbidding the Algorithmic Inflation of Rent (FAIR) Act,True,100.0,"It shall be unlawful and a violation of the “New Jersey Antitrust Act,” P.L.1970"
-D070,1,"Newark, N.J. Code § 19:2-3.1",Newark Rent Control: annual CPI-based rent increase cap,True,100.0,At the expiration of a lease or at the termination of the lease of a periodic te
-D070,1,Newark Rev. Gen. Ord. § 19:2-22,Newark Rent Control - limitation on increases (25% ceiling) and exemptions,True,100.0,Since an immediate rent increase of more than 25% above the prior monthly rent m
+D070,1,"Newark, N.J., Code § 19:2-3.1",Newark Rent Control: annual CPI-based rent increase cap,True,100.0,At the expiration of a lease or at the termination of the lease of a periodic te
+D070,1,Newark Rev. Gen. Ord. § 19:2-22,Newark Rent Control: 25% ceiling on Board-granted increases,True,100.0,Since an immediate rent increase of more than 25% above the prior monthly rent m
+D070,1,Newark Rev. Gen. Ord. § 19:2-18.1,Newark Rent Control: new construction exemption,True,100.0,"The provisions of the Rent Control Ordinance, which limit the periodic or regula"
+D070,1,Newark Rev. Gen. Ord. § 19:2-18.4,Newark Rent Control: rehabilitated vacant unit increase (max 10%),True,100.0,Any landlord that rehabilitates a vacant apartment unit by spending a total amou
+D070,1,Newark Rev. Gen. Ord. § 19:2-17.1,Newark Rent Control: utilities surcharge ceilings,True,100.0,"However, the increase allowed shall not exceed 15% of the monthly rent roll of a"
 D072,1,"Newark Municipal Code § 2:31-1 to 2:31-9 (Ord. 6 PSF-B, 4-15-2015)",Newark Ban the Box - Housing (criminal record check practices),True,100.0,Inquiry into and consideration of any applicant's criminal history shall take pl
 D073,1,San Diego Municipal Code §§ 98.0701–98.0710,San Diego Residential Tenant Protections (just cause for termination of tenancy),True,100.0,A landlord shall not terminate a tenancy without just cause.
 D074,1,San Diego Municipal Code § 98.1103 (Ord. O-21955 N.S.),San Diego Prohibition of Anti-Competitive Automated Rent Price Fixing (SDMC §98.1103),True,100.0,(b) It is unlawful for a landlord to use an algorithmic device to set rental rat

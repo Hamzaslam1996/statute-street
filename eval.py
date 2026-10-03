@@ -190,6 +190,7 @@ def main() -> int:
     date_tags = [same_date(g.get("effective_date"), o.get("effective_date")) for g, o, _ in matches]
     date_exact = date_tags.count("exact")
     date_year = date_tags.count("year")
+    date_both_null = date_tags.count("n/a")
     cite_scores = [s for _, _, s in matches]
     kv_scores = [v for v in (value_score(g.get("key_value"), o.get("key_value")) for g, o, _ in matches)
                  if v is not None]
@@ -211,8 +212,9 @@ def main() -> int:
     lines.append(f"| Extra colliding with a negative finding | {len(neg_hits)} |")
     lines.append(f"| Negative findings found / missed / extra | {len(neg_found)} / {len(neg_missed)} / {len(neg_extra)} |")
     lines.append(f"| Status agrees | {status_ok}/{n} = {pct(status_ok, n)} |")
-    lines.append(f"| Effective date exact / same year | {date_exact}/{n} = {pct(date_exact, n)} / "
-                 f"{date_exact + date_year}/{n} |")
+    lines.append(f"| Effective date agrees (exact or both null) | {date_exact + date_both_null}/{n} = "
+                 f"{pct(date_exact + date_both_null, n)} ({date_exact} exact dates, {date_both_null} both null, "
+                 f"{n - date_exact - date_both_null} differ, of which {date_year} same year) |")
     lines.append(f"| Citation similarity (mean) | {sum(cite_scores) / n:.0f}/100 |" if n else "| Citation similarity | n/a |")
     lines.append(f"| Key value similarity (mean) | {sum(kv_scores) / len(kv_scores):.0f}/100 |" if kv_scores else "| Key value similarity | n/a |")
     if summary:
@@ -249,6 +251,15 @@ def main() -> int:
                   for o in neg_extra]
 
     REPORT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    # Machine-readable pairs for follow-up analysis (date_mismatch.py etc.)
+    (OUT / "eval_matches.json").write_text(json.dumps([
+        {"gold_id": g["gold_id"], "team_rule_id": o["team_rule_id"], "jurisdiction": g["jurisdiction"],
+         "category": g["category"], "gold_citation": g.get("citation"), "our_citation": o.get("citation"),
+         "gold_effective_date": g.get("effective_date"), "our_effective_date": o.get("effective_date"),
+         "gold_status": g.get("status"), "our_status": o.get("status"),
+         "gold_docs": g.get("source_doc_ids"), "our_doc": o.get("source_doc_id"), "our_title": o.get("title"),
+         "our_supporting": o.get("supporting_doc_ids", []), "our_notes": o.get("notes")}
+        for g, o, _ in matches], indent=1, ensure_ascii=False), encoding="utf-8")
     print("\n".join(lines[:16]))
     print(f"\nFull report: {REPORT_MD}")
     return 0

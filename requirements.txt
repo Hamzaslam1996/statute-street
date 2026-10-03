@@ -5,3 +5,4 @@ pandas
 jsonschema
 rapidfuzz
 pypdf
+pytest

@@ -48,3 +48,8 @@ D047,"Mass. Senate Bill S.2983, 194th General Court (2025-2026)",D046,"Mass. S. 
 D074,San Diego Municipal Code § 98.1103 (Ord. O-21955 N.S.),D076,S.D. Mun. Code § 98.1103 (proposed; Ord. O-2025-107),pending,"San Diego, CA",algorithmic_rent_setting,same section; proposal folded into enacted rule
 D047,"Mass. Senate Bill S.2983, 194th General Court (2025-2026)",D030,"H.1564 and S.2983, 194th General Court of Massachusetts (pending bills)",pending,MA,algorithmic_rent_setting,same section
 D002,Santa Ana Ordinance No. NS-3090,D087,"Santa Ana Municipal Code, algorithmic rent-setting software ordinance (ordinance number and section not stated in source)",pending,"Santa Ana, CA",algorithmic_rent_setting,citation similarity 76 (no section numbers); proposal folded into enacted rule
+D067,N.J.S.A. 46:8-21.2; N.J.S.A. 46:8-19; N.J.S.A. 46:8-21.1,D064,N.J.S.A. 46:8-26,in_force,NJ,security_deposits,supplementary provision folded into headline rule
+D070,"Newark, N.J., Code § 19:2-3.1",D070,Newark Rev. Gen. Ord. § 19:2-22,in_force,"Newark, NJ",rent_increase_limits,supplementary provision folded into headline rule
+D070,"Newark, N.J., Code § 19:2-3.1",D070,Newark Rev. Gen. Ord. § 19:2-18.1,in_force,"Newark, NJ",rent_increase_limits,supplementary provision folded into headline rule
+D070,"Newark, N.J., Code § 19:2-3.1",D070,Newark Rev. Gen. Ord. § 19:2-18.4,in_force,"Newark, NJ",rent_increase_limits,supplementary provision folded into headline rule
+D070,"Newark, N.J., Code § 19:2-3.1",D070,Newark Rev. Gen. Ord. § 19:2-17.1,in_force,"Newark, NJ",rent_increase_limits,supplementary provision folded into headline rule
