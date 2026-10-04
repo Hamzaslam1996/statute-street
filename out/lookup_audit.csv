@@ -231,6 +231,9 @@ A0022,Los Angeles,r-0018,applies,False,,5 units
 A0022,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0022,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 2012, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0022,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0022,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 2012, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0022,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 2012, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0022,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 2012, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0023,Los Angeles,r-0013,applies,False,,covers all residential rentals in CA
 A0023,Los Angeles,r-0014,applies,False,,covers all residential rentals in CA
 A0023,Los Angeles,r-0015,superseded,False,protection begins per the timing condition: After a tenant has continuously and lawfully occupied a unit for 12 months | not within the exemption for shared bathroom/kitchen with owner-occupant (it can remove at most the owner's own unit) | not within the exemption for deed-restricted affordable housing,Stricter local rule r-0028 (Los Angeles Just Cause for Eviction Ordinance (JCO) governs here
@@ -240,6 +243,9 @@ A0023,Los Angeles,r-0018,applies,False,,33 units
 A0023,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0023,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 1987, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0023,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0023,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 1987, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0023,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 1987, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0023,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 1987, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0024,Cambridge,r-0020,pending,False,,"Cambridge City Council policy order (June 2026), directing city manager to draft ordinance language; no ordinance cited is a pending bill or proposal, not law"
 A0024,Cambridge,r-0021,applies,False,,Assessor type apartments
 A0024,Cambridge,r-0022,applies,False,,Owner_type exception cannot apply (units > 2: 6)
@@ -367,6 +373,9 @@ A0035,Los Angeles,r-0018,applies,False,,14 units
 A0035,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0035,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 1997, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0035,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0035,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 1997, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0035,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 1997, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0035,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 1997, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0036,Boston,r-0008,applies,False,,Assessor type apartments
 A0036,Boston,r-0011,unknown,False,,Unknown: funding not in the data (Housing providers receiving Department of Neighborhood Devel)
 A0036,Boston,r-0012,applies,False,,"covers all residential rentals in Boston, MA"
@@ -386,6 +395,9 @@ A0037,Los Angeles,r-0018,applies,False,,47 units
 A0037,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0037,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 2001, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0037,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0037,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 2001, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0037,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 2001, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0037,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 2001, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0038,San Francisco,r-0013,applies,False,,covers all residential rentals in CA
 A0038,San Francisco,r-0014,applies,False,,covers all residential rentals in CA
 A0038,San Francisco,r-0015,superseded,False,protection begins per the timing condition: After a tenant has continuously and lawfully occupied a unit for 12 months | not within the exemption for shared bathroom/kitchen with owner-occupant (it can remove at most the owner's own unit) | not within the exemption for deed-restricted affordable housing,Stricter local rule r-0058 (San Francisco Rent Ordinance just cause eviction () governs here
@@ -467,6 +479,9 @@ A0045,Los Angeles,r-0018,applies,False,,65 units
 A0045,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0045,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 1987, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0045,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0045,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 1987, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0045,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 1987, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0045,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 1987, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0046,Cambridge,r-0020,pending,False,,"Cambridge City Council policy order (June 2026), directing city manager to draft ordinance language; no ordinance cited is a pending bill or proposal, not law"
 A0046,Cambridge,r-0021,applies,False,,Assessor type apartments
 A0046,Cambridge,r-0022,applies,False,,Owner_type exception cannot apply (units > 2: 44)
@@ -517,6 +532,7 @@ A0050,San Francisco,r-0057,applies,False,,"covers all residential rentals in San
 A0050,San Francisco,r-0058,applies,False,,"covers all residential rentals in San Francisco, CA (statutory exemptions (certain owner-occupied shared units, institutional housing) not testable from county data)"
 A0050,San Francisco,r-0060,unknown,False,,"Unknown: funding not in the data (Affordable housing decisions only, per the page's descriptio)"
 A0050,San Francisco,r-0061,applies,False,,"covers all residential rentals in San Francisco, CA"
+A0050,San Francisco,r-0059,unknown,False,,"Does not appear to cover this property: built 1986, after the 1979-06-13 certificate-of-occupancy cutoff"
 A0051,Jersey City,r-0026,applies,True,"not within the exemption for residential dwelling units exclude inpatient medical care, licensed long-term ca","Applies unless the property falls within the exemption for residential dwelling units exclude inpatient medical care, licensed long-term ca. covers residential rentals in Jersey City, NJ; Possible preemption by the NJ FAIR Act from 2027-07-01 — flagged for human review."
 A0051,Jersey City,r-0027,unknown,False,,"Unknown: unit count not in supplied data; assessor building code '3S+BT-F-6U' suggests 6 units (derived, unconfirmed)"
 A0051,Jersey City,r-0044,not_yet_effective,True,,"effective 2027-07-01, after the query date 2026-10-01; may pre-empt local rule(s) r-0026 — flagged for human review, preemption not decided here"
@@ -681,6 +697,9 @@ A0066,Los Angeles,r-0018,applies,False,,36 units
 A0066,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0066,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 1988, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0066,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0066,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 1988, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0066,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 1988, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0066,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 1988, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0067,Los Angeles,r-0013,applies,False,,covers all residential rentals in CA
 A0067,Los Angeles,r-0014,applies,False,,covers all residential rentals in CA
 A0067,Los Angeles,r-0015,superseded,False,protection begins per the timing condition: After a tenant has continuously and lawfully occupied a unit for 12 months | not within the exemption for shared bathroom/kitchen with owner-occupant (it can remove at most the owner's own unit) | not within the exemption for deed-restricted affordable housing,Stricter local rule r-0029 (Relocation assistance for no-fault evictions under) governs here
@@ -828,6 +847,9 @@ A0080,Los Angeles,r-0018,applies,False,,90 units
 A0080,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0080,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 2002, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0080,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0080,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 2002, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0080,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 2002, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0080,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 2002, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0081,San Francisco,r-0013,applies,False,,covers all residential rentals in CA
 A0081,San Francisco,r-0014,applies,False,,covers all residential rentals in CA
 A0081,San Francisco,r-0015,superseded,False,protection begins per the timing condition: After a tenant has continuously and lawfully occupied a unit for 12 months | not within the exemption for shared bathroom/kitchen with owner-occupant (it can remove at most the owner's own unit) | not within the exemption for deed-restricted affordable housing,Stricter local rule r-0058 (San Francisco Rent Ordinance just cause eviction () governs here
@@ -839,6 +861,7 @@ A0081,San Francisco,r-0057,applies,False,,"covers all residential rentals in San
 A0081,San Francisco,r-0058,applies,False,,"covers all residential rentals in San Francisco, CA (statutory exemptions (certain owner-occupied shared units, institutional housing) not testable from county data)"
 A0081,San Francisco,r-0060,unknown,False,,"Unknown: funding not in the data (Affordable housing decisions only, per the page's descriptio)"
 A0081,San Francisco,r-0061,applies,False,,"covers all residential rentals in San Francisco, CA"
+A0081,San Francisco,r-0059,unknown,False,,"Does not appear to cover this property: built 2005, after the 1979-06-13 certificate-of-occupancy cutoff"
 A0082,Cambridge,r-0020,pending,False,,"Cambridge City Council policy order (June 2026), directing city manager to draft ordinance language; no ordinance cited is a pending bill or proposal, not law"
 A0082,Cambridge,r-0021,applies,False,,Assessor type apartments
 A0082,Cambridge,r-0022,applies,False,,Owner_type exception cannot apply (units > 2: 16)
@@ -1097,6 +1120,7 @@ A0105,San Francisco,r-0057,applies,False,,"covers all residential rentals in San
 A0105,San Francisco,r-0058,applies,False,,"covers all residential rentals in San Francisco, CA (statutory exemptions (certain owner-occupied shared units, institutional housing) not testable from county data)"
 A0105,San Francisco,r-0060,unknown,False,,"Unknown: funding not in the data (Affordable housing decisions only, per the page's descriptio)"
 A0105,San Francisco,r-0061,applies,False,,"covers all residential rentals in San Francisco, CA"
+A0105,San Francisco,r-0059,unknown,False,,"Does not appear to cover this property: built 2019, after the 1979-06-13 certificate-of-occupancy cutoff"
 A0106,San Francisco,r-0013,applies,False,,covers all residential rentals in CA
 A0106,San Francisco,r-0014,applies,False,,covers all residential rentals in CA
 A0106,San Francisco,r-0015,superseded,False,protection begins per the timing condition: After a tenant has continuously and lawfully occupied a unit for 12 months | not within the exemption for shared bathroom/kitchen with owner-occupant (it can remove at most the owner's own unit) | not within the exemption for deed-restricted affordable housing,Stricter local rule r-0058 (San Francisco Rent Ordinance just cause eviction () governs here
@@ -1162,6 +1186,9 @@ A0111,Los Angeles,r-0018,applies,False,,40 units
 A0111,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0111,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 1984, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0111,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0111,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 1984, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0111,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 1984, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0111,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 1984, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0112,San Francisco,r-0013,applies,False,,covers all residential rentals in CA
 A0112,San Francisco,r-0014,applies,False,,covers all residential rentals in CA
 A0112,San Francisco,r-0015,superseded,False,protection begins per the timing condition: After a tenant has continuously and lawfully occupied a unit for 12 months | not within the exemption for shared bathroom/kitchen with owner-occupant (it can remove at most the owner's own unit) | not within the exemption for deed-restricted affordable housing,Stricter local rule r-0058 (San Francisco Rent Ordinance just cause eviction () governs here
@@ -1698,6 +1725,9 @@ A0162,Los Angeles,r-0018,applies,False,,24 units
 A0162,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0162,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 1987, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0162,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0162,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 1987, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0162,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 1987, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0162,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 1987, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0163,Jersey City,r-0026,applies,True,"not within the exemption for residential dwelling units exclude inpatient medical care, licensed long-term ca","Applies unless the property falls within the exemption for residential dwelling units exclude inpatient medical care, licensed long-term ca. covers residential rentals in Jersey City, NJ; Possible preemption by the NJ FAIR Act from 2027-07-01 — flagged for human review."
 A0163,Jersey City,r-0027,unknown,False,,"Unknown: unit count not in supplied data; assessor building code '3&4S-B&F-14U' suggests 14 units (derived, unconfirmed)"
 A0163,Jersey City,r-0044,not_yet_effective,True,,"effective 2027-07-01, after the query date 2026-10-01; may pre-empt local rule(s) r-0026 — flagged for human review, preemption not decided here"
@@ -1778,6 +1808,9 @@ A0170,Los Angeles,r-0018,applies,False,,32 units
 A0170,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0170,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0170,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0170,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0170,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0170,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0171,Jersey City,r-0026,applies,True,"not within the exemption for residential dwelling units exclude inpatient medical care, licensed long-term ca","Applies unless the property falls within the exemption for residential dwelling units exclude inpatient medical care, licensed long-term ca. covers residential rentals in Jersey City, NJ; Possible preemption by the NJ FAIR Act from 2027-07-01 — flagged for human review."
 A0171,Jersey City,r-0027,unknown,False,,"Unknown: unit count not in supplied data; assessor building code '3S-B-D-7U-NH' suggests 7 units (derived, unconfirmed)"
 A0171,Jersey City,r-0044,not_yet_effective,True,,"effective 2027-07-01, after the query date 2026-10-01; may pre-empt local rule(s) r-0026 — flagged for human review, preemption not decided here"
@@ -1883,6 +1916,9 @@ A0180,Los Angeles,r-0018,applies,False,,33 units
 A0180,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0180,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0180,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0180,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0180,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0180,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0181,Hoboken,r-0023,applies,True,not within the exemption for Medical/long-term care and detention facilities are excluded from the definition,"Applies unless the property falls within the exemption for Medical/long-term care and detention facilities are excluded from the definition. covers residential rentals in Hoboken, NJ; Possible preemption by the NJ FAIR Act from 2027-07-01 — flagged for human review."
 A0181,Hoboken,r-0024,applies,False,,"covers all residential rentals in Hoboken, NJ"
 A0181,Hoboken,r-0025,unknown,False,the property is a resident owned cooperative / government owned housing,"Unknown: year built missing, so the certificate-of-occupancy cutoff cannot be tested"
@@ -2219,6 +2255,9 @@ A0210,Los Angeles,r-0018,applies,False,,9 units
 A0210,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0210,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 2016, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0210,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0210,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 2016, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0210,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 2016, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0210,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 2016, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0211,Boston,r-0008,applies,False,,Assessor type apartments
 A0211,Boston,r-0011,unknown,False,,Unknown: funding not in the data (Housing providers receiving Department of Neighborhood Devel)
 A0211,Boston,r-0012,applies,False,,"covers all residential rentals in Boston, MA"
@@ -2250,6 +2289,9 @@ A0213,Los Angeles,r-0018,applies,False,,7 units
 A0213,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0213,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 1986, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0213,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0213,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 1986, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0213,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 1986, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0213,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 1986, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0214,Cambridge,r-0020,pending,False,,"Cambridge City Council policy order (June 2026), directing city manager to draft ordinance language; no ordinance cited is a pending bill or proposal, not law"
 A0214,Cambridge,r-0021,applies,False,,Assessor type apartments
 A0214,Cambridge,r-0022,applies,False,,Owner_type exception cannot apply (units > 2: 6)
@@ -2672,6 +2714,9 @@ A0252,Los Angeles,r-0018,applies,False,,6 units
 A0252,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0252,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 1984, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0252,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0252,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 1984, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0252,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 1984, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0252,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 1984, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0253,San Francisco,r-0013,applies,False,,covers all residential rentals in CA
 A0253,San Francisco,r-0014,applies,False,,covers all residential rentals in CA
 A0253,San Francisco,r-0015,superseded,False,protection begins per the timing condition: After a tenant has continuously and lawfully occupied a unit for 12 months | not within the exemption for shared bathroom/kitchen with owner-occupant (it can remove at most the owner's own unit) | not within the exemption for deed-restricted affordable housing,Stricter local rule r-0058 (San Francisco Rent Ordinance just cause eviction () governs here
@@ -3014,6 +3059,7 @@ A0283,San Francisco,r-0057,applies,False,,"covers all residential rentals in San
 A0283,San Francisco,r-0058,applies,False,,"covers all residential rentals in San Francisco, CA (statutory exemptions (certain owner-occupied shared units, institutional housing) not testable from county data)"
 A0283,San Francisco,r-0060,unknown,False,,"Unknown: funding not in the data (Affordable housing decisions only, per the page's descriptio)"
 A0283,San Francisco,r-0061,applies,False,,"covers all residential rentals in San Francisco, CA"
+A0283,San Francisco,r-0059,unknown,False,,"Does not appear to cover this property: built 1986, after the 1979-06-13 certificate-of-occupancy cutoff"
 A0284,Cambridge,r-0020,pending,False,,"Cambridge City Council policy order (June 2026), directing city manager to draft ordinance language; no ordinance cited is a pending bill or proposal, not law"
 A0284,Cambridge,r-0021,applies,False,,Assessor type apartments
 A0284,Cambridge,r-0022,applies,False,,Owner_type exception cannot apply (units > 2: 9)
@@ -3343,6 +3389,9 @@ A0315,Los Angeles,r-0018,applies,False,,8 units
 A0315,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0315,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0315,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0315,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0315,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0315,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0316,San Diego,r-0013,applies,False,,covers all residential rentals in CA
 A0316,San Diego,r-0014,applies,False,,covers all residential rentals in CA
 A0316,San Diego,r-0015,superseded,False,protection begins per the timing condition: After a tenant has continuously and lawfully occupied a unit for 12 months | not within the exemption for shared bathroom/kitchen with owner-occupant (it can remove at most the owner's own unit) | not within the exemption for deed-restricted affordable housing,"Local rule r-0055 (San Diego Residential Tenant Protections (jus) shares the same coverage condition; wherever the state rule applies, the stricter local rule governs"
@@ -3508,6 +3557,9 @@ A0330,Los Angeles,r-0018,applies,False,,24 units
 A0330,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0330,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 2018, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0330,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0330,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 2018, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0330,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 2018, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0330,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 2018, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0331,Newark,r-0044,not_yet_effective,False,,"effective 2027-07-01, after the query date 2026-10-01"
 A0331,Newark,r-0045,unknown,False,"not within the exemption for New Jersey Real Estate Commission licensees, unless the licensee is the landlord",Unknown: a single_family/duplex exemption cannot be ruled out without a unit count
 A0331,Newark,r-0046,unknown,False,not within the exemption for does not apply to hotel or motel guests or guest houses rented to transient or s,Unknown: owner type not in the data (May not apply to owner-occupied premises with two (2) or few)
@@ -3768,6 +3820,9 @@ A0355,Los Angeles,r-0018,applies,False,,7 units
 A0355,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0355,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 1986, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0355,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0355,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 1986, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0355,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 1986, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0355,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 1986, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0356,Boston,r-0008,applies,False,,Assessor type apartments
 A0356,Boston,r-0011,unknown,False,,Unknown: funding not in the data (Housing providers receiving Department of Neighborhood Devel)
 A0356,Boston,r-0012,applies,False,,"covers all residential rentals in Boston, MA"
@@ -3789,6 +3844,7 @@ A0357,San Francisco,r-0057,applies,False,,"covers all residential rentals in San
 A0357,San Francisco,r-0058,applies,False,,"covers all residential rentals in San Francisco, CA (statutory exemptions (certain owner-occupied shared units, institutional housing) not testable from county data)"
 A0357,San Francisco,r-0060,unknown,False,,"Unknown: funding not in the data (Affordable housing decisions only, per the page's descriptio)"
 A0357,San Francisco,r-0061,applies,False,,"covers all residential rentals in San Francisco, CA"
+A0357,San Francisco,r-0059,unknown,False,,"Does not appear to cover this property: built 1997, after the 1979-06-13 certificate-of-occupancy cutoff"
 A0358,Newark,r-0044,not_yet_effective,False,,"effective 2027-07-01, after the query date 2026-10-01"
 A0358,Newark,r-0045,unknown,False,"not within the exemption for New Jersey Real Estate Commission licensees, unless the licensee is the landlord",Unknown: a single_family/duplex exemption cannot be ruled out without a unit count
 A0358,Newark,r-0046,unknown,False,not within the exemption for does not apply to hotel or motel guests or guest houses rented to transient or s,Unknown: owner type not in the data (May not apply to owner-occupied premises with two (2) or few)
@@ -3972,6 +4028,9 @@ A0374,Los Angeles,r-0018,applies,False,,15 units
 A0374,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0374,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0374,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0374,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0374,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0374,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0375,San Francisco,r-0013,applies,False,,covers all residential rentals in CA
 A0375,San Francisco,r-0014,applies,False,,covers all residential rentals in CA
 A0375,San Francisco,r-0015,superseded,False,protection begins per the timing condition: After a tenant has continuously and lawfully occupied a unit for 12 months | not within the exemption for shared bathroom/kitchen with owner-occupant (it can remove at most the owner's own unit) | not within the exemption for deed-restricted affordable housing,Stricter local rule r-0058 (San Francisco Rent Ordinance just cause eviction () governs here
@@ -4092,6 +4151,7 @@ A0385,San Francisco,r-0057,applies,False,,"covers all residential rentals in San
 A0385,San Francisco,r-0058,applies,False,,"covers all residential rentals in San Francisco, CA (statutory exemptions (certain owner-occupied shared units, institutional housing) not testable from county data)"
 A0385,San Francisco,r-0060,unknown,False,,"Unknown: funding not in the data (Affordable housing decisions only, per the page's descriptio)"
 A0385,San Francisco,r-0061,applies,False,,"covers all residential rentals in San Francisco, CA"
+A0385,San Francisco,r-0059,unknown,False,,"Does not appear to cover this property: built 1986, after the 1979-06-13 certificate-of-occupancy cutoff"
 A0386,San Diego,r-0013,applies,False,,covers all residential rentals in CA
 A0386,San Diego,r-0014,applies,False,,covers all residential rentals in CA
 A0386,San Diego,r-0015,superseded,False,protection begins per the timing condition: After a tenant has continuously and lawfully occupied a unit for 12 months | not within the exemption for shared bathroom/kitchen with owner-occupant (it can remove at most the owner's own unit) | not within the exemption for deed-restricted affordable housing,"Local rule r-0055 (San Diego Residential Tenant Protections (jus) shares the same coverage condition; wherever the state rule applies, the stricter local rule governs"
@@ -4297,6 +4357,9 @@ A0405,Los Angeles,r-0018,applies,False,,6 units
 A0405,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0405,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 2008, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0405,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0405,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 2008, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0405,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 2008, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0405,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 2008, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0406,Boston,r-0008,applies,False,,Assessor type apartments
 A0406,Boston,r-0011,unknown,False,,Unknown: funding not in the data (Housing providers receiving Department of Neighborhood Devel)
 A0406,Boston,r-0012,applies,False,,"covers all residential rentals in Boston, MA"
@@ -4531,6 +4594,9 @@ A0427,Los Angeles,r-0018,applies,False,,15 units
 A0427,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0427,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 1986, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0427,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0427,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 1986, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0427,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 1986, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0427,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 1986, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0428,Newark,r-0044,not_yet_effective,False,,"effective 2027-07-01, after the query date 2026-10-01"
 A0428,Newark,r-0045,unknown,False,"not within the exemption for New Jersey Real Estate Commission licensees, unless the licensee is the landlord",Unknown: a single_family/duplex exemption cannot be ruled out without a unit count
 A0428,Newark,r-0046,unknown,False,,Unknown: owner type not in the data (May not apply to owner-occupied premises with two (2) or few)
@@ -4639,6 +4705,9 @@ A0437,Los Angeles,r-0018,applies,False,,20 units
 A0437,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0437,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 2004, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0437,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0437,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 2004, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0437,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 2004, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0437,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 2004, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0438,Jersey City,r-0026,applies,True,"not within the exemption for residential dwelling units exclude inpatient medical care, licensed long-term ca","Applies unless the property falls within the exemption for residential dwelling units exclude inpatient medical care, licensed long-term ca. covers residential rentals in Jersey City, NJ; Possible preemption by the NJ FAIR Act from 2027-07-01 — flagged for human review."
 A0438,Jersey City,r-0027,unknown,False,,"Unknown: unit count not in supplied data; assessor building code '3S-F-A-12U-H' suggests 12 units (derived, unconfirmed)"
 A0438,Jersey City,r-0044,not_yet_effective,True,,"effective 2027-07-01, after the query date 2026-10-01; may pre-empt local rule(s) r-0026 — flagged for human review, preemption not decided here"
@@ -4659,6 +4728,7 @@ A0439,San Francisco,r-0057,applies,False,,"covers all residential rentals in San
 A0439,San Francisco,r-0058,applies,False,,"covers all residential rentals in San Francisco, CA (statutory exemptions (certain owner-occupied shared units, institutional housing) not testable from county data)"
 A0439,San Francisco,r-0060,unknown,False,,"Unknown: funding not in the data (Affordable housing decisions only, per the page's descriptio)"
 A0439,San Francisco,r-0061,applies,False,,"covers all residential rentals in San Francisco, CA"
+A0439,San Francisco,r-0059,unknown,False,,"Does not appear to cover this property: built 1988, after the 1979-06-13 certificate-of-occupancy cutoff"
 A0440,San Francisco,r-0013,applies,False,,covers all residential rentals in CA
 A0440,San Francisco,r-0014,applies,False,,covers all residential rentals in CA
 A0440,San Francisco,r-0015,superseded,False,protection begins per the timing condition: After a tenant has continuously and lawfully occupied a unit for 12 months | not within the exemption for shared bathroom/kitchen with owner-occupant (it can remove at most the owner's own unit) | not within the exemption for deed-restricted affordable housing,Stricter local rule r-0058 (San Francisco Rent Ordinance just cause eviction () governs here
@@ -4690,6 +4760,9 @@ A0442,Los Angeles,r-0018,applies,False,,18 units
 A0442,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0442,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 1986, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0442,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0442,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 1986, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0442,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 1986, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0442,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 1986, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0443,San Diego,r-0013,applies,False,,covers all residential rentals in CA
 A0443,San Diego,r-0014,applies,False,,covers all residential rentals in CA
 A0443,San Diego,r-0015,superseded,False,protection begins per the timing condition: After a tenant has continuously and lawfully occupied a unit for 12 months | not within the exemption for shared bathroom/kitchen with owner-occupant (it can remove at most the owner's own unit) | not within the exemption for deed-restricted affordable housing,"Local rule r-0055 (San Diego Residential Tenant Protections (jus) shares the same coverage condition; wherever the state rule applies, the stricter local rule governs"
@@ -4778,6 +4851,9 @@ A0451,Los Angeles,r-0018,applies,False,,8 units
 A0451,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0451,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 1989, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0451,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0451,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 1989, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0451,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 1989, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0451,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 1989, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0452,Los Angeles,r-0013,applies,False,,covers all residential rentals in CA
 A0452,Los Angeles,r-0014,applies,False,,covers all residential rentals in CA
 A0452,Los Angeles,r-0015,superseded,False,protection begins per the timing condition: After a tenant has continuously and lawfully occupied a unit for 12 months | not within the exemption for shared bathroom/kitchen with owner-occupant (it can remove at most the owner's own unit) | not within the exemption for deed-restricted affordable housing,Stricter local rule r-0029 (Relocation assistance for no-fault evictions under) governs here
@@ -5074,6 +5150,9 @@ A0479,Los Angeles,r-0018,applies,False,,8 units
 A0479,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0479,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0479,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0479,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0479,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0479,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 1990, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0480,San Diego,r-0013,applies,False,,covers all residential rentals in CA
 A0480,San Diego,r-0014,applies,False,,covers all residential rentals in CA
 A0480,San Diego,r-0015,superseded,False,protection begins per the timing condition: After a tenant has continuously and lawfully occupied a unit for 12 months | not within the exemption for shared bathroom/kitchen with owner-occupant (it can remove at most the owner's own unit) | not within the exemption for deed-restricted affordable housing,"Local rule r-0055 (San Diego Residential Tenant Protections (jus) shares the same coverage condition; wherever the state rule applies, the stricter local rule governs"
@@ -5211,6 +5290,9 @@ A0492,Los Angeles,r-0018,applies,False,,131 units
 A0492,Los Angeles,r-0019,applies,False,"protection begins per the timing condition: The cap does not apply to security collected or demanded before July 1, 2024","Applies unless The cap does not apply to security collected or demanded before July 1, 2024. covers residential rentals in CA"
 A0492,Los Angeles,r-0028,applies,False,the property is a resident owned cooperative / government owned housing | protection begins per the timing condition: Applies once the tenant has lived in the unit at least six months or the origina,"Applies unless the property is a resident owned cooperative / government owned housing; Applies once the tenant has lived in the unit at least six months or the origina. Assessor type apartments; built 2019, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0492,Los Angeles,r-0031,applies,False,,"covers all residential rentals in Los Angeles, CA"
+A0492,Los Angeles,r-0029,unknown,False,,"Does not appear to cover this property: built 2019, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0492,Los Angeles,r-0030,unknown,False,,"Does not appear to cover this property: built 2019, after the 1978-10-01 certificate-of-occupancy cutoff"
+A0492,Los Angeles,r-0032,unknown,False,,"Does not appear to cover this property: built 2019, after the 1978-10-01 certificate-of-occupancy cutoff"
 A0493,San Francisco,r-0013,applies,False,,covers all residential rentals in CA
 A0493,San Francisco,r-0014,applies,False,,covers all residential rentals in CA
 A0493,San Francisco,r-0015,superseded,False,protection begins per the timing condition: After a tenant has continuously and lawfully occupied a unit for 12 months | not within the exemption for shared bathroom/kitchen with owner-occupant (it can remove at most the owner's own unit) | not within the exemption for deed-restricted affordable housing,Stricter local rule r-0058 (San Francisco Rent Ordinance just cause eviction () governs here

@@ -80,6 +80,8 @@ def main() -> int:
     ap.add_argument("--rules", default=str(RULES_JSON))
     ap.add_argument("--min-cite-score", type=float, default=60.0,
                     help="fuzzy citation similarity (0-100) needed to count as the same rule")
+    ap.add_argument("--out", default=None,
+                    help="report path (default out/eval_report.md); with a custom path the id-match file is not rewritten")
     args = ap.parse_args()
 
     gold_path, gold_label = pick_gold(args.gold)
@@ -250,18 +252,21 @@ def main() -> int:
         lines += [f"- extra: {o['team_rule_id']} — {o['jurisdiction']} / {o['category']} / {o['title']} ({o['source_doc_id']})"
                   for o in neg_extra]
 
-    REPORT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    # Machine-readable pairs for follow-up analysis (date_mismatch.py etc.)
-    (OUT / "eval_matches.json").write_text(json.dumps([
+    report_path = Path(args.out) if args.out else REPORT_MD
+    report_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    # Machine-readable pairs for follow-up analysis (date_mismatch.py, lookup_eval.py id mapping);
+    # only for the default dev-split report, so a one-off run against another key leaves them intact.
+    if not args.out:
+        (OUT / "eval_matches.json").write_text(json.dumps([
         {"gold_id": g["gold_id"], "team_rule_id": o["team_rule_id"], "jurisdiction": g["jurisdiction"],
          "category": g["category"], "gold_citation": g.get("citation"), "our_citation": o.get("citation"),
          "gold_effective_date": g.get("effective_date"), "our_effective_date": o.get("effective_date"),
          "gold_status": g.get("status"), "our_status": o.get("status"),
          "gold_docs": g.get("source_doc_ids"), "our_doc": o.get("source_doc_id"), "our_title": o.get("title"),
          "our_supporting": o.get("supporting_doc_ids", []), "our_notes": o.get("notes")}
-        for g, o, _ in matches], indent=1, ensure_ascii=False), encoding="utf-8")
+            for g, o, _ in matches], indent=1, ensure_ascii=False), encoding="utf-8")
     print("\n".join(lines[:16]))
-    print(f"\nFull report: {REPORT_MD}")
+    print(f"\nFull report: {report_path}")
     return 0
 
 
