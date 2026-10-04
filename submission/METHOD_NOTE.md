@@ -14,6 +14,8 @@ Deterministic engine. Addresses are resolved to their legal city with the Census
 
 Change tracking. The engine is run at the dates each change test names; affected sets are set arithmetic. No model is involved.
 
+Determinations are data: a pricing engine or leasing agent can query them for an address and date before acting.
+
 ## Validation
 
 Against an independently built key applying the same reviewed legal rulings: Module A 39/39 rules on the dev split and 15/15 on the test split (single run at tag v1.0-submission-candidate); Module B 569/569 on seed60, 190/190 on seed20 and 192/192 on a blind holdout of 20 addresses (single run); Module C 5 of 5 change tests exact. Across the 500 addresses the unknown rate is 27.3% and 2,079 of 5,298 rows rest on a stated presumption. These figures test faithful implementation of the reviewed rulings, not legal correctness beyond them; the organisers' hidden key is the real test. A stress test scored the submission against six alternative exemption policies; the current policy had the best worst case (83.0% exact) and the best mean (93.3%). A fresh clone reproduces all output files byte for byte without model calls.
