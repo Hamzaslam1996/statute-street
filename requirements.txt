@@ -1,8 +1,9 @@
 anthropic
-python-dotenv
-requests
-pandas
 jsonschema
-rapidfuzz
+mcp
+pandas
 pypdf
 pytest
+python-dotenv
+rapidfuzz
+requests
