@@ -256,6 +256,8 @@ def run_test(test: dict, facts: dict, as_of: date) -> tuple[bool | None, str]:
         # coo_age_years >= 15 ("certificate at least 15 years old") also covers OLDER buildings.
         older_ok = op in ("<", "<=") if field == "coo_date" else op in (">", ">=")
         if yb == cutoff_year:
+            if CUTOFF_YEAR_APPLIES:
+                return True, f"built {yb}, the cutoff year, resolved as covered (stress key)"
             return None, f"built {yb}, the cutoff year itself: year built is not the certificate date"
         is_older = yb < cutoff_year
         return (is_older if older_ok else not is_older), f"built {yb}, {'before' if is_older else 'after'} the {label}"
@@ -316,6 +318,10 @@ def run_test(test: dict, facts: dict, as_of: date) -> tuple[bool | None, str]:
 
 
 STRICT_UNKNOWN = False   # --strict-unknown: use/funding niche exemptions also answer unknown when data is silent
+# Stress-test switches (instructions/stress_test.md): alternative keys, never the default policy.
+LENIENT_PLAUSIBLE = False     # --lenient-plausible: plausible exemptions resolve as applies instead of unknown
+CUTOFF_YEAR_APPLIES = False   # --cutoff-year-applies: a building from the cutoff year itself counts as covered
+NO_PRECEDENCE = False         # --no-precedence: state rules keep their own result instead of 'superseded'
 SHARED_RE = re.compile(r"shar\w*[^.;]{0,30}(kitchen|bath)|(kitchen|bath)[^.;]{0,30}shar", re.I)
 # rulings_11 #3: TRUE owner-identity tests only (natural person, small landlord, owner-occupied 2-4 unit)
 OWNER_RE = re.compile(r"natural person|small[- ]landlord|owner.?occup\w*|owner[- ]occupant|owns? (no more than|fewer than|not more than|"
@@ -407,6 +413,9 @@ def evaluate_coverage(rule: dict, cov: dict | None, facts: dict, as_of: date) ->
             return "exclude", why, [], []
         if ok is None:
             src = (t.get("source_text") or "").strip()[:80].rstrip(".;,")
+            if kind == "plausible_exemption" and LENIENT_PLAUSIBLE:
+                assumptions.append(f"not within the exemption for {src} (lenient stress key)")
+                continue
             if kind == "timing":
                 assumptions.append(f"protection begins per the timing condition: {src}")
                 continue
@@ -500,8 +509,8 @@ def evaluate_address(facts: dict, rules: list[dict], coverage: dict, as_of: date
     # if that test excluded it (e.g. CA § 1946.2 in Los Angeles, where RSO + JCO cover everything).
     def category(r):
         return r["_rule"]["category"]
-    for s in [r for r in results + excluded if r["_rule"]["level"] == "state"
-              and YIELDS_RE.search(r["_rule"].get("interaction") or "")]:
+    for s in [] if NO_PRECEDENCE else [r for r in results + excluded if r["_rule"]["level"] == "state"
+                                       and YIELDS_RE.search(r["_rule"].get("interaction") or "")]:
         locals_ = [r for r in results if r["_rule"]["level"] == "city" and category(r) == category(s)
                    and r["result"] in ("applies", "unknown")]
         applying = [l for l in locals_ if l["result"] == "applies"]
@@ -585,10 +594,16 @@ def main() -> int:
                     help="also report rules whose coverage tests exclude the property, as unknown with the reason")
     ap.add_argument("--strict-unknown", action="store_true",
                     help="use/funding niche exemptions (hotels, subsidised housing, ...) also answer unknown when data is silent")
+    ap.add_argument("--lenient-plausible", action="store_true", help="stress key: plausible exemptions resolve as applies")
+    ap.add_argument("--cutoff-year-applies", action="store_true", help="stress key: cutoff-year buildings count as covered")
+    ap.add_argument("--no-precedence", action="store_true", help="stress key: no 'superseded'; state rules keep their own result")
     args = ap.parse_args()
-    global NO_UNITS_FLOOR, NOT_COVERED_MODE, STRICT_UNKNOWN
+    global NO_UNITS_FLOOR, NOT_COVERED_MODE, STRICT_UNKNOWN, LENIENT_PLAUSIBLE, CUTOFF_YEAR_APPLIES, NO_PRECEDENCE
     NO_UNITS_FLOOR = args.no_units_floor
     STRICT_UNKNOWN = args.strict_unknown
+    LENIENT_PLAUSIBLE = args.lenient_plausible
+    CUTOFF_YEAR_APPLIES = args.cutoff_year_applies
+    NO_PRECEDENCE = args.no_precedence
     NOT_COVERED_MODE = "unknown" if args.report_not_covered else "omit"
     as_of = date.fromisoformat(args.as_of)
 

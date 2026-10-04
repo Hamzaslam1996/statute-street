@@ -1,0 +1,2 @@
+500 addresses as of 2026-10-01: {'applies': 2628, 'superseded': 206, 'unknown': 2054, 'not_yet_effective': 140, 'pending': 270} -> /Users/hamzaaslamkhan/Downloads/03 RealPage - Codebase and Data/navigator/out/stress/K_strict/lookups.json
+unknown rate 2054/5298 = 38.8%; rows relying on a presumption (assumptions): 845
