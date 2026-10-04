@@ -108,7 +108,10 @@ def main() -> int:
 
     full = json.loads((OUT / "rules_full.json").read_text(encoding="utf-8"))["rules"]
     cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
-    todo = [r for r in full if r.get("requirement") and key_of(r["requirement"]) not in cache]
+    # Derived negative findings carry a fixed Spanish line written by derive_negatives.py (no model needed).
+    def needs_model(r):
+        return r.get("requirement") and key_of(r["requirement"]) not in cache and not (r.get("derived") and r.get("requirement_es"))
+    todo = [r for r in full if needs_model(r)]
     spent, warnings = 0.0, []
     if todo and not args.no_model:
         client = anthropic.Anthropic()
@@ -144,9 +147,10 @@ def main() -> int:
             hit = cache.get(key_of(r.get("requirement") or ""))
             if hit:
                 r["requirement_es"] = hit["requirement_es"]
+            if r.get("requirement_es"):
                 done += name == "rules_full.json"
         path.write_text(json.dumps(data, indent=(2 if name.startswith("rules") else 1), ensure_ascii=False), encoding="utf-8")
-    missing = [r["team_rule_id"] for r in full if r.get("requirement") and key_of(r["requirement"]) not in cache]
+    missing = [r["team_rule_id"] for r in full if needs_model(r)]
     print(f"Spanish summaries: {done}/{len(full)} records have requirement_es; {len(todo)} translated this run; "
           f"spend ${spent:.4f}; untranslated: {missing or 'none'}")
     for w in warnings:

@@ -1,0 +1,19 @@
+{
+  "_about": "Reviewer rulings on rule records (instructions/rulings_12.md section 1), applied by verify.py after ids are assigned. Keyed by team_rule_id with a title_contains check so a renumbering is caught. conflict_note texts are public product text.",
+  "overrides": {
+    "r-0044": {"title_contains": "FAIR", "conflict_flag": true,
+               "conflict_note": "Possible preemption: from 1 July 2027 the NJ FAIR Act may preempt the Hoboken and Jersey City algorithmic rent ordinances. Flagged for human review; not decided here."},
+    "r-0023": {"title_contains": "Algorithmic rent fixing", "conflict_flag": true,
+               "conflict_note": "Possible preemption: from 1 July 2027 the NJ FAIR Act may preempt the Hoboken and Jersey City algorithmic rent ordinances. Flagged for human review; not decided here."},
+    "r-0026": {"title_contains": "Algorithmic Rent-Fixing", "conflict_flag": true,
+               "conflict_note": "Possible preemption: from 1 July 2027 the NJ FAIR Act may preempt the Hoboken and Jersey City algorithmic rent ordinances. Flagged for human review; not decided here."},
+    "r-0001": {"title_contains": "coordinated pricing algorithms", "conflict_flag": true,
+               "conflict_note": "Open question: two published effective dates (1 March 2026 in the ordinance text; January 2026 in an August 2026 law firm alert). Flagged for human review."},
+    "r-0030": {"title_contains": "Rent Stabilization Ordinance (RSO) allowable", "conflict_flag": true,
+               "conflict_note": "Open question: two published effective dates for the new formula (2 February 2026 per LAHD; 24 January 2026 per a landlord association). Flagged for human review."},
+    "r-0008": {"title_contains": "Housing Stability Notification", "conflict_flag": false, "conflict_note": null,
+               "note_append": "Notice of rights requirement only; it does not limit the grounds for eviction."},
+    "r-0021": {"title_contains": "Notification Ordinance", "conflict_flag": false, "conflict_note": null,
+               "note_append": "Notice of rights requirement only; it does not limit the grounds for eviction."}
+  }
+}

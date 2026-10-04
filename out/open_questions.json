@@ -41,7 +41,7 @@
     "effective_date": "2026-01",
     "key_value": "Ban on sale or use of coordinated pricing algorithms (using nonpublic competitor data under 90 days old) for setting rents or occupancy levels",
     "conflict_flag": true,
-    "conflict_note": "Open question: two published effective dates exist for this ban (1 March 2026 in the ordinance text per the brief; January 2026 per an August 2026 law-firm alert). Neither effective date is stated in this capture.",
+    "conflict_note": "Open question: two published effective dates (1 March 2026 in the ordinance text; January 2026 in an August 2026 law firm alert). Flagged for human review.",
     "date_source_doc_id": "D002"
    }
   ],
@@ -109,7 +109,7 @@
     "effective_date": "2027-07-01",
     "key_value": "Ban on algorithmic rent-setting coordination (use of coordinators / algorithmic devices performing a coordinating function)",
     "conflict_flag": true,
-    "conflict_note": "Possible preemption of the Jersey City and Hoboken algorithmic-rent ordinances: section 6(b) bars municipal ordinances that conflict with the act. This document does not name those ordinances or resolve whether they conflict.",
+    "conflict_note": "Possible preemption: from 1 July 2027 the NJ FAIR Act may preempt the Hoboken and Jersey City algorithmic rent ordinances. Flagged for human review; not decided here.",
     "date_source_doc_id": null
    }
   ],
@@ -161,9 +161,9 @@
    {
     "team_rule_id": "r-0030",
     "effective_date": "2026-02-02",
-    "key_value": "Once per 12 months by the allowable rent increase percentage (percentage is in a linked PDF, not in this text); no utilities add-on since 2026-02-02",
+    "key_value": "Once per 12 months by the allowable rent increase percentage; no utilities add-on since 2026-02-02",
     "conflict_flag": true,
-    "conflict_note": "Open question: the new RSO formula has two published effective dates, 2026-02-02 per LAHD and 2026-01-24 per a landlord association. This LAHD page gives February 2, 2026; the landlord-association date is not found in this capture.",
+    "conflict_note": "Open question: two published effective dates for the new formula (2 February 2026 per LAHD; 24 January 2026 per a landlord association). Flagged for human review.",
     "date_source_doc_id": null
    }
   ],

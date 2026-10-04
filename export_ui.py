@@ -38,13 +38,14 @@ STATUSES = {"in_force", "not_yet_effective", "pending", "failed"}
 removed_dashes = 0
 
 
-def tidy(s):
-    """Apply the internal-text filter and replace dash punctuation (ids and dates keep hyphens)."""
+def tidy(s, prose=True):
+    """Apply the internal-text filter (prose fields only) and replace dash punctuation (ids and dates keep hyphens)."""
     global removed_dashes
     if not isinstance(s, str):
         return s
     s = re.sub(r"\\u([0-9a-fA-F]{4})", lambda m: chr(int(m.group(1), 16)), s)   # literal "–" -> character
-    s = publish.clean_text(s)
+    if prose:
+        s = publish.clean_text(s)
     n = len(re.findall(r"\s[—–-]\s|[—–]", s))
     removed_dashes += n
     date = r"(\d{1,2}/\d{1,2}/\d{2,4}|\d{4}-\d{2}-\d{2}|(?:January|February|March|April|May|June|July|August|September|October|November|December) \d{1,2}, \d{4})"
@@ -60,8 +61,10 @@ def walk(obj, key=None):
         return {k: walk(v, k) for k, v in obj.items()}
     if isinstance(obj, list):
         return [walk(v, key) for v in obj]
-    return tidy(obj) if isinstance(obj, str) and key not in ("team_rule_id", "address_id", "source_doc_id", "source_url",
-                                                              "url", "effective_date", "retrieved_at", "sha256") else obj
+    if not isinstance(obj, str) or key in ("team_rule_id", "address_id", "source_doc_id", "source_url", "url",
+                                           "effective_date", "retrieved_at", "sha256", "governed_by"):
+        return obj
+    return tidy(obj, prose=key in publish.TEXT_FIELDS or key in ("summary", "instrument", "jurisdiction", "citation", "title"))
 
 
 # ---------------------------------------------------------------------------
@@ -147,19 +150,34 @@ def check_change(c: dict) -> list[str]:
 # ---------------------------------------------------------------------------
 # Builders
 # ---------------------------------------------------------------------------
+def load_short_values() -> dict:
+    p = ROOT / "data" / "key_value_short.json"
+    return json.loads(p.read_text(encoding="utf-8")).get("rules", {}) if p.exists() else {}
+
+
 def build_rules() -> list[dict]:
     rules = json.loads((OUT / "public" / "rules.json").read_text(encoding="utf-8"))["rules"]
     have = {r["team_rule_id"] for r in rules}
     negs = json.loads((OUT / "negatives.json").read_text(encoding="utf-8"))["negatives"]
+    shorts = load_short_values()
     out = []
     for r in rules + [n for n in negs if n["team_rule_id"] not in have]:
         r = dict(r)
         if r.get("negative_finding") and r.get("derived"):
-            r["requirement"] = (f"No {r['category'].replace('_', ' ')} rule at the {r['jurisdiction']} level was found "
-                                f"in the corpus. " + (f"{r['requirement']}" if "bars" in (r.get("requirement") or "") else ""))
             if r.get("notes"):
-                r["requirement"] += f" {r['notes']}"
-            r["requirement"] = r["requirement"].strip()
+                r["requirement"] = f"{r['requirement'].rstrip('.')}. {r['notes']}".strip()
+            r["key_value_short"] = "No city rule; state law applies" if r.get("level") == "city" else "No state rule"
+        else:
+            sv = shorts.get(r["team_rule_id"])
+            if sv and sv.get("title_hint", "").lower() in (r.get("title") or "").lower():
+                r["key_value_short"] = sv["text"]
+            else:
+                if sv:
+                    print(f"  key_value_short for {r['team_rule_id']} skipped: title does not contain '{sv.get('title_hint')}'", file=sys.stderr)
+                kv = r.get("key_value") or ""
+                r["key_value_short"] = (kv if len(kv) <= 70 else kv[:67].rstrip() + "...") or None
+            if r["key_value_short"] and len(r["key_value_short"]) > 70:
+                print(f"  key_value_short for {r['team_rule_id']} is {len(r['key_value_short'])} chars (limit 70)", file=sys.stderr)
         if not isinstance(r.get("confidence"), (int, float)):
             r["confidence"] = 0.5
         m = re.match(r"^\s*\[([^\]]+)\]\s*", r.get("title") or "")   # safety: "[notice-only] ..." -> notes
@@ -180,9 +198,53 @@ def build_lookups() -> dict:
     out = {}
     for aid, rows in lk["lookups"].items():
         out[aid] = [{"team_rule_id": r["team_rule_id"], "result": r["result"], "explanation": r.get("explanation"),
-                     "assumptions": r.get("assumptions") or [], "conflict_flag": bool(r.get("conflict_flag", False))}
+                     "assumptions": r.get("assumptions") or [], "conflict_flag": bool(r.get("conflict_flag", False)),
+                     **({"governed_by": r["governed_by"]} if r.get("governed_by") else {})}
                     for r in rows]
     return {"as_of": lk.get("as_of", "2026-10-01"), "lookups": out}
+
+
+def build_change_register(rules: list[dict], changes: dict) -> list[dict]:
+    """Display rows for the change register (rulings_12 section 3); counts from changes.json."""
+    by_id = {r["team_rule_id"]: r for r in rules}
+
+    def rule(jur, cat, cite_part=None, status=None):
+        cands = [r for r in rules if r["jurisdiction"] == jur and r["category"] == cat and not r.get("negative_finding")
+                 and (cite_part is None or cite_part in (r.get("citation") or "")) and (status is None or r["status"] == status)]
+        return cands[0] if cands else {}
+
+    def d(iso, fallback):
+        return iso if iso else fallback
+
+    ab325 = rule("CA", "algorithmic_rent_setting")
+    hob = rule("Hoboken, NJ", "algorithmic_rent_setting", status="in_force")
+    jc = rule("Jersey City, NJ", "algorithmic_rent_setting", status="in_force")
+    rows = [
+        {"test_id": "T1", "title": "California bans common pricing algorithms",
+         "instrument": "AB 325 (Stats. 2025, ch. 338), Cal. Bus. & Prof. Code § 16729", "jurisdiction": "California",
+         "enacted": d(ab325.get("adoption_date"), "Not stated"), "effective": "2026-01-01", "status": "in_force",
+         "summary": "From 1 January 2026, using or distributing a common pricing algorithm as part of a price-fixing arrangement is unlawful. Applies to every California address in the portfolio."},
+        {"test_id": "T2", "title": "Hoboken and Jersey City algorithm bans",
+         "instrument": "Hoboken Code ch. 158; Jersey City Ord. 25-057", "jurisdiction": "Hoboken, NJ; Jersey City, NJ",
+         "enacted": f"Hoboken {d(hob.get('adoption_date'), 'Not stated')}; Jersey City {d(jc.get('adoption_date'), 'Not stated')}",
+         "effective": f"Hoboken {d(hob.get('effective_date'), 'Not stated')}; Jersey City {d(jc.get('effective_date'), 'Not stated')}",
+         "status": "in_force",
+         "summary": "Each city's ban applies only inside its own boundary, decided by the geocoded legal city, never the mailing address. Newark has no such ordinance."},
+        {"test_id": "T3", "title": "New Jersey FAIR Act", "instrument": "P.L. 2026, c. 43", "jurisdiction": "New Jersey",
+         "enacted": "2026-07-20", "effective": "2027-07-01", "status": "not_yet_effective",
+         "summary": "Statewide ban on algorithmic rent setting from 1 July 2027. It may preempt the Hoboken and Jersey City ordinances; those addresses are flagged for human review."},
+        {"test_id": "T4", "title": "Massachusetts algorithm bills", "instrument": "S.2983 and H.5222 (194th General Court)",
+         "jurisdiction": "Massachusetts", "enacted": "Not enacted", "effective": "Not set", "status": "pending",
+         "summary": "Pending bills, not law. If enacted they would reach every Massachusetts address in the portfolio."},
+        {"test_id": "T5", "title": "Massachusetts rent control ballot question", "instrument": "Initiative Petition 25-21",
+         "jurisdiction": "Massachusetts", "enacted": "Not enacted", "effective": "None", "status": "failed",
+         "summary": "Struck from the ballot by the Supreme Judicial Court on 23 June 2026 (Cella v. Attorney General). No rent cap is reported for any Boston or Cambridge address."},
+    ]
+    for row in rows:
+        c = changes.get(row["test_id"], {})
+        row["addresses_affected"] = len(c.get("affected_address_ids", []))
+        row["review_needed"] = len(c.get("conflict_flag_address_ids", []))
+    return rows
 
 
 def build_addresses() -> list[dict]:
@@ -256,8 +318,10 @@ def main() -> int:
     sources = build_sources(rules)
     changes = json.loads((OUT / "public" / "changes.json").read_text(encoding="utf-8"))
 
+    register = build_change_register(rules, changes)
     files = {"rules.json": {"rules": rules}, "lookups.json": lookups, "changes.json": changes,
-             "addresses.json": {"addresses": addresses}, "sources.json": {"sources": sources}}
+             "addresses.json": {"addresses": addresses}, "sources.json": {"sources": sources},
+             "change_register.json": {"changes": register}}
     before = len(publish.removed)
     files = {k: walk(v) for k, v in files.items()}
     filtered = len(publish.removed) - before
@@ -278,6 +342,13 @@ def main() -> int:
         problems += [f"sources.json {s.get('source_id')}: {m}" for m in check_source(s)]
     for tid, c in files["changes.json"].items():
         problems += [f"changes.json {tid}: {m}" for m in check_change(c)]
+    for c in files["change_register.json"]["changes"]:
+        for k in ("test_id", "title", "instrument", "jurisdiction", "enacted", "effective", "status", "summary"):
+            if not isinstance(c.get(k), str) or not c[k]:
+                problems.append(f"change_register.json {c.get('test_id')}: {k}")
+        for k in ("addresses_affected", "review_needed"):
+            if not isinstance(c.get(k), int):
+                problems.append(f"change_register.json {c.get('test_id')}: {k}")
     if problems:
         print("CONTRACT PROBLEMS (nothing written):", file=sys.stderr)
         for p in problems[:30]:
@@ -301,12 +372,38 @@ def main() -> int:
             .isoformat().replace("+00:00", "Z")
     except Exception:
         engine_commit, generated_at = "unknown", None
+    n_derived = sum(1 for r in rules if r.get("derived"))
     meta = {"rules_version": "1.0", "engine_commit": engine_commit, "rules": len(rules),
+            "rules_in_force": len(rules) - n_derived,     # the extracted rule records (the footer's "64 rules")
+            "negative_findings": n_derived,               # derived "no rule at this level" records
             "addresses": len(addresses), "as_of": lookups.get("as_of", "2026-10-01"),
             "generated_at": generated_at}
     (out_dir / "meta.json").write_text(json.dumps(meta, indent=1), encoding="utf-8")
     sizes["meta.json"] = (out_dir / "meta.json").stat().st_size
     print("meta.json:", meta)
+    # Readability report (rulings_12 sections 6 and 7c): explanation templates and a seeded random sample
+    import random
+    rows_all = [(a, r) for a, v in files["lookups.json"]["lookups"].items() for r in v]
+    def tmpl(s):
+        s = re.sub(r"\d+ \w{3} \d{4}", "DATE", s); s = re.sub(r"\d+", "N", s); return re.sub(r"\(.*?\)", "(..)", s)[:80]
+    import collections
+    templates = collections.Counter(tmpl(r["explanation"]) for _, r in rows_all)
+    rng = random.Random(42)
+    sample = rng.sample(rows_all, 10)
+    by_id = {r["team_rule_id"]: r for r in rules}
+    bad = [(a, r["team_rule_id"], r["explanation"][:80]) for a, r in rows_all
+           if not r["explanation"][:1].isupper() or re.search(r"\br-\d{4}\b|\bn-\d{4}\b|not_yet_effective|in_force|_eviction|_limits|_deposits|_fees|_restrictions|_setting|\d{4}-\d{2}-\d{2}", r["explanation"])]
+    no_kv = [r["team_rule_id"] for r in rules if not r.get("negative_finding") and not r.get("key_value")]
+    rep = [f"# UI export readability report", "", f"Distinct explanation templates: {len(templates)}", "",
+           "| Count | Template |", "|---|---|"] + [f"| {n} | {t.replace('|', '/')} |" for t, n in templates.most_common(60)]
+    rep += ["", f"Rows failing the readability checks (capital start, no ids, no enum words, no ISO dates): {len(bad)}", ""]
+    rep += [f"- {a} {rid}: {e}" for a, rid, e in bad[:30]]
+    rep += ["", "## 10 random rows (seed 42)", "", "| Address | Rule | Result | Explanation |", "|---|---|---|---|"]
+    rep += [f"| {a} | {by_id[r['team_rule_id']]['title'][:45]} | {r['result']} | {r['explanation'].replace('|', '/')} |" for a, r in sample]
+    rep += ["", f"Positive rules without key_value: {no_kv or 'none'}",
+            f"Rules with key_value_short: {sum(1 for r in rules if r.get('key_value_short'))}/{len(rules)}"]
+    (OUT / "ui_export_report.md").write_text("\n".join(rep) + "\n", encoding="utf-8")
+    print(f"readability: {len(templates)} templates, {len(bad)} rows failing checks, {len(no_kv)} positive rules without key_value -> out/ui_export_report.md")
     n_rows = sum(len(v) for v in files["lookups.json"]["lookups"].values())
     print(f"rules {len(rules)} (incl. {sum(1 for r in rules if r['negative_finding'])} negative findings) | "
           f"lookups {len(files['lookups.json']['lookups'])} addresses, {n_rows} rows | changes {len(changes)} | "

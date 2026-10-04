@@ -253,7 +253,7 @@
    "A0500"
   ],
   "conflict_flag_address_ids": [],
-  "notes": "AB 325 (Stats. 2025, ch. 338; Cal. Bus. & Prof. Code § 16729) effective 2026-01-01. Before that date every California address reports not_yet_effective; from 2026-01-02 applies. not_yet_effective before, applies after, for every CA address. CA-ALG-01 -> r-0013 (Cal. Bus. & Prof. Code § 16729; status in_force, effective 2026-01-01): 2025-12-31: Berkeley, Los Angeles, San Diego, San Francisco (250 addresses); 2026-01-02: Berkeley, Los Angeles, San Diego, San Francisco (250 addresses). Results on 2025-12-31: {'not_yet_effective': 250}. Results on 2026-01-02: {'applies': 250}."
+  "notes": "AB 325 (Stats. 2025, ch. 338; Cal. Bus. & Prof. Code § 16729) effective 2026-01-01. Before that date every California address reports not yet in force; from 2026-01-02 applies. Not yet in force before, applies after, for every CA address. Bus. & Prof. Code § 16729; status in force, effective 2026-01-01): 2025-12-31: Berkeley, Los Angeles, San Diego, San Francisco (250 addresses); 2026-01-02: Berkeley, Los Angeles, San Diego, San Francisco (250 addresses). Results on 2025-12-31: {'not yet in force': 250}. Results on 2026-01-02: {'applies': 250}."
  },
  "T2": {
   "affected_address_ids": [
@@ -440,7 +440,7 @@
    "A0490",
    "A0495"
   ],
-  "notes": "Boundary test decided by the geocoded legal city (Census incorporated place), never the mailing city. HOB-ALG-01 only for Hoboken addresses; JC-ALG-01 only for Jersey City addresses; neither for Newark. HOB-ALG-01 -> r-0023 (Hoboken Code § 158-2 (Ord. No. B-781); status in_force, effective 2025-07): 2026-10-01: Hoboken (40 addresses). JC-ALG-01 -> r-0026 (Jersey City Code § 218-12 (Ord. 25-057); status in_force, effective 2025-05): 2026-10-01: Jersey City (50 addresses). Results on 2026-10-01: {'applies': 90}."
+  "notes": "Boundary test decided by the geocoded legal city (Census incorporated place), never the mailing city. Neither for Newark. No. B-781); status in force, effective 2025-07): 2026-10-01: Hoboken (40 addresses). 25-057); status in force, effective 2025-05): 2026-10-01: Jersey City (50 addresses). Results on 2026-10-01: {'applies': 90}."
  },
  "T3": {
   "affected_address_ids": [
@@ -677,7 +677,7 @@
    "A0490",
    "A0495"
   ],
-  "notes": "FAIR Act, P.L. 2026, c.43 (N.J.S.A. 56:9-20 to 56:9-26): approved 2026-07-20, effective 2027-07-01 (first day of the twelfth month after enactment). not_yet_effective on 2026-10-01, applies on 2027-07-02 for every NJ address. Section 6(b) bars conflicting municipal ordinances, so the Jersey City (§ 218-12) and Hoboken (ch. 158) bans carry a conflict flag for human review; we flag the possible preemption, we do not decide it. not_yet_effective on 2026-10-01, applies on 2027-07-02 for every NJ address; Jersey City and Hoboken addresses carry a conflict flag for human review. NJ-ALG-01 -> r-0044 (P.L. 2026, c.43 (C.56:9-20 to 56:9-26); status not_yet_effective, effective 2027-07-01): 2026-10-01: Hoboken, Jersey City, Newark (140 addresses); 2027-07-02: Hoboken, Jersey City, Newark (140 addresses). Results on 2026-10-01: {'not_yet_effective': 140}. Results on 2027-07-02: {'applies': 140}."
+  "notes": "FAIR Act, P.L. 2026, c.43 (N.J.S.A. 56:9-20 to 56:9-26): approved 2026-07-20, effective 2027-07-01 (first day of the twelfth month after enactment). Not yet in force on 2026-10-01, applies on 2027-07-02 for every NJ address. Section 6(b) bars conflicting municipal ordinances, so the Jersey City (§ 218-12) and Hoboken (ch. 158) bans carry a conflict flag for human review; we flag the possible preemption, we do not decide it. Not yet in force on 2026-10-01, applies on 2027-07-02 for every NJ address; Jersey City and Hoboken addresses carry a conflict flag for human review. 2026, c.43 (C.56:9-20 to 56:9-26); status not yet in force, effective 2027-07-01): 2026-10-01: Hoboken, Jersey City, Newark (140 addresses); 2027-07-02: Hoboken, Jersey City, Newark (140 addresses). Results on 2026-10-01: {'not yet in force': 140}. Results on 2027-07-02: {'applies': 140}."
  },
  "T4": {
   "affected_address_ids": [
@@ -793,11 +793,11 @@
    "A0488"
   ],
   "conflict_flag_address_ids": [],
-  "notes": "S.2983 and H.5222 (194th General Court) are pending bills, not law: reported as pending for every Boston and Cambridge address. The affected set is every Massachusetts address, i.e. who would be affected if enacted. Reported as pending (not in force) for every Boston and Cambridge address; affected set = all MA addresses if enacted. MA-ALG-P1 -> r-0034 (Mass. S. 2983, 194th Gen. Ct. (2025-2026); status pending, effective None): 2026-10-01: Boston, Cambridge (110 addresses). MA-ALG-P2 -> r-0033 (H.5222, 194th Gen. Court (Mass. 2025-2026) (new draft of H.1564); status pending, effective None): 2026-10-01: Boston, Cambridge (110 addresses). Results on 2026-10-01: {'pending': 220}."
+  "notes": "S.2983 and H.5222 (194th General Court) are pending bills, not law: reported as pending for every Boston and Cambridge address. The affected set is every Massachusetts address, i.e. Who would be affected if enacted. Reported as pending (not in force) for every Boston and Cambridge address; affected set = all MA addresses if enacted. S. 2983, 194th Gen. Ct. (2025-2026); status pending, effective None): 2026-10-01: Boston, Cambridge (110 addresses). Court (Mass. 2025-2026) (new draft of H.1564); status pending, effective None): 2026-10-01: Boston, Cambridge (110 addresses). Results on 2026-10-01: {'pending': 220}."
  },
  "T5": {
   "affected_address_ids": [],
   "conflict_flag_address_ids": [],
-  "notes": "Initiative Petition 25-21 (statewide rent increase limit) was struck from the ballot by the SJC on 2026-06-23 (Cella v. Attorney General, SJC-13893) and is recorded as failed. Failed measures are never reported for an address, so the affected set is empty; no rent cap is reported for any Boston or Cambridge address (M.G.L. c. 40P bars local rent control). No rent cap reported for any Boston or Cambridge address; IP 25-21 recorded as failed. Affected set is empty. MA-RENT-P1 -> r-0037 (Initiative Petition 25-21; Mass. Const. Amend. art. 48, The Initiative, II, § 2; Cella v. Attorney General, SJC-13893 (2026); status failed, effective None): no address reports this rule. MA-RENT-P1 -> r-0040 (Mass. Const. amend. art. 48, The Initiative, Pt. II, § 2 (SJC ruling, June 2026); status failed, effective None): no address reports this rule. Results on 2026-10-01: {}."
+  "notes": "Initiative Petition 25-21 (statewide rent increase limit) was struck from the ballot by the SJC on 2026-06-23 (Cella v. Attorney General, SJC-13893) and is recorded as failed. Failed measures are never reported for an address, so the affected set is empty; no rent cap is reported for any Boston or Cambridge address (M.G.L. C. 40P bars local rent control). No rent cap reported for any Boston or Cambridge address; IP 25-21 recorded as failed. Affected set is empty. Mass. Const. Amend. Art. 48, The Initiative, II, § 2; Cella v. Attorney General, SJC-13893 (2026); status failed, effective None): no address reports this rule. Const. Amend. Art. 48, The Initiative, Pt. II, § 2 (SJC ruling, June 2026); status failed, effective None): no address reports this rule. Results on 2026-10-01: {}."
  }
 }

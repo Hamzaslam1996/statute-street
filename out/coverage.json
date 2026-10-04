@@ -1823,7 +1823,7 @@
   "applies_to_all_residential": true,
   "coverage_incomplete": false,
   "notes": "The rule covers units subject to the Rent Ordinance. That wording is circular, and no related record states actual building-level coverage criteria such as a construction cutoff or unit-count threshold. The mention of units with a certificate of occupancy after June 13, 1979 is an inclusion: those units are covered for just cause even though they are exempt from rent increase limits, so no exclusion test is created. The D082 exemption about temporary capital improvements under 20 days concerns the type of eviction and not property coverage, so no test is created. Coverage is therefore flagged incomplete.",
-  "explanation_note": "statutory exemptions (certain owner-occupied shared units, institutional housing) not testable from county data",
+  "explanation_note": "statutory exemptions for certain owner-occupied shared units and institutional housing cannot be checked from county data",
   "reviewed_by": "Hamza (commercial/IP lawyer)",
   "review_ruling": "instructions/rulings_05.md #1: S.F. Admin. Code § 37.9 just-cause protection extends to units regardless of construction date; D079 states inclusions, not exclusions. Treat coverage as all residential rental units in SF. Remaining statutory exemptions are not testable from parcel data and rare in a 5+ unit sample.",
   "citation": "S.F. Admin. Code § 37.9(a)",

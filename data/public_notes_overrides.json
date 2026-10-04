@@ -1,0 +1,13 @@
+{
+  "_about": "Hand-written public replacements for rule notes the automatic filter cannot fix cleanly (instructions/rulings_12.md section 2). Applied by publish.py to the public copies and the submission files. Keyed by team_rule_id with a title_contains check.",
+  "overrides": {
+    "r-0030": {"title_contains": "allowable rent increase",
+               "notes": "The allowable percentage is published annually by the Los Angeles Housing Department; the 2 February 2026 change removed the utilities add-on and the 10% add-on for an additional dependent. The rent freeze of 30 March 2020 to 31 January 2024 has ended."},
+    "r-0027": {"title_contains": "Jersey City Rent Control",
+               "notes": "The city page states the exemption for 1 to 4 unit properties; the cap formula itself is set out in Chapter 260 of the Municipal Code."},
+    "r-0033": {"title_contains": "H.5222",
+               "notes": "Bill status page only; the operative text is not reproduced, so coverage details cannot be stated until enactment."},
+    "r-0034": {"title_contains": "S.2983",
+               "notes": "Bill history page only; the operative text is not reproduced, so coverage details cannot be stated until enactment."}
+  }
+}

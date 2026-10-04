@@ -19,6 +19,7 @@ import engine  # noqa: E402
 
 RULES = json.loads((ROOT / "out" / "rules_full.json").read_text(encoding="utf-8"))["rules"]
 COVERAGE = json.loads((ROOT / "out" / "coverage.json").read_text(encoding="utf-8"))
+engine.attach_phrases(COVERAGE)
 BY_ID = {r["team_rule_id"]: r for r in RULES}
 
 
@@ -96,7 +97,7 @@ AS_OF = date(2026, 10, 1)
 
 
 def test_niche_use_or_funding_exemption_applies_with_assumption():
-    cov = {"tests": [{"field": "funding", "op": "!=", "value": "deed_restricted_affordable", "kind": "niche_exemption",
+    cov = {"tests": [{"field": "funding", "op": "!=", "value": "deed_restricted_affordable", "kind": "niche_exemption", "phrase": "deed-restricted affordable housing",
                       "source_text": "deed-restricted affordable housing", "on_fail": "exclude", "defeated_if": None}]}
     res, why, assumptions, _ = engine.evaluate_coverage(RULE, cov, facts("CA", "Test", 1950, 12), AS_OF)
     assert res == "applies" and why.startswith("Applies unless") and assumptions, (res, why, assumptions)
@@ -104,12 +105,12 @@ def test_niche_use_or_funding_exemption_applies_with_assumption():
 
 def test_true_owner_type_test_is_unknown_unless_defeated():
     """Organisers' README section 4: owner identity is not in the data (rulings_09, refined by rulings_11 #3)."""
-    cov = {"tests": [{"field": "owner_type", "op": "!=", "value": "natural_person_small_landlord", "kind": "niche_exemption",
+    cov = {"tests": [{"field": "owner_type", "op": "!=", "value": "natural_person_small_landlord", "kind": "niche_exemption", "phrase": "a test exemption",
                       "source_text": "owner is a natural person who owns no more than two residential rental properties",
                       "on_fail": "exclude", "defeated_if": None}]}
     res, why, _, _ = engine.evaluate_coverage(RULE, cov, facts("CA", "Test", 1950, 12), AS_OF)
     assert res == "unknown" and "owner identity" in why, (res, why)
-    cov2 = {"tests": [{"field": "owner_type", "op": "!=", "value": "owner_occupied_small_building", "kind": "niche_exemption",
+    cov2 = {"tests": [{"field": "owner_type", "op": "!=", "value": "owner_occupied_small_building", "kind": "niche_exemption", "phrase": "a test exemption",
                        "source_text": "owner-occupied buildings of four or fewer units", "on_fail": "exclude",
                        "defeated_if": {"field": "units", "op": ">", "value": 4}}]}
     assert engine.evaluate_coverage(RULE, cov2, facts("CA", "Test", 1950, 12), AS_OF)[0] == "applies"
@@ -117,15 +118,15 @@ def test_true_owner_type_test_is_unknown_unless_defeated():
 
 def test_cooperative_and_government_ownership_are_tenure_classes():
     """rulings_11 #1: a resident-owned cooperative or government-owned unit is not an owner-type test."""
-    cov = {"tests": [{"field": "owner_type", "op": "!=", "value": "nonprofit_cooperative", "kind": "niche_exemption",
+    cov = {"tests": [{"field": "owner_type", "op": "!=", "value": "nonprofit_cooperative", "kind": "niche_exemption", "phrase": "a nonprofit cooperative",
                       "source_text": "nonprofit cooperatives; government-owned units", "on_fail": "exclude", "defeated_if": None}]}
     res, why, assumptions, _ = engine.evaluate_coverage(RULE, cov, facts("CA", "Test", 1950, None, btype=None), AS_OF)
-    assert res == "applies" and "resident owned cooperative" in why and assumptions, (res, why)
+    assert res == "applies" and "nonprofit cooperative" in why and assumptions, (res, why)
 
 
 def test_own_unit_carve_out_depends_on_building_type():
     """rulings_11 #2: shared kitchen/bath or a roommate removes at most the owner's own unit."""
-    cov = {"tests": [{"field": "owner_type", "op": "!=", "value": "owner_shares_kitchen_or_bath", "kind": "niche_exemption",
+    cov = {"tests": [{"field": "owner_type", "op": "!=", "value": "owner_shares_kitchen_or_bath", "kind": "niche_exemption", "phrase": "a test exemption",
                       "source_text": "a unit where the tenant shares a kitchen or bath with the landlord", "on_fail": "exclude",
                       "defeated_if": None}]}
     assert engine.evaluate_coverage(RULE, cov, facts("CA", "Test", 1950, None, btype="apartments"), AS_OF)[0] == "applies"
@@ -135,7 +136,7 @@ def test_own_unit_carve_out_depends_on_building_type():
 
 
 def test_plausible_exemption_unknown_unless_defeated():
-    cov = {"tests": [{"field": "owner_type", "op": "!=", "value": "owner_occupied_two_family", "kind": "plausible_exemption",
+    cov = {"tests": [{"field": "owner_type", "op": "!=", "value": "owner_occupied_two_family", "kind": "plausible_exemption", "phrase": "a test exemption",
                       "source_text": "owner-occupied two-family", "on_fail": "exclude",
                       "defeated_if": {"field": "units", "op": ">", "value": 2}}]}
     assert engine.evaluate_coverage(RULE, cov, facts("MA", "Test", 1950, None), AS_OF)[0] == "unknown"
@@ -143,7 +144,7 @@ def test_plausible_exemption_unknown_unless_defeated():
 
 
 def test_timing_condition_never_unknown():
-    cov = {"tests": [{"field": "tenancy_months", "op": ">=", "value": 6, "kind": "timing",
+    cov = {"tests": [{"field": "tenancy_months", "op": ">=", "value": 6, "kind": "timing", "phrase": "a test exemption",
                       "source_text": "after six months of tenancy", "on_fail": "exclude", "defeated_if": None}]}
     res, why, assumptions, _ = engine.evaluate_coverage(RULE, cov, facts("CA", "Test", 1990, 10), AS_OF)
     assert res == "applies" and assumptions

@@ -1,25 +1,25 @@
-# Module B lookup evaluation (seed60, after rulings_11, regression check)
+# Module B lookup evaluation
 
-Gold: `gold/addresses/seed60.json` (60 addresses, 569 expectations, verifier AI-draft)  
+Gold: `gold/addresses/holdout20.json` (20 addresses, 192 expectations, verifier AI-draft)  
 Ours: `/Users/hamzaaslamkhan/Downloads/03 RealPage - Codebase and Data/navigator/out/lookups.json`
 
 | Metric | Value |
 |---|---|
-| Exact result agreement | 569/569 = 100.0% |
-| Weighted score (missed 'applies' count double) | 887/887 = 100.0% |
+| Exact result agreement | 192/192 = 100.0% |
+| Weighted score (missed 'applies' count double) | 300/300 = 100.0% |
 | Missed 'applies' (gold applies, ours not) | 0 |
 | Expectations we did not report at all | 0 |
-| Our unknown rate (these addresses) | 194/631 = 30.7% |
+| Our unknown rate (these addresses) | 63/213 = 29.6% |
 
 ## Confusion (gold → ours)
 
 | gold \ ours | applies | superseded | not_yet_effective | pending | unknown | not_reported |
 |---|---|---|---|---|---|---|
-| applies | 318 | 0 | 0 | 0 | 0 | 0 |
-| superseded | 0 | 31 | 0 | 0 | 0 | 0 |
-| not_yet_effective | 0 | 0 | 18 | 0 | 0 | 0 |
-| pending | 0 | 0 | 0 | 30 | 0 | 0 |
-| unknown | 0 | 0 | 0 | 0 | 172 | 0 |
+| applies | 108 | 0 | 0 | 0 | 0 | 0 |
+| superseded | 0 | 14 | 0 | 0 | 0 | 0 |
+| not_yet_effective | 0 | 0 | 6 | 0 | 0 | 0 |
+| pending | 0 | 0 | 0 | 8 | 0 | 0 |
+| unknown | 0 | 0 | 0 | 0 | 56 | 0 |
 
 ## Disagreement types
 

@@ -85,6 +85,17 @@ def label(category: str) -> str:
     return category.replace("_", " ")
 
 
+STATE_NAME = {"CA": "California", "NJ": "New Jersey", "MA": "Massachusetts"}
+STATE_ES = {"CA": "California", "NJ": "Nueva Jersey", "MA": "Massachusetts"}
+LABEL_ES = {"rent_increase_limits": "límites a los aumentos de renta", "just_cause_eviction": "causa justa de desalojo",
+            "security_deposits": "depósitos de garantía", "application_screening_fees": "cuotas de solicitud",
+            "screening_restrictions": "evaluación de solicitantes", "algorithmic_rent_setting": "fijación algorítmica de rentas"}
+
+
+def city_name(jurisdiction: str) -> str:
+    return jurisdiction.split(",")[0]
+
+
 def main() -> int:
     if not RULES_JSON.exists():
         print("out/rules.json missing; run verify.py first", file=sys.stderr)
@@ -107,37 +118,44 @@ def main() -> int:
             failed = [r for r in here if r["status"] == "failed"]
 
             n += 1
+            # Public wording (rulings_12 section 7c): never the word "corpus", plain category names.
+            if level == "city":
+                requirement = f"No {label(category)} rule at the {city_name(jurisdiction)} level; state law applies."
+                requirement_es = f"No hay ninguna regla de {LABEL_ES[category]} a nivel de {city_name(jurisdiction)}; se aplica la ley estatal."
+                key_value = "No city rule; state law applies"
+            else:
+                requirement = f"No {label(category)} rule at the state level in {STATE_NAME.get(state, state)}."
+                requirement_es = f"No hay ninguna regla estatal de {LABEL_ES[category]} en {STATE_ES.get(state, state)}."
+                key_value = "No state rule"
             rec = {
                 "team_rule_id": f"n-{n:04d}",
                 "jurisdiction": jurisdiction, "level": level, "category": category,
                 "status": "in_force",
                 "title": "No rule at this level",
-                "requirement": f"No {label(category)} rule at the {jurisdiction} level was found in the corpus.",
-                "key_value": f"No {label(category)} rule found at {jurisdiction} level in the corpus",
+                "requirement": requirement, "requirement_es": requirement_es,
+                "key_value": key_value,
                 "coverage_conditions": None, "exemptions": None, "overrides": [], "interaction": None,
                 "effective_date": None,
-                "citation": "None found in corpus", "source_doc_id": None, "source_url": None,
+                "citation": "No citing text", "source_doc_id": None, "source_url": None,
                 "quoted_span": None, "confidence": 0.5, "conflict_flag": False, "conflict_note": None,
                 "negative_finding": True, "derived": True, "notes": None,
             }
             bar = find_preempting_state_rule(rules, state, category) if level == "city" else None
             if bar:
                 rec.update({
-                    "requirement": f"State law bars local {label(category)} rules: {bar['title']}.",
+                    "requirement": f"No {label(category)} rule at the {city_name(jurisdiction)} level; state law bars local rules "
+                                   f"({bar['citation']}).",
+                    "requirement_es": f"No hay ninguna regla de {LABEL_ES[category]} a nivel de {city_name(jurisdiction)}; "
+                                      f"la ley estatal prohíbe las reglas locales ({bar['citation']}).",
                     "citation": bar["citation"], "source_doc_id": bar["source_doc_id"],
                     "source_url": bar["source_url"], "quoted_span": bar["quoted_span"],
-                    "confidence": 0.8, "interaction": f"Derived from state rule {bar['team_rule_id']}.",
+                    "confidence": 0.8, "interaction": f"Derived from the state rule {bar['title']}.",
                     "overrides": [bar["team_rule_id"]],
                 })
-            notes = []
             if pending:
-                notes.append("Pending: " + "; ".join(f"{r['citation']} ({r['team_rule_id']})" for r in pending))
+                rec["notes"] = "A pending bill could change this; see the change register."
             if failed:
-                notes.append("Failed/struck: " + "; ".join(f"{r['citation']} ({r['team_rule_id']})" for r in failed))
-            if notes:
-                rec["notes"] = " ".join(notes)
-                rec["conflict_flag"] = bool(pending)
-                rec["conflict_note"] = "A pending measure could change this." if pending else None
+                rec["notes"] = f"{rec.get('notes') or ''} A proposed measure in this category failed or was struck.".strip()
             negatives.append(rec)
 
     schema_ok = [r for r in negatives if not list(validator.iter_errors(r))]

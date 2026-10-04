@@ -10,7 +10,7 @@
         "tests": [],
         "applies_to_all_residential": true,
         "coverage_incomplete": false,
-        "explanation_note": "statutory exemptions (certain owner-occupied shared units, institutional housing) not testable from county data"
+        "explanation_note": "statutory exemptions for certain owner-occupied shared units and institutional housing cannot be checked from county data"
       }
     },
     {

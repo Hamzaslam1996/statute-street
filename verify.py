@@ -163,7 +163,15 @@ def build_record(raw: dict, doc: Doc, query: date) -> dict:
     if doc.is_secondary:
         if confidence is None or confidence > SECONDARY_CONFIDENCE_CAP:
             confidence = SECONDARY_CONFIDENCE_CAP
-        notes.append(f"Secondary source ({doc.source_type}); confirm against the official text.")
+        notes.append("Based on a secondary source; confirm against the official text.")
+    # Key values are operator-facing: extraction commentary in parentheses moves to the notes.
+    key_value = raw.get("key_value")
+    if isinstance(key_value, str):
+        moved = re.findall(r"\s*\(([^()]*(?:not stated|not in this|linked PDF|not given|not reproduced|not shown|not specified)[^()]*)\)", key_value, re.I)
+        if moved:
+            key_value = re.sub(r"\s*\(([^()]*(?:not stated|not in this|linked PDF|not given|not reproduced|not shown|not specified)[^()]*)\)", "", key_value, flags=re.I).strip(" ;,")
+            raw["extraction_notes"] = f"{raw.get('extraction_notes') or ''} " + " ".join(m[0].upper() + m[1:] + "." for m in moved)
+        raw["key_value"] = key_value or None
 
     eff = raw.get("effective_date")
     if eff and not DATE_RE.match(eff):
@@ -427,6 +435,30 @@ def prefer_supplied_corpus(kept: list[dict], docs: dict) -> tuple[list[dict], li
     return kept, log
 
 
+def apply_rule_overrides(final: list[dict]) -> list[dict]:
+    """
+    Reviewer rulings on individual rule records (data/rule_overrides.json, rulings_12 section 1):
+    which records carry a review flag and the public wording of the flag. Keyed by team_rule_id,
+    guarded by a title check so that a renumbering is reported instead of silently misapplied.
+    """
+    path = OUT.parent / "data" / "rule_overrides.json"
+    if not path.exists():
+        return final
+    by_id = {r["team_rule_id"]: r for r in final}
+    for rid, ov in json.loads(path.read_text(encoding="utf-8")).get("overrides", {}).items():
+        r = by_id.get(rid)
+        if not r or ov.get("title_contains", "").lower() not in (r.get("title") or "").lower():
+            print(f"  rule override {rid} skipped: id missing or title does not contain '{ov.get('title_contains')}'", file=sys.stderr)
+            continue
+        if "conflict_flag" in ov:
+            r["conflict_flag"] = ov["conflict_flag"]
+        if "conflict_note" in ov:
+            r["conflict_note"] = ov["conflict_note"]
+        if ov.get("note_append") and ov["note_append"] not in (r.get("notes") or ""):
+            r["notes"] = f"{r.get('notes') or ''} {ov['note_append']}".strip()
+    return final
+
+
 def act_prefix(cite: str) -> str | None:
     """'N.J.S.A. 46:8-26' -> '46:8'; 'Newark § 19:2-22' -> '19:2'; 'Cal. Civ. Code § 1950.5' -> '1950'."""
     for tup in citation_sections(cite or ""):
@@ -557,6 +589,7 @@ def main() -> int:
             continue
         final.append(rec)
 
+    final = apply_rule_overrides(final)
     OUT.mkdir(parents=True, exist_ok=True)
     # Exactly the submission template shape: {"rules": [...]}
     RULES_JSON.write_text(json.dumps({"rules": final}, indent=2, ensure_ascii=False),
