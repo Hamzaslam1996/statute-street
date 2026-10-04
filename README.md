@@ -4,7 +4,7 @@ For any apartment address in the sample (California, New Jersey, Massachusetts; 
 
 **Legal information, not legal advice. Check the source or ask a lawyer before acting.**
 
-Live demo: `<LIVE_DEMO_URL>`. User interface repository: https://github.com/Hamzaslam1996/rule-navigator.
+Live demo: https://statute-street.lovable.app. User interface repository: https://github.com/Hamzaslam1996/rule-navigator.
 
 ## How it works
 
