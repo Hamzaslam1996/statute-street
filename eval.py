@@ -40,7 +40,7 @@ REPORT_MD = OUT / "eval_report.md"
 def pick_gold(explicit: str | None) -> tuple[Path, str]:
     """Prefer the independent gold set if it exists, else the silver AI draft."""
     if explicit:
-        return Path(explicit), "custom"
+        return Path(explicit).resolve(), "custom"
     dev = GOLD_DIR / "rules" / "dev.json"   # never gold/rules/test.json (Hamza ruling #7)
     if dev.exists():
         return dev, "gold (independent, dev split)"
@@ -202,7 +202,11 @@ def main() -> int:
 
     lines = []
     lines.append(f"# Module A evaluation\n")
-    lines.append(f"Gold set: `{gold_path.relative_to(GOLD_DIR.parent)}` — {gold_label}  ")
+    try:
+        gold_name = gold_path.relative_to(GOLD_DIR.parent)
+    except ValueError:
+        gold_name = gold_path.name
+    lines.append(f"Gold set: `{gold_name}` — {gold_label}  ")
     lines.append(f"Our rules: {len(ours)} from {len(raw_docs)} extracted document(s)  ")
     lines.append(f"Gold rules in scope (source doc extracted): {len(scope_pos)} of {len(gold_pos)} positive, "
                  f"{len(scope_neg)} of {len(gold_neg)} negative findings\n")
