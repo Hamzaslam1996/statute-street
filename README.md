@@ -1,214 +1,141 @@
-# Statute Street — Rental Housing Law Navigator
+# Statute Street: Rental Housing Law Navigator
 
-Hack-Nation 7th Global AI Hackathon, Challenge 02 (sponsor RealPage).
-For any U.S. apartment address in scope (CA, NJ, MA; ten cities), report which
-rental-housing rules apply as of a date, each cited to source text.
-**Not legal advice.**
+For any apartment address in the sample (California, New Jersey, Massachusetts; ten cities), Statute Street reports which rental housing rules apply on a given date, each cited to the source text, and tracks what changes and when. Built for the Hack-Nation 7th Global AI Hackathon, Challenge 02 (sponsor RealPage).
 
-## Module A — rule extraction (automated)
+**Legal information, not legal advice. Check the source or ask a lawyer before acting.**
+
+Live demo: `<LIVE_DEMO_URL>`. User interface repository: `<UI_REPO_URL>`.
+
+## What it does
+
+- **Module A, rule extraction.** Claude (Sonnet 5.5) reads every document in the supplied corpus plus our single-page captures and returns structured rule records in six categories (rent increase limits, just cause eviction, security deposits, application screening fees, screening restrictions, algorithmic rent setting). Every record must carry a quoted span that is an exact passage of its source document; records whose quote cannot be verified are retried once and otherwise dropped. Status is computed in code from stated effective dates, never taken from the model. Duplicates across documents are merged, with the folded sources kept as supporting documents. Where a category has no rule at a level, a negative finding says so.
+- **Module B, address lookup.** Each address is resolved to its legal city with the Census Geocoder (Dorchester is Boston, Van Nuys is Los Angeles). Each rule's coverage text is turned once into machine checkable tests; a deterministic engine then decides, for each address and rule, applies, unknown, superseded, not yet effective or pending, with a one sentence explanation naming the deciding fact or the missing one.
+- **Module C, change tracking.** The engine is run at the dates named by the five change tests (T1 to T5); affected address sets are plain set arithmetic. No model is involved.
+
+## Quick start (cache-only reproduction, no model calls)
 
 ```
-source .venv/bin/activate
-python extract.py --all            # Claude reads every corpus document -> out/raw/D###.json (cached)
-python verify.py                   # exact-quote check, status from dates, dedupe -> out/rules.json
-python derive_negatives.py         # "no rule at this level" findings -> out/negatives.json
-python translate_es.py             # Spanish requirement_es for every rule and negative finding (cached in out/raw/es/)
-python eval.py                     # score against gold -> out/eval_report.md
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+export ANTHROPIC_API_KEY=invalid        # proves that nothing below calls the model
+P=.venv/bin/python
+$P verify.py --no-retry                 # verified rules from the cached extractions in out/raw/
+$P date_resolve.py --no-model           # cached effective date decisions
+$P derive_negatives.py                  # "no rule at this level" findings
+$P translate_es.py --no-model           # cached Spanish summaries
+$P coverage.py --no-model               # cached coverage tests (+ reviewer overrides)
+$P engine.py                            # out/lookups.json, 500 addresses as of 2026-10-01
+$P engine.py --use-derived-units        # variant that trusts NJ unit counts parsed from building codes
+$P changes.py                           # out/changes.json (T1 to T5) and the score against the change key
+$P changes.py --diff --before 2025-12-31 --after 2026-01-02
+$P changes.py --diff --before 2026-10-01 --after 2027-07-02
+$P open_questions.py && $P publish.py --in-place
 ```
 
-| File | What it is |
+A fresh clone run this way reproduced all fourteen output files byte for byte (out/stress/repro.md). To re-extract from scratch, add an `ANTHROPIC_API_KEY` in `.env` and run `python extract.py --all`.
+
+## Pipeline
+
+```
+corpus/text (54 docs)  +  corpus_supplementary (33 captures)  +  sources/manual (11 pages)
+        |
+   extract.py  (Claude, structured output, cached per document in out/raw/)
+        |
+   verify.py   (exact quote check, status from dates, dedupe, evidence basis)  -> out/rules.json
+        |
+   date_resolve.py (stated dates elsewhere in the corpus)  ->  derive_negatives.py  ->  translate_es.py
+        |
+   resolve.py (Census Geocoder: legal city)      coverage.py (coverage text -> tests, reviewer overrides)
+        |                                                 |
+        +------------------------>  engine.py  <----------+        -> out/lookups.json
+                                        |
+                                   changes.py  -> out/changes.json      export_ui.py -> UI data files
+```
+
+## Results
+
+| Measure | Result |
 |---|---|
-| `out/rules.json` | **Submission file.** Schema-valid rule records only (`{"rules": [...]}`): extracted rules plus negative findings that carry a real citation and quoted span (e.g. M.G.L. c. 40P barring local rent control). |
-| `out/negatives.json` | **Extra file.** All derived "no rule at this level" findings for the 13 jurisdictions x 6 categories, including those with no citing text (so not schema-valid). Used by Module B and the UI. |
-| `out/rules_full.json` | `rules.json` + all of `negatives.json`, the input to Module B. |
-| `out/extract_log.csv` | Every model call: document, model, tokens, cost, time. |
-| `out/verify_log.csv`, `out/dedupe_log.csv`, `out/out_of_scope_log.csv` | Audit trail: quote checks, merges, provisions considered but excluded. |
-| `out/eval_report.md` | Scores against `gold/rules/dev.json`. |
+| Module A, dev split of the independent key (39 rules) | 39/39 found, status 39/39 |
+| Module A, test split, single run at tag v1.0-submission-candidate | 15/15 found, status 15/15, negative findings 11/11, effective dates 9/15 agree |
+| Module B, seed60 (60 addresses, 569 expectations) | 569/569 exact |
+| Module B, seed20 | 190/190 exact |
+| Module B, holdout20, single blind run | 192/192 exact |
+| Module C, change tests T1 to T5 | 5 of 5 exact (affected and conflict sets) |
+| Whole sample | 500 addresses, 5,298 rule rows, unknown rate 27.3%, 2,079 rows rest on a stated presumption, 300 rows flagged for review |
 
-Rules of the pipeline (see `CLAUDE.md` and `instructions/rulings_*.md` for the
-lawyer's rulings they implement): every record's `quoted_span` must be an
-exact passage of its source document; `status` is computed in code from the
-effective date and the query date (default 2026-10-01); effective dates are
-only ever taken from text that states them, never computed from chapter
-numbers; secondary sources are capped at confidence 0.7.
+Agreement figures measure our engine against an independently built key that applies the same reviewed legal rulings; they test faithful implementation, not legal correctness beyond those rulings. The organisers' hidden key is the real test.
 
-Corpus: the organisers' starter pack (read-only) plus `corpus_supplementary/`
-(single-page captures of link-only sources, with retrieval dates in
-`capture_log.csv`) and `sources/manual/` (pages saved by hand from a browser,
-same header format; the extractor reads them as `M_<file name>`).
+## Stress test
 
-## Module B — address lookup
+Because the hidden key's treatment of exemptions is unknown, six alternative keys were built deterministically from engine policy switches (out/stress/): strict (every presumption becomes unknown), lenient (plausible exemptions become applies), cutoff year buildings as applies, New Jersey unit counts parsed from building codes treated as real, no precedence, and not covered rows reported. Each candidate policy was scored against every key:
 
-```
-python resolve.py                  # Census Geocoder: legal city for each address -> out/jurisdictions.json
-python coverage.py                 # one Claude call per rule: coverage text -> machine tests -> out/coverage.json
-python engine.py [--as-of DATE]    # deterministic rule engine -> out/lookups.json, out/lookup_audit.csv
-python -m pytest tests/ -q         # acceptance tests (SF 1979 trap, Dorchester = Boston, FAIR Act dates, ...)
-python lookup_eval.py --gold gold/addresses/seed60.json   # score -> out/lookup_eval.md
-```
+| Policy | Worst case exact | Mean exact | Worst case weighted | Mean weighted |
+|---|---|---|---|---|
+| current | 83.0 | 93.3 | 81.0 | 93.3 |
+| strict | 73.3 | 86.0 | 70.6 | 84.5 |
+| lenient | 73.3 | 84.2 | 82.2 | 89.4 |
 
-`coverage_overrides.json` records the reviewer's (Hamza's) rulings that sit on
-top of the model-written tests, each naming the ruling it implements.
+The current policy was kept: it has the best worst case and the best mean exact agreement across the six keys, so it loses least whatever the hidden key assumes. Forty nine perturbation tests (cutoff years, missing or malformed facts, mailing versus legal city, effective date boundaries, pending and failed instruments) pass; the submission files pass the schema and format check. Full report: out/stress/REPORT.md.
 
-### Exemptions and presumptions (how "unknown" is decided)
+## Exemptions and presumptions (how "unknown" is decided)
 
-Every condition the engine tests is one of three kinds:
+Every condition the engine tests is one of these kinds:
 
-- **Coverage condition** — the law reaches the property only if the condition
-  holds (a unit-count threshold, a funding requirement, a certificate-of-occupancy
-  cutoff). If the data cannot show it, the answer is **unknown**. Year built is
-  only a proxy for the certificate date, so a building from the cutoff year
-  itself is unknown.
-- **Niche exemption** — a narrow carve-out that whoever claims it must prove.
-  Two classes:
-  - *Owner identity tests* (a natural-person or small-landlord exception, the
-    AB 1482 natural-person single-family / condo exception, an owner-occupied
-    duplex or 2 to 4 unit exemption where the unit count is within the threshold
-    or unknown). The organisers' README §4 states that owner names are excluded
-    from the data and that owner-type exceptions must be answered "unknown" unless
-    we can explain why the exception cannot apply. So the answer is **unknown**
-    ("owner identity is not in the data"), unless the use code makes the exception
-    impossible (a 5+ unit building cannot be an owner-occupied 1 to 4 unit
-    property), in which case it **applies** with that reason.
-  - *Carve-outs inside the owner's own dwelling* (an owner sharing kitchen or
-    bath, a roommate in the owner's unit, a room rented in an owner-occupied
-    home) can remove at most the owner's own unit: a building the use code shows
-    as 2+ units or apartments is still covered (**applies**, carve-out listed in
-    `assumptions`); only a single-family or unknown building type stays unknown.
-  - *Use, funding or tenure* (hotels and vacation lets, dormitories, hospitals,
-    care facilities, public housing and government-contract units, deed-restricted
-    or subsidised housing, software used under affordable programmes, and
-    resident-owned co-operatives or government-owned units, which are not
-    landlord-and-tenant rental tenancies at all). Exemptions to remedial housing
-    statutes are read narrowly, so when the data is silent the answer is
-    **applies**, the explanation starts "Applies unless …", and the exemption is
-    listed in the row's `assumptions`. `engine.py --strict-unknown` turns these to
-    unknown as well, pending the organisers' answer on funding cases.
-- **Plausible exemption** — an exception the data cannot rule out and that is
-  common for the property type (an owner-occupied two-family; a single-family
-  home or condo owned by a natural person; a new-construction window the year
-  built falls inside). The answer is **unknown**, unless the assessor's use code
-  makes the exemption impossible (a 5+ unit apartment building cannot be an
-  owner-occupied two-family), in which case it **applies**.
+- **Coverage condition.** The law reaches the property only if the condition holds (a unit count threshold, a funding requirement, a certificate of occupancy cutoff). If the data cannot show it, the answer is unknown. Year built is only a proxy for the certificate date, so a building from the cutoff year itself is unknown.
+- **Owner identity test.** A natural person or small landlord exception, the AB 1482 natural person single family or condo exception, an owner occupied two to four unit exemption where the unit count is within the threshold or unknown. The organisers' README section 4 says owner names are excluded and such exceptions must be answered unknown unless we can explain why they cannot apply; so the answer is unknown ("owner identity is not in the data") unless the use code makes the exception impossible, when it applies with that reason.
+- **Carve-out inside the owner's own dwelling.** An owner sharing kitchen or bath, a roommate in the owner's unit, a room let in an owner occupied home: these remove at most the owner's own unit, so a building shown as two or more units or apartments is still covered (applies, carve-out listed in `assumptions`); only a single family or unknown building type stays unknown.
+- **Use, funding or tenure.** Hotels and vacation lets, dormitories, hospitals, care facilities, public housing and government contract units, deed restricted or subsidised housing, resident owned cooperatives, government owned units. Exemptions to remedial housing statutes are read narrowly, so when the data is silent the answer is applies, the explanation starts "Applies unless", and the exemption is listed in `assumptions`. `engine.py --strict-unknown` turns these to unknown.
+- **Timing condition.** Protection that starts after six months of tenancy is about the tenancy, not the property; never unknown, recorded as an assumption.
 
-Conditions about the tenancy itself (protection starts after six months of
-occupancy) are not about the property and never make a rule unknown; they are
-recorded as assumptions.
-
-Precedence is decided before coverage: a state rule that yields to stricter
-local law (Civ. Code §§ 1946.2(i), 1947.12(d)(3)) is **superseded** wherever a
-local rule in the same category applies, including where two local rules split
-a cutoff between them (LA RSO on/before 1 Oct 1978, LA JCO after it) and where
-the local rule turns on the very same unresolved condition (San Diego's TPO and
-the state just-cause rule share the 15-year new-construction test). It falls
-back to its own tests only when the local rule is genuinely unknown.
-
-`--use-derived-units` treats unit counts parsed from New Jersey MOD-IV building
-codes ("3S-B-A-13U-H" → 13) as real; the submission does not, because the
-organisers state that those rows have no unit counts (see `out/derived_units.csv`).
-
-### A note on M.G.L. c. 151B § 4(10)
-
-Our engine reports the Massachusetts ban on discriminating against recipients of
-public or rental assistance (c. 151B § 4(10)) as applying to every Massachusetts
-rental. In the official text (D049) the owner-occupied two-family exemption is
-written into § 4(7) and § 4(11)(3) only; § 4(10) contains no such exemption, so
-no exemption test is applied to it.
-
-### Reviewer folds (rulings_07)
-
-`dedupe_overrides.json` records three deterministic folds ruled by the reviewer
-after the automatic dedupe: the Hoboken press release announcing the proposal
-that became ch. 158 (no longer pending), the news report of Jersey City Ord.
-25-057, and the Santa Ana newsletter describing Ord. NS-3090. Each folded source
-stays on the kept rule as a supporting document and the fold is logged with its
-reason in `out/dedupe_log.csv`. Coverage tests and resolved effective dates are
-cached by content and citation (`out/coverage.json`, `out/date_resolve_cache.json`)
-so a rebuild after such folds needs no model calls.
-
-## Module C — change tracking
-
-```
-python changes.py                                          # -> out/changes.json (T1-T5), changes_detail.json, changes_eval.md
-python changes.py --diff --before 2025-12-31 --after 2026-01-02   # -> out/diff_2025-12-31_2026-01-02.json (T1)
-python changes.py --diff --before 2026-10-01 --after 2027-07-02   # -> out/diff_2026-10-01_2027-07-02.json (T3)
-python open_questions.py                                   # -> out/open_questions.json
-python -m pytest tests/ -q
-```
-
-Module C is deterministic: the rule engine is run at the dates each test names
-and the affected sets are plain set arithmetic over the 500 addresses. No model
-calls. "Affected" means the addresses whose answer the change touches (the
-test's rule is reported for the address on at least one of the dates). T3 also
-sets conflict flags on every Jersey City and Hoboken row, because the FAIR Act's
-§ 6(b) may pre-empt the local bans; we flag that for human review, we do not
-decide it. T5's set is empty by construction: a struck ballot question is a
-failed measure and failed measures are never reported for an address.
-
-### Known open questions (organisers' brief §9)
-
-`out/open_questions.json` lists each with both sources and dates:
-
-1. Berkeley ch. 13.63 algorithmic ban: 1 March 2026 (ordinance text) vs January 2026
-   (law-firm alert, Aug 2026). We record the stated date we have and flag the conflict.
-2. NJ FAIR Act vs the Jersey City and Hoboken ordinances: possible preemption from
-   2027-07-01, flagged on every affected row.
-3. LA RSO new formula: 2026-02-02 (LAHD) vs 2026-01-24 (landlord association). We use the
-   agency date and flag the other.
-4. CA screening-fee cap: the statute gives $30 adjusted by CPI and no 2026 dollar figure;
-   we keep the formula.
-
-## Scores and what they mean
-
-| Key | Addresses | Exact result agreement |
-|---|---|---|
-| `gold/addresses/seed60.json` | 60 | 569/569 |
-| `gold/addresses/seed20.json` | 20 | 190/190 |
-| `gold/addresses/holdout20.json` (blind, see below) | 20 | 192/192 |
-| `gold/changes/T1-T5.json` | 500 | all five tests exact |
-
-Agreement figures measure our engine against an independently built key that
-applies the same reviewed legal rulings; they test faithful implementation, not
-legal correctness beyond those rulings. The organisers' hidden key is the real
-test. Across the whole sample (500 addresses, 5,298 rule rows) the unknown rate
-is 27.3% and 2,079 rows rest on a presumption ("Applies unless …") after
-rulings_11 refined which owner carve-outs are true owner-identity tests.
+Precedence is decided before coverage: a state rule that yields to stricter local law is superseded wherever a local rule in the same category applies, including where two local rules split a cutoff between them (Los Angeles RSO on or before 1 October 1978, JCO after it) and where the local rule turns on the very same unresolved condition.
 
 ## Evidence basis
 
-Organiser ruling (Discord, 4 Oct 2026): self-saved link-only texts may be used for
-research but do not count toward the citation metric, which is based on the
-supplied, verifiable corpus text (`corpus/text/D###.txt`). Every rule therefore
-carries `evidence_basis`: `supplied_corpus` when its primary quote is from a
-starter-pack document, `link_only_capture` when only our single-page capture of
-a link-only source supports it, `manual_primary` when only a hand-saved page
-does. Wherever a supplied-corpus document supports a rule it is the primary
-evidence (URL, citation and verified quote); our own captures are supporting
-documents in `rules_full.json` and the audit trail (`out/evidence_log.csv`,
-`out/evidence_report.md`). Rules with no supplied-corpus text are kept, the law
-being real and verified, with the official manifest URL as `source_url`.
+Organiser ruling (Discord, 4 October 2026): self saved link-only texts may be used for research but do not count toward the citation metric, which is based on the supplied corpus text. Every rule carries `evidence_basis`: 47 rules cite a supplied corpus document as primary evidence, 12 rest on our single page capture of a link-only source, 5 on a hand saved page. Wherever a supplied document supports a rule it is the primary evidence (URL, citation and verified quote); our captures are supporting documents in `rules_full.json` and the audit trail (out/evidence_log.csv, out/evidence_report.md). Rules with no supplied corpus text are kept, the law being real and verified, with the official manifest URL as `source_url`.
 
-After the duplicate-rule fold of rulings_08 the three keys were re-scored as a
-regression check (nothing moved); that was a check that the dedupe changed no
-answer, not tuning against the holdout.
+## Known open questions (organisers' brief section 9)
 
-`out/public/` holds copies of `rules.json`, `lookups.json` and `changes.json` with
-internal review notes removed (`publish.py`); the same filter is applied to the
-submission files themselves.
+out/open_questions.json lists each with both sources and dates. Berkeley's algorithmic ban: 1 March 2026 in the ordinance text versus January 2026 in an August 2026 law firm alert; we record the stated date we have and flag the conflict. New Jersey's FAIR Act may pre-empt the Jersey City and Hoboken ordinances from 1 July 2027; flagged on every affected row for human review, not decided. Los Angeles RSO formula: 2 February 2026 (housing department) versus 24 January 2026 (landlord association); we use the agency date and flag the other. California's screening fee cap: the statute gives $30 adjusted by CPI and no single 2026 figure; we keep the formula.
 
-## Blind holdout (single run)
+## Determinations as data
 
-`gold/addresses/holdout20.json` (20 addresses, frozen 2026-10-04 04:30 PKT, sha256 verified
-against `holdout20.sha256`) was scored exactly once, at code state `b93d42f`, after Module C was
-complete: exact result agreement 192/192 = 100.0%, weighted 300/300 = 100.0%. No code, coverage or rule
-change was made in response to the holdout result; the full report is `out/lookup_eval_holdout20.md`.
+out/lookups.json is a static API: for each address id, the list of rules with result, explanation, assumptions and conflict flag, as of a date. A pricing or revenue management engine can read it before suggesting a price (is a rent cap in force here, is rent setting software banned here, is the answer unknown and why), and changes.json tells it which addresses a pending or future change will touch. The Spanish `requirement_es` on every rule supports tenant facing notices.
 
-## Audit trail notes
+## Limits
 
-- The independent gold key v0.4 (`gold/`, `sources/official/`, D088–D095) was
-  written by a separate session and was swept into commit `84c4030` together with
-  Module B code; v0.4.1 is commit `772335e` on its own. History was not rewritten.
-- `corpus_supplementary/text/D094.txt` (official malegislature.gov text of M.G.L. c. 6 § 172,
-  retrieved 2026-10-03) arrived after the first v0.4 commit; it is the primary source for the
-  MA CORI screening rule, with the FindLaw copy (`sources/manual/MA-SCRN-02_MGL_c6_s172_findlaw.txt`)
-  folded under it as a supporting document.
+- No amounts are computed and no case is decided: the engine lists the rules that bind an action and the facts that decide coverage.
+- No owner data: owner identity tests are unknown unless the use code settles them.
+- New Jersey unit counts are absent from the supplied data; counts parsed from MOD-IV building codes are shown as derived and not asserted (lookups_derived.json is the variant that trusts them).
+- Year built stands in for the certificate of occupancy date; cutoff year buildings are unknown.
+- Coverage tests are written by the model from the rule text and reviewed for the rent control rules; other rules rely on the model's reading.
+- Link-only sources that could not be captured (Newark chapter 2:10 text) are not in the corpus.
+
+## Audit trail
+
+- out/extract_log.csv (every model call: document, tokens, cost), out/verify_log.csv (quote checks), out/dedupe_log.csv (merges with reasons), out/out_of_scope_log.csv, out/date_resolve_log.csv, out/evidence_log.csv, out/coverage.json (tests with the words they came from), coverage_overrides.json and dedupe_overrides.json (reviewer rulings, each naming its instruction).
+- The independent gold key v0.4 (gold/, sources/official/, D088 to D095) was written by a separate session and was swept into commit 84c4030 with Module B code; v0.4.1 is 772335e, v0.4.2 027c7d4, v0.4.3 inside 4dc4165. History was not rewritten.
+- gold/addresses/holdout20.json (sha256 verified) was scored once, at commit b93d42f; gold/rules/test.json was read once, at tag v1.0-submission-candidate (ce42a46; a report path fix to eval.py, f604e30, was needed to write the report; the first invocation produced no score). Nothing was changed in response to either result. The three keys were re-scored after later dedupe folds as regression checks only.
+- D094 (M.G.L. c. 6 s. 172, official) is the primary source for the Massachusetts CORI rule, with a FindLaw copy folded under it.
+
+## Responsible use
+
+Every answer carries an as-of date, a citation and the quoted text; unknown names the missing fact instead of guessing; conflicts are flagged for human review and never resolved by the system; enacted law is separated from pending bills and failed measures; only public data is used, no customer, resident or pricing data; the tool suggests no way around a rule. Internal review notes are removed from the public copies in out/public/.
+
+## Repository map
+
+| Path | Contents |
+|---|---|
+| extract.py, verify.py, date_resolve.py, derive_negatives.py, translate_es.py, eval.py | Module A |
+| resolve.py, coverage.py, engine.py, lookup_eval.py | Module B |
+| changes.py, open_questions.py | Module C |
+| stress.py, tests/ | stress test, 74 tests |
+| publish.py, export_ui.py | public copies and UI data export |
+| out/ | all outputs and logs; out/public/ public copies; out/stress/ stress test |
+| submission/ | the three submission files, method note, SHA256SUMS |
+| gold/ | the independent key built in a separate session (not used by the pipeline) |
+| instructions/ | the lawyer's rulings the code implements |
+| corpus_supplementary/, sources/manual/ | our single page captures and hand saved pages, with retrieval dates |
+
+## Credits
+
+Hamza Aslam (commercial and IP lawyer): product, legal rulings and review. Pipeline built with Claude Code. Corpus and sample data supplied by the organisers.
