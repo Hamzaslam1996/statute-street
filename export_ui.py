@@ -23,7 +23,9 @@ import csv
 import hashlib
 import json
 import re
+import subprocess
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 import publish
@@ -287,6 +289,19 @@ def main() -> int:
         text = json.dumps(data, indent=1, ensure_ascii=False)
         (out_dir / name).write_text(text, encoding="utf-8")
         sizes[name] = len(text.encode("utf-8"))
+    # Version stamp for the UI footer and reliance records (design brief v2, section 2). The UI reads
+    # this file directly and falls back to "Engine version: see README" when it is absent, so
+    # src/data/index.ts needs no change.
+    try:
+        engine_commit = subprocess.check_output(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT, text=True).strip()
+    except Exception:
+        engine_commit = "unknown"
+    meta = {"rules_version": "1.0", "engine_commit": engine_commit, "rules": len(rules),
+            "addresses": len(addresses), "as_of": lookups.get("as_of", "2026-10-01"),
+            "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")}
+    (out_dir / "meta.json").write_text(json.dumps(meta, indent=1), encoding="utf-8")
+    sizes["meta.json"] = (out_dir / "meta.json").stat().st_size
+    print("meta.json:", meta)
     n_rows = sum(len(v) for v in files["lookups.json"]["lookups"].values())
     print(f"rules {len(rules)} (incl. {sum(1 for r in rules if r['negative_finding'])} negative findings) | "
           f"lookups {len(files['lookups.json']['lookups'])} addresses, {n_rows} rows | changes {len(changes)} | "
