@@ -191,6 +191,18 @@ Agent:  Restricted today under Hoboken Code § 158-2 (quoted). From 1 July 2027 
 
 Tests: `tests/test_mcp_tools.py` calls each tool on A0016 (San Francisco), A0002 (Hoboken, both dates) and A0010 (Cambridge), and once over stdio with the MCP client.
 
+## Scalability
+
+Measured, not projected (details and provenance in out/scale/REPORT.md, code in scale/):
+
+- **Real addresses.** 5,965 multi-unit residential parcels downloaded from the cities' own open data APIs (DataSF assessor roll 2025, Analyze Boston property assessment FY2026, Cambridge Property Database FY2026; owner fields never selected or written) and run through the unchanged pipeline at 2026-10-01 and 2027-07-02: 127,116 determinations. Legal city match rate (Census incorporated place against the portal city): San Francisco 100.0%, Boston 100.0%, Cambridge 99.9% (two parcels on the Somerville line). All sanity checks passed: no Boston or Cambridge address gets a rent cap; every San Francisco parcel built before 1979 with 2+ units gets the SF rent control rule; a 1979 building is unknown; every row cites an existing rule.
+- **Runtime.** Engine time for all three cities at two dates: 2.4 seconds. Geocoding with the free Census geocoder took hours (6 minutes for SF, 2.1 hours Boston, 4.1 hours Cambridge, server-side queueing); it is the only slow step and is replaced in production by a cached or commercial geocoder or the property record itself.
+- **Throughput.** 100,002 determinations in 1.77 seconds on this laptop: about 5,206 address evaluations and 56,478 determinations per second, single process, pure Python.
+- **Cost of adding law.** 104 documents cost $5.93 of model time ($0.057 and 16.3 seconds per document; $0.095 per kept rule including Spanish summaries). 18 of 64 kept rules (28%) carry a reviewer override; 58 numbered rulings were written during the build and 118 gold key entries were individually adjudicated. Adding one jurisdiction of about 8 documents costs about $0.46 of model time (about 2 minutes of extraction wall time) plus about 2 lawyer review items (28% of kept rules needed a reviewer override; one in roughly 4 rules).
+- **Unit counts from a PMS.** On the 500 sample addresses, supplying the New Jersey unit counts (MOD-IV codes as the proxy) cuts the unknown rate from 27.3% to 17.4% overall, from 70% to 22.5% in Hoboken and from 77.8% to 11.1% in Jersey City; presumption counts do not move (out/scale/derived_units_proxy.md).
+
+Architecture in three sentences: rules are compiled once per jurisdiction (a document is read by the model once, verified against its own text, and turned into cached coverage tests). Determinations are a deterministic join of address facts and rules, so more addresses cost no model calls. Refresh is event driven, when the change register posts a new effective date, not per query.
+
 ## Limits
 
 - No amounts are computed and no case is decided: the engine lists the rules that bind an action and the facts that decide coverage.
@@ -223,6 +235,7 @@ Every answer carries an as-of date, a citation and the quoted text; unknown name
 | out/ | all outputs and logs; out/public/ public copies; out/stress/ stress test |
 | submission/ | the three submission files, method note, SHA256SUMS |
 | mcp_server.py, docs/agent_demo.md | MCP server for agents (five read-only tools) and the three-question demo transcript |
+| scale/, out/scale/ | real open-data addresses (SF, Boston, Cambridge), throughput benchmark, cost of adding law, REPORT.md |
 | gold/ | the independent key built in a separate session (not used by the pipeline) |
 | instructions/ | the lawyer's rulings the code implements |
 | corpus_supplementary/, sources/manual/ | our single page captures and hand saved pages, with retrieval dates |

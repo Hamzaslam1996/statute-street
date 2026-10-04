@@ -1,0 +1,27 @@
+{
+ "documents_extracted": 104,
+ "extraction_calls": 150,
+ "raw_records": 196,
+ "kept_rules": 64,
+ "extraction_cost_usd": 5.93,
+ "extraction_wall_seconds": 1698,
+ "cost_per_document_usd": 0.057,
+ "seconds_per_document": 16.3,
+ "spanish_cost_usd": 0.15,
+ "date_decisions_model_confirmed": 3,
+ "coverage_model_calls": 57,
+ "model_cost_per_kept_rule_usd": 0.095,
+ "note": "Date resolution and coverage calls were made once each and are not itemised with a cost column in the logs; the session's total API spend including them was about $9.75 (extract.py session_spend()).",
+ "human_rulings_in_instructions": 58,
+ "reviewer_overrides": {
+  "dedupe_folds": 4,
+  "coverage_overrides": 4,
+  "rule_flag_or_note_overrides": 7,
+  "public_note_rewrites": 4
+ },
+ "rules_touched_by_a_reviewer_override": 18,
+ "share_of_rules_with_a_human_ruling": 0.281,
+ "gold_adjudications_by_lawyer": 212,
+ "gold_adjudications_individual": 118,
+ "sentence": "Adding one jurisdiction of about 8 documents costs about $0.46 of model time (about 2 minutes of extraction wall time) plus about 2 lawyer review items (28% of kept rules needed a reviewer override; one in roughly 4 rules)."
+}

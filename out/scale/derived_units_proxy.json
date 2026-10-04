@@ -1,0 +1,142 @@
+{
+ "cities": {
+  "Berkeley, CA": {
+   "before": {
+    "addresses": 40,
+    "rows": 560,
+    "unknown": 80,
+    "presumption_rows": 320
+   },
+   "after": {
+    "addresses": 40,
+    "rows": 560,
+    "unknown": 80,
+    "presumption_rows": 320
+   }
+  },
+  "Boston, MA": {
+   "before": {
+    "addresses": 60,
+    "rows": 600,
+    "unknown": 60,
+    "presumption_rows": 0
+   },
+   "after": {
+    "addresses": 60,
+    "rows": 600,
+    "unknown": 60,
+    "presumption_rows": 0
+   }
+  },
+  "Cambridge, MA": {
+   "before": {
+    "addresses": 50,
+    "rows": 500,
+    "unknown": 0,
+    "presumption_rows": 0
+   },
+   "after": {
+    "addresses": 50,
+    "rows": 500,
+    "unknown": 0,
+    "presumption_rows": 0
+   }
+  },
+  "Hoboken, NJ": {
+   "before": {
+    "addresses": 40,
+    "rows": 400,
+    "unknown": 280,
+    "presumption_rows": 240
+   },
+   "after": {
+    "addresses": 40,
+    "rows": 400,
+    "unknown": 90,
+    "presumption_rows": 240
+   }
+  },
+  "Jersey City, NJ": {
+   "before": {
+    "addresses": 50,
+    "rows": 450,
+    "unknown": 350,
+    "presumption_rows": 250
+   },
+   "after": {
+    "addresses": 50,
+    "rows": 450,
+    "unknown": 50,
+    "presumption_rows": 250
+   }
+  },
+  "Los Angeles, CA": {
+   "before": {
+    "addresses": 80,
+    "rows": 885,
+    "unknown": 91,
+    "presumption_rows": 485
+   },
+   "after": {
+    "addresses": 80,
+    "rows": 885,
+    "unknown": 91,
+    "presumption_rows": 485
+   }
+  },
+  "Newark, NJ": {
+   "before": {
+    "addresses": 50,
+    "rows": 450,
+    "unknown": 398,
+    "presumption_rows": 294
+   },
+   "after": {
+    "addresses": 50,
+    "rows": 450,
+    "unknown": 367,
+    "presumption_rows": 294
+   }
+  },
+  "San Diego, CA": {
+   "before": {
+    "addresses": 50,
+    "rows": 500,
+    "unknown": 100,
+    "presumption_rows": 250
+   },
+   "after": {
+    "addresses": 50,
+    "rows": 500,
+    "unknown": 100,
+    "presumption_rows": 250
+   }
+  },
+  "San Francisco, CA": {
+   "before": {
+    "addresses": 80,
+    "rows": 953,
+    "unknown": 85,
+    "presumption_rows": 240
+   },
+   "after": {
+    "addresses": 80,
+    "rows": 953,
+    "unknown": 85,
+    "presumption_rows": 240
+   }
+  }
+ },
+ "total_before": {
+  "addresses": 500,
+  "rows": 5298,
+  "unknown": 1444,
+  "presumption_rows": 2079
+ },
+ "total_after": {
+  "addresses": 500,
+  "rows": 5298,
+  "unknown": 923,
+  "presumption_rows": 2079
+ }
+}

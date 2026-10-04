@@ -1,0 +1,193 @@
+{
+ "cities": {
+  "sf": {
+   "city": "San Francisco",
+   "addresses": 1972,
+   "determinations": 47268,
+   "legal_city_match_rate": 1.0,
+   "legal_city_counts": {
+    "San Francisco": 1972
+   },
+   "geocode_method": {
+    "census": 1941,
+    "fallback": 31
+   },
+   "year_built_present": 1966,
+   "units_present": 1972,
+   "result_distribution": {
+    "2026-10-01": {
+     "applies": 15140,
+     "superseded": 3908,
+     "unknown": 2601,
+     "applies unless": 1985
+    },
+    "2027-07-02": {
+     "applies": 15140,
+     "superseded": 3908,
+     "unknown": 2600,
+     "applies unless": 1986
+    }
+   },
+   "top_missing_facts": [
+    [
+     "affordable housing status",
+     3944
+    ],
+    [
+     "the exemption details",
+     1200
+    ],
+    [
+     "owner identity",
+     32
+    ],
+    [
+     "year built",
+     25
+    ]
+   ],
+   "engine_seconds_both_dates": 0.6,
+   "addresses_per_second": 6562.2,
+   "sanity_checks": {
+    "sf_pre_1979_multiunit_rent_control_applies": {
+     "pass": true,
+     "checked": 1936,
+     "violations": 0,
+     "sample": [],
+     "rule": "r-0059"
+    },
+    "sf_cutoff_year_1979_unknown": {
+     "pass": true,
+     "checked": 0,
+     "violations": 0,
+     "sample": [],
+     "synthetic_1979_row": "unknown"
+    },
+    "every_row_cites_existing_rule": {
+     "pass": true,
+     "violations": []
+    }
+   },
+   "geocode_seconds": 385.2
+  },
+  "boston": {
+   "city": "Boston",
+   "addresses": 1993,
+   "determinations": 39860,
+   "legal_city_match_rate": 1.0,
+   "legal_city_counts": {
+    "Boston": 1993
+   },
+   "geocode_method": {
+    "census": 1986,
+    "fallback": 7
+   },
+   "year_built_present": 1987,
+   "units_present": 0,
+   "result_distribution": {
+    "2026-10-01": {
+     "applies unless": 5391,
+     "unknown": 1993,
+     "applies": 8560,
+     "pending": 3986
+    },
+    "2027-07-02": {
+     "applies unless": 5391,
+     "unknown": 1993,
+     "applies": 8560,
+     "pending": 3986
+    }
+   },
+   "top_missing_facts": [
+    [
+     "affordable housing status",
+     3986
+    ]
+   ],
+   "engine_seconds_both_dates": 1.05,
+   "addresses_per_second": 3791.7,
+   "sanity_checks": {
+    "no_rent_cap_in_ma_city": {
+     "pass": true,
+     "violations": 0,
+     "sample": []
+    },
+    "every_row_cites_existing_rule": {
+     "pass": true,
+     "violations": []
+    }
+   },
+   "geocode_seconds": 7597.0
+  },
+  "cambridge": {
+   "city": "Cambridge",
+   "addresses": 2000,
+   "determinations": 39988,
+   "legal_city_match_rate": 0.999,
+   "legal_city_counts": {
+    "Cambridge": 1998,
+    "Somerville": 2
+   },
+   "geocode_method": {
+    "census": 1973,
+    "fallback": 27
+   },
+   "year_built_present": 1406,
+   "units_present": 2000,
+   "result_distribution": {
+    "2026-10-01": {
+     "pending": 5998,
+     "applies": 9827,
+     "unknown": 1192,
+     "applies unless": 2977
+    },
+    "2027-07-02": {
+     "pending": 5998,
+     "applies": 9827,
+     "unknown": 1192,
+     "applies unless": 2977
+    }
+   },
+   "top_missing_facts": [
+    [
+     "owner identity",
+     2384
+    ]
+   ],
+   "engine_seconds_both_dates": 0.77,
+   "addresses_per_second": 5198.2,
+   "sanity_checks": {
+    "no_rent_cap_in_ma_city": {
+     "pass": true,
+     "violations": 0,
+     "sample": []
+    },
+    "every_row_cites_existing_rule": {
+     "pass": true,
+     "violations": []
+    }
+   },
+   "geocode_seconds": 14796.6
+  }
+ },
+ "throughput": {
+  "10000": {
+   "determinations": 10002,
+   "address_evaluations": 835,
+   "seconds": 0.12,
+   "addresses_per_second": 7014.2,
+   "determinations_per_second": 84018.8
+  },
+  "100000": {
+   "determinations": 100002,
+   "address_evaluations": 9218,
+   "seconds": 1.77,
+   "addresses_per_second": 5206.1,
+   "determinations_per_second": 56478.7
+  }
+ },
+ "dates": [
+  "2026-10-01",
+  "2027-07-02"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "sf": {
+  "city": "San Francisco",
+  "endpoint": "https://data.sf.gov/resource/wv5m-vpq2.json",
+  "dataset": "Assessor Historical Secured Property Tax Rolls",
+  "filter": "closed_roll_year='2025' AND number_of_units>=2 AND use_code='MRES'",
+  "licence": "Open Data Commons Public Domain Dedication and License (http://opendatacommons.org/licenses/pddl/1.0/)",
+  "retrieved_at": "2026-10-04T04:36Z",
+  "owner_fields_in_source": "none (the roll carries no owner names)",
+  "fetch_seconds": 5.3,
+  "rows": 1972,
+  "file": "scale/data/sf.csv",
+  "sha256": "9a1d3679ec16f2d434b2032a948e1be1a28d31c6f19e3110e300a4fccc00152e",
+  "size_bytes": 358514
+ },
+ "boston": {
+  "city": "Boston",
+  "endpoint": "https://data.boston.gov/api/3/action/datastore_search_sql",
+  "dataset": "Property Assessment FY2026 (resource ee73430d-96c0-423e-ad21-c4cfb54c8961)",
+  "filter": "LU in (R2, R3, R4, A), BLDG_SEQ = 1",
+  "licence": "Open Data Commons Public Domain Dedication and License (PDDL) (http://www.opendefinition.org/licenses/odc-pddl)",
+  "retrieved_at": "2026-10-04T04:36Z",
+  "owner_fields_in_source": "OWNER, MAIL_ADDRESSEE, MAIL_* exist in the source and were not selected",
+  "fetch_seconds": 3.2,
+  "rows": 1993,
+  "file": "scale/data/boston.csv",
+  "sha256": "1a7ec9e7949784b92478c5f515458b8fcd750fcc1c40b80b48ef99af601ba545",
+  "size_bytes": 531917
+ },
+ "cambridge": {
+  "city": "Cambridge",
+  "endpoint": "https://data.cambridgema.gov/resource/waa7-ibdu.json",
+  "dataset": "Cambridge Property Database FY2026",
+  "filter": "propertyclass in('TWO-FAM-RES','THREE-FM-RES','4-8-UNIT-APT','>8-UNIT-APT','MULT-RES-2FAM','MULT-RES-3FAM','MULTIUSE-RES','AFFORDABLE APT','CONDO-BLDG','MULT-RES-4-8-APT','MULT-RES->8 APT') AND bldgnum='1'",
+  "licence": "No licence field on the dataset page (metadata license empty); attribution: Cambridge Assessing Dept (https://www.cambridgema.gov/assess). Flagged for Hamza to confirm reuse terms.",
+  "retrieved_at": "2026-10-04T04:37Z",
+  "owner_fields_in_source": "owner_name, owner_coownername, owner_address* exist in the source and were not selected",
+  "fetch_seconds": 58.7,
+  "rows": 2000,
+  "file": "scale/data/cambridge.csv",
+  "sha256": "9ab46111bb337a0e352c91efd4536894950d2e1386dbf12fff5c450554cf56f1",
+  "size_bytes": 361885
+ }
+}
