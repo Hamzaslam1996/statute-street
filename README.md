@@ -1,10 +1,16 @@
 # Statute Street: Rental Housing Law Navigator
 
-For any apartment address in the sample (California, New Jersey, Massachusetts; ten cities), Statute Street reports which rental housing rules apply on a given date, each cited to the source text, and tracks what changes and when. Built for the Hack-Nation 7th Global AI Hackathon, Challenge 02 (sponsor RealPage).
+For any apartment address in the sample (California, New Jersey, Massachusetts; nine cities with sample addresses, Santa Ana is extraction only), Statute Street reports which rental housing rules apply on a given date, each cited to the source text, and tracks what changes and when. Built for the Hack-Nation 7th Global AI Hackathon, Challenge 02 (sponsor RealPage).
 
 **Legal information, not legal advice. Check the source or ask a lawyer before acting.**
 
 Live demo: `<LIVE_DEMO_URL>`. User interface repository: https://github.com/Hamzaslam1996/rule-navigator.
+
+## How it works
+
+![Statute Street system design](docs/statute_street_architecture.png)
+
+The AI reads the law; code decides the answer; a lawyer rules on the edge cases.
 
 ## What it does
 
@@ -236,6 +242,7 @@ Every answer carries an as-of date, a citation and the quoted text; unknown name
 | submission/ | the three submission files, method note, SHA256SUMS |
 | mcp_server.py, docs/agent_demo.md | MCP server for agents (five read-only tools) and the three-question demo transcript |
 | scale/, out/scale/ | real open-data addresses (SF, Boston, Cambridge), throughput benchmark, cost of adding law, REPORT.md |
+| ui_mock/ | early mock data for the interface, superseded by the real export |
 | gold/ | the independent key built in a separate session (not used by the pipeline) |
 | instructions/ | the lawyer's rulings the code implements |
 | corpus_supplementary/, sources/manual/ | our single page captures and hand saved pages, with retrieval dates |
