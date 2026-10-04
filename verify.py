@@ -137,7 +137,26 @@ def compute_status(rec: dict, query: date) -> tuple[str, str | None]:
 # ---------------------------------------------------------------------------
 # 3-5. Build a submission record from a raw one
 # ---------------------------------------------------------------------------
+_ESCAPE_RE = re.compile(r"\\u([0-9a-fA-F]{4})")
+_TAG_RE = re.compile(r"^\s*\[([^\]]+)\]\s*")
+
+
+def decode_escapes(s):
+    """The model sometimes writes '\\u2013' as six literal characters; turn them back into the character."""
+    return _ESCAPE_RE.sub(lambda m: chr(int(m.group(1), 16)), s) if isinstance(s, str) else s
+
+
 def build_record(raw: dict, doc: Doc, query: date) -> dict:
+    # Text hygiene at source: decode literal escapes (not in the verified quote) and move a
+    # leading "[tag]" out of the title into the notes.
+    for k in ("title", "requirement", "key_value", "coverage_conditions", "exemptions", "interaction",
+              "citation", "conflict_note", "extraction_notes"):
+        if isinstance(raw.get(k), str):
+            raw[k] = decode_escapes(raw[k])
+    tag = _TAG_RE.match(raw.get("title") or "")
+    if tag:
+        raw["title"] = _TAG_RE.sub("", raw["title"], count=1)
+        raw["extraction_notes"] = f"Tag: {tag.group(1)}. {raw.get('extraction_notes') or ''}".strip()
     status, note = compute_status(raw, query)
     confidence = raw.get("confidence")
     notes = [n for n in [raw.get("conflict_note"), note] if n]

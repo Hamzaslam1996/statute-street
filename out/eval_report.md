@@ -88,7 +88,7 @@ Gold rules in scope (source doc extracted): 39 of 40 positive, 21 of 21 negative
 - r-0052 — Newark, NJ / rent_increase_limits / Newark, N.J., Code § 19:2-3.1 (D070): Newark Rent Control: annual CPI-based rent increase cap
 - r-0054 — San Diego, CA / algorithmic_rent_setting / San Diego Municipal Code § 98.1103 (Ord. O-21955 N.S.) (D076): San Diego Prohibition of Anti-Competitive Automated Rent Price Fixing (SDMC §98.1103)
 - r-0056 — San Diego, CA / screening_restrictions / San Diego Municipal Code §§ 98.0801-98.0806 (Ord. O-20986 N.S.) (D075): San Diego Prohibition of Discrimination Based on a Tenant's Source of Income
-- r-0059 — San Francisco, CA / rent_increase_limits / S.F. Admin. Code ch. 37 (Rent Ordinance), § 37.3 (D080): San Francisco annual allowable rent increase (3/1/2026\u20132/28/2027)
+- r-0059 — San Francisco, CA / rent_increase_limits / S.F. Admin. Code ch. 37 (Rent Ordinance), § 37.3 (D080): San Francisco annual allowable rent increase (3/1/2026–2/28/2027)
 - r-0062 — Santa Ana, CA / algorithmic_rent_setting / Santa Ana Ordinance No. NS-3090 (D002): Santa Ana Ordinance NS-3090 (automated rent price-fixing)
 
 ## Collisions with negative findings (gold says: no rule at this level)

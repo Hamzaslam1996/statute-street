@@ -41,12 +41,15 @@ def tidy(s):
     global removed_dashes
     if not isinstance(s, str):
         return s
+    s = re.sub(r"\\u([0-9a-fA-F]{4})", lambda m: chr(int(m.group(1), 16)), s)   # literal "–" -> character
     s = publish.clean_text(s)
     n = len(re.findall(r"\s[—–-]\s|[—–]", s))
     removed_dashes += n
+    date = r"(\d{1,2}/\d{1,2}/\d{2,4}|\d{4}-\d{2}-\d{2}|(?:January|February|March|April|May|June|July|August|September|October|November|December) \d{1,2}, \d{4})"
+    s = re.sub(date + r"\s*[—–-]\s*" + date, r"\1 to \2", s)   # date ranges -> "3/1/2026 to 2/28/2027"
     s = re.sub(r"\s+[—–-]\s+", ", ", s)          # " — " / " – " / " - " between words -> ", "
     s = re.sub(r"(?<=\D)[—–](?=\D)", ", ", s)     # remaining em/en dashes between words
-    s = re.sub(r"[—–]", "-", s)                   # dashes touching digits (ranges) -> hyphen
+    s = re.sub(r"(\d)\s*[—–]\s*(\d)", r"\1 to \2", s)   # any remaining dash between numbers -> "to"
     return re.sub(r"\s+,", ",", s).strip()
 
 
@@ -157,6 +160,10 @@ def build_rules() -> list[dict]:
             r["requirement"] = r["requirement"].strip()
         if not isinstance(r.get("confidence"), (int, float)):
             r["confidence"] = 0.5
+        m = re.match(r"^\s*\[([^\]]+)\]\s*", r.get("title") or "")   # safety: "[notice-only] ..." -> notes
+        if m:
+            r["title"] = r["title"][m.end():]
+            r["notes"] = f"Tag: {m.group(1)}. {r.get('notes') or ''}".strip()
         r["negative_finding"] = bool(r.get("negative_finding", False))
         r["conflict_flag"] = bool(r.get("conflict_flag", False))
         for k in ("key_value", "coverage_conditions", "exemptions", "effective_date", "citation", "source_doc_id",
