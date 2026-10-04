@@ -1,0 +1,112 @@
+{
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3577,
+ "output_tokens": 3206,
+ "cost_usd": 0.0392,
+ "records": [
+  "r-0041",
+  "r-0042",
+  "r-0043",
+  "r-0044",
+  "r-0045",
+  "r-0046",
+  "r-0047",
+  "r-0048",
+  "r-0049",
+  "r-0050",
+  "r-0051",
+  "r-0052",
+  "r-0053",
+  "r-0054",
+  "r-0055",
+  "r-0056",
+  "r-0057",
+  "r-0058",
+  "r-0059",
+  "r-0060"
+ ],
+ "response": {
+  "translations": [
+   {
+    "team_rule_id": "r-0041",
+    "requirement_es": "Es ilegal discriminar al proporcionar alojamiento de alquiler contra una persona porque reciba asistencia pública o un subsidio de vivienda (incluida la asistencia para el alquiler), o por cualquier requisito de dicho programa."
+   },
+   {
+    "team_rule_id": "r-0042",
+    "requirement_es": "Un arrendador puede obtener el CORI para evaluar a los solicitantes de alquiler solo si el solicitante ha firmado un formulario de reconocimiento, y la información se limita a condenas por delitos graves (10 años), condenas por delitos menores (5 años) y cargos pendientes. Un arrendador que tenga los antecedentes penales de un solicitante debe entregarle una copia antes de interrogarlo sobre ellos y si se toma una decisión de vivienda adversa con base en ellos."
+   },
+   {
+    "team_rule_id": "r-0043",
+    "requirement_es": "Al inicio del arrendamiento o antes, un arrendador solo puede cobrar la renta del primer mes, la renta del último mes, un depósito de garantía de no más de la renta de un mes, y el costo de una llave y una cerradura. El depósito debe mantenerse en una cuenta bancaria separada que genere intereses en Massachusetts, y se debe pagar al inquilino un interés anual del 5% (o la cantidad menor que pagó el banco). Debe devolverse dentro de los 30 días posteriores a la terminación del arrendamiento, menos las deducciones detalladas y juradas por conceptos permitidos."
+   },
+   {
+    "team_rule_id": "r-0044",
+    "requirement_es": "Hace ilegal, y una violación de la NJ Antitrust Act, que los propietarios de inmuebles de alquiler paguen por los servicios de un coordinador o los utilicen, que los coordinadores faciliten acuerdos que restrinjan las rentas, y que cualquier persona desempeñe una función de coordinación o participe en la coordinación de precios paralelos."
+   },
+   {
+    "team_rule_id": "r-0045",
+    "requirement_es": "Un arrendador o agente no puede exigir una cuota de solicitud o similar para solicitar el arrendamiento o subarrendamiento de una propiedad residencial de alquiler que exceda $50. Los infractores enfrentan sanciones civiles y deben reembolsar al solicitante la cantidad cobrada indebidamente."
+   },
+   {
+    "team_rule_id": "r-0046",
+    "requirement_es": "Un arrendador residencial no puede desalojar ni negarse a renovar un contrato de arrendamiento, escrito u oral, sin causa justa conforme a la Anti-Eviction Act. La posesión solo puede recuperarse mediante consentimiento o proceso judicial, y se requiere un Notice to Quit para todos los desalojos por causa justa, excepto por falta de pago de la renta."
+   },
+   {
+    "team_rule_id": "r-0047",
+    "requirement_es": "Los arrendadores de alquileres residenciales cubiertos no pueden negarse a renovar un contrato de arrendamiento escrito u oral a menos que tengan causa justa conforme a la Anti-Eviction Act. Las causas justas se enumeran en la sección de Desalojo de la guía (no en esta parte)."
+   },
+   {
+    "team_rule_id": "r-0048",
+    "requirement_es": "New Jersey no establece un límite estatal a las rentas, y los municipios pueden adoptar sus propias ordenanzas de control de rentas o de nivelación de rentas. Un arrendador solo puede aumentar la renta terminando debidamente el contrato de arrendamiento y ofreciendo uno nuevo, y el aumento no debe ser abusivo y debe cumplir con cualquier ordenanza local."
+   },
+   {
+    "team_rule_id": "r-0049",
+    "requirement_es": "Los arrendadores no pueden discriminar en la vivienda con base en la fuente de ingresos lícitos o la fuente lícita de pago de la renta, por lo que no pueden negar un apartamento a un titular de un voucher de la Sección 8 únicamente por esa fuente de ingresos."
+   },
+   {
+    "team_rule_id": "r-0050",
+    "requirement_es": "Un proveedor de vivienda no puede preguntar sobre los antecedentes penales de un solicitante antes de hacer una oferta condicional. Después de la oferta, solo pueden considerarse ciertas condenas dentro de períodos de revisión establecidos, y un retiro de la oferta requiere una evaluación individualizada y un aviso por escrito."
+   },
+   {
+    "team_rule_id": "r-0051",
+    "requirement_es": "Un arrendador no puede cobrar un depósito de garantía superior a una vez y media la renta de un mes, y la renta prepagada que se mantiene como garantía (incluida la renta del último mes) cuenta para ese límite. Los depósitos deben mantenerse en fideicomiso en una cuenta que genere intereses, y los intereses corresponden al inquilino, y deben devolverse dentro de los 30 días posteriores a la terminación del arrendamiento."
+   },
+   {
+    "team_rule_id": "r-0052",
+    "requirement_es": "Al vencimiento del contrato de arrendamiento (o la terminación de un arrendamiento periódico), un arrendador no puede solicitar ni recibir un aumento mayor que el cambio porcentual del CPI-U (de 15 meses antes a 3 meses antes del mes del aumento), y nunca mayor al 4%. Se requiere aviso por escrito al inquilino y al Rent Regulation Officer con al menos 30 días de anticipación. No se permite ningún aumento si la unidad no cumple sustancialmente con las normas o si el arrendador no ha cumplido los requisitos de registro."
+   },
+   {
+    "team_rule_id": "r-0053",
+    "requirement_es": "Un arrendador o corredor de bienes raíces solo puede indagar o considerar los antecedentes penales de un solicitante después de que se presente una solicitud formal, y solo después de dar aviso por escrito. El período de revisión se limita a 8 años para condenas por delitos procesables (indictable) y 5 años para condenas por infracciones de personas desordenadas (disorderly persons) o de ordenanzas, además de los cargos pendientes. No pueden considerarse los arrestos sin condena, los registros cancelados o sellados ni las adjudicaciones juveniles."
+   },
+   {
+    "team_rule_id": "r-0054",
+    "requirement_es": "Es ilegal vender, licenciar o proporcionar un dispositivo algorítmico a un arrendador, y es ilegal que un arrendador use un dispositivo algorítmico para fijar tarifas de alquiler o niveles de ocupación de propiedades residenciales de alquiler."
+   },
+   {
+    "team_rule_id": "r-0055",
+    "requirement_es": "Un arrendador no puede terminar un arrendamiento cubierto sin causa justa, ya sea por culpa del inquilino o sin culpa. En las terminaciones sin culpa, el arrendador debe proporcionar asistencia de reubicación, ya sea como pago directo dentro de los 15 días posteriores al aviso o como exención de renta, y debe notificar a la Housing Commission. Los acuerdos de compra de la desocupación deben seguir las reglas de divulgación por escrito y no pueden ser por menos que la cantidad de reubicación."
+   },
+   {
+    "team_rule_id": "r-0056",
+    "requirement_es": "Los arrendadores no pueden negarse a celebrar o renovar un arrendamiento, terminar un arrendamiento ni aplicar normas de ingresos que ignoren la totalidad de la fuente de ingresos de un inquilino, incluidas la asistencia para el alquiler y los vouchers, con base en la fuente de ingresos. Las normas de ingresos deben tomar en cuenta los ingresos combinados de los coinquilinos y cofirmantes en la misma forma que los de las personas casadas."
+   },
+   {
+    "team_rule_id": "r-0057",
+    "requirement_es": "Prohíbe la venta o el uso de dispositivos algorítmicos (software que analiza datos no públicos de alquileres de competidores para recomendar rentas de unidades vacantes) para fijar rentas o administrar los niveles de ocupación de unidades residenciales. Los inquilinos o el City Attorney pueden presentar una acción civil por las violaciones."
+   },
+   {
+    "team_rule_id": "r-0058",
+    "requirement_es": "Un arrendador solo puede desalojar a un inquilino de una unidad cubierta por la Rent Ordinance por una razón de \"causa justa\" que sea el motivo dominante del desalojo; se permiten 17 razones enumeradas, y el vencimiento de un contrato de arrendamiento o el cambio de propietario no es causa justa."
+   },
+   {
+    "team_rule_id": "r-0059",
+    "requirement_es": "Para las unidades con control de rentas, el aumento anual permitido de la renta vigente del 1 de marzo de 2026 al 28 de febrero de 2027 es del 1.6% de la renta base del inquilino."
+   },
+   {
+    "team_rule_id": "r-0060",
+    "requirement_es": "La Fair Chance Ordinance de San Francisco protege a los residentes con antecedentes de arresto o condena en las decisiones de vivienda asequible. Esta página no ofrece detalles operativos más allá de esa declaración."
+   }
+  ]
+ }
+}

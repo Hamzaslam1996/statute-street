@@ -12,6 +12,7 @@ source .venv/bin/activate
 python extract.py --all            # Claude reads every corpus document -> out/raw/D###.json (cached)
 python verify.py                   # exact-quote check, status from dates, dedupe -> out/rules.json
 python derive_negatives.py         # "no rule at this level" findings -> out/negatives.json
+python translate_es.py             # Spanish requirement_es for every rule and negative finding (cached in out/raw/es/)
 python eval.py                     # score against gold -> out/eval_report.md
 ```
 

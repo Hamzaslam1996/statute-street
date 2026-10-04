@@ -1,0 +1,112 @@
+{
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3431,
+ "output_tokens": 3080,
+ "cost_usd": 0.0377,
+ "records": [
+  "r-0001",
+  "r-0002",
+  "r-0003",
+  "r-0004",
+  "r-0005",
+  "r-0006",
+  "r-0007",
+  "r-0008",
+  "r-0009",
+  "r-0010",
+  "r-0011",
+  "r-0012",
+  "r-0013",
+  "r-0014",
+  "r-0015",
+  "r-0016",
+  "r-0017",
+  "r-0018",
+  "r-0019",
+  "r-0020"
+ ],
+ "response": {
+  "translations": [
+   {
+    "team_rule_id": "r-0001",
+    "requirement_es": "Es ilegal vender, otorgar una licencia de uso o proporcionar de otro modo a los arrendadores de Berkeley un algoritmo de fijación coordinada de precios que establezca o recomiende rentas o niveles de ocupación, y es ilegal que un arrendador utilice uno al fijar las rentas o los niveles de ocupación de unidades residenciales de Berkeley. Cada mes de infracción y cada unidad afectada constituye una infracción separada."
+   },
+   {
+    "team_rule_id": "r-0002",
+    "requirement_es": "Un propietario que cobre una cuota de evaluación de solicitantes debe entregar a los solicitantes una declaración clara y visible sobre los derechos relativos a la cuota de evaluación de solicitantes y una declaración del límite máximo estatal de la cuota, ya sea en la solicitud o en un aviso separado, antes de recibir la cuota."
+   },
+   {
+    "team_rule_id": "r-0003",
+    "requirement_es": "Los propietarios no pueden cobrar a los inquilinos actuales una cuota no reembolsable para renovar un arrendamiento, incluidas las cuotas vinculadas a la salida de un compañero de cuarto o a la incorporación o sustitución de un compañero de cuarto."
+   },
+   {
+    "team_rule_id": "r-0004",
+    "requirement_es": "Los inquilinos de unidades total o parcialmente cubiertas solo pueden ser desalojados por causa justa. La Medida BB prohíbe el desalojo por falta de pago a menos que la deuda de renta equivalga al menos a un mes de la Renta de Mercado Justa (Fair Market Rent) de HUD para una unidad equivalente, prohíbe el desalojo por negarse a firmar un nuevo contrato de arrendamiento de plazo fijo sustancialmente similar, y endurece los desalojos por incumplimiento del contrato de arrendamiento."
+   },
+   {
+    "team_rule_id": "r-0005",
+    "requirement_es": "Los arrendadores elegibles pueden aumentar en 1.0% los límites permanentes de renta de 2025 a partir del 1 de enero de 2026, utilizando el AGA fijado en el 65% del aumento del CPI-U del Área de la Bahía. La Orden establece las condiciones para calificar y los requisitos de notificación a los inquilinos."
+   },
+   {
+    "team_rule_id": "r-0006",
+    "requirement_es": "Los proveedores de vivienda de alquiler en Berkeley no pueden preguntar sobre antecedentes penales ni verificaciones de antecedentes penales, ni utilizarlos, en la publicidad, las solicitudes, la selección de inquilinos u otras decisiones, y deben dar aviso por escrito y la oportunidad de responder antes de tomar cualquier medida basada en antecedentes penales."
+   },
+   {
+    "team_rule_id": "r-0007",
+    "requirement_es": "Los arrendadores de unidades total y parcialmente cubiertas deben pagar intereses sobre los depósitos de garantía de los inquilinos; los tipos de unidades exentas no están sujetos a este requisito."
+   },
+   {
+    "team_rule_id": "r-0008",
+    "requirement_es": "Un arrendador o propietario que ejecuta una hipoteca y que ponga fin a un arrendamiento debe entregar al inquilino un Aviso de Derechos y Recursos de los Inquilinos al mismo tiempo que el Notice to Quit o el aviso de no renovación del contrato de arrendamiento. También debe enviarse una copia del aviso, con un Certificado de Cumplimiento/Notificación, a la Oficina de Estabilidad de Vivienda de la Ciudad."
+   },
+   {
+    "team_rule_id": "r-0009",
+    "requirement_es": "El proyecto de ley habría autorizado a Boston a implementar protecciones contra el desalojo de inquilinos. No fue promulgado: la última acción indicada es una orden de estudio del 9/9/2024."
+   },
+   {
+    "team_rule_id": "r-0010",
+    "requirement_es": "El proyecto de ley habría autorizado a Boston a adoptar la estabilización de rentas, que la ley estatal prohíbe de otro modo. No fue promulgado: la última acción indicada es una orden de estudio del 9/9/2024."
+   },
+   {
+    "team_rule_id": "r-0011",
+    "requirement_es": "Los proveedores de vivienda cubiertos no pueden aplicar una política general que niegue vivienda a cualquier persona con arrestos o condenas, y deben evaluar a los solicitantes caso por caso. No pueden tomar en cuenta arrestos sin condena, condenas sujetas a recursos judiciales (eliminación de antecedentes, sellado), registros de menores ni condenas con más de 5 años de antigüedad."
+   },
+   {
+    "team_rule_id": "r-0012",
+    "requirement_es": "Los arrendadores en Boston no pueden discriminar contra inquilinos o solicitantes por utilizar asistencia para el alquiler, incluido negarse a aceptar vales de la Sección 8, de discapacidad del seguro social o de veteranos."
+   },
+   {
+    "team_rule_id": "r-0013",
+    "requirement_es": "Es ilegal utilizar o distribuir un algoritmo común de fijación de precios como parte de un contrato, combinación o conspiración para restringir el comercio, o utilizar o distribuir uno mientras se coacciona a otra persona para que adopte el precio o el término comercial que recomienda."
+   },
+   {
+    "team_rule_id": "r-0014",
+    "requirement_es": "Un arrendador solo puede cobrar una cuota de evaluación de solicitantes hasta el monto de los costos reales desembolsados más el valor razonable del tiempo dedicado, y nunca más de $30 por solicitante (ajustable según el CPI). No se puede cobrar ninguna cuota cuando no hay una unidad disponible ni se espera que lo esté pronto. El arrendador debe ofrecer evaluación por orden de llegada o un reembolso a los solicitantes no seleccionados, y debe entregar un recibo detallado y una copia de cualquier informe de crédito."
+   },
+   {
+    "team_rule_id": "r-0015",
+    "requirement_es": "Después de que un inquilino haya ocupado una unidad de manera continua y legal durante 12 meses, el propietario solo puede dar por terminado el arrendamiento por una causa justa indicada, ya sea por culpa del inquilino o sin culpa. En las terminaciones sin culpa, el propietario debe pagar un mes de renta como asistencia de reubicación o renunciar a la renta del último mes."
+   },
+   {
+    "team_rule_id": "r-0016",
+    "requirement_es": "Un propietario no puede aumentar la tasa de renta bruta en un período de 12 meses en más del 5 por ciento más el cambio porcentual local en el costo de vida, o el 10 por ciento, lo que sea menor. No se permiten más de dos aumentos en un período de 12 meses para el mismo inquilino. El propietario debe dar aviso de los aumentos conforme a Civ. Code § 827."
+   },
+   {
+    "team_rule_id": "r-0017",
+    "requirement_es": "Los arrendadores solo pueden verificar los antecedentes penales dentro de estrictos límites de vivienda justa sobre qué se solicita, cómo se considera y qué medida se toma. Están prohibidas las prohibiciones generales contra solicitantes con antecedentes penales y las políticas que consideren arrestos sin condena."
+   },
+   {
+    "team_rule_id": "r-0018",
+    "requirement_es": "Los propietarios no pueden discriminar ni acosar a un solicitante o inquilino por su fuente de ingresos, que incluye la Sección 8 y otros vales de vivienda y asistencia pública. Cuando se aplique un subsidio gubernamental de renta, los estándares de ingresos deben basarse en la parte de la renta que paga el inquilino, y debe permitirse a los solicitantes ofrecer pruebas alternativas en lugar del historial de crédito."
+   },
+   {
+    "team_rule_id": "r-0019",
+    "requirement_es": "Un arrendador no puede exigir ni recibir una garantía superior a un mes de renta, además de la renta del primer mes. El arrendador debe devolver el depósito con un estado de cuenta detallado dentro de los 21 días calendario posteriores a que el inquilino desocupe la unidad, y no puede calificar ningún depósito como 'no reembolsable'."
+   },
+   {
+    "team_rule_id": "r-0020",
+    "requirement_es": "El Concejo Municipal aprobó por unanimidad una orden de política que inicia los pasos hacia la prohibición de que los administradores de propiedades residenciales contraten con empresas que utilicen modelos algorítmicos o impulsados por IA para recomendar rentas. El administrador de la ciudad debe preparar opciones de política o texto de ordenanza para el concejo más adelante durante este período; no se ha promulgado ninguna ordenanza."
+   }
+  ]
+ }
+}

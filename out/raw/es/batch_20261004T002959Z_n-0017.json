@@ -1,0 +1,82 @@
+{
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 1876,
+ "output_tokens": 965,
+ "cost_usd": 0.0134,
+ "records": [
+  "n-0017",
+  "n-0018",
+  "n-0019",
+  "n-0020",
+  "n-0021",
+  "n-0022",
+  "n-0023",
+  "n-0024",
+  "n-0025",
+  "n-0026",
+  "n-0027",
+  "n-0028",
+  "n-0029",
+  "n-0030"
+ ],
+ "response": {
+  "translations": [
+   {
+    "team_rule_id": "n-0017",
+    "requirement_es": "No se encontró en el corpus ninguna norma sobre depósitos de garantía a nivel de Hoboken, NJ."
+   },
+   {
+    "team_rule_id": "n-0018",
+    "requirement_es": "No se encontró en el corpus ninguna norma sobre cuotas de solicitud y evaluación a nivel de Hoboken, NJ."
+   },
+   {
+    "team_rule_id": "n-0019",
+    "requirement_es": "No se encontró en el corpus ninguna norma sobre restricciones de evaluación de solicitantes a nivel de Hoboken, NJ."
+   },
+   {
+    "team_rule_id": "n-0020",
+    "requirement_es": "No se encontró en el corpus ninguna norma sobre causa justa de desalojo a nivel de Newark, NJ."
+   },
+   {
+    "team_rule_id": "n-0021",
+    "requirement_es": "No se encontró en el corpus ninguna norma sobre depósitos de garantía a nivel de Newark, NJ."
+   },
+   {
+    "team_rule_id": "n-0022",
+    "requirement_es": "No se encontró en el corpus ninguna norma sobre cuotas de solicitud y evaluación a nivel de Newark, NJ."
+   },
+   {
+    "team_rule_id": "n-0023",
+    "requirement_es": "No se encontró en el corpus ninguna norma sobre fijación algorítmica de rentas a nivel de Newark, NJ."
+   },
+   {
+    "team_rule_id": "n-0024",
+    "requirement_es": "No se encontró en el corpus ninguna norma sobre depósitos de garantía a nivel de Boston, MA."
+   },
+   {
+    "team_rule_id": "n-0025",
+    "requirement_es": "No se encontró en el corpus ninguna norma sobre cuotas de solicitud y evaluación a nivel de Boston, MA."
+   },
+   {
+    "team_rule_id": "n-0026",
+    "requirement_es": "No se encontró en el corpus ninguna norma sobre fijación algorítmica de rentas a nivel de Boston, MA."
+   },
+   {
+    "team_rule_id": "n-0027",
+    "requirement_es": "La ley estatal prohíbe las normas locales que limiten los aumentos de renta: no se permite el control de rentas local (prohibición estatal), G.L. c. 40P, § 4."
+   },
+   {
+    "team_rule_id": "n-0028",
+    "requirement_es": "No se encontró en el corpus ninguna norma sobre depósitos de garantía a nivel de Cambridge, MA."
+   },
+   {
+    "team_rule_id": "n-0029",
+    "requirement_es": "No se encontró en el corpus ninguna norma sobre cuotas de solicitud y evaluación a nivel de Cambridge, MA."
+   },
+   {
+    "team_rule_id": "n-0030",
+    "requirement_es": "No se encontró en el corpus ninguna norma sobre fijación algorítmica de rentas a nivel de Cambridge, MA."
+   }
+  ]
+ }
+}

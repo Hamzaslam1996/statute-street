@@ -30,7 +30,8 @@
         "D002"
       ],
       "evidence_basis": "supplied_corpus",
-      "date_source_doc_id": "D002"
+      "date_source_doc_id": "D002",
+      "requirement_es": "Es ilegal vender, otorgar una licencia de uso o proporcionar de otro modo a los arrendadores de Berkeley un algoritmo de fijación coordinada de precios que establezca o recomiende rentas o niveles de ocupación, y es ilegal que un arrendador utilice uno al fijar las rentas o los niveles de ocupación de unidades residenciales de Berkeley. Cada mes de infracción y cada unidad afectada constituye una infracción separada."
     },
     {
       "team_rule_id": "r-0002",
@@ -61,7 +62,8 @@
       "supporting_doc_ids": [
         "D092"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Un propietario que cobre una cuota de evaluación de solicitantes debe entregar a los solicitantes una declaración clara y visible sobre los derechos relativos a la cuota de evaluación de solicitantes y una declaración del límite máximo estatal de la cuota, ya sea en la solicitud o en un aviso separado, antes de recibir la cuota."
     },
     {
       "team_rule_id": "r-0003",
@@ -92,7 +94,8 @@
       "supporting_doc_ids": [
         "D091"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Los propietarios no pueden cobrar a los inquilinos actuales una cuota no reembolsable para renovar un arrendamiento, incluidas las cuotas vinculadas a la salida de un compañero de cuarto o a la incorporación o sustitución de un compañero de cuarto."
     },
     {
       "team_rule_id": "r-0004",
@@ -124,7 +127,8 @@
         "D009",
         "D004"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Los inquilinos de unidades total o parcialmente cubiertas solo pueden ser desalojados por causa justa. La Medida BB prohíbe el desalojo por falta de pago a menos que la deuda de renta equivalga al menos a un mes de la Renta de Mercado Justa (Fair Market Rent) de HUD para una unidad equivalente, prohíbe el desalojo por negarse a firmar un nuevo contrato de arrendamiento de plazo fijo sustancialmente similar, y endurece los desalojos por incumplimiento del contrato de arrendamiento."
     },
     {
       "team_rule_id": "r-0005",
@@ -157,7 +161,8 @@
         "D009",
         "M_BERK-RENT-01_AGA_page"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Los arrendadores elegibles pueden aumentar en 1.0% los límites permanentes de renta de 2025 a partir del 1 de enero de 2026, utilizando el AGA fijado en el 65% del aumento del CPI-U del Área de la Bahía. La Orden establece las condiciones para calificar y los requisitos de notificación a los inquilinos."
     },
     {
       "team_rule_id": "r-0006",
@@ -187,7 +192,8 @@
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [],
       "evidence_basis": "supplied_corpus",
-      "date_source_doc_id": "D003"
+      "date_source_doc_id": "D003",
+      "requirement_es": "Los proveedores de vivienda de alquiler en Berkeley no pueden preguntar sobre antecedentes penales ni verificaciones de antecedentes penales, ni utilizarlos, en la publicidad, las solicitudes, la selección de inquilinos u otras decisiones, y deben dar aviso por escrito y la oportunidad de responder antes de tomar cualquier medida basada en antecedentes penales."
     },
     {
       "team_rule_id": "r-0007",
@@ -218,7 +224,8 @@
       "supporting_doc_ids": [
         "D007"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Los arrendadores de unidades total y parcialmente cubiertas deben pagar intereses sobre los depósitos de garantía de los inquilinos; los tipos de unidades exentas no están sujetos a este requisito."
     },
     {
       "team_rule_id": "r-0008",
@@ -250,7 +257,8 @@
         "D090",
         "D013"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Un arrendador o propietario que ejecuta una hipoteca y que ponga fin a un arrendamiento debe entregar al inquilino un Aviso de Derechos y Recursos de los Inquilinos al mismo tiempo que el Notice to Quit o el aviso de no renovación del contrato de arrendamiento. También debe enviarse una copia del aviso, con un Certificado de Cumplimiento/Notificación, a la Oficina de Estabilidad de Vivienda de la Ciudad."
     },
     {
       "team_rule_id": "r-0009",
@@ -279,7 +287,8 @@
       "notes": "The page gives no bill text, so the specific eviction grounds or relocation duties are unknown. The status is inferred from the study order and the end of the session.",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "El proyecto de ley habría autorizado a Boston a implementar protecciones contra el desalojo de inquilinos. No fue promulgado: la última acción indicada es una orden de estudio del 9/9/2024."
     },
     {
       "team_rule_id": "r-0010",
@@ -308,7 +317,8 @@
       "notes": "The page lists the bill's last action as 'Accompanied a study order' (9/9/2024, H5035). It does not say the bill was defeated. 'failed' is inferred from the end of the 2023-2024 session and the study order. The bill text and any cap formula are not in this capture. The state-bar interaction comes from general background, not from this page.",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "El proyecto de ley habría autorizado a Boston a adoptar la estabilización de rentas, que la ley estatal prohíbe de otro modo. No fue promulgado: la última acción indicada es una orden de estudio del 9/9/2024."
     },
     {
       "team_rule_id": "r-0011",
@@ -339,7 +349,8 @@
       "supporting_doc_ids": [
         "M_BOS-SCRN-02_boston_fair_chance_policy_2017"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Los proveedores de vivienda cubiertos no pueden aplicar una política general que niegue vivienda a cualquier persona con arrestos o condenas, y deben evaluar a los solicitantes caso por caso. No pueden tomar en cuenta arrestos sin condena, condenas sujetas a recursos judiciales (eliminación de antecedentes, sellado), registros de menores ni condenas con más de 5 años de antigüedad."
     },
     {
       "team_rule_id": "r-0012",
@@ -368,7 +379,8 @@
       "notes": "Secondary summary page. No effective date or specific local ordinance citation is stated, so the citation is a best reading and the effective date is null. The page lists rental assistance as a protected class, with the voucher refusal given as an example of discrimination.",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Los arrendadores en Boston no pueden discriminar contra inquilinos o solicitantes por utilizar asistencia para el alquiler, incluido negarse a aceptar vales de la Sección 8, de discapacidad del seguro social o de veteranos."
     },
     {
       "team_rule_id": "r-0013",
@@ -402,7 +414,8 @@
         "M_CA-ALG-01_BPC_16729_justia"
       ],
       "evidence_basis": "supplied_corpus",
-      "date_source_doc_id": "M_CA-ALG-01_BPC_16729_justia"
+      "date_source_doc_id": "M_CA-ALG-01_BPC_16729_justia",
+      "requirement_es": "Es ilegal utilizar o distribuir un algoritmo común de fijación de precios como parte de un contrato, combinación o conspiración para restringir el comercio, o utilizar o distribuir uno mientras se coacciona a otra persona para que adopte el precio o el término comercial que recomienda."
     },
     {
       "team_rule_id": "r-0014",
@@ -434,7 +447,8 @@
         "D005",
         "D017"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Un arrendador solo puede cobrar una cuota de evaluación de solicitantes hasta el monto de los costos reales desembolsados más el valor razonable del tiempo dedicado, y nunca más de $30 por solicitante (ajustable según el CPI). No se puede cobrar ninguna cuota cuando no hay una unidad disponible ni se espera que lo esté pronto. El arrendador debe ofrecer evaluación por orden de llegada o un reembolso a los solicitantes no seleccionados, y debe entregar un recibo detallado y una copia de cualquier informe de crédito."
     },
     {
       "team_rule_id": "r-0015",
@@ -465,7 +479,8 @@
       "supporting_doc_ids": [
         "D018"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Después de que un inquilino haya ocupado una unidad de manera continua y legal durante 12 meses, el propietario solo puede dar por terminado el arrendamiento por una causa justa indicada, ya sea por culpa del inquilino o sin culpa. En las terminaciones sin culpa, el propietario debe pagar un mes de renta como asistencia de reubicación o renunciar a la renta del último mes."
     },
     {
       "team_rule_id": "r-0016",
@@ -497,7 +512,8 @@
         "D040",
         "D019"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Un propietario no puede aumentar la tasa de renta bruta en un período de 12 meses en más del 5 por ciento más el cambio porcentual local en el costo de vida, o el 10 por ciento, lo que sea menor. No se permiten más de dos aumentos en un período de 12 meses para el mismo inquilino. El propietario debe dar aviso de los aumentos conforme a Civ. Code § 827."
     },
     {
       "team_rule_id": "r-0017",
@@ -526,7 +542,8 @@
       "notes": "Secondary source summary; regulation section number not given in the document, supplied from knowledge. Effective date from text: regulations 'took effect Jan. 1, 2020'.}",
       "retrieved_at": "2026-10-03",
       "supporting_doc_ids": [],
-      "evidence_basis": "link_only_capture"
+      "evidence_basis": "link_only_capture",
+      "requirement_es": "Los arrendadores solo pueden verificar los antecedentes penales dentro de estrictos límites de vivienda justa sobre qué se solicita, cómo se considera y qué medida se toma. Están prohibidas las prohibiciones generales contra solicitantes con antecedentes penales y las políticas que consideren arrestos sin condena."
     },
     {
       "team_rule_id": "r-0018",
@@ -560,7 +577,8 @@
         "D021",
         "M_CA-SCRN-01_Gov_12955_justia"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Los propietarios no pueden discriminar ni acosar a un solicitante o inquilino por su fuente de ingresos, que incluye la Sección 8 y otros vales de vivienda y asistencia pública. Cuando se aplique un subsidio gubernamental de renta, los estándares de ingresos deben basarse en la parte de la renta que paga el inquilino, y debe permitirse a los solicitantes ofrecer pruebas alternativas en lugar del historial de crédito."
     },
     {
       "team_rule_id": "r-0019",
@@ -592,7 +610,8 @@
         "D007",
         "D020"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Un arrendador no puede exigir ni recibir una garantía superior a un mes de renta, además de la renta del primer mes. El arrendador debe devolver el depósito con un estado de cuenta detallado dentro de los 21 días calendario posteriores a que el inquilino desocupe la unidad, y no puede calificar ningún depósito como 'no reembolsable'."
     },
     {
       "team_rule_id": "r-0020",
@@ -621,7 +640,8 @@
       "notes": "Secondary news source. A policy order only directs staff to draft options; it is not an enacted ordinance, so status is pending. The article says the council acted 'on Monday' (about 2026-06-22) but gives no date, so adoption_date is null. No effective date stated.",
       "retrieved_at": "2026-10-03",
       "supporting_doc_ids": [],
-      "evidence_basis": "link_only_capture"
+      "evidence_basis": "link_only_capture",
+      "requirement_es": "El Concejo Municipal aprobó por unanimidad una orden de política que inicia los pasos hacia la prohibición de que los administradores de propiedades residenciales contraten con empresas que utilicen modelos algorítmicos o impulsados por IA para recomendar rentas. El administrador de la ciudad debe preparar opciones de política o texto de ordenanza para el concejo más adelante durante este período; no se ha promulgado ninguna ordenanza."
     },
     {
       "team_rule_id": "r-0021",
@@ -650,7 +670,8 @@
       "notes": "Tag: notice-only. Web page summary of the ordinance; no adoption or effective date stated in this capture (page posted 10/14/2020, last modified 3/17/2025, which are not effective dates). Violation fine of $300 per day omitted from key value.",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Los propietarios, arrendadores y empresas administradoras deben entregar a los inquilinos la Guía de derechos y recursos de la ciudad al inicio del arrendamiento y cuando se tomen medidas legales para dar por terminado un arrendamiento (por ejemplo, un Notice to Quit o un Summary Process). La ordenanza no limita las causas de desalojo."
     },
     {
       "team_rule_id": "r-0022",
@@ -679,7 +700,8 @@
       "notes": "Secondary summary on the Commission's webpage; the ordinance text itself is not in this document. No effective date stated, so effective_date is null. Civil fines of up to $300 per violation are noted on the page but are not the key value.",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Los arrendadores no pueden discriminar al alquilar con base en la fuente de ingresos, lo que incluye la Sección 8 y los beneficios públicos. Los criterios de selección de inquilinos deben ser razonables y aplicarse de manera igual y uniforme a todos los solicitantes, y pueden basarse en la capacidad de pagar la renta y la capacidad de cuidar el apartamento y respetar los derechos de los demás."
     },
     {
       "team_rule_id": "r-0023",
@@ -712,7 +734,8 @@
         "D002",
         "D095"
       ],
-      "evidence_basis": "manual_primary"
+      "evidence_basis": "manual_primary",
+      "requirement_es": "Los arrendadores de unidades de vivienda residenciales en Hoboken no pueden fijar precios mediante fijación algorítmica de precios, es decir, software, algoritmos o plataformas de intercambio de datos que utilicen información no pública de competidores para coordinar, recomendar o implementar rentas, condiciones del contrato de arrendamiento o niveles de ocupación entre arrendadores competidores."
     },
     {
       "team_rule_id": "r-0024",
@@ -743,7 +766,8 @@
       "supporting_doc_ids": [
         "M_HOB-ALG-01_Hoboken_ch158_ecode360"
       ],
-      "evidence_basis": "link_only_capture"
+      "evidence_basis": "link_only_capture",
+      "requirement_es": "Los arrendadores residenciales que aumenten la renta en más del 10% año con año en la renovación de un contrato de arrendamiento deben entregar al inquilino actual ciertas divulgaciones específicas antes de que el aumento entre en vigor. Estas son un desglose detallado de los costos, una declaración sobre si se utilizó un algoritmo de rentas, un aviso del derecho del inquilino a emprender acciones legales y la información de contacto de la División de Vivienda."
     },
     {
       "team_rule_id": "r-0025",
@@ -775,7 +799,8 @@
       "supporting_doc_ids": [
         "D033"
       ],
-      "evidence_basis": "link_only_capture"
+      "evidence_basis": "link_only_capture",
+      "requirement_es": "Al vencer el contrato de arrendamiento o al terminar un arrendamiento periódico, el arrendador no puede imponer un aumento mayor que el menor entre el 5% o la variación del CPI durante la vigencia del contrato. Solo se permite un aumento de este tipo por costo de vida en cualquier período de 12 meses. Los arrendadores deben dar aviso por escrito con 30 días de anticipación con los motivos, incluir un certificado de cumplimiento sustancial y presentar prueba de la renta pagada previamente."
     },
     {
       "team_rule_id": "r-0026",
@@ -807,7 +832,8 @@
         "D002",
         "D035"
       ],
-      "evidence_basis": "manual_primary"
+      "evidence_basis": "manual_primary",
+      "requirement_es": "Los arrendadores de bienes raíces, sus agentes y subcontratistas no pueden suscribirse a un proveedor de servicios que coordine información no pública de rentas de competidores, ni contratar con él ni pagarle; los proveedores de servicios no pueden facilitar acuerdos de no competir entre arrendadores sobre precios de renta, cuotas u otras condiciones."
     },
     {
       "team_rule_id": "r-0027",
@@ -836,7 +862,8 @@
       "notes": "Secondary summary page; the ordinance text with the annual allowable increase (CPI-based) is linked but not reproduced here. No effective or adoption date is stated, so effective_date is null.",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Jersey City regula los aumentos de renta mediante su Rent Control Ordinance (Ordenanza de Control de Rentas), que administra la Office of Landlord/Tenant Relations. Los arrendadores deben presentar solicitud ante la ciudad (a través del portal de Tyler) para aumentos de renta por mejoras de capital, mejoras de capital por vacante y dificultad económica."
     },
     {
       "team_rule_id": "r-0028",
@@ -865,7 +892,8 @@
       "notes": "The page does not state the JCO's original effective date or the relocation amounts, so effective_date is null. Related items on the page: effective March 27, 2023, no eviction for nonpayment unless the amount owed exceeds Fair Market Rent; eviction notices must be filed with LAHD within 3 business days; a Notice of Right to Counsel must be posted from August 20, 2025. The LAMC citation is inferred from general knowledge, not from the page.}",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Los arrendadores no pueden dar por terminados los arrendamientos cubiertos sin causa justa y deben pagar asistencia de reubicación en los desalojos sin culpa del inquilino. Los motivos por culpa del inquilino incluyen falta de pago, violaciones del contrato de arrendamiento no subsanadas, molestias o daños, y uso ilegal. Los motivos sin culpa incluyen la mudanza del propietario o de familiares, la demolición o el retiro del mercado de alquiler, y las órdenes gubernamentales de desocupación."
     },
     {
       "team_rule_id": "r-0029",
@@ -897,7 +925,8 @@
         "D041",
         "M_LA-JUST-02_LAMC_ch15_art1_151"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Los arrendadores que desalojen por un motivo sin culpa del inquilino deben presentar ante LAHD una Declaración de Intención de Desalojar antes de entregar el aviso, y deben pagar la asistencia de reubicación por unidad dentro de los 15 días siguientes a la entrega del aviso. Los montos dependen de la condición de elegible o calificado, la duración del arrendamiento y los ingresos."
     },
     {
       "team_rule_id": "r-0030",
@@ -929,7 +958,8 @@
         "D042",
         "M_LA-JUST-02_LAMC_ch15_art1_151"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "La renta de las unidades RSO solo puede aumentarse una vez cada 12 meses según el porcentaje anual permitido de aumento de renta. A partir del 2 de febrero de 2026, los arrendadores ya no pueden agregar un porcentaje por servicios públicos, y ya no se permite el 10% adicional por un dependiente agregado (sigue permitido el 10% por un inquilino adicional que no sea dependiente)."
     },
     {
       "team_rule_id": "r-0031",
@@ -958,7 +988,8 @@
       "notes": "Effective date not stated in this capture, so null. Section sits in LAMC Chapter IV (Public Welfare). The document does not define 'source of income' in this capture. Subsections A-D cover refusal to rent or terminate, differing terms, misrepresenting availability, and discriminatory advertising.",
       "retrieved_at": "2026-10-03",
       "supporting_doc_ids": [],
-      "evidence_basis": "link_only_capture"
+      "evidence_basis": "link_only_capture",
+      "requirement_es": "Los arrendadores y otras personas que ofrezcan o publiquen viviendas no pueden negarse a alquilar, renovar o dar por terminado un arrendamiento, aplicar condiciones diferentes ni anunciar preferencias con base en la fuente de ingresos de una persona."
     },
     {
       "team_rule_id": "r-0032",
@@ -990,7 +1021,8 @@
         "M_LA-JUST-02_LAMC_ch15_art1_151",
         "D044"
       ],
-      "evidence_basis": "manual_primary"
+      "evidence_basis": "manual_primary",
+      "requirement_es": "Los arrendadores sujetos al Civ. Code § 1950.5 deben pagar a los inquilinos intereses anuales sobre los depósitos de garantía mantenidos durante al menos un año. El arrendador utiliza la tasa anual de la Rent Adjustment Commission o los intereses realmente devengados, y los paga como un pago o un crédito de renta."
     },
     {
       "team_rule_id": "r-0033",
@@ -1021,7 +1053,8 @@
       "supporting_doc_ids": [
         "D030"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Proyecto de ley que, según su título, abordaría la fijación algorítmica de rentas en el mercado de vivienda de alquiler. No es ley; está a la espera de acción en House Ways and Means. La página no reproduce el texto del proyecto."
     },
     {
       "team_rule_id": "r-0034",
@@ -1050,7 +1083,8 @@
       "notes": "Bill status per page: reported favorably by the Housing Committee 3/12/2026 and referred to Senate Ways and Means, so not enacted. The page has no bill text, so the requirement is described only from the title and committee report language. No effective date is stated, so it is null.",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Proyecto de ley pendiente que prohibiría la fijación algorítmica de rentas en Massachusetts. La página solo ofrece el título y el historial en comité, por lo que los términos operativos (definiciones, alcance, sanciones) no pueden leerse en este documento."
     },
     {
       "team_rule_id": "r-0035",
@@ -1081,7 +1115,8 @@
       "supporting_doc_ids": [
         "M_MA-FEE-02_c112_87DDD-half_masslaw"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Un corredor o vendedor con licencia puede contratar con el posible inquilino o con el arrendador, pero no con ambos, y cualquier cuota debe ser pagada únicamente por la parte que contrató originalmente al corredor. Por lo tanto, el corredor de un arrendador no puede cobrar una cuota al inquilino."
     },
     {
       "team_rule_id": "r-0036",
@@ -1110,7 +1145,8 @@
       "notes": "Secondary source (MassLandlords, updated 2025-01-14). Article says the law has been in effect since the 1970s but gives no specific effective date, so effective_date is null. Federal case Perry v. Equity Residential (2014) found up-front application fees unlawful. Requiring applicants to pay a third-party screening service is considered risky.",
       "retrieved_at": "2026-10-03",
       "supporting_doc_ids": [],
-      "evidence_basis": "link_only_capture"
+      "evidence_basis": "link_only_capture",
+      "requirement_es": "Antes de que comience un arrendamiento, un arrendador solo puede exigir el pago de la renta del primer mes, la renta del último mes, un depósito de garantía y una cuota por cambio de cerradura; están prohibidas las cuotas de solicitud, de mascotas, de limpieza y de servicios comunes. Los corredores con licencia pueden cobrar cuotas si cumplen con 254 CMR 7 (divulgación por escrito del monto de la cuota, el momento de pago y la contingencia)."
     },
     {
       "team_rule_id": "r-0037",
@@ -1139,7 +1175,8 @@
       "notes": "Opinion decided June 23, 2026. The court remanded for entry of judgment declaring the petition non-compliant with art. 48 and enjoining the Secretary from placing it on the 2026 ballot. The court did not reach the plaintiffs' alternative arguments.",
       "retrieved_at": "2026-10-04",
       "supporting_doc_ids": [],
-      "evidence_basis": "manual_primary"
+      "evidence_basis": "manual_primary",
+      "requirement_es": "La petición habría derogado el c. 40P y limitado los aumentos anuales de renta para las unidades de vivienda cubiertas. La SJC determinó que se relaciona con la religión debido a su exención para instalaciones religiosas, por lo que el art. 48 impide que figure en la boleta de noviembre de 2026."
     },
     {
       "team_rule_id": "r-0038",
@@ -1168,7 +1205,8 @@
       "notes": "The official code text states no effective date, so effective_date is null. The section is treated as in force because it is in the current official General Laws. The exception requires a municipality to accept chapter 40P; this document does not say whether any municipality has done so.",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Las ciudades y pueblos no pueden promulgar, mantener ni hacer cumplir ningún tipo de control de rentas. La única excepción es para un municipio que acepte el capítulo 40P y adopte una regulación que sea voluntaria después de seis meses, excluya a los propietarios de menos de diez unidades de alquiler y a las unidades con renta de mercado justa superior a $400, y compense a los propietarios con fondos generales."
     },
     {
       "team_rule_id": "r-0039",
@@ -1197,7 +1235,8 @@
       "notes": "Secondary description of c. 40P in a court opinion; the statute's enactment/effective date is not stated in this document, so effective_date is null.",
       "retrieved_at": "2026-10-04",
       "supporting_doc_ids": [],
-      "evidence_basis": "manual_primary"
+      "evidence_basis": "manual_primary",
+      "requirement_es": "La ley de Massachusetts prohíbe en general cualquier esquema regulatorio basado en el control de rentas o que lo implemente, incluida cualquier regulación que exija rentas residenciales por debajo del mercado."
     },
     {
       "team_rule_id": "r-0040",
@@ -1226,7 +1265,8 @@
       "notes": "Secondary news source; the case name and the SJC's exact citation are not given in the article. The measure was never enacted, so effective_date is null. Article is dated June 23, 2026 (updated and originally published). Existing Massachusetts law is not addressed in this article.",
       "retrieved_at": "2026-10-03",
       "supporting_doc_ids": [],
-      "evidence_basis": "link_only_capture"
+      "evidence_basis": "link_only_capture",
+      "requirement_es": "La iniciativa propuesta para la boleta habría limitado los aumentos anuales de renta de las viviendas en Massachusetts, pero la Supreme Judicial Court resolvió que no puede figurar en la boleta de noviembre de 2026 porque su exención por uso religioso la convierte en una medida relacionada con la religión, lo cual la Constitución estatal excluye del proceso de iniciativa."
     },
     {
       "team_rule_id": "r-0041",
@@ -1255,7 +1295,8 @@
       "notes": "Official statute text with no stated effective date or amendment history on the page, so effective_date is null. Other parts of § 4 (employment, protected-class housing discrimination, criminal-history employment inquiries) fall outside the listed categories and were not extracted.",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Es ilegal discriminar al proporcionar alojamiento de alquiler contra una persona porque reciba asistencia pública o un subsidio de vivienda (incluida la asistencia para el alquiler), o por cualquier requisito de dicho programa."
     },
     {
       "team_rule_id": "r-0042",
@@ -1287,7 +1328,8 @@
         "M_MA-SCRN-02_803_CMR_5",
         "M_MA-SCRN-02_MGL_c6_s172_findlaw"
       ],
-      "evidence_basis": "link_only_capture"
+      "evidence_basis": "link_only_capture",
+      "requirement_es": "Un arrendador puede obtener el CORI para evaluar a los solicitantes de alquiler solo si el solicitante ha firmado un formulario de reconocimiento, y la información se limita a condenas por delitos graves (10 años), condenas por delitos menores (5 años) y cargos pendientes. Un arrendador que tenga los antecedentes penales de un solicitante debe entregarle una copia antes de interrogarlo sobre ellos y si se toma una decisión de vivienda adversa con base en ellos."
     },
     {
       "team_rule_id": "r-0043",
@@ -1316,7 +1358,8 @@
       "notes": "The document gives no effective date for the original 1-month cap, so effective_date is null. The text was amended by 2025, c. 9, §§ 54-55, effective 2025-08-01 (adds 'agent of the lessor' and lets the executive office of housing and livable communities authorize an optional fee in lieu of a deposit, capped at 1 month's rent in total). That amendment did not change the cap itself. Procedural duties (receipts, condition statement, records, transfer to successor, treble damages) are folded into this record.",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Al inicio del arrendamiento o antes, un arrendador solo puede cobrar la renta del primer mes, la renta del último mes, un depósito de garantía de no más de la renta de un mes, y el costo de una llave y una cerradura. El depósito debe mantenerse en una cuenta bancaria separada que genere intereses en Massachusetts, y se debe pagar al inquilino un interés anual del 5% (o la cantidad menor que pagó el banco). Debe devolverse dentro de los 30 días posteriores a la terminación del arrendamiento, menos las deducciones detalladas y juradas por conceptos permitidos."
     },
     {
       "team_rule_id": "r-0044",
@@ -1347,7 +1390,8 @@
       "supporting_doc_ids": [
         "D060"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Hace ilegal, y una violación de la NJ Antitrust Act, que los propietarios de inmuebles de alquiler paguen por los servicios de un coordinador o los utilicen, que los coordinadores faciliten acuerdos que restrinjan las rentas, y que cualquier persona desempeñe una función de coordinación o participe en la coordinación de precios paralelos."
     },
     {
       "team_rule_id": "r-0045",
@@ -1376,7 +1420,8 @@
       "notes": "Section 3 says the act takes effect on the first day of the fourth month next following enactment. Enactment (approval) was January 20, 2026, so the fourth month after is May, giving 2026-05-01. This is in force as of the 2026-10-01 query date. Penalties: up to $500 first offense, $750 second, $1,000 subsequent. The CPI adjustment begins January 1 of the year after enactment (2027), applies only if CPI change is greater than zero, and the Director of Consumer Affairs publishes the adjusted limit annually.",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Un arrendador o agente no puede exigir una cuota de solicitud o similar para solicitar el arrendamiento o subarrendamiento de una propiedad residencial de alquiler que exceda $50. Los infractores enfrentan sanciones civiles y deben reembolsar al solicitante la cantidad cobrada indebidamente."
     },
     {
       "team_rule_id": "r-0046",
@@ -1408,7 +1453,8 @@
         "D067",
         "D062"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Un arrendador residencial no puede desalojar ni negarse a renovar un contrato de arrendamiento, escrito u oral, sin causa justa conforme a la Anti-Eviction Act. La posesión solo puede recuperarse mediante consentimiento o proceso judicial, y se requiere un Notice to Quit para todos los desalojos por causa justa, excepto por falta de pago de la renta."
     },
     {
       "team_rule_id": "r-0047",
@@ -1437,7 +1483,8 @@
       "notes": "Only the non-renewal summary appears in this part; the list of causes and any relocation-assistance duties are in later parts of the guide. The guide cites the statute as 'N.J.S.A. 2A:18:61.3'. No effective date is stated in this document.",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Los arrendadores de alquileres residenciales cubiertos no pueden negarse a renovar un contrato de arrendamiento escrito u oral a menos que tengan causa justa conforme a la Anti-Eviction Act. Las causas justas se enumeran en la sección de Desalojo de la guía (no en esta parte)."
     },
     {
       "team_rule_id": "r-0048",
@@ -1466,7 +1513,8 @@
       "notes": "Secondary summary by the state agency (DCA Truth in Renting guide). No effective date stated in this document. Increase procedure: written notice terminating the old lease and offering a new lease at the increased rent.",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "New Jersey no establece un límite estatal a las rentas, y los municipios pueden adoptar sus propias ordenanzas de control de rentas o de nivelación de rentas. Un arrendador solo puede aumentar la renta terminando debidamente el contrato de arrendamiento y ofreciendo uno nuevo, y el aumento no debe ser abusivo y debe cumplir con cualquier ordenanza local."
     },
     {
       "team_rule_id": "r-0049",
@@ -1498,7 +1546,8 @@
         "D067",
         "D061"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Los arrendadores no pueden discriminar en la vivienda con base en la fuente de ingresos lícitos o la fuente lícita de pago de la renta, por lo que no pueden negar un apartamento a un titular de un voucher de la Sección 8 únicamente por esa fuente de ingresos."
     },
     {
       "team_rule_id": "r-0050",
@@ -1527,7 +1576,8 @@
       "notes": "Effective date computed from section 14: the act takes effect on the first day of the seventh month next following enactment. Enactment was June 18, 2021 (Approved June 18, 2021), so the seventh month following is January 2022, giving 2022-01-01. Also folded in: written disclosure before accepting any application fee (s.4b), no evaluation of arrests without conviction, expunged or sealed records (s.5a), and a ban on requiring drug or alcohol tests (s.9). Enforcement is through the Division on Civil Rights, with penalties up to $1,000, $5,000 or $10,000.)",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Un proveedor de vivienda no puede preguntar sobre los antecedentes penales de un solicitante antes de hacer una oferta condicional. Después de la oferta, solo pueden considerarse ciertas condenas dentro de períodos de revisión establecidos, y un retiro de la oferta requiere una evaluación individualizada y un aviso por escrito."
     },
     {
       "team_rule_id": "r-0051",
@@ -1559,7 +1609,8 @@
         "D063",
         "D064"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Un arrendador no puede cobrar un depósito de garantía superior a una vez y media la renta de un mes, y la renta prepagada que se mantiene como garantía (incluida la renta del último mes) cuenta para ese límite. Los depósitos deben mantenerse en fideicomiso en una cuenta que genere intereses, y los intereses corresponden al inquilino, y deben devolverse dentro de los 30 días posteriores a la terminación del arrendamiento."
     },
     {
       "team_rule_id": "r-0052",
@@ -1588,7 +1639,8 @@
       "notes": "Section history: Ord. 6 PSF-A(S), 9-5-2017; amended 9-18-2024 by Ord. No. 6PSF-I. Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Latest amendment date used; the document does not show whether the 2024 amendment changed the 4% cap or kept it as originally enacted in 2017. A 2026-06-17 ordinance (6PSF-C) amends only §§ 19:2-27 and 19:2-32 (habitability certificates), not this section. Document is part 1 of 3; § 19:2-18 and § 19:2-22 appear elsewhere. Supplementary provision folded in (Newark Rev. Gen. Ord. § 19:2-22: The Rent Control Board may not grant increases above 25% in any one year for any tenant. Increases under §§ 19:2-3, 19:2-7 and 19:2-8 within the 12 months before the effective date are added together when testing the 25% limit.) Supplementary provision folded in (Newark Rev. Gen. Ord. § 19:2-18.1: Rent control limits on periodic or regular increases do not apply to newly constructed multiple dwellings for a limited period. The period is the amortization period of the initial mortgage or 30 years after completion of construction, whichever is less.) Supplementary provision folded in (Newark Rev. Gen. Ord. § 19:2-18.4: A landlord who rehabilitates a vacant apartment by spending at least 12 months of actual monthly rent per unit may be granted a one-off increase of up to 10% in the actual monthly rent. Only one such increase is allowed per unit in any twelve-month period.) Supplementary provision folded in (Newark Rev. Gen. Ord. § 19:2-17.1: A landlord who shows heating and water expenses rose by more than 10% over the prior 12 months is granted a utilities surcharge. The surcharge is capped by building size as a share of the monthly rent roll.)",
       "retrieved_at": "2026-10-03",
       "supporting_doc_ids": [],
-      "evidence_basis": "link_only_capture"
+      "evidence_basis": "link_only_capture",
+      "requirement_es": "Al vencimiento del contrato de arrendamiento (o la terminación de un arrendamiento periódico), un arrendador no puede solicitar ni recibir un aumento mayor que el cambio porcentual del CPI-U (de 15 meses antes a 3 meses antes del mes del aumento), y nunca mayor al 4%. Se requiere aviso por escrito al inquilino y al Rent Regulation Officer con al menos 30 días de anticipación. No se permite ningún aumento si la unidad no cumple sustancialmente con las normas o si el arrendador no ha cumplido los requisitos de registro."
     },
     {
       "team_rule_id": "r-0053",
@@ -1617,7 +1669,8 @@
       "notes": "Month of adoption; exact effective date not stated in source (NJ ordinances generally take effect after final passage and publication). Adoption date 4-15-2015 is taken from the Ord. 6 PSF-B citation; the Editor's Note says the earlier Ord. 6 PSF-F (2012) was repealed by Ord. 6 PSF-B. Procedural duties folded in: 3 business days to submit evidence, adverse-action notice within 10 business days by registered mail, confidentiality, and a ban on advertisements referencing criminal history. Article 2 (City licensing) is outside scope.",
       "retrieved_at": "2026-10-03",
       "supporting_doc_ids": [],
-      "evidence_basis": "link_only_capture"
+      "evidence_basis": "link_only_capture",
+      "requirement_es": "Un arrendador o corredor de bienes raíces solo puede indagar o considerar los antecedentes penales de un solicitante después de que se presente una solicitud formal, y solo después de dar aviso por escrito. El período de revisión se limita a 8 años para condenas por delitos procesables (indictable) y 5 años para condenas por infracciones de personas desordenadas (disorderly persons) o de ordenanzas, además de los cargos pendientes. No pueden considerarse los arrestos sin condena, los registros cancelados o sellados ni las adjudicaciones juveniles."
     },
     {
       "team_rule_id": "r-0054",
@@ -1650,7 +1703,8 @@
         "D002",
         "D076"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Es ilegal vender, licenciar o proporcionar un dispositivo algorítmico a un arrendador, y es ilegal que un arrendador use un dispositivo algorítmico para fijar tarifas de alquiler o niveles de ocupación de propiedades residenciales de alquiler."
     },
     {
       "team_rule_id": "r-0055",
@@ -1681,7 +1735,8 @@
       "supporting_doc_ids": [
         "D077"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Un arrendador no puede terminar un arrendamiento cubierto sin causa justa, ya sea por culpa del inquilino o sin culpa. En las terminaciones sin culpa, el arrendador debe proporcionar asistencia de reubicación, ya sea como pago directo dentro de los 15 días posteriores al aviso o como exención de renta, y debe notificar a la Housing Commission. Los acuerdos de compra de la desocupación deben seguir las reglas de divulgación por escrito y no pueden ser por menos que la cantidad de reubicación."
     },
     {
       "team_rule_id": "r-0056",
@@ -1711,7 +1766,8 @@
       "notes": "Division added 9-18-2018 by O-20986 N.S.; effective 10-18-2018. Remedies (§98.0806) include treble one month's rent in damages for violations on or after August 1, 2019, plus injunction and fees; not used as key value.",
       "retrieved_at": "2026-10-03",
       "supporting_doc_ids": [],
-      "evidence_basis": "link_only_capture"
+      "evidence_basis": "link_only_capture",
+      "requirement_es": "Los arrendadores no pueden negarse a celebrar o renovar un arrendamiento, terminar un arrendamiento ni aplicar normas de ingresos que ignoren la totalidad de la fuente de ingresos de un inquilino, incluidas la asistencia para el alquiler y los vouchers, con base en la fuente de ingresos. Las normas de ingresos deben tomar en cuenta los ingresos combinados de los coinquilinos y cofirmantes en la misma forma que los de las personas casadas."
     },
     {
       "team_rule_id": "r-0057",
@@ -1742,7 +1798,8 @@
       "supporting_doc_ids": [
         "D002"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Prohíbe la venta o el uso de dispositivos algorítmicos (software que analiza datos no públicos de alquileres de competidores para recomendar rentas de unidades vacantes) para fijar rentas o administrar los niveles de ocupación de unidades residenciales. Los inquilinos o el City Attorney pueden presentar una acción civil por las violaciones."
     },
     {
       "team_rule_id": "r-0058",
@@ -1774,7 +1831,8 @@
         "D082",
         "D083"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Un arrendador solo puede desalojar a un inquilino de una unidad cubierta por la Rent Ordinance por una razón de \"causa justa\" que sea el motivo dominante del desalojo; se permiten 17 razones enumeradas, y el vencimiento de un contrato de arrendamiento o el cambio de propietario no es causa justa."
     },
     {
       "team_rule_id": "r-0059",
@@ -1805,7 +1863,8 @@
       "supporting_doc_ids": [
         "D083"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Para las unidades con control de rentas, el aumento anual permitido de la renta vigente del 1 de marzo de 2026 al 28 de febrero de 2027 es del 1.6% de la renta base del inquilino."
     },
     {
       "team_rule_id": "r-0060",
@@ -1834,7 +1893,8 @@
       "notes": "Navigation or teaser text on an agency landing page. The citation comes from general knowledge, not this document. The page states no effective date, adoption date or specific requirements, so effective_date is null.",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "La Fair Chance Ordinance de San Francisco protege a los residentes con antecedentes de arresto o condena en las decisiones de vivienda asequible. Esta página no ofrece detalles operativos más allá de esa declaración."
     },
     {
       "team_rule_id": "r-0061",
@@ -1863,7 +1923,8 @@
       "notes": "Prior rates were 5.0% (3/1/25–2/28/26) and 5.2% (3/1/24–2/28/25). The citation is not given in this document and is supplied from knowledge of the SF Administrative Code.",
       "retrieved_at": "2026-10-01",
       "supporting_doc_ids": [],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Los arrendadores deben pagar intereses sobre los depósitos de garantía de los inquilinos a la tasa de la Rent Board, que es de 4.2% del 1 de marzo de 2026 al 28 de febrero de 2027."
     },
     {
       "team_rule_id": "r-0062",
@@ -1897,7 +1958,8 @@
         "D089",
         "D088"
       ],
-      "evidence_basis": "link_only_capture"
+      "evidence_basis": "link_only_capture",
+      "requirement_es": "Santa Ana prohíbe la fijación automatizada y anticompetitiva de precios de renta especificada, y los inquilinos pueden presentar reclamaciones privadas."
     },
     {
       "team_rule_id": "r-0063",
@@ -1928,7 +1990,8 @@
       "supporting_doc_ids": [
         "D084"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Después de 30 días de tenencia, un propietario no puede dar por terminada una tenencia sin causa justa indicada en un aviso escrito. En las terminaciones sin culpa del inquilino, el propietario debe proporcionar 3 meses de asistencia de reubicación o condonar la renta de los últimos 3 meses."
     },
     {
       "team_rule_id": "r-0064",
@@ -1959,7 +2022,8 @@
       "supporting_doc_ids": [
         "D084"
       ],
-      "evidence_basis": "supplied_corpus"
+      "evidence_basis": "supplied_corpus",
+      "requirement_es": "Los aumentos anuales de renta residencial están limitados al menor entre 3% o 80% del cambio del CPI durante los 12 meses más recientes; no se permite ningún aumento si el CPI es negativo. La Ciudad publica el aumento permitido a más tardar el 30 de junio de cada año, con vigencia a partir del 1 de septiembre."
     },
     {
       "team_rule_id": "n-0027",
@@ -1986,7 +2050,8 @@
       "conflict_note": null,
       "negative_finding": true,
       "derived": true,
-      "notes": null
+      "notes": null,
+      "requirement_es": "La ley estatal prohíbe las normas locales que limiten los aumentos de renta: no se permite el control de rentas local (prohibición estatal), G.L. c. 40P, § 4."
     }
   ]
 }

@@ -26,7 +26,7 @@ PUBLIC_FILES = ["rules.json", "lookups.json", "changes.json"]
 # Any sentence containing one of these is dropped.
 INTERNAL = re.compile(r"Decided by Hamza|Hamza|\(Q\d+\)|ruling #\d*|\brulings?_?\d+|\bL1\d\d\b|\bgold\b|reviewer|"
                       r"instructions/", re.I)
-TEXT_FIELDS = {"explanation", "notes", "conflict_note", "interaction", "requirement", "exemptions",
+TEXT_FIELDS = {"explanation", "notes", "conflict_note", "interaction", "requirement", "requirement_es", "exemptions",
                "coverage_conditions", "title", "key_value"}
 DROP_FIELDS = {"reviewed_by", "review_ruling"}
 

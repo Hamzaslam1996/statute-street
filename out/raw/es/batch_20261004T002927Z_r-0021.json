@@ -1,0 +1,112 @@
+{
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3565,
+ "output_tokens": 3157,
+ "cost_usd": 0.0387,
+ "records": [
+  "r-0021",
+  "r-0022",
+  "r-0023",
+  "r-0024",
+  "r-0025",
+  "r-0026",
+  "r-0027",
+  "r-0028",
+  "r-0029",
+  "r-0030",
+  "r-0031",
+  "r-0032",
+  "r-0033",
+  "r-0034",
+  "r-0035",
+  "r-0036",
+  "r-0037",
+  "r-0038",
+  "r-0039",
+  "r-0040"
+ ],
+ "response": {
+  "translations": [
+   {
+    "team_rule_id": "r-0021",
+    "requirement_es": "Los propietarios, arrendadores y empresas administradoras deben entregar a los inquilinos la Guía de derechos y recursos de la ciudad al inicio del arrendamiento y cuando se tomen medidas legales para dar por terminado un arrendamiento (por ejemplo, un Notice to Quit o un Summary Process). La ordenanza no limita las causas de desalojo."
+   },
+   {
+    "team_rule_id": "r-0022",
+    "requirement_es": "Los arrendadores no pueden discriminar al alquilar con base en la fuente de ingresos, lo que incluye la Sección 8 y los beneficios públicos. Los criterios de selección de inquilinos deben ser razonables y aplicarse de manera igual y uniforme a todos los solicitantes, y pueden basarse en la capacidad de pagar la renta y la capacidad de cuidar el apartamento y respetar los derechos de los demás."
+   },
+   {
+    "team_rule_id": "r-0023",
+    "requirement_es": "Los arrendadores de unidades de vivienda residenciales en Hoboken no pueden fijar precios mediante fijación algorítmica de precios, es decir, software, algoritmos o plataformas de intercambio de datos que utilicen información no pública de competidores para coordinar, recomendar o implementar rentas, condiciones del contrato de arrendamiento o niveles de ocupación entre arrendadores competidores."
+   },
+   {
+    "team_rule_id": "r-0024",
+    "requirement_es": "Los arrendadores residenciales que aumenten la renta en más del 10% año con año en la renovación de un contrato de arrendamiento deben entregar al inquilino actual ciertas divulgaciones específicas antes de que el aumento entre en vigor. Estas son un desglose detallado de los costos, una declaración sobre si se utilizó un algoritmo de rentas, un aviso del derecho del inquilino a emprender acciones legales y la información de contacto de la División de Vivienda."
+   },
+   {
+    "team_rule_id": "r-0025",
+    "requirement_es": "Al vencer el contrato de arrendamiento o al terminar un arrendamiento periódico, el arrendador no puede imponer un aumento mayor que el menor entre el 5% o la variación del CPI durante la vigencia del contrato. Solo se permite un aumento de este tipo por costo de vida en cualquier período de 12 meses. Los arrendadores deben dar aviso por escrito con 30 días de anticipación con los motivos, incluir un certificado de cumplimiento sustancial y presentar prueba de la renta pagada previamente."
+   },
+   {
+    "team_rule_id": "r-0026",
+    "requirement_es": "Los arrendadores de bienes raíces, sus agentes y subcontratistas no pueden suscribirse a un proveedor de servicios que coordine información no pública de rentas de competidores, ni contratar con él ni pagarle; los proveedores de servicios no pueden facilitar acuerdos de no competir entre arrendadores sobre precios de renta, cuotas u otras condiciones."
+   },
+   {
+    "team_rule_id": "r-0027",
+    "requirement_es": "Jersey City regula los aumentos de renta mediante su Rent Control Ordinance (Ordenanza de Control de Rentas), que administra la Office of Landlord/Tenant Relations. Los arrendadores deben presentar solicitud ante la ciudad (a través del portal de Tyler) para aumentos de renta por mejoras de capital, mejoras de capital por vacante y dificultad económica."
+   },
+   {
+    "team_rule_id": "r-0028",
+    "requirement_es": "Los arrendadores no pueden dar por terminados los arrendamientos cubiertos sin causa justa y deben pagar asistencia de reubicación en los desalojos sin culpa del inquilino. Los motivos por culpa del inquilino incluyen falta de pago, violaciones del contrato de arrendamiento no subsanadas, molestias o daños, y uso ilegal. Los motivos sin culpa incluyen la mudanza del propietario o de familiares, la demolición o el retiro del mercado de alquiler, y las órdenes gubernamentales de desocupación."
+   },
+   {
+    "team_rule_id": "r-0029",
+    "requirement_es": "Los arrendadores que desalojen por un motivo sin culpa del inquilino deben presentar ante LAHD una Declaración de Intención de Desalojar antes de entregar el aviso, y deben pagar la asistencia de reubicación por unidad dentro de los 15 días siguientes a la entrega del aviso. Los montos dependen de la condición de elegible o calificado, la duración del arrendamiento y los ingresos."
+   },
+   {
+    "team_rule_id": "r-0030",
+    "requirement_es": "La renta de las unidades RSO solo puede aumentarse una vez cada 12 meses según el porcentaje anual permitido de aumento de renta. A partir del 2 de febrero de 2026, los arrendadores ya no pueden agregar un porcentaje por servicios públicos, y ya no se permite el 10% adicional por un dependiente agregado (sigue permitido el 10% por un inquilino adicional que no sea dependiente)."
+   },
+   {
+    "team_rule_id": "r-0031",
+    "requirement_es": "Los arrendadores y otras personas que ofrezcan o publiquen viviendas no pueden negarse a alquilar, renovar o dar por terminado un arrendamiento, aplicar condiciones diferentes ni anunciar preferencias con base en la fuente de ingresos de una persona."
+   },
+   {
+    "team_rule_id": "r-0032",
+    "requirement_es": "Los arrendadores sujetos al Civ. Code § 1950.5 deben pagar a los inquilinos intereses anuales sobre los depósitos de garantía mantenidos durante al menos un año. El arrendador utiliza la tasa anual de la Rent Adjustment Commission o los intereses realmente devengados, y los paga como un pago o un crédito de renta."
+   },
+   {
+    "team_rule_id": "r-0033",
+    "requirement_es": "Proyecto de ley que, según su título, abordaría la fijación algorítmica de rentas en el mercado de vivienda de alquiler. No es ley; está a la espera de acción en House Ways and Means. La página no reproduce el texto del proyecto."
+   },
+   {
+    "team_rule_id": "r-0034",
+    "requirement_es": "Proyecto de ley pendiente que prohibiría la fijación algorítmica de rentas en Massachusetts. La página solo ofrece el título y el historial en comité, por lo que los términos operativos (definiciones, alcance, sanciones) no pueden leerse en este documento."
+   },
+   {
+    "team_rule_id": "r-0035",
+    "requirement_es": "Un corredor o vendedor con licencia puede contratar con el posible inquilino o con el arrendador, pero no con ambos, y cualquier cuota debe ser pagada únicamente por la parte que contrató originalmente al corredor. Por lo tanto, el corredor de un arrendador no puede cobrar una cuota al inquilino."
+   },
+   {
+    "team_rule_id": "r-0036",
+    "requirement_es": "Antes de que comience un arrendamiento, un arrendador solo puede exigir el pago de la renta del primer mes, la renta del último mes, un depósito de garantía y una cuota por cambio de cerradura; están prohibidas las cuotas de solicitud, de mascotas, de limpieza y de servicios comunes. Los corredores con licencia pueden cobrar cuotas si cumplen con 254 CMR 7 (divulgación por escrito del monto de la cuota, el momento de pago y la contingencia)."
+   },
+   {
+    "team_rule_id": "r-0037",
+    "requirement_es": "La petición habría derogado el c. 40P y limitado los aumentos anuales de renta para las unidades de vivienda cubiertas. La SJC determinó que se relaciona con la religión debido a su exención para instalaciones religiosas, por lo que el art. 48 impide que figure en la boleta de noviembre de 2026."
+   },
+   {
+    "team_rule_id": "r-0038",
+    "requirement_es": "Las ciudades y pueblos no pueden promulgar, mantener ni hacer cumplir ningún tipo de control de rentas. La única excepción es para un municipio que acepte el capítulo 40P y adopte una regulación que sea voluntaria después de seis meses, excluya a los propietarios de menos de diez unidades de alquiler y a las unidades con renta de mercado justa superior a $400, y compense a los propietarios con fondos generales."
+   },
+   {
+    "team_rule_id": "r-0039",
+    "requirement_es": "La ley de Massachusetts prohíbe en general cualquier esquema regulatorio basado en el control de rentas o que lo implemente, incluida cualquier regulación que exija rentas residenciales por debajo del mercado."
+   },
+   {
+    "team_rule_id": "r-0040",
+    "requirement_es": "La iniciativa propuesta para la boleta habría limitado los aumentos anuales de renta de las viviendas en Massachusetts, pero la Supreme Judicial Court resolvió que no puede figurar en la boleta de noviembre de 2026 porque su exención por uso religioso la convierte en una medida relacionada con la religión, lo cual la Constitución estatal excluye del proceso de iniciativa."
+   }
+  ]
+ }
+}

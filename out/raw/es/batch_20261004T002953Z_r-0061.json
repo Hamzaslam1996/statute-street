@@ -1,0 +1,112 @@
+{
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 2490,
+ "output_tokens": 1551,
+ "cost_usd": 0.0205,
+ "records": [
+  "r-0061",
+  "r-0062",
+  "r-0063",
+  "r-0064",
+  "n-0001",
+  "n-0002",
+  "n-0003",
+  "n-0004",
+  "n-0005",
+  "n-0006",
+  "n-0007",
+  "n-0008",
+  "n-0009",
+  "n-0010",
+  "n-0011",
+  "n-0012",
+  "n-0013",
+  "n-0014",
+  "n-0015",
+  "n-0016"
+ ],
+ "response": {
+  "translations": [
+   {
+    "team_rule_id": "r-0061",
+    "requirement_es": "Los arrendadores deben pagar intereses sobre los depósitos de garantía de los inquilinos a la tasa de la Rent Board, que es de 4.2% del 1 de marzo de 2026 al 28 de febrero de 2027."
+   },
+   {
+    "team_rule_id": "r-0062",
+    "requirement_es": "Santa Ana prohíbe la fijación automatizada y anticompetitiva de precios de renta especificada, y los inquilinos pueden presentar reclamaciones privadas."
+   },
+   {
+    "team_rule_id": "r-0063",
+    "requirement_es": "Después de 30 días de tenencia, un propietario no puede dar por terminada una tenencia sin causa justa indicada en un aviso escrito. En las terminaciones sin culpa del inquilino, el propietario debe proporcionar 3 meses de asistencia de reubicación o condonar la renta de los últimos 3 meses."
+   },
+   {
+    "team_rule_id": "r-0064",
+    "requirement_es": "Los aumentos anuales de renta residencial están limitados al menor entre 3% o 80% del cambio del CPI durante los 12 meses más recientes; no se permite ningún aumento si el CPI es negativo. La Ciudad publica el aumento permitido a más tardar el 30 de junio de cada año, con vigencia a partir del 1 de septiembre."
+   },
+   {
+    "team_rule_id": "n-0001",
+    "requirement_es": "No se encontró en el corpus ninguna regla de causa justa de desalojo a nivel de MA."
+   },
+   {
+    "team_rule_id": "n-0002",
+    "requirement_es": "No se encontró en el corpus ninguna regla de fijación algorítmica de rentas a nivel de MA."
+   },
+   {
+    "team_rule_id": "n-0003",
+    "requirement_es": "No se encontró en el corpus ninguna regla de cuotas de solicitud y evaluación de solicitantes a nivel de Los Angeles, CA."
+   },
+   {
+    "team_rule_id": "n-0004",
+    "requirement_es": "No se encontró en el corpus ninguna regla de fijación algorítmica de rentas a nivel de Los Angeles, CA."
+   },
+   {
+    "team_rule_id": "n-0005",
+    "requirement_es": "No se encontró en el corpus ninguna regla de cuotas de solicitud y evaluación de solicitantes a nivel de San Francisco, CA."
+   },
+   {
+    "team_rule_id": "n-0006",
+    "requirement_es": "No se encontró en el corpus ninguna regla de límites a los aumentos de renta a nivel de San Diego, CA."
+   },
+   {
+    "team_rule_id": "n-0007",
+    "requirement_es": "No se encontró en el corpus ninguna regla de depósitos de garantía a nivel de San Diego, CA."
+   },
+   {
+    "team_rule_id": "n-0008",
+    "requirement_es": "No se encontró en el corpus ninguna regla de cuotas de solicitud y evaluación de solicitantes a nivel de San Diego, CA."
+   },
+   {
+    "team_rule_id": "n-0009",
+    "requirement_es": "No se encontró en el corpus ninguna regla de depósitos de garantía a nivel de Santa Ana, CA."
+   },
+   {
+    "team_rule_id": "n-0010",
+    "requirement_es": "No se encontró en el corpus ninguna regla de cuotas de solicitud y evaluación de solicitantes a nivel de Santa Ana, CA."
+   },
+   {
+    "team_rule_id": "n-0011",
+    "requirement_es": "No se encontró en el corpus ninguna regla de restricciones de evaluación de solicitantes a nivel de Santa Ana, CA."
+   },
+   {
+    "team_rule_id": "n-0012",
+    "requirement_es": "No se encontró en el corpus ninguna regla de causa justa de desalojo a nivel de Jersey City, NJ."
+   },
+   {
+    "team_rule_id": "n-0013",
+    "requirement_es": "No se encontró en el corpus ninguna regla de depósitos de garantía a nivel de Jersey City, NJ."
+   },
+   {
+    "team_rule_id": "n-0014",
+    "requirement_es": "No se encontró en el corpus ninguna regla de cuotas de solicitud y evaluación de solicitantes a nivel de Jersey City, NJ."
+   },
+   {
+    "team_rule_id": "n-0015",
+    "requirement_es": "No se encontró en el corpus ninguna regla de restricciones de evaluación de solicitantes a nivel de Jersey City, NJ."
+   },
+   {
+    "team_rule_id": "n-0016",
+    "requirement_es": "No se encontró en el corpus ninguna regla de causa justa de desalojo a nivel de Hoboken, NJ."
+   }
+  ]
+ }
+}
