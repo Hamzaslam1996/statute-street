@@ -317,23 +317,40 @@ def run_test(test: dict, facts: dict, as_of: date) -> tuple[bool | None, str]:
 
 STRICT_UNKNOWN = False   # --strict-unknown: use/funding niche exemptions also answer unknown when data is silent
 SHARED_RE = re.compile(r"shar\w*[^.;]{0,30}(kitchen|bath)|(kitchen|bath)[^.;]{0,30}shar", re.I)
-OWNER_RE = re.compile(r"\bowner|landlord[^.;]{0,25}(resid|liv|occup|shares)|natural person|co-?operative|resident-controlled|"
-                      r"small landlord|government-owned", re.I)
+# rulings_11 #3: TRUE owner-identity tests only (natural person, small landlord, owner-occupied 2-4 unit)
+OWNER_RE = re.compile(r"natural person|small[- ]landlord|owner.?occup\w*|owner[- ]occupant|owns? (no more than|fewer than|not more than|"
+                      r"one|two|three|four|\d)|individual owner|owner is an? (natural person|individual)|real estate investment trust|"
+                      r"separately alienable|single.family", re.I)
+# rulings_11 #1: a resident-owned cooperative or government-owned unit is a tenure/funding class, not an owner test
+COOP_GOV_RE = re.compile(r"co-?operative|resident[- ](owned|controlled)|government[- ]owned|publicly[- ]owned|housing authority|hacla", re.I)
+# rulings_11 #2: carve-outs inside the owner's own dwelling (shared kitchen/bath, roommate, room in an owner-occupied home)
+OWN_UNIT_RE = re.compile(r"shar\w*[^.;]{0,30}(kitchen|bath)|(kitchen|bath)[^.;]{0,30}shar|roommate|"
+                         r"room[s]? (rented|let|in)[^.;]{0,40}(owner|landlord)|owner.?occupied (home|house|single.family)|"
+                         r"(owner|landlord)[^.;]{0,20}(principal residence|lives? in the (same )?unit)", re.I)
 
 
 def niche_class(t: dict) -> str:
     """
-    Which kind of niche exemption (rulings_09): 'owner_type' turns on who the owner is or how
-    they occupy the building (never in parcel data -> unknown, per the organisers' README section 4);
-    'use_or_funding' turns on the use of the building or its funding (hotels, dormitories,
-    hospitals, public housing, deed-restricted housing) -> applies with an assumption.
+    Which kind of niche exemption (rulings_09 refined by rulings_11):
+      'use_or_funding'  use or funding of the building (hotels, dormitories, hospitals, public or
+                        deed-restricted housing) and tenure classes that are not rental tenancies
+                        (resident-owned cooperatives, government-owned units) -> applies with an assumption
+      'own_unit'        a carve-out that can remove at most the owner's own dwelling (shared kitchen or
+                        bath, a roommate, a room in an owner-occupied home) -> applies when the use code
+                        shows 2+ units / apartments, unknown for single-family or unknown building type
+      'owner_type'      a true owner-identity test (small-landlord, natural-person single-family/condo,
+                        owner-occupied 2-4 unit within the threshold) -> unknown unless the use code defeats it
     """
-    if t.get("field") == "owner_type":
-        return "owner_type"
+    text = f"{t.get('source_text') or ''} {t.get('note') or ''} {t.get('value') or ''}"
     if t.get("field") == "funding":
         return "use_or_funding"
-    text = f"{t.get('source_text') or ''} {t.get('note') or ''} {t.get('value') or ''}"
-    return "owner_type" if OWNER_RE.search(text) else "use_or_funding"
+    if COOP_GOV_RE.search(text) and not OWNER_RE.search(re.sub(COOP_GOV_RE, "", text)):
+        return "use_or_funding"
+    if OWN_UNIT_RE.search(text):
+        return "own_unit"
+    if t.get("field") == "owner_type" or OWNER_RE.search(text):
+        return "owner_type"
+    return "use_or_funding"
 
 
 def test_kind(t: dict) -> str:
@@ -394,19 +411,31 @@ def evaluate_coverage(rule: dict, cov: dict | None, facts: dict, as_of: date) ->
                 assumptions.append(f"protection begins per the timing condition: {src}")
                 continue
             if kind == "niche_exemption":
-                if niche_class(t) == "owner_type" and SHARED_RE.search(f"{t.get('source_text') or ''} {t.get('value') or ''}"):
-                    # rulings_06 class B: an owner sharing kitchen or bath with the tenant is a niche
-                    # case only when the use code shows 3+ units; with that many units the exception
-                    # is treated as impossible (use-code defeat under rulings_09).
-                    n = facts.get("units") if facts.get("units") is not None else facts.get("units_min")
-                    if n is not None and n >= 3 and not NO_UNITS_FLOOR:
-                        reasons_true.append(f"{'at least ' if facts.get('units') is None else ''}{n} units, so the owner-shares-kitchen-or-bath exception cannot apply")
+                cls = niche_class(t)
+                if cls == "own_unit":
+                    # rulings_11 #2: the carve-out removes at most the owner's own dwelling. A building the
+                    # use code shows as 2+ units / apartments is still covered.
+                    n = facts.get("units") if facts.get("units") is not None else (None if NO_UNITS_FLOOR else facts.get("units_min"))
+                    multi = (n is not None and n >= 2) or facts.get("building_type") in ("apartments", "duplex", "mixed")
+                    if multi:
+                        assumptions.append(f"not within the exemption for {src} (it can remove at most the owner's own unit)")
                         continue
-                if niche_class(t) == "owner_type":
-                    # Organisers' README section 4: owner names are excluded, so an owner-type
-                    # exception is unknown unless something explains why it cannot apply.
-                    reasons_unknown.append(f"owner type not in the data; the exception for {src} cannot be ruled out")
+                    reasons_unknown.append(f"building type not in the data, so the carve-out for {src} cannot be placed")
                     unknown_fields.append(f"{t.get('field')} {t.get('op')} {t.get('value')}")
+                    continue
+                if cls == "owner_type":
+                    # Organisers' README section 4: owner names are excluded, so a true owner-type
+                    # test is unknown unless something explains why the exception cannot apply.
+                    reasons_unknown.append(f"owner identity is not in the data; the exception for {src} cannot be ruled out")
+                    unknown_fields.append(f"{t.get('field')} {t.get('op')} {t.get('value')}")
+                    continue
+                if cls == "use_or_funding" and COOP_GOV_RE.search(f"{t.get('source_text') or ''} {t.get('value') or ''}"):
+                    if STRICT_UNKNOWN:
+                        reasons_unknown.append(f"tenure not in the data; the exception for {src} cannot be ruled out")
+                        unknown_fields.append(f"{t.get('field')} {t.get('op')} {t.get('value')}")
+                        continue
+                    assumptions.append("the property is a resident owned cooperative / government owned housing" if "property is" not in src
+                                       else f"not within the exemption for {src}")
                     continue
                 if STRICT_UNKNOWN:
                     reasons_unknown.append(f"use or funding status not in the data; the exception for {src} cannot be ruled out")
@@ -426,6 +455,7 @@ def evaluate_coverage(rule: dict, cov: dict | None, facts: dict, as_of: date) ->
     if assumptions:
         text = "Applies unless " + "; ".join(a.replace("not within the exemption for ", "the property falls within the exemption for ")
                                              .replace("protection begins per the timing condition: ", "") for a in assumptions) + f". {text}"
+        text = text.replace("Applies unless the property is a resident owned", "Applies unless the property is a resident owned")
     return "applies", text + (f" ({note})" if note else ""), assumptions, []
 
 

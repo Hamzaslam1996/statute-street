@@ -102,16 +102,36 @@ def test_niche_use_or_funding_exemption_applies_with_assumption():
     assert res == "applies" and why.startswith("Applies unless") and assumptions, (res, why, assumptions)
 
 
-def test_niche_owner_type_exemption_is_unknown_unless_defeated():
-    """Organisers' README section 4: owner data is excluded, so owner-type exceptions are unknown (rulings_09)."""
-    cov = {"tests": [{"field": "owner_type", "op": "!=", "value": "nonprofit_cooperative", "kind": "niche_exemption",
-                      "source_text": "nonprofit cooperatives", "on_fail": "exclude", "defeated_if": None}]}
+def test_true_owner_type_test_is_unknown_unless_defeated():
+    """Organisers' README section 4: owner identity is not in the data (rulings_09, refined by rulings_11 #3)."""
+    cov = {"tests": [{"field": "owner_type", "op": "!=", "value": "natural_person_small_landlord", "kind": "niche_exemption",
+                      "source_text": "owner is a natural person who owns no more than two residential rental properties",
+                      "on_fail": "exclude", "defeated_if": None}]}
     res, why, _, _ = engine.evaluate_coverage(RULE, cov, facts("CA", "Test", 1950, 12), AS_OF)
-    assert res == "unknown" and "owner type" in why, (res, why)
+    assert res == "unknown" and "owner identity" in why, (res, why)
     cov2 = {"tests": [{"field": "owner_type", "op": "!=", "value": "owner_occupied_small_building", "kind": "niche_exemption",
                        "source_text": "owner-occupied buildings of four or fewer units", "on_fail": "exclude",
                        "defeated_if": {"field": "units", "op": ">", "value": 4}}]}
     assert engine.evaluate_coverage(RULE, cov2, facts("CA", "Test", 1950, 12), AS_OF)[0] == "applies"
+
+
+def test_cooperative_and_government_ownership_are_tenure_classes():
+    """rulings_11 #1: a resident-owned cooperative or government-owned unit is not an owner-type test."""
+    cov = {"tests": [{"field": "owner_type", "op": "!=", "value": "nonprofit_cooperative", "kind": "niche_exemption",
+                      "source_text": "nonprofit cooperatives; government-owned units", "on_fail": "exclude", "defeated_if": None}]}
+    res, why, assumptions, _ = engine.evaluate_coverage(RULE, cov, facts("CA", "Test", 1950, None, btype=None), AS_OF)
+    assert res == "applies" and "resident owned cooperative" in why and assumptions, (res, why)
+
+
+def test_own_unit_carve_out_depends_on_building_type():
+    """rulings_11 #2: shared kitchen/bath or a roommate removes at most the owner's own unit."""
+    cov = {"tests": [{"field": "owner_type", "op": "!=", "value": "owner_shares_kitchen_or_bath", "kind": "niche_exemption",
+                      "source_text": "a unit where the tenant shares a kitchen or bath with the landlord", "on_fail": "exclude",
+                      "defeated_if": None}]}
+    assert engine.evaluate_coverage(RULE, cov, facts("CA", "Test", 1950, None, btype="apartments"), AS_OF)[0] == "applies"
+    assert engine.evaluate_coverage(RULE, cov, facts("CA", "Test", 1950, 6, btype=None), AS_OF)[0] == "applies"
+    assert engine.evaluate_coverage(RULE, cov, facts("CA", "Test", 1950, None, btype="single_family"), AS_OF)[0] == "unknown"
+    assert engine.evaluate_coverage(RULE, cov, facts("CA", "Test", 1950, None, btype=None), AS_OF)[0] == "unknown"
 
 
 def test_plausible_exemption_unknown_unless_defeated():
@@ -138,21 +158,17 @@ def test_la_rso_1978_cutoff():
     assert not any(results[1979].get(r, {}).get("result") == "applies" for r in la_rent)
 
 
-def test_la_precedence_state_just_cause_superseded():
+def test_la_precedence_state_just_cause_superseded_whatever_the_year():
     """
-    rulings_06 #2.1: RSO + JCO together cover every LA unit, so the state just-cause rule is
-    superseded for pre-1978 buildings and for the 1978 cutoff year (complementary cutoffs).
-    rulings_09: for a post-1978 building the JCO carries an owner-type carve-out (co-operatives,
-    owner's roommate) that parcel data cannot rule out, so the JCO is unknown and the state rule
-    cannot be called superseded; it is unknown too (never 'applies').
+    rulings_06 #2.1 (restored by rulings_11 #4): RSO + JCO together cover every LA residential unit,
+    so the state just-cause rule is superseded whatever the year built. The JCO's co-operative /
+    owner's-roommate carve-outs are tenure or own-unit classes, not owner-identity tests.
     """
     ca_jc = find("CA", "just_cause_eviction", citation="1946.2")
     assert ca_jc
-    for yb in (1950, 1978):
+    for yb in (1950, 1978, 2015):
         res = run(facts("CA", "Los Angeles", yb, 20))
         assert res[ca_jc[0]]["result"] == "superseded", (yb, res.get(ca_jc[0]))
-    res = run(facts("CA", "Los Angeles", 2015, 20))
-    assert res[ca_jc[0]]["result"] in ("superseded", "unknown"), res.get(ca_jc[0])
 
 
 def test_no_dropped_rows_for_reported_rules():

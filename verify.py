@@ -393,6 +393,9 @@ def prefer_supplied_corpus(kept: list[dict], docs: dict) -> tuple[list[dict], li
                     r["source_doc_id"], r["source_url"], r["retrieved_at"] = d.doc_id, d.manifest.get("url") or d.source_url, d.retrieved_date
                     r.pop("capture_url", None)
                     r["notes"] = f"{r.get('notes') or ''} The quoted passage also appears verbatim in supplied corpus text {d.doc_id}, which is cited as primary.".strip()
+                    if any(f.get("source_doc_id") == d.doc_id and f.get("status") == "pending" for f in r.get("_folded", [])):
+                        # rulings_11 #5: the organisers supplied the proposal text; the rule itself is the enacted ordinance
+                        r["notes"] += f" Corpus copy {d.doc_id} is the proposed text; enacted as {r['citation']}."
                     how = f"quote found verbatim in corpus doc {d.doc_id}"
                 else:
                     only = [f["source_doc_id"] for f in r.get("_folded", []) if f.get("source_doc_id") in starter_norm]

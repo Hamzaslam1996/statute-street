@@ -60,22 +60,29 @@ Every condition the engine tests is one of three kinds:
   itself is unknown.
 - **Niche exemption** — a narrow carve-out that whoever claims it must prove.
   Two classes:
-  - *Owner type* (who the owner is or how they occupy the building: non-profit
-    or resident-controlled co-operatives, government-owned units, natural-person
-    owners, small-landlord exceptions, an owner sharing kitchen or bath). The
-    organisers' README §4 states that owner names are excluded from the data and
-    that owner-type exceptions must be answered "unknown" unless we can explain
-    why the exception cannot apply. So the answer is **unknown**, naming the
-    missing fact, unless the use code makes the exception impossible (a 5+ unit
-    building cannot be an owner-occupied 1–4 unit property), in which case it
-    **applies** with that reason.
-  - *Use or funding* (hotels and vacation lets, dormitories, hospitals, care
-    facilities, public housing and government-contract units, deed-restricted
-    or subsidised housing, software used under affordable programmes). Exemptions
-    to remedial housing statutes are read narrowly, so when the data is silent the
-    answer is **applies**, the explanation starts "Applies unless …", and the
-    exemption is listed in the row's `assumptions`. `engine.py --strict-unknown`
-    turns these to unknown as well, pending the organisers' answer on funding cases.
+  - *Owner identity tests* (a natural-person or small-landlord exception, the
+    AB 1482 natural-person single-family / condo exception, an owner-occupied
+    duplex or 2 to 4 unit exemption where the unit count is within the threshold
+    or unknown). The organisers' README §4 states that owner names are excluded
+    from the data and that owner-type exceptions must be answered "unknown" unless
+    we can explain why the exception cannot apply. So the answer is **unknown**
+    ("owner identity is not in the data"), unless the use code makes the exception
+    impossible (a 5+ unit building cannot be an owner-occupied 1 to 4 unit
+    property), in which case it **applies** with that reason.
+  - *Carve-outs inside the owner's own dwelling* (an owner sharing kitchen or
+    bath, a roommate in the owner's unit, a room rented in an owner-occupied
+    home) can remove at most the owner's own unit: a building the use code shows
+    as 2+ units or apartments is still covered (**applies**, carve-out listed in
+    `assumptions`); only a single-family or unknown building type stays unknown.
+  - *Use, funding or tenure* (hotels and vacation lets, dormitories, hospitals,
+    care facilities, public housing and government-contract units, deed-restricted
+    or subsidised housing, software used under affordable programmes, and
+    resident-owned co-operatives or government-owned units, which are not
+    landlord-and-tenant rental tenancies at all). Exemptions to remedial housing
+    statutes are read narrowly, so when the data is silent the answer is
+    **applies**, the explanation starts "Applies unless …", and the exemption is
+    listed in the row's `assumptions`. `engine.py --strict-unknown` turns these to
+    unknown as well, pending the organisers' answer on funding cases.
 - **Plausible exemption** — an exception the data cannot rule out and that is
   common for the property type (an owner-occupied two-family; a single-family
   home or condo owned by a natural person; a new-construction window the year
@@ -163,11 +170,8 @@ Agreement figures measure our engine against an independently built key that
 applies the same reviewed legal rulings; they test faithful implementation, not
 legal correctness beyond those rulings. The organisers' hidden key is the real
 test. Across the whole sample (500 addresses, 5,298 rule rows) the unknown rate
-is 31.2% and 1,919 rows rest on a presumption ("Applies unless …") after
-rulings_09 made owner-type exceptions unknown; the three keys were built before
-that ruling and the gold session is re-adjudicating the affected rows (Berkeley
-just-cause, deposit-interest and Fair Chance rows, and the LA / San Diego
-state-just-cause precedence rows).
+is 27.3% and 2,079 rows rest on a presumption ("Applies unless …") after
+rulings_11 refined which owner carve-outs are true owner-identity tests.
 
 ## Evidence basis
 
