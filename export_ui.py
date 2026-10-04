@@ -292,13 +292,18 @@ def main() -> int:
     # Version stamp for the UI footer and reliance records (design brief v2, section 2). The UI reads
     # this file directly and falls back to "Engine version: see README" when it is absent, so
     # src/data/index.ts needs no change.
+    # generated_at is the navigator HEAD commit date (not wall-clock time) so that exporting the
+    # same commit twice yields byte-identical files.
     try:
         engine_commit = subprocess.check_output(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT, text=True).strip()
+        commit_iso = subprocess.check_output(["git", "log", "-1", "--format=%cI"], cwd=ROOT, text=True).strip()
+        generated_at = datetime.fromisoformat(commit_iso).astimezone(timezone.utc).replace(microsecond=0) \
+            .isoformat().replace("+00:00", "Z")
     except Exception:
-        engine_commit = "unknown"
+        engine_commit, generated_at = "unknown", None
     meta = {"rules_version": "1.0", "engine_commit": engine_commit, "rules": len(rules),
             "addresses": len(addresses), "as_of": lookups.get("as_of", "2026-10-01"),
-            "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")}
+            "generated_at": generated_at}
     (out_dir / "meta.json").write_text(json.dumps(meta, indent=1), encoding="utf-8")
     sizes["meta.json"] = (out_dir / "meta.json").stat().st_size
     print("meta.json:", meta)
